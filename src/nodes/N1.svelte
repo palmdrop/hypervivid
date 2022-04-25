@@ -1,5 +1,5 @@
-<script>
-  // your script goes here
+<script context="module">
+	import N2 from './N2.svelte';
 </script>
 
 <div>Test 1</div>

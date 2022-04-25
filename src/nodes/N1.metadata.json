@@ -1,0 +1,8 @@
+{
+  "tags": ["a", "b", "c"],
+  "links": [{
+    "to": "N3",
+    "kind": "tangent",
+    "strength": 0.3
+  }]
+}

@@ -1,0 +1,50 @@
+{
+  "links": {
+    "N1": [
+      {
+        "from": "N1",
+        "to": "N2",
+        "kind": "consumes",
+        "strength": 0.5
+      },
+      {
+        "from": "N1",
+        "to": "N3",
+        "kind": "tangent",
+        "strength": 0.3
+      }
+    ],
+    "N2": [
+      {
+        "from": "N2",
+        "to": "N1",
+        "kind": "consumed",
+        "strength": 0.5
+      },
+      {
+        "from": "N2",
+        "to": "N3",
+        "kind": "consumes",
+        "strength": 0.5
+      }
+    ],
+    "N3": [
+      {
+        "from": "N3",
+        "to": "N2",
+        "kind": "consumed",
+        "strength": 0.5
+      }
+    ]
+  },
+  "tags": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "1a",
+    "1b",
+    "1c"
+  ]
+}

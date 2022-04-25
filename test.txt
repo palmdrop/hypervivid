@@ -1,0 +1,11 @@
+[
+  "/home/xan/src/site/hypervivid/src/nodes/N3.svelte",
+  "/home/xan/src/site/hypervivid/src/nodes/N1.svelte",
+  "/home/xan/src/site/hypervivid/src/nodes/N2.svelte",
+  "/home/xan/src/site/hypervivid/src/routes/[slug]/index.svelte",
+  "/home/xan/src/site/hypervivid/src/routes/index.svelte",
+  "/home/xan/src/site/hypervivid/.svelte-kit/generated/root.svelte",
+  "/home/xan/src/site/hypervivid/.svelte-kit/runtime/components/layout.svelte",
+  "/home/xan/src/site/hypervivid/.svelte-kit/runtime/components/error.svelte",
+  "/home/xan/src/site/hypervivid/src/components/util/Lazy.svelte"
+]

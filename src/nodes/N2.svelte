@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	import N3 from './N3.svelte';
   // your script goes here
 </script>
 
@@ -7,5 +8,3 @@
 <style>
   /* your styles go here */
 </style>
-
-<!-- markup (zero or more items) goes here -->

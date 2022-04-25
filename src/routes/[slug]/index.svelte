@@ -1,13 +1,16 @@
 <script context="module" lang="ts">
   /** @type {import('./index.svelte').Load} */
   export async function load ({ params }) {
-    const imports = import.meta.globEager('../../nodes/*.svelte');
     const { slug } = params;
+
+    // TODO: figure out if this causes all node scripts to be bundled together...
+    // const imports = import.meta.globEager('../../nodes/*.svelte');
+    const imports = import.meta.glob('../../nodes/*.svelte');
 
     const path = `../../nodes/${slug}.svelte`;
 
     if(path in imports) {
-      const node = imports[path].default;
+      const node = (await imports[path]()).default;
       return {
         props: {
           slug,
