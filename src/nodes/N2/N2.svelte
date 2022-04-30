@@ -1,5 +1,5 @@
 <script lang="ts">
-	import N3 from './N3.svelte';
+	import N3 from './../N3/N3.svelte';
   // your script goes here
 </script>
 

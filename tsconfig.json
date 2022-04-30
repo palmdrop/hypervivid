@@ -14,5 +14,23 @@
 		"strict": true,
 		"noImplicitAny": false,
 		"target": "es2020",
+
+		"paths": {
+			"$components/*": [
+				"src/components/*"
+			],
+			"$nodes/*": [
+				"src/nodes/*"
+			],
+			"$stores/*": [
+				"src/stores/*"
+			],
+			"$types/*": [
+				"src/types/*"
+			],
+			"$utils/*": [
+				"src/utils/*"
+			]
+		}
 	}
 }

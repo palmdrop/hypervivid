@@ -1,4 +1,5 @@
 {
+  "inline": true,
   "tags": ["a", "b", "c"],
   "links": [{
     "to": "N3",

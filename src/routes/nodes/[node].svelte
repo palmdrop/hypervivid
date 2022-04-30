@@ -1,19 +1,16 @@
 <script context="module" lang="ts">
-  /** @type {import('./index.svelte').Load} */
   export async function load ({ params }) {
-    const { slug } = params;
+    const { node: name } = params;
 
-    // TODO: figure out if this causes all node scripts to be bundled together...
-    // const imports = import.meta.globEager('../../nodes/*.svelte');
-    const imports = import.meta.glob('../../nodes/*.svelte');
-
-    const path = `../../nodes/${slug}.svelte`;
+    // TODO: figure out how not to hard code path?
+    const imports = import.meta.glob('../../nodes/*/*.svelte');
+    const path = `../../nodes/${name}/${name}.svelte`;
 
     if(path in imports) {
       const node = (await imports[path]()).default;
       return {
         props: {
-          slug,
+          name,
           node
         }
       }
@@ -27,14 +24,19 @@
 </script>
 
 <script lang="ts">
+  import NodeWrapper from "$components/node/Wrapper.svelte";
+
   import type { SvelteComponent } from "svelte";
-  export let slug: string;
+  export let name: string;
   export let node: SvelteComponent;
 </script>
 
-<div>{slug}</div>
-
-<svelte:component this={node} />
+<NodeWrapper
+  name={name}
+  context="single"
+>
+  <svelte:component this={node} />
+</NodeWrapper>
 
 <style>
 </style>

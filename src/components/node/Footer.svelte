@@ -1,8 +1,6 @@
-<script context="module">
-	import N2 from './N2.svelte';
+<script>
+  // your script goes here
 </script>
-
-<div>Test 1</div>
 
 <style>
   /* your styles go here */
