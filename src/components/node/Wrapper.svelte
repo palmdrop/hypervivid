@@ -21,6 +21,8 @@
     links
   }
 
+  // TODO: make wrapper read node file?
+
   // TODO: Pass links/tags down to node using context? 
   // TODO: Show consumed nodes in separate category? 
 

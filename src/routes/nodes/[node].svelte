@@ -3,8 +3,10 @@
     const { node: name } = params;
 
     // TODO: figure out how not to hard code path?
-    const imports = import.meta.glob('../../nodes/*/*.svelte');
+    const imports = import.meta.glob('../../nodes/*/[^.]+.svelte');
     const path = `../../nodes/${name}/${name}.svelte`;
+
+    console.log(imports);
 
     if(path in imports) {
       const node = (await imports[path]()).default;

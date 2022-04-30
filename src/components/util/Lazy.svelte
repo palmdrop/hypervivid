@@ -1,14 +1,14 @@
-<script>
-  import { onMount } from "svelte";
+<script lang="ts">
+  import { onMount, SvelteComponent } from "svelte";
 
-  export let component;
-  export let delayMs = null;
+  export let component: () => Promise<SvelteComponent>;
+  export let delayMs: null | number = null;
 
-  let loadedComponent = null;
-  let timeout;
+  let loadedComponent: SvelteComponent | null = null;
+  let timeout: NodeJS.Timeout;
   let showFallback = !delayMs;
 
-  let props;
+  let props: Record<string, any>;
   $: {
     const { component, delayMs, ...restProps } = $$props;
     props = restProps;

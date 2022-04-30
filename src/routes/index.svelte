@@ -1,7 +1,8 @@
 <script lang="ts">
   import Lazy from "$components/util/Lazy.svelte";
+  import type { GlobComponentImport } from "$types/imports";
 
-  const components = import.meta.glob('./../nodes/*/*.svelte');
+  const components: GlobComponentImport = import.meta.glob('./../nodes/*/[^.]+.svelte');
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
 </script>

@@ -6,6 +6,12 @@
   metadata$.set(metadata);
 </script>
 
+<svelte:head>
+  <title>
+    Hypervivid ~ Hypersoft
+  </title>
+</svelte:head>
+
 <header>
   <nav>
     <a
