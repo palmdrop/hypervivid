@@ -33,9 +33,12 @@
 
 <script lang="ts">
   import type { SvelteComponent } from 'svelte';
+  import { useTitle } from '$utils/useTitle';
 
   export let tag: string;
   export let nodes: SvelteComponent[];
+
+  $: useTitle(`Tag ~ ${tag}`);
 </script>
 
 <h1>

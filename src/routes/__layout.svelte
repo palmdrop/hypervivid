@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { title$ } from '$stores/head';
+
   import '../global.css';
   import metadata from "../nodes/metadata.json";
   import { metadata$ } from "../stores/metadata";
@@ -8,7 +10,7 @@
 
 <svelte:head>
   <title>
-    Hypervivid ~ Hypersoft
+    { $title$ }
   </title>
 </svelte:head>
 

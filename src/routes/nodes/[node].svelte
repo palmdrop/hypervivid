@@ -6,8 +6,6 @@
     const imports = import.meta.glob('../../nodes/*/[^.]+.svelte');
     const path = `../../nodes/${name}/${name}.svelte`;
 
-    console.log(imports);
-
     if(path in imports) {
       const node = (await imports[path]()).default;
       return {
@@ -27,10 +25,13 @@
 
 <script lang="ts">
   import NodeWrapper from "$components/node/Wrapper.svelte";
+  import { useTitle } from "$utils/useTitle";
 
   import type { SvelteComponent } from "svelte";
   export let name: string;
   export let node: SvelteComponent;
+
+  $: useTitle(`Node ~ ${name}`);
 </script>
 
 <NodeWrapper

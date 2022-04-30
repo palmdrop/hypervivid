@@ -1,9 +1,13 @@
 <script>
+import { useTitle } from "$utils/useTitle";
+
   import { metadata$ } from "../../stores/metadata";
 
   const nodes = Object.keys(
     $metadata$.nodes
   );
+
+  useTitle('Nodes');
 </script>
 
 <h1>

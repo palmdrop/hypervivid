@@ -1,8 +1,11 @@
 <script>
+  import { title$ } from "$stores/head";
+  import { useTitle } from "$utils/useTitle";
+
   import { metadata$ } from "../../stores/metadata";
   const tags = $metadata$.tags;
 
-  console.log(tags);
+  useTitle('Tags');
 </script>
 
 <h1>
