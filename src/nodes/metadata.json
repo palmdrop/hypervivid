@@ -49,7 +49,7 @@
   ],
   "nodes": {
     "N1": {
-      "inline": true,
+      "preview": true,
       "tags": [
         "a",
         "b",
