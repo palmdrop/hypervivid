@@ -6,8 +6,7 @@
 </script>
 
 <script>
-import { onMount } from "svelte";
-
+  import { onMount } from "svelte";
 
   // your script goes here
 

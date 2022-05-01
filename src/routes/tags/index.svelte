@@ -1,5 +1,4 @@
 <script>
-  import { title$ } from "$stores/head";
   import { useTitle } from "$utils/useTitle";
 
   import { metadata$ } from "../../stores/metadata";

@@ -1,7 +1,7 @@
 <script lang="ts">
   import Lazy from "$components/util/Lazy.svelte";
   import type { GlobComponentImport } from "$types/imports";
-import { useTitle } from "$utils/useTitle";
+  import { useTitle } from "$utils/useTitle";
 
   const components: GlobComponentImport = import.meta.glob('./../nodes/*/[^.]+.svelte');
 

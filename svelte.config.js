@@ -20,7 +20,10 @@ const config = {
 				}
 			}
 		},
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			default: true
+		}
 	}
 };
 

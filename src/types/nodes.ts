@@ -19,7 +19,7 @@ export type NodeContext
 export type NodeMetadata = {
   tags: string[],
   links: Link[],
-  inline: boolean,
+  inline?: boolean,
 
   title?: string,
   description?: string,
@@ -27,3 +27,7 @@ export type NodeMetadata = {
 
   // rest?: Record<string, any>
 } & Record<string, any>; 
+
+export type NodeContextData = {
+  context: NodeContext
+}
