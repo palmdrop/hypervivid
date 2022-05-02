@@ -4,7 +4,7 @@
   import type { Link, NodeContext, NodeMetadata } from "$types/nodes";
   import { getStringComparator } from "$utils/general";
   import type { SvelteComponent } from "svelte";
-import DefaultPreview from "./DefaultPreview.svelte";
+  import DefaultPreview from "./DefaultPreview.svelte";
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
@@ -31,9 +31,10 @@ import DefaultPreview from "./DefaultPreview.svelte";
   } as NodeMetadata;
 
   $: primary = ['single', 'multiple-primary'].includes(context);
-  $: showPreview = !primary && nodeMetadata.preview; 
+  $: showPreview = !primary && !nodeMetadata.inline; 
 
   $: {
+    // TODO use lazy loading component instead of handling promises here?
     if(!showPreview) {
       const path = `../../nodes/${name}/${name}.svelte`;
       let componentPromise = lazyComponents[path];
@@ -47,7 +48,6 @@ import DefaultPreview from "./DefaultPreview.svelte";
     } else {
       const previewPath = `../../nodes/${name}/${name}.preview.svelte`;
       let previewPromise = lazyPreviewComponents[previewPath];
-      console.log(previewPromise);
       if(!previewPromise) {
         previewComponent = DefaultPreview;
       } else {
@@ -82,7 +82,4 @@ import DefaultPreview from "./DefaultPreview.svelte";
 {/if}
 
 <style>
-  /* your styles go here */
 </style>
-
-<!-- markup (zero or more items) goes here -->

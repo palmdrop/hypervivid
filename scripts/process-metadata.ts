@@ -13,7 +13,7 @@ const METADATA_FILE_PATH = NODE_PATH + 'metadata.json';
 
 type Metadata = {
   links: Map<string, Link[]>,
-  tags: Set<string>,
+  tags: Map<string, number>,
   nodes: Record<string, Record<string, any>>
 }
 
@@ -104,7 +104,14 @@ const processNode = async (
       const nodeTags: string[] = metadata.tags ?? [];
       const nodeLinks: Link[] = metadata.links ?? [];
 
-      nodeTags.forEach(tag => tags.add(tag));
+      nodeTags.forEach(tag => {
+        if(tags.has(tag)) {
+          const score = tags.get(tag)! + 1.0;
+          tags.set(tag, score);
+        } else {
+          tags.set(tag, 1.0);
+        }
+      });
       nodeLinks.forEach(link => addLink(nodeName, { from: nodeName, ...link }, links));
 
       nodes[nodeName] = metadata;
@@ -116,10 +123,66 @@ const processNode = async (
   }
 }
 
+const sortNodes = (nodesMetadata: Record<string, Record<string, any>>) => {
+  const getDate = (metadata: Record<string, any>) => {
+    if(!metadata.createdAt) return undefined;
+    const date = new Date(metadata.createdAt);
+
+    if(isNaN(date.getTime())) return undefined;
+
+    return date;
+  }
+
+  return Object.entries(nodesMetadata).sort((e1, e2) => {
+    const d1 = getDate(e1[1]);
+    const d2 = getDate(e2[1]);
+
+    if(!d1) throw new Error(`Invalid date in node ${e1[0]}`);
+    if(!d2) throw new Error(`Invalid date in node ${e2[0]}`);
+
+    return d2.getTime() - d1.getTime();
+  }).reduce(
+    (acc, entry) => {
+      acc[entry[0]] = entry[1];
+      return acc;
+    }, {} as Record<string, any>
+  );
+}
+
+const processTags = (tags: Map<string, number>) => {
+  let maxScore = 0.0;
+
+  // Normalize
+  tags.forEach(value => {
+    maxScore = Math.max(value, maxScore);
+  });
+
+  tags.forEach((score, tag) => {
+    tags.set(tag, score / maxScore)
+  });
+
+  // Sort
+  return [...tags.entries()].sort((e1, e2) => {
+    return e2[1] - e1[1]
+  }).reduce(
+    (acc, entry) => {
+      acc[entry[0]] = entry[1];
+      return acc;
+    }, {} as Record<string, number>
+  );
+}
+
+const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, number>) => {
+  if(!nodeMetadata.tags) return;
+  
+  nodeMetadata.tags.sort((t1: string, t2: string) => {
+    return allTags.get(t2)! - allTags.get(t1)!
+  }) 
+}
 
 const main = async () => {
   const links = new Map<string, Link[]>();
-  const tags = new Set<string>();
+  const tags = new Map<string, number>();
 
   const metadata: Metadata = {
     links, 
@@ -141,16 +204,26 @@ const main = async () => {
   console.log(`Metadata processed. Writing to file "${METADATA_FILE_PATH}"`);
 
   // Remove links, the updated link list will exist in "metadata.links"
+  // Also sort tags
   Object.values(metadata.nodes).forEach(nodeMetadata => {
     delete nodeMetadata.links;
-  });
 
+    sortNodeTags(nodeMetadata, tags);
+  });
+  
+  // Sort node entries by date
+  metadata.nodes = sortNodes(metadata.nodes);
+
+  // TODO: count tag usage, add weights to each tag! (show often used tags first (?))
+  // TODO: or show most recently changed tag first?
+
+  // Write to file
   fs.writeFileSync(
     METADATA_FILE_PATH,
     JSON.stringify({
       ...metadata,
       links: Object.fromEntries(links),
-      tags: [...tags]
+      tags: processTags(tags)
     }, null, 2)
   );
 

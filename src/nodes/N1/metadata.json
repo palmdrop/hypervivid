@@ -1,9 +1,10 @@
 {
-  "preview": true,
+  "inline": false,
   "tags": ["a", "b", "c"],
   "links": [{
     "to": "N3",
     "kind": "tangent",
     "strength": 0.3
-  }]
+  }],
+  "createdAt": "2022-04-29"
 }

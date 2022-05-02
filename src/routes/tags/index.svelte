@@ -2,7 +2,7 @@
   import { useTitle } from "$utils/useTitle";
 
   import { metadata$ } from "../../stores/metadata";
-  const tags = $metadata$.tags;
+  const tags = Object.keys($metadata$.tags);
 
   useTitle('Tags');
 </script>

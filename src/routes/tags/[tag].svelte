@@ -5,8 +5,8 @@
 
     const imports = import.meta.glob('../../nodes/*/*.svelte');
 
-    const tags: string[] = metadata.tags ?? [];
-    if(!tags.includes(tag)) return {
+    const tags = metadata.tags ?? {};
+    if(!tags[tag]) return {
       status: 302,
       redirect: '/'
     };
