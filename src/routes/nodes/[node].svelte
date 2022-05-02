@@ -25,19 +25,16 @@
 
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
-import NodeWrapper from "$components/node/Wrapper.svelte";
+  import NodeWrapper from "$components/node/MetaWrapper.svelte";
   import { useTitle } from "$utils/useTitle";
 
-  import type { SvelteComponent } from "svelte";
   export let name: string;
-  // export let node: SvelteComponent;
 
   $: useTitle(`Node ~ ${name}`);
 </script>
 
 <NodeWrapper
   name={name}
-  context="single"
 >
   <Node
     name={name}

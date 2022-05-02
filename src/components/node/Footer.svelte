@@ -13,7 +13,7 @@ import type { NodeMetadata } from '$types/nodes';
       Links
     </h2>
     <ul>
-      {#each links as link}
+      {#each links as link (link)}
         <li>
           <a
             href={`/nodes/${link.to}`}
@@ -33,7 +33,6 @@ import type { NodeMetadata } from '$types/nodes';
       tags={tags}
       orientation="horizontal"
     />
-
   </div>
 </footer>
 
@@ -56,11 +55,6 @@ import type { NodeMetadata } from '$types/nodes';
   footer h2 {
     font-size: 1.5rem;
     margin-bottom: 0.3em;
-  }
-
-  .tags > ul {
-    display: flex;
-    flex-direction: row;
   }
 
   li {

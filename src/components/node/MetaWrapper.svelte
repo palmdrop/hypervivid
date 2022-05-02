@@ -6,9 +6,6 @@
   import Footer from './Footer.svelte';
 
   export let name: string;
-  export let context: NodeContext
-
-  $: primary = ['single', 'multiple-primary'].includes(context);
 
   let metadata: Record<string, any>
   $: metadata = $metadata$.nodes[name];
@@ -34,15 +31,9 @@
 
 <!-- Section or main depending on context? -->
 <div class="wrapper">
-  {#if primary }
-    <main class="node-container">
-      <slot />
-    </main>
-  {:else}
-    <section class="node-container">
-      <slot />
-    </section>
-  {/if}
+  <main class="node-container">
+    <slot />
+  </main>
 
   <Footer 
     nodeMetadata={nodeMetadata}

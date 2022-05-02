@@ -1,9 +1,11 @@
 <script lang="ts">
-  import { useTitle } from '$utils/useTitle';
+  import type { NodeMetadata } from '$types/nodes';
 
 	import N2 from '../N2/N2.svelte';
 
-  // useTitle("Fuck you")
+  export let name: string;
+  export let nodeMetadata: NodeMetadata;
+
 </script>
 
 <div>Test 1</div>

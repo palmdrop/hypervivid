@@ -38,7 +38,7 @@
 
 <style global>
   header {
-    padding: 1em;
+    padding: 1em 0em;
     margin-bottom: 1em;
     border-bottom: 1px solid black;
 
@@ -49,6 +49,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
   }
 
   html {

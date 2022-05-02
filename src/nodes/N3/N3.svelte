@@ -1,14 +1,9 @@
-<script context="module">
-  export const metadata = {
-    tags: ['1ab', '1bd', '1c3']
-  };
-  // your script goes here
-</script>
-
-<script>
+<script lang="ts">
+	import type { NodeMetadata } from '$types/nodes';
   import { onMount } from "svelte";
 
-  // your script goes here
+  export let name: string;
+  export let nodeMetadata: NodeMetadata;
 
   let date = new Date();
   $: time = date.toISOString().split('T')[1].slice(0, -1);

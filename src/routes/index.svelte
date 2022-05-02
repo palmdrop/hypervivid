@@ -10,19 +10,27 @@
   useTitle('Hypervivid ~ Hypersoft');
 </script>
 
-{#each nodeNames as name, i (name)}
-  <Node
-    name={name}
-    context={i === 0 ? 'multiple-primary' : 'multiple'}
-  />
-{/each}
+<ul>
+  {#each nodeNames as name, i (name)}
+    <li>
+      <Node
+        name={name}
+        context={i === 0 ? 'multiple-primary' : 'multiple'}
+      />
+    </li>
+  {/each}
+</ul>
 
-<!--
-{#each Object.values(components) as component}
-  <Lazy
-    component={component}
-  >
-    <div>Loading!</div>
-  </Lazy>
-{/each}
--->
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid black;
+  }
+</style>
