@@ -1,9 +1,7 @@
 <script context="module" lang="ts">
-	import metadata from '../../nodes/metadata.json';
+	import metadata from '$nodes/metadata.json';
   export async function load ({ params }) {
     const { tag } = params;
-
-    const imports = import.meta.glob('../../nodes/*/*.svelte');
 
     const tags = metadata.tags ?? {};
     if(!tags[tag]) return {
@@ -17,26 +15,21 @@
       })
       .map(([name]) => name);
 
-    // TODO figure out how not to hard code path
-    const nodes = (await Promise.all(
-      nodeNames.map(name => imports[`../../nodes/${name}/${name}.svelte`]())
-    )).map(node => node.default);
-
     return {
       props: {
         tag,
-        nodes
+        nodeNames
       }
     }
   }
 </script>
 
 <script lang="ts">
-  import type { SvelteComponent } from 'svelte';
   import { useTitle } from '$utils/useTitle';
+  import Node from '$components/node/Node.svelte';
 
   export let tag: string;
-  export let nodes: SvelteComponent[];
+  export let nodeNames: string[];
 
   $: useTitle(`Tag ~ ${tag}`);
 </script>
@@ -45,6 +38,9 @@
   { tag }
 </h1>
 
-{#each nodes as Component }
-  <svelte:component this={Component} />
+{#each nodeNames as name (name) }
+  <Node 
+    name={name}
+    context={nodeNames.length === 1 ? "single" : "multiple"}
+  />
 {/each}

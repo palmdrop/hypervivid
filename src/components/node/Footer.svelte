@@ -1,5 +1,6 @@
 <script lang="ts">
-	import type { NodeMetadata } from '$types/nodes';
+	import TagList from '$components/metadata/TagList.svelte';
+import type { NodeMetadata } from '$types/nodes';
   export let nodeMetadata: NodeMetadata;
 
   $: links = nodeMetadata.links ?? [];
@@ -28,17 +29,10 @@
     <h2>
       Tags
     </h2>
-    <ul>
-      {#each tags as tag }
-        <li>
-          <a
-            href={`/tags/${tag}`}
-          >
-            { tag }
-          </a>
-        </li> 
-      {/each}
-    </ul>
+    <TagList 
+      tags={tags}
+      orientation="horizontal"
+    />
 
   </div>
 </footer>

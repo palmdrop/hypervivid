@@ -1,16 +1,25 @@
 <script lang="ts">
-	import type { NodeMetadata } from '$types/nodes';
+	import TagList from '$components/metadata/TagList.svelte';
+  import type { NodeMetadata } from '$types/nodes';
   export let name: string;
   export let nodeMetadata: NodeMetadata;
 </script>
 
-<div>
+<div class="node-preview">
   <a
     href={`/nodes/${name}`}
   >
     { name }
   </a>
+  <TagList
+    tags={nodeMetadata.tags}
+    orientation="horizontal"
+  />
 </div>
 
 <style>
+  .node-preview {
+    padding: 1em;
+    border: 1px solid black;
+  }
 </style>

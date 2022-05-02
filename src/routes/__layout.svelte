@@ -41,6 +41,8 @@
     padding: 1em;
     margin-bottom: 1em;
     border-bottom: 1px solid black;
+
+    width: 100vw;
   }
 
   header nav {

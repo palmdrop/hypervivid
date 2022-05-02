@@ -149,6 +149,27 @@ const sortNodes = (nodesMetadata: Record<string, Record<string, any>>) => {
   );
 }
 
+/*
+const sortNodelinks = (links: Link[]) => {
+  return links.sort((l1, l2) => {
+    const to1 = l1.to.toLowerCase();
+    const to2 = l2.to.toLowerCase();
+
+    if(to1 < to2) return -1;
+    if(to1 > to2) return 1;
+    return 0;
+  });
+}
+*/
+
+const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, number>) => {
+  if(!nodeMetadata.tags) return;
+  
+  nodeMetadata.tags.sort((t1: string, t2: string) => {
+    return allTags.get(t2)! - allTags.get(t1)!
+  }) 
+}
+
 const processTags = (tags: Map<string, number>) => {
   let maxScore = 0.0;
 
@@ -172,14 +193,6 @@ const processTags = (tags: Map<string, number>) => {
   );
 }
 
-const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, number>) => {
-  if(!nodeMetadata.tags) return;
-  
-  nodeMetadata.tags.sort((t1: string, t2: string) => {
-    return allTags.get(t2)! - allTags.get(t1)!
-  }) 
-}
-
 const main = async () => {
   const links = new Map<string, Link[]>();
   const tags = new Map<string, number>();
@@ -194,7 +207,6 @@ const main = async () => {
 
   await Promise.all(fs.readdirSync(NODE_PATH)
     .filter(path => !path.includes('.')) // filter out files
-    // .filter(file => NODE_REGEX.test(file))
     .map(path => processNode(
       path,
       metadata
