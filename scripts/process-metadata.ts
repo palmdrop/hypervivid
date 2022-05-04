@@ -105,6 +105,13 @@ const processNode = async (
       const nodeLinks: Link[] = metadata.links ?? [];
 
       nodeTags.forEach(tag => {
+        if(
+          Number.isInteger(Number.parseInt(tag)) &&
+          tag === `${Number.parseInt(tag)}`
+        ) {
+          throw new Error(`Tags cannot be integers: "${tag}"`);
+        }
+
         if(tags.has(tag)) {
           const score = tags.get(tag)! + 1.0;
           tags.set(tag, score);
@@ -119,7 +126,7 @@ const processNode = async (
       console.log(`Node "${nodeName}" has no metadata.`);
     }
   } catch(err) {
-    console.log(`Metadata of node "${nodeName}" cannot be parsed.`);
+    console.log(`Metadata of node "${nodeName}" cannot be parsed: `, err);
   }
 }
 
@@ -149,18 +156,11 @@ const sortNodes = (nodesMetadata: Record<string, Record<string, any>>) => {
   );
 }
 
-/*
-const sortNodelinks = (links: Link[]) => {
+const sortNodeLinks = (links: Link[]) => {
   return links.sort((l1, l2) => {
-    const to1 = l1.to.toLowerCase();
-    const to2 = l2.to.toLowerCase();
-
-    if(to1 < to2) return -1;
-    if(to1 > to2) return 1;
-    return 0;
+    return l2.strength - l1.strength;
   });
 }
-*/
 
 const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, number>) => {
   if(!nodeMetadata.tags) return;
@@ -226,7 +226,8 @@ const main = async () => {
   // Sort node entries by date
   metadata.nodes = sortNodes(metadata.nodes);
 
-  // TODO: count tag usage, add weights to each tag! (show often used tags first (?))
+  Object.values(metadata.links).forEach(nodeLinks => sortNodeLinks(nodeLinks));
+
   // TODO: or show most recently changed tag first?
 
   // Write to file

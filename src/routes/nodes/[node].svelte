@@ -1,17 +1,12 @@
 <script context="module" lang="ts">
-  const imports = import.meta.glob('../../nodes/*/[^.]+.svelte');
+  import metadata from '../../nodes/metadata.json';
   export async function load ({ params }) {
     const { node: name } = params;
 
-    // TODO: figure out how not to hard code path?
-    const path = `../../nodes/${name}/${name}.svelte`;
-
-    if(path in imports) {
-      const node = (await imports[path]()).default;
+    if(Object.keys(metadata.nodes).includes(name)) {
       return {
         props: {
           name,
-          node
         }
       }
     } else {
@@ -25,7 +20,7 @@
 
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
-  import NodeWrapper from "$components/node/MetaWrapper.svelte";
+  import NodeWrapper from "$components/node/DataWrapper.svelte";
   import { useTitle } from "$utils/useTitle";
 
   export let name: string;

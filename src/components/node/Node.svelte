@@ -3,7 +3,6 @@
   import { metadata$ } from "$stores/metadata";
   import type { GlobComponentImport } from "$types/imports";
   import type { Link, NodeContext, NodeMetadata } from "$types/nodes";
-  import { getStringComparator } from "$utils/general";
   import type { SvelteComponent } from "svelte";
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
@@ -16,8 +15,7 @@
   let metadata: Record<string, any>
   $: metadata = $metadata$.nodes[name];
 
-  // TODO: sort links in build step?
-  $: links = $metadata$.links[name].sort((a, b) => getStringComparator(a.to, b.to)) as Link[];
+  $: links = $metadata$.links[name] as Link[];
   $: tags = metadata.tags as string[];
 
   $: nodeMetadata = {
@@ -26,8 +24,8 @@
     tags
   } as NodeMetadata;
 
-  $: primary = ['single', 'multiple-primary'].includes(context);
-  $: showPreview = !primary && !nodeMetadata.inline; 
+  $: inline = ['single', 'multiple', 'multiple-primary'].includes(context);
+  $: showPreview = !inline && !nodeMetadata.inline; 
 
   let component: (() => Promise<SvelteComponent>) | undefined;
 

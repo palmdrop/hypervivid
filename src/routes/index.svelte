@@ -1,5 +1,6 @@
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
+  import NodeList from "$components/node/NodeList.svelte";
 
   import { metadata$ } from "$stores/metadata";
   import { useTitle } from "$utils/useTitle";
@@ -10,27 +11,10 @@
   useTitle('Hypervivid ~ Hypersoft');
 </script>
 
-<ul>
-  {#each nodeNames as name, i (name)}
-    <li>
-      <Node
-        name={name}
-        context={i === 0 ? 'multiple-primary' : 'multiple'}
-      />
-    </li>
-  {/each}
-</ul>
+<NodeList
+  nodeNames={nodeNames} 
+  context="inline-first"
+/>
 
 <style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  li {
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid black;
-  }
 </style>

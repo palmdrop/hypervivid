@@ -66,6 +66,7 @@
       "createdAt": "2022-04-29"
     },
     "N3": {
+      "inline": true,
       "tags": [
         "1a",
         "1b",

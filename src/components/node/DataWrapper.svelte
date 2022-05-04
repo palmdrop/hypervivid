@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getStringComparator } from '$utils/general';
-	import type { NodeContext, Link, NodeMetadata } from '$types/nodes';
+	import type { Link, NodeMetadata } from '$types/nodes';
 
 	import { metadata$ } from '$stores/metadata';
   import Footer from './Footer.svelte';
