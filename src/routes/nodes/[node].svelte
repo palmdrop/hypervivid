@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
-  import metadata from '../../nodes/metadata.json';
+  import metadata from '$nodes/metadata.json';
+
   export async function load ({ params }) {
     const { node: name } = params;
 

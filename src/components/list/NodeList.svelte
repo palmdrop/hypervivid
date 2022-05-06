@@ -1,16 +1,14 @@
 <script lang="ts">
-import type { NodeContext } from "$types/nodes";
+  import type { NodeContext } from "$types/nodes";
 
-  import Node from "./Node.svelte";
+  import Node from "../node/Node.svelte";
 
   export let context: 'inline-all' | 'inline-first' | 'preview-all' | 'preview-first' | 'link' = 'inline-first';
   export let showOpenLink: boolean = true;
   export let nodeNames: string[];
 
-
-  // TODO: change context to something like "displayMode" instead, to better fit below properties
-  let nodeContextFirst: NodeContext | 'link';
-  let nodeContextRest: NodeContext | 'link';
+  let nodeContextFirst: NodeContext;
+  let nodeContextRest: NodeContext;
 
   $: {
     switch(context) {
@@ -34,31 +32,21 @@ import type { NodeContext } from "$types/nodes";
       }
     }
   }
-
-
 </script>
 
 <ul class="node-list">
   {#each nodeNames as name, i (name)}
     <li>
-      {#if (i === 0 && nodeContextFirst === 'link') || (i > 0 && nodeContextRest === 'link')}
+      <Node
+        name={name}
+        context={i === 0 ? nodeContextFirst : nodeContextRest }
+      />
+      {#if showOpenLink}
         <a
           href={`/nodes/${name}`}
         >
-          {name}
+          Open 
         </a>
-      {:else}
-        <Node
-          name={name}
-          context={i === 0 ? nodeContextFirst : nodeContextRest }
-        />
-        {#if showOpenLink}
-          <a
-            href={`/nodes/${name}`}
-          >
-            Open 
-          </a>
-        {/if}
       {/if}
     </li>
   {/each}

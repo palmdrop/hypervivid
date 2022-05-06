@@ -10,10 +10,11 @@
     };
 
     const nodeNames = Object.entries(metadata.nodes)
-      .filter(([, nodeMetadata]) => {
-        return nodeMetadata.tags.includes(tag);
-      })
-      .map(([name]) => name);
+      .filter(
+        ([, nodeMetadata]) => nodeMetadata.tags.includes(tag)
+      ).map(
+        ([name]) => name
+      );
 
     return {
       props: {
@@ -27,6 +28,7 @@
 <script lang="ts">
   import { useTitle } from '$utils/useTitle';
   import Node from '$components/node/Node.svelte';
+  import NodeList from '$components/list/NodeList.svelte';
 
   export let tag: string;
   export let nodeNames: string[];
@@ -38,9 +40,7 @@
   { tag }
 </h1>
 
-{#each nodeNames as name (name) }
-  <Node 
-    name={name}
-    context={nodeNames.length === 1 ? "single" : "multiple"}
-  />
-{/each}
+<NodeList
+  nodeNames={nodeNames}
+  context="preview-all"
+/>

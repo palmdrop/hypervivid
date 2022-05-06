@@ -12,37 +12,45 @@
   export let context: NodeContext;
 
   // TODO figure out if I need all metadata for each node? if it's just in preview, do I need it?
-  let metadata: Record<string, any>
-  $: metadata = $metadata$.nodes[name];
-
-  $: links = $metadata$.links[name] as Link[];
-  $: tags = metadata.tags as string[];
-
+  // TODO if in link mode, I definitely do not need it!
+  let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
-    ...metadata,
-    links,
-    tags
+    ...$metadata$.nodes[name],
+    links: $metadata$.links[name]
   } as NodeMetadata;
 
-  $: inline = ['single', 'multiple', 'multiple-primary'].includes(context);
-  $: showPreview = !inline && !nodeMetadata.inline; 
-
   let component: (() => Promise<SvelteComponent>) | undefined;
+  let asLink = false;
 
   $: {
-    if(!showPreview) {
-      const path = `../../nodes/${name}/${name}.svelte`;
-      component = lazyComponents[path];
+    if(context === 'link') {
+      asLink = true;
     } else {
-      const previewPath = `../../nodes/${name}/${name}.preview.svelte`;
-      component = lazyPreviewComponents[previewPath] ?? (() => import('./DefaultPreview.svelte'));
+      const showPreview = (
+        !['single', 'multiple', 'multiple-primary'].includes(context) &&
+        !nodeMetadata.inline
+      );
+
+      if(!showPreview) {
+        component = lazyComponents[
+          `../../nodes/${name}/${name}.svelte`
+        ];
+      } else {
+        component = lazyPreviewComponents[
+          `../../nodes/${name}/${name}.preview.svelte`
+        ] ?? (() => import('./DefaultPreview.svelte'));
+      }
     }
   }
 </script>
 
-<!-- TODO: clean up and show loading when loading -->
-
-{#if !component}
+{#if asLink}
+  <a
+    href={`/nodes/${name}`}
+  >
+    { name }
+  </a>
+{:else if !component}
   <div>
     Component { name } not found
   </div>

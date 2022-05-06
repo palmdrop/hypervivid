@@ -1,6 +1,6 @@
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
-  import NodeList from "$components/node/NodeList.svelte";
+  import NodeList from "$components/list/NodeList.svelte";
 
   import { metadata$ } from "$stores/metadata";
   import { useTitle } from "$utils/useTitle";

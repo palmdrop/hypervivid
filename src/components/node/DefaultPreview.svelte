@@ -1,5 +1,5 @@
 <script lang="ts">
-	import TagList from '$components/metadata/TagList.svelte';
+	import TagList from '$components/list/TagList.svelte';
   import type { NodeMetadata } from '$types/nodes';
   export let name: string;
   export let nodeMetadata: NodeMetadata;

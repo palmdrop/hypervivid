@@ -14,7 +14,8 @@ export type NodeContext
   = 'single' 
   | 'multiple' 
   | 'multiple-primary' 
-  | 'multiple-secondary';
+  | 'multiple-secondary'
+  | 'link';
 
 export type NodeMetadata = {
   tags: string[],

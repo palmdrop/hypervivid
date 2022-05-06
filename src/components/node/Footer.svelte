@@ -1,6 +1,7 @@
 <script lang="ts">
-	import TagList from '$components/metadata/TagList.svelte';
-import type { NodeMetadata } from '$types/nodes';
+	import LinkList from '$components/list/LinkList.svelte';
+  import TagList from '$components/list/TagList.svelte';
+  import type { NodeMetadata } from '$types/nodes';
   export let nodeMetadata: NodeMetadata;
 
   $: links = nodeMetadata.links ?? [];
@@ -12,17 +13,9 @@ import type { NodeMetadata } from '$types/nodes';
     <h2>
       Links
     </h2>
-    <ul>
-      {#each links as link (link)}
-        <li>
-          <a
-            href={`/nodes/${link.to}`}
-          >
-            { link.to } - "{link.kind}"
-          </a>
-        </li>
-      {/each}
-    </ul>
+    <LinkList 
+      links={links}
+    />
   </div>
 
   <div class="tags">
@@ -48,17 +41,8 @@ import type { NodeMetadata } from '$types/nodes';
     border-top: 1px solid black;
   }
 
-  footer {
-    display: flex;
-  }
-
   footer h2 {
     font-size: 1.5rem;
     margin-bottom: 0.3em;
-  }
-
-  li {
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
   }
 </style>

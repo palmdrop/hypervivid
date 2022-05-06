@@ -1,9 +1,10 @@
 <script>
+import NodeList from "$components/list/NodeList.svelte";
 import { useTitle } from "$utils/useTitle";
 
   import { metadata$ } from "../../stores/metadata";
 
-  const nodes = Object.keys(
+  const nodeNames = Object.keys(
     $metadata$.nodes
   );
 
@@ -14,17 +15,10 @@ import { useTitle } from "$utils/useTitle";
   Nodes
 </h1>
 
-<ul>
-  {#each nodes as node }
-    <li>
-      <a
-        href={`/nodes/${node}`}
-      >
-        { node }
-      </a>
-    </li> 
-  {/each}
-</ul>
+<NodeList
+  nodeNames={nodeNames}
+  context="preview-all"
+/>
 
 <style>
 </style>
