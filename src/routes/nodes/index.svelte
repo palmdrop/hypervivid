@@ -1,8 +1,8 @@
 <script>
-import NodeList from "$components/list/NodeList.svelte";
-import { useTitle } from "$utils/useTitle";
+  import NodeList from "$components/list/NodeList.svelte";
+  import { useTitle } from "$utils/useTitle";
 
-  import { metadata$ } from "../../stores/metadata";
+  import { metadata$ } from "$stores/metadata";
 
   const nodeNames = Object.keys(
     $metadata$.nodes

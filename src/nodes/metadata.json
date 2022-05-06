@@ -35,7 +35,8 @@
         "kind": "consumed",
         "strength": 0.5
       }
-    ]
+    ],
+    "info": []
   },
   "tags": {
     "c": 1,
@@ -54,7 +55,15 @@
         "d",
         "e"
       ],
-      "createdAt": "2022-05-01"
+      "createdAt": "2022-05-21"
+    },
+    "info": {
+      "tags": [],
+      "createdAt": "Fri, 06 May 2022 20:48:42 GMT",
+      "inline": false,
+      "title": "info",
+      "description": "",
+      "image": ""
     },
     "N1": {
       "inline": false,

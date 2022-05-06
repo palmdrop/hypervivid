@@ -1,11 +1,31 @@
 <script lang="ts">
-  import { title$ } from '$stores/head';
+  import Navbar from '$components/navigation/Navbar.svelte';
+import { title$ } from '$stores/head';
 
   import '../global.css';
   import metadata from "../nodes/metadata.json";
   import { metadata$ } from "../stores/metadata";
 
   metadata$.set(metadata);
+
+  const navEntries = [
+    {
+      text: 'index',
+      path: '/'
+    },
+    {
+      text: 'nodes',
+      path: '/nodes'
+    },
+    {
+      text: 'tags',
+      path: '/tags'
+    },
+    {
+      text: 'info',
+      path: '/nodes/info'
+    }
+  ];
 </script>
 
 <svelte:head>
@@ -15,23 +35,9 @@
 </svelte:head>
 
 <header>
-  <nav>
-    <a
-      href="/"
-    >
-      index
-    </a>
-    <a
-      href="/nodes"
-    >
-      nodes
-    </a>
-    <a
-      href="/tags"
-    >
-      tags
-    </a>
-  </nav>
+  <Navbar
+    entries={navEntries}
+  />
 </header>
 
 <slot />
@@ -43,17 +49,6 @@
     border-bottom: 1px solid black;
 
     width: 100vw;
-  }
-
-  header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  header nav a {
-    width: 100%;
-    text-align: center;
   }
 
   html {

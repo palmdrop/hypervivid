@@ -1,15 +1,16 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import type { Link } from '../types/nodes';
 import fs from 'fs';
-import type { Link } from '../src/types/nodes';
 
 // TODO: add to env
-const NODE_PATH = 'src/nodes/';
+// import { NODES_DIR } from '../constants';
+const NODES_DIR = 'src/nodes/';
 
 const DEFAULT_LINK_STRENGTH = 0.5;
 const NODE_IMPORT_REGEX = /['|"](.\/)?(\.\.\/[^(/|.)]*)\/([^/]+)\.svelte['|"]/g;
 
-const METADATA_FILE_PATH = NODE_PATH + 'metadata.json';
+const METADATA_FILE_PATH = NODES_DIR + 'metadata.json';
 
 type Metadata = {
   links: Map<string, Link[]>,
@@ -64,11 +65,12 @@ const processNode = async (
   nodeName: string,
   metadata: Metadata
 ) => {
-  // const current = nodeFileName.match(NODE_NAME_REGEX)![1];
   const { links, tags, nodes } = metadata;
 
+  if(!links.has(nodeName)) links.set(nodeName, []);
+
   console.log(`Processing node "${nodeName}"...`);
-  const path = `${NODE_PATH}/${nodeName}/${nodeName}.svelte`;
+  const path = `${NODES_DIR}/${nodeName}/${nodeName}.svelte`;
 
   // Create links based on imports
 
@@ -94,7 +96,7 @@ const processNode = async (
 
   // Read metadata
   try {
-    const metadataPath = `${NODE_PATH}/${nodeName}/metadata.json`;
+    const metadataPath = `${NODES_DIR}/${nodeName}/metadata.json`;
     if(fs.existsSync(metadataPath)) {
       const metadata = JSON.parse(fs.readFileSync(
         metadataPath,
@@ -205,7 +207,7 @@ const main = async () => {
 
   console.log("Processing metadata...")
 
-  await Promise.all(fs.readdirSync(NODE_PATH)
+  await Promise.all(fs.readdirSync(NODES_DIR)
     .filter(path => !path.includes('.')) // filter out files
     .map(path => processNode(
       path,

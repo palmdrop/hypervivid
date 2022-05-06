@@ -9,6 +9,15 @@
 </script>
 
 <footer>
+  <div class="date">
+    <h2>
+      Date
+    </h2>
+    <p>
+      { nodeMetadata.createdAt }
+    </p>
+  </div>
+  
   <div class="links">
     <h2>
       Links
@@ -32,7 +41,7 @@
 <style>
   footer {
     min-height: 50px;
-    padding: 2em;
+    padding: 2em 0em;
 
     display: flex;
     flex-direction: row;

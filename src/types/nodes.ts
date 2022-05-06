@@ -20,6 +20,9 @@ export type NodeContext
 export type NodeMetadata = {
   tags: string[],
   links: Link[],
+
+  createdAt: string,
+
   inline?: boolean,
 
   title?: string,
