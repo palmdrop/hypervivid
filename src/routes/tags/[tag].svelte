@@ -42,5 +42,6 @@
 
 <NodeList
   nodeNames={nodeNames}
-  context="preview-all"
+  contextFirst="multiple-secondary"
+  contextRest="link"
 />

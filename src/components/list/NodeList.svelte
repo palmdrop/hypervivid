@@ -1,37 +1,12 @@
 <script lang="ts">
   import type { NodeContext } from "$types/nodes";
-
   import Node from "../node/Node.svelte";
 
-  export let context: 'inline-all' | 'inline-first' | 'preview-all' | 'preview-first' | 'link' = 'inline-first';
   export let showOpenLink: boolean = true;
   export let nodeNames: string[];
 
-  let nodeContextFirst: NodeContext;
-  let nodeContextRest: NodeContext;
-
-  $: {
-    switch(context) {
-      case 'inline-all': {
-        nodeContextFirst = nodeContextRest = 'multiple';
-      } break;
-      case 'inline-first': {
-        nodeContextFirst = 'multiple-primary';
-        nodeContextRest = 'multiple-secondary';
-      } break;
-      case 'preview-all': {
-        nodeContextFirst = nodeContextRest = 'multiple-secondary';
-      } break;
-      case 'preview-first': {
-        nodeContextFirst = 'multiple-secondary';
-        nodeContextRest = 'link';
-      } break;
-      case 'link': 
-      default: {
-        nodeContextFirst = nodeContextRest = 'link';
-      }
-    }
-  }
+  export let contextFirst: NodeContext;
+  export let contextRest: NodeContext;
 </script>
 
 <ul class="node-list">
@@ -39,7 +14,7 @@
     <li>
       <Node
         name={name}
-        context={i === 0 ? nodeContextFirst : nodeContextRest }
+        context={i === 0 ? contextFirst : contextRest}
       />
       {#if showOpenLink}
         <a
@@ -57,6 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
   }
 
   li {

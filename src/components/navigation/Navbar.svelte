@@ -1,5 +1,6 @@
 <script lang="ts">
-  export let entries: { path: string, text: string }[];
+	import type { NavEntry } from '$types/general';
+  export let entries: NavEntry[];
 </script>
 
 <nav>

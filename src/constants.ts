@@ -1,1 +1,0 @@
-export const NODES_DIR = 'src/nodes';

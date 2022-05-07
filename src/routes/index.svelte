@@ -13,7 +13,8 @@
 
 <NodeList
   nodeNames={nodeNames} 
-  context="inline-first"
+  contextFirst="multiple-primary"
+  contextRest="link"
 />
 
 <style>

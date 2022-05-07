@@ -6,43 +6,86 @@
 
   $: links = nodeMetadata.links ?? [];
   $: tags = nodeMetadata.tags ?? [];
+
+  let expanded = true;
+
+  const onToggle = () => {
+    expanded = !expanded;
+  }
+
 </script>
 
-<footer>
-  <div class="date">
-    <h2>
-      Date
-    </h2>
-    <p>
-      { nodeMetadata.createdAt }
-    </p>
-  </div>
-  
-  <div class="links">
-    <h2>
-      Links
-    </h2>
-    <LinkList 
-      links={links}
-    />
-  </div>
+<footer
+  class:expanded
+> 
+  <button
+    class="expander"
+    on:click={onToggle}
+  >
+    {#if expanded}
+      --
+    {:else}
+      ++
+    {/if}
+  </button>
+  {#if expanded}
+    <div class="date">
+      <h2>
+        Date
+      </h2>
+      <p>
+        { nodeMetadata.createdAt }
+      </p>
+    </div>
+    
+    <div class="links">
+      <h2>
+        Links
+      </h2>
+      <LinkList 
+        links={links}
+      />
+    </div>
 
-  <div class="tags">
-    <h2>
-      Tags
-    </h2>
-    <TagList 
-      tags={tags}
-      orientation="horizontal"
-    />
-  </div>
+    <div class="tags">
+      <h2>
+        Tags
+      </h2>
+      <TagList 
+        tags={tags}
+        orientation="horizontal"
+      />
+    </div>
+  {:else}
+    <div>
+      Metadata
+    </div>
+  {/if}
 </footer>
 
 <style>
-  footer {
-    min-height: 50px;
-    padding: 2em 0em;
+  .expander {
+    position: absolute;
+    top: 0.1em;
+    left: 0.2em;
 
+    font-size: 1.5rem;
+
+    background: unset;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  .expanded {
+    min-height: 50px;
+    padding: 1em 0em;
+  }
+
+  footer {
+    padding: 0.5em 0em;
+
+    position:relative;
     display: flex;
     flex-direction: row;
 

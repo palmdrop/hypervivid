@@ -1,14 +1,18 @@
 <script lang="ts">
+	import Header from '$components/header/Header.svelte';
+	import type { NavEntry } from '$types/general.ts';
+  import { title$ } from '$stores/head';
+  import { metadata$ } from "$stores/metadata";
+  import metadata from "$nodes/metadata.json";
+
   import Navbar from '$components/navigation/Navbar.svelte';
-import { title$ } from '$stores/head';
 
   import '../global.css';
-  import metadata from "../nodes/metadata.json";
-  import { metadata$ } from "../stores/metadata";
+  import '../fonts.css';
 
   metadata$.set(metadata);
 
-  const navEntries = [
+  const navEntries: NavEntry[] = [
     {
       text: 'index',
       path: '/'
@@ -34,25 +38,15 @@ import { title$ } from '$stores/head';
   </title>
 </svelte:head>
 
-<header>
-  <Navbar
-    entries={navEntries}
-  />
-</header>
-
+<Header
+  navEntries={navEntries}
+/>
 <slot />
 
 <style global>
-  header {
-    padding: 1em 0em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid black;
-
-    width: 100vw;
-  }
-
   html {
     font-size: 16px;
+    font-family: 'Sporting_Grotesque-Regular'
   }
 
   h1 {
