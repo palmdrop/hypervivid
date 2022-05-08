@@ -11,6 +11,11 @@
   useTitle('Hypervivid ~ Hypersoft');
 </script>
 
+
+<h1>
+  HYPERVIVID  HYPERSOFT
+</h1>
+
 <NodeList
   nodeNames={nodeNames} 
   contextFirst="multiple-primary"
@@ -18,4 +23,7 @@
 />
 
 <style>
+  h1 {
+    text-align: center;
+  }
 </style>

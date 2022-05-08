@@ -20,6 +20,5 @@
 <style>
   .node-preview {
     padding: 1em;
-    border: 1px solid black;
   }
 </style>

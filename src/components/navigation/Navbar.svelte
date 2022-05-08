@@ -18,6 +18,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    flex-grow: 1;
+    max-width: 400px;
   }
 
   nav a {

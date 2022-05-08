@@ -8,7 +8,6 @@
   $: tags = nodeMetadata.tags ?? [];
 
   let expanded = true;
-
   const onToggle = () => {
     expanded = !expanded;
   }
@@ -23,9 +22,9 @@
     on:click={onToggle}
   >
     {#if expanded}
-      --
+      ᐯ 
     {:else}
-      ++
+      ᐱ
     {/if}
   </button>
   {#if expanded}
@@ -57,16 +56,19 @@
       />
     </div>
   {:else}
-    <div>
+    <button 
+      class="metadata-button"
+      on:click={onToggle}
+    >
       Metadata
-    </div>
+    </button>
   {/if}
 </footer>
 
 <style>
   .expander {
     position: absolute;
-    top: 0.1em;
+    top: 0.25em;
     left: 0.2em;
 
     font-size: 1.5rem;
@@ -90,11 +92,15 @@
     flex-direction: row;
 
     justify-content: space-around;
-    border-top: 1px solid black;
+    border-top: var(--borderPrimary);
   }
 
   footer h2 {
     font-size: 1.5rem;
     margin-bottom: 0.3em;
+  }
+
+  .metadata-button {
+    width: 100%;
   }
 </style>

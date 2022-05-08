@@ -14,7 +14,7 @@ import { useTitle } from "$utils/useTitle";
 
 <TagList
   tags={tags}
-  orientation="vertical"
+  orientation="horizontal"
 />
 
 <style>

@@ -7,21 +7,17 @@
 
   export let name: string;
 
-  let metadata: Record<string, any>
-  $: metadata = $metadata$.nodes[name];
-
-  let links: Link[];
-  $: links = $metadata$.links[name].sort((a, b) => getStringComparator(a.to, b.to));
-
-  let tags: string[];
-  $: tags = metadata.tags;
-
   let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
-    ...metadata,
-    links,
-    tags
-  };
+    ...$metadata$.nodes[name],
+    links: $metadata$.links[name]
+  }
+
+  // let links: Link[];
+  // $: links = $metadata$.links[name].sort((a, b) => getStringComparator(a.to, b.to));
+
+  // let tags: string[];
+  // $: tags = metadata.tags;
 
   // TODO: make wrapper read node file?
 

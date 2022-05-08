@@ -1,0 +1,70 @@
+/* Theme */
+:root {
+  --cFg: #383838;
+  --cBg: #EDEFEE;
+
+  --cFgInverted: var(--cBg);
+  --cBgInverted: var(--cFg);
+
+  --cAccent: #20A0B2;
+
+  --fDisplay: 'Mono';
+  --fRegular: 'Sporting_Grotesque-Regular';
+
+  --borderPrimary: 1px solid var(--cFg);
+  --borderRadius1: 15px;
+  --borderRadius2: 35px;
+  --borderRadius3: 100%;
+}
+
+/* Global styles */
+html {
+  font-size: 16px;
+  font-family: var(--fRegular);
+
+  background-color: var(--cBg);
+  color: var(--cFg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fDisplay);
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: var(--cFg);
+  text-decoration-thickness: 2px;
+  color: var(--cFg);
+
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration-thickness: 5px;
+}
+
+button {
+	cursor: pointer;
+}
+
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}

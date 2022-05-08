@@ -11,7 +11,7 @@
 
     const nodeNames = Object.entries(metadata.nodes)
       .filter(
-        ([, nodeMetadata]) => nodeMetadata.tags.includes(tag)
+        ([, nodeMetadata]) => (nodeMetadata.tags as string[]).includes(tag)
       ).map(
         ([name]) => name
       );
@@ -27,7 +27,6 @@
 
 <script lang="ts">
   import { useTitle } from '$utils/useTitle';
-  import Node from '$components/node/Node.svelte';
   import NodeList from '$components/list/NodeList.svelte';
 
   export let tag: string;

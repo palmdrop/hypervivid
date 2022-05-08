@@ -41,21 +41,23 @@
     "vivid": []
   },
   "tags": {
-    "c": 1,
-    "a": 0.5,
-    "b": 0.5,
-    "d": 0.5,
-    "e": 0.5,
-    "1a": 0.5,
-    "1b": 0.5,
-    "1c": 0.5
+    "tech": 1,
+    "art": 0.5,
+    "blue": 0.5,
+    "writing": 0.5,
+    "thoughts": 0.5,
+    "generative": 0.5,
+    "web": 0.5,
+    "literature": 0.5,
+    "about": 0.5,
+    "personal": 0.5
   },
   "nodes": {
     "N2": {
       "tags": [
-        "c",
-        "d",
-        "e"
+        "tech",
+        "thoughts",
+        "generative"
       ],
       "createdAt": "2022-05-21"
     },
@@ -76,7 +78,10 @@
       "image": ""
     },
     "info": {
-      "tags": [],
+      "tags": [
+        "about",
+        "personal"
+      ],
       "createdAt": "Fri, 06 May 2022 20:48:42 GMT",
       "inline": false,
       "title": "info",
@@ -86,18 +91,18 @@
     "N1": {
       "inline": false,
       "tags": [
-        "c",
-        "a",
-        "b"
+        "art",
+        "blue",
+        "writing"
       ],
       "createdAt": "2022-04-29"
     },
     "N3": {
       "inline": true,
       "tags": [
-        "1a",
-        "1b",
-        "1c"
+        "tech",
+        "web",
+        "literature"
       ],
       "createdAt": "2022-04-22"
     }

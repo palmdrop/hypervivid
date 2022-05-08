@@ -39,7 +39,7 @@
     position: relative;
     margin: 1em;
     padding: 2em;
-    border: 1px solid black;
+    border: var(--borderPrimary);
   }
 
   li a {
