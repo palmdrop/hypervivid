@@ -1,9 +1,10 @@
 <script lang="ts">
+  import type { SvelteComponent } from "svelte";
   import Lazy from "$components/util/Lazy.svelte";
+  import DefaultPreview from "./DefaultPreview.svelte";
   import { metadata$ } from "$stores/metadata";
   import type { GlobComponentImport } from "$types/imports";
-  import type { Link, NodeContext, NodeMetadata } from "$types/nodes";
-  import type { SvelteComponent } from "svelte";
+  import type { NodeContext, NodeMetadata } from "$types/nodes";
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
@@ -21,6 +22,7 @@
 
   let component: (() => Promise<SvelteComponent>) | undefined;
   let asLink = false;
+  let showDefaultPreview = false;
 
   $: {
     if(context === 'link') {
@@ -31,14 +33,17 @@
         !nodeMetadata.inline
       );
 
-      if(!showPreview) {
+      if(showPreview) {
+        component = lazyPreviewComponents[
+          `../../nodes/${name}/${name}.preview.svelte`
+        ]
+        // ?? (() => import('./DefaultPreview.svelte'));
+
+        showDefaultPreview = !component;
+      } else {
         component = lazyComponents[
           `../../nodes/${name}/${name}.svelte`
         ];
-      } else {
-        component = lazyPreviewComponents[
-          `../../nodes/${name}/${name}.preview.svelte`
-        ] ?? (() => import('./DefaultPreview.svelte'));
       }
     }
   }
@@ -50,11 +55,12 @@
   >
     { name }
   </a>
-{:else if !component}
-  <div>
-    Component { name } not found
-  </div>
-{:else}
+{:else if showDefaultPreview }
+  <DefaultPreview
+    name={name}
+    nodeMetadata={nodeMetadata}
+  />
+{:else if component}
   {#key component}
     <Lazy
       component={component}
@@ -64,6 +70,10 @@
       Loading...
     </Lazy>
   {/key}
+{:else}
+  <div>
+    Component { name } not found
+  </div>
 {/if}
 
 <style>
