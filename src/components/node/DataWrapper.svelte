@@ -13,12 +13,6 @@
     links: $metadata$.links[name]
   }
 
-  // let links: Link[];
-  // $: links = $metadata$.links[name].sort((a, b) => getStringComparator(a.to, b.to));
-
-  // let tags: string[];
-  // $: tags = metadata.tags;
-
   // TODO: make wrapper read node file?
 
   // TODO: Pass links/tags down to node using context? 
@@ -49,5 +43,7 @@
 
   .node-container {
     flex-grow: 1;
+
+    overflow: auto;
   }
 </style>

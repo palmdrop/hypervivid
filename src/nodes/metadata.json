@@ -42,15 +42,15 @@
   },
   "tags": {
     "tech": 1,
-    "art": 0.5,
-    "blue": 0.5,
-    "writing": 0.5,
-    "thoughts": 0.5,
-    "generative": 0.5,
-    "web": 0.5,
-    "literature": 0.5,
-    "about": 0.5,
-    "personal": 0.5
+    "thoughts": 0.6666666666666666,
+    "art": 0.3333333333333333,
+    "blue": 0.3333333333333333,
+    "writing": 0.3333333333333333,
+    "generative": 0.3333333333333333,
+    "web": 0.3333333333333333,
+    "literature": 0.3333333333333333,
+    "about": 0.3333333333333333,
+    "personal": 0.3333333333333333
   },
   "nodes": {
     "N2": {
@@ -79,6 +79,7 @@
     },
     "info": {
       "tags": [
+        "thoughts",
         "about",
         "personal"
       ],
@@ -91,6 +92,7 @@
     "N1": {
       "inline": false,
       "tags": [
+        "tech",
         "art",
         "blue",
         "writing"

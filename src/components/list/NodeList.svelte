@@ -16,7 +16,7 @@
         name={name}
         context={i === 0 ? contextFirst : contextRest}
       />
-      {#if showOpenLink}
+      {#if showOpenLink && (i === 0 ? contextFirst : contextRest) !== 'link'}
         <a
           href={`/nodes/${name}`}
         >
@@ -33,19 +33,22 @@
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
+
+    width: 100%;
   }
 
   li {
     position: relative;
     margin: 1em;
-    padding: 2em;
+    padding: 2.5em;
     border: var(--borderPrimary);
+    border-radius: var(--borderRadius1);
   }
 
   li a {
     position: absolute;
-    top: 0.2em;
-    right: 0.5em;
+    top: 0.7em;
+    right: 0.7em;
   }
 </style>
 

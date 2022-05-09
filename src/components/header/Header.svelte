@@ -16,7 +16,6 @@
 <style>
   header {
     padding: 1em 0em;
-    margin-bottom: 1em;
     border-bottom: var(--borderPrimary);
 
     width: 100vw;

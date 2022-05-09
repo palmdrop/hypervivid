@@ -1,13 +1,25 @@
 <script lang="ts">
+  import { metadata$ } from "$stores/metadata";
+
   export let tags: string[];
   export let orientation: 'vertical' | 'horizontal'
+
+  $: tagsAndWeights = $metadata$.tags as { [tag: string]: number };
+
+  $: weightedTags = tags
+    .map(tag => ({
+      tag,
+      weight: Math.pow(tagsAndWeights[tag], 0.5)
+    }))
+    .sort((t1, t2) => (t2.weight - t1.weight));
 </script>
 
 <ul class={orientation}>
-  {#each tags as tag }
+  {#each weightedTags as {tag, weight} }
     <li>
       <a 
         href={`/tags/${tag}`}
+        style={`opacity: ${weight}`}
       >
         { tag }
       </a>
