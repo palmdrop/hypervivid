@@ -1,0 +1,13 @@
+{
+  "tags": ["about", "internet"],
+  "links": [{
+    "to": "info",
+    "kind": "tangent",
+    "strength": 0.5
+  }],
+  "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
+  "inline": false,
+  "title": "manifest",
+  "description": "",
+  "image": ""
+}

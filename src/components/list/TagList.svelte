@@ -3,25 +3,25 @@
 
   export let tags: string[];
   export let orientation: 'vertical' | 'horizontal'
-
-  $: tagsAndWeights = $metadata$.tags as { [tag: string]: number };
+  export let showCount = false;
 
   $: weightedTags = tags
     .map(tag => ({
       tag,
-      weight: Math.pow(tagsAndWeights[tag], 0.5)
+      weight: Math.pow($metadata$.tags[tag].weight, 0.5),
+      count: $metadata$.tags[tag].count
     }))
     .sort((t1, t2) => (t2.weight - t1.weight));
 </script>
 
 <ul class={orientation}>
-  {#each weightedTags as {tag, weight} }
+  {#each weightedTags as {tag, weight, count} }
     <li>
       <a 
         href={`/tags/${tag}`}
         style={`opacity: ${weight}`}
       >
-        { tag }
+        { tag } {#if showCount } ({count}) {/if}
       </a>
     </li>
   {/each}
@@ -56,8 +56,8 @@
     color: var(--cFgInverted);
     background-color: var(--cBgInverted);
 
-    padding: 0.1em 0.7em;
-    margin: 0.1em;
+    padding: 0.1em 0.8em;
+    margin: 0.1em 0.2em;
     border-radius: var(--borderRadius1);
     border: var(--borderPrimary);
   }

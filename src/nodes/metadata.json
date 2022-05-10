@@ -31,26 +31,80 @@
     "N3": [
       {
         "from": "N3",
+        "to": "N1",
+        "kind": "tangent",
+        "strength": 0.3
+      },
+      {
+        "from": "N3",
         "to": "N2",
         "kind": "consumed",
         "strength": 0.5
       }
     ],
-    "info": [],
-    "scroll": [],
-    "vivid": []
+    "info": [
+      {
+        "from": "info",
+        "to": "manifest",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "manifest": [
+      {
+        "from": "manifest",
+        "to": "info",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "scroll": []
   },
   "tags": {
-    "tech": 1,
-    "thoughts": 0.6666666666666666,
-    "art": 0.3333333333333333,
-    "blue": 0.3333333333333333,
-    "writing": 0.3333333333333333,
-    "generative": 0.3333333333333333,
-    "web": 0.3333333333333333,
-    "literature": 0.3333333333333333,
-    "about": 0.3333333333333333,
-    "personal": 0.3333333333333333
+    "tech": {
+      "weight": 1,
+      "count": 3
+    },
+    "thoughts": {
+      "weight": 0.6666666666666666,
+      "count": 2
+    },
+    "about": {
+      "weight": 0.6666666666666666,
+      "count": 2
+    },
+    "art": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "blue": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "writing": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "generative": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "web": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "literature": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "personal": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "internet": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    }
   },
   "nodes": {
     "N2": {
@@ -61,6 +115,17 @@
       ],
       "createdAt": "2022-05-21"
     },
+    "manifest": {
+      "tags": [
+        "about",
+        "internet"
+      ],
+      "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
+      "inline": false,
+      "title": "manifest",
+      "description": "",
+      "image": ""
+    },
     "scroll": {
       "tags": [],
       "createdAt": "Fri, 06 May 2022 21:18:48 GMT",
@@ -69,18 +134,10 @@
       "description": "",
       "image": ""
     },
-    "vivid": {
-      "tags": [],
-      "createdAt": "Fri, 06 May 2022 20:52:54 GMT",
-      "inline": false,
-      "title": "vivid",
-      "description": "",
-      "image": ""
-    },
     "info": {
       "tags": [
-        "thoughts",
         "about",
+        "thoughts",
         "personal"
       ],
       "createdAt": "Fri, 06 May 2022 20:48:42 GMT",

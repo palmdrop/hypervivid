@@ -22,5 +22,7 @@
 
     display: flex;
     justify-content: space-between;
+
+    background-color: var(--cBg);
   }
 </style>

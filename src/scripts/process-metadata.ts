@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { Link } from '../types/nodes';
+import type { Link, LinkKind } from '../types/nodes';
 import fs from 'fs';
 
 // TODO: add to env
-// import { NODES_DIR } from '../constants';
 const NODES_DIR = 'src/nodes/';
 
 const DEFAULT_LINK_STRENGTH = 0.5;
@@ -38,14 +37,23 @@ const addLink = (node: string, link: Link, links: Map<string, Link[]>) => {
 const addUndirectedLink = (
   current: string, 
   other: string,
-  links: Map<string, Link[]>
+  links: Map<string, Link[]>,
+  strength = DEFAULT_LINK_STRENGTH,
+  kind: LinkKind = 'consumes'
 ) => {
+  const currentKind = kind;
+  const otherKind = kind === 'consumes' 
+    ? 'consumed'
+    : (kind === 'consumed') 
+    ? 'consumes'
+    : 'tangent';
+
   addLink(
     current, {
       from: current,
       to: other,
-      kind: 'consumes',
-      strength: DEFAULT_LINK_STRENGTH
+      kind: currentKind,
+      strength
     }, 
     links
   );
@@ -54,8 +62,8 @@ const addUndirectedLink = (
     other, {
       from: other,
       to: current,
-      kind: 'consumed',
-      strength: DEFAULT_LINK_STRENGTH
+      kind: otherKind,
+      strength
     }, 
     links
   );
@@ -121,7 +129,10 @@ const processNode = async (
           tags.set(tag, 1.0);
         }
       });
-      nodeLinks.forEach(link => addLink(nodeName, { from: nodeName, ...link }, links));
+      nodeLinks.forEach(link => 
+        // addLink(nodeName, { from: nodeName, ...link }, links)
+        addUndirectedLink(nodeName, link.to, links, link.strength, link.kind)
+      );
 
       nodes[nodeName] = metadata;
     } else {
@@ -173,25 +184,33 @@ const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, nu
 }
 
 const processTags = (tags: Map<string, number>) => {
-  let maxScore = 0.0;
+  let maxWeight = 0.0;
 
-  // Normalize
+  const tagsData = new Map<string, {
+    weight: number,
+    count: number
+  }>();
+
+  // Calculate weight
   tags.forEach(value => {
-    maxScore = Math.max(value, maxScore);
+    maxWeight = Math.max(value, maxWeight);
   });
 
-  tags.forEach((score, tag) => {
-    tags.set(tag, score / maxScore)
+  tags.forEach((count, tag) => {
+    tagsData.set(tag, {
+      weight: count / maxWeight,
+      count,
+    })
   });
 
   // Sort
-  return [...tags.entries()].sort((e1, e2) => {
-    return e2[1] - e1[1]
+  return [...tagsData.entries()].sort((e1, e2) => {
+    return e2[1].weight - e1[1].weight
   }).reduce(
     (acc, entry) => {
       acc[entry[0]] = entry[1];
       return acc;
-    }, {} as Record<string, number>
+    }, {} as Record<string, { weight: number, count: number }>
   );
 }
 

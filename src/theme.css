@@ -15,6 +15,8 @@
   --borderRadius1: 15px;
   --borderRadius2: 35px;
   --borderRadius3: 100%;
+
+  --textShadowDisplay: 0px 0px 10px #813a7353;
 }
 
 /* Global styles */

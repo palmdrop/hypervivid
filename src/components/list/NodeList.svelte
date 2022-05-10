@@ -31,7 +31,6 @@
   ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
     overflow-y: auto;
 
     width: 100%;

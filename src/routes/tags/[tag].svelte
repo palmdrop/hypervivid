@@ -35,12 +35,20 @@
   $: useTitle(`Tag ~ ${tag}`);
 </script>
 
-<h1>
-  { tag }
-</h1>
+<main>
+  <h1>
+    { tag }
+  </h1>
 
-<NodeList
-  nodeNames={nodeNames}
-  contextFirst="multiple-secondary"
-  contextRest="link"
-/>
+  <NodeList
+    nodeNames={nodeNames}
+    contextFirst="multiple-secondary"
+    contextRest="link"
+  />
+</main>
+
+<style>
+  main {
+    padding-top: 1em;
+  }
+</style>

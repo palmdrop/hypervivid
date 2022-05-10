@@ -4,27 +4,39 @@
 </script>
 
 <nav>
-  {#each entries as {path, text} (path)}
-    <a
-      href={path}
-    >
-      { text }
-    </a>
+  <ul>
+  {#each entries as {path, text}, i (path)}
+    <li>
+      <a
+        href={path}
+      >
+        { text }
+      </a>
+      {#if i !== (entries.length - 1) } 
+        / 
+      {/if}
+    </li>
   {/each}
+  </ul>
 </nav>
 
 <style>
   nav {
+  }
+
+  ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    flex-grow: 1;
-    max-width: 400px;
   }
 
-  nav a {
+  li {
+  }
+
+  a {
     width: 100%;
     text-align: center;
+
+    padding: 0em 1.5em;
   }
 </style>
