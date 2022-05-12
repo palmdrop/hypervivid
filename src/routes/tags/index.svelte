@@ -12,7 +12,7 @@ import Paragraph from "$components/text/Paragraph.svelte";
 
 <main>
   <h1>
-    Tags
+    TAGS
   </h1>
 
   <Paragraph>

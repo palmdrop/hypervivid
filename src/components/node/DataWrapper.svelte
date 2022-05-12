@@ -2,7 +2,7 @@
 	import type { NodeMetadata, NodeName } from '$types/nodes';
 
 	import { metadata$ } from '$stores/metadata';
-  import Footer from './Footer.svelte';
+  import MetadataFooter from '$components/footer/metadata/Footer.svelte';
 
   export let name: NodeName;
 
@@ -20,8 +20,9 @@
     <slot />
   </main>
 
-  <Footer 
-    nodeMetadata={nodeMetadata}
+  <MetadataFooter 
+    { name }
+    { nodeMetadata }
   />
 </div>
 

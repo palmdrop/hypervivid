@@ -14,7 +14,7 @@
 
 <main>
   <h1>
-    Nodes
+    NODES
   </h1>
 
   <NodeList

@@ -1,7 +1,11 @@
 <script lang="ts">
 	import LinkList from '$components/list/LinkList.svelte';
   import TagList from '$components/list/TagList.svelte';
-  import type { NodeMetadata } from '$types/nodes';
+  import type { NodeMetadata, NodeName } from '$types/nodes';
+  import { formatDate } from '$utils/general';
+import Cell from './Cell.svelte';
+
+  export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
 
   $: links = nodeMetadata.links ?? [];
@@ -17,44 +21,38 @@
 <footer
   class:expanded
 > 
-  <button
-    class="expander"
-    on:click={onToggle}
-  >
-    {#if expanded}
-      ᐯ 
-    {:else}
-      ᐱ
-    {/if}
-  </button>
   {#if expanded}
-    <div class="date">
-      <h2>
-        Date
-      </h2>
-      <p>
-        { nodeMetadata.createdAt }
-      </p>
+    <div class="multi-cell">
+      <Cell 
+        title={name}
+      >
+        <p>{ nodeMetadata.title ?? name }</p>
+      </Cell>
+      <Cell
+        title="Date"
+      >
+        <p>
+          { formatDate(nodeMetadata.createdAt) }
+        </p>
+      </Cell>
     </div>
     
-    <div class="links">
-      <h2>
-        Links
-      </h2>
+    <Cell
+      title="Links"
+    >
       <LinkList 
         links={links}
       />
-    </div>
+    </Cell>
 
-    <div class="tags">
-      <h2>
-        Tags
-      </h2>
+    <Cell
+      title="Tags"
+    >
       <TagList 
         tags={tags}
-        orientation="horizontal"
+        orientation="vertical"
       />
-    </div>
+    </Cell>
   {:else}
     <button 
       class="metadata-button"
@@ -80,24 +78,16 @@
   }
 
   .expanded {
-    min-height: 50px;
-    padding: 1em 0em;
   }
 
   footer {
-    padding: 0.5em 0em;
-
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: row;
 
     justify-content: space-around;
-    border-top: var(--borderPrimary);
-  }
 
-  footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3em;
+    max-height: 150px;
   }
 
   .metadata-button {

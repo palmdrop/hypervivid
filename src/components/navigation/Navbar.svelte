@@ -1,5 +1,6 @@
 <script lang="ts">
-	import type { NavEntry } from '$types/general';
+	import Point from '$components/ornaments/Point.svelte';
+import type { NavEntry } from '$types/general';
   export let entries: NavEntry[];
 </script>
 
@@ -13,7 +14,7 @@
         { text }
       </a>
       {#if i !== (entries.length - 1) } 
-        / 
+        |
       {/if}
     </li>
   {/each}
@@ -31,12 +32,11 @@
   }
 
   li {
+    display: flex;
   }
 
   a {
-    width: 100%;
     text-align: center;
-
     padding: 0em 1.5em;
   }
 </style>

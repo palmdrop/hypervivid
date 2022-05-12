@@ -13,3 +13,26 @@ export const getStringComparator = (
     return 0;
   }
 }
+
+export const getLang = () => {
+  if(typeof navigator !== 'undefined') {
+    if(navigator.languages) return navigator.languages[0];
+    if(navigator.language) return navigator.language;
+  }
+
+  return 'en-US';
+}
+
+export const formatDate = (
+  dateString: string
+) => {
+  const date = new Date(dateString);
+  const lang = getLang();
+  return date.toLocaleDateString(
+    lang, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }
+  );
+}
