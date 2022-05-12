@@ -1,35 +1,43 @@
 <script lang="ts">
-  import type { SvelteComponent } from "svelte";
+  import { setContext, type SvelteComponent } from "svelte";
   import Lazy from "$components/util/Lazy.svelte";
   import DefaultPreview from "./DefaultPreview.svelte";
   import { metadata$ } from "$stores/metadata";
   import type { GlobComponentImport } from "$types/imports";
-  import type { NodeContext, NodeMetadata } from "$types/nodes";
+  import type { NodeName, NodeMode, NodeMetadata, NodeContext } from "$types/nodes";
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
 
-  export let name: string;
-  export let context: NodeContext;
+  export let name: NodeName;
+  export let mode: NodeMode
 
   // TODO figure out if I need all metadata for each node? if it's just in preview, do I need it?
   // TODO if in link mode, I definitely do not need it!
   let nodeMetadata: NodeMetadata;
-  $: nodeMetadata = {
-    ...$metadata$.nodes[name],
-    links: $metadata$.links[name]
-  } as NodeMetadata;
+
+  $: if(mode !== 'link') {
+    nodeMetadata = {
+      ...$metadata$.nodes[name],
+      links: $metadata$.links[name]
+    } as NodeMetadata;
+
+    setContext<NodeContext>(name, {
+      name: name as NodeName,
+      metadata: nodeMetadata
+    })
+  }
 
   let component: (() => Promise<SvelteComponent>) | undefined;
   let asLink = false;
   let showDefaultPreview = false;
 
   $: {
-    if(context === 'link') {
+    if(mode === 'link') {
       asLink = true;
     } else {
       const showPreview = (
-        !['single', 'multiple', 'multiple-primary'].includes(context) &&
+        !['single', 'multiple', 'multiple-primary'].includes(mode) &&
         !nodeMetadata.inline
       );
 
@@ -37,7 +45,6 @@
         component = lazyPreviewComponents[
           `../../nodes/${name}/${name}.preview.svelte`
         ]
-        // ?? (() => import('./DefaultPreview.svelte'));
 
         showDefaultPreview = !component;
       } else {
@@ -58,14 +65,11 @@
 {:else if showDefaultPreview }
   <DefaultPreview
     name={name}
-    nodeMetadata={nodeMetadata}
   />
 {:else if component}
   {#key component}
     <Lazy
       component={component}
-      name={name}
-      nodeMetadata={nodeMetadata}
     >
       Loading...
     </Lazy>

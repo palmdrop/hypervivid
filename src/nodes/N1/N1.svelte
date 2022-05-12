@@ -1,11 +1,10 @@
 <script lang="ts">
-  import type { NodeMetadata } from '$types/nodes';
-import { useTitle } from '$utils/useTitle';
+  import { useTitle } from '$utils/useTitle';
 
 	import N2 from '../N2/N2.svelte';
 
-  export let name: string;
-  export let nodeMetadata: NodeMetadata;
+  import { getNodeContext } from '$utils/useNodeContext';
+  const { name, metadata } = getNodeContext('N1');
 
   useTitle('custom title');
 </script>

@@ -1,7 +1,9 @@
 <script context="module" lang="ts">
-	import metadata from '$nodes/metadata.json';
+	import metadata from '$nodes/metadata';
+	import type { NodeName, Tag } from '$types/nodes';
+
   export async function load ({ params }) {
-    const { tag } = params;
+    const { tag }: { tag: Tag } = params;
 
     const tags = metadata.tags ?? {};
     if(!tags[tag]) return {
@@ -11,7 +13,7 @@
 
     const nodeNames = Object.entries(metadata.nodes)
       .filter(
-        ([, nodeMetadata]) => (nodeMetadata.tags as string[]).includes(tag)
+        ([, nodeMetadata]) => (nodeMetadata.tags as unknown as Tag[]).includes(tag)
       ).map(
         ([name]) => name
       );
@@ -29,8 +31,8 @@
   import { useTitle } from '$utils/useTitle';
   import NodeList from '$components/list/NodeList.svelte';
 
-  export let tag: string;
-  export let nodeNames: string[];
+  export let tag: Tag;
+  export let nodeNames: NodeName[];
 
   $: useTitle(`Tag ~ ${tag}`);
 </script>

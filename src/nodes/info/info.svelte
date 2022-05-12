@@ -1,9 +1,7 @@
 
   <script lang="ts">
-    import type { NodeMetadata } from "$types/nodes";
-
-    export let name: string;
-    export let nodeMetadata: NodeMetadata;
+    import { getNodeContext } from "$utils/useNodeContext";
+    const { name, metadata } = getNodeContext('info');
 
   </script>
 

@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { getStringComparator } from '$utils/general';
-	import type { Link, NodeMetadata } from '$types/nodes';
+	import type { NodeMetadata, NodeName } from '$types/nodes';
 
 	import { metadata$ } from '$stores/metadata';
   import Footer from './Footer.svelte';
 
-  export let name: string;
+  export let name: NodeName;
 
   let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
@@ -14,12 +13,8 @@
   }
 
   // TODO: make wrapper read node file?
-
-  // TODO: Pass links/tags down to node using context? 
-  // TODO: Show consumed nodes in separate category? 
 </script>
 
-<!-- Section or main depending on context? -->
 <div class="wrapper">
   <main class="node-container">
     <slot />

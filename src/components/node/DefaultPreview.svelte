@@ -1,8 +1,11 @@
 <script lang="ts">
 	import TagList from '$components/list/TagList.svelte';
-  import type { NodeMetadata } from '$types/nodes';
-  export let name: string;
-  export let nodeMetadata: NodeMetadata;
+  import type { NodeContext, NodeName } from '$types/nodes';
+  import { getContext } from 'svelte';
+
+  export let name: NodeName;
+
+  $: context = getContext<NodeContext>(name)
 </script>
 
 <div class="node-preview">
@@ -12,7 +15,7 @@
     { name }
   </a>
   <TagList
-    tags={nodeMetadata.tags}
+    tags={context.metadata.tags}
     orientation="horizontal"
   />
 </div>

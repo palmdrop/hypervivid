@@ -1,16 +1,20 @@
-export type LinkKind 
-  = 'consumes'
-  | 'consumed'
-  | 'tangent';
+import type metadata from '../nodes/metadata';
+
+export type NodeName = keyof typeof metadata['nodes'];
+export type LinkKind = NonNullable<
+  (typeof metadata['links'])[NodeName][0]
+>['kind'];
+
+export type Tag = typeof metadata['nodes'][NodeName]['tags'][number];
 
 export type Link = {
-  from?: string,
+  from?: string, // TODO: use "NodeName"
   to: string,
   kind: LinkKind,
   strength: number
 };
 
-export type NodeContext 
+export type NodeMode 
   = 'single' 
   | 'multiple' 
   | 'multiple-primary' 
@@ -18,7 +22,7 @@ export type NodeContext
   | 'link';
 
 export type NodeMetadata = {
-  tags: string[],
+  tags: Tag[],
   links: Link[],
 
   createdAt: string,
@@ -32,6 +36,7 @@ export type NodeMetadata = {
   // rest?: Record<string, any>
 } & Record<string, any>; 
 
-export type NodeContextData = {
-  context: NodeContext
+export type NodeContext = {
+  name: NodeName,
+  metadata: NodeMetadata
 }

@@ -1,6 +1,6 @@
 import { page } from "$app/stores"
 import { title$ } from "$stores/head";
-import { onDestroy, onMount } from "svelte"
+import { onDestroy } from "svelte"
 import type { Unsubscriber } from "svelte/store";
 
 let unsubscribe: Unsubscriber | null;

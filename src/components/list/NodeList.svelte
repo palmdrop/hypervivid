@@ -1,12 +1,12 @@
 <script lang="ts">
-  import type { NodeContext } from "$types/nodes";
+  import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
 
   export let showOpenLink: boolean = true;
-  export let nodeNames: string[];
+  export let nodeNames: NodeName[];
 
-  export let contextFirst: NodeContext;
-  export let contextRest: NodeContext;
+  export let contextFirst: NodeMode
+  export let contextRest: NodeMode
 </script>
 
 <ul class="node-list">
@@ -14,7 +14,7 @@
     <li>
       <Node
         name={name}
-        context={i === 0 ? contextFirst : contextRest}
+        mode={i === 0 ? contextFirst : contextRest}
       />
       {#if showOpenLink && (i === 0 ? contextFirst : contextRest) !== 'link'}
         <a

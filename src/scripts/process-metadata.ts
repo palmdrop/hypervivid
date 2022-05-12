@@ -8,8 +8,10 @@ const NODES_DIR = 'src/nodes/';
 
 const DEFAULT_LINK_STRENGTH = 0.5;
 const NODE_IMPORT_REGEX = /['|"](.\/)?(\.\.\/[^(/|.)]*)\/([^/]+)\.svelte['|"]/g;
+const NODE_NAME_REGEX = /<Node[^(/>)]+name={?["|'](\w+)["|']}?[^(/>)]*\/>/g;
 
-const METADATA_FILE_PATH = NODES_DIR + 'metadata.json';
+// const METADATA_FILE_PATH = NODES_DIR + 'metadata.json';
+const METADATA_FILE_PATH = NODES_DIR + 'metadata.ts';
 
 type Metadata = {
   links: Map<string, Link[]>,
@@ -92,15 +94,17 @@ const processNode = async (
     'utf8'
   );
 
-  const matches = [...data.matchAll(
+  [...data.matchAll(
     NODE_IMPORT_REGEX
-  )];
-
-  matches.forEach(match => {
-    const other = match[3];
-
+  )].forEach(([,,,other]) => {
     addUndirectedLink(nodeName, other, links);
-  })
+  });
+
+  [...data.matchAll(
+    NODE_NAME_REGEX
+  )].forEach(([,other]) => {
+    addUndirectedLink(nodeName, other, links);
+  });
 
   // Read metadata
   try {
@@ -254,11 +258,11 @@ const main = async () => {
   // Write to file
   fs.writeFileSync(
     METADATA_FILE_PATH,
-    JSON.stringify({
+    `export default ${JSON.stringify({
       ...metadata,
       links: Object.fromEntries(links),
       tags: processTags(tags)
-    }, null, 2)
+    }, null, 2)} as const;`
   );
 
   console.log("Done!");

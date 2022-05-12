@@ -1,13 +1,14 @@
 <script lang="ts">
-  import { blur, fade } from "svelte/transition";
+	import type { NodeName } from '$types/nodes';
+  import { fade } from "svelte/transition";
 
   import NodeList from "$components/list/NodeList.svelte";
 
   import { metadata$ } from "$stores/metadata";
   import { useTitle } from "$utils/useTitle";
-import Paragraph from "$components/text/Paragraph.svelte";
+  import Paragraph from "$components/text/Paragraph.svelte";
 
-  $: nodeNames = Object.keys($metadata$.nodes);
+  $: nodeNames = Object.keys($metadata$.nodes) as NodeName[];
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
   useTitle('Hypervivid ~ Hypersoft');
@@ -88,7 +89,7 @@ import Paragraph from "$components/text/Paragraph.svelte";
     color: var(--cFgInverted);
     text-shadow: var(--textShadowDisplay);
 
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .landing img {

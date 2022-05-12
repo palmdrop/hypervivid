@@ -1,10 +1,9 @@
 <script lang="ts">
   import Paragraph from '$components/text/Paragraph.svelte';
-import type { NodeMetadata } from '$types/nodes';
-	import N3 from './../N3/N3.svelte';
+  import { getNodeContext } from '$utils/useNodeContext';
+  import Node from '$components/node/Node.svelte';
 
-  export let name: string;
-  export let nodeMetadata: NodeMetadata;
+  const { name, metadata } = getNodeContext('N2');
 </script>
 
 <div>
@@ -14,7 +13,10 @@ import type { NodeMetadata } from '$types/nodes';
   </Paragraph>
 
   <!-- TODO: Context wrapper for nodes, pass node as argument -->
-  <N3 />
+  <Node 
+    name='N3'
+    mode='multiple-secondary'
+  />
 
   <Paragraph>
     Pretty cool.

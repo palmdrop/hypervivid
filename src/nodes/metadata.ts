@@ -1,4 +1,4 @@
-{
+export default {
   "links": {
     "N1": [
       {
@@ -166,4 +166,4 @@
       "createdAt": "2022-04-22"
     }
   }
-}
+} as const;

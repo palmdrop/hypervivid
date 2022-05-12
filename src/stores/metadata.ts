@@ -1,6 +1,8 @@
 import { writable } from "svelte/store";
-import metadata from '$nodes/metadata.json';
+import metadata from '$nodes/metadata';
+import type { DeepWriteable } from "$types/utils";
 
-export const metadata$ = writable<
-  typeof metadata
->(metadata);
+
+export const metadata$ = writable(
+  metadata as DeepWriteable<typeof metadata>
+);

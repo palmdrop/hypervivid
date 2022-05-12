@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	import type { NodeName } from '$types/nodes';
   import NodeList from "$components/list/NodeList.svelte";
   import { useTitle } from "$utils/useTitle";
 
@@ -6,7 +7,7 @@
 
   const nodeNames = Object.keys(
     $metadata$.nodes
-  );
+  ) as NodeName[];
 
   useTitle('Nodes');
 </script>
