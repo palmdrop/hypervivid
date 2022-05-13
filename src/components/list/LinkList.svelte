@@ -10,17 +10,21 @@
   $: formattedLinks = links.map(link => formatLink(link));
 </script>
 
-<ul>
-  {#each links as link, i (link)}
-    <li>
-      <a
-        href={`/nodes/${link.to}`}
-      >
-        { formattedLinks[i] }
-      </a>
-    </li>
-  {/each}
-</ul>
+{#if links.length}
+  <ul>
+    {#each links as link, i (link)}
+      <li>
+        <a
+          href={`/nodes/${link.to}`}
+        >
+          { formattedLinks[i] }
+        </a>
+      </li>
+    {/each}
+  </ul>
+{:else}
+  <slot />
+{/if}
 
 <style>
   li {

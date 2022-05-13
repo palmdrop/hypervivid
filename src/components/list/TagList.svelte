@@ -14,18 +14,22 @@
     .sort((t1, t2) => (t2.weight - t1.weight));
 </script>
 
-<ul class={orientation}>
-  {#each weightedTags as {tag, weight, count} }
-    <li>
-      <a 
-        href={`/tags/${tag}`}
-        style={`opacity: ${weight}`}
-      >
-        { tag } {#if showCount } ({count}) {/if}
-      </a>
-    </li>
-  {/each}
-</ul>
+{#if tags.length}
+  <ul class={orientation}>
+    {#each weightedTags as {tag, weight, count} }
+      <li>
+        <a 
+          href={`/tags/${tag}`}
+          style={`opacity: ${weight}`}
+        >
+          { tag } {#if showCount } ({count}) {/if}
+        </a>
+      </li>
+    {/each}
+  </ul>
+{:else}
+  <slot />
+{/if}
 
 <style>
   ul {

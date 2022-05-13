@@ -4,7 +4,9 @@
   import TagList from '$components/list/TagList.svelte';
   import type { NodeMetadata, NodeName } from '$types/nodes';
   import { formatDate } from '$utils/general';
+  import Paragraph from '$components/text/Paragraph.svelte';
   import Cell from './Cell.svelte';
+  import { backInOut, expoInOut, sineInOut } from 'svelte/easing';
 
   export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
@@ -31,13 +33,16 @@
   { #if expanded }
   <div 
     class="content"
-    transition:slide|local={{ duration: 300 }}
+    transition:slide|local={{ 
+      duration: 400,
+      easing: sineInOut
+    }}
   >
     <div class="multi-cell">
       <Cell 
         title="NAME"
       >
-        <p>{ nodeMetadata.title ?? name }</p>
+        <Paragraph center>{ nodeMetadata.title ?? name }</Paragraph>
       </Cell>
       <Cell
         title="DATE"
@@ -53,7 +58,12 @@
     >
       <LinkList 
         links={links}
-      />
+        formatLink={link => link.to}
+      >
+        <Paragraph center faded>
+          This node has no links...
+        </Paragraph>
+      </LinkList>
     </Cell>
 
     <Cell
@@ -62,7 +72,11 @@
       <TagList 
         tags={tags}
         orientation="horizontal"
-      />
+      >
+        <Paragraph center faded>
+          This node has no tags...
+        </Paragraph>
+      </TagList>
     </Cell>
   </div>
   {/if}
@@ -94,12 +108,12 @@
     font-size: 2.3rem;
 
     transform: rotate(0);
-    transition: 0.3s;
+    transition: 0.8s;
   }
 
   .expanded .arrow {
     left: 0px;
-    top: 4%;
+    top: 3%;
     transform: rotate(90deg);
   }
 

@@ -2,9 +2,26 @@
 	import type { NavEntry } from '$types/general';
 	import Navbar from '$components/navigation/Navbar.svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
-import Sphere from '$components/ornaments/Sphere.svelte';
+  import Sphere from '$components/ornaments/Sphere.svelte';
 
-  export let navEntries: NavEntry[];
+  const navEntries: NavEntry[] = [
+    {
+      text: 'nodes',
+      path: '/nodes'
+    },
+    {
+      text: 'tags',
+      path: '/tags'
+    },
+    {
+      text: 'info',
+      path: '/nodes/info'
+    },
+    {
+      text: 'manifest',
+      path: '/nodes/manifest'
+    }
+  ];
 </script>
 
 <header>

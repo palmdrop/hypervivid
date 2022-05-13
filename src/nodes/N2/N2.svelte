@@ -15,7 +15,7 @@
   <!-- TODO: Context wrapper for nodes, pass node as argument -->
   <Node 
     name='N3'
-    mode='multiple-secondary'
+    mode='inline'
   />
 
   <Paragraph>

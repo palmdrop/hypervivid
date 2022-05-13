@@ -56,8 +56,8 @@
   <section>
     <NodeList
       nodeNames={nodeNames} 
-      contextFirst="multiple-primary"
-      contextRest="multiple-secondary"
+      contextFirst="inline"
+      contextRest="preview"
     />
   </section>
 </main>

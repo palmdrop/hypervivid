@@ -21,6 +21,8 @@
 
     flex-grow: 2;
     text-align: center;
+
+    max-width: 200%;
   }
 
   .cell h2 {

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { setContext, type SvelteComponent } from "svelte";
   import Lazy from "$components/util/Lazy.svelte";
-  import DefaultPreview from "./DefaultPreview.svelte";
+  import DefaultPreview from "./preview/DefaultPreview.svelte";
   import { metadata$ } from "$stores/metadata";
   import type { GlobComponentImport } from "$types/imports";
   import type { NodeName, NodeMode, NodeMetadata, NodeContext } from "$types/nodes";
@@ -37,7 +37,8 @@
       asLink = true;
     } else {
       const showPreview = (
-        !['single', 'multiple', 'multiple-primary'].includes(mode) &&
+        // !['single', 'multiple', 'multiple-primary'].includes(mode) &&
+        !['only', 'main', 'inline'].includes(mode) &&
         !nodeMetadata.inline
       );
 

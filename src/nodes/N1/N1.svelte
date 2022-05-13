@@ -6,10 +6,16 @@
   import { getNodeContext } from '$utils/useNodeContext';
   const { name, metadata } = getNodeContext('N1');
 
+  let count = 0;
+
+  setInterval(() => {
+    count += 1;
+  }, 100)
+
   useTitle('custom title');
 </script>
 
-<div>Test 1</div>
+<div>Count: {count}</div>
 
 <style>
 </style>

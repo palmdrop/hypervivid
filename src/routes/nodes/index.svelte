@@ -19,7 +19,7 @@
 
   <NodeList
     nodeNames={nodeNames}
-    contextFirst="multiple-secondary"
+    contextFirst="inline"
     contextRest="link"
   />
 </main>

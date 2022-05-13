@@ -15,11 +15,18 @@ export type Link = {
 };
 
 export type NodeMode 
+  = 'link'
+  | 'preview'
+  | 'inline'
+  | 'main'
+  | 'only';
+/*
   = 'single' 
   | 'multiple' 
   | 'multiple-primary' 
   | 'multiple-secondary'
   | 'link';
+  */
 
 export type NodeMetadata = {
   tags: Tag[],
