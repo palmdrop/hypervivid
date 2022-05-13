@@ -69,6 +69,10 @@ export default {
       "weight": 0.6666666666666666,
       "count": 2
     },
+    "internet": {
+      "weight": 0.6666666666666666,
+      "count": 2
+    },
     "about": {
       "weight": 0.6666666666666666,
       "count": 2
@@ -100,10 +104,6 @@ export default {
     "personal": {
       "weight": 0.3333333333333333,
       "count": 1
-    },
-    "internet": {
-      "weight": 0.3333333333333333,
-      "count": 1
     }
   },
   "nodes": {
@@ -111,6 +111,7 @@ export default {
       "tags": [
         "tech",
         "thoughts",
+        "internet",
         "generative"
       ],
       "createdAt": "2022-05-21"
@@ -154,7 +155,8 @@ export default {
         "blue",
         "writing"
       ],
-      "createdAt": "2022-04-29"
+      "createdAt": "2022-04-29",
+      "title": "N1"
     },
     "N3": {
       "inline": true,

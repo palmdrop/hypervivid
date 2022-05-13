@@ -14,13 +14,12 @@
 
 <style>
   .cell {
+    display: block;
     padding: 0.8em;
     border-left: var(--borderPrimary);
     border-top: var(--borderPrimary);
 
-    flex-grow: 1;
-    margin: -0.5px;
-
+    flex-grow: 2;
     text-align: center;
   }
 
@@ -31,6 +30,7 @@
   }
 
   .content {
-    overflow: scroll;
+    overflow: auto;
+    max-height: calc(100% - 1.0em);
   }
 </style>
