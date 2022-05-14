@@ -8,7 +8,9 @@
   import { useTitle } from "$utils/useTitle";
   import Paragraph from "$components/text/Paragraph.svelte";
 
-  $: nodeNames = Object.keys($metadata$.nodes) as NodeName[];
+  $: nodeNames = (
+    Object.keys($metadata$.nodes).slice(0, 3)
+   ) as NodeName[];
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
   useTitle('Hypervivid ~ Hypersoft');
@@ -46,11 +48,13 @@
     <h1>
       HYPERVIVID<br>HYPERBLANK
     </h1>
+    <!--
     <Paragraph wide big>
       Here's a few senteces of dummy text. Nice. Some more.
       Can I always make line breaks where I want? Words.
       Seems like it. I can then make paragraphs. In here.
     </Paragraph>
+    -->
   </section>
 
   <section>
@@ -59,6 +63,12 @@
       contextFirst="inline"
       contextRest="preview"
     />
+    <a 
+      href="/nodes"
+      class="nodes-link"
+    >
+      Show more...
+    </a>
   </section>
 </main>
 
@@ -68,6 +78,8 @@
     overflow-y: auto;
 
     width: 100%;
+
+    padding-top: 1em;
   }
 
   .landing {
@@ -86,10 +98,15 @@
 
     font-size: 23vw;
 
+    /*
     color: var(--cFgInverted);
     text-shadow: var(--textShadowDisplay);
+    */
+    color: var(--cFg);
+
 
     padding-bottom: 1.5rem;
+    opacity: 0.3;
   }
 
   .landing img {
@@ -115,4 +132,13 @@
     opacity: 0.7;
   }
 
+  section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nodes-link {
+    text-align: center;
+  }
 </style>

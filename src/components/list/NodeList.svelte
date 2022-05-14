@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
   import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
 
@@ -9,7 +10,9 @@
   export let contextRest: NodeMode
 </script>
 
-<ul class="node-list">
+<ul 
+  class="node-list"
+>
   {#each nodeNames as name, i (name)}
     <li>
       <Node

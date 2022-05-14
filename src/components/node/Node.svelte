@@ -12,8 +12,6 @@
   export let name: NodeName;
   export let mode: NodeMode
 
-  // TODO figure out if I need all metadata for each node? if it's just in preview, do I need it?
-  // TODO if in link mode, I definitely do not need it!
   let nodeMetadata: NodeMetadata;
 
   $: if(mode !== 'link') {
@@ -37,7 +35,6 @@
       asLink = true;
     } else {
       const showPreview = (
-        // !['single', 'multiple', 'multiple-primary'].includes(mode) &&
         !['only', 'main', 'inline'].includes(mode) &&
         !nodeMetadata.inline
       );

@@ -6,7 +6,7 @@
   import { formatDate } from '$utils/general';
   import Paragraph from '$components/text/Paragraph.svelte';
   import Cell from './Cell.svelte';
-  import { backInOut, expoInOut, sineInOut } from 'svelte/easing';
+  import { sineInOut } from 'svelte/easing';
 
   export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
@@ -31,58 +31,70 @@
     <h1>Metadata — {name}</h1>
   </button>
   { #if expanded }
-  <div 
-    class="content"
-    transition:slide|local={{ 
-      duration: 400,
-      easing: sineInOut
-    }}
-  >
-    <div class="multi-cell">
-      <Cell 
-        title="NAME"
-      >
-        <Paragraph center>{ nodeMetadata.title ?? name }</Paragraph>
-      </Cell>
+    <div 
+      class="content"
+      transition:slide|local={{ 
+        duration: 400,
+        easing: sineInOut
+      }}
+    >
       <Cell
-        title="DATE"
+        multi
       >
-        <p>
-          { formatDate(nodeMetadata.createdAt) }
-        </p>
+        <Cell 
+          title="NAME"
+          nested
+          inline
+        >
+          <Paragraph center wide>
+            { nodeMetadata.title ?? name }
+          </Paragraph>
+        </Cell>
+        <Cell
+          title="DATE"
+          nested
+          inline
+        >
+          <Paragraph center wide>
+            { formatDate(nodeMetadata.createdAt) }
+          </Paragraph>
+        </Cell>
+      </Cell>
+      
+      <Cell
+        title="LINKS"
+      >
+        <LinkList 
+          links={links}
+          formatLink={link => link.to}
+        >
+          <Paragraph center faded>
+            This node has no links...
+          </Paragraph>
+        </LinkList>
+      </Cell>
+
+      <Cell
+        title="TAGS"
+      >
+        <TagList 
+          tags={tags}
+          orientation="horizontal"
+        >
+          <Paragraph center faded>
+            This node has no tags...
+          </Paragraph>
+        </TagList>
       </Cell>
     </div>
-    
-    <Cell
-      title="LINKS"
-    >
-      <LinkList 
-        links={links}
-        formatLink={link => link.to}
-      >
-        <Paragraph center faded>
-          This node has no links...
-        </Paragraph>
-      </LinkList>
-    </Cell>
-
-    <Cell
-      title="TAGS"
-    >
-      <TagList 
-        tags={tags}
-        orientation="horizontal"
-      >
-        <Paragraph center faded>
-          This node has no tags...
-        </Paragraph>
-      </TagList>
-    </Cell>
-  </div>
   {/if}
 </footer>
 
 <style>
+  footer {
+    overflow: hidden;
+  }
+
   .content {
     display: flex;
     flex-direction: row;

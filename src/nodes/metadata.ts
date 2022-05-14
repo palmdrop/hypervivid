@@ -124,7 +124,7 @@ export default {
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
       "title": "manifest",
-      "description": "",
+      "description": "The ideas behind this page, thoughts about the internet, etc",
       "image": ""
     },
     "scroll": {

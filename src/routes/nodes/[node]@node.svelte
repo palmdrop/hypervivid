@@ -4,19 +4,17 @@
   export async function load ({ params }) {
     const { 
       node: name,
-      rest
     }: {
       node: string,
-      rest: string
     } = params;
 
-    const restParams = rest.split('/');
+    // const restParams = rest.split('/');
 
     if(Object.keys(metadata.nodes).includes(name)) {
       return {
         props: {
           name,
-          params: restParams
+          // params: restParams
         }
       }
     } else {
@@ -30,38 +28,26 @@
 
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
-  import DataWrapper from "$components/node/wrappers/DataWrapper.svelte";
+  import NodeWrapper from "$components/node/wrappers/NodeWrapper.svelte";
   import { useTitle } from "$utils/useTitle";
   import type { NodeName } from '$types/nodes';
-  import Header from "$components/header/Header.svelte";
-import FullscreenWrapper from "$components/node/wrappers/FullscreenWrapper.svelte";
 
   export let name: NodeName;
-  export let params: string[];
+  // export let params: string[];
 
-  $: fullscreen = params.includes('fullscreen');
+  // $: fullscreen = params.includes('fullscreen');
 
   $: useTitle(`Node ~ ${name}`);
 </script>
 
-{#if fullscreen}
-  <FullscreenWrapper>
-    <Node
-      { name }
-      mode="only"
-    />
-  </FullscreenWrapper>
-{:else}
-  <Header />
-  <DataWrapper
+<NodeWrapper
+  { name }
+>
+  <Node
     { name }
-  >
-    <Node
-      { name }
-      mode="only"
-    />
-  </DataWrapper>
-{/if}
+    mode="only"
+  />
+</NodeWrapper>
 
 <style>
 </style>
