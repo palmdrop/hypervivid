@@ -10,7 +10,7 @@
   onMount(() => {
     const interval = setInterval(() => {
       date = new Date();
-    }, 1);
+    }, 1000);
 
     return () => {
       clearInterval(interval);

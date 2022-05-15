@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { wrapSlice } from './../../utils/general';
   import { getNodeContext } from '$utils/useNodeContext';
-import { onDestroy } from 'svelte';
-import { fade } from 'svelte/transition';
+  import { onDestroy } from 'svelte';
+  import { useTitle } from '$utils/useTitle';
 
   const { name, metadata } = getNodeContext('hyper');
 
@@ -42,20 +42,15 @@ import { fade } from 'svelte/transition';
 
   const boxHeight = 7;
   const wordLength = 9;
-  const interval = 2000;
+  const interval = 1000;
   
   // TODO: optimize with CSS transitions? https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break
   // https://codepen.io/julianofreitas/pen/BayKper
 
-  const getRandomIndex = (previous: number | undefined = undefined) => {
-    const get = () => Math.floor(Math.random() * hyperwords.length);
+  // TODO: or optimize by precalculating all offset strings
 
-    let contendor: number;
-    do {
-      contendor = get();
-    } while(previous !== undefined && contendor === previous);
-
-    return contendor;
+  const getRandomIndex = () => {
+    return Math.floor(Math.random() * hyperwords.length);
   }
 
   const indices = Array(boxHeight).fill(0).map(getRandomIndex);
@@ -63,8 +58,7 @@ import { fade } from 'svelte/transition';
   const currentWords = indices.map(i => wrapSlice(hyperwords[i], 0, wordLength));
 
   const handleHover = (listIndex: number) => {
-    const previous = indices[listIndex];
-    indices[listIndex] = getRandomIndex(previous);
+    indices[listIndex] = getRandomIndex();
     currentWords[listIndex] = wrapSlice(hyperwords[indices[listIndex]], 0, wordLength);
   }
 
@@ -86,7 +80,11 @@ import { fade } from 'svelte/transition';
     intervals.forEach(interval => 
       clearInterval(interval)
     );
-  })
+  });
+
+  $: {
+    useTitle(currentWords[0]);
+  }
 </script>
 
 <div>

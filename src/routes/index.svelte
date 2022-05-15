@@ -1,12 +1,10 @@
 <script lang="ts">
 	import type { NodeName } from '$types/nodes';
-  import { fade } from "svelte/transition";
 
   import NodeList from "$components/list/NodeList.svelte";
 
   import { metadata$ } from "$stores/metadata";
   import { useTitle } from "$utils/useTitle";
-  import Paragraph from "$components/text/Paragraph.svelte";
   import Node from '$components/node/Node.svelte';
   import Hyper from '$nodes/hyper/hyper.svelte';
   import { scrollIntoView } from '$utils/scrollIntoView';
@@ -17,22 +15,6 @@
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
   useTitle('Hypervivid ~ Hypersoft');
-
-
-  let fadeIn = false;
-
-  const useFadeIn = (img: HTMLImageElement) => {
-    img.onload = () => {
-      fadeIn = true;
-      console.log(fadeIn)
-    }
-
-    if(img.complete) {
-      fadeIn = true;
-    }
-  }
-
-  $: console.log(fadeIn)
 </script>
 
 
@@ -40,19 +22,6 @@
   <section
     class="landing"
   >
-    <!--
-    <img 
-      src="/png/wings.png"
-      alt=""
-      use:useFadeIn
-      in:fade
-      class:fadeIn
-    />
-
-    <h1>
-      HYPERVIVID<br>HYPERBLANK
-    </h1>
-    -->
     <Node
       name="hyper"
       mode="inline"
@@ -60,13 +29,6 @@
     >
       <Hyper />
     </Node>
-    <!--
-    <Paragraph wide big>
-      Here's a few senteces of dummy text. Nice. Some more.
-      Can I always make line breaks where I want? Words.
-      Seems like it. I can then make paragraphs. In here.
-    </Paragraph>
-    -->
     <button
       class="scroll-down-button"
       on:click|preventDefault={scrollIntoView}
