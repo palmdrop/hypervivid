@@ -23,6 +23,7 @@ import type { NavEntry } from '$types/general';
 
 <style>
   nav {
+
   }
 
   ul {

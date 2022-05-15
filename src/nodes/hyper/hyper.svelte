@@ -110,6 +110,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: var(--fMono);
   }
 
   ul {
@@ -118,7 +120,6 @@
     line-height: 1.0em;
     letter-spacing: 0.3em;
     text-align: center;
-    font-family: var(--fDisplay);
 
     background-color: var(--cBgInverted);
     color: var(--cFgInverted);

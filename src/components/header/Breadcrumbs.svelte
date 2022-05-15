@@ -43,7 +43,7 @@ import Point from '$components/ornaments/Point.svelte';
   {#each crumbs as crumb, i (crumb.path)}
     <li>
       {#if i !== 0} 
-        {">"}
+        {":"}
       {/if}
       {#if i < (crumbs.length - 1)}
         <a

@@ -1,15 +1,25 @@
 /* Theme */
 :root {
+  /*
   --cFg: #383838;
   --cBg: #EDEFEE;
+  */
+  --cFg: #090b20;
+  --cBg: #bec2c7;
 
   --cFgInverted: var(--cBg);
   --cBgInverted: var(--cFg);
 
   --cAccent: #20A0B2;
 
+  --fMono: 'Mono';
   --fDisplay: 'Mono';
   --fRegular: 'Sporting_Grotesque-Regular';
+  /*
+  --fMono: 'SyneMono';
+  --fDisplay: 'SyneMono';
+  --fRegular: 'Sporting_Grotesque-Regular';
+  */
 
   --borderPrimary: 1px solid var(--cFg);
   --borderRadius1: 15px;
@@ -34,16 +44,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: var(--cFg);
-  text-decoration-thickness: 2px;
   color: var(--cFg);
 
   transition: 0.3s;
 }
 
 a:hover {
-  text-decoration-thickness: 5px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 button {
