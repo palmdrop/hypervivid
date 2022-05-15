@@ -7,6 +7,7 @@
   import Paragraph from '$components/text/Paragraph.svelte';
   import Cell from './Cell.svelte';
   import { sineInOut } from 'svelte/easing';
+  import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
 
   export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
@@ -29,7 +30,11 @@
     class="metadata-button"
     on:click={toggle}
   >
-    <span class="arrow">➺</span>
+    <div class="arrow">
+      <Arrow 
+        direction={expanded ? 'down' : 'right'}
+      />
+    </div>
     <h1>Metadata — {name}</h1>
   </button>
   { #if expanded }
@@ -116,19 +121,9 @@
 
   .arrow {
     position: absolute;
-    left: 5px;
-    top: 13%;
-
-    font-size: 2.3rem;
-
-    transform: rotate(0);
-    transition: 0.8s;
   }
 
   .expanded .arrow {
-    left: 0px;
-    top: 3%;
-    transform: rotate(90deg);
   }
 
   h1 {

@@ -4,6 +4,7 @@
 	import { metadata$ } from '$stores/metadata';
   import MetadataFooter from '$components/footer/metadata/Footer.svelte';
   import Header from '$components/header/Header.svelte';
+import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svelte';
 
   export let name: NodeName;
 
@@ -44,7 +45,7 @@
       class="fullscreen-button"
       on:click={toggleFullscreen}
     >
-      □
+      <FullscreenIcon />
     </button>
 
     <slot />
@@ -90,7 +91,6 @@
 
     top: 52px;
     right: 2px;
-    font-size: 2rem;
 
     transition: 0.4s;
 

@@ -8,6 +8,7 @@
   import Node from '$components/node/Node.svelte';
   import Hyper from '$nodes/hyper/hyper.svelte';
   import { scrollIntoView } from '$utils/scrollIntoView';
+import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
 
   $: nodeNames = (
     Object.keys($metadata$.nodes).slice(0, 3)
@@ -33,9 +34,15 @@
       class="scroll-down-button"
       on:click|preventDefault={scrollIntoView}
     >
-      <div class="arrow">➺</div>
-      <div class="arrow">➺</div>
-      <div class="arrow">➺</div>
+      <Arrow 
+        direction='down'
+      />
+      <Arrow 
+        direction='down'
+      />
+      <Arrow 
+        direction='down'
+      />
     </button>
   </section>
 
