@@ -7,6 +7,9 @@
   import { metadata$ } from "$stores/metadata";
   import { useTitle } from "$utils/useTitle";
   import Paragraph from "$components/text/Paragraph.svelte";
+  import Node from '$components/node/Node.svelte';
+  import Hyper from '$nodes/hyper/hyper.svelte';
+  import { scrollIntoView } from '$utils/scrollIntoView';
 
   $: nodeNames = (
     Object.keys($metadata$.nodes).slice(0, 3)
@@ -37,6 +40,7 @@
   <section
     class="landing"
   >
+    <!--
     <img 
       src="/png/wings.png"
       alt=""
@@ -48,6 +52,14 @@
     <h1>
       HYPERVIVID<br>HYPERBLANK
     </h1>
+    -->
+    <Node
+      name="hyper"
+      mode="inline"
+      fromSlot={true}
+    >
+      <Hyper />
+    </Node>
     <!--
     <Paragraph wide big>
       Here's a few senteces of dummy text. Nice. Some more.
@@ -55,6 +67,14 @@
       Seems like it. I can then make paragraphs. In here.
     </Paragraph>
     -->
+    <button
+      class="scroll-down-button"
+      on:click|preventDefault={scrollIntoView}
+    >
+      <div class="arrow">➺</div>
+      <div class="arrow">➺</div>
+      <div class="arrow">➺</div>
+    </button>
   </section>
 
   <section>
@@ -91,6 +111,7 @@
 
     padding-top: 1em;
     padding-bottom: 3em;
+    height: 92%;
   }
 
   .landing h1 {
@@ -140,5 +161,14 @@
 
   .nodes-link {
     text-align: center;
+  }
+
+  .scroll-down-button {
+    display: flex;
+  }
+
+  .arrow {
+    font-size: 2em;
+    transform: rotateZ(90deg);
   }
 </style>
