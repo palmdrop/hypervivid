@@ -36,3 +36,18 @@ export const formatDate = (
     }
   );
 }
+
+export const wrapSlice = (
+  value: string, 
+  startIndex: number,
+  stopIndex: number
+) => {
+  const maxCopies = Math.ceil(Math.max(
+    Math.abs(startIndex), Math.abs(stopIndex)
+  ));
+
+  return Array(Math.ceil(maxCopies)).fill(value).join('').slice(
+    startIndex,
+    stopIndex > startIndex ? stopIndex : stopIndex + value.length
+  );
+}

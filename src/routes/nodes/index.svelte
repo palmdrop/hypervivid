@@ -9,10 +9,17 @@
     $metadata$.nodes
   ) as NodeName[];
 
+  let mainRef: HTMLElement;
+  const useMainRef = (ref: HTMLElement) => {
+    mainRef = ref;
+  }
+
   useTitle('Nodes');
 </script>
 
-<main>
+<main
+  use:useMainRef
+>
   <h1>
     NODES
   </h1>
@@ -21,6 +28,8 @@
     nodeNames={nodeNames}
     contextFirst="inline"
     contextRest="link"
+    batchCount={5}
+    scrollElement={mainRef}
   />
 </main>
 
@@ -28,5 +37,8 @@
   main {
     padding-top: 1em;
     width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
   }
 </style>

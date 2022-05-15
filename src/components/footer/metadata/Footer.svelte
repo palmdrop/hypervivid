@@ -10,14 +10,16 @@
 
   export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
+  export let isExpanded: boolean = true;
+  export let onToggle: (() => void) | undefined = undefined;
 
   $: links = nodeMetadata.links ?? [];
   $: tags = nodeMetadata.tags ?? [];
 
-  let expanded = true;
-  const toggle = () => {
+  $: expanded = isExpanded;
+  $: toggle = onToggle ?? (() => {
     expanded = !expanded;
-  }
+  })
 </script>
 
 <footer

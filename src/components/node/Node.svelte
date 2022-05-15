@@ -10,7 +10,8 @@
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
 
   export let name: NodeName;
-  export let mode: NodeMode
+  export let mode: NodeMode;
+  export let fromSlot: boolean = false;
 
   let nodeMetadata: NodeMetadata;
 
@@ -33,7 +34,7 @@
   $: {
     if(mode === 'link') {
       asLink = true;
-    } else {
+    } else if(!fromSlot) {
       const showPreview = (
         !['only', 'main', 'inline'].includes(mode) &&
         !nodeMetadata.inline
@@ -73,9 +74,7 @@
     </Lazy>
   {/key}
 {:else}
-  <div>
-    Component { name } not found
-  </div>
+  <slot />
 {/if}
 
 <style>

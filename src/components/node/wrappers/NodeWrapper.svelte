@@ -12,6 +12,11 @@
     fullscreen = !fullscreen;
   }
 
+  let metadataExpanded = false;
+  const toggleMetadata = () => {
+    metadataExpanded = !metadataExpanded;
+  }
+
   let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
     ...$metadata$.nodes[name],
@@ -54,6 +59,8 @@
       <MetadataFooter 
         { name }
         { nodeMetadata }
+        isExpanded={metadataExpanded}
+        onToggle={toggleMetadata}
       />
     </div>
   {/if}

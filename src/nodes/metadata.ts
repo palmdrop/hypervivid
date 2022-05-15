@@ -42,6 +42,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "hyper": [],
     "info": [
       {
         "from": "info",
@@ -115,6 +116,14 @@ export default {
         "generative"
       ],
       "createdAt": "2022-05-21"
+    },
+    "hyper": {
+      "tags": [],
+      "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
+      "inline": false,
+      "title": "hyper",
+      "description": "",
+      "image": ""
     },
     "manifest": {
       "tags": [
