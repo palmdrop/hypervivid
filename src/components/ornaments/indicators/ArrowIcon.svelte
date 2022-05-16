@@ -1,6 +1,11 @@
 <script lang="ts">
+  import Arrow1 from "./arrows/Arrow1.svelte";
+  import Arrow2 from "./arrows/Arrow2.svelte";
+
   export let direction: 'right' | 'left' | 'down' | 'up' = 'right';
   export let transitionDuration: number = 400;
+  export let strokeWidth = 1.2;
+  export let size = 25;
 </script>
 
 <div
@@ -12,7 +17,11 @@
   <!--➺-->
   <!--⇝-->
   <!--⤐-->
-  ᐅ
+  <!--ᐅ-->
+  <Arrow1 
+    { strokeWidth }
+    { size }
+  />
 </div>
 
 <style>

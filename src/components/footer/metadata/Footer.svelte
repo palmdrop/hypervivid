@@ -37,6 +37,7 @@
       <Arrow 
         { transitionDuration }
         direction={expanded ? 'down' : 'right'}
+        strokeWidth={2}
       />
     </div>
     <h1>Metadata — {name}</h1>

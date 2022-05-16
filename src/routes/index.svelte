@@ -36,12 +36,15 @@
     >
       <Arrow 
         direction='down'
+        size={45}
       />
       <Arrow 
         direction='down'
+        size={45}
       />
       <Arrow 
         direction='down'
+        size={45}
       />
     </button>
   </section>

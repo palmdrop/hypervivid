@@ -37,8 +37,15 @@
 
   --textShadowDisplay: 0px 0px 10px #813a7353;
 
+  /*
   --pillShadow: inset 12px 12px 8px #ffffff21,
                 inset -12px -12px 8px #000000ff;
+  */
+
+  --pillShadow: 
+    2px 2px 4px rgba(37, 1, 1, 0.11), 
+    inset -15px -15px 20px #24183E, 
+    inset 10px 10px 20px rgba(255, 255, 255, 0.43);
 }
 
 /* Global styles */
