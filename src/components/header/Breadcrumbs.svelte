@@ -59,6 +59,8 @@
   ol {
     display: flex;
     margin-left: 0.5em;
+
+    font-family: var(--fDisplay);
   }
 
   li {

@@ -17,10 +17,13 @@
   --cAccent: #20A0B2;
 
   --fMono: 'SyneMono';
-  --fDisplay: 'SyneMono';
-  --fRegular: 'SpaceGrotesk-Regular';
-  /*--fRegular: 'Sporting_Grotesque-Regular';
+  --fDisplay: 'SpaceGrotesk-Regular';
+  /*
+  --fDisplay: 'Sporting_Grotesque-Regular';
+  --fDisplay: 'Basteleur';
   */
+  --fRegular: 'SpaceGrotesk-Regular';
+
   /*
   --fMono: 'SyneMono';
   --fDisplay: 'SyneMono';

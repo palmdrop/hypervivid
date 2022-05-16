@@ -44,7 +44,7 @@
   }
 
   .cell h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.3em;
     text-align: left;
   }

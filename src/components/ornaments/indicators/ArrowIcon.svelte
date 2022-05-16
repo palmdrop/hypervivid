@@ -23,13 +23,13 @@
 
   .right {
     transform: rotateZ(0);
-    margin-top: 4px;
+    margin-top: -2px;
     margin-left: 0px;
   }
 
   .down {
     transform: rotateZ(90deg);
-    margin-top: -2px;
+    margin-top: -1px;
     margin-left: -2px;
   }
 

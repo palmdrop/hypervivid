@@ -35,6 +35,7 @@
   >
     <div class="arrow">
       <Arrow 
+        { transitionDuration }
         direction={expanded ? 'down' : 'right'}
       />
     </div>
@@ -44,7 +45,7 @@
     <div 
       class="content"
       transition:slide|local={{ 
-        duration: 400,
+        duration: transitionDuration,
         easing: sineInOut
       }}
     >
@@ -127,6 +128,6 @@
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 </style>
