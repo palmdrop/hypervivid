@@ -55,8 +55,6 @@
     align-items: center;
 
     background-color: var(--cBg);
-
-    padding: 0.5em 0.0em;
   }
 
   div {

@@ -13,9 +13,6 @@ import type { NavEntry } from '$types/general';
       >
         { text }
       </a>
-      {#if i !== (entries.length - 1) } 
-        |
-      {/if}
     </li>
   {/each}
   </ul>
@@ -23,7 +20,6 @@ import type { NavEntry } from '$types/general';
 
 <style>
   nav {
-
   }
 
   ul {
@@ -33,11 +29,47 @@ import type { NavEntry } from '$types/general';
   }
 
   li {
-    display: flex;
+    position: relative;
+
+    border-left: var(--borderPrimary);
+    z-index: 0;
+  }
+
+  li::before {
+    position: absolute;
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    border-radius: var(--borderRadius1);
+    border: var(--borderPrimary);
+
+    margin: -1px;
+    z-index: -1;
+
+    transition: 0.3s;
+
   }
 
   a {
+    display: inline-block;
     text-align: center;
-    padding: 0em 1.5em;
+    z-index: 10;
+    text-decoration: none;
+
+    padding: 0.5em 1.7em;
+  }
+
+  li:hover > a {
+    color: var(--cFgInverted);
+  }
+
+  li:hover::before {
+    background-color: var(--cBgInverted);
+    box-shadow: var(--pillShadow);
   }
 </style>

@@ -1,3 +1,15 @@
+/* Gulax */
+@font-face {
+    font-family: 'Gulax';
+    src:    url('/fonts/gulax/Gulax-Regular.eot');
+    src:    url('/fonts/gulax/Gulax-Regular.woff') format('woff'),
+            url('/fonts/gulax/Gulax-Regular.woff2') format('woff2'),
+            url('/fonts/gulax/Gulax-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* Sporting Grotesque */
 @font-face {
     font-family: 'Sporting_Grotesque-Regular';

@@ -112,6 +112,10 @@
 </script>
 
 <div>
+  <img
+    src='/png/combined/comb1.jpg'
+    alt=''
+  />
   <ul>
     {#each { length: boxHeight } as _, i (i)}
       <li
@@ -140,13 +144,34 @@
 
   ul {
     padding: 1em;
-    font-size: 2.5rem;
-    line-height: 1.0em;
-    letter-spacing: 0.35em;
+    font-size: 2.1rem;
+    line-height: 0.9em;
+    letter-spacing: 0.45em;
     text-align: center;
 
+    /*
     background-color: var(--cBgInverted);
     color: var(--cFgInverted);
+    */
+    background-color:rgb(240, 240, 12);
+    color: var(--cFg);
+
+    z-index: 1;
+
+    /*
+    border: 1px solid var(--cBg);
+    */
+    
   } 
+  
+  img {
+    position: absolute;
+    z-index: -0;
+
+    min-width: 200px;
+    width: 90vw;
+    max-width: 1100px;
+
+  }
 </style>
   

@@ -110,18 +110,18 @@
   .fullscreen-button {
     position: absolute;
 
-    top: 52px;
-    right: 2px;
+    top: 40px;
+    right: 4px;
 
     transition: 0.4s;
 
-    transform: rotate(0);
+    transform: rotate(-270deg);
   }
 
   .fullscreen .fullscreen-button {
-    top: 3px;
-    right: 3px;
+    top: 4px;
+    right: 4px;
 
-    transform: rotate(135deg);
+    transform: rotate(-90deg);
   }
 </style>

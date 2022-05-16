@@ -17,10 +17,10 @@
   --cAccent: #20A0B2;
 
   --fMono: 'SyneMono';
-  --fDisplay: 'SpaceGrotesk-Regular';
+  --fDisplay: 'Gulax';
   /*
-  --fDisplay: 'Sporting_Grotesque-Regular';
   --fDisplay: 'Basteleur';
+  --fDisplay: 'Sporting_Grotesque-Regular';
   */
   --fRegular: 'SpaceGrotesk-Regular';
 
@@ -36,6 +36,9 @@
   --borderRadius3: 100%;
 
   --textShadowDisplay: 0px 0px 10px #813a7353;
+
+  --pillShadow: inset 12px 12px 8px #ffffff21,
+                inset -12px -12px 8px #000000ff;
 }
 
 /* Global styles */

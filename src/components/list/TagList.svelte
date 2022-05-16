@@ -57,10 +57,12 @@
 
     text-decoration: none;
 
+    font-family: var(--fMono);
+
     color: var(--cFgInverted);
     background-color: var(--cBgInverted);
 
-    padding: 0.1em 0.8em;
+    padding: 0.3em 0.8em;
     margin: 0.1em 0.2em;
     border-radius: var(--borderRadius1);
     border: var(--borderPrimary);
@@ -69,5 +71,7 @@
   a:hover {
     color: var(--cFg);
     background-color: var(--cBg);
+
+    text-decoration: none;
   }
 </style>

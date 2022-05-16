@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
   // based on https://df.id.au/technical/svelte/breadcrumbs/
 	import { page } from '$app/stores';
 
@@ -39,12 +40,15 @@
 
 <ol>
   {#each crumbs as crumb, i (crumb.path)}
-    <li>
+    <li
+    >
       {#if i < (crumbs.length - 1)}
         <a
           href={crumb.path}
         >
+        <!--
           { crumb.text }
+        -->
         </a> 
       {:else}
         <span>
@@ -58,28 +62,27 @@
 <style>
   ol {
     display: flex;
-    margin-left: 0.5em;
-
-    font-family: var(--fDisplay);
+    font-family: var(--fMono);
   }
 
   li {
     display: flex;
-
-    min-width: 20px;
-    padding: 0.5em;
-    border-radius: 25px;
-
-    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.2);
   }
 
   a, span {
-    padding: 0em 0.8em;
-    opacity: 0.7;
+    min-width: 19px;
+    padding: 0.5em;
   }
 
   a {
-    width: 0px;
-    opacity: 0;
+    border-radius: var(--borderRadius2);
+    box-shadow: var(--pillShadow);
+    background-color: var(--cBgInverted);
+    display: inline-block;
+  }
+
+  span {
+    margin: -1px;
+    border: var(--borderPrimary);
   }
 </style>
