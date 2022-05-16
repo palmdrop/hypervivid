@@ -43,6 +43,18 @@
     font-style: normal;
 }
 
+/* SPACE GROTESK */
+@font-face {
+  font-family: 'SpaceGrotesk-Regular';
+  src: url('fonts/space-grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk-Bold';
+  src: url('fonts/space-grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
+}
+
+
 /* SYNE */
 /* Credit: https://gitlab.com/bonjour-monde/fonderie/syne-typeface */
 @font-face {

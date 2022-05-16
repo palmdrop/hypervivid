@@ -13,6 +13,7 @@
   export let nodeMetadata: NodeMetadata;
   export let isExpanded: boolean = true;
   export let onToggle: (() => void) | undefined = undefined;
+  export let transitionDuration: number = 400;
 
   $: links = nodeMetadata.links ?? [];
   $: tags = nodeMetadata.tags ?? [];
@@ -21,11 +22,13 @@
   $: toggle = onToggle ?? (() => {
     expanded = !expanded;
   })
+
+  $: console.log("oops", isExpanded);
+
+  // $: console.log('Expanded', expanded);
 </script>
 
-<footer
-  class:expanded
-> 
+<footer> 
   <button 
     class="metadata-button"
     on:click={toggle}
@@ -123,11 +126,7 @@
     position: absolute;
   }
 
-  .expanded .arrow {
-  }
-
   h1 {
     font-size: 1.8rem;
   }
-
 </style>

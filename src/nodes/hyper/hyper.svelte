@@ -11,7 +11,7 @@
     'soft',
     'human',
     'quiet',
-    'intelligent',
+    'smart',
     'flat',
     'sensorium',
     'sensitive',
@@ -24,20 +24,44 @@
     'familiar',
     'connected',
     'seduced',
+    'sleep',
+    'moves', // ??
+    'fool',
+    'pool',
+    'numb', // ?
     'void',
-    'left',
     'tube',
     'blank',
     'world',
+    'mold',
     'dump',
+    'dumb',
     'calm',
     'real',
     'feed',
     'damp',
     'sexy',
+    'work',
+    'office', // ?
+    'stench',
+    'loop',
+    'meth', // ?
+    'cell',
+    'zen',
     'life',
     'mind',
+    'honest',
+    'synthetic',
     'ads',
+    'core',
+    'light',
+    'clear',
+    'worm',
+    'meta',
+    'guys',
+    'fuck',
+    'node',
+    'idiot',
   ].map(word => `hyper${word}`.toUpperCase());
 
   const boxHeight = 7;
@@ -91,7 +115,7 @@
   <ul>
     {#each { length: boxHeight } as _, i (i)}
       <li
-        on:mouseleave={() => handleHover(i)}
+        on:mouseenter={() => handleHover(i)}
         on:touchend={() => handleHover(i)}
         on:focus={() => {}}
       >
@@ -118,7 +142,7 @@
     padding: 1em;
     font-size: 2.5rem;
     line-height: 1.0em;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.35em;
     text-align: center;
 
     background-color: var(--cBgInverted);

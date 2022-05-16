@@ -25,6 +25,7 @@
 </script>
 
 <header>
+  <!--
   <a
     href="/"
   >
@@ -32,6 +33,7 @@
       size={30}
     />
   </a>
+  -->
   <div>
     <Breadcrumbs 
       showHome={true}
@@ -46,7 +48,7 @@
   header {
     border-bottom: var(--borderPrimary);
 
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -54,7 +56,7 @@
 
     background-color: var(--cBg);
 
-    padding: 0.1em 0em;
+    padding: 0.5em 0.0em;
   }
 
   div {

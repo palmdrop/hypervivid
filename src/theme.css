@@ -4,6 +4,10 @@
   --cFg: #383838;
   --cBg: #EDEFEE;
   */
+  /*
+  --cFg: #090b20;
+  --cBg: #bec2c7;
+  */
   --cFg: #090b20;
   --cBg: #bec2c7;
 
@@ -12,9 +16,11 @@
 
   --cAccent: #20A0B2;
 
-  --fMono: 'Mono';
-  --fDisplay: 'Mono';
-  --fRegular: 'Sporting_Grotesque-Regular';
+  --fMono: 'SyneMono';
+  --fDisplay: 'SyneMono';
+  --fRegular: 'SpaceGrotesk-Regular';
+  /*--fRegular: 'Sporting_Grotesque-Regular';
+  */
   /*
   --fMono: 'SyneMono';
   --fDisplay: 'SyneMono';
@@ -31,7 +37,8 @@
 
 /* Global styles */
 html {
-  font-size: 16px;
+  /* TODO: dynamic font size */
+  font-size: 18px;
   font-family: var(--fRegular);
 
   background-color: var(--cBg);

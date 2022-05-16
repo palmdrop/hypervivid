@@ -2,7 +2,8 @@
   import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
   import throttle from "lodash.throttle";
-import { element, onDestroy } from "svelte/internal";
+  import { onDestroy } from "svelte/internal";
+  import ExpandIcon from "$components/ornaments/indicators/ExpandIcon.svelte";
 
   export let showOpenLink: boolean = true;
   export let nodeNames: NodeName[];
@@ -67,7 +68,7 @@ import { element, onDestroy } from "svelte/internal";
         <a
           href={`/nodes/${name}`}
         >
-          Open 
+          <ExpandIcon />
         </a>
       {/if}
     </li>
@@ -103,6 +104,8 @@ import { element, onDestroy } from "svelte/internal";
     position: absolute;
     top: 0.7em;
     right: 0.7em;
+
+    text-decoration: none;
   }
 
   .load-more-button {

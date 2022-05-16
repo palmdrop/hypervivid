@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TagList from '$components/list/TagList.svelte';
-import Paragraph from '$components/text/Paragraph.svelte';
+  import Paragraph from '$components/text/Paragraph.svelte';
   import type { NodeContext, NodeMetadata, NodeName } from '$types/nodes';
   import { getContext } from 'svelte';
 

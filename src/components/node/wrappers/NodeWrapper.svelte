@@ -4,13 +4,32 @@
 	import { metadata$ } from '$stores/metadata';
   import MetadataFooter from '$components/footer/metadata/Footer.svelte';
   import Header from '$components/header/Header.svelte';
-import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svelte';
+  import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svelte';
 
   export let name: NodeName;
 
+  const transitionDuration = 400;
+
+  // TODO: fix this ugly workaround to transition flickers
+  // TODO: also, store 400ms as theme variable somewhere
   let fullscreen = false;
+  let previousMetadataExpaned = false;
   const toggleFullscreen = () => {
-    fullscreen = !fullscreen;
+    if(!fullscreen) {
+      previousMetadataExpaned = metadataExpanded;
+      setTimeout(() => {
+        fullscreen = true;
+      }, metadataExpanded ? transitionDuration : 0);
+
+      metadataExpanded = false;
+    } else {
+      fullscreen = false;
+      if(previousMetadataExpaned) {
+        setTimeout(() => {
+          metadataExpanded = true;
+        }, transitionDuration)
+      }
+    }
   }
 
   let metadataExpanded = false;
@@ -23,6 +42,8 @@ import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svel
     ...$metadata$.nodes[name],
     links: $metadata$.links[name]
   }
+
+  $: console.log("Re...", nodeMetadata)
 </script>
 
 <div 
@@ -32,11 +53,10 @@ import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svel
   {#if !fullscreen}
     <div
       transition:slide|local={{ 
-        duration: 400,
+        duration: transitionDuration
       }}
     >
-      <Header 
-      />
+      <Header />
     </div>
   {/if}
 
@@ -54,12 +74,13 @@ import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svel
   {#if !fullscreen}
     <div
       transition:slide|local={{ 
-        duration: 400,
+        duration: transitionDuration,
       }}
     >
       <MetadataFooter 
         { name }
         { nodeMetadata }
+        { transitionDuration }
         isExpanded={metadataExpanded}
         onToggle={toggleMetadata}
       />

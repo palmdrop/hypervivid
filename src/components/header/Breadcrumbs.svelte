@@ -1,8 +1,6 @@
 <script lang="ts">
   // based on https://df.id.au/technical/svelte/breadcrumbs/
-
 	import { page } from '$app/stores';
-import Point from '$components/ornaments/Point.svelte';
 
   export let showHome: boolean = false;
   export let homeName: string = 'index';
@@ -42,9 +40,6 @@ import Point from '$components/ornaments/Point.svelte';
 <ol>
   {#each crumbs as crumb, i (crumb.path)}
     <li>
-      {#if i !== 0} 
-        {":"}
-      {/if}
       {#if i < (crumbs.length - 1)}
         <a
           href={crumb.path}
@@ -63,13 +58,26 @@ import Point from '$components/ornaments/Point.svelte';
 <style>
   ol {
     display: flex;
+    margin-left: 0.5em;
   }
 
   li {
     display: flex;
+
+    min-width: 20px;
+    padding: 0.5em;
+    border-radius: 25px;
+
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.2);
   }
 
   a, span {
     padding: 0em 0.8em;
+    opacity: 0.7;
+  }
+
+  a {
+    width: 0px;
+    opacity: 0;
   }
 </style>

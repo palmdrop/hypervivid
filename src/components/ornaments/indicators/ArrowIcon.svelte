@@ -1,24 +1,29 @@
 <script lang="ts">
   export let direction: 'right' | 'left' | 'down' | 'up' = 'right';
+  export let transitionDuration: number = 400;
 </script>
 
 <div
   class={direction}
+  style="
+    transition: {transitionDuration / 1000}s;
+  "
 >
   <!--➺-->
   <!--⇝-->
-  ⤐
+  <!--⤐-->
+  ᐅ
 </div>
 
 <style>
   div {
-    transition: 0.5s;
-    font-size: 2em;
+    font-size: 1.7em;
+    margin: 0.2em;
   }
 
   .right {
     transform: rotateZ(0);
-    margin-top: 3px;
+    margin-top: 4px;
     margin-left: 0px;
   }
 
