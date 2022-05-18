@@ -1,10 +1,22 @@
 <script lang="ts">
 	import { wrapSlice } from './../../utils/general';
-  import { getNodeContext } from '$utils/useNodeContext';
+  // import { getNodeContext } from '$utils/useNodeContext';
   import { onDestroy } from 'svelte';
   import { useTitle } from '$utils/useTitle';
 
-  const { name, metadata } = getNodeContext('hyper');
+  // const { name, metadata } = getNodeContext('hyper');
+
+  const images = [
+    '/png/combined/comb1.jpg',
+    '/png/combined/comb2.jpg',
+    '/png/combined/mirror2.jpg',
+  ];
+
+  const index = Math.floor((images.length * new Date().getSeconds() / 10) % images.length);
+
+  $: imageSrc = images[
+    index
+  ];
 
   const hyperwords = [
     'vivid',
@@ -113,7 +125,7 @@
 
 <div>
   <img
-    src='/png/combined/comb1.jpg'
+    src={imageSrc}
     alt=''
   />
   <ul>

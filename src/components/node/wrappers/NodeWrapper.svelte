@@ -42,8 +42,6 @@
     ...$metadata$.nodes[name],
     links: $metadata$.links[name]
   }
-
-  $: console.log("Re...", nodeMetadata)
 </script>
 
 <div 
@@ -60,12 +58,19 @@
     </div>
   {/if}
 
-  <main class="node-container">
+  <main 
+    class="node-container"
+    class:fullscreen
+  >
     <button
       class="fullscreen-button"
       on:click={toggleFullscreen}
     >
-      <FullscreenIcon />
+      <FullscreenIcon 
+        mode={!fullscreen ? 'open' : 'close'}
+        strokeWidth={1.1}
+        size={27}
+      />
     </button>
 
     <slot />
@@ -110,18 +115,22 @@
   .fullscreen-button {
     position: absolute;
 
-    top: 40px;
-    right: 4px;
+    top: 45px;
+    right: 1px;
 
     transition: 0.4s;
-
-    transform: rotate(-270deg);
   }
 
   .fullscreen .fullscreen-button {
     top: 4px;
     right: 4px;
+  }
 
-    transform: rotate(-90deg);
+  main {
+    border-top: none;
+  }
+
+  .fullscreen main {
+    border-top: var(--borderPrimary);
   }
 </style>

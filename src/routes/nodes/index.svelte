@@ -4,6 +4,8 @@
   import { useTitle } from "$utils/useTitle";
 
   import { metadata$ } from "$stores/metadata";
+  import { NODE_NAMES } from '$constants';
+  import Paragraph from '$components/text/Paragraph.svelte';
 
   const nodeNames = Object.keys(
     $metadata$.nodes
@@ -13,21 +15,29 @@
   const useMainRef = (ref: HTMLElement) => {
     mainRef = ref;
   }
+  
+  // TODO: add filters and search capabilities
 
-  useTitle('Nodes');
+  useTitle(NODE_NAMES);
 </script>
 
 <main
   use:useMainRef
 >
   <h1>
-    NODES
+    { NODE_NAMES }
   </h1>
+
+  <div class="description-container">
+    <Paragraph center>
+      Nodes are entries on the page. A node can be anything. Words, art, interactive 3D scenes. Nodes are connected.
+    </Paragraph>
+  </div>
 
   <NodeList
     nodeNames={nodeNames}
     contextFirst="inline"
-    contextRest="link"
+    contextRest="preview"
     batchCount={5}
     scrollElement={mainRef}
   />
@@ -40,5 +50,16 @@
     height: 100%;
 
     overflow-y: auto;
+  }
+
+  .description-container {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 1.2em;
+  }
+
+  h1 {
+    text-transform: uppercase;
   }
 </style>

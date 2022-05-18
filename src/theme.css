@@ -11,6 +11,8 @@
   --cFg: #090b20;
   --cBg: #bec2c7;
 
+  --cBgDark: #65686c;
+
   --cFgInverted: var(--cBg);
   --cBgInverted: var(--cFg);
 
@@ -35,17 +37,14 @@
   --borderRadius2: 35px;
   --borderRadius3: 100%;
 
-  --textShadowDisplay: 0px 0px 10px #813a7353;
-
-  /*
-  --pillShadow: inset 12px 12px 8px #ffffff21,
-                inset -12px -12px 8px #000000ff;
-  */
+  --hoverShadow: 
+    1px 1px 0px rgba(37, 1, 1, 0.81), 
+    3px 3px 0px #24183Efa;
 
   --pillShadow: 
     2px 2px 4px rgba(37, 1, 1, 0.11), 
-    inset -15px -15px 20px #24183E, 
-    inset 10px 10px 20px rgba(255, 255, 255, 0.43);
+    inset -15px -15px 20px #24183Eaa, 
+    inset 5px 5px 20px rgba(255, 255, 255, 0.34);
 }
 
 /* Global styles */

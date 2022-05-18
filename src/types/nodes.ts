@@ -20,13 +20,6 @@ export type NodeMode
   | 'inline'
   | 'main'
   | 'only';
-/*
-  = 'single' 
-  | 'multiple' 
-  | 'multiple-primary' 
-  | 'multiple-secondary'
-  | 'link';
-  */
 
 export type NodeMetadata = {
   tags: Tag[],
@@ -39,8 +32,6 @@ export type NodeMetadata = {
   title?: string,
   description?: string,
   image?: string,
-
-  // rest?: Record<string, any>
 } & Record<string, any>; 
 
 export type NodeContext = {

@@ -17,7 +17,7 @@
 <style>
   p {
     color: var(--cFg);
-    max-width: 40ch;
+    max-width: 44ch;
     text-align: left;
 
     line-height: 1.5em;

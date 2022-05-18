@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
   // based on https://df.id.au/technical/svelte/breadcrumbs/
 	import { page } from '$app/stores';
+import { NODE_NAMES } from '$constants';
 
   export let showHome: boolean = false;
   export let homeName: string = 'index';
@@ -46,9 +46,9 @@
         <a
           href={crumb.path}
         >
-        <!--
-          { crumb.text }
-        -->
+          <div class="link-text">
+            { crumb.text === 'nodes' ? NODE_NAMES : crumb.text }
+          </div>
         </a> 
       {:else}
         <span>
@@ -79,6 +79,25 @@
     box-shadow: var(--pillShadow);
     background-color: var(--cBgInverted);
     display: inline-block;
+
+    position: relative;
+  }
+
+  a .link-text {
+    visibility: hidden;
+
+    position: absolute;
+    top: 100%;
+    left: -1px;
+
+    padding: 0.5em;
+
+    background-color: var(--cBg);
+    border: var(--borderPrimary);
+  }
+
+  a:hover .link-text {
+    visibility: visible;
   }
 
   span {

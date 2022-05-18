@@ -2,11 +2,11 @@
 	import type { NavEntry } from '$types/general';
 	import Navbar from '$components/navigation/Navbar.svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
-  import Sphere from '$components/ornaments/Sphere.svelte';
+  import { NODE_NAMES } from '$constants';
 
   const navEntries: NavEntry[] = [
     {
-      text: 'nodes',
+      text: NODE_NAMES,
       path: '/nodes'
     },
     {
@@ -14,13 +14,13 @@
       path: '/tags'
     },
     {
-      text: 'info',
-      path: '/nodes/info'
-    },
-    {
       text: 'manifest',
       path: '/nodes/manifest'
-    }
+    },
+    {
+      text: 'about',
+      path: '/nodes/about'
+    },
   ];
 </script>
 

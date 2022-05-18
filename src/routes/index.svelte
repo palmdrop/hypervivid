@@ -70,8 +70,6 @@
     overflow-y: auto;
 
     width: 100%;
-
-    padding-top: 1em;
   }
 
   .landing {
@@ -86,45 +84,6 @@
     height: 92%;
   }
 
-  .landing h1 {
-    text-align: left;
-
-    font-size: 23vw;
-
-    /*
-    color: var(--cFgInverted);
-    text-shadow: var(--textShadowDisplay);
-    */
-    color: var(--cFg);
-
-
-    padding-bottom: 1.5rem;
-    opacity: 0.3;
-  }
-
-  .landing img {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -15%);
-
-    height: 60vw;
-
-    aspect-ratio: 1/1;
-
-    z-index: 1;
-    transition: 0.5s opacity;
-
-    opacity: 0.0;
-  }
-
-  .landing .fadeIn {
-    opacity: 1.0; 
-  }
-
-  .landing img:hover {
-    opacity: 0.7;
-  }
-
   section {
     width: 100vw;
     display: flex;
@@ -133,14 +92,10 @@
 
   .nodes-link {
     text-align: center;
+    padding-bottom: 1em;
   }
 
   .scroll-down-button {
     display: flex;
-  }
-
-  .arrow {
-    font-size: 2em;
-    transform: rotateZ(90deg);
   }
 </style>

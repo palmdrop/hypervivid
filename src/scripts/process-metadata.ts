@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { Link, LinkKind } from '../types/nodes';
+import type { Link, LinkKind, NodeMetadata } from '../types/nodes';
 import fs from 'fs';
 
 // TODO: add to env
@@ -10,8 +10,9 @@ const DEFAULT_LINK_STRENGTH = 0.5;
 const NODE_IMPORT_REGEX = /['|"](.\/)?(\.\.\/[^(/|.)]*)\/([^/]+)\.svelte['|"]/g;
 const NODE_NAME_REGEX = /<Node[^(/>)]+name={?["|'](\w+)["|']}?[^(/>)]*\/>/g;
 
-// const METADATA_FILE_PATH = NODES_DIR + 'metadata.json';
 const METADATA_FILE_PATH = NODES_DIR + 'metadata.ts';
+
+const PREVIEW_IMAGE_PATH = '/nodes/';
 
 type Metadata = {
   links: Map<string, Link[]>,
@@ -113,7 +114,7 @@ const processNode = async (
       const metadata = JSON.parse(fs.readFileSync(
         metadataPath,
         'utf8'
-      ));
+      )) as NodeMetadata;
 
       const nodeTags: string[] = metadata.tags ?? [];
       const nodeLinks: Link[] = metadata.links ?? [];
@@ -134,12 +135,23 @@ const processNode = async (
         }
       });
       nodeLinks.forEach(link => 
-        // addLink(nodeName, { from: nodeName, ...link }, links)
         addUndirectedLink(nodeName, link.to, links, link.strength, link.kind)
       );
 
+      // Check if preview image exists if not explicitly defined
+      if(!metadata.image || !metadata.image.length) {
+        const jpgPath = `${PREVIEW_IMAGE_PATH}${nodeName}.preview.jpg`;
+        const pngPath = `${PREVIEW_IMAGE_PATH}${nodeName}.preview.png`;
+        if(fs.existsSync('static' + jpgPath)) {
+          metadata.image = jpgPath;
+        } else if(fs.existsSync('static' + pngPath)) {
+          metadata.image = pngPath;
+        }
+      }
+
       nodes[nodeName] = metadata;
     } else {
+      // TODO: Create default metadata
       console.log(`Node "${nodeName}" has no metadata.`);
     }
   } catch(err) {

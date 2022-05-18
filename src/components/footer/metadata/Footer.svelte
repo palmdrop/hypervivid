@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { NODE_NAME } from '$constants';
   import { slide } from 'svelte/transition';
 	import LinkList from '$components/list/LinkList.svelte';
   import TagList from '$components/list/TagList.svelte';
@@ -24,8 +25,6 @@
   })
 
   $: console.log("oops", isExpanded);
-
-  // $: console.log('Expanded', expanded);
 </script>
 
 <footer> 
@@ -38,6 +37,7 @@
         { transitionDuration }
         direction={expanded ? 'down' : 'right'}
         strokeWidth={2}
+        size={20}
       />
     </div>
     <h1>Metadata — {name}</h1>
@@ -80,8 +80,8 @@
           links={links}
           formatLink={link => link.to}
         >
-          <Paragraph center faded>
-            This node has no links...
+          <Paragraph center faded wide>
+            This { NODE_NAME } has no links...
           </Paragraph>
         </LinkList>
       </Cell>
@@ -93,7 +93,7 @@
           tags={tags}
           orientation="horizontal"
         >
-          <Paragraph center faded>
+          <Paragraph center faded wide>
             This node has no tags...
           </Paragraph>
         </TagList>
@@ -126,9 +126,11 @@
 
   .arrow {
     position: absolute;
+    top: 3px;
+    left: 6px;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 </style>

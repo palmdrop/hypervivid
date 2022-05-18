@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { goto } from "$app/navigation";
   import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
   import throttle from "lodash.throttle";
@@ -31,26 +32,34 @@
 
   $: fulfilled = loaded === nodeNames.length;
 
+  // Navigating
+  const onItemClick = (name: string) => {
+    // TODO: avoid programmatic navigation. Make list item an a tag
+    goto(`/nodes/${name}`);
+  }
+
   // Listeners
   const handleScroll = throttle((
-    event: UIEvent & { target: EventTarget & HTMLElement }
+    event: UIEvent & { target: EventTarget | null }
   ) => {
+    const target = event.target as HTMLElement;
     if(
-      event.target.clientHeight + event.target.scrollTop >=
-      event.target.scrollHeight - loadMoreOffset
+      target &&
+      target.clientHeight + target.scrollTop >=
+      target.scrollHeight - loadMoreOffset
     ) {
       loadMore();
     }
   }, loadMoreListenerThrottle);
 
   const registerScrollListener = (element: HTMLElement) => {
-    element.addEventListener('scroll', handleScroll);
+    element.addEventListener('scroll', handleScroll as any);
   }
 
   $: if(scrollElement) registerScrollListener(scrollElement);
 
   onDestroy(() => {
-    scrollElement?.removeEventListener('scroll', handleScroll);
+    scrollElement?.removeEventListener('scroll', handleScroll as any);
   })
 </script>
 
@@ -59,7 +68,9 @@
   on:scroll={handleScroll}
 >
   {#each loadedNames as name, i (name)}
-    <li>
+    <li
+      on:click={() => onItemClick(name)}
+    >
       <Node
         name={name}
         mode={i === 0 ? contextFirst : contextRest}
@@ -67,6 +78,7 @@
       {#if showOpenLink && (i === 0 ? contextFirst : contextRest) !== 'link'}
         <a
           href={`/nodes/${name}`}
+          class="open-link"
         >
           <ExpandIcon />
         </a>
@@ -86,21 +98,37 @@
 <style>
   ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
     overflow-y: auto;
 
-    width: 100%;
+    margin: 0em auto;
+
+    max-width: 1100px;
+
+    padding-bottom: 1em;
   }
 
   li {
     position: relative;
-    margin: 1em;
+    margin: 5px;
     padding: 2.5em;
     border: var(--borderPrimary);
     border-radius: var(--borderRadius1);
+
+    flex: 1 1 auto;
+
+    min-width: 30%;
+
+    cursor: pointer;
   }
 
-  li a {
+  li:hover {
+    box-shadow: var(--hoverShadow);
+  }
+
+  .open-link {
     position: absolute;
     top: 0.7em;
     right: 0.7em;

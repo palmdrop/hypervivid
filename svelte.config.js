@@ -16,7 +16,8 @@ const config = {
 					$nodes: path.resolve("src/nodes"),
 					$stores: path.resolve("src/stores"),
 					$types: path.resolve("src/types"),
-					$utils: path.resolve("src/utils")
+					$utils: path.resolve("src/utils"),
+					$constants: path.resolve("src/constants.ts")
 				}
 			}
 		},

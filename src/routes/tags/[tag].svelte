@@ -30,6 +30,8 @@
 <script lang="ts">
   import { useTitle } from '$utils/useTitle';
   import NodeList from '$components/list/NodeList.svelte';
+  import Paragraph from '$components/text/Paragraph.svelte';
+  import { NODE_NAMES } from '$constants';
 
   export let tag: Tag;
   export let nodeNames: NodeName[];
@@ -42,6 +44,10 @@
     { tag }
   </h1>
 
+  <Paragraph wide center>
+    All {NODE_NAMES} with tag "{tag}."
+  </Paragraph>
+
   <NodeList
     nodeNames={nodeNames}
     contextFirst="preview"
@@ -52,5 +58,6 @@
 <style>
   main {
     padding-top: 1em;
+    width: 100%;
   }
 </style>

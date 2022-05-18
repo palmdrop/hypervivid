@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Point from '$components/ornaments/Point.svelte';
-import type { NavEntry } from '$types/general';
+  import type { NavEntry } from '$types/general';
   export let entries: NavEntry[];
 </script>
 
@@ -30,6 +29,7 @@ import type { NavEntry } from '$types/general';
 
   li {
     position: relative;
+    display: flex;
 
     border-left: var(--borderPrimary);
     z-index: 0;
