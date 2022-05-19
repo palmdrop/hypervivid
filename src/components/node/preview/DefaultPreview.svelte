@@ -2,10 +2,11 @@
 	import TagList from '$components/list/TagList.svelte';
   import Paragraph from '$components/text/Paragraph.svelte';
   import type { NodeContext, NodeMetadata, NodeName } from '$types/nodes';
-import { formatDate } from '$utils/general';
+  import { formatDate } from '$utils/general';
   import { getContext } from 'svelte';
 
   export let name: NodeName;
+  export let flipped: boolean = false;
   let metadata: NodeMetadata;
 
   $: {
@@ -15,7 +16,10 @@ import { formatDate } from '$utils/general';
 
 </script>
 
-<section class="node-preview">
+<section 
+  class="node-preview"
+  class:flipped
+>
   <div class="data-container">
     <div class="date">
       { formatDate(metadata.createdAt) }
@@ -47,14 +51,18 @@ import { formatDate } from '$utils/general';
   .node-preview {
     display: flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
   }
 
   .date {
     position: absolute;
-    bottom: 15px;
+    bottom: 22px;
 
     opacity: 0.5;
+  }
 
+  .data-container {
+    width: 100%;
   }
 
   h2 {
@@ -67,11 +75,36 @@ import { formatDate } from '$utils/general';
     width: 100%;
     max-width: 500px;
 
-    height: auto;
+    padding-bottom: 0.5em;
 
-    padding-left: 0.7em;
+    border-radius: 15px;
 
     aspect-ratio: 3/2;
     object-fit: cover;
   }
+
+  @media ( min-width: 650px )  {
+    .node-preview {
+      flex-direction: row;
+    }
+
+    .flipped {
+      flex-direction: row-reverse;
+    }
+
+    .flipped .date {
+      right: 2.5em;
+    }
+
+    img {
+      margin-left: 0.7em;
+      padding-bottom: unset;
+    }
+
+    .flipped img {
+      margin-left: unset;
+      margin-right: 0.7em;
+    }
+  }
+
 </style>

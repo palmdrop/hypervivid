@@ -50,8 +50,8 @@
 
   <NodeList
     nodeNames={nodeNames}
-    contextFirst="preview"
-    contextRest="link"
+    modeFirst="preview"
+    modeRest="link"
   />
 </main>
 

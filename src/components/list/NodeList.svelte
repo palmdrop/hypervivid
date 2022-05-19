@@ -5,6 +5,7 @@
   import throttle from "lodash.throttle";
   import { onDestroy } from "svelte/internal";
   import ExpandIcon from "$components/ornaments/indicators/ExpandIcon.svelte";
+import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svelte";
 
   export let showOpenLink: boolean = true;
   export let nodeNames: NodeName[];
@@ -15,8 +16,8 @@
   export let loadMoreOffset = 150;
   export let loadMoreListenerThrottle = 250;
 
-  export let contextFirst: NodeMode
-  export let contextRest: NodeMode
+  export let modeFirst: NodeMode
+  export let modeRest: NodeMode
 
   // Loading
   $: loaded = batchCount === -1 
@@ -73,14 +74,18 @@
     >
       <Node
         name={name}
-        mode={i === 0 ? contextFirst : contextRest}
+        mode={i === 0 ? modeFirst : modeRest}
+        index={i}
       />
-      {#if showOpenLink && (i === 0 ? contextFirst : contextRest) !== 'link'}
+      {#if showOpenLink && (i === 0 ? modeFirst : modeRest) !== 'link'}
         <a
           href={`/nodes/${name}`}
           class="open-link"
         >
-          <ExpandIcon />
+          <FullscreenIcon 
+            mode='open'
+            size={25}
+          />
         </a>
       {/if}
     </li>
@@ -98,12 +103,10 @@
 <style>
   ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: stretch;
+    overflow-x: hidden;
     overflow-y: auto;
-
-    margin: 0em auto;
 
     max-width: 1100px;
 
@@ -112,9 +115,10 @@
 
   li {
     position: relative;
-    margin: 5px;
-    padding: 2.5em;
+    padding: 2.0em 5px;
     border: var(--borderPrimary);
+    margin: 5px -1px;
+
     border-radius: var(--borderRadius1);
 
     flex: 1 1 auto;
@@ -122,6 +126,24 @@
     min-width: 30%;
 
     cursor: pointer;
+
+    box-shadow: 0px 0px 0px transparent;
+
+    transition: 0.2s;
+  }
+
+  @media ( min-width: 500px )  {
+    ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      margin: 5px auto;
+    }
+
+    li {
+      padding: 2.5em;
+      margin: 5px;
+    }
   }
 
   li:hover {
@@ -130,10 +152,15 @@
 
   .open-link {
     position: absolute;
-    top: 0.7em;
-    right: 0.7em;
+    top: 1.0em;
+    right: 0.8em;
 
     text-decoration: none;
+    transform: scale(1.0);
+  }
+
+  .open-link:hover {
+    transform: scale(1.1) translate(0px, 1px);
   }
 
   .load-more-button {

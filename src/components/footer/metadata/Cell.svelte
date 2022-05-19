@@ -31,16 +31,12 @@
 
     flex-grow: 2;
     text-align: center;
-    max-width: 33%;
 
     margin: -1px;
+    max-width: 100%;
 
     flex-direction: column;
     justify-content: unset;
-  }
-
-  .nested {
-    max-width: unset;
   }
 
   .cell h2 {
@@ -64,7 +60,25 @@
   }
 
   .inline {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
+
+  @media ( min-width: 500px )  {
+    .cell {
+      max-width: 33%;
+    }
+  }
+
+  @media ( min-width: 700px )  {
+    .inline {
+      flex-direction: row;
+    }
+  }
+
+
+  .nested {
+    max-width: unset;
+  }
+
 </style>

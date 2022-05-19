@@ -23,8 +23,6 @@
   $: toggle = onToggle ?? (() => {
     expanded = !expanded;
   })
-
-  $: console.log("oops", isExpanded);
 </script>
 
 <footer> 
@@ -109,8 +107,15 @@
 
   .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
+
+  @media ( min-width: 500px )  {
+    .content {
+      flex-direction: row; 
+    }
+  }
+
 
   .metadata-button {
     width: 100%;

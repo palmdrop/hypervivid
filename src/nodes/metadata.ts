@@ -67,6 +67,10 @@ export default {
       "weight": 1,
       "count": 3
     },
+    "thoughts": {
+      "weight": 0.6666666666666666,
+      "count": 2
+    },
     "internet": {
       "weight": 0.6666666666666666,
       "count": 2
@@ -83,10 +87,6 @@ export default {
       "weight": 0.3333333333333333,
       "count": 1
     },
-    "thoughts": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
     "generative": {
       "weight": 0.3333333333333333,
       "count": 1
@@ -96,6 +96,10 @@ export default {
       "count": 1
     },
     "literature": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "info": {
       "weight": 0.3333333333333333,
       "count": 1
     },
@@ -112,18 +116,21 @@ export default {
     "N2": {
       "tags": [
         "tech",
-        "internet",
         "thoughts",
+        "internet",
         "generative"
       ],
       "createdAt": "2022-05-21"
     },
     "about": {
-      "tags": [],
+      "tags": [
+        "thoughts",
+        "info"
+      ],
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
       "inline": false,
       "title": "about",
-      "description": "",
+      "description": "What is this project?",
       "image": ""
     },
     "hyper": {
@@ -133,7 +140,7 @@ export default {
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
       "inline": false,
       "title": "hyper",
-      "description": "Hyperwords, meaningless or hyperclear.",
+      "description": "Hyperwords, meaningless or hyperclear. This is a pointless thing. Let's all become very aware of the *veryness* of today. There's no support for emphasis.",
       "image": "/nodes/hyper.preview.jpg"
     },
     "manifest": {
@@ -145,14 +152,14 @@ export default {
       "inline": false,
       "title": "manifest",
       "description": "The ideas behind this page, thoughts about the internet, etc",
-      "image": ""
+      "image": "/img/combined/mirror2.jpg"
     },
     "scroll": {
       "tags": [],
       "createdAt": "Fri, 06 May 2022 21:18:48 GMT",
       "inline": false,
       "title": "scroll",
-      "description": "",
+      "description": "Infinite (?) scrolling test",
       "image": ""
     },
     "N1": {

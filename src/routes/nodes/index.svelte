@@ -36,8 +36,8 @@
 
   <NodeList
     nodeNames={nodeNames}
-    contextFirst="inline"
-    contextRest="preview"
+    modeFirst="inline"
+    modeRest="preview"
     batchCount={5}
     scrollElement={mainRef}
   />

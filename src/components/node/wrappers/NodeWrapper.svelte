@@ -110,12 +110,14 @@
     flex-grow: 1;
 
     overflow: auto;
+
+    position: relative;
   }
 
   .fullscreen-button {
     position: absolute;
 
-    top: 45px;
+    top: 10px;
     right: 1px;
 
     transition: 0.4s;

@@ -1,6 +1,4 @@
 <script lang="ts">
-  import Arrow1 from "../icons/Arrow1.svelte";
-
   export let direction: 'right' | 'left' | 'down' | 'up' = 'right';
   export let transitionDuration: number = 400;
   export let strokeWidth = 1.2;

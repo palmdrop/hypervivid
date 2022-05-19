@@ -94,6 +94,8 @@ import { NODE_NAMES } from '$constants';
 
     background-color: var(--cBg);
     border: var(--borderPrimary);
+
+    z-index: 1;
   }
 
   a:hover .link-text {

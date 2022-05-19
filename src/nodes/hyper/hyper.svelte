@@ -7,9 +7,9 @@
   // const { name, metadata } = getNodeContext('hyper');
 
   const images = [
-    '/png/combined/comb1.jpg',
-    '/png/combined/comb2.jpg',
-    '/png/combined/mirror2.jpg',
+    '/img/combined/comb1.jpg',
+    '/img/combined/comb2.jpg',
+    '/img/combined/mirror2.jpg',
   ];
 
   const index = Math.floor((images.length * new Date().getSeconds() / 10) % images.length);
@@ -180,10 +180,20 @@
     position: absolute;
     z-index: -0;
 
-    min-width: 200px;
-    width: 90vw;
-    max-width: 1100px;
+    height: 100%;
 
+    object-fit: cover;
+  }
+
+  @media ( min-width: 500px )  {
+    img {
+      min-width: 300px;
+      width: 100%;
+      max-width: 1100px;
+      min-height: 600px;
+
+      height: unset;
+    }
   }
 </style>
   

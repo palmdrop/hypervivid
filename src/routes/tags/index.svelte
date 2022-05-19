@@ -8,6 +8,8 @@ import { NODE_NAME, NODE_NAMES } from "$constants";
   const tags = Object.keys($metadata$.tags);
 
   useTitle('Tags');
+
+  // TODO: add option to toggle tags. Create feed with only those nodes that have the tags. Also make it possible to open a specific tag.
 </script>
 
 

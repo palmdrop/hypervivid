@@ -5,6 +5,7 @@
   import { metadata$ } from "$stores/metadata";
   import type { GlobComponentImport } from "$types/imports";
   import type { NodeName, NodeMode, NodeMetadata, NodeContext } from "$types/nodes";
+  import NodeLoader from "./loader/NodeLoader.svelte";
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
@@ -12,6 +13,7 @@
   export let name: NodeName;
   export let mode: NodeMode;
   export let fromSlot: boolean = false;
+  export let index: number = -1; // If in a list
 
   let nodeMetadata: NodeMetadata;
 
@@ -55,7 +57,7 @@
   }
 </script>
 
-{#if asLink}
+{#if mode === 'link' }
   <a
     href={`/nodes/${name}`}
   >
@@ -64,13 +66,17 @@
 {:else if showDefaultPreview }
   <DefaultPreview
     name={name}
+    flipped={index !== -1 && index % 2 === 1}
   />
 {:else if component}
   {#key component}
     <Lazy
-      component={component}
+      { component }
     >
-      Loading...
+      <NodeLoader 
+        { mode }
+        { name }
+      />
     </Lazy>
   {/key}
 {:else}

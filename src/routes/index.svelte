@@ -10,9 +10,19 @@
   import { scrollIntoView } from '$utils/scrollIntoView';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
 
+  /*
   $: nodeNames = (
     Object.keys($metadata$.nodes).slice(0, 3)
    ) as NodeName[];
+   */
+
+  // TODO: featured + a few of the latest nodes?
+  // TODO: or always show the latest one first, then featured
+  $: nodeNames = [
+    'N2',
+    'manifest',
+    'N3'
+  ] as NodeName[];
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
   useTitle('Hypervivid ~ Hypersoft');
@@ -36,15 +46,15 @@
     >
       <Arrow 
         direction='down'
-        size={45}
+        size={35}
       />
       <Arrow 
         direction='down'
-        size={45}
+        size={35}
       />
       <Arrow 
         direction='down'
-        size={45}
+        size={35}
       />
     </button>
   </section>
@@ -52,8 +62,8 @@
   <section>
     <NodeList
       nodeNames={nodeNames} 
-      contextFirst="inline"
-      contextRest="preview"
+      modeFirst="inline"
+      modeRest="preview"
     />
     <a 
       href="/nodes"
@@ -70,6 +80,7 @@
     overflow-y: auto;
 
     width: 100%;
+    height: 100%;
   }
 
   .landing {
@@ -81,7 +92,7 @@
 
     padding-top: 1em;
     padding-bottom: 3em;
-    height: 92%;
+    height: 97%;
   }
 
   section {
@@ -97,5 +108,13 @@
 
   .scroll-down-button {
     display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    background-color: var(--cBg);
+    z-index: 1;
+
+    width: 100vw;
+    padding: 0.5em 0em;
   }
 </style>

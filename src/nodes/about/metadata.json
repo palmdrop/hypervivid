@@ -1,9 +1,9 @@
 {
-  "tags": [],
+  "tags": ["info", "thoughts"],
   "links": [],
   "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
   "inline": false,
   "title": "about",
-  "description": "",
+  "description": "What is this project?",
   "image": ""
 }
