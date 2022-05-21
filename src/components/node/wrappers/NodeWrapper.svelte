@@ -68,7 +68,7 @@
     >
       <FullscreenIcon 
         mode={!fullscreen ? 'open' : 'close'}
-        strokeWidth={1.1}
+        strokeWidth={1.4}
         size={27}
       />
     </button>
@@ -117,7 +117,6 @@
   .fullscreen-button {
     position: absolute;
 
-    top: 10px;
     right: 1px;
 
     transition: 0.4s;

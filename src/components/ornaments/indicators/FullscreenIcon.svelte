@@ -11,8 +11,6 @@
     transition: {transitionDuration / 1000}s;
   "
 >
-  <!--□-->
-  <!--⇱-->
   <svg 
     width={size} 
     height={size} 
@@ -39,7 +37,13 @@
 <style>
   div {
     font-size: 1.7em;
-    margin: 0.2em;
+
+    background-color: var(--cBg);
+    padding: 7px 7px 4px 7px;
+    /* 0.25em 0.25em 0.1em 0.25em;
+    */
+
+    border-radius: 5px;
   }
 
   .open {

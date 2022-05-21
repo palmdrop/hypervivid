@@ -5,7 +5,7 @@
 
   let expanded = false;
   let windowWidth = -1;
-  const breakpoint = 700;
+  const breakpoint = 750;
 
   $: {
     if(expanded && windowWidth > breakpoint) {
@@ -86,7 +86,7 @@
 
     background-color: unset;
 
-    z-index: 10;
+    z-index: 3;
   }
 
   .expand-button:hover {
@@ -97,9 +97,7 @@
     position: fixed;
     inset: 0;
 
-    z-index: 5;
-
-    background-color: none;
+    z-index: 2;
   }
 
   ul {
@@ -111,7 +109,7 @@
     right: 0;
     top: calc(100% + 1px);
 
-    z-index: 10;
+    z-index: 3;
 
     background-color: var(--cBg);
 
@@ -171,7 +169,7 @@
     box-shadow: var(--pillShadow);
   }
 
-  @media ( min-width: 700px )  {
+  @media ( min-width: 750px )  {
     .expand-button {
       display: none;
     }

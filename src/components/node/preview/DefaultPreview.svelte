@@ -27,7 +27,7 @@
     <a
       href={`/nodes/${name}`}
     >
-      <h2>{ name }</h2>
+      <h2>{ metadata.title ?? name }</h2>
     </a>
     {#if metadata.description && metadata.description.length }
       <Paragraph>

@@ -68,6 +68,16 @@
     border: var(--borderPrimary);
   }
 
+  a:last-child {
+    margin: 0.1em 0.2em;
+    margin-right: 0;
+  }
+
+  a:first-child {
+    margin: 0.1em 0.2em;
+    margin-left: 0;
+  }
+
   a:hover {
     color: var(--cFg);
     background-color: var(--cBg);

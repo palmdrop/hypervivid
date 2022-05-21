@@ -1,10 +1,7 @@
 <script lang="ts">
 	import { wrapSlice } from './../../utils/general';
-  // import { getNodeContext } from '$utils/useNodeContext';
   import { onDestroy } from 'svelte';
   import { useTitle } from '$utils/useTitle';
-
-  // const { name, metadata } = getNodeContext('hyper');
 
   const images = [
     '/img/combined/comb1.jpg',
@@ -37,10 +34,9 @@
     'connected',
     'seduced',
     'sleep',
-    'moves', // ??
     'fool',
     'pool',
-    'numb', // ?
+    'numb',
     'void',
     'tube',
     'blank',
@@ -54,10 +50,8 @@
     'damp',
     'sexy',
     'work',
-    'office', // ?
     'stench',
     'loop',
-    'meth', // ?
     'cell',
     'zen',
     'life',
@@ -170,24 +164,14 @@
     letter-spacing: 0.45em;
     text-align: center;
 
-    /*
-    background-color: var(--cBgInverted);
-    color: var(--cFgInverted);
-    */
     background-color:rgb(240, 240, 12);
     color: var(--cFg);
 
-    z-index: 1;
-
-    /*
-    border: 1px solid var(--cBg);
-    */
-    
+    z-index: 0;
   } 
   
   img {
     position: absolute;
-    z-index: -0;
 
     height: 100%;
 

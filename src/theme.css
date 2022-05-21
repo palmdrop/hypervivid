@@ -44,7 +44,7 @@
   --pillShadow: 
     2px 2px 4px rgba(37, 1, 1, 0.11), 
     inset -15px -15px 20px #24183Eaa, 
-    inset 5px 5px 20px rgba(255, 255, 255, 0.34);
+    inset 3px 3px 20px rgba(255, 255, 255, 0.24);
 }
 
 /* Global styles */

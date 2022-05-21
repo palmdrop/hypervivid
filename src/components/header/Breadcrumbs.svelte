@@ -105,5 +105,9 @@ import { NODE_NAMES } from '$constants';
   span {
     margin: -1px;
     border: var(--borderPrimary);
+
+    max-width: 160px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 </style>
