@@ -25,23 +25,12 @@
 </script>
 
 <header>
-  <!--
-  <a
-    href="/"
-  >
-    <Sphere 
-      size={30}
-    />
-  </a>
-  -->
-  <div>
-    <Breadcrumbs 
-      showHome={true}
-    />
-    <Navbar
-      entries={navEntries}
-    />
-  </div>
+  <Breadcrumbs 
+    showHome={true}
+  />
+  <Navbar
+    entries={navEntries}
+  />
 </header>
 
 <style>
@@ -55,13 +44,5 @@
     align-items: center;
 
     background-color: var(--cBg);
-  }
-
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
   }
 </style>

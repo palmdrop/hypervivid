@@ -129,10 +129,7 @@
   }
 
   main {
-    border-top: none;
-  }
-
-  .fullscreen main {
     border-top: var(--borderPrimary);
+    margin-top: -1px;
   }
 </style>

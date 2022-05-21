@@ -5,15 +5,15 @@
 
 <nav>
   <ul>
-  {#each entries as {path, text}, i (path)}
-    <li>
-      <a
-        href={path}
-      >
-        { text }
-      </a>
-    </li>
-  {/each}
+    {#each entries as {path, text}, i (path)}
+      <li>
+        <a
+          href={path}
+        >
+          { text }
+        </a>
+      </li>
+    {/each}
   </ul>
 </nav>
 
@@ -71,5 +71,11 @@
   li:hover::before {
     background-color: var(--cBgInverted);
     box-shadow: var(--pillShadow);
+  }
+
+  @media ( min-width: 700px )  {
+    ul {
+      visibility: visible;
+    }
   }
 </style>

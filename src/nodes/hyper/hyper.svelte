@@ -71,14 +71,23 @@
     'worm',
     'meta',
     'guys',
-    'fuck',
     'node',
     'idiot',
+    'violence',
+    'soothing',
+    'breath',
+    'dick',
+    'sex',
+    'rest',
+    'talk',
+    'fuck',
+    'cringe',
+    'gagement',
   ].map(word => `hyper${word}`.toUpperCase());
 
   const boxHeight = 7;
   const wordLength = 9;
-  const interval = 1000;
+  const interval = 600;
   
   // TODO: optimize with CSS transitions? https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break
   // https://codepen.io/julianofreitas/pen/BayKper

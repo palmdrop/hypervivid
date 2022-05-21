@@ -30,13 +30,10 @@
   }
 
   let component: (() => Promise<SvelteComponent>) | undefined;
-  let asLink = false;
   let showDefaultPreview = false;
 
   $: {
-    if(mode === 'link') {
-      asLink = true;
-    } else if(!fromSlot) {
+    if(mode !== 'link' && !fromSlot) {
       const showPreview = (
         !['only', 'main', 'inline'].includes(mode) &&
         !nodeMetadata.inline
