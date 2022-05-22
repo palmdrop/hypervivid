@@ -2,8 +2,8 @@
   import TagList from "$components/list/TagList.svelte";
   import { useTitle } from "$utils/useTitle";
   import { metadata$ } from "$stores/metadata";
-import Paragraph from "$components/text/Paragraph.svelte";
-import { NODE_NAME, NODE_NAMES } from "$constants";
+  import Paragraph from "$components/common/Paragraph.svelte";
+  import { NODE_NAME, NODE_NAMES } from "$constants";
 
   const tags = Object.keys($metadata$.tags);
 

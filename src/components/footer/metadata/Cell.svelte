@@ -76,7 +76,6 @@
     }
   }
 
-
   .nested {
     max-width: unset;
   }

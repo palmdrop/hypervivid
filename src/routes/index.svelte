@@ -40,6 +40,11 @@
     >
       <Hyper />
     </Node>
+  </section>
+
+  <section 
+    class="nodes"
+  >
     <button
       class="scroll-down-button"
       on:click|preventDefault={scrollIntoView}
@@ -57,9 +62,6 @@
         size={35}
       />
     </button>
-  </section>
-
-  <section>
     <NodeList
       nodeNames={nodeNames} 
       modeFirst="inline"
@@ -77,22 +79,24 @@
 <style>
   main {
     position: relative;
+    overflow-x: hidden;
     overflow-y: auto;
 
     width: 100%;
     height: 100%;
+
+    z-index: 0;
   }
 
   .landing {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     transition: opacity 1s;
 
-    padding-top: 1em;
-    padding-bottom: 3em;
-    height: 97%;
+    min-height: 94%;
   }
 
   section {
@@ -101,9 +105,11 @@
     flex-direction: column;
   }
 
-  .nodes-link {
-    text-align: center;
-    padding-bottom: 1em;
+  .nodes {
+    display: flex;
+    z-index: 10;
+
+    background-color: var(--cBg);
   }
 
   .scroll-down-button {
@@ -111,10 +117,17 @@
     justify-content: center;
     gap: 1em;
 
-    background-color: var(--cBg);
     z-index: 1;
 
     width: 100vw;
-    padding: 0.5em 0em;
+
+    padding-bottom: 2em;
+  }
+
+  .nodes-link {
+    text-align: center;
+    padding-bottom: 1em;
+
+    background-color: var(--cBg);
   }
 </style>

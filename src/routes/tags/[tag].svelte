@@ -30,7 +30,7 @@
 <script lang="ts">
   import { useTitle } from '$utils/useTitle';
   import NodeList from '$components/list/NodeList.svelte';
-  import Paragraph from '$components/text/Paragraph.svelte';
+  import Paragraph from '$components/common/Paragraph.svelte';
   import { NODE_NAMES } from '$constants';
 
   export let tag: Tag;

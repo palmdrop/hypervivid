@@ -120,6 +120,8 @@
     right: 1px;
 
     transition: 0.4s;
+
+    z-index: 1;
   }
 
   .fullscreen .fullscreen-button {
@@ -128,7 +130,6 @@
   }
 
   main {
-    border-top: var(--borderPrimary);
     margin-top: -1px;
   }
 </style>

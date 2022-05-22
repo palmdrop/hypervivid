@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Paragraph from '$components/text/Paragraph.svelte';
+  import Paragraph from '$components/common/Paragraph.svelte';
   import { getNodeContext } from '$utils/useNodeContext';
   import Node from '$components/node/Node.svelte';
 import { NODE_NAME } from '$constants';

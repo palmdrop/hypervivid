@@ -4,8 +4,7 @@
   import Node from "../node/Node.svelte";
   import throttle from "lodash.throttle";
   import { onDestroy } from "svelte/internal";
-  import ExpandIcon from "$components/ornaments/indicators/ExpandIcon.svelte";
-import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svelte";
+  import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svelte";
 
   export let showOpenLink: boolean = true;
   export let nodeNames: NodeName[];
@@ -119,7 +118,6 @@ import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svel
     border: var(--borderPrimary);
     margin: 5px -1px;
 
-    border-radius: var(--borderRadius1);
 
     flex: 1 1 auto;
 
@@ -143,6 +141,7 @@ import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svel
     li {
       padding: 2.5em;
       margin: 5px;
+      border-radius: var(--borderRadius1);
     }
   }
 
@@ -156,11 +155,6 @@ import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svel
     right: 0.8em;
 
     text-decoration: none;
-    transform: scale(1.0);
-  }
-
-  .open-link:hover {
-    transform: scale(1.1) translate(0px, 1px);
   }
 
   .load-more-button {

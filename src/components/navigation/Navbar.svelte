@@ -113,6 +113,7 @@
 
     background-color: var(--cBg);
 
+    padding-bottom: 1px;
     border-bottom: var(--borderPrimary);
   }
 
@@ -125,6 +126,7 @@
     z-index: 0;
 
     width: 100vw;
+    height: 100px;
   }
 
   li:last-child {
@@ -182,6 +184,7 @@
       top: unset;
 
       border-bottom: unset;
+      padding-bottom: 0px;
     }
 
     li {

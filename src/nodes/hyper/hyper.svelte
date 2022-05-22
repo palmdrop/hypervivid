@@ -149,6 +149,7 @@
   div {
     width: 100%;
     height: 100%;
+    min-height: 650px;
 
     display: flex;
     justify-content: center;
@@ -166,16 +167,13 @@
 
     background-color:rgb(240, 240, 12);
     color: var(--cFg);
-
-    z-index: 0;
   } 
   
   img {
     position: absolute;
-
     height: 100%;
-
     object-fit: cover;
+    z-index: -1;
   }
 
   @media ( min-width: 500px )  {

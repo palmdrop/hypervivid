@@ -5,7 +5,7 @@
   import TagList from '$components/list/TagList.svelte';
   import type { NodeMetadata, NodeName } from '$types/nodes';
   import { formatDate } from '$utils/general';
-  import Paragraph from '$components/text/Paragraph.svelte';
+  import Paragraph from '$components/common/Paragraph.svelte';
   import Cell from './Cell.svelte';
   import { sineInOut } from 'svelte/easing';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';

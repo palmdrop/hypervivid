@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
-	import Paragraph from '$components/text/Paragraph.svelte';
+	import Paragraph from '$components/common/Paragraph.svelte';
   import type { NodeMode } from '$types/nodes';
 
   export let mode: NodeMode;

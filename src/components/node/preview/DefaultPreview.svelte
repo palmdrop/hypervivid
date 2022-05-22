@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TagList from '$components/list/TagList.svelte';
-  import Paragraph from '$components/text/Paragraph.svelte';
+  import Paragraph from '$components/common/Paragraph.svelte';
   import type { NodeContext, NodeMetadata, NodeName } from '$types/nodes';
   import { formatDate } from '$utils/general';
   import { getContext } from 'svelte';
@@ -56,7 +56,7 @@
 
   .date {
     position: absolute;
-    bottom: 22px;
+    bottom: 25px;
 
     opacity: 0.5;
   }
@@ -73,7 +73,7 @@
 
   img {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
 
     padding-bottom: 0.5em;
 
