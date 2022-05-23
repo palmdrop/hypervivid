@@ -70,7 +70,7 @@ import { NODE_NAMES } from '$constants';
   }
 
   a, span {
-    min-width: 19px;
+    min-width: 1.1em;
     padding: 0.5em;
   }
 

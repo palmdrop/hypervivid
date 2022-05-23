@@ -5,12 +5,7 @@
   export let faded = false;
 </script>
 
-<p 
-  class:center
-  class:wide
-  class:big
-  class:faded
->
+<p class:center class:wide class:big class:faded>
   <slot />
 </p>
 
@@ -22,7 +17,7 @@
 
     line-height: 1.5em;
 
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   p:not(:last-child) {
@@ -38,8 +33,7 @@
   }
 
   .big {
-    font-size: clamp(1rem, 3vw, 100vw);
-    padding-left: 1em;
+    font-size: clamp(1rem, 3vw, 30px);
   }
 
   .faded {

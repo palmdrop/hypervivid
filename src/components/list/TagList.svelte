@@ -36,7 +36,6 @@
     display: flex;
     padding: 0.5em 0;
 
-    max-width: 600px;
     flex-wrap: wrap;
   }
 

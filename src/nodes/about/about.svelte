@@ -34,28 +34,28 @@
       <ul class="links">
         {#each links as link (link.text)}
           <li>
-            <Link href={link.href} newTab bold>{link.text}</Link>
+            <Link href={link.href} big newTab decorated underline={false}>{link.text}</Link>
           </li>
         {/each}
       </ul>
       <!--TODO: Move a lot of this to manifest page-->
-      <Paragraph wide>
+      <Paragraph wide big>
         I'm Anton, or palmdrop. I dabble in digital and generative art, creative writing, and occasional photography. This page is my personal mindspace, here to let me post anything: 
         text, pictures, generative art, experiments, cringe, political satire, poetry, trash recepies, GPU-frying 3D sketches, etc. 
       </Paragraph>
-      <Paragraph wide>
+      <Paragraph wide big>
         This is a public graph of my mind. 
       </Paragraph>
-      <Paragraph wide>
+      <Paragraph wide big>
         Most things on this page is a "node". Node, as in a point in a mathy graph. You get it. Nodes are connected. Nodes have tags. 
         The core idea for this page is 1. to enable me to post anything, without restriction, unbound by authoratative page categories, and 2. 
         to encourage a ludic web interaction, exploration, and play.
       </Paragraph>
-      <Paragraph wide>
+      <Paragraph wide big>
         I want to encourage sinserity. I want a free and open internet. 
         I want to avoid irony poisoning. I want to help bring forth a better internet and a better world. I want to create and share things of beauty and fascination.
       </Paragraph>
-      <Paragraph wide>
+      <Paragraph wide big>
         Read more about the idea behind this webspace on the <Link href='/nodes/manifest' newTab bold>manifest page</Link>.
       </Paragraph>
     </div>
@@ -68,7 +68,8 @@
       />
     </div>
     <div class='content'>
-      <Paragraph wide>
+      <h1>This page</h1>
+      <Paragraph wide big>
         Some important notes about this place:
       </Paragraph>
       <ul class="point-list">
@@ -82,7 +83,14 @@
           The page is hosted on cloudflare pages. A "good coorporation" is an oxymoron, but they at least seem to care the most about a free and open internet.
         </li>
       </ul>
-      <Paragraph wide>
+    </div>
+  </section>
+  <section class='info'>
+    <div class='content'>
+      <h1>
+        Credits
+      </h1>
+      <Paragraph wide big>
         Fonts used:
       </Paragraph>
       <!-- TODO: autogenerate this list based on fonts in theme.css -->
@@ -98,7 +106,6 @@
         </li>
       </ul>
     </div>
-  </section>
 </div>
 
 <style>
@@ -116,10 +123,11 @@
 
     overflow: hidden;
 
-    max-width: 900px;
+    /* max-width: 1000px; */
+    width: clamp(300px, 100%, 1000px);
 
     border: var(--borderPrimary);
-    margin-top: -1px;
+    border-bottom: unset;
   }
 
   .links {
@@ -131,7 +139,6 @@
   }
 
   .links li {
-    border: 1px solid black;
     width: 100%;
     height: 40px;
 
@@ -172,34 +179,7 @@
 
     padding-left: 1em;
     padding-bottom: 1em;
+
+    font-size: clamp(1rem, 3vw, 30px);
   }
-
-  /*
-  @media ( min-width: 900px )  {
-    .about {
-      flex-direction: row-reverse;
-      margin: 1em;
-    }
-
-    .info {
-      flex-direction: row;
-    }
-
-    .content {
-      max-width: 600px;
-    }
-
-    .img-container {
-      border: var(--borderPrimary);
-    }
-
-    img {
-      max-width: 600px;
-      max-height: unset;
-      height: 100%;
-
-      border-radius: var(--borderRadius1);
-    }
-  }
-  */
 </style>

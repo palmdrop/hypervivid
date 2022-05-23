@@ -12,8 +12,6 @@
   "
 >
   <svg 
-    width={size} 
-    height={size} 
     viewBox="0 0 101 101" 
     fill="none" 
     xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +34,11 @@
 
 <style>
   div {
-    font-size: 1.7em;
+    width: 1.7em;
+    height: 1.7em;
 
     background-color: var(--cBg);
-    padding: 7px 7px 4px 7px;
-    /* 0.25em 0.25em 0.1em 0.25em;
-    */
+    padding: 0.5em 0.5em 0.30em 0.3em;
 
     border-radius: 5px;
   }
@@ -54,7 +51,7 @@
 
   .close {
     transform: rotateZ(180deg);
-    margin-top: -1px;
+    margin-top: -4px;
     margin-left: -2px;
   }
 </style>

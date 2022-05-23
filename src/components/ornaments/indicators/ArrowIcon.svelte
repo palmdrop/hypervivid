@@ -11,10 +11,6 @@
     transition: {transitionDuration / 1000}s;
   "
 >
-  <!--➺-->
-  <!--⇝-->
-  <!--⤐-->
-  <!--ᐅ-->
   <svg 
     width={size}
     height={size}
@@ -29,13 +25,6 @@
       stroke="currentColor"
     />
   </svg>
-
-  <!--
-  <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M25.5 7.56476L99 50L25.5 92.4352V7.56476Z" stroke="black"/>
-  <path d="M84.75 58.2272L39.75 84.208C33.4167 87.8646 25.5 83.2939 25.5 75.9808V24.0192C25.5 16.7061 33.4167 12.1354 39.75 15.792L84.75 41.7728C91.0833 45.4293 91.0833 54.5707 84.75 58.2272Z" stroke="black"/>
-  </svg>
-  -->
 </div>
 
 <style>
@@ -46,26 +35,26 @@
 
   .right {
     transform: rotateZ(0);
-    margin-top: -2px;
-    margin-left: 0px;
+    margin-top: -0.15em;
+    margin-left: 0em;
   }
 
   .down {
     transform: rotateZ(90deg);
-    margin-top: -1px;
-    margin-left: -2px;
+    margin-top: -0.05em;
+    margin-left: -0.02em;
   }
 
   .left {
     transform: rotateZ(180deg);
-    margin-top: -3px;
+    margin-top: -0.15px;
     margin-left: 0px;
   }
 
   .up {
     transform: rotateZ(270deg);
-    margin-top: 2px;
-    margin-left: 2px;
+    margin-top: 0.1em;
+    margin-left: 0.1em;
   }
 </style>
 

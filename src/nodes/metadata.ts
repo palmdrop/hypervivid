@@ -42,9 +42,41 @@ export default {
         "strength": 0.5
       }
     ],
-    "about": [],
-    "hyper": [],
+    "about": [
+      {
+        "from": "about",
+        "to": "contact",
+        "kind": "references",
+        "strength": 0.5
+      },
+      {
+        "from": "about",
+        "to": "manifest",
+        "kind": "references",
+        "strength": 0.5
+      },
+      {
+        "from": "about",
+        "to": "credits",
+        "kind": "references",
+        "strength": 0.5
+      }
+    ],
+    "contact": [
+      {
+        "from": "contact",
+        "to": "about",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "manifest": [
+      {
+        "from": "manifest",
+        "to": "about",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "manifest",
         "to": "info",
@@ -52,6 +84,15 @@ export default {
         "strength": 0.5
       }
     ],
+    "credits": [
+      {
+        "from": "credits",
+        "to": "about",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "hyper": [],
     "info": [
       {
         "from": "info",

@@ -13,26 +13,37 @@
 </script>
 
 
-<main>
-  <h1>
-    TAGS
-  </h1>
+<div class='node'>
+  <main>
+    <h1>
+      TAGS
+    </h1>
 
-  <Paragraph>
-    Each { NODE_NAME } is tagged. 
-    Tags are not categories, tags are just identifiers. 
-    The number indicates how many { NODE_NAMES } are tagged with this particular tag. 
-  </Paragraph>
+    <Paragraph wide>
+      Each { NODE_NAME } is tagged. 
+      Tags are not categories, tags are just identifiers. 
+      The number indicates how many { NODE_NAMES } are tagged with this particular tag. 
+    </Paragraph>
 
-  <TagList
-    tags={tags}
-    orientation="horizontal"
-    showCount={true}
-  />
-</main>
+    <TagList
+      tags={tags}
+      orientation="horizontal"
+      showCount={true}
+    />
+  </main>
+</div>
 
 <style>
+  .node {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   main {
     padding-top: 1em;
+    max-width: 1000px;
+
+    margin: 10px;
   }
 </style>

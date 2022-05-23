@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { Link, LinkKind, NodeMetadata } from '../types/nodes';
+import type { Link as NodeLink, NodeMetadata } from '../types/nodes';
 import fs from 'fs';
 
 // TODO: add to env
@@ -9,11 +9,13 @@ const NODES_DIR = 'src/nodes/';
 const DEFAULT_LINK_STRENGTH = 0.5;
 const NODE_IMPORT_REGEX = /['|"](.\/)?(\.\.\/[^(/|.)]*)\/([^/]+)\.svelte['|"]/g;
 const NODE_NAME_REGEX = /<Node[^(/>)]+name={?["|'](\w+)["|']}?[^(/>)]*\/>/g;
+const NODE_LINK_REGEX = /['|"]\/nodes\/([^(/|.|"|')]*)["|']/g;
 
 const METADATA_FILE_PATH = NODES_DIR + 'metadata.ts';
 
 const PREVIEW_IMAGE_PATH = '/nodes/';
 
+type Link = Omit<NodeLink, 'kind'> & { kind: string };
 type Metadata = {
   links: Map<string, Link[]>,
   tags: Map<string, number>,
@@ -42,7 +44,7 @@ const addUndirectedLink = (
   other: string,
   links: Map<string, Link[]>,
   strength = DEFAULT_LINK_STRENGTH,
-  kind: LinkKind = 'consumes'
+  kind = 'consumes'
 ) => {
   const currentKind = kind;
   const otherKind = kind === 'consumes' 
@@ -95,6 +97,23 @@ const processNode = async (
     'utf8'
   );
 
+  const addLinks = (regex: RegExp, index: number, kind = 'consumes', strength = DEFAULT_LINK_STRENGTH) => {
+    const allMatches = [...data.matchAll(
+      regex
+    )].map(matches => matches[index]);
+
+    const uniqueMatches = Array.from(new Set<string>(allMatches));
+
+    uniqueMatches.forEach(match => {
+      addUndirectedLink(nodeName, match, links, strength, kind);
+    });
+  }
+
+  addLinks(NODE_IMPORT_REGEX, 3);
+  addLinks(NODE_NAME_REGEX, 1);
+  addLinks(NODE_LINK_REGEX, 1, 'references');
+
+  /*
   [...data.matchAll(
     NODE_IMPORT_REGEX
   )].forEach(([,,,other]) => {
@@ -106,6 +125,16 @@ const processNode = async (
   )].forEach(([,other]) => {
     addUndirectedLink(nodeName, other, links);
   });
+
+  [...data.matchAll(
+    NODE_LINK_REGEX
+  )].forEach(([,other]) => {
+    // addUndirectedLink(nodeName, other, links, DEFAULT_LINK_STRENGTH, 'references');
+    console.log(other)
+  });
+  */
+
+
 
   // Read metadata
   try {
