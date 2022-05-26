@@ -1,8 +1,8 @@
 <script lang="ts">
   export let mode: 'open' | 'close';
   export let transitionDuration: number = 400;
-  export let strokeWidth = 1.2;
-  export let size = 30;
+  export let strokeWidth = 1.5;
+  export let size: string = '30px';
 </script>
 
 <div
@@ -16,6 +16,8 @@
     fill="none" 
     xmlns="http://www.w3.org/2000/svg"
     stroke-width={strokeWidth}
+    width={size}
+    height={size}
   >
     <path 
       d="M0 0H101L99 2H0V0ZM100 101H0H100ZM0 101V1V101ZM101 0V101H99V2L101 0Z" fill="currentColor"
@@ -34,24 +36,17 @@
 
 <style>
   div {
-    width: 1.7em;
-    height: 1.7em;
-
     background-color: var(--cBg);
-    padding: 0.5em 0.5em 0.30em 0.3em;
+    padding: 0.4em 0.5em 0.25em 0.4em;
 
     border-radius: 5px;
   }
 
   .open {
     transform: rotateZ(0);
-    margin-top: -2px;
-    margin-left: 0px;
   }
 
   .close {
     transform: rotateZ(180deg);
-    margin-top: -4px;
-    margin-left: -2px;
   }
 </style>

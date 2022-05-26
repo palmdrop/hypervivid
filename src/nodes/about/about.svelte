@@ -1,22 +1,28 @@
 <script lang="ts">
   import Link from '$components/common/Link.svelte';
   import Paragraph from '$components/common/Paragraph.svelte';
+import { scrollIntoView } from '$utils/scrollIntoView';
   import { getNodeContext } from '$utils/useNodeContext';
 
   const links = [
     {
-      href: '/nodes/contact',
-      text: 'contact'
+      text: 'contact',
+      onClick: () => scrollIntoView('contact')
+    },
+    {
+      // href: '/nodes/credits',
+      text: 'credits',
+      onClick: () => scrollIntoView('credits')
     },
     {
       href: '/nodes/manifest',
       text: 'manifest'
     },
-    {
-      href: '/nodes/credits',
-      text: 'credits'
-    }
-  ];
+  ] as {
+    href?: string,
+    text: string,
+    onClick?: (event: Event) => void
+  }[];
 </script>
 
 <div class="node">
@@ -27,17 +33,27 @@
         alt=''
       />
     </div>
+    <h1>
+      About
+    </h1>
+    <ul class="links">
+      {#each links as link, i (link.text)}
+        <li>
+          <Link 
+            href={link.href} 
+            onClick={link.onClick}
+            big 
+            newTab 
+            decorated 
+            underline={false}
+            omitBorder={i === links.length - 1 ? 'right' : undefined}
+          >
+            {link.text}
+          </Link>
+        </li>
+      {/each}
+    </ul>
     <div class="content">
-      <h1>
-        About
-      </h1>
-      <ul class="links">
-        {#each links as link (link.text)}
-          <li>
-            <Link href={link.href} big newTab decorated underline={false}>{link.text}</Link>
-          </li>
-        {/each}
-      </ul>
       <!--TODO: Move a lot of this to manifest page-->
       <Paragraph wide big>
         I'm Anton, or palmdrop. I dabble in digital and generative art, creative writing, and occasional photography. This page is my personal mindspace, here to let me post anything: 
@@ -61,14 +77,7 @@
     </div>
   </section>
   <section class='info'>
-    <div class="img-container">
-      <img
-        src='/img/connections/connections2.jpg'
-        alt=''
-      />
-    </div>
     <div class='content'>
-      <h1>This page</h1>
       <Paragraph wide big>
         Some important notes about this place:
       </Paragraph>
@@ -85,12 +94,12 @@
       </ul>
     </div>
   </section>
-  <section class='info'>
+  <section class='credits'>
     <div class='content'>
-      <h1>
-        Credits
-      </h1>
-      <Paragraph wide big>
+      <Paragraph 
+        wide 
+        big
+      >
         Fonts used:
       </Paragraph>
       <!-- TODO: autogenerate this list based on fonts in theme.css -->
@@ -106,6 +115,27 @@
         </li>
       </ul>
     </div>
+  </section>
+  <section class='contact'>
+    <Paragraph big bold>
+      Contact me
+    </Paragraph> 
+    <form class='contact-form'>
+      <div class='form-item'>
+        <label for='email-input'>
+          Email
+        </label>
+        <input type='email' id='email-input'/>
+      </div>
+      <div class='form-item'>
+        <label for='message-input'>
+          Message
+        </label>
+        <textarea type='text' id='message-input'/>
+      </div>
+
+    </form>
+  </section>
 </div>
 
 <style>
@@ -127,20 +157,17 @@
     width: clamp(300px, 100%, 1000px);
 
     border: var(--borderPrimary);
-    border-bottom: unset;
+    border-bottom: none;
+    border-top: none;
   }
 
   .links {
     display: flex;
-    padding-bottom: 1em;
-
-    margin-right: -11px;
-    margin-left: -10px;
   }
 
   .links li {
     width: 100%;
-    height: 40px;
+    height: clamp(20px, 3.5vh, 2em);
 
     display: flex;
     flex-direction: row;
@@ -166,11 +193,14 @@
     margin: 0;
     padding: 0;
     height: 300px;
+
+    border-bottom: var(--borderPrimary);
+    border-top: var(--borderPrimary);
   }
 
   .content {
     border-top: var(--borderPrimary);
-    padding: 10px;
+    padding: clamp(10px, 3vw, 2em);
   }
 
   .point-list li {
@@ -181,5 +211,58 @@
     padding-bottom: 1em;
 
     font-size: clamp(1rem, 3vw, 30px);
+  }
+
+  .contact {
+    width: 100vw;
+    border-top: var(--borderPrimary);
+
+    padding: 15px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media ( min-width: 700px )  {
+    .form-item:not(:last-child) {
+    }
+
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form {
+  }
+
+  input, textarea {
+    border: none;
+    outline: none;
+    resize: none;
+
+    margin: 0.5em 0.0em;
+
+    border: var(--borderPrimary);
+    border-radius: var(--borderRadius1);
+
+    padding: 0.5em;
+    padding-left: 1rem;
+
+    background-color: unset;
+  }
+
+  input[type=email] {
+    font: var(--fMono);
+  }
+
+  textarea {
+    height: 100px;
+
+    font-size: 1rem;
   }
 </style>

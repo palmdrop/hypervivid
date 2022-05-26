@@ -18,7 +18,7 @@
 
 <section 
   class="node-preview"
-  class:flipped
+  class:flipped={flipped && metadata.image && metadata.image.length}
 >
   <div class="data-container">
     <div class="date">

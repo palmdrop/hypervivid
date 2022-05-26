@@ -1,30 +1,34 @@
 <script lang="ts">
-  export let href: string;
+  export let href: string | undefined = undefined;
+  export let onClick: ((event: Event) => void) | undefined = undefined;
   export let newTab = false;
   export let underline = true;
   export let bold = false;
   export let decorated = false;
   export let big = false;
+  export let omitBorder: 'left' | 'right' | 'top' | 'bottom' | undefined = undefined;
 </script>
 
-<a 
+<svelte:element this={onClick ? 'button' : 'a'}
   {href}
+  on:click={onClick}
   target={newTab ? '_blank' : undefined}  
   rel={newTab ? 'noopener noreferrer' : undefined}
   class:underline
   class:bold
   class:decorated
   class:big
+  class={'link ' + (omitBorder ? 'omit-' + omitBorder : '')}
 >
   <slot />
-</a>
+</svelte:element>
 
 <style>
-  a {
+  .link {
     text-decoration: none;
   }
 
-  a:hover {
+  .link:hover {
     text-decoration: none;
   }
 
@@ -49,8 +53,25 @@
     justify-content: center;
     align-items: center;
     border: var(--borderPrimary);
+    border-bottom: unset;
     height: 100%;
     width: 100%;
+  }
+
+  .omit-left {
+    border-left: unset;
+  }
+
+  .omit-right {
+    border-right: unset;
+  }
+
+  .omit-top {
+    border-top: unset;
+  }
+
+  .omit-bottom {
+    border-bottom: unset;
   }
   
   .decorated:hover {

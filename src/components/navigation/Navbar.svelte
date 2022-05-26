@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
   import type { NavEntry } from '$types/general';
-import Link from '$components/common/Link.svelte';
   export let entries: NavEntry[];
 
   let expanded = false;

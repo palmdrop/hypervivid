@@ -83,7 +83,7 @@
         >
           <FullscreenIcon 
             mode='open'
-            size={25}
+            size={'1.3em'}
           />
         </a>
       {/if}

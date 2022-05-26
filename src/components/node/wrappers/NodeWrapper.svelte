@@ -69,7 +69,7 @@
       <FullscreenIcon 
         mode={!fullscreen ? 'open' : 'close'}
         strokeWidth={1.4}
-        size={27}
+        size={'1.5em'}
       />
     </button>
 
@@ -124,9 +124,12 @@
     z-index: 1;
   }
 
+  .fullscreen-button {
+    right: 0.4em;
+  }
+
   .fullscreen .fullscreen-button {
-    top: 4px;
-    right: 4px;
+    right: 0.5em;
   }
 
   main {

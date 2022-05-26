@@ -3,9 +3,16 @@
   export let wide = false;
   export let big = false;
   export let faded = false;
+  export let bold = false;
 </script>
 
-<p class:center class:wide class:big class:faded>
+<p 
+  class:center 
+  class:wide 
+  class:big 
+  class:faded
+  class:bold
+>
   <slot />
 </p>
 
@@ -15,13 +22,13 @@
     max-width: 44ch;
     text-align: left;
 
-    line-height: 1.5em;
+    line-height: 1.25em;
 
     font-size: 1rem;
   }
 
   p:not(:last-child) {
-    padding-bottom: 0.5em;
+    padding-bottom: 1.0em;
   }
 
   .center {
@@ -38,5 +45,9 @@
 
   .faded {
     opacity: 0.3;
+  }
+
+  .bold {
+    font-family: var(--fBold);
   }
 </style>

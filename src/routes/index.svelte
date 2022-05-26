@@ -3,11 +3,10 @@
 
   import NodeList from "$components/list/NodeList.svelte";
 
-  import { metadata$ } from "$stores/metadata";
   import { useTitle } from "$utils/useTitle";
   import Node from '$components/node/Node.svelte';
   import Hyper from '$nodes/hyper/hyper.svelte';
-  import { scrollIntoView } from '$utils/scrollIntoView';
+  import { scrollSelfIntoView } from '$utils/scrollIntoView';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
 
   /*
@@ -47,7 +46,7 @@
   >
     <button
       class="scroll-down-button"
-      on:click|preventDefault={scrollIntoView}
+      on:click|preventDefault={scrollSelfIntoView}
     >
       <Arrow 
         direction='down'
