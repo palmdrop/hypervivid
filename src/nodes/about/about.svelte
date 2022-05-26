@@ -1,8 +1,47 @@
 <script lang="ts">
   import Link from '$components/common/Link.svelte';
   import Paragraph from '$components/common/Paragraph.svelte';
-import { scrollIntoView } from '$utils/scrollIntoView';
-  import { getNodeContext } from '$utils/useNodeContext';
+  import PointList from '$components/list/PointList.svelte';
+  import { scrollIntoView } from '$utils/scrollIntoView';
+  import Node from '$components/node/Node.svelte';
+import Moons from '$nodes/moons/moons.svelte';
+  
+  const fonts = [
+    {
+      text: 'Syne typeface by Bonjour Monde',
+      href: 'https://gitlab.com/bonjour-monde/fonderie/syne-typeface'
+    },
+    {
+      text: 'Gulax by Morgan Gilbert (VELVETYNE)',
+      href: 'https://velvetyne.fr/fonts/gulax/',
+    },
+    {
+      text: 'Space Grotesk by Květoslav Bartoš (Florian Karsten Typefaces)',
+      href: 'https://fonts.floriankarsten.com/space-grotesk'
+    }
+  ];
+
+  const notes = [
+    'None of your data is tracked. There are no cookies or analytics.',
+    'This page is built using only free and open software.',
+    'The page is hosted on cloudflare pages. A "good coorporation" is an oxymoron, but they at least seem to care the most about a free and open internet.',
+    'This page is always a work in progress'
+  ];
+
+  const elsewhere = [
+    {
+      text: 'Instagram',
+      href: 'https://instagram.com/palmdrop'
+    },
+    {
+      text: 'Github',
+      href: 'https://github.com/palmdrop',
+    },
+    {
+      text: 'Tilde.town',
+      href: 'https://tilde.town/~palmdrop'
+    }
+  ];
 
   const links = [
     {
@@ -10,7 +49,6 @@ import { scrollIntoView } from '$utils/scrollIntoView';
       onClick: () => scrollIntoView('contact')
     },
     {
-      // href: '/nodes/credits',
       text: 'credits',
       onClick: () => scrollIntoView('credits')
     },
@@ -46,7 +84,13 @@ import { scrollIntoView } from '$utils/scrollIntoView';
             newTab 
             decorated 
             underline={false}
-            omitBorder={i === links.length - 1 ? 'right' : undefined}
+            omitBorder={
+              i === 0 ? 
+                'left' :
+                i === links.length - 1 ? 
+                  'right' : 
+                  undefined
+            }
           >
             {link.text}
           </Link>
@@ -72,26 +116,28 @@ import { scrollIntoView } from '$utils/scrollIntoView';
         I want to avoid irony poisoning. I want to help bring forth a better internet and a better world. I want to create and share things of beauty and fascination.
       </Paragraph>
       <Paragraph wide big>
-        Read more about the idea behind this webspace on the <Link href='/nodes/manifest' newTab bold>manifest page</Link>.
+        Read more about the idea behind this webspace on the <Link href='/nodes/manifest' newTab>manifest page</Link>.
       </Paragraph>
     </div>
   </section>
   <section class='info'>
     <div class='content'>
-      <Paragraph wide big>
-        Some important notes about this place:
+      <Paragraph big >
+        NOTES
       </Paragraph>
-      <ul class="point-list">
-        <li>
-          None of your data is tracked. There are no cookies or analytics.
-        </li>
-        <li>
-          This page is built using only free and open software. <Link href='https://github.com/palmdrop/hypervivid' newTab bold>Check out the github repository</Link>.
-        </li>
-        <li>
-          The page is hosted on cloudflare pages. A "good coorporation" is an oxymoron, but they at least seem to care the most about a free and open internet.
-        </li>
-      </ul>
+      <PointList 
+        items={notes}
+        let:item
+      >
+        { item }
+      </PointList>
+      <Paragraph
+        big 
+      >
+        <Link href='https://github.com/palmdrop/hypervivid'>
+          Check out the github repository.
+        </Link>
+      </Paragraph>
     </div>
   </section>
   <section class='credits'>
@@ -100,41 +146,40 @@ import { scrollIntoView } from '$utils/scrollIntoView';
         wide 
         big
       >
-        Fonts used:
+        FONTS
       </Paragraph>
       <!-- TODO: autogenerate this list based on fonts in theme.css -->
-      <ul class="point-list">
-        <li>
-          <Link href="https://gitlab.com/bonjour-monde/fonderie/syne-typeface" newTab>Syne typeface by Bonjour Monde</Link>
-        </li>
-        <li>
-          <Link href='https://velvetyne.fr/fonts/gulax/' newTab>Gulax by Morgan Gilbert (VELVETYNE)</Link>
-        </li>
-        <li>
-          <Link href='https://fonts.floriankarsten.com/space-grotesk' newTab>Space Grotesk by Květoslav Bartoš (Florian Karsten Typefaces)</Link>
-        </li>
-      </ul>
+      <PointList
+        items={fonts}
+        let:item
+      >
+        <Link href={item.href} newTab>{ item.text }</Link>
+      </PointList>
     </div>
   </section>
   <section class='contact'>
-    <Paragraph big bold>
-      Contact me
-    </Paragraph> 
-    <form class='contact-form'>
-      <div class='form-item'>
-        <label for='email-input'>
-          Email
-        </label>
-        <input type='email' id='email-input'/>
+    <div class='contact-piece'>
+      <Node name='contact' mode='inline' />
+    </div>
+      <Node name='moons' mode='inline' fromSlot={true}>
+        <Moons 
+          direction='horizontal' 
+          alternativeDirection='vertical'
+        />
+      </Node>
+    <div class='contact-piece'>
+      <div>
+        <Paragraph big>
+          YOU MAY ALSO FIND ME AT
+        </Paragraph>
+        <PointList
+          items={elsewhere}
+          let:item
+        >
+          <Link href={item.href} newTab>{ item.text }</Link>
+        </PointList>
       </div>
-      <div class='form-item'>
-        <label for='message-input'>
-          Message
-        </label>
-        <textarea type='text' id='message-input'/>
-      </div>
-
-    </form>
+    </div>
   </section>
 </div>
 
@@ -153,8 +198,7 @@ import { scrollIntoView } from '$utils/scrollIntoView';
 
     overflow: hidden;
 
-    /* max-width: 1000px; */
-    width: clamp(300px, 100%, 1000px);
+    width: clamp(300px, 100%, 1100px);
 
     border: var(--borderPrimary);
     border-bottom: none;
@@ -203,66 +247,36 @@ import { scrollIntoView } from '$utils/scrollIntoView';
     padding: clamp(10px, 3vw, 2em);
   }
 
-  .point-list li {
-    list-style-type: disc;
-    list-style-position: inside;
-
-    padding-left: 1em;
-    padding-bottom: 1em;
-
-    font-size: clamp(1rem, 3vw, 30px);
-  }
-
   .contact {
     width: 100vw;
-    border-top: var(--borderPrimary);
+    border: var(--borderPrimary);
 
     padding: 15px;
-  }
 
-  .contact-form {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact-piece {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
   }
 
   @media ( min-width: 700px )  {
-    .form-item:not(:last-child) {
+    .contact {
+      flex-direction: row;
+      justify-content: center;
     }
 
-  }
-
-  .form-item {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  form {
-  }
-
-  input, textarea {
-    border: none;
-    outline: none;
-    resize: none;
-
-    margin: 0.5em 0.0em;
-
-    border: var(--borderPrimary);
-    border-radius: var(--borderRadius1);
-
-    padding: 0.5em;
-    padding-left: 1rem;
-
-    background-color: unset;
-  }
-
-  input[type=email] {
-    font: var(--fMono);
-  }
-
-  textarea {
-    height: 100px;
-
-    font-size: 1rem;
+    .contact-piece {
+      width: 500%;
+    }
   }
 </style>

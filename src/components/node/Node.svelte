@@ -25,8 +25,9 @@
 
     setContext<NodeContext>(name, {
       name: name as NodeName,
-      metadata: nodeMetadata
-    })
+      metadata: nodeMetadata,
+      mode
+    });
   }
 
   let component: (() => Promise<SvelteComponent>) | undefined;

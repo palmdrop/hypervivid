@@ -40,7 +40,8 @@
   let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
     ...$metadata$.nodes[name],
-    links: $metadata$.links[name]
+    links: $metadata$.links[name],
+    mode: 'only'
   }
 </script>
 

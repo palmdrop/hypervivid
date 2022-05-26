@@ -2,7 +2,7 @@ import type metadata from '../nodes/metadata';
 
 export type NodeName = keyof typeof metadata['nodes'];
 export type LinkKind = NonNullable<
-  (typeof metadata['links'])[NodeName][0]
+  (typeof metadata['links'])[NodeName][number]
 >['kind'];
 
 export type Tag = typeof metadata['nodes'][NodeName]['tags'][number];
@@ -36,5 +36,6 @@ export type NodeMetadata = {
 
 export type NodeContext = {
   name: NodeName,
-  metadata: NodeMetadata
+  metadata: NodeMetadata,
+  mode: NodeMode
 }

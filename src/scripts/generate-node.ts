@@ -32,18 +32,18 @@ const main = async () => {
   };
 
   const componentPreset = (name: string) => `
-  <script lang="ts">
-    import { getNodeContext } from '$utils/useNodeContext';
-    const { name, metadata } = getNodeContext('${name}');
+<script lang="ts">
+  import { getNodeContext } from '$utils/useNodeContext';
+  const { name, metadata } = getNodeContext('${name}');
 
-  </script>
+</script>
 
-  <div>
-    { name }
-  </div>
+<div>
+  { name }
+</div>
 
-  <style>
-  </style>
+<style>
+</style>
   `;
 
   // Create files

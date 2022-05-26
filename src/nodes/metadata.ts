@@ -46,18 +46,12 @@ export default {
       {
         "from": "about",
         "to": "contact",
-        "kind": "references",
+        "kind": "consumes",
         "strength": 0.5
       },
       {
         "from": "about",
         "to": "manifest",
-        "kind": "references",
-        "strength": 0.5
-      },
-      {
-        "from": "about",
-        "to": "credits",
         "kind": "references",
         "strength": 0.5
       }
@@ -66,7 +60,7 @@ export default {
       {
         "from": "contact",
         "to": "about",
-        "kind": "tangent",
+        "kind": "consumed",
         "strength": 0.5
       }
     ],
@@ -84,14 +78,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "credits": [
-      {
-        "from": "credits",
-        "to": "about",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "hyper": [],
     "info": [
       {
@@ -101,6 +87,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "moons": [],
     "nodewithareallylongname": [],
     "scroll": []
   },
@@ -145,6 +132,14 @@ export default {
       "weight": 0.3333333333333333,
       "count": 1
     },
+    "contact": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "communication": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
     "words": {
       "weight": 0.3333333333333333,
       "count": 1
@@ -155,6 +150,25 @@ export default {
     }
   },
   "nodes": {
+    "moons": {
+      "tags": [],
+      "createdAt": "Thu, 26 May 2022 14:41:23 GMT",
+      "inline": true,
+      "title": "moons",
+      "description": "",
+      "image": ""
+    },
+    "contact": {
+      "tags": [
+        "contact",
+        "communication"
+      ],
+      "createdAt": "Thu, 26 May 2022 12:34:15 GMT",
+      "inline": true,
+      "title": "contact",
+      "description": "A form for sending me an email",
+      "image": ""
+    },
     "nodewithareallylongname": {
       "tags": [],
       "createdAt": "Sat, 21 May 2022 14:00:34 GMT",

@@ -11,6 +11,8 @@
   --cFg: #090b20;
   --cBg: #bec2c7;
 
+  --cFgFaded: #090b20aa;
+
   --cBgDark: #65686c;
 
   --cFgInverted: var(--cBg);
@@ -71,6 +73,24 @@ a {
 a:hover {
   text-decoration: underline;
   text-decoration-thickness: 1px;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  resize: none;
+
+  margin: 0.5em 0.0em;
+
+  font-family: var(--fMono);
+  border: var(--borderPrimary);
+  border-radius: var(--borderRadius1);
+  font-size: 1.1rem;
+
+  padding: 0.5em;
+  padding-left: 0.7rem;
+
+  background-color: unset;
 }
 
 button {
