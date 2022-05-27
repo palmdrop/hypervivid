@@ -4,7 +4,7 @@
   "scripts": {
     "start": ". scripts/start.sh",
     "dev": "svelte-kit dev",
-    "prebuild": ". ./scripts/prebuild.sh",
+    "prebuild": "npm install && . ./scripts/prebuild.sh",
     "gen": ". ./scripts/generate.sh",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
