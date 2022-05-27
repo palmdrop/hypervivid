@@ -11,7 +11,7 @@
   --cFg: #090b20;
   --cBg: #bec2c7;
 
-  --cFgFaded: #090b20aa;
+  --cFgFaded: #200912aa;
 
   --cBgDark: #65686c;
 
@@ -50,7 +50,7 @@
 html {
   /* TODO: dynamic font size */
   font-size: 18px;
-  font-size: clamp(18px, 2.0vw, 24px);
+  font-size: clamp(18px, 2.0vw, 22px);
   font-family: var(--fRegular);
 
   background-color: var(--cBg);

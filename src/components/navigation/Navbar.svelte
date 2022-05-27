@@ -146,7 +146,9 @@
     border-radius: var(--borderRadius1);
     border: var(--borderPrimary);
 
-    margin: -1px;
+    margin-left: -1px;
+    margin-top: -1px;
+    
     z-index: -1;
 
     transition: 0.3s;

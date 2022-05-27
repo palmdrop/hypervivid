@@ -4,7 +4,7 @@
   import PointList from '$components/list/PointList.svelte';
   import { scrollIntoView } from '$utils/scrollIntoView';
   import Node from '$components/node/Node.svelte';
-import Moons from '$nodes/moons/moons.svelte';
+  import Moons from '$nodes/moons/moons.svelte';
   
   const fonts = [
     {
@@ -30,16 +30,24 @@ import Moons from '$nodes/moons/moons.svelte';
 
   const elsewhere = [
     {
-      text: 'Instagram',
+      text: 'instagram',
       href: 'https://instagram.com/palmdrop'
     },
     {
-      text: 'Github',
+      text: 'github',
       href: 'https://github.com/palmdrop',
     },
     {
-      text: 'Tilde.town',
+      text: 'palmdrop.github.io/',
+      href: 'https://palmdrop.github.io',
+    },
+    {
+      text: 'tilde.town',
       href: 'https://tilde.town/~palmdrop'
+    },
+    {
+      text: 'are.na',
+      href: 'https://www.are.na/palm-drop'
     }
   ];
 
@@ -161,12 +169,13 @@ import Moons from '$nodes/moons/moons.svelte';
     <div class='contact-piece'>
       <Node name='contact' mode='inline' />
     </div>
-      <Node name='moons' mode='inline' fromSlot={true}>
-        <Moons 
-          direction='horizontal' 
-          alternativeDirection='vertical'
-        />
-      </Node>
+    <Node name='moons' mode='inline' fromSlot={true}>
+      <Moons 
+        direction='horizontal' 
+        alternativeDirection='vertical'
+        breakpoint={1000}
+      />
+    </Node>
     <div class='contact-piece'>
       <div>
         <Paragraph big>
@@ -189,6 +198,8 @@ import Moons from '$nodes/moons/moons.svelte';
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    overflow-x: hidden;
   }
 
   section {
@@ -263,20 +274,20 @@ import Moons from '$nodes/moons/moons.svelte';
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    padding: 1em;
+    padding: 1.5em 5px;
   }
 
-  @media ( min-width: 700px )  {
+  @media ( min-width: 1000px )  {
     .contact {
       flex-direction: row;
       justify-content: center;
     }
 
     .contact-piece {
-      width: 500%;
+      padding: 2em;
+      align-items: unset;
     }
   }
 </style>

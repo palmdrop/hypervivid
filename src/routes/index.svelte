@@ -121,6 +121,7 @@
     width: 100vw;
 
     padding-bottom: 2em;
+    padding-top: 1em;
   }
 
   .nodes-link {

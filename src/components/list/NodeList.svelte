@@ -107,7 +107,7 @@
     overflow-x: hidden;
     overflow-y: auto;
 
-    max-width: 1100px;
+    max-width: 1200px;
 
     padding-bottom: 1em;
   }
@@ -116,8 +116,7 @@
     position: relative;
     padding: 2.0em 5px;
     border: var(--borderPrimary);
-    margin: 5px -1px;
-
+    margin: 5px 0px;
 
     flex: 1 1 auto;
 

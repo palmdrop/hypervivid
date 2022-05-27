@@ -8,7 +8,7 @@ const NODES_DIR = 'src/nodes/';
 
 const DEFAULT_LINK_STRENGTH = 0.5;
 const NODE_IMPORT_REGEX = /['|"](.\/)?(\.\.\/[^(/|.)]*)\/([^/]+)\.svelte['|"]/g;
-const NODE_NAME_REGEX = /<Node[^(/>)]+name={?["|'](\w+)["|']}?[^(/>)]*\/>/g;
+const NODE_NAME_REGEX = /<Node[^(/>)]name={?['|"](\w+)["|']}?[^(/>]*[/?>]/g;
 const NODE_LINK_REGEX = /['|"]\/nodes\/([^(/|.|"|')]*)["|']/g;
 
 const METADATA_FILE_PATH = NODES_DIR + 'metadata.ts';

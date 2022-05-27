@@ -20,12 +20,6 @@ export default {
         "to": "N1",
         "kind": "consumed",
         "strength": 0.5
-      },
-      {
-        "from": "N2",
-        "to": "N3",
-        "kind": "consumes",
-        "strength": 0.5
       }
     ],
     "N3": [
@@ -34,18 +28,18 @@ export default {
         "to": "N1",
         "kind": "tangent",
         "strength": 0.3
-      },
-      {
-        "from": "N3",
-        "to": "N2",
-        "kind": "consumed",
-        "strength": 0.5
       }
     ],
     "about": [
       {
         "from": "about",
         "to": "contact",
+        "kind": "consumes",
+        "strength": 0.5
+      },
+      {
+        "from": "about",
+        "to": "moons",
         "kind": "consumes",
         "strength": 0.5
       },
@@ -59,6 +53,14 @@ export default {
     "contact": [
       {
         "from": "contact",
+        "to": "about",
+        "kind": "consumed",
+        "strength": 0.5
+      }
+    ],
+    "moons": [
+      {
+        "from": "moons",
         "to": "about",
         "kind": "consumed",
         "strength": 0.5
@@ -87,7 +89,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "moons": [],
     "nodewithareallylongname": [],
     "scroll": []
   },

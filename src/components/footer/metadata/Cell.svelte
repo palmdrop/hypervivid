@@ -32,7 +32,8 @@
     flex-grow: 2;
     text-align: center;
 
-    margin: -1px;
+    margin-left: -1px;
+    margin-top: -1px;
     max-width: 100%;
 
     flex-direction: column;
