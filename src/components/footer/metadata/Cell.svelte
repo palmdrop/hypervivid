@@ -71,7 +71,7 @@
     }
   }
 
-  @media ( min-width: 700px )  {
+  @media ( minVjj-width: 700px )  {
     .inline {
       flex-direction: row;
     }

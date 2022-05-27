@@ -116,7 +116,6 @@
     }
   }
 
-
   .metadata-button {
     width: 100%;
     background-color: var(--cBgInverted);

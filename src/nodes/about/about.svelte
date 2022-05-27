@@ -21,11 +21,22 @@
     }
   ];
 
+  const tools = [
+    {
+      text: 'SvelteKit',
+      href: 'https://kit.svelte.dev/'
+    },
+    {
+      text: 'Three.js',
+      href: 'https://threejs.org/',
+    }
+  ];
+
   const notes = [
-    'None of your data is tracked. There are no cookies or analytics.',
-    'This page is built using only free and open software.',
-    'The page is hosted on cloudflare pages. A "good coorporation" is an oxymoron, but they at least seem to care the most about a free and open internet.',
-    'This page is always a work in progress'
+    'No tracking, cookies or analytics.',
+    'Built using only free and open software.',
+    'Hosted on cloudflare pages.',
+    'Always a work in progress'
   ];
 
   const elsewhere = [
@@ -108,20 +119,30 @@
     <div class="content">
       <!--TODO: Move a lot of this to manifest page-->
       <Paragraph wide big>
-        I'm Anton, or palmdrop. I dabble in digital and generative art, creative writing, and occasional photography. This page is my personal mindspace, here to let me post anything: 
-        text, pictures, generative art, experiments, cringe, political satire, poetry, trash recepies, GPU-frying 3D sketches, etc. 
+        I'm Anton, or palmdrop. This is my personal webspace. I made this place for sharing digital art, writing, occasional photography,  
+        links, whatever. The site has an experimental structure to accomodate any interlinked content: text, image, generative art, random experiments,
+        memes, poetry, trash recepies, GPU-frying 3D sketches, etc, all linked together as nodes.
       </Paragraph>
       <Paragraph wide big>
-        This is a public graph of my mind. 
+        Building things help me think.
       </Paragraph>
       <Paragraph wide big>
-        Most things on this page is a "node". Node, as in a point in a mathy graph. You get it. Nodes are connected. Nodes have tags. 
-        The core idea for this page is 1. to enable me to post anything, without restriction, unbound by authoratative page categories, and 2. 
-        to encourage a ludic web interaction, exploration, and play.
+        Most pages and components are "nodes". Nodes may be connected. Press the bottom "metadata" tab to find out. 
+        Nodes have tags. This may help you find the content you are looking for, but I encourage you to just follow the metadata links.
       </Paragraph>
       <Paragraph wide big>
-        I want to encourage sinserity. I want a free and open internet. 
-        I want to avoid irony poisoning. I want to help bring forth a better internet and a better world. I want to create and share things of beauty and fascination.
+        The core idea of this page is to 
+        <div class='ideas'>
+          <PointList
+            items={[
+              'make it possible to post anything without artifical restriction by limiting site structure,',
+              'and to encourage ludic web interaction, exploration and play.'
+            ]}
+            let:item
+          >
+            { item }
+          </PointList>
+        </div>
       </Paragraph>
       <Paragraph wide big>
         Read more about the idea behind this webspace on the <Link href='/nodes/manifest' newTab>manifest page</Link>.
@@ -130,9 +151,9 @@
   </section>
   <section class='info'>
     <div class='content'>
-      <Paragraph big >
-        NOTES
-      </Paragraph>
+      <h2>
+        MORE ABOUT THIS SITE
+      </h2>
       <PointList 
         items={notes}
         let:item
@@ -150,15 +171,24 @@
   </section>
   <section class='credits'>
     <div class='content'>
-      <Paragraph 
-        wide 
-        big
-      >
+      <h2>
+        CREDITS
+      </h2>
+      <h3>
         FONTS
-      </Paragraph>
+      </h3>
       <!-- TODO: autogenerate this list based on fonts in theme.css -->
       <PointList
         items={fonts}
+        let:item
+      >
+        <Link href={item.href} newTab>{ item.text }</Link>
+      </PointList>
+      <h3>
+        TOOLS
+      </h3>
+      <PointList
+        items={tools}
         let:item
       >
         <Link href={item.href} newTab>{ item.text }</Link>
@@ -202,6 +232,27 @@
     overflow-x: hidden;
   }
 
+  .ideas {
+    padding-left: 1em;
+    padding-top: 0.5em;
+  }
+
+  h2 {
+    font-size: 3.0rem;
+    padding-bottom: 0.5em;
+  }
+
+  h3 {
+    font-family: var(--fRegular);
+    font-size: 1.4rem;
+    padding-bottom: 1.0em;
+    text-align: left;
+  }
+
+  h3:last-of-type {
+    padding-top: 1em;
+  }
+
   section {
     display: flex;
     flex-direction: column;
@@ -230,11 +281,12 @@
     justify-content: center;
 
     margin-left: -1px;
+    margin-top: -1px;
   }
 
   img {
     object-fit: cover;
-    max-height: 300px;
+    height: 300px;
     width: 100%;
 
     position: relative;
@@ -247,7 +299,7 @@
   .img-container {
     margin: 0;
     padding: 0;
-    height: 300px;
+    height: 301px;
 
     border-bottom: var(--borderPrimary);
     border-top: var(--borderPrimary);

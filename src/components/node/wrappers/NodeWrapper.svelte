@@ -126,11 +126,9 @@
   }
 
   .fullscreen-button {
-    right: 0.4em;
   }
 
   .fullscreen .fullscreen-button {
-    right: 0.5em;
   }
 
   main {

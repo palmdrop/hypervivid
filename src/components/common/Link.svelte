@@ -87,17 +87,11 @@
     position: absolute;
     content: '';
 
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
+    inset: 0;
 
     border-radius: var(--borderRadius1);
-    border: var(--borderPrimary);
+    outline: var(--borderPrimary);
 
-    margin-left: -1px;
-    margin-top: -1px;
     z-index: -1;
 
     transition: 0.3s;

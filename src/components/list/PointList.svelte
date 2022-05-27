@@ -12,7 +12,7 @@
 
 <style>
   li {
-    list-style-type: '> ';
+    list-style-type: georgian;
     list-style-position: inside;
 
     padding-bottom: 1em;
