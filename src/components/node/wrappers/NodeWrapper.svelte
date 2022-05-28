@@ -118,17 +118,12 @@
   .fullscreen-button {
     position: absolute;
 
-    right: 1px;
+    top: 1px;
+    right: 2px;
 
     transition: 0.4s;
 
     z-index: 1;
-  }
-
-  .fullscreen-button {
-  }
-
-  .fullscreen .fullscreen-button {
   }
 
   main {

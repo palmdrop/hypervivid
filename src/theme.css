@@ -22,10 +22,12 @@
 
   --fMono: 'SyneMono';
   --fDisplay: 'Gulax';
-  --fRegular: 'SpaceGrotesk-Regular';
-  --fBold: 'SpaceGrotesk-Bold';
+  --fRegular: 'Fengardo_Neue-Regular';
+  --fBold: 'Fengardo_Neue-Bold';
 
   /*
+  --fRegular: 'SpaceGrotesk-Regular';
+  --fBold: 'SpaceGrotesk-Bold';
   --fMono: 'SyneMono';
   --fDisplay: 'SyneMono';
   --fRegular: 'Sporting_Grotesque-Regular';
@@ -49,8 +51,7 @@
 /* Global styles */
 html {
   /* TODO: dynamic font size */
-  font-size: 18px;
-  font-size: clamp(18px, 2.0vw, 22px);
+  font-size: clamp(19px, 2.3vw, 22px);
   font-family: var(--fRegular);
 
   background-color: var(--cBg);

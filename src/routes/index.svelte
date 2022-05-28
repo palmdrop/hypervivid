@@ -28,7 +28,7 @@
 </script>
 
 
-<main> 
+<div class='page'> 
   <section
     class="landing"
   >
@@ -73,10 +73,10 @@
       Show more...
     </a>
   </section>
-</main>
+</div>
 
 <style>
-  main {
+  .page {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;

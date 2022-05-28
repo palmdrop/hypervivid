@@ -11,6 +11,7 @@
     transition: {transitionDuration / 1000}s;
   "
 >
+<!--
   <svg 
     viewBox="0 0 101 101" 
     fill="none" 
@@ -32,14 +33,17 @@
       vector-effect="non-scaling-stroke"
     />
   </svg>
+-->
+  ☐
 </div>
 
 <style>
   div {
     background-color: var(--cBg);
-    padding: 0.4em 0.5em 0.25em 0.4em;
+    letter-spacing: 0;
 
-    border-radius: 5px;
+    font-size: 1.8rem;
+    padding: 0em 0.15em;
   }
 
   .open {
@@ -47,6 +51,6 @@
   }
 
   .close {
-    transform: rotateZ(180deg);
+    transform: rotateZ(135deg);
   }
 </style>

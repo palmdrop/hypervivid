@@ -22,10 +22,6 @@
     </Paragraph>
 
     <TagList {tags} orientation="horizontal" showCount={true} />
-
-    <div class="img-container">
-      <img alt="" src="/img/connections/r5.jpg" />
-    </div>
   </main>
 </div>
 
@@ -43,6 +39,8 @@
     padding-top: 1em;
     max-width: 800px;
 
+    min-height: 85vh;
+
     margin: 10px;
     overflow: hidden;
   }
@@ -51,17 +49,5 @@
     main {
       margin: auto;
     }
-  }
-
-  .img-container {
-    border: var(--borderPrimary);
-    height: 801px;
-  }
-
-  img {
-    width: 100%;
-    height: 800px;
-
-    border-radius: var(--borderRadius2);
   }
 </style>

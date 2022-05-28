@@ -16,8 +16,12 @@
       href: 'https://velvetyne.fr/fonts/gulax/',
     },
     {
+      /*
       text: 'Space Grotesk by Květoslav Bartoš (Florian Karsten Typefaces)',
       href: 'https://fonts.floriankarsten.com/space-grotesk'
+      */
+      text: 'Fengardo Neue by Loïc Sander (VELVETYNE)',
+      href: 'https://velvetyne.fr/fonts/fengardo-neue/'
     }
   ];
 
