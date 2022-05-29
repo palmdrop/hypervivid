@@ -15,6 +15,9 @@
   export let fromSlot: boolean = false;
   export let index: number = -1; // If in a list
 
+  // Bindings
+  export let isLoaded = false;
+
   let nodeMetadata: NodeMetadata;
 
   $: if(mode !== 'link') {
@@ -30,20 +33,27 @@
     });
   }
 
+  $: showPreview = (
+    !['only', 'main', 'inline'].includes(mode) &&
+    !nodeMetadata.inline
+  );
+
+  $: previewPath = `../../nodes/${name}/${name}.preview.svelte`
+
+  $: isLoaded = 
+    fromSlot || // If supplied from slot, this component cannot determine load status
+    mode === 'link' || // If in link mode, the node does not need loading 
+    (showPreview && !lazyPreviewComponents[previewPath]); // In this case, default preview will be shown, requiring no loading
+
   let component: (() => Promise<SvelteComponent>) | undefined;
   let showDefaultPreview = false;
 
   $: {
     if(mode !== 'link' && !fromSlot) {
-      const showPreview = (
-        !['only', 'main', 'inline'].includes(mode) &&
-        !nodeMetadata.inline
-      );
-
       if(showPreview) {
         component = lazyPreviewComponents[
-          `../../nodes/${name}/${name}.preview.svelte`
-        ]
+          previewPath
+        ];
 
         showDefaultPreview = !component;
       } else {
@@ -69,6 +79,7 @@
 {:else if component}
   {#key component}
     <Lazy
+      bind:isLoaded
       { component }
     >
       <NodeLoader 

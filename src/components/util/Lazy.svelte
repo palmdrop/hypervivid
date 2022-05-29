@@ -4,6 +4,9 @@
   export let component: () => Promise<SvelteComponent>;
   export let delayMs: null | number = null;
 
+  // Bindings
+  export let isLoaded = false;
+
   let loadedComponent: SvelteComponent | null = null;
   let timeout: NodeJS.Timeout;
   let showFallback = !delayMs;
@@ -20,9 +23,12 @@
         showFallback = true;
       }, delayMs);
     }
+
     component().then(module => {
       loadedComponent = module.default;
+      isLoaded = true;
     });
+
     return () => clearTimeout(timeout);
   });
 </script>

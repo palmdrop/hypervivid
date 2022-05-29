@@ -19,18 +19,34 @@
   export let modeRest: NodeMode
 
   // Loading
-  $: loaded = batchCount === -1 
+  $: count = batchCount === -1 
     ? nodeNames.length 
     : Math.min(batchCount, nodeNames.length);
 
+  const isLoaded: boolean[] = Array(nodeNames.length).fill(false);
+
   const loadMore = () => {
-    loaded = Math.min(loaded + batchCount, nodeNames.length);
+    count = Math.min(count + batchCount, nodeNames.length);
   }
 
-  let loadedNames: NodeName[] = [];
-  $: loadedNames = nodeNames.slice(0, loaded);
+  $: includedNodeNames = nodeNames.slice(0, count);
+  $: complete = count === nodeNames.length;
 
-  $: fulfilled = loaded === nodeNames.length;
+  let loadedUpToIndex = 0;
+  let allIncludedLoaded = false;
+
+  $: {
+    let newLoadedToIndex = loadedUpToIndex;
+    for(let i = loadedUpToIndex; i < count; i++) {
+      newLoadedToIndex = i;
+      if(!isLoaded[i]) {
+        break;
+      }
+    }
+
+    loadedUpToIndex = newLoadedToIndex;
+    if(count - 1 === loadedUpToIndex)  allIncludedLoaded = true;
+  }
 
   // Navigating
   const onItemClick = (name: string) => {
@@ -67,14 +83,16 @@
   class="node-list"
   on:scroll={handleScroll}
 >
-  {#each loadedNames as name, i (name)}
+  {#each includedNodeNames as name, i (name)}
     <li
       on:click={() => onItemClick(name)}
+      class:loading={!isLoaded[i]}
     >
       <Node
         name={name}
         mode={i === 0 ? modeFirst : modeRest}
         index={i}
+        bind:isLoaded={isLoaded[i]}
       />
       {#if showOpenLink && (i === 0 ? modeFirst : modeRest) !== 'link'}
         <a
@@ -90,7 +108,13 @@
     </li>
   {/each}
 </ul>
-{#if !fulfilled && !autoLoad}
+{#if !allIncludedLoaded}
+  <div class='loading-icon'>
+    Loading...
+  </div>
+{/if}
+
+{#if !complete && !autoLoad && allIncludedLoaded}
   <button
     on:click={loadMore}
     class="load-more-button"
@@ -127,6 +151,16 @@
     box-shadow: 0px 0px 0px transparent;
 
     transition: 0.2s;
+  }
+
+  .loading {
+    display: none;
+  }
+
+  .loading-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   @media ( min-width: 500px )  {
