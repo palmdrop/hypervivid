@@ -72,12 +72,6 @@ export default {
         "to": "about",
         "kind": "tangent",
         "strength": 0.5
-      },
-      {
-        "from": "manifest",
-        "to": "info",
-        "kind": "tangent",
-        "strength": 0.5
       }
     ],
     "hyper": [],
@@ -165,9 +159,9 @@ export default {
         "communication"
       ],
       "createdAt": "Thu, 26 May 2022 12:34:15 GMT",
-      "inline": true,
+      "inline": false,
       "title": "contact",
-      "description": "A form for sending me an email",
+      "description": "A form for sending me an email. Nothing more.",
       "image": ""
     },
     "nodewithareallylongname": {
@@ -195,8 +189,8 @@ export default {
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
       "inline": false,
       "title": "about",
-      "description": "What is this project?",
-      "image": ""
+      "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
+      "image": "/img/connections/connections1.jpg"
     },
     "hyper": {
       "tags": [
@@ -205,7 +199,7 @@ export default {
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
       "inline": false,
       "title": "hyper",
-      "description": "Hyperwords, meaningless or hyperclear. This is a pointless thing. Let's all become very aware of the *veryness* of today. There's no support for emphasis.",
+      "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's slightly fun.",
       "image": "/nodes/hyper.preview.jpg"
     },
     "manifest": {
@@ -216,7 +210,7 @@ export default {
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
       "title": "manifest",
-      "description": "The ideas behind this page, thoughts about the internet, etc",
+      "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg"
     },
     "scroll": {

@@ -53,7 +53,7 @@
       href: 'https://github.com/palmdrop',
     },
     {
-      text: 'palmdrop.github.io/',
+      text: 'palmdrop.github.io',
       href: 'https://palmdrop.github.io',
     },
     {

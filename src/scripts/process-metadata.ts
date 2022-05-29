@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import type { Link as NodeLink, NodeMetadata } from '../types/nodes';
-import fs from 'fs';
+import fs, { link } from 'fs';
 
 // TODO: add to env
 const NODES_DIR = 'src/nodes/';
@@ -76,7 +76,8 @@ const addUndirectedLink = (
 
 const processNode = async (
   nodeName: string,
-  metadata: Metadata
+  metadata: Metadata,
+  allNodeNames: string[]
 ) => {
   const { links, tags, nodes } = metadata;
 
@@ -113,29 +114,6 @@ const processNode = async (
   addLinks(NODE_NAME_REGEX, 1);
   addLinks(NODE_LINK_REGEX, 1, 'references');
 
-  /*
-  [...data.matchAll(
-    NODE_IMPORT_REGEX
-  )].forEach(([,,,other]) => {
-    addUndirectedLink(nodeName, other, links);
-  });
-
-  [...data.matchAll(
-    NODE_NAME_REGEX
-  )].forEach(([,other]) => {
-    addUndirectedLink(nodeName, other, links);
-  });
-
-  [...data.matchAll(
-    NODE_LINK_REGEX
-  )].forEach(([,other]) => {
-    // addUndirectedLink(nodeName, other, links, DEFAULT_LINK_STRENGTH, 'references');
-    console.log(other)
-  });
-  */
-
-
-
   // Read metadata
   try {
     const metadataPath = `${NODES_DIR}/${nodeName}/metadata.json`;
@@ -166,6 +144,16 @@ const processNode = async (
       nodeLinks.forEach(link => 
         addUndirectedLink(nodeName, link.to, links, link.strength, link.kind)
       );
+
+      // Verify that all links have corresponding nodes
+      links.set(nodeName, (links.get(nodeName) ?? []).filter(link => {
+        const linkNodeExists = allNodeNames.includes(link.to);
+        if (!linkNodeExists) {
+          console.error(`Warning: Link from node "${nodeName}" to "${link.to}" is invalid. "${link.to}" does not exist.`);
+        }
+
+        return linkNodeExists;
+      }));
 
       // Check if preview image exists if not explicitly defined
       if(!metadata.image || !metadata.image.length) {
@@ -271,11 +259,14 @@ const main = async () => {
 
   console.log("Processing metadata...")
 
-  await Promise.all(fs.readdirSync(NODES_DIR)
-    .filter(path => !path.includes('.')) // filter out files
-    .map(path => processNode(
-      path,
-      metadata
+  const nodeNames = fs.readdirSync(NODES_DIR);
+
+  await Promise.all(nodeNames
+    .filter(name => !name.includes('.')) // filter out files
+    .map(name => processNode(
+      name,
+      metadata,
+      nodeNames
     ))
   );
 
