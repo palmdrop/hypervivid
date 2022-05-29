@@ -6,6 +6,7 @@
   import { metadata$ } from "$stores/metadata";
   import { NODE_NAMES } from '$constants';
   import Paragraph from '$components/common/Paragraph.svelte';
+import Link from '$components/common/Link.svelte';
 
   const nodeNames = Object.keys(
     $metadata$.nodes
@@ -32,6 +33,13 @@
     <Paragraph center>
       Nodes are entries on the page. A node can be anything. Words, art, interactive 3D scenes. Nodes are connected.
     </Paragraph>
+    <Paragraph center>
+      <Link
+        href='/random'
+      >
+        Open a random node.
+      </Link>
+    </Paragraph>
   </div>
 
   <NodeList
@@ -54,7 +62,9 @@
 
   .description-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     padding-bottom: 1.2em;
   }
