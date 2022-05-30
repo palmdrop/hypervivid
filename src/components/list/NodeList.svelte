@@ -1,10 +1,12 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+	import { fade } from 'svelte/transition';
   import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
   import throttle from "lodash.throttle";
   import { onDestroy } from "svelte/internal";
   import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svelte";
+  import StarLoader from "$components/ornaments/loaders/StarLoader.svelte";
 
   export let showOpenLink: boolean = true;
   export let nodeNames: NodeName[];
@@ -96,6 +98,7 @@
         mode={i === 0 ? modeFirst : modeRest}
         index={i}
         bind:isLoaded={isLoaded[i]}
+        showLoader={false}
       />
       {#if showOpenLink && (i === 0 ? modeFirst : modeRest) !== 'link'}
         <a
@@ -112,8 +115,13 @@
   {/each}
 </ul>
 {#if !allIncludedLoaded}
-  <div class='loading-icon'>
-    Loading...
+  <div 
+    class='loading-icon'
+  >
+    <StarLoader 
+      size={'8em'}
+      fadeIn
+    />
   </div>
 {/if}
 

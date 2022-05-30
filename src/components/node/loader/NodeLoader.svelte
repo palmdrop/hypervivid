@@ -1,30 +1,14 @@
 <script lang="ts">
-  import { fade } from 'svelte/transition';
-	import Paragraph from '$components/common/Paragraph.svelte';
   import type { NodeMode } from '$types/nodes';
+  import StarLoader from '$components/ornaments/loaders/StarLoader.svelte';
 
   export let mode: NodeMode;
-  export let name: string;
-  export let transitionDuration: number = 200;
 </script>
 
 <div 
   class={`loader ${mode}`}
-  transition:fade|local={{
-    duration: transitionDuration
-  }}
 >
-  {#if mode === 'only'}
-    <div class="only-container">
-      <Paragraph wide center faded>
-        Loading { name }...
-      </Paragraph>
-    </div>
-  {:else}
-    <Paragraph wide center faded>
-      Loading...
-    </Paragraph>
-  {/if}
+  <StarLoader size={'8em'}/>
 </div>
 
 <style>
@@ -39,17 +23,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .only-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
     background-color: var(--cBg);
-  }
-
-  .only, * {
-    transform: scale(1.3);
   }
 </style>

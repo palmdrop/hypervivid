@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
   import { setContext, type SvelteComponent } from "svelte";
   import Lazy from "$components/util/Lazy.svelte";
   import DefaultPreview from "./preview/DefaultPreview.svelte";
@@ -82,14 +83,14 @@
     <Lazy
       bind:isLoaded
       { component }
-    >
-      {#if showLoader}
-        <NodeLoader 
-          { mode }
-          { name }
-        />
-      {/if}
-    </Lazy>
+    />
+    {#if showLoader && !isLoaded}
+      <div
+        transition:fade|local
+      >
+        <NodeLoader {mode}/>
+      </div>
+    {/if}
   {/key}
 {:else}
   <slot />

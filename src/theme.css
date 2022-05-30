@@ -11,6 +11,7 @@
   --cFg: #090b20;
   --cBg: #bec2c7;
 
+
   --cFgFaded: #200912aa;
 
   --cBgDark: #65686c;
@@ -18,7 +19,7 @@
   --cFgInverted: var(--cBg);
   --cBgInverted: var(--cFg);
 
-  --cAccent: #20A0B2;
+  --cLoader: #505162;
 
   --fMono: 'SyneMono';
   --fDisplay: 'Gulax';
