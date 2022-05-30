@@ -6,7 +6,7 @@
   import { metadata$ } from "$stores/metadata";
   import { NODE_NAMES } from '$constants';
   import Paragraph from '$components/common/Paragraph.svelte';
-import Link from '$components/common/Link.svelte';
+  import Link from '$components/common/Link.svelte';
 
   const nodeNames = Object.keys(
     $metadata$.nodes

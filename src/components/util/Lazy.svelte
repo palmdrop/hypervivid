@@ -13,7 +13,7 @@
 
   let props: Record<string, any>;
   $: {
-    const { component, delayMs, ...restProps } = $$props;
+    const { component, delayMs, isLoaded, ...restProps } = $$props;
     props = restProps;
   }
 

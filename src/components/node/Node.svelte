@@ -12,8 +12,9 @@
 
   export let name: NodeName;
   export let mode: NodeMode;
-  export let fromSlot: boolean = false;
-  export let index: number = -1; // If in a list
+  export let fromSlot = false;
+  export let index = -1; // If in a list
+  export let showLoader = true;
 
   // Bindings
   export let isLoaded = false;
@@ -35,7 +36,7 @@
 
   $: showPreview = (
     !['only', 'main', 'inline'].includes(mode) &&
-    !nodeMetadata.inline
+    nodeMetadata && !nodeMetadata.inline
   );
 
   $: previewPath = `../../nodes/${name}/${name}.preview.svelte`
@@ -76,16 +77,18 @@
     name={name}
     flipped={index !== -1 && index % 2 === 1}
   />
-{:else if component}
+{:else if component && nodeMetadata}
   {#key component}
     <Lazy
       bind:isLoaded
       { component }
     >
-      <NodeLoader 
-        { mode }
-        { name }
-      />
+      {#if showLoader}
+        <NodeLoader 
+          { mode }
+          { name }
+        />
+      {/if}
     </Lazy>
   {/key}
 {:else}

@@ -58,6 +58,8 @@
 <style>
   main {
     padding-top: 1em;
-    width: 100%;
+    width: 100vw;
+
+    overflow-x: hidden;
   }
 </style>

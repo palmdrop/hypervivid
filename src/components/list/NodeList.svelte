@@ -18,6 +18,7 @@
   export let modeFirst: NodeMode
   export let modeRest: NodeMode
 
+
   // Loading
   $: count = batchCount === -1 
     ? nodeNames.length 
@@ -45,7 +46,9 @@
     }
 
     loadedUpToIndex = newLoadedToIndex;
-    if(count - 1 === loadedUpToIndex)  allIncludedLoaded = true;
+    if(count - 1 === loadedUpToIndex) {
+      allIncludedLoaded = true;
+    }
   }
 
   // Navigating
@@ -86,7 +89,7 @@
   {#each includedNodeNames as name, i (name)}
     <li
       on:click={() => onItemClick(name)}
-      class:loading={!isLoaded[i]}
+      class:loading={i >= loadedUpToIndex}
     >
       <Node
         name={name}

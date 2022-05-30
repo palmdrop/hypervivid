@@ -42,9 +42,6 @@
   }
 
   .only-container {
-    width: 100%;
-    height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +50,6 @@
   }
 
   .only, * {
-    transform: scale(1.5);
+    transform: scale(1.3);
   }
 </style>
