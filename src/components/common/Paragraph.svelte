@@ -40,7 +40,7 @@
   }
 
   .big {
-    font-size: clamp(1rem, 3vw, 30px);
+    font-size: var(--fontSizeLarge);
   }
 
   .faded {

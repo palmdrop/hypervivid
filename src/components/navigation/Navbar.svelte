@@ -107,23 +107,27 @@
 
     position: absolute;
     right: 0;
-    top: calc(100% + 1px);
+    top: 100%;
 
     z-index: 3;
 
     background-color: var(--cBg);
 
-    padding-bottom: 1px;
     border-bottom: var(--borderPrimary);
+    border-top: var(--borderPrimary);
   }
 
   li {
     position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     border-left: var(--borderPrimary);
     border-bottom: var(--borderPrimary);
     z-index: 0;
+
+    font-size: 1.2rem;
 
     width: 100vw;
     height: 100px;
@@ -186,6 +190,9 @@
       border-bottom: unset;
       width: auto;
       height: auto;
+      font-size: 1.0rem;
+
+      margin-top: -1px;
     }
 
     a {

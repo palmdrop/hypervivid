@@ -61,17 +61,23 @@
   }
 
   .inline {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px;
   }
 
   @media ( min-width: 500px )  {
     .cell {
       max-width: 33%;
     }
+
+    .inline {
+      flex-direction: column;
+    }
   }
 
-  @media ( minVjj-width: 700px )  {
+  @media ( min-width: 700px )  {
     .inline {
       flex-direction: row;
     }

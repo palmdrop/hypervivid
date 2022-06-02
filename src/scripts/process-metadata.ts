@@ -166,6 +166,15 @@ const processNode = async (
         }
       }
 
+      // Get edited date
+      try {
+        const stats = fs.statSync(metadataPath);
+        // console.log(stats.mtime);
+        metadata.updatedAt = stats.mtime.toUTCString();
+      } catch (err) {
+        console.log('Could not determine updated time for node', nodeName);
+      }
+
       nodes[nodeName] = metadata;
     } else {
       // TODO: Create default metadata

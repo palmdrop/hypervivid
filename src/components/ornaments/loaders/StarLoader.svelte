@@ -43,7 +43,7 @@
     opacity: 0;
     animation: 
       spin 10s infinite linear,
-      0.5s ease-in-out 0.5s 1 fadeIn;
+      0.5s ease-in-out 0.3s 1 fadeIn;
   }
 
   @keyframes spin {

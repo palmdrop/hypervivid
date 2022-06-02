@@ -1,6 +1,5 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-	import { fade } from 'svelte/transition';
   import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
   import throttle from "lodash.throttle";
@@ -11,7 +10,7 @@
   export let showOpenLink: boolean = true;
   export let nodeNames: NodeName[];
 
-  export let batchCount = -1; // -1 indicates load all at once
+  export let batchCount = -1;
   export let autoLoad = false;
   export let scrollElement: HTMLElement | undefined = undefined;
   export let loadMoreOffset = 150;
@@ -20,11 +19,12 @@
   export let modeFirst: NodeMode
   export let modeRest: NodeMode
 
+  $: if(batchCount === -1) {
+    batchCount = nodeNames.length;
+  }
 
   // Loading
-  $: count = batchCount === -1 
-    ? nodeNames.length 
-    : Math.min(batchCount, nodeNames.length);
+  $: count = Math.min(batchCount, nodeNames.length);
 
   const isLoaded: boolean[] = Array(nodeNames.length).fill(false);
 
@@ -91,7 +91,7 @@
   {#each includedNodeNames as name, i (name)}
     <li
       on:click={() => onItemClick(name)}
-      class:loading={i >= loadedUpToIndex}
+      class:loading={i > (loadedUpToIndex - batchCount) && !allIncludedLoaded}
     >
       <Node
         name={name}
@@ -107,7 +107,7 @@
         >
           <FullscreenIcon 
             mode='open'
-            size={'1.3em'}
+            size={'clamp(1rem, 3vw, 1.2rem)'}
           />
         </a>
       {/if}
@@ -149,9 +149,9 @@
 
   li {
     position: relative;
-    padding: 2.0em 5px;
+    padding: 2.0em 0.8em;
     border: var(--borderPrimary);
-    margin: 5px 0px;
+    margin: 5px 2px;
 
     flex: 1 1 auto;
 
@@ -162,6 +162,7 @@
     box-shadow: 0px 0px 0px transparent;
 
     transition: 0.2s;
+    border-radius: var(--borderRadius1);
   }
 
   .loading {
@@ -185,7 +186,6 @@
     li {
       padding: 2.5em;
       margin: 5px;
-      border-radius: var(--borderRadius1);
     }
   }
 
@@ -195,8 +195,8 @@
 
   .open-link {
     position: absolute;
-    top: 1.0em;
-    right: 0.8em;
+    top: 0.6em;
+    right: 0.6em;
 
     text-decoration: none;
   }
@@ -210,5 +210,3 @@
     padding: 0em;
   }
 </style>
-
-<!-- markup (zero or more items) goes here -->

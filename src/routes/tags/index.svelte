@@ -12,7 +12,7 @@
   // TODO: add option to toggle tags. Create feed with only those nodes that have the tags. Also make it possible to open a specific tag.
 </script>
 
-<div class="node">
+<div class="tags">
   <main>
     <h1>TAGS</h1>
 
@@ -26,7 +26,7 @@
 </div>
 
 <style>
-  .node {
+  .tags {
     width: 100vw;
     height: 100%;
     overflow-x: hidden;

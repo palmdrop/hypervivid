@@ -35,7 +35,7 @@
         { transitionDuration }
         direction={expanded ? 'down' : 'right'}
         strokeWidth={2}
-        size={20}
+        size={'1.25rem'}
       />
     </div>
     <h1>Metadata — {name}</h1>
@@ -61,12 +61,21 @@
           </Paragraph>
         </Cell>
         <Cell
-          title="DATE"
+          title="PUBLISHED"
           nested
           inline
         >
           <Paragraph center wide>
             { formatDate(nodeMetadata.createdAt) }
+          </Paragraph>
+        </Cell>
+        <Cell
+          title="UPDATED"
+          nested
+          inline
+        >
+          <Paragraph center wide>
+            { formatDate(nodeMetadata.updatedAt) }
           </Paragraph>
         </Cell>
       </Cell>
@@ -130,8 +139,7 @@
 
   .arrow {
     position: absolute;
-    top: 3px;
-    left: 6px;
+    top: 10%;
   }
 
   h1 {

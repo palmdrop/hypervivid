@@ -8,7 +8,10 @@
 <div 
   class={`loader ${mode}`}
 >
-  <StarLoader size={'8em'}/>
+  <StarLoader 
+    size={'8em'}
+    fadeIn
+  />
 </div>
 
 <style>
@@ -17,7 +20,7 @@
     height: 100%;
 
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
 
     display: flex;

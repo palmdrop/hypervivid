@@ -151,7 +151,8 @@ export default {
       "inline": true,
       "title": "moons",
       "description": "",
-      "image": ""
+      "image": "",
+      "updatedAt": "Thu, 26 May 2022 20:11:27 GMT"
     },
     "contact": {
       "tags": [
@@ -162,7 +163,8 @@ export default {
       "inline": false,
       "title": "contact",
       "description": "A form for sending me an email. Nothing more.",
-      "image": ""
+      "image": "",
+      "updatedAt": "Sat, 28 May 2022 15:57:13 GMT"
     },
     "nodewithareallylongname": {
       "tags": [],
@@ -170,7 +172,8 @@ export default {
       "inline": false,
       "title": "nodewithareallylongname",
       "description": "",
-      "image": ""
+      "image": "",
+      "updatedAt": "Sat, 21 May 2022 14:00:34 GMT"
     },
     "N2": {
       "tags": [
@@ -179,7 +182,8 @@ export default {
         "internet",
         "generative"
       ],
-      "createdAt": "2022-05-21"
+      "createdAt": "2022-05-21",
+      "updatedAt": "Thu, 12 May 2022 21:51:19 GMT"
     },
     "about": {
       "tags": [
@@ -190,7 +194,8 @@ export default {
       "inline": false,
       "title": "about",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
-      "image": "/img/connections/connections1.jpg"
+      "image": "/img/connections/connections1.jpg",
+      "updatedAt": "Sat, 28 May 2022 15:54:31 GMT"
     },
     "hyper": {
       "tags": [
@@ -200,7 +205,8 @@ export default {
       "inline": false,
       "title": "hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's slightly fun.",
-      "image": "/nodes/hyper.preview.jpg"
+      "image": "/nodes/hyper.preview.jpg",
+      "updatedAt": "Sat, 28 May 2022 15:56:02 GMT"
     },
     "manifest": {
       "tags": [
@@ -211,7 +217,8 @@ export default {
       "inline": false,
       "title": "manifest",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
-      "image": "/img/combined/mirror2.jpg"
+      "image": "/img/combined/mirror2.jpg",
+      "updatedAt": "Sat, 28 May 2022 23:42:03 GMT"
     },
     "scroll": {
       "tags": [],
@@ -219,7 +226,8 @@ export default {
       "inline": false,
       "title": "scroll",
       "description": "Infinite (?) scrolling test",
-      "image": ""
+      "image": "",
+      "updatedAt": "Thu, 19 May 2022 00:14:23 GMT"
     },
     "N1": {
       "inline": false,
@@ -230,7 +238,8 @@ export default {
         "writing"
       ],
       "createdAt": "2022-04-29",
-      "title": "N1"
+      "title": "N1",
+      "updatedAt": "Thu, 12 May 2022 18:51:17 GMT"
     },
     "N3": {
       "inline": true,
@@ -239,7 +248,9 @@ export default {
         "web",
         "literature"
       ],
-      "createdAt": "2022-04-22"
+      "createdAt": "2022-04-22",
+      "title": "N3",
+      "updatedAt": "Mon, 30 May 2022 20:18:00 GMT"
     }
   }
 } as const;

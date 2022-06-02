@@ -8,10 +8,6 @@
   
   const fonts = [
     {
-      text: 'Syne typeface by Bonjour Monde',
-      href: 'https://gitlab.com/bonjour-monde/fonderie/syne-typeface'
-    },
-    {
       text: 'Gulax by Morgan Gilbert (VELVETYNE)',
       href: 'https://velvetyne.fr/fonts/gulax/',
     },
@@ -22,6 +18,10 @@
       */
       text: 'Fengardo Neue by Loïc Sander (VELVETYNE)',
       href: 'https://velvetyne.fr/fonts/fengardo-neue/'
+    },
+    {
+      text: 'Syne typeface by Bonjour Monde',
+      href: 'https://gitlab.com/bonjour-monde/fonderie/syne-typeface'
     }
   ];
 
@@ -262,6 +262,8 @@
     flex-direction: column;
     justify-content: center;
 
+    padding-top: 2.0em;
+
     overflow: hidden;
 
     width: clamp(300px, 100%, 1100px);
@@ -277,7 +279,8 @@
 
   .links li {
     width: 100%;
-    height: clamp(20px, 3.5vh, 2em);
+
+    height: 1.7rem;
 
     display: flex;
     flex-direction: row;

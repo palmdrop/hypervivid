@@ -2,7 +2,7 @@
   export let direction: 'right' | 'left' | 'down' | 'up' = 'right';
   export let transitionDuration: number = 400;
   export let strokeWidth = 1.2;
-  export let size = 25;
+  export let size = '25px';
 </script>
 
 <div
@@ -29,32 +29,26 @@
 
 <style>
   div {
-    font-size: 1.7em;
-    margin: 0.2em;
+    margin-top: 0.07rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.02;
   }
 
   .right {
     transform: rotateZ(0);
-    margin-top: -0.15em;
-    margin-left: 0em;
   }
 
   .down {
     transform: rotateZ(90deg);
-    margin-top: -0.05em;
-    margin-left: -0.02em;
   }
 
   .left {
     transform: rotateZ(180deg);
-    margin-top: -0.15px;
-    margin-left: 0px;
   }
 
   .up {
     transform: rotateZ(270deg);
-    margin-top: 0.1em;
-    margin-left: 0.1em;
   }
 </style>
 

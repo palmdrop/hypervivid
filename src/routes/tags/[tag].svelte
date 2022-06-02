@@ -36,6 +36,8 @@
   export let tag: Tag;
   export let nodeNames: NodeName[];
 
+  $: console.log(nodeNames);
+
   $: useTitle(`Tag ~ ${tag}`);
 </script>
 

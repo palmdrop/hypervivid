@@ -88,7 +88,7 @@
       <div
         transition:fade|local
       >
-        <NodeLoader {mode}/>
+        <NodeLoader {mode} />
       </div>
     {/if}
   {/key}

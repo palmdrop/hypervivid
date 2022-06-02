@@ -71,7 +71,7 @@ import { NODE_NAMES } from '$constants';
 
   a, span {
     min-width: 2.0em;
-    padding: 0.5em;
+    padding: 0.50em;
   }
 
   a {
@@ -103,8 +103,9 @@ import { NODE_NAMES } from '$constants';
   }
 
   span {
-    margin: -1px;
-    border: var(--borderPrimary);
+    box-sizing: border-box;
+    border-left: var(--borderPrimary);
+    border-right: var(--borderPrimary);
 
     max-width: 160px;
     text-overflow: ellipsis;

@@ -19,12 +19,14 @@
   --cFgInverted: var(--cBg);
   --cBgInverted: var(--cFg);
 
-  --cLoader: #505162;
+  --cLoader: #6d6992;
 
   --fMono: 'SyneMono';
   --fDisplay: 'Gulax';
   --fRegular: 'Fengardo_Neue-Regular';
   --fBold: 'Fengardo_Neue-Bold';
+
+  --fontSizeLarge: clamp(1rem, 3vw, 27px);
 
   /*
   --fRegular: 'SpaceGrotesk-Regular';
@@ -35,7 +37,7 @@
   */
 
   --borderPrimary: 1px solid var(--cFg);
-  --borderRadius1: 15px;
+  --borderRadius1: 0.8rem;
   --borderRadius2: 35px;
   --borderRadius3: 100%;
 
@@ -47,12 +49,13 @@
     2px 2px 4px rgba(37, 1, 1, 0.11), 
     inset -15px -15px 20px #24183Eaa, 
     inset 3px 3px 20px rgba(255, 255, 255, 0.24);
+
 }
 
 /* Global styles */
 html {
   /* TODO: dynamic font size */
-  font-size: clamp(19px, 2.3vw, 22px);
+  font-size: clamp(16px, 2.0vw, 20px);
   font-family: var(--fRegular);
 
   background-color: var(--cBg);

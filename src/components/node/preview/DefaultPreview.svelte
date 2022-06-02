@@ -56,7 +56,7 @@
 
   .date {
     position: absolute;
-    bottom: 25px;
+    bottom: 1em;
 
     opacity: 0.5;
   }

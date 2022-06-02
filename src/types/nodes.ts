@@ -26,6 +26,7 @@ export type NodeMetadata = {
   links: Link[],
 
   createdAt: string,
+  updatedAt: string,
 
   inline?: boolean,
 
