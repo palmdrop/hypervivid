@@ -19,6 +19,7 @@
     'vivid',
     'soft',
     'human',
+    'verse',
     'quiet',
     'smart',
     'flat',

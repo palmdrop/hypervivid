@@ -95,7 +95,7 @@
 
     transition: opacity 1s;
 
-    min-height: 94%;
+    min-height: 90%;
   }
 
   section {

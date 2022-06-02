@@ -21,10 +21,13 @@ const main = async () => {
     throw new Error(`A node with title ${name} already exists`);
   }
 
+  const date = new Date().toUTCString();
+
   const metadataPreset: NodeMetadata = {
     tags: [],
     links: [],
-    createdAt: new Date().toUTCString(),
+    createdAt: date,
+    updatedAt: date,
     inline: false,
     title: name,
     description: '',

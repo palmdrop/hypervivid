@@ -2,7 +2,7 @@
   export let direction: 'right' | 'left' | 'down' | 'up' = 'right';
   export let transitionDuration: number = 400;
   export let strokeWidth = 1.2;
-  export let size = '25px';
+  export let size: number | string = '25px';
 </script>
 
 <div
