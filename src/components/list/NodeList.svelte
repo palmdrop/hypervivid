@@ -150,6 +150,7 @@
   li {
     position: relative;
     padding: 2.0em 0.8em;
+    padding-bottom: 3em;
     border: var(--borderPrimary);
     margin: 5px 2px;
 

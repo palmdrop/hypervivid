@@ -53,7 +53,7 @@
   <NodeList
     nodeNames={nodeNames}
     modeFirst="preview"
-    modeRest="link"
+    modeRest="preview"
   />
 </main>
 

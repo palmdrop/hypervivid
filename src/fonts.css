@@ -11,7 +11,7 @@
 
 /* Fengardo Neue */
 @font-face {
-    font-family: 'Fengardo_Neue-Regular';
+    font-family: 'Fengardo-Neue';
     src:    url('/fonts/fengardo_neue/fengardoneue_regular-webfont.eot');
     src:    url('/fonts/fengardo_neue/fengardoneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
             url('/fonts/fengardo_neue/fengardoneue_regular-webfont.woff') format('woff'),
@@ -22,7 +22,18 @@
 }
 
 @font-face {
-    font-family: 'Fengardo_Neue-Bold';
+    font-family: 'Fengardo-Neue';
+    src:    url('/fonts/fengardo_neue/fengardoneue_black-webfont.eot');
+    src:    url('/fonts/fengardo_neue/fengardoneue_black-webfont.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/fengardo_neue/fengardoneue_black-webfont.woff') format('woff'),
+            url('/fonts/fengardo_neue/fengardoneue_black-webfont.ttf') format('truetype'),
+            url('/fonts/fengardo_neue/fengardoneue_black-webfont.svg#svgFontName') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fengardo-Neue-Bold';
     src:    url('/fonts/fengardo_neue/fengardoneue_black-webfont.eot');
     src:    url('/fonts/fengardo_neue/fengardoneue_black-webfont.eot?#iefix') format('embedded-opentype'),
             url('/fonts/fengardo_neue/fengardoneue_black-webfont.woff') format('woff'),

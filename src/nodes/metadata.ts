@@ -45,7 +45,7 @@ export default {
       },
       {
         "from": "about",
-        "to": "manifest",
+        "to": "manifesto",
         "kind": "references",
         "strength": 0.5
       }
@@ -66,9 +66,9 @@ export default {
         "strength": 0.5
       }
     ],
-    "manifest": [
+    "manifesto": [
       {
-        "from": "manifest",
+        "from": "manifesto",
         "to": "about",
         "kind": "tangent",
         "strength": 0.5
@@ -78,7 +78,7 @@ export default {
     "info": [
       {
         "from": "info",
-        "to": "manifest",
+        "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -96,6 +96,10 @@ export default {
       "count": 2
     },
     "internet": {
+      "weight": 0.6666666666666666,
+      "count": 2
+    },
+    "info": {
       "weight": 0.6666666666666666,
       "count": 2
     },
@@ -123,10 +127,6 @@ export default {
       "weight": 0.3333333333333333,
       "count": 1
     },
-    "info": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
     "contact": {
       "weight": 0.3333333333333333,
       "count": 1
@@ -139,20 +139,32 @@ export default {
       "weight": 0.3333333333333333,
       "count": 1
     },
-    "about": {
+    "css": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "webart": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
+    "notanalbeads": {
       "weight": 0.3333333333333333,
       "count": 1
     }
   },
   "nodes": {
     "moons": {
-      "tags": [],
+      "tags": [
+        "css",
+        "webart",
+        "notanalbeads"
+      ],
       "createdAt": "Thu, 26 May 2022 14:41:23 GMT",
       "inline": true,
       "title": "moons",
       "description": "",
       "image": "",
-      "updatedAt": "Thu, 26 May 2022 20:11:27 GMT"
+      "updatedAt": "Fri, 03 Jun 2022 13:46:39 GMT"
     },
     "contact": {
       "tags": [
@@ -187,8 +199,8 @@ export default {
     },
     "about": {
       "tags": [
-        "thoughts",
-        "info"
+        "info",
+        "thoughts"
       ],
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
       "inline": false,
@@ -208,17 +220,17 @@ export default {
       "image": "/nodes/hyper.preview.jpg",
       "updatedAt": "Sat, 28 May 2022 15:56:02 GMT"
     },
-    "manifest": {
+    "manifesto": {
       "tags": [
-        "internet",
-        "about"
+        "info",
+        "internet"
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
-      "title": "manifest",
+      "title": "manifesto",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "Sat, 28 May 2022 23:42:03 GMT"
+      "updatedAt": "Fri, 03 Jun 2022 15:00:56 GMT"
     },
     "scroll": {
       "tags": [],

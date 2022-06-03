@@ -51,6 +51,16 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
+strong {
+	font-weight: bold;
+}
+
+blockquote {
+	opacity: 0.5;
+	padding-bottom: 1em;
+
+	padding-left: 2em;
+}
 
 main {
 	overflow-y: auto;

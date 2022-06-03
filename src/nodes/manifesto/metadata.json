@@ -1,5 +1,5 @@
 {
-  "tags": ["about", "internet"],
+  "tags": ["info", "internet"],
   "links": [{
     "to": "info",
     "kind": "tangent",
@@ -7,7 +7,7 @@
   }],
   "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
   "inline": false,
-  "title": "manifest",
+  "title": "manifesto",
   "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
   "image": "/img/combined/mirror2.jpg"
 }

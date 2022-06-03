@@ -2,7 +2,7 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import { getNodeContext } from '$utils/useNodeContext';
   import Node from '$components/node/Node.svelte';
-import { NODE_NAME } from '$constants';
+  import { NODE_NAME } from '$constants';
 
   const { name, metadata } = getNodeContext('N2');
 </script>

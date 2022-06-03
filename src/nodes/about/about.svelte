@@ -76,8 +76,8 @@
       onClick: () => scrollIntoView('credits')
     },
     {
-      href: '/nodes/manifest',
-      text: 'manifest'
+      href: '/nodes/manifesto',
+      text: 'manifesto'
     },
   ] as {
     href?: string,
@@ -122,6 +122,11 @@
     </ul>
     <div class="content">
       <!--TODO: Move a lot of this to manifest page-->
+      <!--
+        Structurally, this site tries ot facilitate non-linear navigation, following paths, making connections, dynamically evolving. A place in my control, for sharing personal explorations and experiments, writing, digital art -- anything.
+
+        Looking for a more intimate and more soft digital landscape. 
+      -->
       <Paragraph wide big>
         I'm Anton, or palmdrop. This is my personal webspace. I made this place for sharing digital art, writing, occasional photography,  
         links, whatever. The site has an experimental structure to accomodate any interlinked content: text, image, generative art, random experiments,
@@ -149,7 +154,7 @@
         </div>
       </Paragraph>
       <Paragraph wide big>
-        Read more about the idea behind this webspace on the <Link href='/nodes/manifest' newTab>manifest page</Link>.
+        Read more about the ideas behind this webspace on the <Link href='/nodes/manifesto' newTab>manifesto page</Link>.
       </Paragraph>
     </div>
   </section>

@@ -14,8 +14,8 @@
       path: '/tags'
     },
     {
-      text: 'manifest',
-      path: '/nodes/manifest'
+      text: 'manifesto',
+      path: '/nodes/manifesto'
     },
     {
       text: 'about',

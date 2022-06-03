@@ -23,8 +23,8 @@
 
   --fMono: 'SyneMono';
   --fDisplay: 'Gulax';
-  --fRegular: 'Fengardo_Neue-Regular';
-  --fBold: 'Fengardo_Neue-Bold';
+  --fRegular: 'Fengardo-Neue';
+  --fBold: 'Fengardo-Neue-Bold';
 
   --fontSizeLarge: clamp(1rem, 3vw, 27px);
 

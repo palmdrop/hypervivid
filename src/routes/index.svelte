@@ -19,7 +19,7 @@
   // TODO: or always show the latest one first, then featured
   $: nodeNames = [
     'N2',
-    'manifest',
+    'manifesto',
     'N3'
   ] as NodeName[];
 
