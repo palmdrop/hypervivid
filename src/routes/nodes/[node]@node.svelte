@@ -31,13 +31,11 @@
   import NodeWrapper from "$components/node/wrappers/NodeWrapper.svelte";
   import { useTitle } from "$utils/useTitle";
   import type { NodeName } from '$types/nodes';
+  import { SITE_NAME } from '$constants';
 
   export let name: NodeName;
-  // export let params: string[];
 
-  // $: fullscreen = params.includes('fullscreen');
-
-  $: useTitle(`Node ~ ${name}`);
+  $: useTitle(`${name} ~ ${SITE_NAME}`);
 </script>
 
 <NodeWrapper

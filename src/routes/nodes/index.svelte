@@ -4,7 +4,7 @@
   import { useTitle } from "$utils/useTitle";
 
   import { metadata$ } from "$stores/metadata";
-  import { NODE_NAMES } from '$constants';
+  import { NODE_NAMES, SITE_NAME } from '$constants';
   import Paragraph from '$components/common/Paragraph.svelte';
   import Link from '$components/common/Link.svelte';
 
@@ -19,7 +19,7 @@
   
   // TODO: add filters and search capabilities
 
-  useTitle(NODE_NAMES);
+  useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
 </script>
 
 <main

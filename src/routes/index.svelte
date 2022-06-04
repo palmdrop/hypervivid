@@ -8,6 +8,7 @@
   import Hyper from '$nodes/hyper/hyper.svelte';
   import { scrollSelfIntoView } from '$utils/scrollIntoView';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
+import { SITE_NAME } from '$constants';
 
   /*
   $: nodeNames = (
@@ -24,7 +25,7 @@
   ] as NodeName[];
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
-  useTitle('Hypervivid ~ Hypersoft');
+  useTitle(`${SITE_NAME} ~ HYPERSOFT`);
 </script>
 
 

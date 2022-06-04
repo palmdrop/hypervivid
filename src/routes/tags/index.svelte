@@ -3,11 +3,11 @@
   import { useTitle } from '$utils/useTitle';
   import { metadata$ } from '$stores/metadata';
   import Paragraph from '$components/common/Paragraph.svelte';
-  import { NODE_NAME, NODE_NAMES } from '$constants';
+  import { NODE_NAME, NODE_NAMES, SITE_NAME } from '$constants';
 
   const tags = Object.keys($metadata$.tags);
 
-  useTitle('Tags');
+  useTitle(`Tags ~ ${SITE_NAME}`);
 
   // TODO: add option to toggle tags. Create feed with only those nodes that have the tags. Also make it possible to open a specific tag.
 </script>

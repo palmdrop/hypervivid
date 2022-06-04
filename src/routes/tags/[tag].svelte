@@ -31,14 +31,14 @@
   import { useTitle } from '$utils/useTitle';
   import NodeList from '$components/list/NodeList.svelte';
   import Paragraph from '$components/common/Paragraph.svelte';
-  import { NODE_NAMES } from '$constants';
+  import { NODE_NAMES, SITE_NAME } from '$constants';
 
   export let tag: Tag;
   export let nodeNames: NodeName[];
 
   $: console.log(nodeNames);
 
-  $: useTitle(`Tag ~ ${tag}`);
+  $: useTitle(`${tag} ~ ${SITE_NAME}`);
 </script>
 
 <main>
