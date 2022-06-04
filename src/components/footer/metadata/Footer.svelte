@@ -23,6 +23,8 @@
   $: toggle = onToggle ?? (() => {
     expanded = !expanded;
   })
+
+  $: title = nodeMetadata.title ?? name;
 </script>
 
 <footer> 
@@ -56,8 +58,11 @@
           nested
           inline
         >
-          <Paragraph center wide>
-            { nodeMetadata.title ?? name }
+          <Paragraph 
+            center wide
+            tooltip={title.length > 10 ? title : undefined }
+          >
+            { title }
           </Paragraph>
         </Cell>
         <Cell

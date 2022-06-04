@@ -16,5 +16,7 @@
     padding: 0.5em;
 
     border: var(--borderPrimary);
+
+    text-align: justify;
   }
 </style>

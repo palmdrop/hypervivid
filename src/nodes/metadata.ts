@@ -164,7 +164,7 @@ export default {
       "title": "moons",
       "description": "",
       "image": "",
-      "updatedAt": "Fri, 03 Jun 2022 13:46:39 GMT"
+      "updatedAt": "Sat, 04 Jun 2022 13:49:05 GMT"
     },
     "contact": {
       "tags": [
@@ -230,7 +230,7 @@ export default {
       "title": "manifesto",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "Fri, 03 Jun 2022 15:00:56 GMT"
+      "updatedAt": "Sat, 04 Jun 2022 13:49:05 GMT"
     },
     "scroll": {
       "tags": [],

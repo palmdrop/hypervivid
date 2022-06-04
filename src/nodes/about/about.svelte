@@ -39,7 +39,7 @@
   const notes = [
     'No tracking, cookies or analytics.',
     'Built using only free and open software.',
-    'Hosted on cloudflare pages.',
+    'Hosted on Cloudflare pages.',
     'Always a work in progress'
   ];
 
@@ -121,16 +121,10 @@
       {/each}
     </ul>
     <div class="content">
-      <!--TODO: Move a lot of this to manifest page-->
-      <!--
-        Structurally, this site tries ot facilitate non-linear navigation, following paths, making connections, dynamically evolving. A place in my control, for sharing personal explorations and experiments, writing, digital art -- anything.
-
-        Looking for a more intimate and more soft digital landscape. 
-      -->
       <Paragraph wide big>
-        I'm Anton, or palmdrop. This is my personal webspace. I made this place for sharing digital art, writing, occasional photography,  
+        I'm Anton, or palmdrop. This is my personal web space. I made this place for sharing digital art, writing, occasional photography,  
         links, whatever. The site has an experimental structure to accomodate any interlinked content: text, image, generative art, random experiments,
-        memes, poetry, trash recepies, GPU-frying 3D sketches, etc, all linked together as nodes.
+        memes, poetry, trash recipes, GPU-frying 3D sketches, etc, all linked together as nodes.
       </Paragraph>
       <Paragraph wide big>
         Building things help me think.
@@ -144,8 +138,11 @@
         <div class='ideas'>
           <PointList
             items={[
-              'make it possible to post anything without artifical restriction by limiting site structure,',
-              'and to encourage ludic web interaction, exploration and play.'
+              'take control over a small slice of the web,',
+              'make it possible to post anything without being restricted by limiting site structure,',
+              'enable new connections, paths, and map-making, ',
+              'encourage ludic web interaction, exploration and play,',
+              'and search for a more intimate digital landscape.'
             ]}
             let:item
           >
@@ -154,7 +151,7 @@
         </div>
       </Paragraph>
       <Paragraph wide big>
-        Read more about the ideas behind this webspace on the <Link href='/nodes/manifesto' newTab>manifesto page</Link>.
+        Also, read the <Link href='/nodes/manifesto' newTab>manifesto page</Link>.
       </Paragraph>
     </div>
   </section>
@@ -239,6 +236,8 @@
     flex-direction: column;
 
     overflow-x: hidden;
+
+    text-align: justify;
   }
 
   .ideas {
@@ -247,13 +246,13 @@
   }
 
   h2 {
-    font-size: 3.0rem;
+    font-size: clamp(2rem, 15vw, 3rem);
     padding-bottom: 0.5em;
   }
 
   h3 {
     font-family: var(--fRegular);
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 15vw, 1.4rem);
     padding-bottom: 1.0em;
     text-align: left;
   }
