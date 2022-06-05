@@ -122,7 +122,7 @@
     </ul>
     <div class="content">
       <Paragraph wide big>
-        I'm Anton, or palmdrop, a Swedish developer and digital artist. This site is multipurpose -- it's made for sharing digital art, 
+        I'm Anton, or palmdrop, a Swedish developer and digital artist. This site is multipurpose — it's made for sharing digital art, 
         writing, photography, links, whatever. The site has an experimental structure to accommodate any interlinked content-type: text, image, generative art, random experiments,
         memes, poetry, trash recipes, GPU-frying 3D sketches, and so on, all linked together as nodes.
       </Paragraph>
@@ -235,8 +235,6 @@
     flex-direction: column;
 
     overflow-x: hidden;
-
-    text-align: justify;
   }
 
   .ideas {
