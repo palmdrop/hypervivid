@@ -122,16 +122,15 @@
     </ul>
     <div class="content">
       <Paragraph wide big>
-        I'm Anton, or palmdrop. This is my personal web space. I made this place for sharing digital art, writing, occasional photography,  
-        links, whatever. The site has an experimental structure to accomodate any interlinked content: text, image, generative art, random experiments,
-        memes, poetry, trash recipes, GPU-frying 3D sketches, etc, all linked together as nodes.
+        I'm Anton, or palmdrop, a Swedish developer and digital artist. This site is multipurpose -- it's made for sharing digital art, 
+        writing, photography, links, whatever. The site has an experimental structure to accommodate any interlinked content-type: text, image, generative art, random experiments,
+        memes, poetry, trash recipes, GPU-frying 3D sketches, and so on, all linked together as nodes.
       </Paragraph>
       <Paragraph wide big>
-        Building things help me think.
-      </Paragraph>
-      <Paragraph wide big>
-        Most pages and components are "nodes". Nodes may be connected. Press the bottom "metadata" tab to find out. 
-        Nodes have tags. This may help you find the content you are looking for, but I encourage you to just follow the metadata links.
+        Node, as in an interconnected point in a graph. 
+        <Link href='https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)' newTab>This kind of graph.</Link>
+        Press the bottom "metadata" tab to examine the links. 
+        Nodes also have tags, that may help you find what you are looking for. But I doubt there's anything in particular you are looking for. Just follow the metadata links. Explore some paths.
       </Paragraph>
       <Paragraph wide big>
         The core idea of this page is to 
@@ -139,7 +138,7 @@
           <PointList
             items={[
               'take control over a small slice of the web,',
-              'make it possible to post anything without being restricted by limiting site structure,',
+              'make it possible to post anything without restriction from limiting site structure,',
               'enable new connections, paths, and map-making, ',
               'encourage ludic web interaction, exploration and play,',
               'and search for a more intimate digital landscape.'
@@ -297,7 +296,8 @@
 
   img {
     object-fit: cover;
-    height: 300px;
+    height: 30vh;
+    max-height: 400px;
     width: 100%;
 
     position: relative;
@@ -310,7 +310,8 @@
   .img-container {
     margin: 0;
     padding: 0;
-    height: 301px;
+    height: calc(30vh + 1px);
+    max-height: 401px;
 
     border-bottom: var(--borderPrimary);
     border-top: var(--borderPrimary);

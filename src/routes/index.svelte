@@ -83,7 +83,6 @@ import { SITE_NAME } from '$constants';
     overflow-y: auto;
 
     width: 100%;
-    height: 100%;
 
     z-index: 0;
   }

@@ -78,6 +78,7 @@
 
   {#if !fullscreen}
     <div
+      class="footer-container"
       transition:slide|local={{ 
         duration: transitionDuration,
       }}
@@ -98,20 +99,20 @@
     position: relative;
 
     width: 100%;
+    min-height: 100%;
     overflow: hidden;
-    flex-grow: 1;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .node-container {
-    flex-grow: 1;
-
-    overflow: auto;
-
     position: relative;
+    flex-grow: 2;
+    margin-top: -1px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .fullscreen-button {
@@ -123,9 +124,5 @@
     transition: 0.4s;
 
     z-index: 1;
-  }
-
-  main {
-    margin-top: -1px;
   }
 </style>

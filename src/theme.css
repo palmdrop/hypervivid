@@ -1,15 +1,10 @@
 /* Theme */
 :root {
-  /*
-  --cFg: #383838;
-  --cBg: #EDEFEE;
-  */
-  /*
   --cFg: #090b20;
+  /*
   --cBg: #bec2c7;
   */
-  --cFg: #090b20;
-  --cBg: #bec2c7;
+  --cBg: #c6cbd2;
 
 
   --cFgFaded: #200912aa;
@@ -26,7 +21,7 @@
   --fRegular: 'Fengardo-Neue';
   --fBold: 'Fengardo-Neue-Bold';
 
-  --fontSizeLarge: clamp(1rem, 3vw, 27px);
+  --fontSizeLarge: clamp(1.1rem, 3vw, 27px);
 
   /*
   --fRegular: 'SpaceGrotesk-Regular';

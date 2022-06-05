@@ -11,7 +11,7 @@ As an infrastructure that is still fundamentally decentralized, the web has late
 
 We should foster a softer culture where explorations, sincerity, and play are integral. A place for sharing and organizing. A place that could outlive capitalism, irony poisoning, and existential dissociation -- an internet of map-making and multiplicities.
 
-As a personal project, this site acts as an unfinished and evolving host for my digital work. It's my node on the web. A place for practicing play, connecting ideas, and mapping out ideas.
+As a personal project, this site acts as an unfinished and evolving host for my digital work. It's my node on the web. A place for practicing play, connecting thoughts, and mapping out ideas.
 
 ## Digital Futures
 The internet of platforms favors closed loops. When conglomerates with unfathomable resources are allowed to define what to expect from the internet, and how to use it, they can easily contain all interactions to their domain. But technology should not be solely the domain of experts and corporations. We need to lower the threshold of entry -- the web should be accessible and democratic. The people at SOFTER phrased it well: [Softer digital futures](https://softer.website/softer "a cozy place").

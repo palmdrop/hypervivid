@@ -75,6 +75,7 @@ export default {
       }
     ],
     "hyper": [],
+    "links": [],
     "info": [
       {
         "from": "info",
@@ -153,6 +154,15 @@ export default {
     }
   },
   "nodes": {
+    "links": {
+      "tags": [],
+      "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
+      "updatedAt": "Sat, 04 Jun 2022 22:32:18 GMT",
+      "inline": false,
+      "title": "links",
+      "description": "",
+      "image": ""
+    },
     "moons": {
       "tags": [
         "css",

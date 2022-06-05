@@ -15,7 +15,7 @@
     list-style-type: georgian;
     list-style-position: inside;
 
-    padding-bottom: 1em;
+    padding-bottom: 0.7em;
 
     font-size: var(--fontSizeLarge);
   }

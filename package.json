@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": ". scripts/start.sh",
-    "dev": "svelte-kit dev",
+    "dev": "svelte-kit dev --host",
     "prebuild": "npm install && . ./scripts/prebuild.sh",
     "gen": ". ./scripts/generate.sh",
     "build": "svelte-kit build",

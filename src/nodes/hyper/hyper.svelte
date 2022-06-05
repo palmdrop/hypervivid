@@ -150,7 +150,6 @@
   div {
     width: 100%;
     height: 100%;
-    min-height: 650px;
 
     display: flex;
     justify-content: center;
@@ -161,7 +160,7 @@
 
   ul {
     padding: 1em;
-    font-size: 2.1rem;
+    font-size: clamp(18px, 7vw, 2.1rem);
     line-height: 0.9em;
     letter-spacing: 0.45em;
     text-align: center;
@@ -173,7 +172,9 @@
   img {
     position: absolute;
     height: 100%;
+    max-height: 75%;
     object-fit: cover;
+    aspect-ratio: 3/2;
     z-index: -1;
   }
 
