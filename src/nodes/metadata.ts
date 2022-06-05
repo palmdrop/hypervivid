@@ -157,10 +157,10 @@ export default {
     "links": {
       "tags": [],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "Sat, 04 Jun 2022 22:32:18 GMT",
+      "updatedAt": "Sun, 05 Jun 2022 09:16:54 GMT",
       "inline": false,
       "title": "links",
-      "description": "",
+      "description": "Hyperlinks to other nodes on the web. Things I find interesting.",
       "image": ""
     },
     "moons": {

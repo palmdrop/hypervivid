@@ -86,7 +86,6 @@
     />
     {#if showLoader && !isLoaded}
       <div
-        transition:fade|local
       >
         <NodeLoader {mode} />
       </div>
