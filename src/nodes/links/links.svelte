@@ -1,8 +1,7 @@
 
 <script lang="ts">
-  import Link from '$components/common/Link.svelte';
-import Paragraph from '$components/common/Paragraph.svelte';
-import { getNodeContext } from '$utils/useNodeContext';
+  import Paragraph from '$components/common/Paragraph.svelte';
+  import { getNodeContext } from '$utils/useNodeContext';
   import links from './data.json';
   const { name, metadata } = getNodeContext('links');
 
@@ -39,41 +38,21 @@ import { getNodeContext } from '$utils/useNodeContext';
   </Paragraph>
 
   <table>
-    <thead>
-      <tr>
-        <th>
-        </th>
-        <th>
-          name
-        </th>
-        <th>
-          categories
-        </th>
-        <th>
-          site
-        </th>
-      </tr>
-    </thead>
     <tbody>
       {#each [...links].reverse() as link, i }
         <tr>
-          <td>
-            <a href={link.url} rel="noopener noreferrer">
-              {i}
-            </a>
-          </td>
-          <td>
-            <a href={link.url} rel="noopener noreferrer">
+          <td class="name">
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
               {link.text}
             </a>
           </td>
-          <td>
-            <a href={link.url} rel="noopener noreferrer">
+          <td class="categories">
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
               {[link.category, ...link.additionalCategories].join(', ')}
             </a>
           </td>
-          <td>
-            <a href={link.url} rel="noopener noreferrer">
+          <td class="site">
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
               {parseUrl(link.url)}
             </a>
           </td>
@@ -97,43 +76,49 @@ import { getNodeContext } from '$utils/useNodeContext';
   }
 
   table {
-    border: var(--borderPrimary);
     margin-bottom: 1em;
 
     border-collapse: collapse;
   }
 
-  th {
+  a {
+    display: block;
+    padding: 0.8em 0.5em;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  tr {
+    border-bottom: var(--borderSoft);
+  }
+
+  tr, td {
+    transition: 0.3s;
+  }
+
+  tr:hover > td {
     background-color: var(--cBgInverted);
     color: var(--cFgInverted);
+  }
 
-    font-family: var(--fMono);
+  .categories {
+    font-family: var(--fDisplay);
     text-transform: uppercase;
   }
 
-  a {
-    display: block;
-    padding: 0.2em 0.0em;
+  .categories > a {
+    opacity: 0.3;
   }
 
-  th, td {
-    text-align: left;
-    padding: 0em 0.3em;
+  .site {
+    display: none;
   }
 
-  td:first-child {
-    background-color: var(--cBgInverted);
-    color: var(--cFgInverted);
-    text-align: center;
-    font-family: var(--fMono);
-  }
 
-  td:first-child > a {
-    color: var(--cFgInverted);
-  }
-
-  td {
-    border-top: var(--borderPrimary);
+  @media ( min-width: 700px )  {
+    .site {
+      display: block;
+    }
   }
 </style>
   

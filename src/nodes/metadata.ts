@@ -92,11 +92,11 @@ export default {
       "weight": 1,
       "count": 3
     },
-    "thoughts": {
-      "weight": 0.6666666666666666,
-      "count": 2
-    },
     "internet": {
+      "weight": 1,
+      "count": 3
+    },
+    "thoughts": {
       "weight": 0.6666666666666666,
       "count": 2
     },
@@ -140,6 +140,10 @@ export default {
       "weight": 0.3333333333333333,
       "count": 1
     },
+    "external": {
+      "weight": 0.3333333333333333,
+      "count": 1
+    },
     "css": {
       "weight": 0.3333333333333333,
       "count": 1
@@ -155,12 +159,15 @@ export default {
   },
   "nodes": {
     "links": {
-      "tags": [],
+      "tags": [
+        "internet",
+        "external"
+      ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "Sun, 05 Jun 2022 09:16:54 GMT",
+      "updatedAt": "Mon, 06 Jun 2022 11:10:56 GMT",
       "inline": false,
       "title": "links",
-      "description": "Hyperlinks to other nodes on the web. Things I find interesting.",
+      "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
       "image": ""
     },
     "moons": {
@@ -200,8 +207,8 @@ export default {
     "N2": {
       "tags": [
         "tech",
-        "thoughts",
         "internet",
+        "thoughts",
         "generative"
       ],
       "createdAt": "2022-05-21",
@@ -232,8 +239,8 @@ export default {
     },
     "manifesto": {
       "tags": [
-        "info",
-        "internet"
+        "internet",
+        "info"
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,

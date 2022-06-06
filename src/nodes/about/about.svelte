@@ -120,7 +120,7 @@
         </li>
       {/each}
     </ul>
-    <div class="content">
+    <div class="content intro">
       <Paragraph wide big>
         I'm Anton, or palmdrop, a Swedish developer and digital artist. This site is multipurpose — it's made for sharing digital art, 
         writing, photography, links, whatever. The site has an experimental structure to accommodate any interlinked content-type: text, image, generative art, random experiments,
@@ -318,6 +318,10 @@
   .content {
     border-top: var(--borderPrimary);
     padding: clamp(10px, 3vw, 2em);
+  }
+
+  .intro {
+    border-top: unset;
   }
 
   .contact {

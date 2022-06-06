@@ -100,7 +100,7 @@ export default [
   {
     "text": "Search Marginalia",
     "url": "https://search.marginalia.nu/",
-    "category": "Other",
+    "category": "Tech",
     "additionalCategories": []
   },
   {
@@ -196,9 +196,7 @@ export default [
     "text": "Hypercard Simulator",
     "url": "https://hypercardsimulator.com",
     "category": "Tech",
-    "additionalCategories": [
-      "Other"
-    ]
+    "additionalCategories": []
   },
   {
     "text": "Feral File",
@@ -323,9 +321,7 @@ export default [
     "text": "Consume Digest Produce",
     "url": "https://consumedigestproduce.us/",
     "category": "Tech",
-    "additionalCategories": [
-      "Other"
-    ]
+    "additionalCategories": []
   },
   {
     "text": "Abolish Alienation",

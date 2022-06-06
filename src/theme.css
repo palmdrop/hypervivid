@@ -8,6 +8,7 @@
 
 
   --cFgFaded: #200912aa;
+  --cFgSoft: #090b2044;
 
   --cBgDark: #65686c;
 
@@ -32,6 +33,7 @@
   */
 
   --borderPrimary: 1px solid var(--cFg);
+  --borderSoft: 1px solid var(--cFgSoft);
   --borderRadius1: 0.8rem;
   --borderRadius2: 35px;
   --borderRadius3: 100%;

@@ -19,9 +19,9 @@ import { SITE_NAME } from '$constants';
   // TODO: featured + a few of the latest nodes?
   // TODO: or always show the latest one first, then featured
   $: nodeNames = [
-    'N2',
+    'about',
+    'links',
     'manifesto',
-    'N3'
   ] as NodeName[];
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
@@ -64,7 +64,7 @@ import { SITE_NAME } from '$constants';
     </button>
     <NodeList
       nodeNames={nodeNames} 
-      modeFirst="inline"
+      modeFirst="preview"
       modeRest="preview"
     />
     <a 

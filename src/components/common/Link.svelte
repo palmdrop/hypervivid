@@ -53,7 +53,6 @@
     justify-content: center;
     align-items: center;
     border: var(--borderPrimary);
-    border-bottom: unset;
     height: 100%;
     width: 100%;
   }

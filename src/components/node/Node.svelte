@@ -85,8 +85,7 @@
       { component }
     />
     {#if showLoader && !isLoaded}
-      <div
-      >
+      <div>
         <NodeLoader {mode} />
       </div>
     {/if}

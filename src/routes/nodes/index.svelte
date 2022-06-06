@@ -44,7 +44,7 @@
 
   <NodeList
     nodeNames={nodeNames}
-    modeFirst="inline"
+    modeFirst="preview"
     modeRest="preview"
     batchCount={5}
     scrollElement={mainRef}
