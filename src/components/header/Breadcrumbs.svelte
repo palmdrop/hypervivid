@@ -1,7 +1,7 @@
 <script lang="ts">
   // based on https://df.id.au/technical/svelte/breadcrumbs/
 	import { page } from '$app/stores';
-import { NODE_NAMES } from '$constants';
+  import { NODE_NAMES } from '$constants';
 
   export let showHome: boolean = false;
   export let homeName: string = 'index';
@@ -107,7 +107,8 @@ import { NODE_NAMES } from '$constants';
     border-left: var(--borderPrimary);
     border-right: var(--borderPrimary);
 
-    max-width: 160px;
+    max-width: 210px;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }

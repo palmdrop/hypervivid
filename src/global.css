@@ -62,6 +62,26 @@ blockquote {
 	padding-left: 2em;
 }
 
+pre {
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: var(--cBgInverted);
+	color: var(--cFgInverted);
+
+	font-size: var(--fontSizeLarge);
+}
+
+code {
+	font-family: var(--fMono);
+	background-color: var(--cBgDark);
+	color: var(--cFgInverted);
+	padding: 0.0 0.2em;
+}
+
+pre > code {
+	background-color: inherit;
+}
+
 main {
 	overflow-y: auto;
 }

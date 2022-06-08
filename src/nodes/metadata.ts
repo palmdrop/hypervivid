@@ -44,6 +44,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "domain-warping": [],
     "hyper": [],
     "links": [],
     "info": [
@@ -73,6 +74,26 @@ export default {
       "count": 1
     },
     "communication": {
+      "weight": 0.5,
+      "count": 1
+    },
+    "generative": {
+      "weight": 0.5,
+      "count": 1
+    },
+    "art": {
+      "weight": 0.5,
+      "count": 1
+    },
+    "writing": {
+      "weight": 0.5,
+      "count": 1
+    },
+    "noise": {
+      "weight": 0.5,
+      "count": 1
+    },
+    "domain-warping": {
       "weight": 0.5,
       "count": 1
     },
@@ -169,6 +190,21 @@ export default {
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
       "updatedAt": "Sat, 04 Jun 2022 20:44:17 GMT"
+    },
+    "domain-warping": {
+      "tags": [
+        "generative",
+        "art",
+        "writing",
+        "noise",
+        "domain-warping"
+      ],
+      "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
+      "updatedAt": "Wed, 08 Jun 2022 20:24:42 GMT",
+      "inline": false,
+      "title": "My Take on Domain Warping",
+      "description": "How I've used domain warping to achieve strange generative effects.",
+      "image": "/img/posts/domain-warping/banner.jpg"
     }
   }
 } as const;

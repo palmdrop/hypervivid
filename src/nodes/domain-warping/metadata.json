@@ -1,0 +1,10 @@
+{
+  "tags": ["generative", "art", "writing", "noise", "domain-warping"],
+  "links": [],
+  "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
+  "updatedAt": "Mon, 10 Jan 2022 18:52:37 GMT",
+  "inline": false,
+  "title": "My Take on Domain Warping",
+  "description": "How I've used domain warping to achieve strange generative effects.",
+  "image": "/img/posts/domain-warping/banner.jpg"
+}
