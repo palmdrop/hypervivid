@@ -367,5 +367,12 @@ export default [
     "additionalCategories": [
       "Tech"
     ]
-  }
+  },
+  {
+    "text": "Folk (Browser) Interfaces",
+    "url": "https://cristobal.space/writing/folk?fbclid=IwAR1pPcORb-C7FOSumKdxfWHt3pcuxrpeUqBhk2dgOJO-8zrEy9Pzabv6mXI",
+    "category": "Tech",
+    "additionalCategories": [
+    ]
+  },
 ] as const;

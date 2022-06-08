@@ -117,7 +117,7 @@
 
   @media ( min-width: 700px )  {
     .site {
-      display: block;
+      display: table-cell;
     }
   }
 </style>

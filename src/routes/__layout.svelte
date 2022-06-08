@@ -1,9 +1,20 @@
 <script lang="ts">
-  import Header from '$components/header/Header.svelte';
-  import RootPage from '$components/page/RootPage.svelte';
+  import { title$ } from '$stores/head';
+
+  import '../global.css';
+  import '../fonts.css';
+  import '../theme.css';
+  import { loading } from '$stores/loading';
+  import { navigating } from '$app/stores';
+
+  $: $loading = !!$navigating;
+
 </script>
 
-<RootPage>
-  <Header />
-  <slot />
-</RootPage>
+<svelte:head>
+  <title>
+    { $title$ }
+  </title>
+</svelte:head>
+
+<slot />

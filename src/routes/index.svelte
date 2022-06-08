@@ -8,7 +8,8 @@
   import Hyper from '$nodes/hyper/hyper.svelte';
   import { scrollSelfIntoView } from '$utils/scrollIntoView';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
-import { SITE_NAME } from '$constants';
+  import { SITE_NAME } from '$constants';
+import Header from '$components/header/Header.svelte';
 
   /*
   $: nodeNames = (
@@ -28,7 +29,7 @@ import { SITE_NAME } from '$constants';
   useTitle(`${SITE_NAME} ~ HYPERSOFT`);
 </script>
 
-
+<Header />
 <div class='page'> 
   <section
     class="landing"
@@ -107,6 +108,8 @@ import { SITE_NAME } from '$constants';
   .nodes {
     display: flex;
     z-index: 10;
+
+    min-height: 100vh;
 
     background-color: var(--cBg);
   }

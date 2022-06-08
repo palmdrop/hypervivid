@@ -1,35 +1,5 @@
 export default {
   "links": {
-    "N1": [
-      {
-        "from": "N1",
-        "to": "N2",
-        "kind": "consumes",
-        "strength": 0.5
-      },
-      {
-        "from": "N1",
-        "to": "N3",
-        "kind": "tangent",
-        "strength": 0.3
-      }
-    ],
-    "N2": [
-      {
-        "from": "N2",
-        "to": "N1",
-        "kind": "consumed",
-        "strength": 0.5
-      }
-    ],
-    "N3": [
-      {
-        "from": "N3",
-        "to": "N1",
-        "kind": "tangent",
-        "strength": 0.3
-      }
-    ],
     "about": [
       {
         "from": "about",
@@ -83,77 +53,47 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "nodewithareallylongname": [],
-    "scroll": []
+    ]
   },
   "tags": {
-    "tech": {
+    "info": {
       "weight": 1,
-      "count": 3
+      "count": 2
     },
     "internet": {
       "weight": 1,
-      "count": 3
+      "count": 2
     },
     "thoughts": {
-      "weight": 0.6666666666666666,
-      "count": 2
-    },
-    "info": {
-      "weight": 0.6666666666666666,
-      "count": 2
-    },
-    "art": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
-    "blue": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
-    "writing": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
-    "generative": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
-    "web": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
-    "literature": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "contact": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "communication": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "words": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "external": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "css": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "webart": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     },
     "notanalbeads": {
-      "weight": 0.3333333333333333,
+      "weight": 0.5,
       "count": 1
     }
   },
@@ -164,7 +104,7 @@ export default {
         "external"
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "Mon, 06 Jun 2022 11:10:56 GMT",
+      "updatedAt": "Mon, 06 Jun 2022 11:13:23 GMT",
       "inline": false,
       "title": "links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -195,25 +135,6 @@ export default {
       "image": "",
       "updatedAt": "Sat, 28 May 2022 15:57:13 GMT"
     },
-    "nodewithareallylongname": {
-      "tags": [],
-      "createdAt": "Sat, 21 May 2022 14:00:34 GMT",
-      "inline": false,
-      "title": "nodewithareallylongname",
-      "description": "",
-      "image": "",
-      "updatedAt": "Sat, 21 May 2022 14:00:34 GMT"
-    },
-    "N2": {
-      "tags": [
-        "tech",
-        "internet",
-        "thoughts",
-        "generative"
-      ],
-      "createdAt": "2022-05-21",
-      "updatedAt": "Thu, 12 May 2022 21:51:19 GMT"
-    },
     "about": {
       "tags": [
         "info",
@@ -239,8 +160,8 @@ export default {
     },
     "manifesto": {
       "tags": [
-        "internet",
-        "info"
+        "info",
+        "internet"
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
@@ -248,38 +169,6 @@ export default {
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
       "updatedAt": "Sat, 04 Jun 2022 20:44:17 GMT"
-    },
-    "scroll": {
-      "tags": [],
-      "createdAt": "Fri, 06 May 2022 21:18:48 GMT",
-      "inline": false,
-      "title": "scroll",
-      "description": "Infinite (?) scrolling test",
-      "image": "",
-      "updatedAt": "Thu, 19 May 2022 00:14:23 GMT"
-    },
-    "N1": {
-      "inline": false,
-      "tags": [
-        "tech",
-        "art",
-        "blue",
-        "writing"
-      ],
-      "createdAt": "2022-04-29",
-      "title": "N1",
-      "updatedAt": "Thu, 12 May 2022 18:51:17 GMT"
-    },
-    "N3": {
-      "inline": true,
-      "tags": [
-        "tech",
-        "web",
-        "literature"
-      ],
-      "createdAt": "2022-04-22",
-      "title": "N3",
-      "updatedAt": "Mon, 30 May 2022 20:18:00 GMT"
     }
   }
 } as const;

@@ -4,6 +4,7 @@
   import { metadata$ } from '$stores/metadata';
   import Paragraph from '$components/common/Paragraph.svelte';
   import { NODE_NAME, NODE_NAMES, SITE_NAME } from '$constants';
+import Header from '$components/header/Header.svelte';
 
   const tags = Object.keys($metadata$.tags);
 
@@ -12,6 +13,7 @@
   // TODO: add option to toggle tags. Create feed with only those nodes that have the tags. Also make it possible to open a specific tag.
 </script>
 
+<Header />
 <div class="tags">
   <main>
     <h1>TAGS</h1>
