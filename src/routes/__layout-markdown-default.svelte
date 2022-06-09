@@ -19,7 +19,19 @@
     text-decoration: underline;
   }
 
-  img {
+  .markdown-container img {
     width: 100%;
+  }
+
+  .markdown-container ul {
+    list-style: disc;
+    list-style-position: inside;
+
+    font-size: var(--fontSizeLarge);
+    font-family: var(--fRegular);
+  }
+
+  .markdown-container li {
+    padding-bottom: 1.0em;
   }
 </style>

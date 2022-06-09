@@ -1,0 +1,16 @@
+{
+  "tags": ["generative", "art", "writing", "noise", "domain-warping"],
+  "links": [
+    {
+      "to": "modified-noise",
+      "kind": "previous",
+      "strength": 0.5
+    }
+  ],
+  "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
+  "updatedAt": "Thu, 13 Jan 2022 19:55:50 GMT",
+  "inline": false,
+  "title": "Alien Patterns",
+  "description": "On combining modified noise and domain warping to produce alien patterns",
+  "image": "/img/posts/alien-patterns/banner.jpg"
+}

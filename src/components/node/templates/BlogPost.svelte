@@ -29,8 +29,8 @@
   }
 
   .post {
-    max-width: 1000px;
-    padding-bottom: 1em;
+    width: clamp(300px, 100%, 1000px);
+    padding: 1em;
   }
 
   img {

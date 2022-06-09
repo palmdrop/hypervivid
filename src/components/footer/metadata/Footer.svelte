@@ -90,7 +90,7 @@
       >
         <LinkList 
           links={links}
-          formatLink={link => link.to}
+          formatLink={link => `${link.to} (${link.kind})`}
         >
           <Paragraph center faded wide>
             This { NODE_NAME } has no links...

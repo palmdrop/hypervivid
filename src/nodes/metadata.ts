@@ -40,7 +40,29 @@ export default {
       {
         "from": "manifesto",
         "to": "about",
-        "kind": "tangent",
+        "kind": "references",
+        "strength": 0.5
+      }
+    ],
+    "alien-patterns": [
+      {
+        "from": "alien-patterns",
+        "to": "modified-noise",
+        "kind": "previous",
+        "strength": 0.5
+      }
+    ],
+    "modified-noise": [
+      {
+        "from": "modified-noise",
+        "to": "alien-patterns",
+        "kind": "next",
+        "strength": 0.5
+      },
+      {
+        "from": "modified-noise",
+        "to": "domain-warping",
+        "kind": "previous",
         "strength": 0.5
       }
     ],
@@ -48,7 +70,7 @@ export default {
       {
         "from": "domain-warping",
         "to": "modified-noise",
-        "kind": "tangent",
+        "kind": "next",
         "strength": 0.5
       }
     ],
@@ -61,75 +83,67 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "modified-noise": [
-      {
-        "from": "modified-noise",
-        "to": "domain-warping",
-        "kind": "previous",
-        "strength": 0.5
-      }
     ]
   },
   "tags": {
-    "info": {
-      "weight": 1,
-      "count": 2
-    },
     "generative": {
       "weight": 1,
-      "count": 2
+      "count": 3
     },
     "art": {
       "weight": 1,
-      "count": 2
+      "count": 3
     },
     "writing": {
       "weight": 1,
-      "count": 2
+      "count": 3
     },
     "noise": {
       "weight": 1,
+      "count": 3
+    },
+    "info": {
+      "weight": 0.6666666666666666,
       "count": 2
     },
     "domain-warping": {
-      "weight": 1,
+      "weight": 0.6666666666666666,
       "count": 2
     },
     "internet": {
-      "weight": 1,
+      "weight": 0.6666666666666666,
       "count": 2
     },
     "thoughts": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "contact": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "communication": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "words": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "external": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "css": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "webart": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     },
     "notanalbeads": {
-      "weight": 0.5,
+      "weight": 0.3333333333333333,
       "count": 1
     }
   },
@@ -206,7 +220,7 @@ export default {
       "image": "/img/combined/mirror2.jpg",
       "updatedAt": "Sat, 04 Jun 2022 20:44:17 GMT"
     },
-    "modified-noise": {
+    "alien-patterns": {
       "tags": [
         "generative",
         "art",
@@ -214,8 +228,22 @@ export default {
         "noise",
         "domain-warping"
       ],
+      "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
+      "updatedAt": "Thu, 09 Jun 2022 20:07:03 GMT",
+      "inline": false,
+      "title": "Alien Patterns",
+      "description": "On combining modified noise and domain warping to produce alien patterns",
+      "image": "/img/posts/alien-patterns/banner.jpg"
+    },
+    "modified-noise": {
+      "tags": [
+        "generative",
+        "art",
+        "writing",
+        "noise"
+      ],
       "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
-      "updatedAt": "Wed, 08 Jun 2022 21:57:28 GMT",
+      "updatedAt": "Thu, 09 Jun 2022 20:50:49 GMT",
       "inline": false,
       "title": "Characteristics of Modified Noise",
       "description": "A few of my common methods for modifying standard noise functions.",
@@ -225,12 +253,12 @@ export default {
       "tags": [
         "generative",
         "art",
-        "writing",
         "noise",
+        "writing",
         "domain-warping"
       ],
       "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
-      "updatedAt": "Wed, 08 Jun 2022 20:24:42 GMT",
+      "updatedAt": "Thu, 09 Jun 2022 10:35:52 GMT",
       "inline": false,
       "title": "My Take on Domain Warping",
       "description": "How I've used domain warping to achieve strange generative effects.",

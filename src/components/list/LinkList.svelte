@@ -5,7 +5,6 @@
 
   export let formatLink: (link: Link) => string 
     = (link: Link) => `${ link.to } - "${ link.kind }"`;
-
   
   $: formattedLinks = links.map(link => formatLink(link));
 </script>
