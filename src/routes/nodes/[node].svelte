@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  import metadata from '$nodes/metadata';
+  import allMetadata from '$nodes/metadata';
 
   export async function load ({ params }) {
     const { 
@@ -8,13 +8,11 @@
       node: string,
     } = params;
 
-    // const restParams = rest.split('/');
-
-    if(Object.keys(metadata.nodes).includes(name)) {
+    if(Object.keys(allMetadata.nodes).includes(name)) {
       return {
         props: {
           name,
-          // params: restParams
+          metadata: allMetadata.nodes[name]
         }
       }
     } else {
@@ -30,12 +28,13 @@
   import Node from "$components/node/Node.svelte";
   import NodeWrapper from "$components/node/wrappers/NodeWrapper.svelte";
   import { useTitle } from "$utils/useTitle";
-  import type { NodeName } from '$types/nodes';
+  import type { NodeMetadata, NodeName } from '$types/nodes';
   import { SITE_NAME } from '$constants';
 
   export let name: NodeName;
+  export let metadata: NodeMetadata;
 
-  $: useTitle(`${name} ~ ${SITE_NAME}`);
+  $: useTitle(`${metadata.title || name} ~ ${SITE_NAME}`);
 </script>
 
 <NodeWrapper
