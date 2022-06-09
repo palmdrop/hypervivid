@@ -1,0 +1,16 @@
+{
+  "tags": ["generative", "art", "writing", "noise", "domain-warping"],
+  "links": [
+    {
+      "to": "domain-warping",
+      "kind": "previous",
+      "strength": 0.5
+    }
+  ],
+  "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
+  "updatedAt": "Wed, 12 Jan 2022 21:50:06 GMT",
+  "inline": false,
+  "title": "Characteristics of Modified Noise",
+  "description": "A few of my common methods for modifying standard noise functions.",
+  "image": "/img/posts/modified-noise/banner.jpg"
+}

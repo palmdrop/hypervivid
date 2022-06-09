@@ -47,11 +47,23 @@ const addUndirectedLink = (
   kind = 'consumes'
 ) => {
   const currentKind = kind;
+  /*
   const otherKind = kind === 'consumes' 
     ? 'consumed'
     : (kind === 'consumed') 
     ? 'consumes'
     : 'tangent';
+  */
+  let otherKind: string;
+  switch(currentKind) {
+    case 'consumes': otherKind = 'consumed'; break;
+    case 'consumed': otherKind = 'consumes'; break;
+    case 'tangent': otherKind = 'tangent'; break;
+    case 'next': otherKind = 'previous'; break;
+    case 'previous': otherKind = 'next'; break;
+    case 'sequence': otherKind = 'sequence'; break;
+    default: otherKind = currentKind;
+  }
 
   addLink(
     current, {

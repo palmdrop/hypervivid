@@ -30,6 +30,7 @@
 
   .post {
     max-width: 1000px;
+    padding-bottom: 1em;
   }
 
   img {

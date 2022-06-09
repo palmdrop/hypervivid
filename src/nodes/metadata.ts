@@ -44,7 +44,14 @@ export default {
         "strength": 0.5
       }
     ],
-    "domain-warping": [],
+    "domain-warping": [
+      {
+        "from": "domain-warping",
+        "to": "modified-noise",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "hyper": [],
     "links": [],
     "info": [
@@ -54,10 +61,38 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
+    ],
+    "modified-noise": [
+      {
+        "from": "modified-noise",
+        "to": "domain-warping",
+        "kind": "previous",
+        "strength": 0.5
+      }
     ]
   },
   "tags": {
     "info": {
+      "weight": 1,
+      "count": 2
+    },
+    "generative": {
+      "weight": 1,
+      "count": 2
+    },
+    "art": {
+      "weight": 1,
+      "count": 2
+    },
+    "writing": {
+      "weight": 1,
+      "count": 2
+    },
+    "noise": {
+      "weight": 1,
+      "count": 2
+    },
+    "domain-warping": {
       "weight": 1,
       "count": 2
     },
@@ -74,26 +109,6 @@ export default {
       "count": 1
     },
     "communication": {
-      "weight": 0.5,
-      "count": 1
-    },
-    "generative": {
-      "weight": 0.5,
-      "count": 1
-    },
-    "art": {
-      "weight": 0.5,
-      "count": 1
-    },
-    "writing": {
-      "weight": 0.5,
-      "count": 1
-    },
-    "noise": {
-      "weight": 0.5,
-      "count": 1
-    },
-    "domain-warping": {
       "weight": 0.5,
       "count": 1
     },
@@ -190,6 +205,21 @@ export default {
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
       "updatedAt": "Sat, 04 Jun 2022 20:44:17 GMT"
+    },
+    "modified-noise": {
+      "tags": [
+        "generative",
+        "art",
+        "writing",
+        "noise",
+        "domain-warping"
+      ],
+      "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
+      "updatedAt": "Wed, 08 Jun 2022 21:57:28 GMT",
+      "inline": false,
+      "title": "Characteristics of Modified Noise",
+      "description": "A few of my common methods for modifying standard noise functions.",
+      "image": "/img/posts/modified-noise/banner.jpg"
     },
     "domain-warping": {
       "tags": [
