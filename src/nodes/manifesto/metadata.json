@@ -1,10 +1,6 @@
 {
   "tags": ["info", "internet"],
-  "links": [{
-    "to": "about",
-    "kind": "tangent",
-    "strength": 0.5
-  }],
+  "links": [],
   "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
   "inline": false,
   "title": "manifesto",

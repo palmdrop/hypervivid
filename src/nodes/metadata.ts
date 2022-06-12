@@ -18,12 +18,6 @@ export default {
         "to": "manifesto",
         "kind": "references",
         "strength": 0.5
-      },
-      {
-        "from": "about",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
       }
     ],
     "contact": [
@@ -47,12 +41,6 @@ export default {
         "from": "manifesto",
         "to": "about",
         "kind": "references",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "about",
-        "kind": "tangent",
         "strength": 0.5
       }
     ],
@@ -78,6 +66,36 @@ export default {
         "strength": 0.5
       }
     ],
+    "block-dissolve": [
+      {
+        "from": "block-dissolve",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "block-dissolve",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "immerse": [
+      {
+        "from": "immerse",
+        "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "substrate": [
+      {
+        "from": "substrate",
+        "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "domain-warping": [
       {
         "from": "domain-warping",
@@ -88,8 +106,9 @@ export default {
     ],
     "flat-clouds": [],
     "hyper": [],
-    "immerse": [],
     "links": [],
+    "medusa-network": [],
+    "noise-construct": [],
     "rehash-transform": [],
     "retro-core": [],
     "rhizome": [],
@@ -111,124 +130,135 @@ export default {
         "strength": 0.5
       }
     ],
-    "substrate": [],
     "virtual-imprint": []
   },
   "tags": {
     "generative": {
       "weight": 1,
-      "count": 13
+      "count": 16
     },
     "art": {
-      "weight": 0.8461538461538461,
-      "count": 11
+      "weight": 0.875,
+      "count": 14
     },
     "domain-warping": {
-      "weight": 0.6153846153846154,
-      "count": 8
+      "weight": 0.6875,
+      "count": 11
     },
     "geometry": {
-      "weight": 0.38461538461538464,
+      "weight": 0.3125,
       "count": 5
     },
+    "feedback": {
+      "weight": 0.25,
+      "count": 4
+    },
+    "organic": {
+      "weight": 0.25,
+      "count": 4
+    },
     "writing": {
-      "weight": 0.23076923076923078,
+      "weight": 0.1875,
       "count": 3
     },
     "noise": {
-      "weight": 0.23076923076923078,
-      "count": 3
-    },
-    "feedback": {
-      "weight": 0.23076923076923078,
-      "count": 3
-    },
-    "organic": {
-      "weight": 0.23076923076923078,
+      "weight": 0.1875,
       "count": 3
     },
     "internet": {
-      "weight": 0.23076923076923078,
+      "weight": 0.1875,
       "count": 3
     },
     "chrome": {
-      "weight": 0.23076923076923078,
+      "weight": 0.1875,
       "count": 3
     },
     "info": {
-      "weight": 0.15384615384615385,
+      "weight": 0.125,
+      "count": 2
+    },
+    "glitch": {
+      "weight": 0.125,
       "count": 2
     },
     "mind": {
-      "weight": 0.15384615384615385,
+      "weight": 0.125,
       "count": 2
     },
     "external": {
-      "weight": 0.15384615384615385,
+      "weight": 0.125,
+      "count": 2
+    },
+    "dithering": {
+      "weight": 0.125,
+      "count": 2
+    },
+    "blue-noise": {
+      "weight": 0.125,
       "count": 2
     },
     "css": {
-      "weight": 0.15384615384615385,
+      "weight": 0.125,
       "count": 2
     },
     "thoughts": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "contact": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "communication": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "particles": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "words": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "interactive": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "webart": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "notanalbeads": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "instancing": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "memes": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "texture": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "depth": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "space-colonization": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     },
     "photography": {
-      "weight": 0.07692307692307693,
+      "weight": 0.0625,
       "count": 1
     }
   },
@@ -303,7 +333,54 @@ export default {
       "title": "manifesto",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "Sun, 12 Jun 2022 08:59:59 GMT"
+      "updatedAt": "Sun, 12 Jun 2022 11:54:28 GMT"
+    },
+    "block-dissolve": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "feedback",
+        "organic",
+        "glitch"
+      ],
+      "createdAt": "4 May 2022 11:45:09 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 12:00:28 GMT",
+      "inline": false,
+      "title": "Block Dissolve",
+      "description": "Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.",
+      "image": "/img/pieces/block-dissolve.jpg"
+    },
+    "medusa-network": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "dithering",
+        "blue-noise",
+        "glitch"
+      ],
+      "createdAt": "27 Mar 2022 11:45:09 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 11:53:39 GMT",
+      "inline": false,
+      "title": "Medusa Network",
+      "description": "Dithering, living rows and grids, jellyfish, glitchy and organic. An expansion on the Noise Construct experiment.",
+      "image": "/img/pieces/medusa-network.jpg"
+    },
+    "noise-construct": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "dithering",
+        "blue-noise"
+      ],
+      "createdAt": "25 Mar 2022 11:45:09 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 11:47:06 GMT",
+      "inline": false,
+      "title": "Noise Construct",
+      "description": "Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.",
+      "image": "/img/pieces/noise-construct.jpg"
     },
     "skew-bulbs": {
       "tags": [
