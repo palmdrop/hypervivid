@@ -32,12 +32,10 @@
   import NodeList from '$components/list/NodeList.svelte';
   import Paragraph from '$components/common/Paragraph.svelte';
   import { NODE_NAMES, SITE_NAME } from '$constants';
-import Header from '$components/header/Header.svelte';
+  import Header from '$components/header/Header.svelte';
 
   export let tag: Tag;
   export let nodeNames: NodeName[];
-
-  $: console.log(nodeNames);
 
   $: useTitle(`${tag} ~ ${SITE_NAME}`);
 </script>

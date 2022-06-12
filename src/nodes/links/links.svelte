@@ -23,7 +23,6 @@
 
   const parseUrl = (url: string) => {
     const match = url.match(urlRegex);
-    console.log(match);
     return match && match[2];
   }
 </script>
