@@ -2,7 +2,9 @@
   "tags": [
     "generative", "art", "texture", "depth", "geometry"
   ],
-  "links": [],
+  "links": [
+    "virtual-imprint"
+  ],
   "createdAt": "15 Sep 2021 15:24:28 GMT",
   "updatedAt": "15 Sep 2021 15:24:28 GMT",
   "inline": false,

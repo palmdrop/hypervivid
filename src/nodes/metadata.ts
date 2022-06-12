@@ -42,6 +42,18 @@ export default {
         "to": "about",
         "kind": "references",
         "strength": 0.5
+      },
+      {
+        "from": "manifesto",
+        "to": "links",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "alien-patterns": [
@@ -86,12 +98,36 @@ export default {
         "to": "block-dissolve",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "immerse",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "substrate": [
       {
         "from": "substrate",
         "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -104,19 +140,9 @@ export default {
         "strength": 0.5
       }
     ],
-    "flat-clouds": [],
-    "hyper": [],
-    "links": [],
-    "medusa-network": [],
-    "noise-construct": [],
-    "rehash-transform": [],
-    "retro-core": [],
-    "rhizome": [],
-    "skew-bulbs": [],
-    "slices": [],
-    "solar-chrome": [
+    "flat-clouds": [
       {
-        "from": "solar-chrome",
+        "from": "flat-clouds",
         "to": "solar-landscape",
         "kind": "tangent",
         "strength": 0.5
@@ -125,12 +151,140 @@ export default {
     "solar-landscape": [
       {
         "from": "solar-landscape",
+        "to": "flat-clouds",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "solar-landscape",
         "to": "solar-chrome",
         "kind": "tangent",
         "strength": 0.5
       }
     ],
-    "virtual-imprint": []
+    "hyper": [
+      {
+        "from": "hyper",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "rhizome": [
+      {
+        "from": "rhizome",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "links": [
+      {
+        "from": "links",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "links",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "rehash-transform": [
+      {
+        "from": "rehash-transform",
+        "to": "links",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rehash-transform",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "medusa-network": [
+      {
+        "from": "medusa-network",
+        "to": "noise-construct",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "medusa-network",
+        "to": "skew-bulbs",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "noise-construct": [
+      {
+        "from": "noise-construct",
+        "to": "medusa-network",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "retro-core": [
+      {
+        "from": "retro-core",
+        "to": "virtual-imprint",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "virtual-imprint": [
+      {
+        "from": "virtual-imprint",
+        "to": "retro-core",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "skew-bulbs": [
+      {
+        "from": "skew-bulbs",
+        "to": "solar-chrome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "skew-bulbs",
+        "to": "medusa-network",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "solar-chrome": [
+      {
+        "from": "solar-chrome",
+        "to": "skew-bulbs",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "solar-chrome",
+        "to": "solar-landscape",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "slices": []
   },
   "tags": {
     "generative": {
@@ -269,7 +423,7 @@ export default {
         "external"
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "Mon, 06 Jun 2022 11:13:23 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:58:48 GMT",
       "inline": false,
       "title": "links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -376,7 +530,7 @@ export default {
         "blue-noise"
       ],
       "createdAt": "25 Mar 2022 11:45:09 GMT",
-      "updatedAt": "Sun, 12 Jun 2022 11:47:06 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:40:50 GMT",
       "inline": false,
       "title": "Noise Construct",
       "description": "Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.",
@@ -390,7 +544,7 @@ export default {
         "chrome"
       ],
       "createdAt": "14 Mar 2022 10:23:19 GMT",
-      "updatedAt": "Sun, 12 Jun 2022 10:27:07 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:53:13 GMT",
       "inline": false,
       "title": "Skew Bulbs",
       "description": "Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.",
@@ -421,7 +575,7 @@ export default {
         "space-colonization"
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "Sun, 12 Jun 2022 09:56:06 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:58:48 GMT",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -453,7 +607,7 @@ export default {
         "interactive"
       ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
-      "updatedAt": "Sun, 12 Jun 2022 09:04:59 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:47:46 GMT",
       "inline": false,
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
@@ -508,7 +662,7 @@ export default {
         "particles"
       ],
       "createdAt": "26 Dec 2021 09:49:08 GMT",
-      "updatedAt": "Sun, 12 Jun 2022 08:57:23 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:47:21 GMT",
       "inline": false,
       "title": "Flat Clouds",
       "description": "Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.",
@@ -525,7 +679,7 @@ export default {
         "memes"
       ],
       "createdAt": "23 Dec 2021 09:49:08 GMT",
-      "updatedAt": "Sun, 12 Jun 2022 08:55:18 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:53:36 GMT",
       "inline": false,
       "title": "Rehash Transform",
       "description": "Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.",
@@ -582,7 +736,7 @@ export default {
         "depth"
       ],
       "createdAt": "15 Sep 2021 15:24:28 GMT",
-      "updatedAt": "Sat, 11 Jun 2022 12:50:19 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 14:46:18 GMT",
       "inline": false,
       "title": "Retro Core",
       "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",

@@ -7,9 +7,12 @@
 </script>
 
 <script lang="ts">
+import { promptDownload } from '$utils/file';
+
   import throttle from 'lodash.throttle';
 	import type { RenderScene, RenderSceneConstructor } from './../../three/core';
 
+  // Props
   export let renderSceneConstructor: RenderSceneConstructor;
   export let onMouseMove: MouseMoveCallback
     = (x, y, deltaX, deltaY, renderScene) => {
@@ -28,8 +31,11 @@
   export let mouseMoveThrottle = 0;
   export let scrollThrottle = 0;
 
+  // Setup
   let renderScene: RenderScene | undefined = undefined;
-  const onCanvasMount = (canvas: HTMLCanvasElement) => {
+  let canvas: HTMLCanvasElement;
+  const setup = (canvasElement: HTMLCanvasElement) => {
+    canvas = canvasElement;
     renderScene = new renderSceneConstructor(canvas, onLoad);
     renderSceneCallback?.(renderScene);
 
@@ -45,12 +51,14 @@
     }
   }
 
+  // Resize
   $: handleResize = throttle(() => {
     if(renderScene) {
       renderScene.resize();
     }
   }, resizeThrottle);
 
+  // Mouse move
   let mousePosition: { x: number, y: number } | undefined = undefined;
   $: handleMouseMove = throttle((event: MouseEvent) => {
     let previousX: number;
@@ -75,19 +83,46 @@
     
   }, mouseMoveThrottle);
 
+  // Scroll
   $: handleMouseScroll = throttle((event: WheelEvent) => {
     const deltaScroll = Math.sign( -event.deltaY );
     renderScene && onScroll?.( deltaScroll, renderScene );
   }, scrollThrottle);
+
+  // Shortcuts
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if(event.type !== 'keydown') return;
+
+    switch(event.key) {
+      case 'c': {
+        if(import.meta.env.DEV && renderScene) {
+          renderScene.captureFrame(dataURL => {
+            promptDownload(dataURL, 'canvas.png');
+          })
+        }
+      } break;
+      case ' ': {
+        renderScene?.stop();
+        renderScene?.dispose?.();
+        setup(canvas);
+      } break;
+      case 'h': {
+        if(import.meta.env.DEV && renderScene) {
+          renderScene.toggleGUI?.();
+        }
+      }
+    }
+  }
 </script>
 
 <svelte:window 
   on:resize={handleResize}
   on:mousemove={handleMouseMove}
   on:wheel={handleMouseScroll}
+  on:keydown={handleKeyDown}
 />
 
-<canvas use:onCanvasMount />
+<canvas use:setup />
 
 <style>
   canvas {

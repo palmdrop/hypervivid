@@ -6,6 +6,7 @@ import fs, { link } from 'fs';
 // TODO: add to env
 const NODES_DIR = 'src/nodes/';
 
+const DEFAULT_LINK_KIND = 'tangent';
 const DEFAULT_LINK_STRENGTH = 0.5;
 const NODE_IMPORT_REGEX = /['|"](.\/)?(\.\.\/[^(/|.)]*)\/([^/]+)\.svelte['|"]/g;
 const NODE_NAME_REGEX = /<Node[^(/>)]name={?['|"](\w+)["|']}?[^(/>]*[/?>]/g;
@@ -21,22 +22,14 @@ type Metadata = {
   tags: Map<string, number>,
   nodes: Record<string, Record<string, any>>
 }
-
-/**
- * 1) Create basic links
- *  * Read all nodes
- *  * Check for node imports, patterns like /import [.*]/nodes/[a-zA-Z0-9-_].svelte/g
- *    * (check recursively? or enforce no node imports outside root nodes? pass nodes as children to components)
- *  * Link these nodes together using bidirectonal graph (implemented as hashmap)
- * 
- * 2) Create complex links
- *  * Analyze word usage/packages/patterns/shared imports, etc 
- *  * Create looser links based on this data
- */
-
 const addLink = (node: string, link: Link, links: Map<string, Link[]>) => {
   if(!links.has(node)) links.set(node, []);
-  links.get(node)!.push(link);
+  const linksArray = links.get(node)!;
+
+  // Ignore duplicate links
+  if(linksArray.find(otherLink => otherLink.to === link.to)) return;
+
+  linksArray.push(link);
 }
 
 const addUndirectedLink = (
@@ -47,14 +40,8 @@ const addUndirectedLink = (
   kind = 'consumes'
 ) => {
   const currentKind = kind;
-  /*
-  const otherKind = kind === 'consumes' 
-    ? 'consumed'
-    : (kind === 'consumed') 
-    ? 'consumes'
-    : 'tangent';
-  */
   let otherKind: string;
+
   switch(currentKind) {
     case 'consumes': otherKind = 'consumed'; break;
     case 'consumed': otherKind = 'consumes'; break;
@@ -136,7 +123,7 @@ const processNode = async (
       )) as NodeMetadata;
 
       const nodeTags: string[] = metadata.tags ?? [];
-      const nodeLinks: Link[] = metadata.links ?? [];
+      let nodeLinks: Link[] = metadata.links ?? [];
 
       nodeTags.forEach(tag => {
         if(
@@ -153,9 +140,13 @@ const processNode = async (
           tags.set(tag, 1.0);
         }
       });
-      nodeLinks.forEach(link => 
-        addUndirectedLink(nodeName, link.to, links, link.strength, link.kind)
-      );
+      nodeLinks.forEach(link => {
+        if(typeof link !== 'object') {
+          addUndirectedLink(nodeName, link, links, DEFAULT_LINK_STRENGTH, DEFAULT_LINK_KIND);
+        } else {
+          addUndirectedLink(nodeName, link.to, links, link.strength, link.kind)
+        }
+      });
 
       // Verify that all links have corresponding nodes
       links.set(nodeName, (links.get(nodeName) ?? []).filter(link => {

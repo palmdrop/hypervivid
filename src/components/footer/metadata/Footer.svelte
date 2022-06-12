@@ -36,11 +36,11 @@
       <Arrow 
         { transitionDuration }
         direction={expanded ? 'down' : 'right'}
-        strokeWidth={2}
+        strokeWidth={1.5}
         size={'1.25rem'}
       />
     </div>
-    <h1>Metadata — {name}</h1>
+    <h1>Metadata — {title}</h1>
   </button>
   { #if expanded }
     <div 

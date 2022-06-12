@@ -29,6 +29,8 @@
     border-left: var(--borderPrimary);
     border-top: var(--borderPrimary);
 
+    max-height: 200px;
+
     flex-grow: 2;
     text-align: center;
 

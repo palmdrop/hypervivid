@@ -2,7 +2,9 @@
   "tags": [
     "internet", "external"
   ],
-  "links": [],
+  "links": [
+    "rehash-transform", "manifesto"
+  ],
   "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
   "updatedAt": "Sat, 04 Jun 2022 22:32:18 GMT",
   "inline": false,
