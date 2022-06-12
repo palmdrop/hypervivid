@@ -51,6 +51,7 @@
 >
   {#if !fullscreen}
     <div
+      class="header-container"
       transition:slide|local={{ 
         duration: transitionDuration
       }}
@@ -104,6 +105,10 @@
 
     display: flex;
     flex-direction: column;
+  }
+
+  .header-container, .footer-container {
+    z-index: 1;
   }
 
   .node-container {

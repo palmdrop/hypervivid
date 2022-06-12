@@ -4,6 +4,7 @@
   export let tags: string[];
   export let orientation: 'vertical' | 'horizontal'
   export let showCount = false;
+  export let minOpacity = 0.2;
 
   $: weightedTags = tags
     .map(tag => ({
@@ -20,7 +21,7 @@
       <li>
         <a 
           href={`/tags/${tag}`}
-          style={`opacity: ${weight}`}
+          style={`opacity: ${Math.max(weight, minOpacity)}`}
         >
           { tag } {#if showCount } ({count}) {/if}
         </a>

@@ -4,4 +4,7 @@
   },
   "svelte.enable-ts-plugin": true,
   "svelte.plugin.css.globals": "./src/theme.css, ./src/fonts.css, ./src/global.css",
+  "cSpell.words": [
+    "hdri"
+  ],
 }

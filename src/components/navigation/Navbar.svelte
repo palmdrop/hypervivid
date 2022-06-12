@@ -114,7 +114,6 @@
     background-color: var(--cBg);
 
     border-bottom: var(--borderPrimary);
-    border-top: var(--borderPrimary);
   }
 
   li {

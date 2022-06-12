@@ -1,7 +1,7 @@
 {
   "tags": ["info", "internet"],
   "links": [{
-    "to": "info",
+    "to": "about",
     "kind": "tangent",
     "strength": 0.5
   }],

@@ -66,7 +66,7 @@
           </Paragraph>
         </Cell>
         <Cell
-          title="PUBLISHED"
+          title="CREATED"
           nested
           inline
         >
@@ -117,6 +117,7 @@
 <style>
   footer {
     overflow: hidden;
+    background-color: var(--cBg);
   }
 
   .content {

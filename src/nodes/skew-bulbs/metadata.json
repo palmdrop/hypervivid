@@ -1,0 +1,12 @@
+{
+  "tags": [
+    "generative", "art", "domain-warping", "chrome"
+  ],
+  "links": [],
+  "createdAt": "14 Mar 2022 10:23:19 GMT",
+  "updatedAt": "14 Mar 2022 10:23:19 GMT",
+  "inline": false,
+  "title": "Skew Bulbs",
+  "description": "Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.",
+  "image": "/img/pieces/skew-bulbs.jpg"
+}

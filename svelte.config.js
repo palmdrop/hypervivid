@@ -34,7 +34,10 @@ const config = {
 					$utils: path.resolve("src/utils"),
 					$constants: path.resolve("src/constants.ts")
 				}
-			}
+			},
+			assetsInclude: [
+				'**/*.hdr'
+			]
 		},
 		adapter: adapter({
 			pages: 'build',

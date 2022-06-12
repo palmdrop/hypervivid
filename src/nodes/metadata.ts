@@ -18,6 +18,12 @@ export default {
         "to": "manifesto",
         "kind": "references",
         "strength": 0.5
+      },
+      {
+        "from": "about",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "contact": [
@@ -41,6 +47,12 @@ export default {
         "from": "manifesto",
         "to": "about",
         "kind": "references",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
+        "to": "about",
+        "kind": "tangent",
         "strength": 0.5
       }
     ],
@@ -74,76 +86,149 @@ export default {
         "strength": 0.5
       }
     ],
+    "flat-clouds": [],
     "hyper": [],
+    "immerse": [],
     "links": [],
-    "info": [
+    "rehash-transform": [],
+    "retro-core": [],
+    "rhizome": [],
+    "skew-bulbs": [],
+    "slices": [],
+    "solar-chrome": [
       {
-        "from": "info",
-        "to": "manifesto",
+        "from": "solar-chrome",
+        "to": "solar-landscape",
         "kind": "tangent",
         "strength": 0.5
       }
-    ]
+    ],
+    "solar-landscape": [
+      {
+        "from": "solar-landscape",
+        "to": "solar-chrome",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "substrate": [],
+    "virtual-imprint": []
   },
   "tags": {
     "generative": {
       "weight": 1,
-      "count": 3
+      "count": 13
     },
     "art": {
-      "weight": 1,
-      "count": 3
+      "weight": 0.8461538461538461,
+      "count": 11
+    },
+    "domain-warping": {
+      "weight": 0.6153846153846154,
+      "count": 8
+    },
+    "geometry": {
+      "weight": 0.38461538461538464,
+      "count": 5
     },
     "writing": {
-      "weight": 1,
+      "weight": 0.23076923076923078,
       "count": 3
     },
     "noise": {
-      "weight": 1,
+      "weight": 0.23076923076923078,
+      "count": 3
+    },
+    "feedback": {
+      "weight": 0.23076923076923078,
+      "count": 3
+    },
+    "organic": {
+      "weight": 0.23076923076923078,
+      "count": 3
+    },
+    "internet": {
+      "weight": 0.23076923076923078,
+      "count": 3
+    },
+    "chrome": {
+      "weight": 0.23076923076923078,
       "count": 3
     },
     "info": {
-      "weight": 0.6666666666666666,
+      "weight": 0.15384615384615385,
       "count": 2
     },
-    "domain-warping": {
-      "weight": 0.6666666666666666,
+    "mind": {
+      "weight": 0.15384615384615385,
       "count": 2
     },
-    "internet": {
-      "weight": 0.6666666666666666,
+    "external": {
+      "weight": 0.15384615384615385,
+      "count": 2
+    },
+    "css": {
+      "weight": 0.15384615384615385,
       "count": 2
     },
     "thoughts": {
-      "weight": 0.3333333333333333,
+      "weight": 0.07692307692307693,
       "count": 1
     },
     "contact": {
-      "weight": 0.3333333333333333,
+      "weight": 0.07692307692307693,
       "count": 1
     },
     "communication": {
-      "weight": 0.3333333333333333,
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "particles": {
+      "weight": 0.07692307692307693,
       "count": 1
     },
     "words": {
-      "weight": 0.3333333333333333,
+      "weight": 0.07692307692307693,
       "count": 1
     },
-    "external": {
-      "weight": 0.3333333333333333,
-      "count": 1
-    },
-    "css": {
-      "weight": 0.3333333333333333,
+    "interactive": {
+      "weight": 0.07692307692307693,
       "count": 1
     },
     "webart": {
-      "weight": 0.3333333333333333,
+      "weight": 0.07692307692307693,
       "count": 1
     },
     "notanalbeads": {
-      "weight": 0.3333333333333333,
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "instancing": {
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "memes": {
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "texture": {
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "depth": {
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "Deleuze": {
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "space-colonization": {
+      "weight": 0.07692307692307693,
+      "count": 1
+    },
+    "photography": {
+      "weight": 0.07692307692307693,
       "count": 1
     }
   },
@@ -210,26 +295,102 @@ export default {
     },
     "manifesto": {
       "tags": [
-        "info",
-        "internet"
+        "internet",
+        "info"
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
       "title": "manifesto",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "Sat, 04 Jun 2022 20:44:17 GMT"
+      "updatedAt": "Sun, 12 Jun 2022 08:59:59 GMT"
+    },
+    "skew-bulbs": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "chrome"
+      ],
+      "createdAt": "14 Mar 2022 10:23:19 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 10:27:07 GMT",
+      "inline": false,
+      "title": "Skew Bulbs",
+      "description": "Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.",
+      "image": "/img/pieces/skew-bulbs.jpg"
+    },
+    "slices": {
+      "tags": [
+        "art",
+        "css",
+        "external",
+        "photography"
+      ],
+      "createdAt": "02 Mar 2022 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 10:15:28 GMT",
+      "inline": false,
+      "title": "Slices",
+      "description": "Experiment with 3D CSS rendering, photography, and digital spaces. Located externally; will be opened in an iframe.",
+      "image": "/img/pieces/slices.jpg"
+    },
+    "rhizome": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "feedback",
+        "organic",
+        "Deleuze",
+        "space-colonization"
+      ],
+      "createdAt": "20 Feb 2022 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 09:56:06 GMT",
+      "inline": false,
+      "title": "Rhizome",
+      "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
+      "image": "/img/pieces/rhizome.jpg"
+    },
+    "substrate": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "feedback",
+        "organic"
+      ],
+      "createdAt": "13 Feb 2022 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 09:28:19 GMT",
+      "inline": false,
+      "title": "Substrate",
+      "description": "More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.",
+      "image": "/img/pieces/substrate.jpg"
+    },
+    "immerse": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "geometry",
+        "feedback",
+        "organic",
+        "interactive"
+      ],
+      "createdAt": "27 Jan 2022 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 09:04:59 GMT",
+      "inline": false,
+      "title": "Immerse",
+      "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
+      "image": "/img/pieces/immerse.jpg"
     },
     "alien-patterns": {
       "tags": [
         "generative",
-        "art",
+        "domain-warping",
         "writing",
-        "noise",
-        "domain-warping"
+        "noise"
       ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
-      "updatedAt": "Thu, 09 Jun 2022 20:07:03 GMT",
+      "updatedAt": "Sat, 11 Jun 2022 13:03:08 GMT",
       "inline": false,
       "title": "Alien Patterns",
       "description": "On combining modified noise and domain warping to produce alien patterns",
@@ -238,12 +399,11 @@ export default {
     "modified-noise": {
       "tags": [
         "generative",
-        "art",
         "writing",
         "noise"
       ],
       "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
-      "updatedAt": "Thu, 09 Jun 2022 20:50:49 GMT",
+      "updatedAt": "Sat, 11 Jun 2022 13:03:19 GMT",
       "inline": false,
       "title": "Characteristics of Modified Noise",
       "description": "A few of my common methods for modifying standard noise functions.",
@@ -252,17 +412,104 @@ export default {
     "domain-warping": {
       "tags": [
         "generative",
-        "art",
+        "domain-warping",
         "noise",
-        "writing",
-        "domain-warping"
+        "writing"
       ],
       "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
-      "updatedAt": "Thu, 09 Jun 2022 10:35:52 GMT",
+      "updatedAt": "Sat, 11 Jun 2022 13:02:42 GMT",
       "inline": false,
       "title": "My Take on Domain Warping",
       "description": "How I've used domain warping to achieve strange generative effects.",
       "image": "/img/posts/domain-warping/banner.jpg"
+    },
+    "flat-clouds": {
+      "tags": [
+        "generative",
+        "art",
+        "mind",
+        "particles"
+      ],
+      "createdAt": "26 Dec 2021 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 08:57:23 GMT",
+      "inline": false,
+      "title": "Flat Clouds",
+      "description": "Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.",
+      "image": "/img/pieces/flat-clouds.jpg"
+    },
+    "rehash-transform": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "internet",
+        "mind",
+        "instancing",
+        "memes"
+      ],
+      "createdAt": "23 Dec 2021 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 08:55:18 GMT",
+      "inline": false,
+      "title": "Rehash Transform",
+      "description": "Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.",
+      "image": "/img/pieces/rehash-transform.jpg"
+    },
+    "virtual-imprint": {
+      "tags": [
+        "generative",
+        "art",
+        "domain-warping",
+        "geometry"
+      ],
+      "createdAt": "14 Nov 2021 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 07:41:42 GMT",
+      "inline": false,
+      "title": "Virtual Imprint",
+      "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
+      "image": "/img/pieces/virtual-imprint.jpg"
+    },
+    "solar-landscape": {
+      "tags": [
+        "generative",
+        "art",
+        "geometry",
+        "chrome"
+      ],
+      "createdAt": "15 Oct 2021 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 00:00:02 GMT",
+      "inline": false,
+      "title": "Solar Landscape",
+      "description": "An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.",
+      "image": "/img/pieces/solar-landscape-1.jpg"
+    },
+    "solar-chrome": {
+      "tags": [
+        "generative",
+        "art",
+        "geometry",
+        "chrome"
+      ],
+      "createdAt": "13 Oct 2021 09:49:08 GMT",
+      "updatedAt": "Sun, 12 Jun 2022 00:00:08 GMT",
+      "inline": false,
+      "title": "Solar Chrome",
+      "description": "Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.",
+      "image": "/img/pieces/solar-chrome.jpg"
+    },
+    "retro-core": {
+      "tags": [
+        "generative",
+        "art",
+        "geometry",
+        "texture",
+        "depth"
+      ],
+      "createdAt": "15 Sep 2021 15:24:28 GMT",
+      "updatedAt": "Sat, 11 Jun 2022 12:50:19 GMT",
+      "inline": false,
+      "title": "Retro Core",
+      "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
+      "image": "/img/pieces/retro-core.jpg"
     }
   }
 } as const;

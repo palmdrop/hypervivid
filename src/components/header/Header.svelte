@@ -63,6 +63,7 @@ import { loading } from '$stores/loading';
 <style>
   header {
     border-bottom: var(--borderPrimary);
+    border-top: var(--borderPrimary);
 
     width: 100%;
 

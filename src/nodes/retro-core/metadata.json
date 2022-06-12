@@ -1,0 +1,12 @@
+{
+  "tags": [
+    "generative", "art", "texture", "depth", "geometry"
+  ],
+  "links": [],
+  "createdAt": "15 Sep 2021 15:24:28 GMT",
+  "updatedAt": "15 Sep 2021 15:24:28 GMT",
+  "inline": false,
+  "title": "Retro Core",
+  "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
+  "image": "/img/pieces/retro-core.jpg"
+}

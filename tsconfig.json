@@ -5,7 +5,11 @@
 		"checkJs": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"lib": ["es2020", "DOM"],
+		"lib": [
+			"es2020", 
+			"DOM",
+			"ES2021.String"
+		],
 		"moduleResolution": "node",
 		"module": "es2020",
 		"resolveJsonModule": true,

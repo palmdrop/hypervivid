@@ -7,7 +7,7 @@
   import { NODE_NAMES, SITE_NAME } from '$constants';
   import Paragraph from '$components/common/Paragraph.svelte';
   import Link from '$components/common/Link.svelte';
-import Header from '$components/header/Header.svelte';
+  import Header from '$components/header/Header.svelte';
 
   const nodeNames = Object.keys(
     $metadata$.nodes
