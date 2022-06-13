@@ -383,10 +383,6 @@ export default {
       "weight": 0.0625,
       "count": 1
     },
-    "notanalbeads": {
-      "weight": 0.0625,
-      "count": 1
-    },
     "instancing": {
       "weight": 0.0625,
       "count": 1
@@ -432,15 +428,14 @@ export default {
     "moons": {
       "tags": [
         "css",
-        "webart",
-        "notanalbeads"
+        "webart"
       ],
       "createdAt": "Thu, 26 May 2022 14:41:23 GMT",
       "inline": true,
       "title": "moons",
       "description": "",
       "image": "",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT"
+      "updatedAt": "Mon, 13 Jun 2022 16:22:08 GMT"
     },
     "contact": {
       "tags": [
