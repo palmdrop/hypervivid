@@ -128,13 +128,16 @@
       <Paragraph wide big>
         I'm Anton, or palmdrop, a Swedish developer and digital artist. This site is multipurpose — it's made for sharing digital art, 
         writing, photography, links, whatever. The site has an experimental structure to accommodate any interlinked content-type: text, image, generative art, random experiments,
-        memes, poetry, trash recipes, GPU-frying 3D sketches, and so on, all linked together as nodes.
+        memes, poetry, trash recipes, GPU-frying 3D sketches, and so on, all linked together as <Link href='/nodes' newTab>nodes</Link>.
       </Paragraph>
       <Paragraph wide big>
         Node, as in an interconnected point in a graph. 
         <Link href='https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)' newTab>This kind of graph.</Link>
         Press the bottom "metadata" tab to examine the links. 
         Nodes also have tags, that may help you find what you are looking for. But I doubt there's anything in particular you are looking for. Just follow the metadata links. Explore some paths.
+      </Paragraph>
+      <Paragraph wide big>
+        <Link href='/nodes' newTab>Start by exploring some nodes.</Link>
       </Paragraph>
       <Paragraph wide big>
         The core idea of this page is to 
