@@ -63,6 +63,10 @@
     {
       text: 'are.na',
       href: 'https://www.are.na/palm-drop'
+    },
+    {
+      text: 'obscured (old site)',
+      href: 'https://webspace.pages.dev/'
     }
   ];
 
@@ -151,6 +155,9 @@
       </Paragraph>
       <Paragraph wide big>
         Also, read the <Link href='/nodes/manifesto' newTab>manifesto page</Link>.
+      </Paragraph>
+      <Paragraph wide big>
+        If you miss my old site, it can be found <Link href='https://webspace.pages.dev/' newTab>here</Link>, at least for a while.
       </Paragraph>
     </div>
   </section>
