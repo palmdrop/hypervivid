@@ -19,6 +19,7 @@
   class:decorated
   class:big
   class={'link ' + (omitBorder ? 'omit-' + omitBorder : '')}
+  {...$$restProps}
 >
   <slot />
 </svelte:element>

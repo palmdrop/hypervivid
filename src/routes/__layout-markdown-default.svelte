@@ -1,7 +1,8 @@
 <script context="module">
 	import p from './../components/common/ParagraphLarge.svelte';
+  import a from './../components/common/ExternalLink.svelte';
 
-  export { p };
+  export { p, a };
 </script>
 
 <div class="markdown-container">
