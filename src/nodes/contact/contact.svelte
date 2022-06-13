@@ -17,7 +17,7 @@
   }
 
   const onSubmit = () => {
-    if(!status.length) return;
+    if(status.length) return;
 
     if(!message) {
       status = "Please write something.";
