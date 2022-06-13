@@ -137,7 +137,7 @@
         Nodes also have tags, that may help you find what you are looking for. But I doubt there's anything in particular you are looking for. Just follow the metadata links. Explore some paths.
       </Paragraph>
       <Paragraph wide big>
-        <Link href='/nodes' newTab>Start by exploring some nodes.</Link>
+        <Link href='/nodes' newTab>Start by exploring some nodes.</Link> If you like, follow the <Link href='/rss.xml'>rss feed.</Link>
       </Paragraph>
       <Paragraph wide big>
         The core idea of this page is to 

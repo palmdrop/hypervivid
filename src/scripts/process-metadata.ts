@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import type { Link as NodeLink, NodeMetadata } from '../types/nodes';
-import fs, { link } from 'fs';
+import fs from 'fs';
 
 // TODO: add to env
 const NODES_DIR = 'src/nodes/';
@@ -13,7 +13,7 @@ const NODE_NAME_REGEX = /<Node[^(/>)]name={?['|"](\w+)["|']}?[^(/>]*[/?>]/g;
 const NODE_LINK_REGEX = /['|"]\/nodes\/([^(/|.|"|')]*)["|']/g;
 
 const METADATA_FILE_PATH = NODES_DIR + 'metadata.ts';
-
+const RSS_PATH = 'static/rss.xml';
 const PREVIEW_IMAGE_PATH = '/nodes/';
 
 type Link = Omit<NodeLink, 'kind'> & { kind: string };
@@ -22,6 +22,22 @@ type Metadata = {
   tags: Map<string, number>,
   nodes: Record<string, Record<string, any>>
 }
+
+const wrapRss = (rss: { feed: string }) => {
+  rss.feed = `<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="http://www.palmdrop.site/rss.xml" rel="self" type="application/rss+xml" />
+<title>Hypervivid ~ Hypersoft</title>
+<link>https://www.palmdrop.site</link>
+<description>Experimental webspace for exploring digital art, technology and the internet.</description>
+${rss.feed}
+</channel>
+</rss>`;
+
+  return rss.feed;
+}
+
 const addLink = (node: string, link: Link, links: Map<string, Link[]>) => {
   if(!links.has(node)) links.set(node, []);
   const linksArray = links.get(node)!;
@@ -76,7 +92,8 @@ const addUndirectedLink = (
 const processNode = async (
   nodeName: string,
   metadata: Metadata,
-  allNodeNames: string[]
+  allNodeNames: string[],
+  rss: { feed: string }
 ) => {
   const { links, tags, nodes } = metadata;
 
@@ -123,7 +140,7 @@ const processNode = async (
       )) as NodeMetadata;
 
       const nodeTags: string[] = metadata.tags ?? [];
-      let nodeLinks: Link[] = metadata.links ?? [];
+      const nodeLinks: Link[] = metadata.links ?? [];
 
       nodeTags.forEach(tag => {
         if(
@@ -179,6 +196,15 @@ const processNode = async (
       }
 
       nodes[nodeName] = metadata;
+
+      // Add to rss feed
+      rss.feed += `<item>
+<guid>https://palmdrop.site/nodes/${nodeName}</guid>
+<title>${metadata.title || nodeName}</title>
+<link>https://palmdrop.site/nodes/${nodeName}</link>
+<description>${metadata.description}</description>
+<pubDate>${new Date(metadata.createdAt).toUTCString()}</pubDate>
+</item>`;
     } else {
       // TODO: Create default metadata
       console.log(`Node "${nodeName}" has no metadata.`);
@@ -272,13 +298,15 @@ const main = async () => {
   console.log("Processing metadata...")
 
   const nodeNames = fs.readdirSync(NODES_DIR);
+  const rss = { feed: '' };
 
   await Promise.all(nodeNames
     .filter(name => !name.includes('.')) // filter out files
     .map(name => processNode(
       name,
       metadata,
-      nodeNames
+      nodeNames,
+      rss
     ))
   );
 
@@ -307,6 +335,11 @@ const main = async () => {
       links: Object.fromEntries(links),
       tags: processTags(tags)
     }, null, 2)} as const;`
+  );
+
+  fs.writeFileSync(
+    RSS_PATH,
+    wrapRss(rss)
   );
 
   console.log("Done!");
