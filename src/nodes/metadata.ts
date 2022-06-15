@@ -435,7 +435,7 @@ export default {
       "title": "moons",
       "description": "Simple CSS test.",
       "image": "",
-      "updatedAt": "Mon, 13 Jun 2022 16:49:06 GMT"
+      "updatedAt": "Mon, 13 Jun 2022 19:12:02 GMT"
     },
     "contact": {
       "tags": [
