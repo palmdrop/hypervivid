@@ -51,10 +51,4 @@
     box-shadow: inset -20px 0px 10px var(--cFgFaded);
     margin-left: -2em;
   }
-
-  @media ( min-width: 500px )  {
-    .container {
-      display: row;
-    }
-  }
 </style>

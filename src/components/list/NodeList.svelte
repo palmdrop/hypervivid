@@ -26,7 +26,7 @@
   // Loading
   $: count = Math.min(batchCount, nodeNames.length);
 
-  const isLoaded: boolean[] = Array(nodeNames.length).fill(false);
+  const isDone: boolean[] = Array(nodeNames.length).fill(false);
 
   const loadMore = () => {
     count = Math.min(count + batchCount, nodeNames.length);
@@ -42,7 +42,7 @@
     let newLoadedToIndex = loadedUpToIndex;
     for(let i = loadedUpToIndex; i < count; i++) {
       newLoadedToIndex = i;
-      if(!isLoaded[i]) {
+      if(!isDone[i]) {
         break;
       }
     }
@@ -97,7 +97,7 @@
         name={name}
         mode={i === 0 ? modeFirst : modeRest}
         index={i}
-        bind:isLoaded={isLoaded[i]}
+        bind:isDone={isDone[i]}
         showLoader={false}
       />
       {#if showOpenLink && (i === 0 ? modeFirst : modeRest) !== 'link'}

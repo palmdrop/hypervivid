@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
   import { setContext, type SvelteComponent } from "svelte";
   import Lazy from "$components/util/Lazy.svelte";
   import DefaultPreview from "./preview/DefaultPreview.svelte";
@@ -7,6 +6,7 @@
   import type { GlobComponentImport } from "$types/imports";
   import type { NodeName, NodeMode, NodeMetadata, NodeContext } from "$types/nodes";
   import NodeLoader from "./loader/NodeLoader.svelte";
+  import Error from './Error.svelte';
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
@@ -18,7 +18,8 @@
   export let showLoader = true;
 
   // Bindings
-  export let isLoaded = false;
+  export let isDone = false;
+  let failed = false;
 
   let nodeMetadata: NodeMetadata;
 
@@ -42,7 +43,7 @@
 
   $: previewPath = `../../nodes/${name}/${name}.preview.svelte`
 
-  $: isLoaded = 
+  $: isDone = 
     fromSlot || // If supplied from slot, this component cannot determine load status
     mode === 'link' || // If in link mode, the node does not need loading 
     (showPreview && !lazyPreviewComponents[previewPath]); // In this case, default preview will be shown, requiring no loading
@@ -81,13 +82,16 @@
 {:else if component && nodeMetadata}
   {#key component}
     <Lazy
-      bind:isLoaded
+      bind:isDone
+      bind:failed
       { component }
     />
-    {#if showLoader && !isLoaded}
+    {#if showLoader && !isDone && !failed}
       <div>
         <NodeLoader {mode} />
       </div>
+    {:else if failed}
+      <Error nodeName={name} />
     {/if}
   {/key}
 {:else}

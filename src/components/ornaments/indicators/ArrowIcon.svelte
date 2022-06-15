@@ -32,7 +32,7 @@
     margin-top: 0.07rem;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
-    margin-bottom: 0.02;
+    margin-bottom: 0.02rem;
   }
 
   .right {

@@ -1,6 +1,5 @@
 <script lang="ts">
   import { getNodeContext } from "$utils/useNodeContext";
-  const { name, metadata } = getNodeContext('manifesto');
 
   import Document from './document.svelte.md';
 </script>

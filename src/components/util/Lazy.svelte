@@ -5,7 +5,8 @@
   export let delayMs: null | number = null;
 
   // Bindings
-  export let isLoaded = false;
+  export let isDone = false;
+  export let failed = false;
 
   let loadedComponent: SvelteComponent | null = null;
   let timeout: NodeJS.Timeout;
@@ -13,7 +14,7 @@
 
   let props: Record<string, any>;
   $: {
-    const { component, delayMs, isLoaded, ...restProps } = $$props;
+    const { component, delayMs, isDone, failed, ...restProps } = $$props;
     props = restProps;
   }
 
@@ -26,7 +27,10 @@
 
     component().then(module => {
       loadedComponent = module.default;
-      isLoaded = true;
+      isDone = true;
+    }).catch(() => {
+      failed = true;
+      isDone = true;
     });
 
     return () => clearTimeout(timeout);
