@@ -1,11 +1,7 @@
 /* Theme */
 :root {
   --cFg: #090b20;
-  /*
-  --cBg: #bec2c7;
-  */
   --cBg: #c6cbd2;
-
 
   --cFgFaded: #200912aa;
   --cFgSoft: #090b2044;
@@ -24,17 +20,9 @@
 
   --fontSizeLarge: clamp(1.1rem, 3vw, 27px);
 
-  /*
-  --fRegular: 'SpaceGrotesk-Regular';
-  --fBold: 'SpaceGrotesk-Bold';
-  --fMono: 'SyneMono';
-  --fDisplay: 'SyneMono';
-  --fRegular: 'Sporting_Grotesque-Regular';
-  */
-
   --borderPrimary: 1px solid var(--cFg);
   --borderSoft: 1px solid var(--cFgSoft);
-  --borderRadius1: 0.8rem;
+  --borderRadius1: 0.6rem;
   --borderRadius2: 35px;
   --borderRadius3: 100%;
 
@@ -51,7 +39,6 @@
 
 /* Global styles */
 html {
-  /* TODO: dynamic font size */
   font-size: clamp(16px, 2.0vw, 20px);
   font-family: var(--fRegular);
 

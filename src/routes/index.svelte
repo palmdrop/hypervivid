@@ -9,7 +9,7 @@
   import { scrollSelfIntoView } from '$utils/scrollIntoView';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
   import { SITE_NAME } from '$constants';
-import Header from '$components/header/Header.svelte';
+  import Header from '$components/header/Header.svelte';
 
   /*
   $: nodeNames = (

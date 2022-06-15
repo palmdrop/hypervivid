@@ -12,11 +12,13 @@
   let timeout: NodeJS.Timeout;
   let showFallback = !delayMs;
 
+  /*
   let props: Record<string, any>;
   $: {
     const { component, delayMs, isDone, failed, ...restProps } = $$props;
     props = restProps;
   }
+  */
 
   onMount(() => {
     if (delayMs) {
@@ -38,7 +40,10 @@
 </script>
 
 {#if loadedComponent}
-  <svelte:component this={loadedComponent} {...props} />
+  <svelte:component 
+    this={loadedComponent} 
+    {...$$restProps} 
+  />
 {:else if showFallback}
   <slot />
 {/if}

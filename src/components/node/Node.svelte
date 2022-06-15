@@ -85,6 +85,7 @@
       bind:isDone
       bind:failed
       { component }
+      {...$$restProps}
     />
     {#if showLoader && !isDone && !failed}
       <div>
