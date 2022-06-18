@@ -4,7 +4,7 @@
 	import Navbar from '$components/navigation/Navbar.svelte';
   import Breadcrumbs from './Breadcrumbs.svelte';
   import { NODE_NAMES } from '$constants';
-import { loading } from '$stores/loading';
+  import { loading } from '$stores/loading';
 
   const navEntries: NavEntry[] = [
     {

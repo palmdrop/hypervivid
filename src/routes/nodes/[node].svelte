@@ -26,10 +26,12 @@
 
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
-  import NodeWrapper from "$components/node/wrappers/NodeWrapper.svelte";
+  import DefaultWrapper from "$components/node/wrappers/DefaultWrapper.svelte";
   import { useTitle } from "$utils/useTitle";
   import type { NodeMetadata, NodeName } from '$types/nodes';
   import { SITE_NAME } from '$constants';
+  import type { SvelteComponent } from 'svelte';
+  import DocumentWrapper from '$components/node/wrappers/DocumentWrapper.svelte';
 
   export let name: NodeName;
   export let metadata: NodeMetadata;
@@ -37,14 +39,25 @@
   $: useTitle(`${metadata.title || name} ~ ${SITE_NAME}`);
 </script>
 
-<NodeWrapper
-  { name }
->
-  <Node
+{#if metadata.asDocument}
+  <DocumentWrapper
     { name }
-    mode="only"
-  />
-</NodeWrapper>
+  >
+    <Node
+      { name }
+      mode="only"
+    />
+  </DocumentWrapper>
+{:else}
+  <DefaultWrapper 
+    { name }
+  >
+    <Node
+      { name }
+      mode="only"
+    />
+  </DefaultWrapper>
+{/if}
 
 <style>
 </style>

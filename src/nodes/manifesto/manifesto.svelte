@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { getNodeContext } from "$utils/useNodeContext";
-
   import Document from './document.svelte.md';
 </script>
 

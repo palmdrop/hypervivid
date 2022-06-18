@@ -15,13 +15,17 @@
   export let isExpanded: boolean = true;
   export let onToggle: (() => void) | undefined = undefined;
   export let transitionDuration: number = 400;
+  export let showArrow = true;
+  export let toggleEnabled = true;
 
   $: links = nodeMetadata.links ?? [];
   $: tags = nodeMetadata.tags ?? [];
 
   $: expanded = isExpanded;
   $: toggle = onToggle ?? (() => {
-    expanded = !expanded;
+    if(toggleEnabled) {
+      expanded = !expanded;
+    }
   })
 
   $: title = nodeMetadata.title ?? name;
@@ -30,16 +34,19 @@
 <footer> 
   <button 
     class="metadata-button"
+    class:toggleEnabled
     on:click={toggle}
   >
-    <div class="arrow">
-      <Arrow 
-        { transitionDuration }
-        direction={expanded ? 'down' : 'right'}
-        strokeWidth={1.5}
-        size={'1.25rem'}
-      />
-    </div>
+    {#if showArrow}
+      <div class="arrow">
+        <Arrow 
+          { transitionDuration }
+          direction={expanded ? 'down' : 'right'}
+          strokeWidth={1.5}
+          size={'1.25rem'}
+        />
+      </div>
+    {/if}
     <h1>Metadata — {title}</h1>
   </button>
   { #if expanded }
@@ -115,6 +122,14 @@
 </footer>
 
 <style>
+  button {
+    cursor: initial;
+  }
+
+  .toggleEnabled {
+    cursor: pointer;
+  }
+
   footer {
     overflow: hidden;
     background-color: var(--cBg);

@@ -33,6 +33,8 @@ export type NodeMetadata = {
   title?: string,
   description?: string,
   image?: string,
+
+  asDocument?: boolean,
 } & Record<string, any>; 
 
 export type NodeContext = {

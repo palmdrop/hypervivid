@@ -162,7 +162,21 @@ export default {
         "strength": 0.5
       }
     ],
+    "fragfuse": [
+      {
+        "from": "fragfuse",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "hyper": [
+      {
+        "from": "hyper",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "hyper",
         "to": "rehash-transform",
@@ -292,8 +306,8 @@ export default {
       "count": 16
     },
     "art": {
-      "weight": 0.875,
-      "count": 14
+      "weight": 1,
+      "count": 16
     },
     "domain-warping": {
       "weight": 0.6875,
@@ -319,6 +333,10 @@ export default {
       "weight": 0.1875,
       "count": 3
     },
+    "photography": {
+      "weight": 0.1875,
+      "count": 3
+    },
     "internet": {
       "weight": 0.1875,
       "count": 3
@@ -336,6 +354,10 @@ export default {
       "count": 2
     },
     "mind": {
+      "weight": 0.125,
+      "count": 2
+    },
+    "hyper": {
       "weight": 0.125,
       "count": 2
     },
@@ -406,13 +428,23 @@ export default {
     "space-colonization": {
       "weight": 0.0625,
       "count": 1
-    },
-    "photography": {
-      "weight": 0.0625,
-      "count": 1
     }
   },
   "nodes": {
+    "fragfuse": {
+      "tags": [
+        "art",
+        "photography",
+        "hyper"
+      ],
+      "createdAt": "Thu, 16 Jun 2022 19:50:43 GMT",
+      "updatedAt": "Sat, 18 Jun 2022 10:57:43 GMT",
+      "inline": false,
+      "title": "Frag Fuse",
+      "description": "Photo fragments, warped and mixed to produce eerie textures and patterns.",
+      "image": "/img/combined/hare.jpg",
+      "asDocument": true
+    },
     "links": {
       "tags": [
         "internet",
@@ -463,14 +495,17 @@ export default {
     },
     "hyper": {
       "tags": [
+        "art",
+        "photography",
+        "hyper",
         "words"
       ],
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
       "inline": false,
       "title": "hyper",
-      "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's slightly fun.",
+      "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT"
+      "updatedAt": "Thu, 16 Jun 2022 19:39:13 GMT"
     },
     "manifesto": {
       "tags": [
@@ -548,9 +583,9 @@ export default {
     "slices": {
       "tags": [
         "art",
+        "photography",
         "css",
-        "external",
-        "photography"
+        "external"
       ],
       "createdAt": "02 Mar 2022 09:49:08 GMT",
       "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",

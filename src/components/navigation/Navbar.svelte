@@ -191,7 +191,6 @@
       height: auto;
       font-size: 1.0rem;
 
-      margin-top: -1px;
     }
 
     a {

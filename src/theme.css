@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-a {
+a, a:link, a:visited, a:active {
   text-decoration: none;
   text-decoration-color: var(--cFg);
   color: var(--cFg);
