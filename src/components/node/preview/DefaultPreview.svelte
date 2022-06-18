@@ -75,7 +75,7 @@
     width: 100%;
     max-width: 450px;
 
-    padding-bottom: 0.5em;
+    margin-bottom: 0.7em;
 
     border-radius: 15px;
 
@@ -98,7 +98,7 @@
 
     img {
       margin-left: 0.7em;
-      padding-bottom: unset;
+      margin-bottom: unset;
     }
 
     .flipped img {

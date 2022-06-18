@@ -393,6 +393,14 @@ export default {
       "weight": 0.0625,
       "count": 1
     },
+    "project": {
+      "weight": 0.0625,
+      "count": 1
+    },
+    "fuse": {
+      "weight": 0.0625,
+      "count": 1
+    },
     "words": {
       "weight": 0.0625,
       "count": 1
@@ -435,10 +443,12 @@ export default {
       "tags": [
         "art",
         "photography",
-        "hyper"
+        "hyper",
+        "project",
+        "fuse"
       ],
       "createdAt": "Thu, 16 Jun 2022 19:50:43 GMT",
-      "updatedAt": "Sat, 18 Jun 2022 10:57:43 GMT",
+      "updatedAt": "Sat, 18 Jun 2022 11:00:46 GMT",
       "inline": false,
       "title": "Frag Fuse",
       "description": "Photo fragments, warped and mixed to produce eerie textures and patterns.",
