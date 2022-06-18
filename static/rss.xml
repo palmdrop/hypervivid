@@ -149,6 +149,12 @@
 <link>https://palmdrop.site/nodes/virtual-imprint</link>
 <description>Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.</description>
 <pubDate>Sun, 14 Nov 2021 09:49:08 GMT</pubDate>
+</item><item>
+<guid>https://palmdrop.site/nodes/webfuse</guid>
+<title>Web Fuse</title>
+<link>https://palmdrop.site/nodes/webfuse</link>
+<description>Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?</description>
+<pubDate>Sat, 18 Jun 2022 12:07:12 GMT</pubDate>
 </item>
 </channel>
 </rss>

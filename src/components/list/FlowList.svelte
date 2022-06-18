@@ -36,7 +36,7 @@
     align-items: center;
   }
 
-  @media ( min-width: 500px )  {
+  @media ( max-width: 500px )  {
     li > div {
       left: 0;
     }

@@ -8,7 +8,6 @@
   import { navigating } from '$app/stores';
 
   $: $loading = !!$navigating;
-
 </script>
 
 <svelte:head>

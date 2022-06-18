@@ -61,6 +61,8 @@
   .description {
     padding-bottom: 10em;
     padding-top: 5em;
+
+    margin: 2.5em;
   }
 
   img {

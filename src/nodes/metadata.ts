@@ -54,6 +54,12 @@ export default {
         "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "manifesto",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "alien-patterns": [
@@ -168,6 +174,12 @@ export default {
         "to": "hyper",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "hyper": [
@@ -180,6 +192,12 @@ export default {
       {
         "from": "hyper",
         "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -200,6 +218,12 @@ export default {
       {
         "from": "rhizome",
         "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -228,6 +252,12 @@ export default {
       {
         "from": "rehash-transform",
         "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rehash-transform",
+        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -298,147 +328,196 @@ export default {
         "strength": 0.5
       }
     ],
-    "slices": []
+    "slices": [],
+    "webfuse": [
+      {
+        "from": "webfuse",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ]
   },
   "tags": {
-    "generative": {
-      "weight": 1,
-      "count": 16
-    },
     "art": {
       "weight": 1,
+      "count": 17
+    },
+    "generative": {
+      "weight": 0.9411764705882353,
       "count": 16
     },
     "domain-warping": {
-      "weight": 0.6875,
+      "weight": 0.6470588235294118,
       "count": 11
     },
     "geometry": {
-      "weight": 0.3125,
+      "weight": 0.29411764705882354,
       "count": 5
     },
     "feedback": {
-      "weight": 0.25,
+      "weight": 0.23529411764705882,
       "count": 4
     },
     "organic": {
-      "weight": 0.25,
+      "weight": 0.23529411764705882,
+      "count": 4
+    },
+    "photography": {
+      "weight": 0.23529411764705882,
       "count": 4
     },
     "writing": {
-      "weight": 0.1875,
+      "weight": 0.17647058823529413,
       "count": 3
     },
     "noise": {
-      "weight": 0.1875,
+      "weight": 0.17647058823529413,
       "count": 3
     },
-    "photography": {
-      "weight": 0.1875,
+    "hyper": {
+      "weight": 0.17647058823529413,
       "count": 3
     },
     "internet": {
-      "weight": 0.1875,
+      "weight": 0.17647058823529413,
       "count": 3
     },
     "chrome": {
-      "weight": 0.1875,
+      "weight": 0.17647058823529413,
       "count": 3
     },
     "info": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "glitch": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "mind": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
       "count": 2
     },
-    "hyper": {
-      "weight": 0.125,
+    "project": {
+      "weight": 0.11764705882352941,
+      "count": 2
+    },
+    "fuse": {
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "external": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "dithering": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "css": {
-      "weight": 0.125,
+      "weight": 0.11764705882352941,
+      "count": 2
+    },
+    "memes": {
+      "weight": 0.11764705882352941,
       "count": 2
     },
     "thoughts": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "contact": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "communication": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "particles": {
-      "weight": 0.0625,
-      "count": 1
-    },
-    "project": {
-      "weight": 0.0625,
-      "count": 1
-    },
-    "fuse": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "words": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "interactive": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "webart": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "instancing": {
-      "weight": 0.0625,
-      "count": 1
-    },
-    "memes": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "texture": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "depth": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     },
     "space-colonization": {
-      "weight": 0.0625,
+      "weight": 0.058823529411764705,
       "count": 1
     }
   },
   "nodes": {
+    "webfuse": {
+      "tags": [
+        "art",
+        "photography",
+        "hyper",
+        "project",
+        "fuse",
+        "memes"
+      ],
+      "createdAt": "Sat, 18 Jun 2022 12:07:12 GMT",
+      "updatedAt": "Sat, 18 Jun 2022 19:43:37 GMT",
+      "inline": false,
+      "title": "Web Fuse",
+      "description": "Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?",
+      "image": "/img/webfuse/1599592445746.jpg",
+      "asDocument": true
+    },
     "fragfuse": {
       "tags": [
         "art",
@@ -531,8 +610,8 @@ export default {
     },
     "block-dissolve": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "feedback",
         "organic",
@@ -547,8 +626,8 @@ export default {
     },
     "medusa-network": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "dithering",
         "blue-noise",
@@ -563,8 +642,8 @@ export default {
     },
     "noise-construct": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "dithering",
         "blue-noise"
@@ -578,8 +657,8 @@ export default {
     },
     "skew-bulbs": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "chrome"
       ],
@@ -606,8 +685,8 @@ export default {
     },
     "rhizome": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "feedback",
         "organic",
@@ -623,8 +702,8 @@ export default {
     },
     "substrate": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "feedback",
         "organic"
@@ -638,8 +717,8 @@ export default {
     },
     "immerse": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "geometry",
         "feedback",
@@ -696,8 +775,8 @@ export default {
     },
     "flat-clouds": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "mind",
         "particles"
       ],
@@ -710,13 +789,13 @@ export default {
     },
     "rehash-transform": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "internet",
+        "memes",
         "mind",
-        "instancing",
-        "memes"
+        "instancing"
       ],
       "createdAt": "23 Dec 2021 09:49:08 GMT",
       "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
@@ -727,8 +806,8 @@ export default {
     },
     "virtual-imprint": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "domain-warping",
         "geometry"
       ],
@@ -741,8 +820,8 @@ export default {
     },
     "solar-landscape": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "geometry",
         "chrome"
       ],
@@ -755,8 +834,8 @@ export default {
     },
     "solar-chrome": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "geometry",
         "chrome"
       ],
@@ -769,8 +848,8 @@ export default {
     },
     "retro-core": {
       "tags": [
-        "generative",
         "art",
+        "generative",
         "geometry",
         "texture",
         "depth"
