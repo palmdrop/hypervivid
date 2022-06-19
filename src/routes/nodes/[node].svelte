@@ -35,16 +35,20 @@
   export let name: NodeName;
   export let metadata: NodeMetadata;
 
+  let isDone = false;
+
   $: useTitle(`${metadata.title || name} ~ ${SITE_NAME}`);
 </script>
 
 {#if metadata.asDocument}
   <DocumentWrapper
     { name }
+    { isDone }
   >
     <Node
       { name }
       mode="only"
+      bind:isDone
     />
   </DocumentWrapper>
 {:else}
@@ -54,6 +58,7 @@
     <Node
       { name }
       mode="only"
+      bind:isDone
     />
   </DefaultWrapper>
 {/if}

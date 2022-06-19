@@ -4,14 +4,20 @@
   import MetadataFooter from '$components/footer/metadata/Footer.svelte';
   import Link from '$components/common/Link.svelte';
   import Point from '$components/ornaments/Point.svelte';
+  import { onMount } from 'svelte';
 
   export let name: NodeName;
+  export let isDone: boolean;
 
   let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
     ...$metadata$.nodes[name],
     links: $metadata$.links[name],
     mode: 'only'
+  }
+
+  const scrollIntoView = (element: HTMLElement) => {
+    element.scrollIntoView();
   }
 </script>
 
@@ -20,6 +26,7 @@
 >
   <div
     class="back-button"
+    use:scrollIntoView
   >
     <Link 
       href="/nodes"
@@ -33,17 +40,19 @@
     <slot />
   </main>
 
-  <div
-    class="footer-container"
-  >
-    <MetadataFooter 
-      { name }
-      { nodeMetadata }
-      isExpanded={true}
-      showArrow={false}
-      toggleEnabled={false}
-    />
-  </div>
+  {#if isDone}
+    <div
+      class="footer-container"
+    >
+      <MetadataFooter 
+        { name }
+        { nodeMetadata }
+        isExpanded={true}
+        showArrow={false}
+        toggleEnabled={false}
+      />
+    </div>
+  {/if}
 </div>
 
 <style>
@@ -60,7 +69,6 @@
   }
 
   .node-container {
-    min-height: 100vh;
     overflow: hidden;
   }
 </style>

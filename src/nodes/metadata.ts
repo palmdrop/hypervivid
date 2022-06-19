@@ -387,7 +387,7 @@ export default {
       "weight": 0.23529411764705882,
       "count": 4
     },
-    "photography": {
+    "internet": {
       "weight": 0.23529411764705882,
       "count": 4
     },
@@ -399,11 +399,11 @@ export default {
       "weight": 0.17647058823529413,
       "count": 3
     },
-    "hyper": {
+    "photography": {
       "weight": 0.17647058823529413,
       "count": 3
     },
-    "internet": {
+    "hyper": {
       "weight": 0.17647058823529413,
       "count": 3
     },
@@ -504,14 +504,14 @@ export default {
     "webfuse": {
       "tags": [
         "art",
-        "photography",
+        "internet",
         "hyper",
         "project",
         "fuse",
         "memes"
       ],
       "createdAt": "Sat, 18 Jun 2022 12:07:12 GMT",
-      "updatedAt": "Sat, 18 Jun 2022 22:05:03 GMT",
+      "updatedAt": "Sun, 19 Jun 2022 08:05:15 GMT",
       "inline": false,
       "title": "Web Fuse",
       "description": "Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?",
@@ -540,9 +540,9 @@ export default {
         "external"
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Sun, 19 Jun 2022 08:05:48 GMT",
       "inline": false,
-      "title": "links",
+      "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
       "image": ""
     },
@@ -565,10 +565,10 @@ export default {
       ],
       "createdAt": "Thu, 26 May 2022 12:34:15 GMT",
       "inline": false,
-      "title": "contact",
+      "title": "Contact",
       "description": "A form for sending me an email. Nothing more.",
       "image": "",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT"
+      "updatedAt": "Sun, 19 Jun 2022 08:05:56 GMT"
     },
     "about": {
       "tags": [
@@ -577,16 +577,16 @@ export default {
       ],
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
       "inline": false,
-      "title": "about",
+      "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
       "image": "/img/connections/connections1.jpg",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT"
+      "updatedAt": "Sun, 19 Jun 2022 08:06:04 GMT"
     },
     "hyper": {
       "tags": [
         "art",
-        "photography",
         "hyper",
+        "photography",
         "words"
       ],
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
