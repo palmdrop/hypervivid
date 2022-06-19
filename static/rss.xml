@@ -150,6 +150,12 @@
 <description>Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.</description>
 <pubDate>Sun, 14 Nov 2021 09:49:08 GMT</pubDate>
 </item><item>
+<guid>https://palmdrop.site/nodes/weave</guid>
+<title>Weave</title>
+<link>https://palmdrop.site/nodes/weave</link>
+<description>A combination of generative techniques: flowfields, plant-like growth algorithms, and noise.</description>
+<pubDate>Sun, 19 Jun 2022 10:25:11 GMT</pubDate>
+</item><item>
 <guid>https://palmdrop.site/nodes/webfuse</guid>
 <title>Web Fuse</title>
 <link>https://palmdrop.site/nodes/webfuse</link>

@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "art", "generative", "project", "organic", "flowfield", "noise"
+  ],
+  "links": [
+    "rhizome", "rehash-transform"
+  ],
+  "createdAt": "Sun, 19 Jun 2022 10:25:11 GMT",
+  "updatedAt": "Sun, 19 Jun 2022 10:25:11 GMT",
+  "inline": false,
+  "title": "Weave",
+  "description": "A combination of generative techniques: flowfields, plant-like growth algorithms, and noise.",
+  "image": "/img/weave/weave4.jpg",
+  "asDocument": true
+}

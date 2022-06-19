@@ -20,7 +20,7 @@
 
 <style>
   p {
-    color: var(--cFg);
+    /*color: var(--cFg);*/
     max-width: 44ch;
 
     line-height: 1.25em;

@@ -1,6 +1,9 @@
 /* Theme */
 :root {
+  /*
   --cFg: #090b20;
+  */
+  --cFg: #131422;
   --cBg: #c6cbd2;
 
   --cFgFaded: #200912aa;
@@ -18,7 +21,7 @@
   --fRegular: 'Fengardo-Neue';
   --fBold: 'Fengardo-Neue-Bold';
 
-  --fontSizeLarge: clamp(1.1rem, 2vw, 27px);
+  --fontSizeLarge: clamp(1.1rem, 2.5vw, 27px);
 
   --borderPrimary: 1px solid var(--cFg);
   --borderSoft: 1px solid var(--cFgSoft);
@@ -39,7 +42,7 @@
 
 /* Global styles */
 html {
-  font-size: clamp(15px, 1.6vw, 20px);
+  font-size: clamp(15px, 1.8vw, 20px);
   font-family: var(--fRegular);
 
   background-color: var(--cBg);

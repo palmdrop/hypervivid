@@ -7,6 +7,8 @@
   export let description: string[];
   export let name: string;
 
+  export let theme: 'light' | 'dark' = 'light';
+
   type Item = {
     imageUrl: string
   } | {
@@ -21,7 +23,9 @@
   ];
 </script>
 
-<div class="node">
+<div 
+  class={`node ${theme}`}
+>
   <FlowList
     items={items}
     randomXOffset={0.2}
@@ -39,7 +43,9 @@
       "
     />
   {:else}
-    <div class="description">
+    <div 
+      class={`description ${theme}`}
+    >
       {#each item.text as line (line)}
         <Paragraph big>
           {line}
@@ -58,6 +64,11 @@
     align-items: center;
   }
 
+  .dark {
+    background-color: var(--cBgInverted);
+    color: var(--cFgInverted);
+  }
+
   .description {
     padding-bottom: 10em;
     padding-top: 5em;
@@ -69,8 +80,15 @@
     max-width: 90vw;
     margin-bottom: 15em;
 
-    box-shadow: 0px 0px 100px var(--cBgInverted);
     border-radius: 1%;
+  }
+
+  .light img {
+    box-shadow: 0px 0px 100px var(--cBgInverted);
+  }
+
+  .dark img {
+    box-shadow: 0px 0px 100px var(--cBgDark);
   }
 </style>
   
