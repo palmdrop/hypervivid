@@ -48,7 +48,7 @@
     nodeNames={nodeNames}
     modeFirst="preview"
     modeRest="preview"
-    batchCount={5}
+    batchCount={7}
     scrollElement={mainRef}
   />
 </main>

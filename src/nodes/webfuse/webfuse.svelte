@@ -6,7 +6,7 @@
   const { name } = getNodeContext('webfuse');
   const description = [
     `A strange mix of techniques and source material. Memes, internet images, eerie aesthetics, warped and fused with pixel mixing techniques.`,
-    'This project became a semi-metaphorical visualization of remix/mash-up culture: memes that build on memes that build on references that build on references.',
+    'This project became a visualization of remix/mash-up culture: memes that build on memes that build on references that build on references.',
     'Internet culture can be organic and beautiful, but is often so infused with irony and distortion that all meaning is lost.'
   ];
 </script>

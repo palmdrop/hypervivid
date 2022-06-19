@@ -30,7 +30,6 @@
   import { useTitle } from "$utils/useTitle";
   import type { NodeMetadata, NodeName } from '$types/nodes';
   import { SITE_NAME } from '$constants';
-  import type { SvelteComponent } from 'svelte';
   import DocumentWrapper from '$components/node/wrappers/DocumentWrapper.svelte';
 
   export let name: NodeName;

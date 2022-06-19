@@ -40,5 +40,5 @@ export type NodeMetadata = {
 export type NodeContext = {
   name: NodeName,
   metadata: NodeMetadata,
-  mode: NodeMode
+  mode: NodeMode,
 }

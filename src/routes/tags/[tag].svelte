@@ -54,6 +54,7 @@
     nodeNames={nodeNames}
     modeFirst="preview"
     modeRest="preview"
+    batchCount={7}
   />
 </main>
 

@@ -8,7 +8,7 @@
     `I found that zoomed fragments of larger photos carry a calm, grainy aesthetic. 
     I started gathering details, textures and patterns from the peripheries of old images, and
     combined them with various pixel mixing techniques.`,
-    'All results, with one exception, are 1000x707 pixels.'
+    'The results are less calm.'
   ];
 </script>
 

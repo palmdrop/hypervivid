@@ -511,11 +511,11 @@ export default {
         "memes"
       ],
       "createdAt": "Sat, 18 Jun 2022 12:07:12 GMT",
-      "updatedAt": "Sat, 18 Jun 2022 19:43:37 GMT",
+      "updatedAt": "Sat, 18 Jun 2022 22:05:03 GMT",
       "inline": false,
       "title": "Web Fuse",
       "description": "Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?",
-      "image": "/img/webfuse/1599592445746.jpg",
+      "image": "/img/webfuse/gif2.gif",
       "asDocument": true
     },
     "fragfuse": {
@@ -591,10 +591,10 @@ export default {
       ],
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
       "inline": false,
-      "title": "hyper",
+      "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "Thu, 16 Jun 2022 19:39:13 GMT"
+      "updatedAt": "Sat, 18 Jun 2022 22:06:20 GMT"
     },
     "manifesto": {
       "tags": [
