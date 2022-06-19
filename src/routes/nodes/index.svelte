@@ -19,7 +19,6 @@
   }
   
   // TODO: add filters and search capabilities
-
   useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
 </script>
 

@@ -37,11 +37,18 @@
   export let tag: Tag;
   export let nodeNames: NodeName[];
 
+  let mainRef: HTMLElement;
+  const useMainRef = (ref: HTMLElement) => {
+    mainRef = ref;
+  }
+
   $: useTitle(`${tag} ~ ${SITE_NAME}`);
 </script>
 
 <Header />
-<main>
+<main
+  use:useMainRef
+>
   <h1>
     { tag }
   </h1>
@@ -55,6 +62,7 @@
     modeFirst="preview"
     modeRest="preview"
     batchCount={7}
+    scrollElement={mainRef}
   />
 </main>
 
