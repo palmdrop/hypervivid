@@ -1,23 +1,7 @@
 
 <script lang="ts">
   import Paragraph from '$components/common/Paragraph.svelte';
-  import { getNodeContext } from '$utils/useNodeContext';
   import links from './data.json';
-  const { name, metadata } = getNodeContext('links');
-
-  type Category = typeof links[number]['category'];
-  type Link = typeof links[number];
-
-  const linkSections = links.reduce((acc, current) => {
-    const category = current.category;
-    if(!acc[category]) acc[category] = [];
-    acc[category].push(current);
-    return acc;
-  }, {} as Record<Category, Link[]>)
-  /*
-    Table of links, title, description, category, time, all in its own cell
-    When filtering, just "hide" all other nodes?
-    */
 
   const urlRegex = /https?:\/\/(www\.)?([-a-zA-Z0-9@:%._\+~#=]+\.[a-zA-Z0-9()]+)\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/;
 
@@ -38,7 +22,7 @@
 
   <table>
     <tbody>
-      {#each [...links].reverse() as link, i }
+      {#each [...links].reverse() as link (link) }
         <tr>
           <td class="name">
             <a href={link.url} target="_blank" rel="noopener noreferrer">
