@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
   import type { NavEntry } from '$types/general';
+  import RssIcon from '$components/ornaments/indicators/RssIcon.svelte';
+
   export let entries: NavEntry[];
 
   let expanded = false;
@@ -70,11 +72,20 @@
       {/each}
     </ul>
   {/if}
+  <div 
+    class="rss"
+    href="/rss.xml"
+  >
+    <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+      <RssIcon size='1.2rem' />
+    </a>
+  </div>
 </nav>
 
 <style>
   nav {
     position: relative;
+    display: flex;
   }
 
   .expand-button {
@@ -82,6 +93,7 @@
     display: flex;
 
     border-left: var(--borderPrimary);
+    border-right: var(--borderPrimary);
     padding: 0.5em 1.7em;
 
     background-color: unset;
@@ -134,6 +146,7 @@
 
   li:last-child {
     border-bottom: unset;
+    border-right: var(--borderPrimary);
   }
 
   .clickable::before {
@@ -190,12 +203,17 @@
       width: auto;
       height: auto;
       font-size: 1.0rem;
-
     }
 
     a {
       padding: 0.5em 1.7em;
     }
+  }
+
+  .rss > a {
+    padding: 0.3em 0.4em;
+    outline: var(--borderPrimary);
+    border-radius: var(--borderRadius1);
   }
 
 </style>
