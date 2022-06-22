@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "art", "generative", "project", "rhizome", "noise", "space-colonization"
+  ],
+  "links": [
+    "webfuse", "rhizome", "weave"
+  ],
+  "createdAt": "Sun, 22 Jun 2022 21:26:31 GMT",
+  "updatedAt": "Sun, 22 Jun 2022 21:26:31 GMT",
+  "inline": false,
+  "title": "Chaos Growth",
+  "description": "Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.",
+  "image": "/img/chaos-growth/cg1.jpg",
+  "asDocument": true
+}

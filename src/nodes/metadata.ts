@@ -150,6 +150,102 @@ export default {
         "strength": 0.5
       }
     ],
+    "chaos-growth": [
+      {
+        "from": "chaos-growth",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "chaos-growth",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "webfuse": [
+      {
+        "from": "webfuse",
+        "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "webfuse",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "rhizome": [
+      {
+        "from": "rhizome",
+        "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "domain-warping": [
       {
         "from": "domain-warping",
@@ -209,38 +305,6 @@ export default {
       },
       {
         "from": "hyper",
-        "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "rhizome": [
-      {
-        "from": "rhizome",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "substrate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "weave",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
         "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
@@ -386,189 +450,172 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "webfuse": [
-      {
-        "from": "webfuse",
-        "to": "weave",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "webfuse",
-        "to": "hyper",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "webfuse",
-        "to": "rehash-transform",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "webfuse",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "webfuse",
-        "to": "rhizome",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "webfuse",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      }
     ]
   },
   "tags": {
     "generative": {
       "weight": 1,
-      "count": 19
+      "count": 20
     },
     "art": {
       "weight": 1,
-      "count": 19
+      "count": 20
     },
     "domain-warping": {
-      "weight": 0.631578947368421,
+      "weight": 0.6,
       "count": 12
     },
-    "organic": {
-      "weight": 0.3157894736842105,
+    "noise": {
+      "weight": 0.3,
       "count": 6
     },
-    "noise": {
-      "weight": 0.2631578947368421,
+    "organic": {
+      "weight": 0.3,
+      "count": 6
+    },
+    "project": {
+      "weight": 0.25,
       "count": 5
     },
     "geometry": {
-      "weight": 0.2631578947368421,
+      "weight": 0.25,
       "count": 5
     },
     "feedback": {
-      "weight": 0.21052631578947367,
-      "count": 4
-    },
-    "project": {
-      "weight": 0.21052631578947367,
+      "weight": 0.2,
       "count": 4
     },
     "internet": {
-      "weight": 0.21052631578947367,
+      "weight": 0.2,
       "count": 4
     },
     "writing": {
-      "weight": 0.15789473684210525,
+      "weight": 0.15,
       "count": 3
     },
     "photography": {
-      "weight": 0.15789473684210525,
+      "weight": 0.15,
       "count": 3
     },
     "hyper": {
-      "weight": 0.15789473684210525,
+      "weight": 0.15,
       "count": 3
     },
     "memes": {
-      "weight": 0.15789473684210525,
+      "weight": 0.15,
       "count": 3
     },
     "chrome": {
-      "weight": 0.15789473684210525,
+      "weight": 0.15,
       "count": 3
     },
     "info": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "glitch": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
+      "count": 2
+    },
+    "space-colonization": {
+      "weight": 0.1,
       "count": 2
     },
     "mind": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "fuse": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "external": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "dithering": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "css": {
-      "weight": 0.10526315789473684,
+      "weight": 0.1,
       "count": 2
     },
     "thoughts": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
+      "count": 1
+    },
+    "rhizome": {
+      "weight": 0.05,
       "count": 1
     },
     "contact": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "communication": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "particles": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "words": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "interactive": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "webart": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "instancing": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "texture": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "depth": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.05263157894736842,
-      "count": 1
-    },
-    "space-colonization": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05,
       "count": 1
     }
   },
   "nodes": {
+    "chaos-growth": {
+      "tags": [
+        "art",
+        "generative",
+        "noise",
+        "project",
+        "space-colonization",
+        "rhizome"
+      ],
+      "createdAt": "Sun, 22 Jun 2022 21:26:31 GMT",
+      "updatedAt": "Wed, 22 Jun 2022 20:56:28 GMT",
+      "inline": false,
+      "title": "Chaos Growth",
+      "description": "Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.",
+      "image": "/img/chaos-growth/cg1.jpg",
+      "asDocument": true
+    },
     "objects": {
       "tags": [
         "art",
@@ -794,8 +841,8 @@ export default {
         "domain-warping",
         "organic",
         "feedback",
-        "Deleuze",
-        "space-colonization"
+        "space-colonization",
+        "Deleuze"
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
       "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
