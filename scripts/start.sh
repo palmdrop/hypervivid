@@ -4,6 +4,6 @@ npm run prebuild
 
 npx chokidar \
   "src/nodes/*/metadata.*" \
-  -c "npm run prebuild" &
+  -c "npm run process" &
 
 npm run dev 
