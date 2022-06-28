@@ -12,14 +12,6 @@
   let timeout: NodeJS.Timeout;
   let showFallback = !delayMs;
 
-  /*
-  let props: Record<string, any>;
-  $: {
-    const { component, delayMs, isDone, failed, ...restProps } = $$props;
-    props = restProps;
-  }
-  */
-
   onMount(() => {
     if (delayMs) {
       timeout = setTimeout(() => {

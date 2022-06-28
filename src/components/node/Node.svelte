@@ -36,9 +36,13 @@
     });
   }
 
-  $: showPreview = (
-    !['only', 'main', 'inline'].includes(mode) &&
-    nodeMetadata && !nodeMetadata.inline
+  $: showPreview = nodeMetadata && (
+    (
+      !['only', 'main', 'inline'].includes(mode) &&
+      !nodeMetadata.inline
+    ) || (
+      mode === 'preview-force'
+    )
   );
 
   $: previewPath = `../../nodes/${name}/${name}.preview.svelte`

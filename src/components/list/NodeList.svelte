@@ -6,9 +6,12 @@
   import { onDestroy } from "svelte/internal";
   import FullscreenIcon from "$components/ornaments/indicators/FullscreenIcon.svelte";
   import StarLoader from "$components/ornaments/loaders/StarLoader.svelte";
+  import Paragraph from "$components/common/Paragraph.svelte";
 
   export let showOpenLink: boolean = true;
   export let nodeNames: NodeName[];
+
+  export let itemLabels: string[] = [];
 
   export let batchCount = -1;
   export let autoLoad = false;
@@ -88,11 +91,16 @@
   class="node-list"
   on:scroll={handleScroll}
 >
-  {#each includedNodeNames as name, i (name)}
+  {#each includedNodeNames as name, i (`${name}-${i}`)}
     <li
       on:click={() => onItemClick(name)}
       class:loading={i > (loadedUpToIndex - batchCount) && !allIncludedLoaded}
     >
+      {#if itemLabels.length > i}
+        <div class="item-label">
+          <Paragraph big wide>{itemLabels[i]}</Paragraph>
+        </div>
+      {/if}
       <Node
         name={name}
         mode={i === 0 ? modeFirst : modeRest}
@@ -209,5 +217,18 @@
 
     margin: 0em;
     padding: 0em;
+  }
+
+  .item-label {
+    padding: 0.5em 0.5em;
+    margin: 1.0em 0.0em;
+    text-transform: uppercase;
+
+    font-family: var(--fDisplay);
+
+    background-color: var(--cBgInverted);
+    color: var(--cFgInverted);
+
+    border-radius: 0.5em;
   }
 </style>

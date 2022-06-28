@@ -21,8 +21,7 @@
   // TODO: or always show the latest one first, then featured
   $: nodeNames = [
     'about',
-    'links',
-    'manifesto',
+    'latest',
   ] as NodeName[];
 
   // TODO: add fallback route => display missing route with big text. Add option to go back to previous/home
@@ -66,7 +65,7 @@
     <NodeList
       nodeNames={nodeNames} 
       modeFirst="preview"
-      modeRest="preview"
+      modeRest="inline"
     />
     <a 
       href="/nodes"

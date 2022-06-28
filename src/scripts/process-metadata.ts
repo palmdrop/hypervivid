@@ -254,6 +254,19 @@ const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, nu
   }) 
 }
 
+const findMostRecentlyUpdatedNode = (nodes: Metadata['nodes']) => {
+  const result = Object.keys(nodes).reduce((acc, name) => {
+    const node = nodes[name];
+    const contender = { node, name };
+    if(!acc) return contender;
+    const { node: otherNode } = acc;
+    return new Date(node.updatedAt) > new Date(otherNode.updatedAt) ? contender : acc;
+  }, undefined as undefined | { node: Metadata['nodes'][string], name: string })
+
+  if(result) return result.name;
+  return undefined;
+}
+
 const processTags = (tags: Map<string, number>) => {
   let maxWeight = 0.0;
 
@@ -328,12 +341,17 @@ const main = async () => {
   // TODO: or show most recently changed tag first?
 
   // Write to file
+  const latestNode = Object.keys(metadata.nodes)[0];
+  const mostRecentlyUpdatedNode = findMostRecentlyUpdatedNode(metadata.nodes);
+
   fs.writeFileSync(
     METADATA_FILE_PATH,
     `export default ${JSON.stringify({
       ...metadata,
       links: Object.fromEntries(links),
-      tags: processTags(tags)
+      tags: processTags(tags),
+      latestNode,
+      mostRecentlyUpdatedNode
     }, null, 2)} as const;`
   );
 

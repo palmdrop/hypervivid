@@ -162,6 +162,12 @@ export default {
         "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "chaos-growth",
+        "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "webfuse": [
@@ -246,6 +252,32 @@ export default {
         "strength": 0.5
       }
     ],
+    "weave": [
+      {
+        "from": "weave",
+        "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "weave",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "weave",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "weave",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "domain-warping": [
       {
         "from": "domain-warping",
@@ -310,6 +342,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "latest": [],
     "links": [
       {
         "from": "links",
@@ -430,27 +463,7 @@ export default {
         "strength": 0.5
       }
     ],
-    "slices": [],
-    "weave": [
-      {
-        "from": "weave",
-        "to": "rhizome",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "weave",
-        "to": "rehash-transform",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "weave",
-        "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ]
+    "slices": []
   },
   "tags": {
     "generative": {
@@ -489,6 +502,10 @@ export default {
       "weight": 0.2,
       "count": 4
     },
+    "info": {
+      "weight": 0.15,
+      "count": 3
+    },
     "writing": {
       "weight": 0.15,
       "count": 3
@@ -508,10 +525,6 @@ export default {
     "chrome": {
       "weight": 0.15,
       "count": 3
-    },
-    "info": {
-      "weight": 0.1,
-      "count": 2
     },
     "glitch": {
       "weight": 0.1,
@@ -573,6 +586,10 @@ export default {
       "weight": 0.05,
       "count": 1
     },
+    "utility": {
+      "weight": 0.05,
+      "count": 1
+    },
     "webart": {
       "weight": 0.05,
       "count": 1
@@ -599,6 +616,18 @@ export default {
     }
   },
   "nodes": {
+    "latest": {
+      "tags": [
+        "info",
+        "utility"
+      ],
+      "createdAt": "Tue, 28 Jun 2022 07:07:14 GMT",
+      "updatedAt": "Tue, 28 Jun 2022 14:24:40 GMT",
+      "inline": false,
+      "title": "Latest",
+      "description": "Displays the most recently created and most recently updated nodes. Just a utility node.",
+      "image": ""
+    },
     "chaos-growth": {
       "tags": [
         "art",
@@ -609,7 +638,7 @@ export default {
         "rhizome"
       ],
       "createdAt": "Sun, 22 Jun 2022 21:26:31 GMT",
-      "updatedAt": "Wed, 22 Jun 2022 20:56:28 GMT",
+      "updatedAt": "Wed, 22 Jun 2022 20:57:47 GMT",
       "inline": false,
       "title": "Chaos Growth",
       "description": "Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.",
@@ -1012,5 +1041,7 @@ export default {
       "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
       "image": "/img/pieces/retro-core.jpg"
     }
-  }
+  },
+  "latestNode": "latest",
+  "mostRecentlyUpdatedNode": "latest"
 } as const;

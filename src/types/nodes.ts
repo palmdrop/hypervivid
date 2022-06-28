@@ -17,6 +17,7 @@ export type Link = {
 export type NodeMode 
   = 'link'
   | 'preview'
+  | 'preview-force'
   | 'inline'
   | 'main'
   | 'only';
