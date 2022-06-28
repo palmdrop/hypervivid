@@ -379,5 +379,11 @@
     "url": "https://permacomputing.net/",
     "category": "Tech",
     "additionalCategories": []
+  },
+  {
+    "text": "Herman",
+    "url": "https://herman.bearblog.dev/",
+    "category": "Blog",
+    "additionalCategories": []
   }
 ]

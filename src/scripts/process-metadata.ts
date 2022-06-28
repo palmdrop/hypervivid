@@ -132,7 +132,8 @@ const processNode = async (
 
   // Read metadata
   try {
-    const metadataPath = `${NODES_DIR}/${nodeName}/metadata.json`;
+    const nodeDirPath = `${NODES_DIR}/${nodeName}`;
+    const metadataPath = `${nodeDirPath}/metadata.json`;
     if(fs.existsSync(metadataPath)) {
       const metadata = JSON.parse(fs.readFileSync(
         metadataPath,
@@ -189,7 +190,6 @@ const processNode = async (
       // Get edited date
       try {
         const stats = fs.statSync(metadataPath);
-        // console.log(stats.mtime);
         metadata.updatedAt = stats.mtime.toUTCString();
       } catch (err) {
         console.log('Could not determine updated time for node', nodeName);

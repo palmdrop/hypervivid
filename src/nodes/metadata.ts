@@ -542,10 +542,6 @@ export default {
       "weight": 0.1,
       "count": 2
     },
-    "external": {
-      "weight": 0.1,
-      "count": 2
-    },
     "dithering": {
       "weight": 0.1,
       "count": 2
@@ -590,6 +586,10 @@ export default {
       "weight": 0.05,
       "count": 1
     },
+    "exploration": {
+      "weight": 0.05,
+      "count": 1
+    },
     "webart": {
       "weight": 0.05,
       "count": 1
@@ -607,6 +607,10 @@ export default {
       "count": 1
     },
     "Deleuze": {
+      "weight": 0.05,
+      "count": 1
+    },
+    "external": {
       "weight": 0.05,
       "count": 1
     },
@@ -717,10 +721,10 @@ export default {
     "links": {
       "tags": [
         "internet",
-        "external"
+        "exploration"
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "Sun, 19 Jun 2022 08:05:48 GMT",
+      "updatedAt": "Tue, 28 Jun 2022 14:47:25 GMT",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -1043,5 +1047,5 @@ export default {
     }
   },
   "latestNode": "latest",
-  "mostRecentlyUpdatedNode": "latest"
+  "mostRecentlyUpdatedNode": "links"
 } as const;
