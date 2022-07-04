@@ -20,6 +20,7 @@
   --fDisplay: 'Gulax';
   --fRegular: 'Fengardo-Neue';
   --fBold: 'Fengardo-Neue-Bold';
+  --fItalic: 'SyneItalic';
 
   --fontSizeLarge: clamp(1.1rem, 2.5vw, 27px);
 

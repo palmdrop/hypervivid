@@ -34,6 +34,12 @@ export default {
         "to": "about",
         "kind": "consumed",
         "strength": 0.5
+      },
+      {
+        "from": "moons",
+        "to": "ethereal-bits",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "manifesto": [
@@ -286,6 +292,28 @@ export default {
         "strength": 0.5
       }
     ],
+    "ethereal-bits": [
+      {
+        "from": "ethereal-bits",
+        "to": "slices",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "ethereal-bits",
+        "to": "moons",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "slices": [
+      {
+        "from": "slices",
+        "to": "ethereal-bits",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "flat-clouds": [
       {
         "from": "flat-clouds",
@@ -462,8 +490,7 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "slices": []
+    ]
   },
   "tags": {
     "generative": {
@@ -510,6 +537,10 @@ export default {
       "weight": 0.15,
       "count": 3
     },
+    "css": {
+      "weight": 0.15,
+      "count": 3
+    },
     "photography": {
       "weight": 0.15,
       "count": 3
@@ -534,6 +565,10 @@ export default {
       "weight": 0.1,
       "count": 2
     },
+    "webart": {
+      "weight": 0.1,
+      "count": 2
+    },
     "mind": {
       "weight": 0.1,
       "count": 2
@@ -547,10 +582,6 @@ export default {
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.1,
-      "count": 2
-    },
-    "css": {
       "weight": 0.1,
       "count": 2
     },
@@ -590,10 +621,6 @@ export default {
       "weight": 0.05,
       "count": 1
     },
-    "webart": {
-      "weight": 0.05,
-      "count": 1
-    },
     "instancing": {
       "weight": 0.05,
       "count": 1
@@ -620,6 +647,18 @@ export default {
     }
   },
   "nodes": {
+    "ethereal-bits": {
+      "tags": [
+        "css",
+        "webart"
+      ],
+      "createdAt": "Thu, 30 Jun 2022 18:01:04 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:24:33 GMT",
+      "inline": false,
+      "title": "Ethereal Bits",
+      "description": "A node for simple html/css/svg aesthetics and experiments. Exploring how native web tools can be used to create unexpected effects.",
+      "image": "/img/ethereal-bits/weeds.png"
+    },
     "latest": {
       "tags": [
         "info",
@@ -1046,6 +1085,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "latest",
+  "latestNode": "ethereal-bits",
   "mostRecentlyUpdatedNode": "links"
 } as const;

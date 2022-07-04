@@ -254,11 +254,15 @@ const sortNodeTags = (nodeMetadata: Record<string, any>, allTags: Map<string, nu
   }) 
 }
 
-const findMostRecentlyUpdatedNode = (nodes: Metadata['nodes']) => {
+const findMostRecentlyUpdatedNode = (nodes: Metadata['nodes'], skipNodes: string[] = []) => {
   const result = Object.keys(nodes).reduce((acc, name) => {
+    if(skipNodes.includes(name)) return acc;
+
     const node = nodes[name];
     const contender = { node, name };
+
     if(!acc) return contender;
+
     const { node: otherNode } = acc;
     return new Date(node.updatedAt) > new Date(otherNode.updatedAt) ? contender : acc;
   }, undefined as undefined | { node: Metadata['nodes'][string], name: string })
@@ -342,7 +346,7 @@ const main = async () => {
 
   // Write to file
   const latestNode = Object.keys(metadata.nodes)[0];
-  const mostRecentlyUpdatedNode = findMostRecentlyUpdatedNode(metadata.nodes);
+  const mostRecentlyUpdatedNode = findMostRecentlyUpdatedNode(metadata.nodes, [latestNode]);
 
   fs.writeFileSync(
     METADATA_FILE_PATH,

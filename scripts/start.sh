@@ -1,6 +1,7 @@
 #!/bin/bash
 
 npm run prebuild
+npm run process
 
 npx chokidar \
   "src/nodes/*/metadata.*" \

@@ -1,0 +1,14 @@
+{
+  "tags": [
+    "css", "webart"
+  ],
+  "links": [
+    "slices", "moons"
+  ],
+  "createdAt": "Thu, 30 Jun 2022 18:01:04 GMT",
+  "updatedAt": "Thu, 30 Jun 2022 18:01:04 GMT",
+  "inline": false,
+  "title": "Ethereal Bits",
+  "description": "A node for simple html/css/svg aesthetics and experiments. Exploring how native web tools can be used to create unexpected effects.",
+  "image": "/img/ethereal-bits/weeds.png"
+}

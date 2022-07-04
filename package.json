@@ -5,7 +5,7 @@
     "start": ". scripts/start.sh",
     "dev": "svelte-kit dev --host",
     "prebuild": "npm install",
-    "process": ". ./scripts/prebuild.sh",
+    "process": ". ./scripts/process.sh",
     "gen": ". ./scripts/generate.sh",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
