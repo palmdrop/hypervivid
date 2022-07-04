@@ -501,6 +501,10 @@ export default {
       "weight": 1,
       "count": 20
     },
+    "live": {
+      "weight": 0.65,
+      "count": 13
+    },
     "domain-warping": {
       "weight": 0.6,
       "count": 12
@@ -510,6 +514,10 @@ export default {
       "count": 6
     },
     "organic": {
+      "weight": 0.3,
+      "count": 6
+    },
+    "interactive": {
       "weight": 0.3,
       "count": 6
     },
@@ -606,10 +614,6 @@ export default {
       "count": 1
     },
     "words": {
-      "weight": 0.05,
-      "count": 1
-    },
-    "interactive": {
       "weight": 0.05,
       "count": 1
     },
@@ -835,13 +839,14 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "organic",
         "feedback",
         "glitch"
       ],
       "createdAt": "4 May 2022 11:45:09 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:27:25 GMT",
       "inline": false,
       "title": "Block Dissolve",
       "description": "Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.",
@@ -851,13 +856,14 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "dithering",
         "blue-noise",
         "glitch"
       ],
       "createdAt": "27 Mar 2022 11:45:09 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:27:43 GMT",
       "inline": false,
       "title": "Medusa Network",
       "description": "Dithering, living rows and grids, jellyfish, glitchy and organic. An expansion on the Noise Construct experiment.",
@@ -867,12 +873,13 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "dithering",
         "blue-noise"
       ],
       "createdAt": "25 Mar 2022 11:45:09 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:27:59 GMT",
       "inline": false,
       "title": "Noise Construct",
       "description": "Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.",
@@ -882,11 +889,12 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "chrome"
       ],
       "createdAt": "14 Mar 2022 10:23:19 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:28:09 GMT",
       "inline": false,
       "title": "Skew Bulbs",
       "description": "Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.",
@@ -910,6 +918,7 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "organic",
         "feedback",
@@ -917,7 +926,7 @@ export default {
         "Deleuze"
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -927,12 +936,13 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "organic",
         "feedback"
       ],
       "createdAt": "13 Feb 2022 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Substrate",
       "description": "More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.",
@@ -942,14 +952,15 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
+        "interactive",
         "organic",
         "geometry",
-        "feedback",
-        "interactive"
+        "feedback"
       ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
@@ -1000,11 +1011,13 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
+        "interactive",
         "mind",
         "particles"
       ],
       "createdAt": "26 Dec 2021 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Flat Clouds",
       "description": "Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.",
@@ -1014,6 +1027,7 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
         "internet",
         "memes",
@@ -1021,7 +1035,7 @@ export default {
         "instancing"
       ],
       "createdAt": "23 Dec 2021 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Rehash Transform",
       "description": "Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.",
@@ -1031,11 +1045,13 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
         "domain-warping",
+        "interactive",
         "geometry"
       ],
       "createdAt": "14 Nov 2021 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Virtual Imprint",
       "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
@@ -1045,11 +1061,13 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
+        "interactive",
         "geometry",
         "chrome"
       ],
       "createdAt": "15 Oct 2021 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Solar Landscape",
       "description": "An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.",
@@ -1059,11 +1077,13 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
+        "interactive",
         "geometry",
         "chrome"
       ],
       "createdAt": "13 Oct 2021 09:49:08 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Solar Chrome",
       "description": "Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.",
@@ -1073,12 +1093,14 @@ export default {
       "tags": [
         "generative",
         "art",
+        "live",
+        "interactive",
         "geometry",
         "texture",
         "depth"
       ],
       "createdAt": "15 Sep 2021 15:24:28 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
       "inline": false,
       "title": "Retro Core",
       "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
@@ -1086,5 +1108,5 @@ export default {
     }
   },
   "latestNode": "ethereal-bits",
-  "mostRecentlyUpdatedNode": "links"
+  "mostRecentlyUpdatedNode": "rhizome"
 } as const;
