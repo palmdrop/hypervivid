@@ -13,5 +13,19 @@
     font-size: 10em;
 
     font-family: var(--fItalic);
+
+    transform: scale(0.5);
+  }
+
+  @media ( min-width: 600px )  {
+    span {
+      transform: scale(0.7);
+    }
+  }
+
+  @media ( min-width: 1000px )  {
+    span {
+      transform: scale(1.0);
+    }
   }
 </style>

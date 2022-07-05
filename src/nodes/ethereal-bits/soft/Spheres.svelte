@@ -16,6 +16,20 @@
     position: relative;
     left: -100px;
     height: 200px;
+
+    transform: scale(0.7);
+  }
+
+  @media ( min-width: 600px )  {
+    .container {
+      transform: scale(0.8);
+    }
+  }
+
+  @media ( min-width: 1000px )  {
+    .container {
+      transform: scale(1.0);
+    }
   }
 
   .sphere {

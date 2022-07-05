@@ -33,6 +33,19 @@
     height: 1050px;
     top: -170px;
     left: -100px;
+    transform: scale(0.7);
+  }
+
+  @media ( min-width: 600px )  {
+    .container {
+      transform: scale(0.8);
+    }
+  }
+
+  @media ( min-width: 1000px )  {
+    .container {
+      transform: scale(1.0);
+    }
   }
 
   .grass-container {
