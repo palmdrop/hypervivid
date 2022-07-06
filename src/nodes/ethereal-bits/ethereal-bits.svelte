@@ -18,6 +18,9 @@
 <div class="node">
   <Paragraph
     big
+    style="
+      padding: 0.3em;
+    "
   >
     { metadata.description }
   </Paragraph>

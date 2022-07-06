@@ -5,6 +5,7 @@
   export let faded = false;
   export let bold = false;
   export let tooltip: undefined | string = undefined 
+  export let style: string | undefined = undefined;
 </script>
 
 <p 
@@ -14,6 +15,7 @@
   class:faded
   class:bold
   title={tooltip}
+  style={style}
 >
   <slot />
 </p>
