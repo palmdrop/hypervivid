@@ -65,6 +65,7 @@
         >
           <a
             href={path}
+            sveltekit:prefetch
           >
             { text }
           </a>
@@ -76,7 +77,7 @@
     class="rss"
     href="/rss.xml"
   >
-    <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+    <a href="/rss.xml" sveltekit:reload>
       <RssIcon size='1.2rem' />
     </a>
   </div>

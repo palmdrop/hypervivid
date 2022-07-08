@@ -56,12 +56,6 @@
     }
   }
 
-  // Navigating
-  const onItemClick = (name: string) => {
-    // TODO: avoid programmatic navigation. Make list item an a tag
-    goto(`/nodes/${name}`);
-  }
-
   // Listeners
   const handleScroll = throttle((
     event: UIEvent & { target: EventTarget | null }
@@ -93,21 +87,22 @@
 >
   {#each includedNodeNames as name, i (`${name}-${i}`)}
     <li
-      on:click={() => onItemClick(name)}
       class:loading={i > (loadedUpToIndex - batchCount) && !allIncludedLoaded}
     >
-      {#if itemLabels.length > i}
-        <div class="item-label">
-          <Paragraph big wide>{itemLabels[i]}</Paragraph>
-        </div>
-      {/if}
-      <Node
-        name={name}
-        mode={i === 0 ? modeFirst : modeRest}
-        index={i}
-        bind:isDone={isDone[i]}
-        showLoader={false}
-      />
+      <a href={`/nodes/${name}`}>
+        {#if itemLabels.length > i}
+          <div class="item-label">
+            <Paragraph big wide>{itemLabels[i]}</Paragraph>
+          </div>
+        {/if}
+        <Node
+          name={name}
+          mode={i === 0 ? modeFirst : modeRest}
+          index={i}
+          bind:isDone={isDone[i]}
+          showLoader={false}
+        />
+      </a>
       {#if showOpenLink && (i === 0 ? modeFirst : modeRest) !== 'link'}
         <a
           href={`/nodes/${name}`}
@@ -157,8 +152,6 @@
 
   li {
     position: relative;
-    padding: 2.0em 0.8em;
-    padding-bottom: 3em;
     border: var(--borderPrimary);
     margin: 5px 2px;
 
@@ -172,6 +165,17 @@
 
     transition: 0.2s;
     border-radius: var(--borderRadius1);
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 2.0em 0.8em;
+    padding-bottom: 3em;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   .loading {
@@ -193,8 +197,11 @@
     }
 
     li {
-      padding: 2.5em;
       margin: 5px;
+    }
+
+    a {
+      padding: 2.5em;
     }
   }
 
@@ -206,6 +213,8 @@
     position: absolute;
     top: 0.6em;
     right: 0.6em;
+
+    padding: unset;
 
     text-decoration: none;
   }
