@@ -2,19 +2,21 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import { getNodeContext } from '$utils/useNodeContext';
   import type { SvelteComponentDev } from 'svelte/internal';
-import Red from './soft/Red.svelte';
+  import Fades from './soft/Fades.svelte';
+  import Red from './soft/Red.svelte';
   import Spheres from './soft/Spheres.svelte';
   import SprayText from './soft/SprayText.svelte';
   import Weeds from './soft/Weeds.svelte';
 
   const { metadata } = getNodeContext('ethereal-bits');
 
-  const entries: (typeof SvelteComponentDev)[] = [
-    Spheres,
-    Weeds,
-    SprayText,
-    Red
-  ];
+  const entries: { [name: string]: (typeof SvelteComponentDev)} = {
+    'spheres': Spheres,
+    'weeds': Weeds,
+    'graffiti': SprayText,
+    'work/rest in red': Red,
+    'fades': Fades 
+  };
 </script>
 
 <div class="node">
@@ -27,8 +29,9 @@ import Red from './soft/Red.svelte';
     { metadata.description }
   </Paragraph>
   <ul>
-    {#each entries as Entry, i (i)}
+    {#each Object.entries(entries) as [name, Entry], i (i)}
       <li>
+        <h2>{ name }</h2>
         <svelte:component this={Entry} />
       </li>
     {/each}
@@ -62,6 +65,16 @@ import Red from './soft/Red.svelte';
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  h2 {
+    position: absolute;
+    top: 0.3em;
+    left: 0.3em;
+    font-size: 1.4em;
+    text-transform: lowercase;
+
+    color: var(--cFgFaded);
   }
 </style>
   
