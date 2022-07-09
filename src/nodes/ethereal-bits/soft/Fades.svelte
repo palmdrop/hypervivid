@@ -20,8 +20,8 @@
 
     margin: 0.5em;
 
-    box-shadow: 0px 50px 40px -10px rgba(208, 4, 4, 0.05),
-      inset 0px 0px 20px 5px rgba(116, 84, 84, 0.14);
+    box-shadow: 0px 50px 40px -5px rgba(67, 41, 41, 0.226),
+      inset 0px 0px 20px 5px rgba(116, 84, 84, 0.453);
   }
 
   .fade:nth-child(1) {
