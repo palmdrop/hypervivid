@@ -385,5 +385,13 @@
     "url": "https://herman.bearblog.dev/",
     "category": "Blog",
     "additionalCategories": []
+  },
+  {
+    "text": "Forevermidi",
+    "url": "https://forevermidi.com/",
+    "category": "Art",
+    "additionalCategories": [
+      "Tech"
+    ]
   }
 ]

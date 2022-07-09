@@ -2,6 +2,7 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import { getNodeContext } from '$utils/useNodeContext';
   import type { SvelteComponentDev } from 'svelte/internal';
+import Red from './soft/Red.svelte';
   import Spheres from './soft/Spheres.svelte';
   import SprayText from './soft/SprayText.svelte';
   import Weeds from './soft/Weeds.svelte';
@@ -11,7 +12,8 @@
   const entries: (typeof SvelteComponentDev)[] = [
     Spheres,
     Weeds,
-    SprayText
+    SprayText,
+    Red
   ];
 </script>
 

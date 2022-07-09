@@ -78,6 +78,7 @@
     'fuck',
     'cringe',
     'gagement',
+    'politics'
   ].map(word => `hyper${word}`.toUpperCase());
 
   const boxHeight = 7;
