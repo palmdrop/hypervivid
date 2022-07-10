@@ -533,6 +533,10 @@ export default {
       "weight": 0.2,
       "count": 4
     },
+    "css": {
+      "weight": 0.2,
+      "count": 4
+    },
     "internet": {
       "weight": 0.2,
       "count": 4
@@ -542,10 +546,6 @@ export default {
       "count": 3
     },
     "writing": {
-      "weight": 0.15,
-      "count": 3
-    },
-    "css": {
       "weight": 0.15,
       "count": 3
     },
@@ -812,6 +812,7 @@ export default {
     "hyper": {
       "tags": [
         "art",
+        "css",
         "hyper",
         "photography",
         "words"
@@ -821,7 +822,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "Sat, 18 Jun 2022 22:06:20 GMT"
+      "updatedAt": "Sun, 10 Jul 2022 12:53:26 GMT"
     },
     "manifesto": {
       "tags": [
@@ -903,8 +904,8 @@ export default {
     "slices": {
       "tags": [
         "art",
-        "photography",
         "css",
+        "photography",
         "external"
       ],
       "createdAt": "02 Mar 2022 09:49:08 GMT",
@@ -1108,5 +1109,5 @@ export default {
     }
   },
   "latestNode": "ethereal-bits",
-  "mostRecentlyUpdatedNode": "rhizome"
+  "mostRecentlyUpdatedNode": "hyper"
 } as const;

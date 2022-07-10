@@ -2,6 +2,10 @@
 	import { wrapSlice } from './../../utils/general';
   import { onDestroy } from 'svelte';
   import { useTitle } from '$utils/useTitle';
+  import { getNodeContext } from '$utils/useNodeContext';
+  import Flicker from './extra/Flicker.svelte';
+
+  const { mode } = getNodeContext('hyper');
 
   const images = [
     '/img/combined/comb1.jpg',
@@ -90,6 +94,8 @@
 
   // TODO: or optimize by precalculating all offset strings
 
+  // TODO: grid of hyperwords against forrest background, clip words
+
   const getRandomIndex = () => {
     return Math.floor(Math.random() * hyperwords.length);
   }
@@ -128,37 +134,54 @@
   }
 </script>
 
-<div>
-  <img
-    src={imageSrc}
-    alt=''
-  />
-  <ul>
-    {#each { length: boxHeight } as _, i (i)}
-      <li
-        on:mouseenter={() => handleHover(i)}
-        on:touchend={() => handleHover(i)}
-        on:focus={() => {}}
-      >
-        <span>{currentWords[i]}</span>
-      </li>
-    {/each}
-  </ul>
+<div class="node">
+  <div class="frame" class:only={mode === 'only'}>
+    <img
+      src={imageSrc}
+      alt=''
+    />
+    <ul>
+      {#each { length: boxHeight } as _, i (i)}
+        <li
+          on:mouseenter={() => handleHover(i)}
+          on:touchend={() => handleHover(i)}
+          on:focus={() => {}}
+        >
+          <span>{currentWords[i]}</span>
+        </li>
+      {/each}
+    </ul>
+  </div>
+  {#if mode === 'only'}
+    <Flicker words={hyperwords} />
+  {/if}
 </div>
 
 <style>
-  div {
+  .node {
     width: 100%;
-    height: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
+  .frame {
     font-family: var(--fMono);
+    position: relative;
+  }
+
+  .only {
+    margin-top: 5em;
   }
 
   ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     padding: 1em;
     font-size: clamp(18px, 7vw, 2.1rem);
     line-height: 0.9em;
@@ -170,9 +193,8 @@
   } 
   
   img {
-    position: absolute;
     height: 100%;
-    max-height: 75%;
+    max-height: 75vh;
     object-fit: cover;
     aspect-ratio: 3/2;
     z-index: -1;
