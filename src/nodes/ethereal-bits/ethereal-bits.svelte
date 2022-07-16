@@ -2,21 +2,30 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import { getNodeContext } from '$utils/useNodeContext';
   import type { SvelteComponentDev } from 'svelte/internal';
-  import Fades from './soft/Fades.svelte';
-  import Red from './soft/Red.svelte';
-  import Spheres from './soft/Spheres.svelte';
-  import SprayText from './soft/SprayText.svelte';
-  import Weeds from './soft/Weeds.svelte';
+
+  type Bit = {
+    Component: typeof SvelteComponentDev, 
+    backgroundColor?: string
+  };
+
+  const nameRegex = /.\/bits\/(\w+).svelte/g;
+
+  const imports = import.meta.globEager('./bits/*');
+  const bits = Object.entries(imports).reduce((acc, [path, bitImport]) => {
+    let name = bitImport.name;
+    if(!name) {
+      name = [...path.matchAll(nameRegex)][0][1];
+    }
+
+    acc[name] = {
+      Component: bitImport.default,
+      backgroundColor: bitImport.backgroundColor
+    }
+
+    return acc;
+  }, {} as { [name: string]: Bit })
 
   const { metadata } = getNodeContext('ethereal-bits');
-
-  const entries: { [name: string]: (typeof SvelteComponentDev)} = {
-    'spheres': Spheres,
-    'weeds': Weeds,
-    'graffiti': SprayText,
-    'work/rest in red': Red,
-    'fades': Fades 
-  };
 </script>
 
 <div class="node">
@@ -29,10 +38,14 @@
     { metadata.description }
   </Paragraph>
   <ul>
-    {#each Object.entries(entries) as [name, Entry], i (i)}
-      <li>
+    {#each Object.entries(bits) as [name, bit], i (i)}
+      <li
+        style="
+          {bit.backgroundColor ? `background-color: ${bit.backgroundColor};` : ''}
+        "
+      >
         <h2>{ name }</h2>
-        <svelte:component this={Entry} />
+        <svelte:component this={bit.Component} />
       </li>
     {/each}
   </ul>
@@ -58,7 +71,7 @@
   li {
     border-top: var(--borderPrimary);
     width: 100%;
-    padding: 7em 0em;
+    padding: 10em 0em;
     position: relative;
 
     display: flex;

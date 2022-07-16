@@ -1,4 +1,5 @@
-<script>
+<script context="module">
+  export const name = "work/rest in red";
 </script>
 
 <div class="box">
