@@ -1,5 +1,5 @@
 <script context="module">
-  export const backgroundColor = '#FAFAF8';
+  export const background = '#FAFAF8';
 </script>
 
 <div class="container">
@@ -31,15 +31,18 @@
   }
 
   .box {
-    width: calc(33% - 2em);
-    height: calc(50% - 4em);
+    width: calc(33% - 1vw);
+    height: calc(50% - 8vw);
 
-    margin: 2em;
+    margin: 2vw;
   }
 
   div {
     border: 5px solid rgba(251, 243, 254, 0.4);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 20px 20px 10px rgba(180, 171, 232, 0.19), 40px 40px 15px rgba(155, 241, 46, 0.22);
+    box-shadow: 
+      0px 4px 4px rgba(0, 0, 0, 0.25), 
+      20px 20px 10px rgba(180, 171, 232, 0.19), 
+      40px 40px 15px rgba(155, 241, 46, 0.22);
   }
 
   .oval {

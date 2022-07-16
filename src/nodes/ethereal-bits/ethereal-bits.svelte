@@ -5,7 +5,7 @@
 
   type Bit = {
     Component: typeof SvelteComponentDev, 
-    backgroundColor?: string
+    background?: string
   };
 
   const nameRegex = /.\/bits\/(\w+).svelte/g;
@@ -19,7 +19,7 @@
 
     acc[name] = {
       Component: bitImport.default,
-      backgroundColor: bitImport.backgroundColor
+      background: bitImport.background
     }
 
     return acc;
@@ -41,7 +41,7 @@
     {#each Object.entries(bits) as [name, bit], i (i)}
       <li
         style="
-          {bit.backgroundColor ? `background-color: ${bit.backgroundColor};` : ''}
+          {bit.background ? `background: ${bit.background};` : ''}
         "
       >
         <h2>{ name }</h2>

@@ -603,6 +603,10 @@ export default {
       "weight": 0.15,
       "count": 3
     },
+    "thoughts": {
+      "weight": 0.1,
+      "count": 2
+    },
     "glitch": {
       "weight": 0.1,
       "count": 2
@@ -634,10 +638,6 @@ export default {
     "blue-noise": {
       "weight": 0.1,
       "count": 2
-    },
-    "thoughts": {
-      "weight": 0.05,
-      "count": 1
     },
     "rhizome": {
       "weight": 0.05,
@@ -877,14 +877,15 @@ export default {
     "manifesto": {
       "tags": [
         "info",
-        "internet"
+        "internet",
+        "thoughts"
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
       "title": "manifesto",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT"
+      "updatedAt": "Sat, 16 Jul 2022 12:02:49 GMT"
     },
     "block-dissolve": {
       "tags": [
@@ -1159,5 +1160,5 @@ export default {
     }
   },
   "latestNode": "intro",
-  "mostRecentlyUpdatedNode": "latest"
+  "mostRecentlyUpdatedNode": "manifesto"
 } as const;
