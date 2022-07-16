@@ -47,7 +47,8 @@
 
     box-shadow: 
       inset 0px 0px 50px yellow,
-      0px 40px 20px -20px var(--cFgFaded);
+      0px 40px 20px -20px var(--cFgFaded),
+      0px 0px 10px #00000026;
   }
 
   span {
