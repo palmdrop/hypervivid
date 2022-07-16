@@ -4,7 +4,7 @@
   import { metadata$ } from '$stores/metadata';
   import Paragraph from '$components/common/Paragraph.svelte';
   import { NODE_NAME, NODE_NAMES, SITE_NAME } from '$constants';
-import Header from '$components/header/Header.svelte';
+  import Header from '$components/header/Header.svelte';
 
   const tags = Object.keys($metadata$.tags);
 
@@ -18,7 +18,7 @@ import Header from '$components/header/Header.svelte';
   <main>
     <h1>TAGS</h1>
 
-    <Paragraph wide>
+    <Paragraph wide big>
       Each {NODE_NAME} is tagged. Tags may say something about the contents of a node. The number indicates
       how many {NODE_NAMES} are tagged with this particular tag.
     </Paragraph>

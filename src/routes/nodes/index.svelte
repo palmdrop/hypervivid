@@ -31,10 +31,10 @@
   </h1>
 
   <div class="description-container">
-    <Paragraph center>
+    <Paragraph center big>
       Nodes are entries on the page. A node can be anything. Words, art, interactive 3D scenes. Nodes are connected.
     </Paragraph>
-    <Paragraph center>
+    <Paragraph center big>
       <Link
         href='/random'
       >
