@@ -18,6 +18,12 @@ export default {
         "to": "manifesto",
         "kind": "references",
         "strength": 0.5
+      },
+      {
+        "from": "about",
+        "to": "intro",
+        "kind": "references",
+        "strength": 0.5
       }
     ],
     "contact": [
@@ -25,6 +31,12 @@ export default {
         "from": "contact",
         "to": "about",
         "kind": "consumed",
+        "strength": 0.5
+      },
+      {
+        "from": "contact",
+        "to": "intro",
+        "kind": "tangent",
         "strength": 0.5
       }
     ],
@@ -47,6 +59,12 @@ export default {
         "from": "manifesto",
         "to": "about",
         "kind": "references",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
+        "to": "intro",
+        "kind": "tangent",
         "strength": 0.5
       },
       {
@@ -370,6 +388,26 @@ export default {
         "strength": 0.5
       }
     ],
+    "intro": [
+      {
+        "from": "intro",
+        "to": "about",
+        "kind": "references",
+        "strength": 0.5
+      },
+      {
+        "from": "intro",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "intro",
+        "to": "contact",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "latest": [],
     "links": [
       {
@@ -529,6 +567,10 @@ export default {
       "weight": 0.25,
       "count": 5
     },
+    "info": {
+      "weight": 0.2,
+      "count": 4
+    },
     "feedback": {
       "weight": 0.2,
       "count": 4
@@ -540,10 +582,6 @@ export default {
     "internet": {
       "weight": 0.2,
       "count": 4
-    },
-    "info": {
-      "weight": 0.15,
-      "count": 3
     },
     "writing": {
       "weight": 0.15,
@@ -585,6 +623,10 @@ export default {
       "weight": 0.1,
       "count": 2
     },
+    "utility": {
+      "weight": 0.1,
+      "count": 2
+    },
     "dithering": {
       "weight": 0.1,
       "count": 2
@@ -614,10 +656,6 @@ export default {
       "count": 1
     },
     "words": {
-      "weight": 0.05,
-      "count": 1
-    },
-    "utility": {
       "weight": 0.05,
       "count": 1
     },
@@ -651,6 +689,18 @@ export default {
     }
   },
   "nodes": {
+    "intro": {
+      "tags": [
+        "info",
+        "utility"
+      ],
+      "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
+      "updatedAt": "Sat, 16 Jul 2022 11:42:47 GMT",
+      "inline": true,
+      "title": "Intro",
+      "description": "A short site description.",
+      "image": ""
+    },
     "ethereal-bits": {
       "tags": [
         "css",
@@ -669,10 +719,10 @@ export default {
         "utility"
       ],
       "createdAt": "Tue, 28 Jun 2022 07:07:14 GMT",
-      "updatedAt": "Tue, 28 Jun 2022 14:24:40 GMT",
-      "inline": false,
+      "updatedAt": "Sat, 16 Jul 2022 11:42:32 GMT",
+      "inline": true,
       "title": "Latest",
-      "description": "Displays the most recently created and most recently updated nodes. Just a utility node.",
+      "description": "Displays the most recently created and most recently updated nodes. Just a utility.",
       "image": ""
     },
     "chaos-growth": {
@@ -826,8 +876,8 @@ export default {
     },
     "manifesto": {
       "tags": [
-        "internet",
-        "info"
+        "info",
+        "internet"
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
@@ -1108,6 +1158,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "ethereal-bits",
-  "mostRecentlyUpdatedNode": "hyper"
+  "latestNode": "intro",
+  "mostRecentlyUpdatedNode": "latest"
 } as const;

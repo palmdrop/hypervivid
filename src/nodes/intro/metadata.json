@@ -1,0 +1,14 @@
+{
+  "tags": [
+    "info", "utility"
+  ],
+  "links": [
+    "manifesto", "contact"
+  ],
+  "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
+  "updatedAt": "Sat, 16 Jul 2022 09:54:45 GMT",
+  "inline": true,
+  "title": "Intro",
+  "description": "A short site description.",
+  "image": ""
+}

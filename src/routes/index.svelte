@@ -10,8 +10,8 @@
   import Header from '$components/header/Header.svelte';
 
   $: nodeNames = [
-    'latest',
-    'about'
+    'intro',
+    'latest'
   ] as NodeName[];
 
   useTitle(`${SITE_NAME} ~ HYPERSOFT`);
@@ -53,7 +53,7 @@
     </button>
     <NodeList
       nodeNames={nodeNames} 
-      modeFirst="inline"
+      modeFirst="preview"
       modeRest="preview"
     />
     <a 

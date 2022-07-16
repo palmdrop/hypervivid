@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
   import type { NodeMode, NodeName } from "$types/nodes";
   import Node from "../node/Node.svelte";
   import throttle from "lodash.throttle";

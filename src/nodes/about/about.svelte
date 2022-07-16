@@ -134,10 +134,11 @@
         Node, as in an interconnected point in a graph. 
         <Link href='https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)' newTab>This kind of graph.</Link>
         Press the bottom "metadata" tab to examine the links. 
-        Nodes also have tags, that may help you find what you are looking for. But I doubt there's anything in particular you are looking for. Just follow the metadata links. Explore some paths.
+        Nodes also have tags, which may help you find what you are looking for. But I doubt you are searching for anything in particular. 
+        Just follow the links, explore some paths.
       </Paragraph>
       <Paragraph wide big>
-        <Link href='/nodes' newTab>Start by exploring some nodes.</Link> If you like, follow the <Link href='/rss.xml' newTab>rss feed.</Link>
+        <Link href='/nodes' newTab>Or start by browsing all nodes.</Link> If you like, follow the <Link href='/rss.xml' newTab>rss feed.</Link>
       </Paragraph>
       <Paragraph wide big>
         The core idea of this page is to 
