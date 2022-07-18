@@ -352,6 +352,12 @@ export default {
         "to": "solar-chrome",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "solar-landscape",
+        "to": "virtual-imprint",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "fragfuse": [
@@ -499,6 +505,18 @@ export default {
         "to": "retro-core",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "virtual-imprint",
+        "to": "solar-chrome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-imprint",
+        "to": "solar-landscape",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "skew-bulbs": [
@@ -525,6 +543,12 @@ export default {
       {
         "from": "solar-chrome",
         "to": "solar-landscape",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "solar-chrome",
+        "to": "virtual-imprint",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -583,6 +607,10 @@ export default {
       "weight": 0.2,
       "count": 4
     },
+    "chrome": {
+      "weight": 0.2,
+      "count": 4
+    },
     "writing": {
       "weight": 0.15,
       "count": 3
@@ -596,10 +624,6 @@ export default {
       "count": 3
     },
     "memes": {
-      "weight": 0.15,
-      "count": 3
-    },
-    "chrome": {
       "weight": 0.15,
       "count": 3
     },
@@ -1100,10 +1124,11 @@ export default {
         "live",
         "domain-warping",
         "interactive",
-        "geometry"
+        "geometry",
+        "chrome"
       ],
       "createdAt": "14 Nov 2021 09:49:08 GMT",
-      "updatedAt": "Mon, 04 Jul 2022 18:30:23 GMT",
+      "updatedAt": "Mon, 18 Jul 2022 21:42:25 GMT",
       "inline": false,
       "title": "Virtual Imprint",
       "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
@@ -1160,5 +1185,5 @@ export default {
     }
   },
   "latestNode": "intro",
-  "mostRecentlyUpdatedNode": "manifesto"
+  "mostRecentlyUpdatedNode": "virtual-imprint"
 } as const;
