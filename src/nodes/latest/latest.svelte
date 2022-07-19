@@ -34,8 +34,8 @@
     </div>
   {/if}
   <NodeList
-    modeFirst='preview-force'
-    modeRest='preview-force'
+    modeFirst={latestNode === 'latest' ? 'preview-force' : 'preview'}
+    modeRest={mostRecentlyUpdatedNode === 'latest' ? 'preview-force' : 'preview'}
     itemLabels={[latestLabel, recentlyUpdatedLabel]}
     nodeNames={[latestNode, mostRecentlyUpdatedNode]}
   />

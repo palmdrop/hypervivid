@@ -11,6 +11,7 @@
 <Fragment
   name={metadata.title}
   { mode }
+  limited={false}
 >
   <Paragraph big wide>
     This site is an experiment. My personal mind map. A notebook, archive, portfolio, and a space for general exploration.

@@ -1,9 +1,13 @@
 {
-  "tags": [],
-  "links": [],
+  "tags": [
+    "thoughts", "fragments", "exploration"
+  ],
+  "links": [
+    "manifesto"
+  ],
   "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
   "updatedAt": "Mon, 18 Jul 2022 21:48:39 GMT",
-  "inline": false,
+  "inline": true,
   "title": "Less Flat",
   "description": "",
   "image": ""

@@ -1,2 +1,5 @@
-# less-flat
+I sometimes feel undefined, husk-like, or unreal. Writing, coding, or otherwise creating alleviates this. I'm thinking about engaging in crafts as a tool for self-exploration. But not just exploration: also map-making and terraforming. Self-discovery, sure, but as we all know by now: the mind's plastic, regardless of age. I think writing, creating art, and working on your craft, may aid in changing the shape of the self, if a hint of directed attention is mixed in. This is comforting to me.
 
+I've been trying to think about digital and generative art as virtual gardening, or landscaping. Something that grows and evolves. It helps mitigate the semi-involuntary desire to constantly produce and perform. Maybe I should think about *my self* the same way. I do like the idea of identity as evolving and constantly plastic.
+
+I write this with the purpose of priming myself. I want to write and try to think more. To feel less flat.

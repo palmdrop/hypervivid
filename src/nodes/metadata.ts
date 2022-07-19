@@ -69,6 +69,12 @@ export default {
       },
       {
         "from": "manifesto",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
         "to": "links",
         "kind": "tangent",
         "strength": 0.5
@@ -415,7 +421,14 @@ export default {
       }
     ],
     "latest": [],
-    "less-flat": [],
+    "less-flat": [
+      {
+        "from": "less-flat",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "links": [
       {
         "from": "links",
@@ -612,6 +625,10 @@ export default {
       "weight": 0.2,
       "count": 4
     },
+    "thoughts": {
+      "weight": 0.15,
+      "count": 3
+    },
     "writing": {
       "weight": 0.15,
       "count": 3
@@ -627,10 +644,6 @@ export default {
     "memes": {
       "weight": 0.15,
       "count": 3
-    },
-    "thoughts": {
-      "weight": 0.1,
-      "count": 2
     },
     "glitch": {
       "weight": 0.1,
@@ -653,6 +666,14 @@ export default {
       "count": 2
     },
     "utility": {
+      "weight": 0.1,
+      "count": 2
+    },
+    "fragments": {
+      "weight": 0.1,
+      "count": 2
+    },
+    "exploration": {
       "weight": 0.1,
       "count": 2
     },
@@ -684,10 +705,6 @@ export default {
       "weight": 0.05,
       "count": 1
     },
-    "exploration": {
-      "weight": 0.05,
-      "count": 1
-    },
     "instancing": {
       "weight": 0.05,
       "count": 1
@@ -715,10 +732,14 @@ export default {
   },
   "nodes": {
     "less-flat": {
-      "tags": [],
+      "tags": [
+        "thoughts",
+        "fragments",
+        "exploration"
+      ],
       "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
-      "updatedAt": "Tue, 19 Jul 2022 10:41:52 GMT",
-      "inline": false,
+      "updatedAt": "Tue, 19 Jul 2022 16:28:05 GMT",
+      "inline": true,
       "title": "Less Flat",
       "description": "",
       "image": ""
@@ -726,10 +747,11 @@ export default {
     "intro": {
       "tags": [
         "info",
-        "utility"
+        "utility",
+        "fragments"
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
-      "updatedAt": "Sat, 16 Jul 2022 11:42:47 GMT",
+      "updatedAt": "Tue, 19 Jul 2022 16:28:05 GMT",
       "inline": true,
       "title": "Intro",
       "description": "A short site description.",
@@ -1195,5 +1217,5 @@ export default {
     }
   },
   "latestNode": "less-flat",
-  "mostRecentlyUpdatedNode": "virtual-imprint"
+  "mostRecentlyUpdatedNode": "intro"
 } as const;
