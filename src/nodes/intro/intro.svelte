@@ -5,10 +5,11 @@
   import Paragraph from '../../components/common/Paragraph.svelte';
   import Fragment from '../../components/node/templates/Fragment.svelte';
 
-  const { mode } = getNodeContext('intro');
+  const { metadata, mode } = getNodeContext('intro');
 </script>
 
 <Fragment
+  name={metadata.title}
   { mode }
 >
   <Paragraph big wide>

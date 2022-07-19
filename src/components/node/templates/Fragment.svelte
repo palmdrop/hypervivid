@@ -2,17 +2,28 @@
 	import type { NodeMode } from '$types/nodes';
   export let mode: NodeMode;
   export let name: string = "";
+  export let limited: boolean = [
+    'inline', 'preview'
+  ].includes(mode);
 
   // TODO: what about multiple fragments? no appropriate nodeMode?
   export const decorate = [
     'main', 'only'
   ].includes(mode);
+
+  const fadeOut = limited;
 </script>
 
 <div class="node">
-  <section class:decorate>
+  <section 
+    class:decorate
+    class:limited
+    class:fadeOut
+  >
     { #if name } <span>{name}</span> {/if}
-    <slot />
+    <div class="content">
+      <slot />
+    </div>
   </section>
 </div>
 
@@ -26,8 +37,10 @@
   }
 
   section {
-    padding: 1em;
-    max-width: 900px;
+    position: relative;
+    padding-top: 2.0em;
+    width: 100%;
+    max-width: 1000px;
   }
 
   .decorate {
@@ -37,11 +50,49 @@
     padding-bottom: clamp(1.5em, 10vw, 5em);
 
     margin: 0.5em;
-    border-radius: 2em;
+    border-radius: var(--borderRadius2);
     box-shadow: var(--neumorphicShadow);
+
+    border: 2px solid var(--cBgBright);
+  }
+
+  .fadeOut::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+      0deg, 
+      var(--cBg) 0%, 
+      rgba(255,255,255,0) 55%, 
+      rgba(255,255,255,0) 100%
+    );
+  }
+
+  .limited .content {
+    max-height: 12em;
+    overflow: hidden;
   }
 
   span {
+    position: absolute;
+    font-size: var(--fontSizeLarge);
+    font-family: var(--fDisplay);
 
+    color: var(--cBg);
+    opacity: 0.8;
+
+    text-shadow: 0px 0px 8px var(--cFg);
+
+    top: 0.0em;
+
+    text-transform: uppercase;
+  }
+
+  .decorate span {
+    right: 5%;
+    top: 6%;
   }
 </style>

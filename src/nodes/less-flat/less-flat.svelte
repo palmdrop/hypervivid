@@ -4,10 +4,11 @@
   import Fragment from '$components/node/templates/Fragment.svelte';
   import Document from './document.svelte.md';
 
-  const { mode } = getNodeContext('less-flat');
+  const { metadata, mode } = getNodeContext('less-flat');
 </script>
 
 <Fragment
+  name={metadata.title}
   { mode }
 >
   <Document />
