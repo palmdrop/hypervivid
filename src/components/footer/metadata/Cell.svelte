@@ -26,10 +26,11 @@
   .cell {
     display: flex;
     padding: 0.8em;
+    padding-bottom: unset;
     border-left: var(--borderPrimary);
     border-top: var(--borderPrimary);
 
-    max-height: 200px;
+    max-height: 225px;
 
     flex-grow: 2;
     text-align: center;
@@ -87,6 +88,7 @@
 
   .nested {
     max-width: unset;
+    padding-bottom: 0.8em;
   }
 
 </style>

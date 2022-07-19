@@ -9,6 +9,7 @@
   $: formattedLinks = links.map(link => formatLink(link));
 </script>
 
+<div>
 {#if links.length}
   <ul>
     {#each links as link, i (link)}
@@ -24,11 +25,19 @@
 {:else}
   <slot />
 {/if}
+</div>
 
 <style>
+  div {
+    display: flex;
+    justify-content: center;
+  }
+
   li {
     padding-right: 0.5em;
     padding-bottom: 0.5em;
+
+    text-align: left;
   }
 </style>
 
