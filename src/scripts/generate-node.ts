@@ -3,6 +3,45 @@ import type { NodeMetadata } from '../types/nodes';
 
 const NODES_DIR = 'src/nodes/';
 
+const defaultPreset = (name: string) => `
+<script lang="ts">
+  import { getNodeContext } from '$utils/useNodeContext';
+  const { name, metadata } = getNodeContext('${name}');
+
+</script>
+
+<div>
+  { name }
+</div>
+
+<style>
+</style>
+`;
+
+const fragmentPreset = (name: string) => `
+<script lang="ts">
+  import { getNodeContext } from '$utils/useNodeContext';
+  import Fragment from '$components/node/templates/Fragment.svelte';
+  import Document from './document.svelte.md';
+
+  const { mode } = getNodeContext(${ name });
+</script>
+
+<Fragment
+  { mode }
+>
+  <Document />
+</Fragment>
+
+<style>
+</style>
+`;
+
+const presets = {
+  'default': defaultPreset,
+  'fragment': fragmentPreset
+};
+
 const main = async () => {
   console.log("Validating...")
 
@@ -11,7 +50,21 @@ const main = async () => {
   }
 
   const name = `${process.argv[2]}`;
-  const preview = process.argv[3] ?? false;
+  // const preview = process.argv[3] ?? false;
+
+  let preview = false;
+  let preset: keyof typeof presets = 'default';
+
+  for(let i = 3; i < process.argv.length; i++) {
+    const arg = process.argv[i];
+    console.log(arg);
+    switch(arg) {
+      case '--preview': preview = true; break;
+      case '--fragment': preset = 'fragment'; break;
+    }
+  }
+
+  const presetFunction = presets[preset];
 
   const nodes = await fs.readdir(
     NODES_DIR
@@ -34,20 +87,6 @@ const main = async () => {
     image: ''
   };
 
-  const componentPreset = (name: string) => `
-<script lang="ts">
-  import { getNodeContext } from '$utils/useNodeContext';
-  const { name, metadata } = getNodeContext('${name}');
-
-</script>
-
-<div>
-  { name }
-</div>
-
-<style>
-</style>
-  `;
 
   // Create files
   console.log("Creating files...");
@@ -57,12 +96,20 @@ const main = async () => {
 
   const writePromises = [
     fs.writeFile(`${dirPath}/metadata.json`, JSON.stringify(metadataPreset, null, 2)),
-    fs.writeFile(`${dirPath}/${name}.svelte`, componentPreset(name)),
-  ]
+    fs.writeFile(`${dirPath}/${name}.svelte`, presetFunction(name)),
+  ];
 
-  if(preview) writePromises.push(
-    fs.writeFile(`${dirPath}/${name}.preview.svelte`, componentPreset(name)),
-  );
+  if(preset === 'fragment') {
+    writePromises.push(
+      fs.writeFile(`${dirPath}/document.svelte.md`, `# ${name}`)
+    );
+  }
+
+  if(preview) {
+    writePromises.push(
+      fs.writeFile(`${dirPath}/${name}.preview.svelte`, defaultPreset(name)),
+    );
+  }
 
   await Promise.all(writePromises);
 

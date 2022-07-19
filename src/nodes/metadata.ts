@@ -415,6 +415,7 @@ export default {
       }
     ],
     "latest": [],
+    "less-flat": [],
     "links": [
       {
         "from": "links",
@@ -713,6 +714,15 @@ export default {
     }
   },
   "nodes": {
+    "less-flat": {
+      "tags": [],
+      "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
+      "updatedAt": "Tue, 19 Jul 2022 10:41:52 GMT",
+      "inline": false,
+      "title": "Less Flat",
+      "description": "",
+      "image": ""
+    },
     "intro": {
       "tags": [
         "info",
@@ -1184,6 +1194,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "intro",
+  "latestNode": "less-flat",
   "mostRecentlyUpdatedNode": "virtual-imprint"
 } as const;

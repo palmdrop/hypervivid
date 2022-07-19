@@ -39,6 +39,9 @@
     inset -15px -15px 20px #24183Eaa, 
     inset 3px 3px 20px rgba(255, 255, 255, 0.24);
 
+  --neumorphicShadow: 
+    0.7em 0.7em 1.8em #b6bbc1,
+   -0.7em -0.7em 1.8em #d6dbe3;
 }
 
 /* Global styles */
