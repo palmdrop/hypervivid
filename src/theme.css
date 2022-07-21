@@ -12,6 +12,8 @@
 
   --cBgDark: #65686c;
 
+  --cBgBlack: #000000;
+
   --cFgInverted: var(--cBg);
   --cBgInverted: var(--cFg);
 

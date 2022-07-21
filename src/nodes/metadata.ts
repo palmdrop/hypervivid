@@ -308,6 +308,34 @@ export default {
         "strength": 0.5
       }
     ],
+    "city-pond": [
+      {
+        "from": "city-pond",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "fragfuse": [
+      {
+        "from": "fragfuse",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "domain-warping": [
       {
         "from": "domain-warping",
@@ -362,20 +390,6 @@ export default {
       {
         "from": "solar-landscape",
         "to": "virtual-imprint",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "fragfuse": [
-      {
-        "from": "fragfuse",
-        "to": "hyper",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fragfuse",
-        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -585,21 +599,21 @@ export default {
       "weight": 0.6,
       "count": 12
     },
+    "organic": {
+      "weight": 0.35,
+      "count": 7
+    },
     "noise": {
       "weight": 0.3,
       "count": 6
     },
-    "organic": {
+    "project": {
       "weight": 0.3,
       "count": 6
     },
     "interactive": {
       "weight": 0.3,
       "count": 6
-    },
-    "project": {
-      "weight": 0.25,
-      "count": 5
     },
     "geometry": {
       "weight": 0.25,
@@ -610,6 +624,10 @@ export default {
       "count": 4
     },
     "feedback": {
+      "weight": 0.2,
+      "count": 4
+    },
+    "photography": {
       "weight": 0.2,
       "count": 4
     },
@@ -630,10 +648,6 @@ export default {
       "count": 3
     },
     "writing": {
-      "weight": 0.15,
-      "count": 3
-    },
-    "photography": {
       "weight": 0.15,
       "count": 3
     },
@@ -689,6 +703,10 @@ export default {
       "weight": 0.05,
       "count": 1
     },
+    "biophilia": {
+      "weight": 0.05,
+      "count": 1
+    },
     "contact": {
       "weight": 0.05,
       "count": 1
@@ -731,6 +749,21 @@ export default {
     }
   },
   "nodes": {
+    "city-pond": {
+      "tags": [
+        "organic",
+        "project",
+        "photography",
+        "biophilia"
+      ],
+      "createdAt": "Thu, 21 Jul 2022 20:37:19 GMT",
+      "updatedAt": "Thu, 21 Jul 2022 20:54:45 GMT",
+      "inline": false,
+      "title": "City Pond",
+      "description": "Photos taken by and around a small pond located in the city where I live.",
+      "image": "/img/city-pond/bushes.jpg",
+      "asDocument": true
+    },
     "less-flat": {
       "tags": [
         "thoughts",
@@ -785,8 +818,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "noise",
         "project",
+        "noise",
         "space-colonization",
         "rhizome"
       ],
@@ -804,8 +837,8 @@ export default {
         "generative",
         "domain-warping",
         "organic",
-        "noise",
-        "project"
+        "project",
+        "noise"
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
       "updatedAt": "Mon, 20 Jun 2022 17:05:33 GMT",
@@ -820,8 +853,8 @@ export default {
         "art",
         "generative",
         "organic",
-        "noise",
         "project",
+        "noise",
         "memes",
         "flowfield"
       ],
@@ -918,9 +951,9 @@ export default {
     "hyper": {
       "tags": [
         "art",
+        "photography",
         "css",
         "hyper",
-        "photography",
         "words"
       ],
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
@@ -1011,8 +1044,8 @@ export default {
     "slices": {
       "tags": [
         "art",
-        "css",
         "photography",
+        "css",
         "external"
       ],
       "createdAt": "02 Mar 2022 09:49:08 GMT",
@@ -1062,8 +1095,8 @@ export default {
         "art",
         "live",
         "domain-warping",
-        "interactive",
         "organic",
+        "interactive",
         "geometry",
         "feedback"
       ],
@@ -1216,6 +1249,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "less-flat",
-  "mostRecentlyUpdatedNode": "intro"
+  "latestNode": "city-pond",
+  "mostRecentlyUpdatedNode": "less-flat"
 } as const;

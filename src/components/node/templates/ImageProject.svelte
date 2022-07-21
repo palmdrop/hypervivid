@@ -7,7 +7,7 @@
   export let description: string[];
   export let name: string;
 
-  export let theme: 'light' | 'dark' = 'light';
+  export let theme: 'light' | 'dark' | 'black' = 'light';
 
   type Item = {
     imageUrl: string
@@ -37,7 +37,6 @@
     <img 
       src={item.imageUrl} 
       alt={`${name} ${index}`}
-      loading="lazy"
       style="
         width: {Math.floor(Math.random() * 400) + 800}px;
       "
@@ -69,6 +68,11 @@
     color: var(--cFgInverted);
   }
 
+  .black {
+    background-color: var(--cBgBlack);
+    color: var(--cFgInverted);
+  }
+
   .description {
     padding-bottom: 10em;
     padding-top: 5em;
@@ -87,8 +91,12 @@
     box-shadow: 0px 0px 100px var(--cBgInverted);
   }
 
-  .dark img {
+  .dark img, .black img {
     box-shadow: 0px 0px 100px var(--cBgDark);
+  }
+
+  .black img {
+    box-shadow: 0px 0px 100px var(--cBgInverted);
   }
 </style>
   
