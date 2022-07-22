@@ -7,6 +7,7 @@
             url('/fonts/gulax/Gulax-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    descent-override: 20%;
 }
 
 /* Fengardo Neue */
@@ -43,42 +44,6 @@
     font-style: normal;
 }
 
-/* Sporting Grotesque */
-@font-face {
-    font-family: 'Sporting_Grotesque-Regular';
-    src:    url('/fonts/Sporting-Grotesque/Regular/Sporting_Grotesque-Regular_web.eot');
-    src:    url('/fonts/Sporting-Grotesque/Regular/Sporting_Grotesque-Regular_web.eot?#iefix') format('embedded-opentype'),
-            url('/fonts/Sporting-Grotesque/Regular/Sporting_Grotesque-Regular_web.woff') format('woff'),
-            url('/fonts/Sporting-Grotesque/Regular/Sporting_Grotesque-Regular_web.woff2') format('woff2'),
-            url('/fonts/Sporting-Grotesque/Regular/Sporting_Grotesque-Regular_web.ttf') format('truetype'),
-            url('/fonts/Sporting-Grotesque/Regular/Sporting_Grotesque-Regular_web.svg#svgFontName') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sporting_Grotesque-Bold';
-    src:    url('/fonts/Sporting-Grotesque/Bold/Sporting_Grotesque-Bold_web.eot');
-    src:    url('/fonts/Sporting-Grotesque/Bold/Sporting_Grotesque-Bold_web.eot?#iefix') format('embedded-opentype'),
-            url('/fonts/Sporting-Grotesque/Bold/Sporting_Grotesque-Bold_web.woff') format('woff'),
-            url('/fonts/Sporting-Grotesque/Bold/Sporting_Grotesque-Bold_web.woff2') format('woff2'),
-            url('/fonts/Sporting-Grotesque/Bold/Sporting_Grotesque-Bold_web.ttf') format('truetype'),
-            url('/fonts/Sporting-Grotesque/Bold/Sporting_Grotesque-Bold_web.svg#svgFontName') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Basteleur */
-@font-face {
-    font-family: 'Basteleur';
-    src:    url('/fonts/basteleur/Basteleur-Bold.woff') format('woff'),
-            url('/fonts/basteleur/Basteleur-Bold.woff2') format('woff2'),
-            url('/fonts/basteleur/Basteleur-Bold.ttf') format('truetype'),
-            url('/fonts/basteleur/Basteleur-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Mono */
 @font-face {
     font-family: 'Mono';
@@ -87,18 +52,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-/* SPACE GROTESK */
-@font-face {
-  font-family: 'SpaceGrotesk-Regular';
-  src: url('/fonts/space-grotesk/SpaceGrotesk-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'SpaceGrotesk-Bold';
-  src: url('/fonts/space-grotesk/SpaceGrotesk-Bold.ttf') format('truetype');
-}
-
 
 /* SYNE */
 /* Credit: https://gitlab.com/bonjour-monde/fonderie/syne-typeface */

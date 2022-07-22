@@ -112,11 +112,9 @@
             decorated 
             underline={false}
             omitBorder={
-              i === 0 ? 
-                'left' :
-                i === links.length - 1 ? 
-                  'right' : 
-                  undefined
+              i === links.length - 1 ? 
+                'right' : 
+                undefined
             }
           >
             {link.text}
@@ -287,12 +285,12 @@
 
   .links {
     display: flex;
+    align-items: stretch;
+    height: 1.7em;
   }
 
   .links li {
     width: 100%;
-
-    height: 1.7rem;
 
     display: flex;
     flex-direction: row;
@@ -300,7 +298,6 @@
     justify-content: center;
 
     margin-left: -1px;
-    margin-top: -1px;
   }
 
   img {

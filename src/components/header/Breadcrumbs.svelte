@@ -64,6 +64,8 @@
   ol {
     display: flex;
     font-family: var(--fMono);
+
+    height: 100%;
   }
 
   li {
@@ -72,7 +74,6 @@
 
   a, span {
     min-width: 2.0em;
-    padding: 0.50em;
   }
 
   a {
@@ -112,5 +113,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
+    padding: 0.0em 0.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
 </style>

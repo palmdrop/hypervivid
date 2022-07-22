@@ -63,13 +63,12 @@
 <style>
   header {
     border-bottom: var(--borderPrimary);
-    border-top: var(--borderPrimary);
 
     width: 100%;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     background-color: var(--cBg);
   }
