@@ -66,6 +66,7 @@
   .back-button {
     margin: 0.1em;
     position: absolute;
+    z-index: 2;
   }
 
   .node-container {

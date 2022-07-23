@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { blur } from 'svelte/transition';
   import Paragraph from '$components/common/Paragraph.svelte';
   import FlowList from '$components/list/FlowList.svelte';
   import { shuffleArray } from '$utils/general';
@@ -9,8 +10,16 @@
 
   export let theme: 'light' | 'dark' | 'black' = 'light';
 
+  let focusedImageIndex: number | undefined = undefined;
+  let focusedItem: { imageUrl: string } | undefined = undefined;
+
+  $: {
+    focusedItem = focusedImageIndex ? items[focusedImageIndex] as { imageUrl: string } : undefined;
+  }
+
   type Item = {
     imageUrl: string
+    width: string
   } | {
     text: string[]
   };
@@ -18,7 +27,8 @@
   const items: Item[] = [
     { text: description},
     ...shuffleArray(imageUrls.map(img => ({
-      imageUrl: img
+      imageUrl: img,
+      width: `${Math.floor(Math.random() * 400) + 800}px`
     })))
   ];
 </script>
@@ -26,6 +36,16 @@
 <div 
   class={`node ${theme}`}
 >
+  {#if focusedImageIndex && focusedItem}
+    <div class="focused-image-container">
+      <img class={`focused-image ${theme}`}
+        src={focusedItem.imageUrl}
+        alt={`${name} - ${focusedImageIndex + 1 }.`}
+        on:click={() => {focusedImageIndex = undefined; }}
+        transition:blur|local
+      />
+    </div>
+  {/if}
   <FlowList
     items={items}
     randomXOffset={0.2}
@@ -35,11 +55,13 @@
   >
   {#if item.imageUrl}
     <img 
+      class="flow-image"
       src={item.imageUrl} 
-      alt={`${name} ${index}`}
+      alt={`${name} - ${index + 1}.`}
       style="
-        width: {Math.floor(Math.random() * 400) + 800}px;
+        width: {item.width};
       "
+      on:click={() => { focusedImageIndex = index; }}
     />
   {:else}
     <div 
@@ -57,6 +79,7 @@
 
 <style>
   .node {
+    position: relative;
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -80,11 +103,14 @@
     margin: 2.5em;
   }
 
-  img {
+  .flow-image {
     max-width: 90vw;
     margin-bottom: 15em;
 
     border-radius: 1%;
+
+    transition: 0.5s;
+    cursor: pointer;
   }
 
   .light img {
@@ -97,6 +123,21 @@
 
   .black img {
     box-shadow: 0px 0px 100px var(--cBgInverted);
+  }
+
+  .focused-image {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+
+    border-radius: 0px;
+
+    object-fit: contain;
+
+    z-index: 1;
+
+    cursor: pointer;
   }
 </style>
   

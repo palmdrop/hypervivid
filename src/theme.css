@@ -103,6 +103,7 @@ button {
 
 h1 {
   font-size: clamp(3.5rem, 15vw, 7rem);
+  padding-bottom: 0.15em;
 }
 
 h2 {
