@@ -31,20 +31,31 @@
       width: `${Math.floor(Math.random() * 400) + 800}px`
     })))
   ];
+
+  const onKeyDown = (e: KeyboardEvent) => {
+    console.log(e.key);
+    if(['Escape', 'Backspace'].includes(e.key)) {
+      focusedImageIndex = undefined;
+    }
+  }
 </script>
+
+<svelte:window on:keydown={onKeyDown} />
 
 <div 
   class={`node ${theme}`}
 >
   {#if focusedImageIndex && focusedItem}
-    <div class="focused-image-container">
-      <img class={`focused-image ${theme}`}
-        src={focusedItem.imageUrl}
-        alt={`${name} - ${focusedImageIndex + 1 }.`}
-        on:click={() => {focusedImageIndex = undefined; }}
-        transition:blur|local
-      />
-    </div>
+    <img class={`focused-image ${theme}`}
+      src={focusedItem.imageUrl}
+      alt={`${name} - ${focusedImageIndex + 1 }.`}
+      on:click={(e) => {
+        e.currentTarget?.blur?.();
+        focusedImageIndex = undefined; 
+      }}
+      on:mousedown|preventDefault={() => {}}
+      transition:blur|local
+    />
   {/if}
   <FlowList
     items={items}
@@ -84,6 +95,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .light {
+    background-color: var(--cBg);
+    color: var(--cFg);
   }
 
   .dark {
