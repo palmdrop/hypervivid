@@ -29,25 +29,30 @@
 
 <style>
   .node {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100%;
   }
 
   section {
     position: relative;
     padding-top: 2.0em;
     width: 100%;
+    height: auto;
     max-width: 1000px;
+  }
+
+  .content {
+    height: 100%;
   }
 
   .decorate {
     padding-left: clamp(0.5em, 7vw, 5em);
     padding-right: clamp(0.5em, 7vw, 5em);
-    padding-top: clamp(1.5em, 10vw, 5em);
-    padding-bottom: clamp(1.5em, 10vw, 5em);
+    padding-top: clamp(3.0em, 10vw, 5em);
+    padding-bottom: clamp(3.0em, 10vw, 5em);
 
     margin: 0.5em;
     border-radius: var(--borderRadius2);
@@ -93,6 +98,6 @@
 
   .decorate span {
     right: 5%;
-    top: 6%;
+    top: clamp(0.5em, 7vw, 1.5em)
   }
 </style>

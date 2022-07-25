@@ -24,7 +24,7 @@ const fragmentPreset = (name: string) => `
   import Fragment from '$components/node/templates/Fragment.svelte';
   import Document from './document.svelte.md';
 
-  const { metadata, mode } = getNodeContext(${ name });
+  const { metadata, mode } = getNodeContext('${ name }');
 </script>
 
 <Fragment

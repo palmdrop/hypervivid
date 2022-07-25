@@ -1,0 +1,11 @@
+I'm trying to approach generative/digital art as I would approach gardening. I mentioned this in one of [my previous fragments](/nodes/less-flat).
+
+Gardening is personal, and in one sense, pointless. You may invite people to your house and show off the bushes and flowerbeds, but primarily, the garden exists only for the gardener. You grow and tend to the space as an extension of your home and daily routine. You live in the garden. And with some softness and care, the garden will grow and evolve. But you'll never reap any profit, except for some peppers, a tomato, maybe raspberries.
+
+That "pointlessness" is something I'd like to embrace.
+
+I've been feeling stressed and dissatisfied with my crafts for a while now. I frequently feel like I don't make enough progress, that I lack a distinct direction, goal, or whatever. In the back of my mind, there's always the idea of publishing. Sharing. Harvesting likes, interactions, or followers -- the classics... I may be philosophically against that mindset, but still, I'm producing *content* for consumption. I want to get away from this, or just let this aspect be a side-effect. 
+
+Making a conscious decision may help in accomplishing this. I'm constantly learning and creating, and I know I can feel true enjoyment when doing so. Sometimes, although rarely, I can sit for hours trying out variations of a specific algorithm, or trying to accomplish a particular aesthetic. Sometimes, I'm genuinely surprised by the results, fascinated. Without that stress/dissatisfaction, I would be truly happy doing this. Hopefully, writing and documentation will help solidify a new mindset, step-by-step ridding myself of that nagging feeling (or at least reducing it).
+
+I want this to be a kind of [careful play](/nodes/manifesto). Exploration and letting things grow. A slower process. Allowing myself to be [lazy](https://mladenstilinovic.com/works/10-2/), when I need to. Creating for myself, when I want to. I will keep sharing what I make (to keep learning openly, and it wouldn't make sense to build tall walls around a garden) but hopefully as an afterthought -- not the primary goal.

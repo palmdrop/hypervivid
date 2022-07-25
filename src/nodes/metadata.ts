@@ -63,6 +63,12 @@ export default {
       },
       {
         "from": "manifesto",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
         "to": "intro",
         "kind": "tangent",
         "strength": 0.5
@@ -291,6 +297,12 @@ export default {
       },
       {
         "from": "weave",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "weave",
         "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
@@ -332,6 +344,40 @@ export default {
       {
         "from": "fragfuse",
         "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "digital-gardening": [
+      {
+        "from": "digital-gardening",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-gardening",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-gardening",
+        "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "less-flat": [
+      {
+        "from": "less-flat",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -435,14 +481,6 @@ export default {
       }
     ],
     "latest": [],
-    "less-flat": [
-      {
-        "from": "less-flat",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "links": [
       {
         "from": "links",
@@ -623,6 +661,10 @@ export default {
       "weight": 0.2,
       "count": 4
     },
+    "thoughts": {
+      "weight": 0.2,
+      "count": 4
+    },
     "feedback": {
       "weight": 0.2,
       "count": 4
@@ -643,11 +685,11 @@ export default {
       "weight": 0.2,
       "count": 4
     },
-    "thoughts": {
+    "writing": {
       "weight": 0.15,
       "count": 3
     },
-    "writing": {
+    "fragments": {
       "weight": 0.15,
       "count": 3
     },
@@ -667,6 +709,10 @@ export default {
       "weight": 0.1,
       "count": 2
     },
+    "biophilia": {
+      "weight": 0.1,
+      "count": 2
+    },
     "webart": {
       "weight": 0.1,
       "count": 2
@@ -683,10 +729,6 @@ export default {
       "weight": 0.1,
       "count": 2
     },
-    "fragments": {
-      "weight": 0.1,
-      "count": 2
-    },
     "exploration": {
       "weight": 0.1,
       "count": 2
@@ -700,10 +742,6 @@ export default {
       "count": 2
     },
     "rhizome": {
-      "weight": 0.05,
-      "count": 1
-    },
-    "biophilia": {
       "weight": 0.05,
       "count": 1
     },
@@ -749,6 +787,19 @@ export default {
     }
   },
   "nodes": {
+    "digital-gardening": {
+      "tags": [
+        "thoughts",
+        "fragments",
+        "biophilia"
+      ],
+      "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
+      "updatedAt": "Mon, 25 Jul 2022 20:12:14 GMT",
+      "inline": true,
+      "title": "Digital Gardening",
+      "description": "",
+      "image": ""
+    },
     "city-pond": {
       "tags": [
         "organic",
@@ -780,8 +831,8 @@ export default {
     "intro": {
       "tags": [
         "info",
-        "utility",
-        "fragments"
+        "fragments",
+        "utility"
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
       "updatedAt": "Fri, 22 Jul 2022 16:17:35 GMT",
@@ -1249,6 +1300,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "city-pond",
-  "mostRecentlyUpdatedNode": "less-flat"
+  "latestNode": "digital-gardening",
+  "mostRecentlyUpdatedNode": "city-pond"
 } as const;
