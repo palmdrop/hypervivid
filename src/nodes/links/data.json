@@ -415,5 +415,13 @@
     "url": "https://en.wikipedia.org/wiki/Biophilia_hypothesis",
     "category": "Other",
     "additionalCategories": []
+  },
+  {
+    "text": "TGIF-Release",
+    "url": "https://github.com/raingo/TGIF-Release",
+    "category": "Tech",
+    "additionalCategories": [
+      "Art"
+    ]
   }
 ]
