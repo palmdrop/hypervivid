@@ -1,0 +1,14 @@
+{
+  "tags": [
+    "art", "css", "webart"
+  ],
+  "links": [
+    "ethereal-bits", "slices"
+  ],
+  "createdAt": "Sat, 30 Jul 2022 09:06:40 GMT",
+  "updatedAt": "Sat, 30 Jul 2022 09:06:40 GMT",
+  "inline": false,
+  "title": "Markup Dada",
+  "description": "Simple HTML/CSS/JS test for creating animated patterns using the DOM.",
+  "image": "/img/markup-dada/preview.png"
+}

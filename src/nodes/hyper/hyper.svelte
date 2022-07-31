@@ -39,6 +39,7 @@
     'connected',
     'seduced',
     'sleep',
+    'dream',
     'fool',
     'pool',
     'numb',
