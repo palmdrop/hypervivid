@@ -10,7 +10,7 @@
   let maxRowLength = 27;
   let virtualRowLength = 10;
 
-  const cellCount = 600;
+  const cellCount = 620;
   const speed = 300;
   const selectedProbability = 0.5;
 
