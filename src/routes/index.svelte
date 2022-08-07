@@ -40,15 +40,15 @@
     >
       <Arrow 
         direction='down'
-        size={35}
+        size={'2.1em'}
       />
       <Arrow 
         direction='down'
-        size={35}
+        size={'2.1em'}
       />
       <Arrow 
         direction='down'
-        size={35}
+        size={'2.1em'}
       />
     </button>
     <NodeList

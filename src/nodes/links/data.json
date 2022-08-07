@@ -431,5 +431,21 @@
     "additionalCategories": [
       "Tech"
     ]
+  },
+  {
+    "text": "R. Luke DuBois",
+    "url": "https://www.lukedubois.com/",
+    "category": "Art",
+    "additionalCategories": [
+      "Tech"
+    ]
+  },
+  {
+    "text": "Plethora Project",
+    "url": "https://www.plethora-project.com",
+    "category": "Blog",
+    "additionalCategories": [
+      "Tech"
+    ]
   }
 ]
