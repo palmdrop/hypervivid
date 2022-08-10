@@ -1,0 +1,2359 @@
+{
+  "rootId": "15",
+  "nodes": {
+    "15": {
+      "type": "root",
+      "x": 2277.8817905498986,
+      "y": -108.40288050185622,
+      "width": 200,
+      "height": 212,
+      "layer": 47,
+      "fields": {
+        "point": {
+          "kind": "static",
+          "type": "vec3",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "internal": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": -4,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "color": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "16"
+          },
+          "inputLocked": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 45.035714285714285,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "dithering": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 75.32142857142857,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "scale": {
+          "kind": "static",
+          "type": "float",
+          "value": 0.001,
+          "min": 0.00001,
+          "max": 0.1,
+          "excludeFromFunction": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 105.60714285714286,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "speedX": {
+          "kind": "static",
+          "type": "float",
+          "value": 0,
+          "min": -1,
+          "max": 1,
+          "excludeFromFunction": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 135.89285714285714,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "speedY": {
+          "kind": "static",
+          "type": "float",
+          "value": 0,
+          "min": -1,
+          "max": 1,
+          "excludeFromFunction": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 166.17857142857142,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "speedZ": {
+          "kind": "static",
+          "type": "float",
+          "value": 0.1,
+          "min": -1,
+          "max": 1,
+          "excludeFromFunction": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 196.46428571428572,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "vec3",
+      "id": "15",
+      "hovered": false,
+      "active": false,
+      "elevated": false
+    },
+    "16": {
+      "type": "hsvToRgb",
+      "x": 1901.6515621130698,
+      "y": -90.70621882089223,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false
+      },
+      "layer": 46,
+      "fields": {
+        "hue": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "48"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0
+        },
+        "saturation": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "45"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1
+        },
+        "value": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "40"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0.5
+        }
+      },
+      "returnType": "vec3",
+      "id": "16",
+      "hovered": false,
+      "active": false,
+      "elevated": false
+    },
+    "17": {
+      "type": "simplex",
+      "x": -944.4892990044244,
+      "y": -81.18859662367822,
+      "width": 200,
+      "height": 290,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 145,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 34,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 43.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.1,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 72.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1
+        },
+        "amplitude": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 3,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 101.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "persistance": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.45,
+          "min": 0,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 130.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "lacunarity": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1.9,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 159.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "octaves": {
+          "kind": "static",
+          "type": "int",
+          "value": 4,
+          "min": 1,
+          "max": 5,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 188.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "exponent": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 2.9071,
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 217.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "ridge": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.81019,
+          "min": 0.001,
+          "max": 1,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 246.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "normalize": {
+          "kind": "static",
+          "type": "bool",
+          "value": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 275.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "17",
+      "hovered": false,
+      "active": false,
+      "elevated": false
+    },
+    "19": {
+      "type": "wave",
+      "x": 30.980584116718546,
+      "y": 134.07780898613015,
+      "width": 200,
+      "height": 264,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 132,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 23,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "20"
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 44.08333333333333,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 41,
+          "min": 0,
+          "max": 100,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 73.41666666666666,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "xAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 102.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1
+        },
+        "yAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 132.08333333333331,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "zAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 161.41666666666666,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "min": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": -0.16,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 190.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "max": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.16,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 220.08333333333334,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 1
+        },
+        "power": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "21"
+          },
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 249.41666666666666,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0.8092
+        }
+      },
+      "returnType": "float",
+      "id": "19",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "20": {
+      "type": "polarDisplace",
+      "x": -385.99623519061544,
+      "y": 84.93144207939923,
+      "width": 200,
+      "height": 160,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 80,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 43,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 46.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "angle1": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "23"
+          },
+          "min": -3.141592653589793,
+          "max": 3.141592653589793,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 78.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1.00530964914873
+        },
+        "angle2": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "17"
+          },
+          "min": -3.141592653589793,
+          "max": 3.141592653589793,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 110.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 5e-16
+        },
+        "radius": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1.8,
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 142.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        }
+      },
+      "returnType": "vec3",
+      "id": "20",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "21": {
+      "type": "simplex",
+      "x": -1079.2458736864487,
+      "y": 337.09315964218007,
+      "width": 200,
+      "height": 290,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 145,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 29,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 43.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1.2,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 72.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "amplitude": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 5.8,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 101.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "persistance": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.5,
+          "min": 0,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 130.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "lacunarity": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 2,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 159.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "octaves": {
+          "kind": "static",
+          "type": "int",
+          "value": 3,
+          "min": 1,
+          "max": 5,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 188.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "exponent": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 3.8062,
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 217.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "ridge": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.45055,
+          "min": 0.001,
+          "max": 1,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 246.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "normalize": {
+          "kind": "static",
+          "type": "bool",
+          "value": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 275.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "21",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "23": {
+      "type": "simplex",
+      "x": -1047.6968835058697,
+      "y": -464.18019643050457,
+      "width": 200,
+      "height": 290,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 145,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 30,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 43.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 72.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "amplitude": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.5,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 101.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "persistance": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.5,
+          "min": 0,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 130.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "lacunarity": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1.9,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 159.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "octaves": {
+          "kind": "static",
+          "type": "int",
+          "value": 3,
+          "min": 1,
+          "max": 5,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 188.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "exponent": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1.4086,
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 217.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "ridge": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.7003,
+          "min": 0.001,
+          "max": 1,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 246.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "normalize": {
+          "kind": "static",
+          "type": "bool",
+          "value": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 275.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "23",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "24": {
+      "type": "simplex",
+      "x": 1023.515599414202,
+      "y": -32.45078851651992,
+      "width": 200,
+      "height": 290,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 145,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 33,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "25"
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 43.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 2,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 72.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0.7
+        },
+        "amplitude": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 2.1,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 101.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "persistance": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "35"
+          },
+          "min": 0,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 130.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0.45
+        },
+        "lacunarity": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 3.3,
+          "min": 0,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 159.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "octaves": {
+          "kind": "static",
+          "type": "int",
+          "value": 5,
+          "min": 1,
+          "max": 5,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 188.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "exponent": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 8.1019,
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 217.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 2.5075
+        },
+        "ridge": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.54046,
+          "min": 0.001,
+          "max": 1,
+          "restricted": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 246.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0.72028
+        },
+        "normalize": {
+          "kind": "static",
+          "type": "bool",
+          "value": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 275.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "24",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "25": {
+      "type": "displace",
+      "x": 768.9455902650287,
+      "y": -149.98306829768805,
+      "width": 200,
+      "height": 186,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 93,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 37,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "33"
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 45.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "x": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "30"
+          },
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 76.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0
+        },
+        "y": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "28"
+          },
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 107.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0
+        },
+        "z": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1.6,
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 138.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          },
+          "previousStaticValue": 0.7
+        },
+        "amount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "19"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 169.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1
+        }
+      },
+      "returnType": "vec3",
+      "id": "25",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "28": {
+      "type": "wave",
+      "x": 43.78256828309286,
+      "y": -178.8305923461248,
+      "width": 200,
+      "height": 264,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 132,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 42,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "20"
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 44.08333333333333,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 42,
+          "min": 0,
+          "max": 100,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 73.41666666666666,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "xAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 102.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "yAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.34,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 132.08333333333331,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "zAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 161.41666666666666,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "min": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.14,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 190.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "max": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 220.08333333333334,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0.8
+        },
+        "power": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 2.008,
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 249.41666666666666,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1.009
+        }
+      },
+      "returnType": "float",
+      "id": "28",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "30": {
+      "type": "wave",
+      "x": 46.104412905591296,
+      "y": -516.7428031482832,
+      "width": 200,
+      "height": 264,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 132,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 28,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "32"
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 44.08333333333333,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "frequency": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 57,
+          "min": 0,
+          "max": 100,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 73.41666666666666,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "xAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 102.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "yAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.2,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 132.08333333333331,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "zAmount": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.24,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 161.41666666666666,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "min": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": -0.72,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 190.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "max": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 220.08333333333334,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "power": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 5.3047,
+          "min": 0.01,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 249.41666666666666,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "30",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "32": {
+      "type": "polarDisplace",
+      "x": -234.5705643341691,
+      "y": -376.3318961744104,
+      "width": 200,
+      "height": 160,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 80,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 36,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "nodeId": "20"
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 46.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "angle1": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "23"
+          },
+          "min": -3.141592653589793,
+          "max": 3.141592653589793,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 78.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "angle2": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0,
+          "min": -3.141592653589793,
+          "max": 3.141592653589793,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 110.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "radius": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 2.7,
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 142.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "vec3",
+      "id": "32",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "33": {
+      "type": "scale",
+      "x": 566.7610372424365,
+      "y": -407.69239530209563,
+      "width": 200,
+      "height": 160,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 80,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 24,
+      "fields": {
+        "point": {
+          "kind": "dynamic",
+          "type": "vec3",
+          "value": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "internalOptional": true,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 46.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "x": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.7,
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 78.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 2.1
+        },
+        "y": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.7,
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 110.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "z": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -5,
+          "max": 5,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 142.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1
+        }
+      },
+      "returnType": "vec3",
+      "id": "33",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "34": {
+      "type": "combine",
+      "x": 514.8225572216188,
+      "y": 132.61969061259265,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 35,
+      "fields": {
+        "operation": {
+          "kind": "choice",
+          "type": "int",
+          "value": 2,
+          "choices": {
+            "add": 0,
+            "mult": 1,
+            "pow": 2,
+            "avg": 3,
+            "mod": 4
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "value1": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "28"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "value2": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "19"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        }
+      },
+      "returnType": "float",
+      "id": "34",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "35": {
+      "type": "remap",
+      "x": 761.7801783753189,
+      "y": 122.81178625035167,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 15,
+      "fields": {
+        "value": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "34"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "add": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.3,
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "mult": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.1,
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "35",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "38": {
+      "type": "remap",
+      "x": 272.90939550193553,
+      "y": -1115.317703809733,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 45,
+      "fields": {
+        "value": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "17"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "add": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 3,
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0.05
+        },
+        "mult": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.2,
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0.1
+        }
+      },
+      "returnType": "float",
+      "id": "38",
+      "elevated": false,
+      "active": false,
+      "hovered": true
+    },
+    "40": {
+      "type": "remap",
+      "x": 1638.14450563828,
+      "y": 109.11594876464103,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 39,
+      "fields": {
+        "value": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "42"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "add": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "41"
+          },
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "mult": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 1
+        }
+      },
+      "returnType": "float",
+      "id": "40",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "41": {
+      "type": "remap",
+      "x": 1100.2307707138057,
+      "y": 339.23830388771023,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 14,
+      "fields": {
+        "value": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "19"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "add": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.3,
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        },
+        "mult": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "21"
+          },
+          "min": -10,
+          "max": 10,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0.8
+        }
+      },
+      "returnType": "float",
+      "id": "41",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "42": {
+      "type": "clamp",
+      "x": 1333.290981885679,
+      "y": 64.64662599899513,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 26,
+      "fields": {
+        "value": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "24"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "min": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.12,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "max": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 1,
+          "min": -1,
+          "max": 1,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "42",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "44": {
+      "type": "combine",
+      "x": 178.07553987031218,
+      "y": -954.6718139435818,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 20,
+      "fields": {
+        "operation": {
+          "kind": "choice",
+          "type": "int",
+          "value": 0,
+          "choices": {
+            "add": 0,
+            "mult": 1,
+            "pow": 2,
+            "avg": 3,
+            "mod": 4
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "value1": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "28"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "value2": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "23"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        }
+      },
+      "returnType": "float",
+      "id": "44",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "45": {
+      "type": "combine",
+      "x": 1338.7283605533182,
+      "y": -111.94049228631658,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 40,
+      "fields": {
+        "operation": {
+          "kind": "choice",
+          "type": "int",
+          "value": 2,
+          "choices": {
+            "add": 0,
+            "mult": 1,
+            "pow": 2,
+            "avg": 3,
+            "mod": 4
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "value1": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "44"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "value2": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "24"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        }
+      },
+      "returnType": "float",
+      "id": "45",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    },
+    "48": {
+      "type": "combine",
+      "x": 734.3008036295125,
+      "y": -1074.6597020531906,
+      "width": 200,
+      "height": 134,
+      "anchor": {
+        "size": 16,
+        "x": 200,
+        "y": 67,
+        "type": "node",
+        "hovered": false,
+        "active": false
+      },
+      "layer": 17,
+      "fields": {
+        "operation": {
+          "kind": "choice",
+          "type": "int",
+          "value": 2,
+          "choices": {
+            "add": 0,
+            "mult": 1,
+            "pow": 2,
+            "avg": 3,
+            "mod": 4
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 48.25,
+            "type": "field",
+            "active": false,
+            "hovered": false
+          }
+        },
+        "value1": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": {
+            "nodeId": "38"
+          },
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 81.75,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          },
+          "previousStaticValue": 0
+        },
+        "value2": {
+          "kind": "dynamic",
+          "type": "float",
+          "value": 0.73,
+          "anchor": {
+            "size": 16,
+            "x": 0,
+            "y": 115.25,
+            "type": "field",
+            "hovered": false,
+            "active": false
+          }
+        }
+      },
+      "returnType": "float",
+      "id": "48",
+      "elevated": false,
+      "active": false,
+      "hovered": false
+    }
+  },
+  "position": {
+    "x": -1405.5115814729481,
+    "y": 467.72326476986115
+  },
+  "zoom": 1.455488403155302
+}

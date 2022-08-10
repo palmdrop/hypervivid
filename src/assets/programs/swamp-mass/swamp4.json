@@ -1928,7 +1928,7 @@
         "hovered": false,
         "active": false
       },
-      "layer": 49,
+      "layer": 14,
       "fields": {
         "value": {
           "kind": "dynamic",
@@ -1967,7 +1967,7 @@
         "mult": {
           "kind": "dynamic",
           "type": "float",
-          "value": 0.8,
+          "value": 1.6,
           "min": -10,
           "max": 10,
           "anchor": {
@@ -2001,7 +2001,7 @@
         "hovered": false,
         "active": false
       },
-      "layer": 14,
+      "layer": 40,
       "fields": {
         "value": {
           "kind": "dynamic",
@@ -2022,7 +2022,7 @@
         "add": {
           "kind": "dynamic",
           "type": "float",
-          "value": 0.1,
+          "value": 0,
           "min": -10,
           "max": 10,
           "anchor": {
@@ -2292,7 +2292,7 @@
         "hovered": false,
         "active": false
       },
-      "layer": 47,
+      "layer": 49,
       "fields": {
         "operation": {
           "kind": "choice",
@@ -2364,7 +2364,7 @@
         "hovered": false,
         "active": false
       },
-      "layer": 40,
+      "layer": 47,
       "fields": {
         "value": {
           "kind": "dynamic",
@@ -2385,7 +2385,7 @@
         "add": {
           "kind": "dynamic",
           "type": "float",
-          "value": -0.1,
+          "value": 0,
           "min": -10,
           "max": 10,
           "anchor": {
@@ -2400,7 +2400,7 @@
         "mult": {
           "kind": "dynamic",
           "type": "float",
-          "value": 0.9,
+          "value": 0.4,
           "min": -10,
           "max": 10,
           "anchor": {
