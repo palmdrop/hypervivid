@@ -1,0 +1,3 @@
+[submodule "src/modules/substrates"]
+	path = src/modules/substrates
+	url = https://github.com/palmdrop/substrates

@@ -164,6 +164,12 @@ export default {
         "to": "objects",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "immerse",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "substrate": [
@@ -182,6 +188,12 @@ export default {
       {
         "from": "substrate",
         "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "swamp-mass",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -387,6 +399,12 @@ export default {
         "from": "domain-warping",
         "to": "modified-noise",
         "kind": "next",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "swamp-mass",
+        "kind": "tangent",
         "strength": 0.5
       }
     ],
@@ -644,175 +662,217 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
+    ],
+    "swamp-mass": [
+      {
+        "from": "swamp-mass",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      }
     ]
   },
   "tags": {
     "art": {
       "weight": 1,
-      "count": 21
+      "count": 22
     },
     "generative": {
-      "weight": 0.9523809523809523,
-      "count": 20
+      "weight": 0.9545454545454546,
+      "count": 21
     },
     "live": {
-      "weight": 0.6190476190476191,
-      "count": 13
+      "weight": 0.6363636363636364,
+      "count": 14
     },
     "domain-warping": {
-      "weight": 0.5714285714285714,
-      "count": 12
+      "weight": 0.5909090909090909,
+      "count": 13
     },
     "organic": {
-      "weight": 0.3333333333333333,
-      "count": 7
+      "weight": 0.36363636363636365,
+      "count": 8
     },
     "noise": {
-      "weight": 0.2857142857142857,
-      "count": 6
+      "weight": 0.3181818181818182,
+      "count": 7
     },
     "project": {
-      "weight": 0.2857142857142857,
+      "weight": 0.2727272727272727,
       "count": 6
     },
     "interactive": {
-      "weight": 0.2857142857142857,
+      "weight": 0.2727272727272727,
       "count": 6
     },
     "css": {
-      "weight": 0.23809523809523808,
+      "weight": 0.22727272727272727,
       "count": 5
     },
     "geometry": {
-      "weight": 0.23809523809523808,
+      "weight": 0.22727272727272727,
       "count": 5
     },
     "info": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18181818181818182,
       "count": 4
     },
     "thoughts": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18181818181818182,
       "count": 4
     },
     "feedback": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18181818181818182,
       "count": 4
     },
     "photography": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18181818181818182,
       "count": 4
     },
     "internet": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18181818181818182,
       "count": 4
     },
     "chrome": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18181818181818182,
       "count": 4
     },
     "writing": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13636363636363635,
+      "count": 3
+    },
+    "biophilia": {
+      "weight": 0.13636363636363635,
       "count": 3
     },
     "fragments": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13636363636363635,
       "count": 3
     },
     "webart": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13636363636363635,
       "count": 3
     },
     "hyper": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13636363636363635,
       "count": 3
     },
     "memes": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13636363636363635,
       "count": 3
     },
     "glitch": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.09523809523809523,
-      "count": 2
-    },
-    "biophilia": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "mind": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "fuse": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "utility": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "exploration": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "dithering": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09090909090909091,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "contact": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "communication": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "particles": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "words": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "instancing": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "texture": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "depth": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "external": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
+      "count": 1
+    },
+    "substrate": {
+      "weight": 0.045454545454545456,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.047619047619047616,
+      "weight": 0.045454545454545456,
       "count": 1
     }
   },
   "nodes": {
+    "swamp-mass": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "domain-warping",
+        "organic",
+        "noise",
+        "biophilia",
+        "substrate"
+      ],
+      "createdAt": "Wed, 10 Aug 2022 09:20:52 GMT",
+      "updatedAt": "Wed, 10 Aug 2022 10:09:17 GMT",
+      "inline": false,
+      "title": "Swamp Mass",
+      "description": "Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.",
+      "image": "/img/swamp-mass.jpg"
+    },
     "markup-dada": {
       "tags": [
         "art",
@@ -829,8 +889,8 @@ export default {
     "digital-gardening": {
       "tags": [
         "thoughts",
-        "fragments",
-        "biophilia"
+        "biophilia",
+        "fragments"
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
       "updatedAt": "Fri, 29 Jul 2022 14:50:04 GMT",
@@ -908,8 +968,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "project",
         "noise",
+        "project",
         "space-colonization",
         "rhizome"
       ],
@@ -927,11 +987,11 @@ export default {
         "generative",
         "domain-warping",
         "organic",
-        "project",
-        "noise"
+        "noise",
+        "project"
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
-      "updatedAt": "Mon, 20 Jun 2022 17:05:33 GMT",
+      "updatedAt": "Wed, 10 Aug 2022 10:08:25 GMT",
       "inline": false,
       "title": "Objects",
       "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities. These things just are.",
@@ -943,8 +1003,8 @@ export default {
         "art",
         "generative",
         "organic",
-        "project",
         "noise",
+        "project",
         "memes",
         "flowfield"
       ],
@@ -1339,6 +1399,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "markup-dada",
-  "mostRecentlyUpdatedNode": "digital-gardening"
+  "latestNode": "swamp-mass",
+  "mostRecentlyUpdatedNode": "objects"
 } as const;

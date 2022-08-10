@@ -7,7 +7,7 @@
 </script>
 
 <script lang="ts">
-import { promptDownload } from '$utils/file';
+  import { promptDownload } from '$utils/file';
 
   import throttle from 'lodash.throttle';
 	import type { RenderScene, RenderSceneConstructor } from './../../three/core';
