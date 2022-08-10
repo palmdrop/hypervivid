@@ -1,6 +1,5 @@
 <script>
   export let size = 12;
-  export let margin = 0;
 
   $: shadowSize = Math.round(0.15 * size);
 </script>
