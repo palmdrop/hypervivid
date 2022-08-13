@@ -161,6 +161,12 @@ export default {
       },
       {
         "from": "immerse",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
         "to": "objects",
         "kind": "tangent",
         "strength": 0.5
@@ -182,6 +188,12 @@ export default {
       {
         "from": "substrate",
         "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "jolt-gate",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -397,6 +409,12 @@ export default {
     "domain-warping": [
       {
         "from": "domain-warping",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
         "to": "modified-noise",
         "kind": "next",
         "strength": 0.5
@@ -506,6 +524,58 @@ export default {
       {
         "from": "intro",
         "to": "contact",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "jolt-gate": [
+      {
+        "from": "jolt-gate",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "swamp-mass": [
+      {
+        "from": "swamp-mass",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "domain-warping",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -662,199 +732,195 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "swamp-mass": [
-      {
-        "from": "swamp-mass",
-        "to": "substrate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      }
     ]
   },
   "tags": {
     "art": {
       "weight": 1,
-      "count": 22
+      "count": 23
     },
     "generative": {
-      "weight": 0.9545454545454546,
-      "count": 21
+      "weight": 0.9565217391304348,
+      "count": 22
     },
     "live": {
-      "weight": 0.6363636363636364,
-      "count": 14
+      "weight": 0.6521739130434783,
+      "count": 15
     },
     "domain-warping": {
-      "weight": 0.5909090909090909,
-      "count": 13
-    },
-    "organic": {
-      "weight": 0.36363636363636365,
-      "count": 8
+      "weight": 0.6086956521739131,
+      "count": 14
     },
     "noise": {
-      "weight": 0.3181818181818182,
-      "count": 7
+      "weight": 0.34782608695652173,
+      "count": 8
+    },
+    "organic": {
+      "weight": 0.34782608695652173,
+      "count": 8
     },
     "project": {
-      "weight": 0.2727272727272727,
+      "weight": 0.2608695652173913,
       "count": 6
     },
     "interactive": {
-      "weight": 0.2727272727272727,
+      "weight": 0.2608695652173913,
       "count": 6
     },
     "css": {
-      "weight": 0.22727272727272727,
+      "weight": 0.21739130434782608,
       "count": 5
     },
     "geometry": {
-      "weight": 0.22727272727272727,
+      "weight": 0.21739130434782608,
       "count": 5
     },
     "info": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17391304347826086,
       "count": 4
     },
     "thoughts": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17391304347826086,
       "count": 4
     },
     "feedback": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17391304347826086,
       "count": 4
     },
     "photography": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17391304347826086,
       "count": 4
     },
     "internet": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17391304347826086,
       "count": 4
     },
     "chrome": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17391304347826086,
       "count": 4
     },
     "writing": {
-      "weight": 0.13636363636363635,
+      "weight": 0.13043478260869565,
       "count": 3
     },
     "biophilia": {
-      "weight": 0.13636363636363635,
+      "weight": 0.13043478260869565,
       "count": 3
     },
     "fragments": {
-      "weight": 0.13636363636363635,
+      "weight": 0.13043478260869565,
       "count": 3
     },
     "webart": {
-      "weight": 0.13636363636363635,
+      "weight": 0.13043478260869565,
       "count": 3
     },
     "hyper": {
-      "weight": 0.13636363636363635,
+      "weight": 0.13043478260869565,
       "count": 3
     },
     "memes": {
-      "weight": 0.13636363636363635,
+      "weight": 0.13043478260869565,
       "count": 3
     },
     "glitch": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "mind": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "fuse": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "utility": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
+      "count": 2
+    },
+    "substrate": {
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "exploration": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "dithering": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08695652173913043,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "contact": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "communication": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "particles": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "words": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "instancing": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "texture": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "depth": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "external": {
-      "weight": 0.045454545454545456,
-      "count": 1
-    },
-    "substrate": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.045454545454545456,
+      "weight": 0.043478260869565216,
       "count": 1
     }
   },
   "nodes": {
+    "jolt-gate": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "domain-warping",
+        "noise",
+        "substrate"
+      ],
+      "createdAt": "Sat, 13 Aug 2022 09:33:13 GMT",
+      "updatedAt": "Sat, 13 Aug 2022 10:04:57 GMT",
+      "inline": false,
+      "title": "Jolt Gate",
+      "description": "Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.",
+      "image": "/img/jolt-gate.jpg"
+    },
     "swamp-mass": {
       "tags": [
         "art",
@@ -1399,6 +1465,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "swamp-mass",
-  "mostRecentlyUpdatedNode": "objects"
+  "latestNode": "jolt-gate",
+  "mostRecentlyUpdatedNode": "swamp-mass"
 } as const;
