@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm --prefix "./src/modules/substrates/" install
+git submodule foreach 'npm install'
 svelte-kit build
