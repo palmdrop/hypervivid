@@ -26,6 +26,9 @@
 			"$nodes/*": [
 				"src/nodes/*"
 			],
+			"$tags/*": [
+				"src/tags/*"
+			],
 			"$stores/*": [
 				"src/stores/*"
 			],

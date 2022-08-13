@@ -867,7 +867,7 @@ export default {
         "substrate"
       ],
       "createdAt": "Wed, 10 Aug 2022 09:20:52 GMT",
-      "updatedAt": "Wed, 10 Aug 2022 10:09:17 GMT",
+      "updatedAt": "Wed, 10 Aug 2022 10:15:14 GMT",
       "inline": false,
       "title": "Swamp Mass",
       "description": "Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.",
