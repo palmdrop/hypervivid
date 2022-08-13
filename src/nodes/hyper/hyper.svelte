@@ -199,6 +199,8 @@
     object-fit: cover;
     aspect-ratio: 3/2;
     z-index: -1;
+
+    box-shadow: 0px 0px 20px -5px var(--cBgInverted);
   }
 
   @media ( min-width: 500px )  {

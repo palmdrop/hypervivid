@@ -81,6 +81,8 @@
 
     aspect-ratio: 3/2;
     object-fit: cover;
+
+    box-shadow: 0px 0px 20px -10px var(--cBgInverted);
   }
 
   @media ( min-width: 650px )  {
