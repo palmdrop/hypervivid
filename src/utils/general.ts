@@ -8,6 +8,10 @@ export const nameToPath = ( name: string ) => {
   return name.replaceAll( ' ', '-' ).trim().toLowerCase();
 };
 
+export const isExternalURL = (url: URL) => {
+  return url.origin !== location.origin;
+}
+
 type WeightedElement<T> = [
   element : T,
   weight : number

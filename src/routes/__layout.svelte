@@ -7,8 +7,12 @@
   import '../global.css';
   import '../fonts.css';
   import '../theme.css';
+  import { isExternalURL } from '../utils/general';
 
-  $: $loading = !!$navigating;
+  $: $loading = (
+    !!$navigating &&
+    !isExternalURL($navigating.to)
+  );
 
   onMount(() => {
     /*
