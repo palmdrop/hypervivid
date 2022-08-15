@@ -167,6 +167,12 @@ export default {
       },
       {
         "from": "immerse",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
         "to": "objects",
         "kind": "tangent",
         "strength": 0.5
@@ -194,6 +200,12 @@ export default {
       {
         "from": "substrate",
         "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "nest",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -421,6 +433,12 @@ export default {
       },
       {
         "from": "domain-warping",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
         "to": "swamp-mass",
         "kind": "tangent",
         "strength": 0.5
@@ -552,12 +570,24 @@ export default {
         "to": "domain-warping",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "swamp-mass": [
       {
         "from": "swamp-mass",
         "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "nest",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -645,6 +675,38 @@ export default {
       {
         "from": "medusa-network",
         "to": "skew-bulbs",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "nest": [
+      {
+        "from": "nest",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "domain-warping",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -737,174 +799,191 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 23
+      "count": 24
     },
     "generative": {
-      "weight": 0.9565217391304348,
-      "count": 22
+      "weight": 0.9583333333333334,
+      "count": 23
     },
     "live": {
-      "weight": 0.6521739130434783,
-      "count": 15
+      "weight": 0.6666666666666666,
+      "count": 16
     },
     "domain-warping": {
-      "weight": 0.6086956521739131,
-      "count": 14
+      "weight": 0.625,
+      "count": 15
     },
     "noise": {
-      "weight": 0.34782608695652173,
-      "count": 8
+      "weight": 0.375,
+      "count": 9
     },
     "organic": {
-      "weight": 0.34782608695652173,
+      "weight": 0.3333333333333333,
       "count": 8
     },
     "project": {
-      "weight": 0.2608695652173913,
+      "weight": 0.25,
       "count": 6
     },
     "interactive": {
-      "weight": 0.2608695652173913,
+      "weight": 0.25,
       "count": 6
     },
     "css": {
-      "weight": 0.21739130434782608,
+      "weight": 0.20833333333333334,
       "count": 5
     },
     "geometry": {
-      "weight": 0.21739130434782608,
+      "weight": 0.20833333333333334,
       "count": 5
     },
     "info": {
-      "weight": 0.17391304347826086,
+      "weight": 0.16666666666666666,
       "count": 4
     },
     "thoughts": {
-      "weight": 0.17391304347826086,
+      "weight": 0.16666666666666666,
       "count": 4
     },
     "feedback": {
-      "weight": 0.17391304347826086,
+      "weight": 0.16666666666666666,
       "count": 4
     },
     "photography": {
-      "weight": 0.17391304347826086,
+      "weight": 0.16666666666666666,
+      "count": 4
+    },
+    "biophilia": {
+      "weight": 0.16666666666666666,
       "count": 4
     },
     "internet": {
-      "weight": 0.17391304347826086,
+      "weight": 0.16666666666666666,
       "count": 4
     },
     "chrome": {
-      "weight": 0.17391304347826086,
+      "weight": 0.16666666666666666,
       "count": 4
     },
     "writing": {
-      "weight": 0.13043478260869565,
-      "count": 3
-    },
-    "biophilia": {
-      "weight": 0.13043478260869565,
+      "weight": 0.125,
       "count": 3
     },
     "fragments": {
-      "weight": 0.13043478260869565,
+      "weight": 0.125,
       "count": 3
     },
     "webart": {
-      "weight": 0.13043478260869565,
+      "weight": 0.125,
       "count": 3
     },
     "hyper": {
-      "weight": 0.13043478260869565,
+      "weight": 0.125,
+      "count": 3
+    },
+    "substrate": {
+      "weight": 0.125,
       "count": 3
     },
     "memes": {
-      "weight": 0.13043478260869565,
+      "weight": 0.125,
       "count": 3
     },
     "glitch": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "mind": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "fuse": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "utility": {
-      "weight": 0.08695652173913043,
-      "count": 2
-    },
-    "substrate": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "exploration": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "dithering": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.08695652173913043,
+      "weight": 0.08333333333333333,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "contact": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "communication": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "particles": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "words": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "instancing": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "texture": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "depth": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "external": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.043478260869565216,
+      "weight": 0.041666666666666664,
       "count": 1
     }
   },
   "nodes": {
+    "nest": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "domain-warping",
+        "noise",
+        "biophilia",
+        "substrate"
+      ],
+      "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
+      "updatedAt": "Mon, 15 Aug 2022 20:03:00 GMT",
+      "inline": false,
+      "title": "Nest",
+      "description": "Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.",
+      "image": "/img/nest.jpg"
+    },
     "jolt-gate": {
       "tags": [
         "art",
@@ -927,8 +1006,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "organic",
         "noise",
+        "organic",
         "biophilia",
         "substrate"
       ],
@@ -954,8 +1033,8 @@ export default {
     },
     "digital-gardening": {
       "tags": [
-        "thoughts",
         "biophilia",
+        "thoughts",
         "fragments"
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
@@ -1052,8 +1131,8 @@ export default {
         "art",
         "generative",
         "domain-warping",
-        "organic",
         "noise",
+        "organic",
         "project"
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
@@ -1068,8 +1147,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "organic",
         "noise",
+        "organic",
         "project",
         "memes",
         "flowfield"
@@ -1465,6 +1544,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "jolt-gate",
-  "mostRecentlyUpdatedNode": "swamp-mass"
+  "latestNode": "nest",
+  "mostRecentlyUpdatedNode": "jolt-gate"
 } as const;
