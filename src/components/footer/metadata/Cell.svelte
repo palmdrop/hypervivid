@@ -3,6 +3,8 @@
   export let multi = false;
   export let nested = false;
   export let inline = false;
+  export let wide = false;
+  export let style = "";
 </script>
 
 <div 
@@ -10,6 +12,8 @@
   class:multi
   class:nested
   class:inline
+  class:wide
+  style={style}
 >
   {#if !multi}
     <h2>
@@ -75,6 +79,11 @@
       max-width: 33%;
     }
 
+    .wide {
+      max-width: 100%;
+      width: 100%;
+    }
+
     .inline {
       flex-direction: column;
     }
@@ -90,5 +99,4 @@
     max-width: unset;
     padding-bottom: 0.8em;
   }
-
 </style>

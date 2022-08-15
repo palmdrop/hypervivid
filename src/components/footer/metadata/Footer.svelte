@@ -9,6 +9,7 @@
   import Cell from './Cell.svelte';
   import { sineInOut } from 'svelte/easing';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
+  import metadata from '../../../nodes/metadata';
 
   export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
@@ -20,6 +21,7 @@
 
   $: links = nodeMetadata.links ?? [];
   $: tags = nodeMetadata.tags ?? [];
+  $: description = nodeMetadata.description ?? "";
 
   $: expanded = isExpanded;
   $: toggle = onToggle ?? (() => {
@@ -57,66 +59,84 @@
         easing: sineInOut
       }}
     >
-      <Cell
-        multi
-      >
-        <Cell 
-          title="NAME"
-          nested
-          inline
+      <div class="cell-container">
+        <Cell
+          multi
         >
-          <Paragraph 
-            center wide
-            tooltip={title.length > 10 ? title : undefined }
+          <Cell 
+            title="NAME"
+            nested
+            inline
           >
-            { title }
-          </Paragraph>
+            <Paragraph 
+              center wide
+              tooltip={title.length > 10 ? title : undefined }
+            >
+              { title }
+            </Paragraph>
+          </Cell>
+          <Cell
+            title="CREATED"
+            nested
+            inline
+          >
+            <Paragraph center wide>
+              { formatDate(nodeMetadata.createdAt) }
+            </Paragraph>
+          </Cell>
+          <Cell
+            title="UPDATED"
+            nested
+            inline
+          >
+            <Paragraph center wide>
+              { formatDate(nodeMetadata.updatedAt) }
+            </Paragraph>
+          </Cell>
         </Cell>
+        
         <Cell
-          title="CREATED"
-          nested
-          inline
+          title="LINKS"
         >
-          <Paragraph center wide>
-            { formatDate(nodeMetadata.createdAt) }
-          </Paragraph>
+          <LinkList 
+            links={links}
+            formatLink={link => `${link.to} (${link.kind})`}
+          >
+            <Paragraph center faded wide>
+              This { NODE_NAME } has no links...
+            </Paragraph>
+          </LinkList>
         </Cell>
-        <Cell
-          title="UPDATED"
-          nested
-          inline
-        >
-          <Paragraph center wide>
-            { formatDate(nodeMetadata.updatedAt) }
-          </Paragraph>
-        </Cell>
-      </Cell>
-      
-      <Cell
-        title="LINKS"
-      >
-        <LinkList 
-          links={links}
-          formatLink={link => `${link.to} (${link.kind})`}
-        >
-          <Paragraph center faded wide>
-            This { NODE_NAME } has no links...
-          </Paragraph>
-        </LinkList>
-      </Cell>
 
-      <Cell
-        title="TAGS"
-      >
-        <TagList 
-          tags={tags}
-          orientation="horizontal"
+        <Cell
+          title="TAGS"
         >
-          <Paragraph center faded wide>
-            This node has no tags...
+          <TagList 
+            tags={tags}
+            stretch
+            orientation="horizontal"
+          >
+            <Paragraph center faded wide>
+              This node has no tags...
+            </Paragraph>
+          </TagList>
+        </Cell>
+      </div>
+      <div class="cell-container">
+        <Cell
+          title="DESCRIPTION"
+          wide
+          style="
+            padding-bottom: 0.5em; 
+          "
+        >
+          <Paragraph style="
+            text-align: left; 
+          ">
+            {description}
           </Paragraph>
-        </TagList>
-      </Cell>
+        </Cell>
+      </div>
     </div>
   {/if}
 </footer>
@@ -140,9 +160,20 @@
     flex-direction: column;
   }
 
+  .cell-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media ( min-width: 500px )  {
-    .content {
+    .cell-container {
       flex-direction: row; 
+    }
+  }
+
+  @media ( min-width: 900px ) {
+    .content {
+      flex-direction: row;
     }
   }
 

@@ -23,7 +23,7 @@
       how many {NODE_NAMES} are tagged with this particular tag.
     </Paragraph>
 
-    <TagList {tags} orientation="horizontal" showCount={true} />
+    <TagList stretch orientation="horizontal" showCount={true} {tags} />
   </main>
 </div>
 

@@ -3,6 +3,7 @@
 
   export let tags: string[];
   export let orientation: 'vertical' | 'horizontal'
+  export let stretch = false;
   export let showCount = false;
   export let minOpacity = 0.2;
 
@@ -18,7 +19,7 @@
 {#if tags.length}
   <ul class={orientation}>
     {#each weightedTags as {tag, weight, count} }
-      <li>
+      <li class:stretch>
         <a 
           href={`/tags/${tag}`}
           style={`opacity: ${Math.max(weight, minOpacity)}`}
@@ -53,7 +54,13 @@
     line-height: 2.3em;
   }
 
+  li.stretch {
+    flex: 1 1 auto;
+  }
+
   a {
+    --margin: 0.2em 2px;
+    display: block;
     box-sizing: border-box;
 
     text-decoration: none;
@@ -63,19 +70,19 @@
     color: var(--cFgInverted);
     background-color: var(--cBgInverted);
 
-    padding: 0.3em 0.8em;
-    margin: 0.1em 0.2em;
+    padding: 0.0em 0.6em;
+    margin: var(--margin);
     border-radius: var(--borderRadius1);
     border: var(--borderPrimary);
   }
 
   a:last-child {
-    margin: 0.1em 0.2em;
+    margin: var(--margin);
     margin-right: 0;
   }
 
   a:first-child {
-    margin: 0.1em 0.2em;
+    margin: var(--margin);
     margin-left: 0;
   }
 
