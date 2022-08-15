@@ -58,11 +58,13 @@
     { tag }
   </h1>
 
-  {#each description as line }
-    <Paragraph wide center>
-      { line }
-    </Paragraph>
-  {/each}
+  <section class="description-container">
+    {#each description as line }
+      <Paragraph wide>
+        { line }
+      </Paragraph>
+    {/each}
+  </section>
 
   <NodeList
     nodeNames={nodeNames}
@@ -79,5 +81,11 @@
     width: 100vw;
 
     overflow-x: hidden;
+  }
+
+  .description-container {
+    max-width: 600px;
+    padding: 0.5em;
+    margin: auto;
   }
 </style>

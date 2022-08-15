@@ -60,7 +60,7 @@
       href="/nodes"
       class="nodes-link"
     >
-      Show more...
+      Show more nodes...
     </a>
   </section>
 </div>

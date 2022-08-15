@@ -546,6 +546,14 @@ export default {
         "strength": 0.5
       }
     ],
+    "": [
+      {
+        "from": "",
+        "to": "intro",
+        "kind": "references",
+        "strength": 0.5
+      }
+    ],
     "jolt-gate": [
       {
         "from": "jolt-gate",
@@ -845,6 +853,10 @@ export default {
       "weight": 0.16666666666666666,
       "count": 4
     },
+    "substrate": {
+      "weight": 0.16666666666666666,
+      "count": 4
+    },
     "feedback": {
       "weight": 0.16666666666666666,
       "count": 4
@@ -878,10 +890,6 @@ export default {
       "count": 3
     },
     "hyper": {
-      "weight": 0.125,
-      "count": 3
-    },
-    "substrate": {
       "weight": 0.125,
       "count": 3
     },
@@ -974,8 +982,8 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "biophilia",
-        "substrate"
+        "substrate",
+        "biophilia"
       ],
       "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
       "updatedAt": "Mon, 15 Aug 2022 20:03:00 GMT",
@@ -1008,8 +1016,8 @@ export default {
         "domain-warping",
         "noise",
         "organic",
-        "biophilia",
-        "substrate"
+        "substrate",
+        "biophilia"
       ],
       "createdAt": "Wed, 10 Aug 2022 09:20:52 GMT",
       "updatedAt": "Wed, 10 Aug 2022 10:15:14 GMT",
@@ -1407,10 +1415,11 @@ export default {
         "generative",
         "domain-warping",
         "noise",
+        "substrate",
         "writing"
       ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
-      "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
+      "updatedAt": "Mon, 15 Aug 2022 20:51:11 GMT",
       "inline": false,
       "title": "Alien Patterns",
       "description": "On combining modified noise and domain warping to produce alien patterns",
@@ -1545,5 +1554,5 @@ export default {
     }
   },
   "latestNode": "nest",
-  "mostRecentlyUpdatedNode": "jolt-gate"
+  "mostRecentlyUpdatedNode": "alien-patterns"
 } as const;
