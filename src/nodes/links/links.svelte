@@ -76,12 +76,14 @@
   }
 
   tr, td {
-    transition: 0.3s;
+    transition: 0.2s;
+    text-decoration: underline;
+    text-decoration-thickness: 2;
+    text-decoration-color: var(--cBg);
   }
 
   tr:hover > td {
-    background-color: var(--cBgInverted);
-    color: var(--cFgInverted);
+    text-decoration-color: var(--cFg);
   }
 
   .categories {

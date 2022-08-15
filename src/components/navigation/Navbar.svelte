@@ -120,7 +120,7 @@
 
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100% + 1px);
 
     z-index: 3;
 
