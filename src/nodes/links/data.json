@@ -455,5 +455,14 @@
     "additionalCategories": [
       "Other"
     ]
+  },
+  {
+    "text": "Tero Parviainen",
+    "url": "https://teropa.info",
+    "category": "Blog",
+    "additionalCategories": [
+      "Tech",
+      "Art"
+    ]
   }
 ]
