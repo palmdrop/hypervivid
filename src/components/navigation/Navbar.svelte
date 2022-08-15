@@ -129,6 +129,10 @@
     border-bottom: var(--borderPrimary);
   }
 
+  .mobile {
+    box-shadow: 0px 6em 6em 1em #00000077;
+  }
+
   li {
     position: relative;
     display: flex;
@@ -216,5 +220,4 @@
     outline: var(--borderPrimary);
     border-radius: var(--borderRadius1);
   }
-
 </style>
