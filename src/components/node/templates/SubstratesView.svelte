@@ -14,10 +14,24 @@
     programImports
   ).map(module => module.default);
 
-  const program = randomElement(programs);
+  let program: EncodedProgram | undefined = undefined;
+
+  const randomizeProgram = () => {
+    let newProgram: EncodedProgram;
+
+    // Do not randomize the same program two times in a row
+    while((newProgram = randomElement(programs)) === program) {};
+
+    program = newProgram;
+  }
+
+  randomizeProgram();
 </script>
 
-<div class="overlay" />
+<div 
+  class="overlay" 
+  on:click={randomizeProgram}
+/>
 
 <SubstrateView 
   programData={program}
@@ -29,5 +43,9 @@
     inset: 0;
     width: 100vw;
     height: 100vh;
+
+    z-index: 0;
+
+    cursor: pointer;
   }
 </style>

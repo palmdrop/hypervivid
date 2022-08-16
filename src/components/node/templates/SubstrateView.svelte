@@ -4,10 +4,12 @@
 
   export let programData: any;
 
-  const program = decodeProgram(programData as EncodedProgram);
-  if(program) {
-    initializeProgramStore(program);
-    // TODO: Error message?
+  $: {
+    const program = decodeProgram(programData as EncodedProgram);
+    if(program) {
+      initializeProgramStore(program);
+      // TODO: Error message?
+    }
   }
 </script>
 
