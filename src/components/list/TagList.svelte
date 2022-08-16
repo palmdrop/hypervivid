@@ -62,6 +62,7 @@
     --margin: 0.2em 2px;
     display: block;
     box-sizing: border-box;
+    text-align: center;
 
     text-decoration: none;
 

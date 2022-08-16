@@ -45,7 +45,7 @@
 
   $: useTitle(`${tag} ~ ${SITE_NAME}`);
 
-  const description = tag in tagsMetadata 
+  $: description = tag in tagsMetadata 
     ? tagsMetadata[tag]
     : [`All ${NODE_NAMES} with tag "${tag}".`];
 </script>
@@ -59,11 +59,13 @@
   </h1>
 
   <section class="description-container">
-    {#each description as line }
-      <Paragraph wide>
-        { line }
-      </Paragraph>
-    {/each}
+    <div>
+      {#each description as line }
+        <Paragraph wide>
+          { line }
+        </Paragraph>
+      {/each}
+    </div>
   </section>
 
   <NodeList
@@ -81,11 +83,16 @@
     width: 100vw;
 
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 600px;
     padding: 0.5em;
+
     margin: auto;
   }
 </style>
