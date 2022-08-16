@@ -85,7 +85,8 @@
     'gagement',
     'politics',
     'culture',
-    'imposed'
+    'imposed',
+    'leisure'
   ].map(word => `hyper${word}`.toUpperCase());
 
   const boxHeight = 7;
