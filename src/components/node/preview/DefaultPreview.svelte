@@ -83,7 +83,11 @@
     object-fit: cover;
   }
 
-  @media ( min-width: 650px )  {
+  @media ( min-width: 750px )  {
+    img {
+      width: 60%;
+    }
+
     .node-preview {
       flex-direction: row;
     }
