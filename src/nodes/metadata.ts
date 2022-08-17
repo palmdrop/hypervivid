@@ -167,6 +167,12 @@ export default {
       },
       {
         "from": "immerse",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
         "to": "nest",
         "kind": "tangent",
         "strength": 0.5
@@ -200,6 +206,12 @@ export default {
       {
         "from": "substrate",
         "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -433,6 +445,12 @@ export default {
       },
       {
         "from": "domain-warping",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
         "to": "nest",
         "kind": "tangent",
         "strength": 0.5
@@ -581,6 +599,12 @@ export default {
       },
       {
         "from": "jolt-gate",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
         "to": "nest",
         "kind": "tangent",
         "strength": 0.5
@@ -590,6 +614,12 @@ export default {
       {
         "from": "swamp-mass",
         "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -687,7 +717,51 @@ export default {
         "strength": 0.5
       }
     ],
+    "moss-structure": [
+      {
+        "from": "moss-structure",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "substrate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "nest": [
+      {
+        "from": "nest",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "nest",
         "to": "swamp-mass",
@@ -807,174 +881,191 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 24
+      "count": 25
     },
     "generative": {
-      "weight": 0.9583333333333334,
-      "count": 23
+      "weight": 0.96,
+      "count": 24
     },
     "live": {
-      "weight": 0.6666666666666666,
-      "count": 16
+      "weight": 0.68,
+      "count": 17
     },
     "domain-warping": {
-      "weight": 0.625,
-      "count": 15
+      "weight": 0.64,
+      "count": 16
     },
     "noise": {
-      "weight": 0.375,
-      "count": 9
+      "weight": 0.4,
+      "count": 10
     },
     "organic": {
-      "weight": 0.3333333333333333,
+      "weight": 0.32,
       "count": 8
     },
     "project": {
-      "weight": 0.25,
+      "weight": 0.24,
       "count": 6
     },
     "interactive": {
-      "weight": 0.25,
+      "weight": 0.24,
       "count": 6
     },
+    "substrate": {
+      "weight": 0.2,
+      "count": 5
+    },
+    "biophilia": {
+      "weight": 0.2,
+      "count": 5
+    },
     "css": {
-      "weight": 0.20833333333333334,
+      "weight": 0.2,
       "count": 5
     },
     "geometry": {
-      "weight": 0.20833333333333334,
+      "weight": 0.2,
       "count": 5
     },
     "info": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16,
       "count": 4
     },
     "thoughts": {
-      "weight": 0.16666666666666666,
-      "count": 4
-    },
-    "substrate": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16,
       "count": 4
     },
     "feedback": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16,
       "count": 4
     },
     "photography": {
-      "weight": 0.16666666666666666,
-      "count": 4
-    },
-    "biophilia": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16,
       "count": 4
     },
     "internet": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16,
       "count": 4
     },
     "chrome": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16,
       "count": 4
     },
     "writing": {
-      "weight": 0.125,
+      "weight": 0.12,
       "count": 3
     },
     "fragments": {
-      "weight": 0.125,
+      "weight": 0.12,
       "count": 3
     },
     "webart": {
-      "weight": 0.125,
+      "weight": 0.12,
       "count": 3
     },
     "hyper": {
-      "weight": 0.125,
+      "weight": 0.12,
       "count": 3
     },
     "memes": {
-      "weight": 0.125,
+      "weight": 0.12,
       "count": 3
     },
     "glitch": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "mind": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "fuse": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "utility": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "exploration": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "dithering": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.08333333333333333,
+      "weight": 0.08,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "contact": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "communication": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "particles": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "words": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "instancing": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "texture": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "depth": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "external": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.041666666666666664,
+      "weight": 0.04,
       "count": 1
     }
   },
   "nodes": {
+    "moss-structure": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "domain-warping",
+        "noise",
+        "substrate",
+        "biophilia"
+      ],
+      "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
+      "updatedAt": "Wed, 17 Aug 2022 09:50:12 GMT",
+      "inline": false,
+      "title": "Moss Structure",
+      "description": "More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.",
+      "image": "/img/moss-structure.jpg"
+    },
     "nest": {
       "tags": [
         "art",
@@ -1056,8 +1147,8 @@ export default {
       "tags": [
         "organic",
         "project",
-        "photography",
-        "biophilia"
+        "biophilia",
+        "photography"
       ],
       "createdAt": "Thu, 21 Jul 2022 20:37:19 GMT",
       "updatedAt": "Thu, 21 Jul 2022 20:54:45 GMT",
@@ -1553,6 +1644,6 @@ export default {
       "image": "/img/pieces/retro-core.jpg"
     }
   },
-  "latestNode": "nest",
+  "latestNode": "moss-structure",
   "mostRecentlyUpdatedNode": "alien-patterns"
 } as const;
