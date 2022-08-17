@@ -94,7 +94,7 @@
   <section class="about">
     <div class="img-container">
       <img
-        src='/img/connections/surface1.jpg'
+        src='/nodes/about.preview.jpg'
         alt=''
       />
     </div>
