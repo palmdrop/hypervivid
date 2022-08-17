@@ -464,5 +464,14 @@
       "Tech",
       "Art"
     ]
+  },
+  {
+    "text": "How Generative Music Works",
+    "url": "https://teropa.info/loop/",
+    "category": "Tech",
+    "additionalCategories": [
+      "Blog",
+      "Art"
+    ]
   }
 ]
