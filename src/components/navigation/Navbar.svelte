@@ -143,6 +143,8 @@
     border-bottom: var(--borderPrimary);
     z-index: 0;
 
+    margin-left: -1px;
+
     font-size: 1.2rem;
 
     width: 100vw;
@@ -151,14 +153,17 @@
 
   li:last-child {
     border-bottom: unset;
-    border-right: var(--borderPrimary);
   }
 
   .clickable::before {
     position: absolute;
+    display: block;
     content: '';
 
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     border-radius: var(--borderRadius1);
     outline: var(--borderPrimary);
@@ -208,6 +213,11 @@
       width: auto;
       height: auto;
       font-size: 1.0rem;
+      margin-left: unset;
+    }
+
+    li:last-child {
+      border-right: var(--borderPrimary);
     }
 
     a {
@@ -216,7 +226,7 @@
   }
 
   .rss > a {
-    padding: 0.3em 0.4em;
+    padding: 0.31em 0.4em;
     outline: var(--borderPrimary);
     border-radius: var(--borderRadius1);
   }

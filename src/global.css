@@ -55,6 +55,11 @@ strong {
 	font-weight: bold;
 }
 
+a, a:link, a:visited, a:hover, a:active, a:focus-visible, button:focus, button:focus-visible {
+	color: inherit;
+	text-decoration: none;
+}
+
 blockquote {
 	opacity: 0.5;
 	padding-bottom: 1em;
