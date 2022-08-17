@@ -132,12 +132,6 @@ export default {
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
-      },
-      {
-        "from": "block-dissolve",
-        "to": "substrate",
-        "kind": "tangent",
-        "strength": 0.5
       }
     ],
     "immerse": [
@@ -149,7 +143,7 @@ export default {
       },
       {
         "from": "immerse",
-        "to": "substrate",
+        "to": "fluid-feedback",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -308,12 +302,6 @@ export default {
       {
         "from": "rhizome",
         "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "substrate",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -524,6 +512,14 @@ export default {
         "strength": 0.5
       }
     ],
+    "fluid-feedback": [
+      {
+        "from": "fluid-feedback",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "hyper": [
       {
         "from": "hyper",
@@ -581,12 +577,6 @@ export default {
       },
       {
         "from": "jolt-gate",
-        "to": "substrate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
@@ -626,12 +616,6 @@ export default {
       {
         "from": "swamp-mass",
         "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "substrate",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -738,12 +722,6 @@ export default {
       },
       {
         "from": "moss-structure",
-        "to": "substrate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
@@ -771,12 +749,6 @@ export default {
       {
         "from": "nest",
         "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "substrate",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -900,8 +872,8 @@ export default {
       "count": 10
     },
     "organic": {
-      "weight": 0.32,
-      "count": 8
+      "weight": 0.36,
+      "count": 9
     },
     "project": {
       "weight": 0.24,
@@ -1056,11 +1028,12 @@ export default {
         "live",
         "domain-warping",
         "noise",
+        "organic",
         "substrate",
         "biophilia"
       ],
       "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 10:34:27 GMT",
+      "updatedAt": "Wed, 17 Aug 2022 19:37:12 GMT",
       "inline": false,
       "title": "Moss Structure",
       "description": "More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.",
@@ -1077,7 +1050,7 @@ export default {
         "biophilia"
       ],
       "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 10:34:35 GMT",
+      "updatedAt": "Wed, 17 Aug 2022 19:36:52 GMT",
       "inline": false,
       "title": "Nest",
       "description": "Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.",
@@ -1467,7 +1440,7 @@ export default {
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
       "image": "/nodes/rhizome.preview.jpg"
     },
-    "substrate": {
+    "fluid-feedback": {
       "tags": [
         "art",
         "generative",
@@ -1477,11 +1450,11 @@ export default {
         "feedback"
       ],
       "createdAt": "13 Feb 2022 09:49:08 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 10:47:01 GMT",
+      "updatedAt": "Wed, 17 Aug 2022 19:36:29 GMT",
       "inline": false,
-      "title": "Substrate",
+      "title": "Fluid Feedback",
       "description": "More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.",
-      "image": "/nodes/substrate.preview.jpg"
+      "image": "/nodes/fluid-feedback.preview.jpg"
     },
     "immerse": {
       "tags": [
@@ -1645,5 +1618,5 @@ export default {
     }
   },
   "latestNode": "moss-structure",
-  "mostRecentlyUpdatedNode": "virtual-imprint"
+  "mostRecentlyUpdatedNode": "nest"
 } as const;

@@ -2,11 +2,13 @@
   "tags": [
     "generative", "art", "domain-warping", "feedback", "organic", "live"
   ],
-  "links": [],
+  "links": [
+    "immerse"
+  ],
   "createdAt": "13 Feb 2022 09:49:08 GMT",
   "updatedAt": "13 Feb 2022 09:49:08 GMT",
   "inline": false,
-  "title": "Substrate",
+  "title": "Fluid Feedback",
   "description": "More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.",
   "image": ""
 }
