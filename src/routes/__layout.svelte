@@ -40,9 +40,9 @@
 
 <slot />
 
-<!-- 
+{@html `<!-- 
   These spans are inserted to trick instagram/facebook/meta to not inject tracking scripts on the page.
   Please read more at https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser
--->
+-->`}
 <span id="iab-pcm-sdk" />
 <span id="iab-autofill-sdk" />
