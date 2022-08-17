@@ -51,7 +51,7 @@
   }
 
   li {
-    line-height: 2.0em;
+    line-height: 1.0em;
   }
 
   li.stretch {
@@ -71,7 +71,7 @@
     color: var(--cFgInverted);
     background-color: var(--cBgInverted);
 
-    padding: 0.0em 0.5em;
+    padding: 0.4em 0.5em;
     margin: var(--margin);
     border-radius: var(--borderRadius1);
     border: var(--borderPrimary);

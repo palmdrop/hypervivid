@@ -1339,8 +1339,8 @@ export default {
       "inline": false,
       "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
-      "image": "/img/connections/connections1.jpg",
-      "updatedAt": "Sun, 19 Jun 2022 08:06:04 GMT"
+      "image": "/img/connections/surface1.jpg",
+      "updatedAt": "Wed, 17 Aug 2022 10:25:37 GMT"
     },
     "hyper": {
       "tags": [
@@ -1645,5 +1645,5 @@ export default {
     }
   },
   "latestNode": "moss-structure",
-  "mostRecentlyUpdatedNode": "alien-patterns"
+  "mostRecentlyUpdatedNode": "about"
 } as const;

@@ -45,6 +45,8 @@
 
     flex-direction: column;
     justify-content: unset;
+
+    overflow-y: auto;
   }
 
   .cell h2 {
@@ -54,7 +56,6 @@
   }
 
   .content {
-    overflow: auto;
     max-height: calc(100% - 1.0em);
   }
 
@@ -76,7 +77,7 @@
 
   @media ( min-width: 500px )  {
     .cell {
-      max-width: 33%;
+      max-width: 34%;
     }
 
     .wide {

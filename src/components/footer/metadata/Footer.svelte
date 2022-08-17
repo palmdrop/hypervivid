@@ -133,7 +133,7 @@
           <Paragraph style="
             text-align: left; 
           ">
-            {description}
+            { description }
           </Paragraph>
         </Cell>
       </div>
@@ -158,6 +158,11 @@
   .content {
     display: flex;
     flex-direction: column;
+
+    max-height: 87vh;
+    overflow-y: auto;
+
+    padding-bottom: 1em;
   }
 
   .cell-container {
@@ -168,12 +173,25 @@
   @media ( min-width: 500px )  {
     .cell-container {
       flex-direction: row; 
+      width: unset;
+    }
+
+    .content {
+      padding-bottom: unset;
     }
   }
 
   @media ( min-width: 900px ) {
     .content {
       flex-direction: row;
+    }
+
+    .cell-container {
+      width: 63%;
+    }
+
+    .cell-container:last-child {
+      width: 34%;
     }
   }
 
