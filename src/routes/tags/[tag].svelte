@@ -11,12 +11,16 @@
       redirect: '/'
     };
 
-    const nodeNames = Object.entries(nodesMetadata.nodes)
-      .filter(
-        ([, nodeMetadata]) => (nodeMetadata.tags as unknown as Tag[]).includes(tag)
-      ).map(
-        ([name]) => name
-      );
+    const nodeNames = filterSearchNodes(
+      nodesMetadata,
+      [{
+        settings: {
+          matchOn: [tag],
+        },
+        lookup: (node) => node.tags as unknown as Tag[]
+      }],
+      'any'
+    );
 
     return {
       props: {
@@ -34,6 +38,7 @@
   import { NODE_NAMES, SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
 	import tagsMetadata from '$tags/metadata';
+import { filterSearchNodes } from '../../utils/filterSearch';
 
   export let tag: Tag;
   export let nodeNames: NodeName[];

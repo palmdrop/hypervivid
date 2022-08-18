@@ -51,14 +51,12 @@ const main = async () => {
   }
 
   const name = `${process.argv[2]}`;
-  // const preview = process.argv[3] ?? false;
 
   let preview = false;
   let preset: keyof typeof presets = 'default';
 
   for(let i = 3; i < process.argv.length; i++) {
     const arg = process.argv[i];
-    console.log(arg);
     switch(arg) {
       case '--preview': preview = true; break;
       case '--fragment': preset = 'fragment'; break;

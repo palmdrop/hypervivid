@@ -5,7 +5,7 @@ export type LinkKind = NonNullable<
   (typeof metadata['links'])[NodeName][number]
 >['kind'];
 
-export type Tag = typeof metadata['nodes'][NodeName]['tags'][number];
+export type Tag = keyof typeof metadata.tags;
 
 export type Link = {
   from?: string, // TODO: use "NodeName"
@@ -13,6 +13,8 @@ export type Link = {
   kind: LinkKind,
   strength: number
 };
+
+export type Node = typeof metadata.nodes[NodeName];
 
 export type NodeMode 
   = 'link'
@@ -37,6 +39,8 @@ export type NodeMetadata = {
 
   asDocument?: boolean,
 } & Record<string, any>; 
+
+export type NodesMetadata = typeof metadata;
 
 export type NodeContext = {
   name: NodeName,

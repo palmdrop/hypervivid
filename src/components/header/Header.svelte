@@ -71,12 +71,14 @@
     align-items: stretch;
 
     background-color: var(--cBg);
+
   }
 
   header > div {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: -1px;
   }
 
   p {

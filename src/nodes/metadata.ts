@@ -848,7 +848,8 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ]
+    ],
+    "substrates": []
   },
   "tags": {
     "art": {
@@ -1021,6 +1022,15 @@ export default {
     }
   },
   "nodes": {
+    "substrates": {
+      "tags": [],
+      "createdAt": "Wed, 17 Aug 2022 19:38:50 GMT",
+      "updatedAt": "Wed, 17 Aug 2022 19:41:13 GMT",
+      "inline": false,
+      "title": "Substrates",
+      "description": "",
+      "image": ""
+    },
     "moss-structure": {
       "tags": [
         "art",
@@ -1617,6 +1627,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "moss-structure",
-  "mostRecentlyUpdatedNode": "nest"
+  "latestNode": "substrates",
+  "mostRecentlyUpdatedNode": "moss-structure"
 } as const;

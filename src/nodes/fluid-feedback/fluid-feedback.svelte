@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SubstarteRenderScene } from './../../three/renderScenes/substrate/SubstrateRenderScene';
+	import { SubstarteRenderScene } from '../../three/renderScenes/substrate/SubstrateRenderScene';
   import AnimationCanvas from '$components/graphics/AnimationCanvas.svelte';
 
 </script>

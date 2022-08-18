@@ -1,4 +1,5 @@
 import { clamp } from "../three/utils/math";
+import _ from 'lodash';
 
 export const generateUUID = () => window.crypto.randomUUID();
 
@@ -102,4 +103,13 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   }
 
   return array;
+}
+
+export const overlaps = (arr1: unknown[], arr2: unknown[]) => {
+  return !!_.intersection(arr1, arr2).length;
+}
+
+export const containsAll = (array: unknown[], elements: unknown[]) => {
+  const intersection = _.intersection(array, elements);
+  return intersection.length === elements.length;
 }
