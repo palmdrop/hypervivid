@@ -1,16 +1,39 @@
 import type { Node, NodeName, NodesMetadata } from "../types/nodes";
 import { containsAll, overlaps } from "./general";
 
-export type Lookup<T = any, K = unknown> = (object: K) => T[];
+export type Lookup<T = any, K = unknown> = (object: K) => string | T[];
 export type MatchMode = 'any' | 'all' | number;
 export type MatchSettings<T = string> = {
   matchOn: T[],
-  matchMode?: MatchMode
+  matchMode?: MatchMode,
 }
 
 export const match = <T = string, K = unknown>(matchSettings: MatchSettings<T>, object: K, lookup: Lookup<T, K>) => {
   const toTest = lookup(object);
   let match = false;
+
+  if(typeof toTest === 'string') {
+    const testString = (value: any) => toTest.toLowerCase().includes((value as string).toLowerCase());
+    switch(matchSettings.matchMode ?? 'any') {
+      case 'any': {
+        return matchSettings.matchOn.some(testString);
+      }
+      case 'all': {
+        return matchSettings.matchOn.every(testString);
+      }
+      default: {
+        let count = 0;
+        matchSettings.matchOn.forEach(value => {
+          if(testString(value)) {
+            count++;
+          }
+        });
+
+        return count === matchSettings.matchMode;
+      }
+    }
+  }
+
   switch(matchSettings.matchMode ?? 'any') {
     case 'any': {
       match = overlaps(toTest, matchSettings.matchOn);
@@ -21,7 +44,7 @@ export const match = <T = string, K = unknown>(matchSettings: MatchSettings<T>, 
     default: {
       let matches = 0;
       toTest.forEach(element => {
-        if(matchSettings.matchOn.includes(element)) {
+        if((matchSettings.matchOn as T[]).includes(element)) {
           matches++;
         }
       });

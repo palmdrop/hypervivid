@@ -329,10 +329,9 @@ const main = async () => {
 
   console.log(`Metadata processed. Writing to file "${METADATA_FILE_PATH}"`);
 
-  // Remove links, the updated link list will exist in "metadata.links"
-  // Also sort tags
-  Object.values(metadata.nodes).forEach(nodeMetadata => {
-    delete nodeMetadata.links;
+  // Update links and sort tags
+  Object.entries(metadata.nodes).forEach(([name, nodeMetadata]) => {
+    nodeMetadata.links = metadata.links.get(name);
 
     sortNodeTags(nodeMetadata, tags);
   });
