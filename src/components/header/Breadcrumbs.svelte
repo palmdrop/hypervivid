@@ -98,6 +98,8 @@
     border: var(--borderPrimary);
 
     z-index: 1;
+
+    box-shadow: 0px 0.5em 1em #0003;
   }
 
   a:hover .link-text {
