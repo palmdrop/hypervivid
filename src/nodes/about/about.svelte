@@ -12,10 +12,6 @@
       href: 'https://velvetyne.fr/fonts/gulax/',
     },
     {
-      /*
-      text: 'Space Grotesk by Květoslav Bartoš (Florian Karsten Typefaces)',
-      href: 'https://fonts.floriankarsten.com/space-grotesk'
-      */
       text: 'Fengardo Neue by Loïc Sander (VELVETYNE)',
       href: 'https://velvetyne.fr/fonts/fengardo-neue/'
     },
@@ -309,18 +305,17 @@
     position: relative;
     margin: 0;
     padding: 0;
-
-    border-radius: var(--borderRadius1);
   }
 
   .img-container {
     margin: 0;
     padding: 0;
-    height: calc(30vh + 1px);
+    height: calc(30vh + 2px);
     max-height: 401px;
 
     border-bottom: var(--borderPrimary);
     border-top: var(--borderPrimary);
+    margin-bottom: 1px;
   }
 
   .content {

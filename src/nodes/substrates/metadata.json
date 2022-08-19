@@ -1,10 +1,14 @@
 {
-  "tags": [],
-  "links": [],
+  "tags": [
+    "substrate", "project", "words", "external"
+  ],
+  "links": [
+    "alien-patterns"
+  ],
   "createdAt": "Wed, 17 Aug 2022 19:38:50 GMT",
   "updatedAt": "Wed, 17 Aug 2022 19:38:50 GMT",
   "inline": false,
   "title": "Substrates",
-  "description": "",
+  "description": "A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.",
   "image": ""
 }

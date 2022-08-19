@@ -110,6 +110,12 @@ export default {
         "to": "objects",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "alien-patterns",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "modified-noise": [
@@ -589,6 +595,12 @@ export default {
       },
       {
         "from": "jolt-gate",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
         "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
@@ -628,6 +640,44 @@ export default {
       {
         "from": "swamp-mass",
         "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "substrates": [
+      {
+        "from": "substrates",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "alien-patterns",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "swamp-mass",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -731,6 +781,12 @@ export default {
         "to": "domain-warping",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "nest": [
@@ -761,6 +817,12 @@ export default {
       {
         "from": "nest",
         "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "substrates",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -848,8 +910,7 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "substrates": []
+    ]
   },
   "tags": {
     "art": {
@@ -877,16 +938,16 @@ export default {
       "count": 9
     },
     "project": {
+      "weight": 0.28,
+      "count": 7
+    },
+    "substrate": {
       "weight": 0.24,
       "count": 6
     },
     "interactive": {
       "weight": 0.24,
       "count": 6
-    },
-    "substrate": {
-      "weight": 0.2,
-      "count": 5
     },
     "biophilia": {
       "weight": 0.2,
@@ -960,6 +1021,10 @@ export default {
       "weight": 0.08,
       "count": 2
     },
+    "words": {
+      "weight": 0.08,
+      "count": 2
+    },
     "utility": {
       "weight": 0.08,
       "count": 2
@@ -973,6 +1038,10 @@ export default {
       "count": 2
     },
     "blue-noise": {
+      "weight": 0.08,
+      "count": 2
+    },
+    "external": {
       "weight": 0.08,
       "count": 2
     },
@@ -992,10 +1061,6 @@ export default {
       "weight": 0.04,
       "count": 1
     },
-    "words": {
-      "weight": 0.04,
-      "count": 1
-    },
     "instancing": {
       "weight": 0.04,
       "count": 1
@@ -1012,10 +1077,6 @@ export default {
       "weight": 0.04,
       "count": 1
     },
-    "external": {
-      "weight": 0.04,
-      "count": 1
-    },
     "flowfield": {
       "weight": 0.04,
       "count": 1
@@ -1023,13 +1084,50 @@ export default {
   },
   "nodes": {
     "substrates": {
-      "tags": [],
+      "tags": [
+        "project",
+        "substrate",
+        "words",
+        "external"
+      ],
+      "links": [
+        {
+          "from": "substrates",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "alien-patterns",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Wed, 17 Aug 2022 19:38:50 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 19:41:13 GMT",
+      "updatedAt": "Thu, 18 Aug 2022 21:28:15 GMT",
       "inline": false,
       "title": "Substrates",
-      "description": "",
-      "image": ""
+      "description": "A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.",
+      "image": "/nodes/substrates.preview.jpg"
     },
     "moss-structure": {
       "tags": [
@@ -1042,8 +1140,46 @@ export default {
         "substrate",
         "biophilia"
       ],
+      "links": [
+        {
+          "from": "moss-structure",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 19:37:12 GMT",
+      "updatedAt": "Thu, 18 Aug 2022 17:13:34 GMT",
       "inline": false,
       "title": "Moss Structure",
       "description": "More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.",
@@ -1059,8 +1195,46 @@ export default {
         "substrate",
         "biophilia"
       ],
+      "links": [
+        {
+          "from": "nest",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 19:36:52 GMT",
+      "updatedAt": "Thu, 18 Aug 2022 17:13:41 GMT",
       "inline": false,
       "title": "Nest",
       "description": "Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.",
@@ -1075,8 +1249,46 @@ export default {
         "noise",
         "substrate"
       ],
+      "links": [
+        {
+          "from": "jolt-gate",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sat, 13 Aug 2022 09:33:13 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 10:34:08 GMT",
+      "updatedAt": "Thu, 18 Aug 2022 17:13:50 GMT",
       "inline": false,
       "title": "Jolt Gate",
       "description": "Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.",
@@ -1093,8 +1305,46 @@ export default {
         "substrate",
         "biophilia"
       ],
+      "links": [
+        {
+          "from": "swamp-mass",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Wed, 10 Aug 2022 09:20:52 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 10:34:48 GMT",
+      "updatedAt": "Thu, 18 Aug 2022 17:14:02 GMT",
       "inline": false,
       "title": "Swamp Mass",
       "description": "Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.",
@@ -1105,6 +1355,20 @@ export default {
         "art",
         "css",
         "webart"
+      ],
+      "links": [
+        {
+          "from": "markup-dada",
+          "to": "ethereal-bits",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "markup-dada",
+          "to": "slices",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Sat, 30 Jul 2022 09:06:40 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:30:39 GMT",
@@ -1118,6 +1382,26 @@ export default {
         "biophilia",
         "thoughts",
         "fragments"
+      ],
+      "links": [
+        {
+          "from": "digital-gardening",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "digital-gardening",
+          "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "digital-gardening",
+          "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
       "updatedAt": "Fri, 29 Jul 2022 14:50:04 GMT",
@@ -1133,6 +1417,14 @@ export default {
         "biophilia",
         "photography"
       ],
+      "links": [
+        {
+          "from": "city-pond",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Thu, 21 Jul 2022 20:37:19 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:28:31 GMT",
       "inline": false,
@@ -1147,6 +1439,20 @@ export default {
         "fragments",
         "exploration"
       ],
+      "links": [
+        {
+          "from": "less-flat",
+          "to": "digital-gardening",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "less-flat",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
       "updatedAt": "Tue, 19 Jul 2022 16:28:05 GMT",
       "inline": true,
@@ -1160,6 +1466,26 @@ export default {
         "fragments",
         "utility"
       ],
+      "links": [
+        {
+          "from": "intro",
+          "to": "about",
+          "kind": "references",
+          "strength": 0.5
+        },
+        {
+          "from": "intro",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "intro",
+          "to": "contact",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
       "updatedAt": "Tue, 19 Jul 2022 16:28:05 GMT",
       "inline": true,
@@ -1171,6 +1497,26 @@ export default {
       "tags": [
         "css",
         "webart"
+      ],
+      "links": [
+        {
+          "from": "ethereal-bits",
+          "to": "slices",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "ethereal-bits",
+          "to": "moons",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "ethereal-bits",
+          "to": "markup-dada",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Thu, 30 Jun 2022 18:01:04 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:30:31 GMT",
@@ -1184,6 +1530,7 @@ export default {
         "info",
         "utility"
       ],
+      "links": [],
       "createdAt": "Tue, 28 Jun 2022 07:07:14 GMT",
       "updatedAt": "Sat, 16 Jul 2022 11:42:32 GMT",
       "inline": true,
@@ -1199,6 +1546,26 @@ export default {
         "project",
         "space-colonization",
         "rhizome"
+      ],
+      "links": [
+        {
+          "from": "chaos-growth",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "chaos-growth",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "chaos-growth",
+          "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Sun, 22 Jun 2022 21:26:31 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:27:46 GMT",
@@ -1216,6 +1583,20 @@ export default {
         "noise",
         "organic",
         "project"
+      ],
+      "links": [
+        {
+          "from": "objects",
+          "to": "alien-patterns",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "objects",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:31:25 GMT",
@@ -1235,6 +1616,38 @@ export default {
         "memes",
         "flowfield"
       ],
+      "links": [
+        {
+          "from": "weave",
+          "to": "chaos-growth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "weave",
+          "to": "digital-gardening",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "weave",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "weave",
+          "to": "rehash-transform",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "weave",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sun, 19 Jun 2022 10:25:11 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:35:38 GMT",
       "inline": false,
@@ -1253,6 +1666,50 @@ export default {
         "memes",
         "fuse"
       ],
+      "links": [
+        {
+          "from": "webfuse",
+          "to": "chaos-growth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "webfuse",
+          "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "webfuse",
+          "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "webfuse",
+          "to": "rehash-transform",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "webfuse",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "webfuse",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "webfuse",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sat, 18 Jun 2022 12:07:12 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:32:50 GMT",
       "inline": false,
@@ -1269,6 +1726,26 @@ export default {
         "hyper",
         "fuse"
       ],
+      "links": [
+        {
+          "from": "fragfuse",
+          "to": "city-pond",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fragfuse",
+          "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fragfuse",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Thu, 16 Jun 2022 19:50:43 GMT",
       "updatedAt": "Sat, 18 Jun 2022 11:00:46 GMT",
       "inline": false,
@@ -1282,6 +1759,20 @@ export default {
         "internet",
         "exploration"
       ],
+      "links": [
+        {
+          "from": "links",
+          "to": "rehash-transform",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "links",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
       "updatedAt": "Tue, 28 Jun 2022 14:47:38 GMT",
       "inline": false,
@@ -1293,6 +1784,20 @@ export default {
       "tags": [
         "css",
         "webart"
+      ],
+      "links": [
+        {
+          "from": "moons",
+          "to": "about",
+          "kind": "consumed",
+          "strength": 0.5
+        },
+        {
+          "from": "moons",
+          "to": "ethereal-bits",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Thu, 26 May 2022 14:41:23 GMT",
       "inline": true,
@@ -1306,6 +1811,20 @@ export default {
         "contact",
         "communication"
       ],
+      "links": [
+        {
+          "from": "contact",
+          "to": "about",
+          "kind": "consumed",
+          "strength": 0.5
+        },
+        {
+          "from": "contact",
+          "to": "intro",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Thu, 26 May 2022 12:34:15 GMT",
       "inline": false,
       "title": "Contact",
@@ -1317,6 +1836,32 @@ export default {
       "tags": [
         "info",
         "thoughts"
+      ],
+      "links": [
+        {
+          "from": "about",
+          "to": "contact",
+          "kind": "consumes",
+          "strength": 0.5
+        },
+        {
+          "from": "about",
+          "to": "moons",
+          "kind": "consumes",
+          "strength": 0.5
+        },
+        {
+          "from": "about",
+          "to": "manifesto",
+          "kind": "references",
+          "strength": 0.5
+        },
+        {
+          "from": "about",
+          "to": "intro",
+          "kind": "references",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
       "inline": false,
@@ -1333,6 +1878,26 @@ export default {
         "hyper",
         "words"
       ],
+      "links": [
+        {
+          "from": "hyper",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "hyper",
+          "to": "rehash-transform",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "hyper",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
       "inline": false,
       "title": "Hyper",
@@ -1345,6 +1910,50 @@ export default {
         "info",
         "internet",
         "thoughts"
+      ],
+      "links": [
+        {
+          "from": "manifesto",
+          "to": "about",
+          "kind": "references",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "digital-gardening",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "intro",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "links",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
       "inline": false,
@@ -1363,6 +1972,14 @@ export default {
         "feedback",
         "glitch"
       ],
+      "links": [
+        {
+          "from": "block-dissolve",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "4 May 2022 11:45:09 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:45:16 GMT",
       "inline": false,
@@ -1380,6 +1997,20 @@ export default {
         "blue-noise",
         "glitch"
       ],
+      "links": [
+        {
+          "from": "medusa-network",
+          "to": "noise-construct",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "medusa-network",
+          "to": "skew-bulbs",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "27 Mar 2022 11:45:09 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:45:48 GMT",
       "inline": false,
@@ -1396,6 +2027,14 @@ export default {
         "dithering",
         "blue-noise"
       ],
+      "links": [
+        {
+          "from": "noise-construct",
+          "to": "medusa-network",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "25 Mar 2022 11:45:09 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:03 GMT",
       "inline": false,
@@ -1411,6 +2050,20 @@ export default {
         "domain-warping",
         "chrome"
       ],
+      "links": [
+        {
+          "from": "skew-bulbs",
+          "to": "solar-chrome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "skew-bulbs",
+          "to": "medusa-network",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "14 Mar 2022 10:23:19 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:35 GMT",
       "inline": false,
@@ -1424,6 +2077,20 @@ export default {
         "css",
         "photography",
         "external"
+      ],
+      "links": [
+        {
+          "from": "slices",
+          "to": "ethereal-bits",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "slices",
+          "to": "markup-dada",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "02 Mar 2022 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:39 GMT",
@@ -1443,6 +2110,38 @@ export default {
         "space-colonization",
         "Deleuze"
       ],
+      "links": [
+        {
+          "from": "rhizome",
+          "to": "chaos-growth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:30 GMT",
       "inline": false,
@@ -1458,6 +2157,14 @@ export default {
         "domain-warping",
         "organic",
         "feedback"
+      ],
+      "links": [
+        {
+          "from": "fluid-feedback",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "13 Feb 2022 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 19:36:29 GMT",
@@ -1477,6 +2184,56 @@ export default {
         "geometry",
         "feedback"
       ],
+      "links": [
+        {
+          "from": "immerse",
+          "to": "block-dissolve",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "fluid-feedback",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "objects",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:45:22 GMT",
       "inline": false,
@@ -1492,6 +2249,26 @@ export default {
         "substrate",
         "writing"
       ],
+      "links": [
+        {
+          "from": "alien-patterns",
+          "to": "modified-noise",
+          "kind": "previous",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-patterns",
+          "to": "objects",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-patterns",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
       "updatedAt": "Mon, 15 Aug 2022 20:51:11 GMT",
       "inline": false,
@@ -1504,6 +2281,20 @@ export default {
         "generative",
         "noise",
         "writing"
+      ],
+      "links": [
+        {
+          "from": "modified-noise",
+          "to": "alien-patterns",
+          "kind": "next",
+          "strength": 0.5
+        },
+        {
+          "from": "modified-noise",
+          "to": "domain-warping",
+          "kind": "previous",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
       "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
@@ -1518,6 +2309,38 @@ export default {
         "domain-warping",
         "noise",
         "writing"
+      ],
+      "links": [
+        {
+          "from": "domain-warping",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "domain-warping",
+          "to": "modified-noise",
+          "kind": "next",
+          "strength": 0.5
+        },
+        {
+          "from": "domain-warping",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "domain-warping",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "domain-warping",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
       "updatedAt": "Mon, 13 Jun 2022 05:19:26 GMT",
@@ -1534,6 +2357,14 @@ export default {
         "interactive",
         "mind",
         "particles"
+      ],
+      "links": [
+        {
+          "from": "flat-clouds",
+          "to": "solar-landscape",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "26 Dec 2021 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:45:08 GMT",
@@ -1553,6 +2384,32 @@ export default {
         "mind",
         "instancing"
       ],
+      "links": [
+        {
+          "from": "rehash-transform",
+          "to": "links",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rehash-transform",
+          "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rehash-transform",
+          "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rehash-transform",
+          "to": "webfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "23 Dec 2021 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:15 GMT",
       "inline": false,
@@ -1570,6 +2427,26 @@ export default {
         "geometry",
         "chrome"
       ],
+      "links": [
+        {
+          "from": "virtual-imprint",
+          "to": "retro-core",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "virtual-imprint",
+          "to": "solar-chrome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "virtual-imprint",
+          "to": "solar-landscape",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "14 Nov 2021 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:47:10 GMT",
       "inline": false,
@@ -1586,6 +2463,26 @@ export default {
         "geometry",
         "chrome"
       ],
+      "links": [
+        {
+          "from": "solar-landscape",
+          "to": "flat-clouds",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "solar-landscape",
+          "to": "solar-chrome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "solar-landscape",
+          "to": "virtual-imprint",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "15 Oct 2021 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:56 GMT",
       "inline": false,
@@ -1601,6 +2498,26 @@ export default {
         "interactive",
         "geometry",
         "chrome"
+      ],
+      "links": [
+        {
+          "from": "solar-chrome",
+          "to": "skew-bulbs",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "solar-chrome",
+          "to": "solar-landscape",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "solar-chrome",
+          "to": "virtual-imprint",
+          "kind": "tangent",
+          "strength": 0.5
+        }
       ],
       "createdAt": "13 Oct 2021 09:49:08 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:48 GMT",
@@ -1619,6 +2536,14 @@ export default {
         "texture",
         "depth"
       ],
+      "links": [
+        {
+          "from": "retro-core",
+          "to": "virtual-imprint",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "15 Sep 2021 15:24:28 GMT",
       "updatedAt": "Wed, 17 Aug 2022 10:46:23 GMT",
       "inline": false,
@@ -1628,5 +2553,5 @@ export default {
     }
   },
   "latestNode": "substrates",
-  "mostRecentlyUpdatedNode": "moss-structure"
+  "mostRecentlyUpdatedNode": "swamp-mass"
 } as const;

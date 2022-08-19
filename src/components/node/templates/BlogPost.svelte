@@ -3,6 +3,7 @@
 
   import { getNodeContext } from "$utils/useNodeContext";
   export let name: NodeName;
+  export let fullsizeImage = false;
 
   const { metadata } = getNodeContext(name);
 </script>
@@ -13,6 +14,7 @@
       <img 
         src={metadata.image} 
         alt={""}
+        class:fullsize={fullsizeImage}
       />
     {/if}
     <h1>{ metadata.title }</h1>
@@ -41,6 +43,11 @@
     object-fit: cover;
 
     border-radius: var(--borderRadius1);
+  }
+
+  img.fullsize {
+    max-height: unset;
+    height: unset;
   }
 </style>
 

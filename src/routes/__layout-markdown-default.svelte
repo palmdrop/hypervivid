@@ -35,4 +35,19 @@
   .markdown-container li {
     padding-bottom: 1.0em;
   }
+
+  .markdown-container hr {
+    position: relative;
+    border: unset;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+  }
+
+  .markdown-container hr::after {
+    content: "***";
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
 </style>
