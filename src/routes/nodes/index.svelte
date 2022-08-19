@@ -8,7 +8,13 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import Link from '$components/common/Link.svelte';
   import Header from '$components/header/Header.svelte';
+  import SearchBar from '../../components/common/SearchBar.svelte';
+  import { standardFilterSearchNodes } from '../../utils/filterSearch';
+  import metadata from '../../nodes/metadata';
 
+  useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
+
+  // TODO: only use metadata store or metadata const object, not both...
   const nodeNames = Object.keys(
     $metadata$.nodes
   ) as NodeName[];
@@ -17,9 +23,23 @@
   const useMainRef = (ref: HTMLElement) => {
     mainRef = ref;
   }
-  
-  // TODO: add filters and search capabilities
-  useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
+
+  let searchPhrase: string = "";
+
+  $: matchedNodes = standardFilterSearchNodes(
+    metadata.nodes,
+    undefined, 
+    undefined,
+    searchPhrase === "" ? undefined : {
+      matchOn: [searchPhrase],
+      matchMode: 'any'
+    },
+    searchPhrase === "" ? undefined : {
+      matchOn: [searchPhrase],
+      matchMode: 'any'
+    },
+    'all'
+  )
 </script>
 
 <Header />
@@ -34,6 +54,9 @@
     <Paragraph big>
       Nodes are entries on the page. A node can be anything. Words, art, interactive 3D scenes. Nodes are connected.
     </Paragraph>
+    <SearchBar 
+      bind:searchPhrase={searchPhrase}
+    />
     <Paragraph big>
       <Link
         href='/random'
@@ -44,11 +67,12 @@
   </div>
 
   <NodeList
-    nodeNames={nodeNames}
+    nodeNames={matchedNodes}
     modeFirst="preview"
     modeRest="preview"
     batchCount={10}
     scrollElement={mainRef}
+    emptyText="No nodes found..."
   />
 </main>
 

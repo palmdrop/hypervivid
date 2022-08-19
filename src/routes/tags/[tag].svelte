@@ -12,7 +12,7 @@
     };
 
     const nodeNames = filterSearchNodes(
-      nodesMetadata,
+      nodesMetadata.nodes,
       [{
         settings: {
           matchOn: [tag],
@@ -38,7 +38,7 @@
   import { NODE_NAMES, SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
 	import tagsMetadata from '$tags/metadata';
-import { filterSearchNodes } from '../../utils/filterSearch';
+  import { filterSearchNodes } from '../../utils/filterSearch';
 
   export let tag: Tag;
   export let nodeNames: NodeName[];

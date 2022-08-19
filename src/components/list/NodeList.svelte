@@ -21,6 +21,8 @@
   export let modeFirst: NodeMode
   export let modeRest: NodeMode
 
+  export let emptyText = "List empty...";
+
   $: if(batchCount === -1) {
     batchCount = nodeNames.length;
   }
@@ -79,6 +81,12 @@
     scrollElement?.removeEventListener('scroll', handleScroll as any);
   })
 </script>
+
+{#if !nodeNames.length}
+  <Paragraph center wide big faded>
+    {emptyText}
+  </Paragraph>
+{/if}
 
 <ul 
   class="node-list"
