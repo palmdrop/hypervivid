@@ -1,23 +1,20 @@
 /* Theme */
 :root {
-  /*
-  --cFg: #090b20;
-  */
-  --cFg: #131422;
-  --cBg: #c6cbd2;
-  --cBgBright: #cfd5dc;
+  --cFg: #161a0f;
+  --cBg: #d3d8d1;
+  --cBgBright: #dfe4d3;
 
-  --cFgFaded: #200912aa;
-  --cFgSoft: #090b2044;
+  --cFgFaded: #171d12aa;
+  --cFgSoft: #171d1244;
 
-  --cBgDark: #65686c;
+  --cBgDark: #656e63;
 
   --cBgBlack: #000000;
 
   --cFgInverted: var(--cBg);
   --cBgInverted: var(--cFg);
 
-  --cLoader: #6d6992;
+  --cLoader: #699275;
 
   --fMono: 'SyneMono';
   --fDisplay: 'Gulax';
@@ -34,17 +31,17 @@
   --borderRadius3: 100%;
 
   --hoverShadow: 
-    1px 1px 0px rgba(37, 1, 1, 0.81), 
-    3px 3px 0px #24183Efa;
+    1px 1px 0px rgba(37, 15, 1, 0.81), 
+    3px 3px 0px #1b3e18fa;
 
   --pillShadow: 
-    2px 2px 4px rgba(37, 1, 1, 0.11), 
-    inset -15px -15px 20px #24183Eaa, 
-    inset 3px 3px 20px rgba(255, 255, 255, 0.24);
+    2px 2px 4px rgba(63, 47, 41, 0.11), 
+    inset -15px -15px 20px #1d3c20aa, 
+    inset 3px 3px 20px rgba(197, 227, 165, 0.224);
 
   --neumorphicShadow: 
-    0.7em 0.7em 1.8em #b6bbc1,
-   -0.7em -0.7em 1.8em #d6dbe3;
+    0.7em 0.7em 1.8em #c6cbc3,
+   -0.7em -0.7em 1.8em #dde4d8;
 }
 
 /* Global styles */
