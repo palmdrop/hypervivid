@@ -129,5 +129,7 @@
     transition: 0.4s;
 
     z-index: 1;
+
+    background-color: unset;
   }
 </style>

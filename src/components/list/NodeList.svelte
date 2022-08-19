@@ -96,7 +96,7 @@
     <li
       class:loading={i > (loadedUpToIndex - batchCount) && !allIncludedLoaded}
     >
-      <a href={`/nodes/${name}`}>
+      <a href={`/nodes/${name}`} sveltekit:prefetch>
         {#if itemLabels.length > i}
           <div class="item-label">
             <Paragraph big wide>{itemLabels[i]}</Paragraph>

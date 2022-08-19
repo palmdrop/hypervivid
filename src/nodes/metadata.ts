@@ -185,6 +185,12 @@ export default {
       },
       {
         "from": "immerse",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
         "to": "swamp-mass",
         "kind": "tangent",
         "strength": 0.5
@@ -224,6 +230,12 @@ export default {
       {
         "from": "substrate",
         "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate",
+        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -451,6 +463,12 @@ export default {
       },
       {
         "from": "domain-warping",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
         "to": "swamp-mass",
         "kind": "tangent",
         "strength": 0.5
@@ -610,6 +628,12 @@ export default {
         "to": "nest",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "swamp-mass": [
@@ -628,6 +652,12 @@ export default {
       {
         "from": "swamp-mass",
         "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -672,6 +702,12 @@ export default {
       {
         "from": "substrates",
         "to": "alien-patterns",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -787,6 +823,12 @@ export default {
         "to": "substrates",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "nest": [
@@ -823,6 +865,12 @@ export default {
       {
         "from": "nest",
         "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -910,183 +958,289 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
+    ],
+    "super-cell": [
+      {
+        "from": "super-cell",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      }
     ]
   },
   "tags": {
     "art": {
       "weight": 1,
-      "count": 25
+      "count": 26
     },
     "generative": {
-      "weight": 0.96,
-      "count": 24
+      "weight": 0.9615384615384616,
+      "count": 25
     },
     "live": {
-      "weight": 0.68,
-      "count": 17
+      "weight": 0.6923076923076923,
+      "count": 18
     },
     "domain-warping": {
-      "weight": 0.64,
-      "count": 16
+      "weight": 0.6538461538461539,
+      "count": 17
     },
     "noise": {
-      "weight": 0.4,
-      "count": 10
+      "weight": 0.4230769230769231,
+      "count": 11
     },
     "organic": {
-      "weight": 0.36,
-      "count": 9
-    },
-    "project": {
-      "weight": 0.28,
-      "count": 7
+      "weight": 0.38461538461538464,
+      "count": 10
     },
     "substrate": {
-      "weight": 0.24,
+      "weight": 0.2692307692307692,
+      "count": 7
+    },
+    "project": {
+      "weight": 0.2692307692307692,
+      "count": 7
+    },
+    "biophilia": {
+      "weight": 0.23076923076923078,
       "count": 6
     },
     "interactive": {
-      "weight": 0.24,
+      "weight": 0.23076923076923078,
       "count": 6
     },
-    "biophilia": {
-      "weight": 0.2,
-      "count": 5
-    },
     "css": {
-      "weight": 0.2,
+      "weight": 0.19230769230769232,
       "count": 5
     },
     "geometry": {
-      "weight": 0.2,
+      "weight": 0.19230769230769232,
       "count": 5
     },
     "info": {
-      "weight": 0.16,
+      "weight": 0.15384615384615385,
       "count": 4
     },
     "thoughts": {
-      "weight": 0.16,
+      "weight": 0.15384615384615385,
       "count": 4
     },
     "feedback": {
-      "weight": 0.16,
+      "weight": 0.15384615384615385,
       "count": 4
     },
     "photography": {
-      "weight": 0.16,
+      "weight": 0.15384615384615385,
       "count": 4
     },
     "internet": {
-      "weight": 0.16,
+      "weight": 0.15384615384615385,
       "count": 4
     },
     "chrome": {
-      "weight": 0.16,
+      "weight": 0.15384615384615385,
       "count": 4
     },
     "writing": {
-      "weight": 0.12,
+      "weight": 0.11538461538461539,
       "count": 3
     },
     "fragments": {
-      "weight": 0.12,
+      "weight": 0.11538461538461539,
       "count": 3
     },
     "webart": {
-      "weight": 0.12,
+      "weight": 0.11538461538461539,
       "count": 3
     },
     "hyper": {
-      "weight": 0.12,
+      "weight": 0.11538461538461539,
       "count": 3
     },
     "memes": {
-      "weight": 0.12,
+      "weight": 0.11538461538461539,
       "count": 3
     },
     "glitch": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "mind": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "fuse": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "words": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "utility": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "exploration": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "dithering": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "external": {
-      "weight": 0.08,
+      "weight": 0.07692307692307693,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "contact": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "communication": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "particles": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "instancing": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "texture": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "depth": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.04,
+      "weight": 0.038461538461538464,
       "count": 1
     }
   },
   "nodes": {
+    "super-cell": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "domain-warping",
+        "noise",
+        "organic",
+        "substrate",
+        "biophilia"
+      ],
+      "links": [
+        {
+          "from": "super-cell",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Fri, 19 Aug 2022 17:08:31 GMT",
+      "updatedAt": "Fri, 19 Aug 2022 18:04:50 GMT",
+      "inline": false,
+      "title": "Super Cell",
+      "description": "Warping lines in multiple layers makes for a strange, morphing life-form.",
+      "image": "/nodes/super-cell.preview.jpg"
+    },
     "substrates": {
       "tags": [
-        "project",
         "substrate",
+        "project",
         "words",
         "external"
       ],
@@ -1112,6 +1266,12 @@ export default {
         {
           "from": "substrates",
           "to": "alien-patterns",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "super-cell",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -1176,6 +1336,12 @@ export default {
           "to": "substrates",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "super-cell",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
@@ -1229,6 +1395,12 @@ export default {
         {
           "from": "nest",
           "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
+          "to": "super-cell",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -1285,6 +1457,12 @@ export default {
           "to": "nest",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "super-cell",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 13 Aug 2022 09:33:13 GMT",
@@ -1321,6 +1499,12 @@ export default {
         {
           "from": "swamp-mass",
           "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "super-cell",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2229,6 +2413,12 @@ export default {
         },
         {
           "from": "immerse",
+          "to": "super-cell",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
           "to": "swamp-mass",
           "kind": "tangent",
           "strength": 0.5
@@ -2332,6 +2522,12 @@ export default {
         {
           "from": "domain-warping",
           "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "domain-warping",
+          "to": "super-cell",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2552,6 +2748,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "substrates",
-  "mostRecentlyUpdatedNode": "swamp-mass"
+  "latestNode": "super-cell",
+  "mostRecentlyUpdatedNode": "substrates"
 } as const;
