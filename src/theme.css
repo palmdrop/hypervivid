@@ -94,6 +94,8 @@ input, textarea {
 
 button {
 	cursor: pointer;
+  background-color: var(--cBg);
+  color: var(--cFg);
 }
 
 * {
