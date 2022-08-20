@@ -7,21 +7,66 @@
   // For data banding
   export let searchPhrase = "";
 
+  let value = "";
+
   const handleSearch = _.debounce((event: Event & { currentTarget: EventTarget }) => {
     if(!event.target) return;
     searchPhrase = (event.target as any).value ?? "";
   }, debounceTimeout);
 </script>
 
-<input 
-  type="text" 
-  placeholder={placeholder} 
-  on:input={handleSearch}
-/>
+<div class="search-bar">
+  <input 
+    type="text" 
+    placeholder={placeholder} 
+    bind:value={value}
+    on:input={handleSearch}
+  />
+  <button
+    class:active={value.length > 0}
+    disabled={value.length === 0}
+    on:click={() => {
+      searchPhrase = ""
+      value = "";
+    }}
+  >
+    ×
+  </button>
+</div>
 
 <style>
+  .search-bar {
+    position: relative;
+    margin: 0.5em;
+  }
+
   input {
     width: 20em;
     max-width: 100%;
+    margin: 0;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    height: 70%;
+    width: 2em;
+    background: linear-gradient(
+      -90deg, 
+      var(--cBg) 0%, 
+      var(--cBg) 75%, 
+      rgba(255,255,255,0) 100%
+    );
+
+    transform: translate(-2px, -50%);
+
+    transition: 0.3s;
+  }
+
+  button:disabled,
+  button[disabled] {
+    opacity: 0.3;
   }
 </style>
