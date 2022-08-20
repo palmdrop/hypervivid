@@ -44,6 +44,8 @@
     width: 20em;
     max-width: 100%;
     margin: 0;
+
+    height: 2.2em;
   }
 
   button {

@@ -1101,6 +1101,10 @@ export default {
       "weight": 0.07692307692307693,
       "count": 2
     },
+    "rhizome": {
+      "weight": 0.07692307692307693,
+      "count": 2
+    },
     "space-colonization": {
       "weight": 0.07692307692307693,
       "count": 2
@@ -1136,10 +1140,6 @@ export default {
     "external": {
       "weight": 0.07692307692307693,
       "count": 2
-    },
-    "rhizome": {
-      "weight": 0.038461538461538464,
-      "count": 1
     },
     "contact": {
       "weight": 0.038461538461538464,
@@ -1728,8 +1728,8 @@ export default {
         "generative",
         "noise",
         "project",
-        "space-colonization",
-        "rhizome"
+        "rhizome",
+        "space-colonization"
       ],
       "links": [
         {
@@ -2292,6 +2292,7 @@ export default {
         "organic",
         "feedback",
         "space-colonization",
+        "rhizome",
         "Deleuze"
       ],
       "links": [
@@ -2327,7 +2328,7 @@ export default {
         }
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "Wed, 17 Aug 2022 10:46:30 GMT",
+      "updatedAt": "Sat, 20 Aug 2022 14:47:16 GMT",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -2749,5 +2750,5 @@ export default {
     }
   },
   "latestNode": "super-cell",
-  "mostRecentlyUpdatedNode": "substrates"
+  "mostRecentlyUpdatedNode": "rhizome"
 } as const;

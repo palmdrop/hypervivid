@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { NodeName } from '$types/nodes';
+	import type { NodeName, Tag } from '$types/nodes';
   import NodeList from "$components/list/NodeList.svelte";
   import { useTitle } from "$utils/useTitle";
 
@@ -8,16 +8,12 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import Link from '$components/common/Link.svelte';
   import Header from '$components/header/Header.svelte';
-  import SearchBar from '../../components/common/SearchBar.svelte';
+  import SearchBar from '../../components/filter/SearchBar.svelte';
   import { standardFilterSearchNodes } from '../../utils/filterSearch';
   import metadata from '../../nodes/metadata';
+  import TagFilter from '../../components/filter/TagFilter.svelte';
 
   useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
-
-  // TODO: only use metadata store or metadata const object, not both...
-  const nodeNames = Object.keys(
-    $metadata$.nodes
-  ) as NodeName[];
 
   let mainRef: HTMLElement;
   const useMainRef = (ref: HTMLElement) => {
@@ -25,10 +21,14 @@
   }
 
   let searchPhrase: string = "";
+  let tags: Tag[] = [];
 
   $: matchedNodes = standardFilterSearchNodes(
     metadata.nodes,
-    undefined, 
+    tags.length === 0 ? undefined : {
+      matchOn: tags, 
+      matchMode: 'all'
+    },
     undefined,
     searchPhrase === "" ? undefined : {
       matchOn: [searchPhrase],
@@ -57,7 +57,10 @@
     <SearchBar 
       bind:searchPhrase={searchPhrase}
     />
-    <Paragraph big>
+    <TagFilter 
+      bind:tags
+    />
+    <Paragraph big style="margin-top: 0.5em">
       <Link
         href='/random'
       >
