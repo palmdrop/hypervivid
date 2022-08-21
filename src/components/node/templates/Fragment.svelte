@@ -24,6 +24,11 @@
     <div class="content">
       <slot />
     </div>
+    {#if !limited}
+      <div class="content">
+        <slot name="extra" />
+      </div>
+    {/if}
   </section>
 </div>
 

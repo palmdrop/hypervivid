@@ -402,7 +402,33 @@ export default {
         "strength": 0.5
       }
     ],
+    "digital-biophilia": [
+      {
+        "from": "digital-biophilia",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-biophilia",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-biophilia",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "digital-gardening": [
+      {
+        "from": "digital-gardening",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "digital-gardening",
         "to": "manifesto",
@@ -418,6 +444,106 @@ export default {
       {
         "from": "digital-gardening",
         "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "moss-structure": [
+      {
+        "from": "moss-structure",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "swamp-mass": [
+      {
+        "from": "swamp-mass",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "substrates",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -636,50 +762,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "swamp-mass": [
-      {
-        "from": "swamp-mass",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "substrates": [
       {
         "from": "substrates",
@@ -783,50 +865,6 @@ export default {
       {
         "from": "medusa-network",
         "to": "skew-bulbs",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "moss-structure": [
-      {
-        "from": "moss-structure",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1007,174 +1045,209 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 26
+      "count": 27
     },
     "generative": {
-      "weight": 0.9615384615384616,
-      "count": 25
+      "weight": 0.9629629629629629,
+      "count": 26
     },
     "live": {
-      "weight": 0.6923076923076923,
+      "weight": 0.6666666666666666,
       "count": 18
     },
     "domain-warping": {
-      "weight": 0.6538461538461539,
+      "weight": 0.6296296296296297,
       "count": 17
     },
     "noise": {
-      "weight": 0.4230769230769231,
+      "weight": 0.4074074074074074,
       "count": 11
     },
     "organic": {
-      "weight": 0.38461538461538464,
+      "weight": 0.37037037037037035,
       "count": 10
     },
     "substrate": {
-      "weight": 0.2692307692307692,
+      "weight": 0.25925925925925924,
       "count": 7
     },
     "project": {
-      "weight": 0.2692307692307692,
+      "weight": 0.25925925925925924,
       "count": 7
     },
     "biophilia": {
-      "weight": 0.23076923076923078,
-      "count": 6
+      "weight": 0.25925925925925924,
+      "count": 7
     },
     "interactive": {
-      "weight": 0.23076923076923078,
+      "weight": 0.2222222222222222,
       "count": 6
     },
+    "thoughts": {
+      "weight": 0.18518518518518517,
+      "count": 5
+    },
     "css": {
-      "weight": 0.19230769230769232,
+      "weight": 0.18518518518518517,
       "count": 5
     },
     "geometry": {
-      "weight": 0.19230769230769232,
+      "weight": 0.18518518518518517,
       "count": 5
     },
     "info": {
-      "weight": 0.15384615384615385,
-      "count": 4
-    },
-    "thoughts": {
-      "weight": 0.15384615384615385,
+      "weight": 0.14814814814814814,
       "count": 4
     },
     "feedback": {
-      "weight": 0.15384615384615385,
+      "weight": 0.14814814814814814,
       "count": 4
     },
     "photography": {
-      "weight": 0.15384615384615385,
+      "weight": 0.14814814814814814,
+      "count": 4
+    },
+    "fragments": {
+      "weight": 0.14814814814814814,
       "count": 4
     },
     "internet": {
-      "weight": 0.15384615384615385,
+      "weight": 0.14814814814814814,
       "count": 4
     },
     "chrome": {
-      "weight": 0.15384615384615385,
+      "weight": 0.14814814814814814,
       "count": 4
     },
     "writing": {
-      "weight": 0.11538461538461539,
-      "count": 3
-    },
-    "fragments": {
-      "weight": 0.11538461538461539,
+      "weight": 0.1111111111111111,
       "count": 3
     },
     "webart": {
-      "weight": 0.11538461538461539,
+      "weight": 0.1111111111111111,
       "count": 3
     },
     "hyper": {
-      "weight": 0.11538461538461539,
+      "weight": 0.1111111111111111,
       "count": 3
     },
     "memes": {
-      "weight": 0.11538461538461539,
+      "weight": 0.1111111111111111,
       "count": 3
     },
     "glitch": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "mind": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "fuse": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "words": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "utility": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "exploration": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "dithering": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "external": {
-      "weight": 0.07692307692307693,
+      "weight": 0.07407407407407407,
       "count": 2
     },
     "contact": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "communication": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "particles": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "instancing": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "texture": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "depth": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.038461538461538464,
+      "weight": 0.037037037037037035,
       "count": 1
     }
   },
   "nodes": {
+    "digital-biophilia": {
+      "tags": [
+        "art",
+        "generative",
+        "biophilia",
+        "thoughts",
+        "fragments"
+      ],
+      "links": [
+        {
+          "from": "digital-biophilia",
+          "to": "digital-gardening",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "digital-biophilia",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "digital-biophilia",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
+      "updatedAt": "Sun, 21 Aug 2022 16:04:03 GMT",
+      "inline": true,
+      "title": "digital-biophilia",
+      "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
+      "image": ""
+    },
     "super-cell": {
       "tags": [
         "art",
@@ -1301,6 +1374,12 @@ export default {
         "biophilia"
       ],
       "links": [
+        {
+          "from": "moss-structure",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "moss-structure",
           "to": "nest",
@@ -1486,6 +1565,12 @@ export default {
       "links": [
         {
           "from": "swamp-mass",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
           "to": "jolt-gate",
           "kind": "tangent",
           "strength": 0.5
@@ -1568,6 +1653,12 @@ export default {
         "fragments"
       ],
       "links": [
+        {
+          "from": "digital-gardening",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "digital-gardening",
           "to": "manifesto",
@@ -2018,8 +2109,8 @@ export default {
     },
     "about": {
       "tags": [
-        "info",
-        "thoughts"
+        "thoughts",
+        "info"
       ],
       "links": [
         {
@@ -2091,9 +2182,9 @@ export default {
     },
     "manifesto": {
       "tags": [
+        "thoughts",
         "info",
-        "internet",
-        "thoughts"
+        "internet"
       ],
       "links": [
         {
@@ -2749,6 +2840,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "super-cell",
+  "latestNode": "digital-biophilia",
   "mostRecentlyUpdatedNode": "rhizome"
 } as const;
