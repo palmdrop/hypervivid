@@ -1281,7 +1281,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
-      "updatedAt": "Mon, 22 Aug 2022 09:56:02 GMT",
+      "updatedAt": "Mon, 22 Aug 2022 10:00:00 GMT",
       "inline": false,
       "title": "Neon Moss",
       "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
@@ -1322,9 +1322,9 @@ export default {
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
-      "updatedAt": "Sun, 21 Aug 2022 17:47:39 GMT",
+      "updatedAt": "Mon, 22 Aug 2022 12:08:42 GMT",
       "inline": true,
-      "title": "digital-biophilia",
+      "title": "Digital Biophilia",
       "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
       "image": ""
     },
