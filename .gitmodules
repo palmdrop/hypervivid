@@ -1,3 +1,6 @@
 [submodule "src/modules/substrates"]
 	path = src/modules/substrates
 	url = https://github.com/palmdrop/substrates
+[submodule "src/modules/synthetic-grids"]
+	path = src/modules/synthetic-grids
+	url = https://github.com/palmdrop/synthetic-grids

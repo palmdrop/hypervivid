@@ -162,6 +162,12 @@
 <description>More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.</description>
 <pubDate>Tue, 16 Aug 2022 23:11:46 GMT</pubDate>
 </item><item>
+<guid>https://palmdrop.site/nodes/neon-moss</guid>
+<title>Neon Moss</title>
+<link>https://palmdrop.site/nodes/neon-moss</link>
+<description>A generative system for creating plant-like geometry, rendered in a neon glow.</description>
+<pubDate>Mon, 22 Aug 2022 07:24:16 GMT</pubDate>
+</item><item>
 <guid>https://palmdrop.site/nodes/nest</guid>
 <title>Nest</title>
 <link>https://palmdrop.site/nodes/nest</link>

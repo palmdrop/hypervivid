@@ -1,0 +1,14 @@
+{
+  "tags": [
+    "live", "art", "generative", "organic", "biophilia", "geometry"
+  ],
+  "links": [
+    "moss-structure", "swamp-mass", "digital-biophilia"
+  ],
+  "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
+  "updatedAt": "Mon, 22 Aug 2022 07:24:16 GMT",
+  "inline": false,
+  "title": "Neon Moss",
+  "description": "A generative system for creating plant-like geometry, rendered in a neon glow.",
+  "image": ""
+}

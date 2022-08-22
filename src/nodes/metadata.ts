@@ -420,6 +420,12 @@ export default {
         "to": "swamp-mass",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "digital-biophilia",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "digital-gardening": [
@@ -493,6 +499,12 @@ export default {
       },
       {
         "from": "moss-structure",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
         "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
@@ -514,6 +526,12 @@ export default {
       {
         "from": "swamp-mass",
         "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "neon-moss",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -913,6 +931,26 @@ export default {
         "strength": 0.5
       }
     ],
+    "neon-moss": [
+      {
+        "from": "neon-moss",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "noise-construct": [
       {
         "from": "noise-construct",
@@ -1045,174 +1083,210 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 27
+      "count": 28
     },
     "generative": {
-      "weight": 0.9629629629629629,
-      "count": 26
+      "weight": 0.9642857142857143,
+      "count": 27
     },
     "live": {
-      "weight": 0.6666666666666666,
-      "count": 18
+      "weight": 0.6785714285714286,
+      "count": 19
     },
     "domain-warping": {
-      "weight": 0.6296296296296297,
+      "weight": 0.6071428571428571,
       "count": 17
     },
     "noise": {
-      "weight": 0.4074074074074074,
+      "weight": 0.39285714285714285,
       "count": 11
     },
     "organic": {
-      "weight": 0.37037037037037035,
-      "count": 10
+      "weight": 0.39285714285714285,
+      "count": 11
+    },
+    "biophilia": {
+      "weight": 0.2857142857142857,
+      "count": 8
     },
     "substrate": {
-      "weight": 0.25925925925925924,
+      "weight": 0.25,
       "count": 7
     },
     "project": {
-      "weight": 0.25925925925925924,
-      "count": 7
-    },
-    "biophilia": {
-      "weight": 0.25925925925925924,
+      "weight": 0.25,
       "count": 7
     },
     "interactive": {
-      "weight": 0.2222222222222222,
+      "weight": 0.21428571428571427,
+      "count": 6
+    },
+    "geometry": {
+      "weight": 0.21428571428571427,
       "count": 6
     },
     "thoughts": {
-      "weight": 0.18518518518518517,
+      "weight": 0.17857142857142858,
       "count": 5
     },
     "css": {
-      "weight": 0.18518518518518517,
-      "count": 5
-    },
-    "geometry": {
-      "weight": 0.18518518518518517,
+      "weight": 0.17857142857142858,
       "count": 5
     },
     "info": {
-      "weight": 0.14814814814814814,
+      "weight": 0.14285714285714285,
       "count": 4
     },
     "feedback": {
-      "weight": 0.14814814814814814,
+      "weight": 0.14285714285714285,
       "count": 4
     },
     "photography": {
-      "weight": 0.14814814814814814,
+      "weight": 0.14285714285714285,
       "count": 4
     },
     "fragments": {
-      "weight": 0.14814814814814814,
+      "weight": 0.14285714285714285,
       "count": 4
     },
     "internet": {
-      "weight": 0.14814814814814814,
+      "weight": 0.14285714285714285,
       "count": 4
     },
     "chrome": {
-      "weight": 0.14814814814814814,
+      "weight": 0.14285714285714285,
       "count": 4
     },
     "writing": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10714285714285714,
       "count": 3
     },
     "webart": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10714285714285714,
       "count": 3
     },
     "hyper": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10714285714285714,
       "count": 3
     },
     "memes": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10714285714285714,
       "count": 3
     },
     "glitch": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "mind": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "fuse": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "words": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "utility": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "exploration": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "dithering": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "external": {
-      "weight": 0.07407407407407407,
+      "weight": 0.07142857142857142,
       "count": 2
     },
     "contact": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "communication": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "particles": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "instancing": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "texture": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "depth": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.037037037037037035,
+      "weight": 0.03571428571428571,
       "count": 1
     }
   },
   "nodes": {
+    "neon-moss": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "organic",
+        "biophilia",
+        "geometry"
+      ],
+      "links": [
+        {
+          "from": "neon-moss",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "neon-moss",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "neon-moss",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
+      "updatedAt": "Mon, 22 Aug 2022 09:23:33 GMT",
+      "inline": false,
+      "title": "Neon Moss",
+      "description": "A generative system for creating plant-like geometry, rendered in a neon glow.",
+      "image": "/nodes/neon-moss.preview.jpg"
+    },
     "digital-biophilia": {
       "tags": [
         "art",
@@ -1239,10 +1313,16 @@ export default {
           "to": "swamp-mass",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "digital-biophilia",
+          "to": "neon-moss",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
-      "updatedAt": "Sun, 21 Aug 2022 16:04:03 GMT",
+      "updatedAt": "Sun, 21 Aug 2022 17:47:39 GMT",
       "inline": true,
       "title": "digital-biophilia",
       "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
@@ -1254,10 +1334,10 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "organic",
-        "substrate",
-        "biophilia"
+        "noise",
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -1304,7 +1384,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 19 Aug 2022 17:08:31 GMT",
-      "updatedAt": "Fri, 19 Aug 2022 18:04:50 GMT",
+      "updatedAt": "Sun, 21 Aug 2022 17:47:39 GMT",
       "inline": false,
       "title": "Super Cell",
       "description": "Warping lines in multiple layers makes for a strange, morphing life-form.",
@@ -1370,8 +1450,8 @@ export default {
         "domain-warping",
         "noise",
         "organic",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -1418,6 +1498,12 @@ export default {
         },
         {
           "from": "moss-structure",
+          "to": "neon-moss",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
           "to": "super-cell",
           "kind": "tangent",
           "strength": 0.5
@@ -1437,8 +1523,8 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -1557,10 +1643,10 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "organic",
-        "substrate",
-        "biophilia"
+        "noise",
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -1578,6 +1664,12 @@ export default {
         {
           "from": "swamp-mass",
           "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "swamp-mass",
+          "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -1688,8 +1780,8 @@ export default {
     "city-pond": {
       "tags": [
         "organic",
-        "project",
         "biophilia",
+        "project",
         "photography"
       ],
       "links": [
@@ -1855,8 +1947,8 @@ export default {
         "art",
         "generative",
         "domain-warping",
-        "noise",
         "organic",
+        "noise",
         "project"
       ],
       "links": [
@@ -1885,8 +1977,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "noise",
         "organic",
+        "noise",
         "project",
         "memes",
         "flowfield"
@@ -2419,7 +2511,7 @@ export default {
         }
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "Sat, 20 Aug 2022 14:47:16 GMT",
+      "updatedAt": "Sun, 21 Aug 2022 17:47:39 GMT",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -2711,8 +2803,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "interactive",
         "geometry",
+        "interactive",
         "chrome"
       ],
       "links": [
@@ -2747,8 +2839,8 @@ export default {
         "art",
         "generative",
         "live",
-        "interactive",
         "geometry",
+        "interactive",
         "chrome"
       ],
       "links": [
@@ -2783,8 +2875,8 @@ export default {
         "art",
         "generative",
         "live",
-        "interactive",
         "geometry",
+        "interactive",
         "chrome"
       ],
       "links": [
@@ -2819,8 +2911,8 @@ export default {
         "art",
         "generative",
         "live",
-        "interactive",
         "geometry",
+        "interactive",
         "texture",
         "depth"
       ],
@@ -2840,6 +2932,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "digital-biophilia",
-  "mostRecentlyUpdatedNode": "rhizome"
+  "latestNode": "neon-moss",
+  "mostRecentlyUpdatedNode": "digital-biophilia"
 } as const;
