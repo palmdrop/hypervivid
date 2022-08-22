@@ -1281,10 +1281,10 @@ export default {
         }
       ],
       "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
-      "updatedAt": "Mon, 22 Aug 2022 09:23:33 GMT",
+      "updatedAt": "Mon, 22 Aug 2022 09:56:02 GMT",
       "inline": false,
       "title": "Neon Moss",
-      "description": "A generative system for creating plant-like geometry, rendered in a neon glow.",
+      "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
       "image": "/nodes/neon-moss.preview.jpg"
     },
     "digital-biophilia": {
