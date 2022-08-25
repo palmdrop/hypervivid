@@ -63,6 +63,7 @@
   <main 
     class="node-container"
     class:fullscreen
+    class:hideOverflow={!!nodeMetadata.hideOverflow}
   >
     <button
       class="fullscreen-button"
@@ -118,6 +119,10 @@
 
     overflow-y: auto;
     overflow-x: hidden;
+  }
+
+  .hideOverflow {
+    overflow-y: hidden;
   }
 
   .fullscreen-button {

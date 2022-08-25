@@ -10,5 +10,6 @@
   "inline": false,
   "title": "Neon Moss",
   "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
-  "image": ""
+  "image": "",
+  "hideOverflow": true
 }

@@ -138,6 +138,12 @@ export default {
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "block-dissolve",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "immerse": [
@@ -150,6 +156,12 @@ export default {
       {
         "from": "immerse",
         "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
+        "to": "formations",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -686,6 +698,96 @@ export default {
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "fluid-feedback",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "formations": [
+      {
+        "from": "formations",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "virtual-imprint",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "neon-moss": [
+      {
+        "from": "neon-moss",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "virtual-imprint": [
+      {
+        "from": "virtual-imprint",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-imprint",
+        "to": "retro-core",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-imprint",
+        "to": "solar-chrome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-imprint",
+        "to": "solar-landscape",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "hyper": [
@@ -931,26 +1033,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "neon-moss": [
-      {
-        "from": "neon-moss",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "noise-construct": [
       {
         "from": "noise-construct",
@@ -977,26 +1059,6 @@ export default {
       {
         "from": "retro-core",
         "to": "virtual-imprint",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "virtual-imprint": [
-      {
-        "from": "virtual-imprint",
-        "to": "retro-core",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-imprint",
-        "to": "solar-chrome",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-imprint",
-        "to": "solar-landscape",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1083,174 +1145,222 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 28
+      "count": 29
     },
     "generative": {
-      "weight": 0.9642857142857143,
-      "count": 27
+      "weight": 0.9655172413793104,
+      "count": 28
     },
     "live": {
-      "weight": 0.6785714285714286,
-      "count": 19
+      "weight": 0.6896551724137931,
+      "count": 20
     },
     "domain-warping": {
-      "weight": 0.6071428571428571,
+      "weight": 0.5862068965517241,
       "count": 17
     },
     "noise": {
-      "weight": 0.39285714285714285,
+      "weight": 0.3793103448275862,
       "count": 11
     },
     "organic": {
-      "weight": 0.39285714285714285,
+      "weight": 0.3793103448275862,
       "count": 11
     },
     "biophilia": {
-      "weight": 0.2857142857142857,
+      "weight": 0.27586206896551724,
       "count": 8
     },
     "substrate": {
-      "weight": 0.25,
+      "weight": 0.2413793103448276,
       "count": 7
     },
     "project": {
-      "weight": 0.25,
+      "weight": 0.2413793103448276,
+      "count": 7
+    },
+    "geometry": {
+      "weight": 0.2413793103448276,
       "count": 7
     },
     "interactive": {
-      "weight": 0.21428571428571427,
-      "count": 6
-    },
-    "geometry": {
-      "weight": 0.21428571428571427,
+      "weight": 0.20689655172413793,
       "count": 6
     },
     "thoughts": {
-      "weight": 0.17857142857142858,
+      "weight": 0.1724137931034483,
+      "count": 5
+    },
+    "feedback": {
+      "weight": 0.1724137931034483,
       "count": 5
     },
     "css": {
-      "weight": 0.17857142857142858,
+      "weight": 0.1724137931034483,
       "count": 5
     },
     "info": {
-      "weight": 0.14285714285714285,
-      "count": 4
-    },
-    "feedback": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13793103448275862,
       "count": 4
     },
     "photography": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13793103448275862,
       "count": 4
     },
     "fragments": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13793103448275862,
       "count": 4
     },
     "internet": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13793103448275862,
       "count": 4
     },
     "chrome": {
-      "weight": 0.14285714285714285,
+      "weight": 0.13793103448275862,
       "count": 4
     },
     "writing": {
-      "weight": 0.10714285714285714,
+      "weight": 0.10344827586206896,
       "count": 3
     },
     "webart": {
-      "weight": 0.10714285714285714,
+      "weight": 0.10344827586206896,
       "count": 3
     },
     "hyper": {
-      "weight": 0.10714285714285714,
+      "weight": 0.10344827586206896,
       "count": 3
     },
     "memes": {
-      "weight": 0.10714285714285714,
+      "weight": 0.10344827586206896,
       "count": 3
     },
     "glitch": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "space-colonization": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "mind": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "fuse": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "words": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "utility": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "exploration": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "dithering": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "external": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06896551724137931,
       "count": 2
     },
     "contact": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "communication": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "particles": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "instancing": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "texture": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "depth": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.03571428571428571,
+      "weight": 0.034482758620689655,
       "count": 1
     }
   },
   "nodes": {
+    "formations": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "geometry",
+        "feedback"
+      ],
+      "links": [
+        {
+          "from": "formations",
+          "to": "neon-moss",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "block-dissolve",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "fluid-feedback",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "virtual-imprint",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Thu, 25 Aug 2022 09:25:46 GMT",
+      "updatedAt": "Thu, 25 Aug 2022 10:33:21 GMT",
+      "inline": false,
+      "title": "Formations",
+      "description": "Generative rock-like formations and a background feedback effect. Doing some tests with natural-looking structures in synthetic environments.",
+      "image": "/nodes/formations.preview.jpg",
+      "hideOverflow": true
+    },
     "neon-moss": {
       "tags": [
         "art",
@@ -1261,6 +1371,12 @@ export default {
         "geometry"
       ],
       "links": [
+        {
+          "from": "neon-moss",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "neon-moss",
           "to": "moss-structure",
@@ -1281,11 +1397,12 @@ export default {
         }
       ],
       "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
-      "updatedAt": "Mon, 22 Aug 2022 10:00:00 GMT",
+      "updatedAt": "Thu, 25 Aug 2022 09:55:29 GMT",
       "inline": false,
       "title": "Neon Moss",
       "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
-      "image": "/nodes/neon-moss.preview.jpg"
+      "image": "/nodes/neon-moss.preview.jpg",
+      "hideOverflow": true
     },
     "digital-biophilia": {
       "tags": [
@@ -2345,6 +2462,12 @@ export default {
           "to": "immerse",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "block-dissolve",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "4 May 2022 11:45:09 GMT",
@@ -2532,6 +2655,12 @@ export default {
           "to": "immerse",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "fluid-feedback",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "13 Feb 2022 09:49:08 GMT",
@@ -2548,8 +2677,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "interactive",
         "geometry",
+        "interactive",
         "feedback"
       ],
       "links": [
@@ -2562,6 +2691,12 @@ export default {
         {
           "from": "immerse",
           "to": "fluid-feedback",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
+          "to": "formations",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2810,6 +2945,12 @@ export default {
       "links": [
         {
           "from": "virtual-imprint",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "virtual-imprint",
           "to": "retro-core",
           "kind": "tangent",
           "strength": 0.5
@@ -2932,6 +3073,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "neon-moss",
-  "mostRecentlyUpdatedNode": "digital-biophilia"
+  "latestNode": "formations",
+  "mostRecentlyUpdatedNode": "neon-moss"
 } as const;

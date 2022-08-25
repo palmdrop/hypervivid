@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "live", "art", "generative", "geometry", "feedback"
+  ],
+  "links": [
+    "neon-moss", "block-dissolve", "fluid-feedback", "immerse", "virtual-imprint"
+  ],
+  "createdAt": "Thu, 25 Aug 2022 09:25:46 GMT",
+  "updatedAt": "Thu, 25 Aug 2022 09:25:46 GMT",
+  "inline": false,
+  "title": "Formations",
+  "description": "Generative rock-like formations and a background feedback effect. Doing some tests with natural-looking structures in synthetic environments.",
+  "image": "",
+  "hideOverflow": true
+}
