@@ -10,12 +10,11 @@
   const images = [
     '/img/combined/comb1.jpg',
     '/img/combined/comb2.jpg',
-    '/img/combined/mirror2.jpg',
   ];
 
   const index = Math.floor((images.length * new Date().getSeconds() / 10) % images.length);
 
-  $: imageSrc = images[
+  const imageSrc = images[
     index
   ];
 
@@ -97,8 +96,7 @@
   // https://codepen.io/julianofreitas/pen/BayKper
 
   // TODO: or optimize by precalculating all offset strings
-
-  // TODO: grid of hyperwords against forrest background, clip words
+  // TODO: grid of hyperwords against forest background, clip words
 
   const getRandomIndex = () => {
     return Math.floor(Math.random() * hyperwords.length);
