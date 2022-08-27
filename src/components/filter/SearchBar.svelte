@@ -3,6 +3,7 @@
 
   export let debounceTimeout = 500;
   export let placeholder = "Search...";
+  export let trim = true;
 
   // For data banding
   export let searchPhrase = "";
@@ -11,7 +12,9 @@
 
   const handleSearch = _.debounce((event: Event & { currentTarget: EventTarget }) => {
     if(!event.target) return;
-    searchPhrase = (event.target as any).value ?? "";
+    let newSearchPhrase: string = (event.target as any).value ?? "";
+    if(trim) newSearchPhrase = newSearchPhrase.trim();
+    searchPhrase = newSearchPhrase;
   }, debounceTimeout);
 </script>
 
