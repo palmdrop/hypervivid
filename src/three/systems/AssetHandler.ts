@@ -37,7 +37,7 @@ class AssetHandler {
     this.textureLoader = new THREE.TextureLoader( this.loadManager );
     this.gltfLoader = new GLTFLoader();
     this.rgbeLoader = new RGBELoader();
-    this.rgbeLoader.setDataType( THREE.UnsignedByteType );
+    this.rgbeLoader.setDataType( THREE.FloatType );
 
     // Asset cache
     this.cache = new Map<string, any>();

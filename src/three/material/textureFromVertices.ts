@@ -10,16 +10,16 @@ export const textureFromSmoothGeometry = (
 
   const width = Math.floor( Math.sqrt( positionAttribute.count ) ) - 1;
   const height = width + 1;
-  const format = THREE.RGBFormat;
 
   const size = width * height;
-  const data = new Uint8Array( 3 * size );
+  const data = new Uint8Array( 4 * size );
 
   const setColor = ( index : number, color : THREE.Color ) => {
-    const stride = index * 3;
+    const stride = index * 4;
     data[ stride + 0 ] = Math.floor( color.r * 255 );
     data[ stride + 1 ] = Math.floor( color.g * 255 );
     data[ stride + 2 ] = Math.floor( color.b * 255 );
+    data[ stride + 3 ] = 255;
   };
 
   // Set default values
@@ -42,14 +42,11 @@ export const textureFromSmoothGeometry = (
     setColor( index, color );
   }
 
-  // Fill in possible gaps
-  // for( let i = 0; i < )
-
   // Create texture
-  const texture = new THREE.DataTexture( data, width, height, format );
-  // texture.wrapS = THREE.RepeatWrapping;
-  // texture.wrapT = THREE.RepeatWrapping;
+  const texture = new THREE.DataTexture( data, width, height );
   texture.minFilter = THREE.LinearFilter;
   texture.magFilter = THREE.LinearFilter;
+
+  texture.needsUpdate = true;
   return texture;
 };
