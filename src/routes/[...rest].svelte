@@ -10,7 +10,6 @@
 <script lang="ts">
   import Link from "$components/common/Link.svelte";
   import Paragraph from "$components/common/Paragraph.svelte";
-  import Node from "$components/node/Node.svelte";
 
   export let rest: string;
 </script>

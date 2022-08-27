@@ -473,5 +473,11 @@
       "Blog",
       "Art"
     ]
+  },
+  {
+    "text": "Andreas Wallroth",
+    "url": "https://andreaswallroth.com/",
+    "category": "Art",
+    "additionalCategories": []
   }
 ]

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade, blur } from 'svelte/transition';
   import { title$ } from '$stores/head';
   import { loading } from '$stores/loading';
   import { navigating } from '$app/stores';
@@ -8,11 +9,16 @@
   import '../fonts.css';
   import '../theme.css';
   import { isExternalURL } from '../utils/general';
+import { Loader } from 'three';
+import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
 
   $: $loading = (
     !!$navigating &&
     !isExternalURL($navigating.to)
   );
+
+
+  let mounted = false;
 
   onMount(() => {
     /*
@@ -29,6 +35,8 @@
     }
 
     document.addEventListener = newAddEventListener;
+
+    mounted = true;
   });
 </script>
 
@@ -38,6 +46,16 @@
   </title>
 </svelte:head>
 
+{#if !mounted}
+  <div 
+    class="loading"
+    transition:fade={{
+      duration: 100
+    }}
+  >
+    <StarLoader />
+  </div>
+{/if}
 <slot />
 
 {@html `<!-- 
@@ -46,3 +64,18 @@
 -->`}
 <span id="iab-pcm-sdk" />
 <span id="iab-autofill-sdk" />
+
+<style>
+  .loading {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: var(--cBg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>

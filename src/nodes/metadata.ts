@@ -2254,7 +2254,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-08-16T14:31:06.754Z",
+      "updatedAt": "2022-08-27T16:06:41.931Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -3070,5 +3070,5 @@ export default {
     }
   },
   "latestNode": "formations",
-  "mostRecentlyUpdatedNode": "hyper"
+  "mostRecentlyUpdatedNode": "links"
 } as const;

@@ -25,13 +25,13 @@
 />
 
 <nav>
-  <button 
-    class="expand-button clickable"
-    on:click={toggleExpanded}
-  >
-    Menu
-  </button>
   {#if windowWidth < breakpoint}
+    <button 
+      class="expand-button clickable"
+      on:click={toggleExpanded}
+    >
+      Menu
+    </button>
     {#if expanded}
       <div 
         class='click-outside'
@@ -193,10 +193,6 @@
   }
 
   @media ( min-width: 750px )  {
-    .expand-button {
-      display: none;
-    }
-
     ul {
       position: relative;
       flex-direction: row;
