@@ -24,16 +24,18 @@ type Metadata = {
 }
 
 const wrapRss = (rss: { feed: string }) => {
-  rss.feed = `<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-<atom:link href="http://www.palmdrop.site/rss.xml" rel="self" type="application/rss+xml" />
-<title>Hypervivid ~ Hypersoft</title>
-<link>https://www.palmdrop.site</link>
-<description>Experimental webspace for exploring digital art, technology and the internet.</description>
-${rss.feed}
-</channel>
-</rss>`;
+  rss.feed = `
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+      <channel>
+        <atom:link href="http://www.palmdrop.site/rss.xml" rel="self" type="application/rss+xml" />
+        <title>Hypervivid ~ Hypersoft</title>
+        <link>https://www.palmdrop.site</link>
+        <description>Experimental webspace for exploring digital art, technology and the web.</description>
+        ${rss.feed}
+      </channel>
+    </rss>
+  `;
 
   return rss.feed;
 }
@@ -158,6 +160,7 @@ const processNode = async (
           tags.set(tag, 1.0);
         }
       });
+
       nodeLinks.forEach(link => {
         if(typeof link !== 'object') {
           addUndirectedLink(nodeName, link, links, DEFAULT_LINK_STRENGTH, DEFAULT_LINK_KIND);
@@ -189,8 +192,20 @@ const processNode = async (
 
       // Get edited date
       try {
-        const stats = fs.statSync(metadataPath);
-        metadata.updatedAt = stats.mtime.toUTCString();
+        const nodeFiles = fs.readdirSync(nodeDirPath);
+        let nodeUpdatedAt: Date | undefined = undefined;
+        nodeFiles.forEach(fileName => {
+          const filePath = `${nodeDirPath}/${fileName}`;
+          const stats = fs.statSync(filePath);
+
+          const fileUpdatedAt = stats.mtime;
+
+          if(!nodeUpdatedAt || fileUpdatedAt > nodeUpdatedAt) {
+            nodeUpdatedAt = fileUpdatedAt;
+          }
+        });
+
+        metadata.updatedAt = nodeUpdatedAt ?? metadata.createdAt;
       } catch (err) {
         console.log('Could not determine updated time for node', nodeName);
       }
@@ -198,13 +213,14 @@ const processNode = async (
       nodes[nodeName] = metadata;
 
       // Add to rss feed
-      rss.feed += `<item>
-<guid>https://palmdrop.site/nodes/${nodeName}</guid>
-<title>${metadata.title || nodeName}</title>
-<link>https://palmdrop.site/nodes/${nodeName}</link>
-<description>${metadata.description}</description>
-<pubDate>${new Date(metadata.createdAt).toUTCString()}</pubDate>
-</item>`;
+      rss.feed += `
+        <item>
+          <guid>https://palmdrop.site/nodes/${nodeName}</guid>
+          <title>${metadata.title || nodeName}</title>
+          <link>https://palmdrop.site/nodes/${nodeName}</link>
+          <description>${metadata.description}</description>
+          <pubDate>${new Date(metadata.createdAt).toUTCString()}</pubDate>
+        </item>`;
     } else {
       // TODO: Create default metadata
       console.log(`Node "${nodeName}" has no metadata.`);

@@ -1,274 +1,320 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-<atom:link href="http://www.palmdrop.site/rss.xml" rel="self" type="application/rss+xml" />
-<title>Hypervivid ~ Hypersoft</title>
-<link>https://www.palmdrop.site</link>
-<description>Experimental webspace for exploring digital art, technology and the internet.</description>
-<item>
-<guid>https://palmdrop.site/nodes/about</guid>
-<title>About</title>
-<link>https://palmdrop.site/nodes/about</link>
-<description>What is this project? What does this space contain? Why? Who am I? Do you care?</description>
-<pubDate>Wed, 18 May 2022 15:40:27 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/alien-patterns</guid>
-<title>Alien Patterns</title>
-<link>https://palmdrop.site/nodes/alien-patterns</link>
-<description>On combining modified noise and domain warping to produce alien patterns</description>
-<pubDate>Thu, 13 Jan 2022 19:55:50 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/block-dissolve</guid>
-<title>Block Dissolve</title>
-<link>https://palmdrop.site/nodes/block-dissolve</link>
-<description>Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.</description>
-<pubDate>Wed, 04 May 2022 11:45:09 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/chaos-growth</guid>
-<title>Chaos Growth</title>
-<link>https://palmdrop.site/nodes/chaos-growth</link>
-<description>Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.</description>
-<pubDate>Wed, 22 Jun 2022 21:26:31 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/city-pond</guid>
-<title>City Pond</title>
-<link>https://palmdrop.site/nodes/city-pond</link>
-<description>Photos taken by and around a small pond located in the city where I live.</description>
-<pubDate>Thu, 21 Jul 2022 20:37:19 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/contact</guid>
-<title>Contact</title>
-<link>https://palmdrop.site/nodes/contact</link>
-<description>A form for sending me an email. Nothing more.</description>
-<pubDate>Thu, 26 May 2022 12:34:15 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/digital-biophilia</guid>
-<title>Digital Biophilia</title>
-<link>https://palmdrop.site/nodes/digital-biophilia</link>
-<description>Some thoughts on the biophilia hypothesis and digital spaces.</description>
-<pubDate>Sun, 21 Aug 2022 15:54:46 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/digital-gardening</guid>
-<title>Digital Gardening</title>
-<link>https://palmdrop.site/nodes/digital-gardening</link>
-<description></description>
-<pubDate>Mon, 25 Jul 2022 19:48:20 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/domain-warping</guid>
-<title>My Take on Domain Warping</title>
-<link>https://palmdrop.site/nodes/domain-warping</link>
-<description>How I've used domain warping to achieve strange generative effects.</description>
-<pubDate>Mon, 10 Jan 2022 18:52:37 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/ethereal-bits</guid>
-<title>Ethereal Bits</title>
-<link>https://palmdrop.site/nodes/ethereal-bits</link>
-<description>A node for simple html/css/svg aesthetics and experiments. Exploring how native web tools can be used to create unexpected effects.</description>
-<pubDate>Thu, 30 Jun 2022 18:01:04 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/flat-clouds</guid>
-<title>Flat Clouds</title>
-<link>https://palmdrop.site/nodes/flat-clouds</link>
-<description>Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.</description>
-<pubDate>Sun, 26 Dec 2021 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/fluid-feedback</guid>
-<title>Fluid Feedback</title>
-<link>https://palmdrop.site/nodes/fluid-feedback</link>
-<description>More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.</description>
-<pubDate>Sun, 13 Feb 2022 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/formations</guid>
-<title>Formations</title>
-<link>https://palmdrop.site/nodes/formations</link>
-<description>Generative rock-like formations and a background feedback effect. Doing some tests with natural-looking structures in synthetic environments.</description>
-<pubDate>Thu, 25 Aug 2022 09:25:46 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/fragfuse</guid>
-<title>Frag Fuse</title>
-<link>https://palmdrop.site/nodes/fragfuse</link>
-<description>Photo fragments, warped and mixed to produce eerie textures and patterns.</description>
-<pubDate>Thu, 16 Jun 2022 19:50:43 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/hyper</guid>
-<title>Hyper</title>
-<link>https://palmdrop.site/nodes/hyper</link>
-<description>Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.</description>
-<pubDate>Sun, 15 May 2022 10:20:22 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/immerse</guid>
-<title>Immerse</title>
-<link>https://palmdrop.site/nodes/immerse</link>
-<description>Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.</description>
-<pubDate>Thu, 27 Jan 2022 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/intro</guid>
-<title>Intro</title>
-<link>https://palmdrop.site/nodes/intro</link>
-<description>A short site description.</description>
-<pubDate>Sat, 16 Jul 2022 09:54:45 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/jolt-gate</guid>
-<title>Jolt Gate</title>
-<link>https://palmdrop.site/nodes/jolt-gate</link>
-<description>Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.</description>
-<pubDate>Sat, 13 Aug 2022 09:33:13 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/latest</guid>
-<title>Latest</title>
-<link>https://palmdrop.site/nodes/latest</link>
-<description>Displays the most recently created and most recently updated nodes. Just a utility.</description>
-<pubDate>Tue, 28 Jun 2022 07:07:14 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/less-flat</guid>
-<title>Less Flat</title>
-<link>https://palmdrop.site/nodes/less-flat</link>
-<description></description>
-<pubDate>Mon, 18 Jul 2022 21:48:39 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/links</guid>
-<title>Links</title>
-<link>https://palmdrop.site/nodes/links</link>
-<description>Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.</description>
-<pubDate>Sat, 04 Jun 2022 22:32:18 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/manifesto</guid>
-<title>manifesto</title>
-<link>https://palmdrop.site/nodes/manifesto</link>
-<description>Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.</description>
-<pubDate>Tue, 10 May 2022 20:11:26 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/markup-dada</guid>
-<title>Markup Dada</title>
-<link>https://palmdrop.site/nodes/markup-dada</link>
-<description>Simple HTML/CSS/JS test for creating animated patterns using the DOM.</description>
-<pubDate>Sat, 30 Jul 2022 09:06:40 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/medusa-network</guid>
-<title>Medusa Network</title>
-<link>https://palmdrop.site/nodes/medusa-network</link>
-<description>Dithering, living rows and grids, jellyfish, glitchy and organic. An expansion on the Noise Construct experiment.</description>
-<pubDate>Sun, 27 Mar 2022 11:45:09 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/modified-noise</guid>
-<title>Characteristics of Modified Noise</title>
-<link>https://palmdrop.site/nodes/modified-noise</link>
-<description>A few of my common methods for modifying standard noise functions.</description>
-<pubDate>Wed, 12 Jan 2022 21:50:06 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/moons</guid>
-<title>moons</title>
-<link>https://palmdrop.site/nodes/moons</link>
-<description>Simple CSS test.</description>
-<pubDate>Thu, 26 May 2022 14:41:23 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/moss-structure</guid>
-<title>Moss Structure</title>
-<link>https://palmdrop.site/nodes/moss-structure</link>
-<description>More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.</description>
-<pubDate>Tue, 16 Aug 2022 23:11:46 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/neon-moss</guid>
-<title>Neon Moss</title>
-<link>https://palmdrop.site/nodes/neon-moss</link>
-<description>A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.</description>
-<pubDate>Mon, 22 Aug 2022 07:24:16 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/nest</guid>
-<title>Nest</title>
-<link>https://palmdrop.site/nodes/nest</link>
-<description>Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.</description>
-<pubDate>Mon, 15 Aug 2022 19:52:55 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/noise-construct</guid>
-<title>Noise Construct</title>
-<link>https://palmdrop.site/nodes/noise-construct</link>
-<description>Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.</description>
-<pubDate>Fri, 25 Mar 2022 11:45:09 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/objects</guid>
-<title>Objects</title>
-<link>https://palmdrop.site/nodes/objects</link>
-<description>Localized domain warping "objects". I enjoyed playing with possible looks for abstract floating entities. These things just are.</description>
-<pubDate>Sun, 19 Jun 2022 21:26:31 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/rehash-transform</guid>
-<title>Rehash Transform</title>
-<link>https://palmdrop.site/nodes/rehash-transform</link>
-<description>Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.</description>
-<pubDate>Thu, 23 Dec 2021 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/retro-core</guid>
-<title>Retro Core</title>
-<link>https://palmdrop.site/nodes/retro-core</link>
-<description>Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.</description>
-<pubDate>Wed, 15 Sep 2021 15:24:28 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/rhizome</guid>
-<title>Rhizome</title>
-<link>https://palmdrop.site/nodes/rhizome</link>
-<description>All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.</description>
-<pubDate>Sun, 20 Feb 2022 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/skew-bulbs</guid>
-<title>Skew Bulbs</title>
-<link>https://palmdrop.site/nodes/skew-bulbs</link>
-<description>Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.</description>
-<pubDate>Mon, 14 Mar 2022 10:23:19 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/slices</guid>
-<title>Slices</title>
-<link>https://palmdrop.site/nodes/slices</link>
-<description>Experiment with 3D CSS rendering, photography, and digital spaces. Located externally; will be opened in an iframe.</description>
-<pubDate>Wed, 02 Mar 2022 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/solar-chrome</guid>
-<title>Solar Chrome</title>
-<link>https://palmdrop.site/nodes/solar-chrome</link>
-<description>Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.</description>
-<pubDate>Wed, 13 Oct 2021 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/solar-landscape</guid>
-<title>Solar Landscape</title>
-<link>https://palmdrop.site/nodes/solar-landscape</link>
-<description>An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.</description>
-<pubDate>Fri, 15 Oct 2021 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/substrates</guid>
-<title>Substrates</title>
-<link>https://palmdrop.site/nodes/substrates</link>
-<description>A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.</description>
-<pubDate>Wed, 17 Aug 2022 19:38:50 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/super-cell</guid>
-<title>Super Cell</title>
-<link>https://palmdrop.site/nodes/super-cell</link>
-<description>Warping lines in multiple layers makes for a strange, morphing life-form.</description>
-<pubDate>Fri, 19 Aug 2022 17:08:31 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/swamp-mass</guid>
-<title>Swamp Mass</title>
-<link>https://palmdrop.site/nodes/swamp-mass</link>
-<description>Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.</description>
-<pubDate>Wed, 10 Aug 2022 09:20:52 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/virtual-imprint</guid>
-<title>Virtual Imprint</title>
-<link>https://palmdrop.site/nodes/virtual-imprint</link>
-<description>Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.</description>
-<pubDate>Sun, 14 Nov 2021 09:49:08 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/weave</guid>
-<title>Weave</title>
-<link>https://palmdrop.site/nodes/weave</link>
-<description>A combination of generative techniques: flowfields, plant-like growth algorithms, and noise.</description>
-<pubDate>Sun, 19 Jun 2022 10:25:11 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/webfuse</guid>
-<title>Web Fuse</title>
-<link>https://palmdrop.site/nodes/webfuse</link>
-<description>Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?</description>
-<pubDate>Sat, 18 Jun 2022 12:07:12 GMT</pubDate>
-</item>
-</channel>
-</rss>
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+      <channel>
+        <atom:link href="http://www.palmdrop.site/rss.xml" rel="self" type="application/rss+xml" />
+        <title>Hypervivid ~ Hypersoft</title>
+        <link>https://www.palmdrop.site</link>
+        <description>Experimental webspace for exploring digital art, technology and the web.</description>
+        
+        <item>
+          <guid>https://palmdrop.site/nodes/about</guid>
+          <title>About</title>
+          <link>https://palmdrop.site/nodes/about</link>
+          <description>What is this project? What does this space contain? Why? Who am I? Do you care?</description>
+          <pubDate>Wed, 18 May 2022 15:40:27 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/alien-patterns</guid>
+          <title>Alien Patterns</title>
+          <link>https://palmdrop.site/nodes/alien-patterns</link>
+          <description>On combining modified noise and domain warping to produce alien patterns</description>
+          <pubDate>Thu, 13 Jan 2022 19:55:50 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/block-dissolve</guid>
+          <title>Block Dissolve</title>
+          <link>https://palmdrop.site/nodes/block-dissolve</link>
+          <description>Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.</description>
+          <pubDate>Wed, 04 May 2022 11:45:09 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/chaos-growth</guid>
+          <title>Chaos Growth</title>
+          <link>https://palmdrop.site/nodes/chaos-growth</link>
+          <description>Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.</description>
+          <pubDate>Wed, 22 Jun 2022 21:26:31 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/city-pond</guid>
+          <title>City Pond</title>
+          <link>https://palmdrop.site/nodes/city-pond</link>
+          <description>Photos taken by and around a small pond located in the city where I live.</description>
+          <pubDate>Thu, 21 Jul 2022 20:37:19 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/contact</guid>
+          <title>Contact</title>
+          <link>https://palmdrop.site/nodes/contact</link>
+          <description>A form for sending me an email. Nothing more.</description>
+          <pubDate>Thu, 26 May 2022 12:34:15 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/digital-biophilia</guid>
+          <title>Digital Biophilia</title>
+          <link>https://palmdrop.site/nodes/digital-biophilia</link>
+          <description>Some thoughts on the biophilia hypothesis and digital spaces.</description>
+          <pubDate>Sun, 21 Aug 2022 15:54:46 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/digital-gardening</guid>
+          <title>Digital Gardening</title>
+          <link>https://palmdrop.site/nodes/digital-gardening</link>
+          <description></description>
+          <pubDate>Mon, 25 Jul 2022 19:48:20 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/domain-warping</guid>
+          <title>My Take on Domain Warping</title>
+          <link>https://palmdrop.site/nodes/domain-warping</link>
+          <description>How I've used domain warping to achieve strange generative effects.</description>
+          <pubDate>Mon, 10 Jan 2022 18:52:37 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/ethereal-bits</guid>
+          <title>Ethereal Bits</title>
+          <link>https://palmdrop.site/nodes/ethereal-bits</link>
+          <description>A node for simple html/css/svg aesthetics and experiments. Exploring how native web tools can be used to create unexpected effects.</description>
+          <pubDate>Thu, 30 Jun 2022 18:01:04 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/flat-clouds</guid>
+          <title>Flat Clouds</title>
+          <link>https://palmdrop.site/nodes/flat-clouds</link>
+          <description>Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.</description>
+          <pubDate>Sun, 26 Dec 2021 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/fluid-feedback</guid>
+          <title>Fluid Feedback</title>
+          <link>https://palmdrop.site/nodes/fluid-feedback</link>
+          <description>More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.</description>
+          <pubDate>Sun, 13 Feb 2022 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/formations</guid>
+          <title>Formations</title>
+          <link>https://palmdrop.site/nodes/formations</link>
+          <description>Generative rock-like formations and a background feedback effect. Doing some tests with natural-looking structures in synthetic environments.</description>
+          <pubDate>Thu, 25 Aug 2022 09:25:46 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/fragfuse</guid>
+          <title>Frag Fuse</title>
+          <link>https://palmdrop.site/nodes/fragfuse</link>
+          <description>Photo fragments, warped and mixed to produce eerie textures and patterns.</description>
+          <pubDate>Thu, 16 Jun 2022 19:50:43 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/hyper</guid>
+          <title>Hyper</title>
+          <link>https://palmdrop.site/nodes/hyper</link>
+          <description>Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.</description>
+          <pubDate>Sun, 15 May 2022 10:20:22 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/immerse</guid>
+          <title>Immerse</title>
+          <link>https://palmdrop.site/nodes/immerse</link>
+          <description>Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.</description>
+          <pubDate>Thu, 27 Jan 2022 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/intro</guid>
+          <title>Intro</title>
+          <link>https://palmdrop.site/nodes/intro</link>
+          <description>A short site description.</description>
+          <pubDate>Sat, 16 Jul 2022 09:54:45 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/jolt-gate</guid>
+          <title>Jolt Gate</title>
+          <link>https://palmdrop.site/nodes/jolt-gate</link>
+          <description>Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.</description>
+          <pubDate>Sat, 13 Aug 2022 09:33:13 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/latest</guid>
+          <title>Latest</title>
+          <link>https://palmdrop.site/nodes/latest</link>
+          <description>Displays the most recently created and most recently updated nodes. Just a utility.</description>
+          <pubDate>Tue, 28 Jun 2022 07:07:14 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/less-flat</guid>
+          <title>Less Flat</title>
+          <link>https://palmdrop.site/nodes/less-flat</link>
+          <description></description>
+          <pubDate>Mon, 18 Jul 2022 21:48:39 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/links</guid>
+          <title>Links</title>
+          <link>https://palmdrop.site/nodes/links</link>
+          <description>Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.</description>
+          <pubDate>Sat, 04 Jun 2022 22:32:18 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/manifesto</guid>
+          <title>manifesto</title>
+          <link>https://palmdrop.site/nodes/manifesto</link>
+          <description>Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.</description>
+          <pubDate>Tue, 10 May 2022 20:11:26 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/markup-dada</guid>
+          <title>Markup Dada</title>
+          <link>https://palmdrop.site/nodes/markup-dada</link>
+          <description>Simple HTML/CSS/JS test for creating animated patterns using the DOM.</description>
+          <pubDate>Sat, 30 Jul 2022 09:06:40 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/medusa-network</guid>
+          <title>Medusa Network</title>
+          <link>https://palmdrop.site/nodes/medusa-network</link>
+          <description>Dithering, living rows and grids, jellyfish, glitchy and organic. An expansion on the Noise Construct experiment.</description>
+          <pubDate>Sun, 27 Mar 2022 11:45:09 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/modified-noise</guid>
+          <title>Characteristics of Modified Noise</title>
+          <link>https://palmdrop.site/nodes/modified-noise</link>
+          <description>A few of my common methods for modifying standard noise functions.</description>
+          <pubDate>Wed, 12 Jan 2022 21:50:06 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/moons</guid>
+          <title>moons</title>
+          <link>https://palmdrop.site/nodes/moons</link>
+          <description>Simple CSS test.</description>
+          <pubDate>Thu, 26 May 2022 14:41:23 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/moss-structure</guid>
+          <title>Moss Structure</title>
+          <link>https://palmdrop.site/nodes/moss-structure</link>
+          <description>More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.</description>
+          <pubDate>Tue, 16 Aug 2022 23:11:46 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/neon-moss</guid>
+          <title>Neon Moss</title>
+          <link>https://palmdrop.site/nodes/neon-moss</link>
+          <description>A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.</description>
+          <pubDate>Mon, 22 Aug 2022 07:24:16 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/nest</guid>
+          <title>Nest</title>
+          <link>https://palmdrop.site/nodes/nest</link>
+          <description>Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.</description>
+          <pubDate>Mon, 15 Aug 2022 19:52:55 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/noise-construct</guid>
+          <title>Noise Construct</title>
+          <link>https://palmdrop.site/nodes/noise-construct</link>
+          <description>Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.</description>
+          <pubDate>Fri, 25 Mar 2022 11:45:09 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/objects</guid>
+          <title>Objects</title>
+          <link>https://palmdrop.site/nodes/objects</link>
+          <description>Localized domain warping "objects". I enjoyed playing with possible looks for abstract floating entities. These things just are.</description>
+          <pubDate>Sun, 19 Jun 2022 21:26:31 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/rehash-transform</guid>
+          <title>Rehash Transform</title>
+          <link>https://palmdrop.site/nodes/rehash-transform</link>
+          <description>Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.</description>
+          <pubDate>Thu, 23 Dec 2021 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/retro-core</guid>
+          <title>Retro Core</title>
+          <link>https://palmdrop.site/nodes/retro-core</link>
+          <description>Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.</description>
+          <pubDate>Wed, 15 Sep 2021 15:24:28 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/rhizome</guid>
+          <title>Rhizome</title>
+          <link>https://palmdrop.site/nodes/rhizome</link>
+          <description>All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.</description>
+          <pubDate>Sun, 20 Feb 2022 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/skew-bulbs</guid>
+          <title>Skew Bulbs</title>
+          <link>https://palmdrop.site/nodes/skew-bulbs</link>
+          <description>Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.</description>
+          <pubDate>Mon, 14 Mar 2022 10:23:19 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/slices</guid>
+          <title>Slices</title>
+          <link>https://palmdrop.site/nodes/slices</link>
+          <description>Experiment with 3D CSS rendering, photography, and digital spaces. Located externally; will be opened in an iframe.</description>
+          <pubDate>Wed, 02 Mar 2022 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/solar-chrome</guid>
+          <title>Solar Chrome</title>
+          <link>https://palmdrop.site/nodes/solar-chrome</link>
+          <description>Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.</description>
+          <pubDate>Wed, 13 Oct 2021 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/solar-landscape</guid>
+          <title>Solar Landscape</title>
+          <link>https://palmdrop.site/nodes/solar-landscape</link>
+          <description>An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.</description>
+          <pubDate>Fri, 15 Oct 2021 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/substrates</guid>
+          <title>Substrates</title>
+          <link>https://palmdrop.site/nodes/substrates</link>
+          <description>A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.</description>
+          <pubDate>Wed, 17 Aug 2022 19:38:50 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/super-cell</guid>
+          <title>Super Cell</title>
+          <link>https://palmdrop.site/nodes/super-cell</link>
+          <description>Warping lines in multiple layers makes for a strange, morphing life-form.</description>
+          <pubDate>Fri, 19 Aug 2022 17:08:31 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/swamp-mass</guid>
+          <title>Swamp Mass</title>
+          <link>https://palmdrop.site/nodes/swamp-mass</link>
+          <description>Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.</description>
+          <pubDate>Wed, 10 Aug 2022 09:20:52 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/virtual-imprint</guid>
+          <title>Virtual Imprint</title>
+          <link>https://palmdrop.site/nodes/virtual-imprint</link>
+          <description>Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.</description>
+          <pubDate>Sun, 14 Nov 2021 09:49:08 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/weave</guid>
+          <title>Weave</title>
+          <link>https://palmdrop.site/nodes/weave</link>
+          <description>A combination of generative techniques: flowfields, plant-like growth algorithms, and noise.</description>
+          <pubDate>Sun, 19 Jun 2022 10:25:11 GMT</pubDate>
+        </item>
+        <item>
+          <guid>https://palmdrop.site/nodes/webfuse</guid>
+          <title>Web Fuse</title>
+          <link>https://palmdrop.site/nodes/webfuse</link>
+          <description>Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?</description>
+          <pubDate>Sat, 18 Jun 2022 12:07:12 GMT</pubDate>
+        </item>
+      </channel>
+    </rss>
+  
