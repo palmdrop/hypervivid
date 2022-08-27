@@ -85,7 +85,8 @@
     'politics',
     'culture',
     'imposed',
-    'leisure'
+    'leisure',
+    'exposed'
   ].map(word => `hyper${word}`.toUpperCase());
 
   const boxHeight = 7;
@@ -162,7 +163,6 @@
 <style>
   .node {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
