@@ -19,9 +19,7 @@
     placeholder="Tag filters..." 
     items={allTags}
     isMulti={true}
-    inputStyles="
-      cursor: text;
-    "
+    inputStyles="cursor: text;"
     on:select={handleSelect}
   />
 </div>

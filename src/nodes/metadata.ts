@@ -380,6 +380,12 @@ export default {
         "to": "fragfuse",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "city-pond",
+        "to": "summer-static",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "fragfuse": [
@@ -424,6 +430,12 @@ export default {
       {
         "from": "digital-biophilia",
         "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-biophilia",
+        "to": "summer-static",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1085,6 +1097,20 @@ export default {
         "strength": 0.5
       }
     ],
+    "summer-static": [
+      {
+        "from": "summer-static",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "summer-static",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "super-cell": [
       {
         "from": "super-cell",
@@ -1164,14 +1190,14 @@ export default {
       "count": 11
     },
     "biophilia": {
+      "weight": 0.3103448275862069,
+      "count": 9
+    },
+    "project": {
       "weight": 0.27586206896551724,
       "count": 8
     },
     "substrate": {
-      "weight": 0.2413793103448276,
-      "count": 7
-    },
-    "project": {
       "weight": 0.2413793103448276,
       "count": 7
     },
@@ -1191,15 +1217,15 @@ export default {
       "weight": 0.1724137931034483,
       "count": 5
     },
+    "photography": {
+      "weight": 0.1724137931034483,
+      "count": 5
+    },
     "css": {
       "weight": 0.1724137931034483,
       "count": 5
     },
     "info": {
-      "weight": 0.13793103448275862,
-      "count": 4
-    },
-    "photography": {
       "weight": 0.13793103448275862,
       "count": 4
     },
@@ -1309,6 +1335,34 @@ export default {
     }
   },
   "nodes": {
+    "summer-static": {
+      "tags": [
+        "biophilia",
+        "project",
+        "photography"
+      ],
+      "links": [
+        {
+          "from": "summer-static",
+          "to": "city-pond",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "summer-static",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sat, 27 Aug 2022 17:33:51 GMT",
+      "updatedAt": "2022-08-29T14:16:18.780Z",
+      "inline": false,
+      "title": "Summer Static",
+      "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
+      "image": "/nodes/summer-static.preview.jpg",
+      "asDocument": true
+    },
     "formations": {
       "tags": [
         "art",
@@ -1432,6 +1486,12 @@ export default {
           "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "digital-biophilia",
+          "to": "summer-static",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
@@ -1505,8 +1565,8 @@ export default {
     },
     "substrates": {
       "tags": [
-        "substrate",
         "project",
+        "substrate",
         "words",
         "external"
       ],
@@ -1903,10 +1963,16 @@ export default {
           "to": "fragfuse",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "city-pond",
+          "to": "summer-static",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Thu, 21 Jul 2022 20:37:19 GMT",
-      "updatedAt": "2022-08-17T10:28:31.308Z",
+      "updatedAt": "2022-08-27T20:08:27.013Z",
       "inline": false,
       "title": "City Pond",
       "description": "Photos taken by and around a small pond located in the city where I live.",
@@ -2353,8 +2419,8 @@ export default {
     "hyper": {
       "tags": [
         "art",
-        "css",
         "photography",
+        "css",
         "hyper",
         "words"
       ],
@@ -2560,8 +2626,8 @@ export default {
     "slices": {
       "tags": [
         "art",
-        "css",
         "photography",
+        "css",
         "external"
       ],
       "links": [
@@ -3069,6 +3135,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "formations",
-  "mostRecentlyUpdatedNode": "links"
+  "latestNode": "summer-static",
+  "mostRecentlyUpdatedNode": "city-pond"
 } as const;
