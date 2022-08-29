@@ -53,7 +53,7 @@ import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
       duration: 100
     }}
   >
-    <StarLoader />
+    <StarLoader size="8em"/>
   </div>
 {/if}
 <slot />
