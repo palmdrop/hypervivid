@@ -1,6 +1,8 @@
 <script lang="ts">
+	import type { SvelteComponentDev } from 'svelte/internal';
   import { onMount, SvelteComponent } from "svelte";
 
+  export let ComponentWrapper: typeof SvelteComponentDev | undefined = undefined;
   export let component: () => Promise<SvelteComponent>;
   export let delayMs: null | number = null;
 
@@ -32,10 +34,19 @@
 </script>
 
 {#if loadedComponent}
-  <svelte:component 
-    this={loadedComponent} 
-    {...$$restProps} 
-  />
+  {#if ComponentWrapper}
+    <ComponentWrapper>
+      <svelte:component 
+        this={loadedComponent} 
+        {...$$restProps} 
+      />
+    </ComponentWrapper>
+  {:else}
+    <svelte:component 
+      this={loadedComponent} 
+      {...$$restProps} 
+    />
+  {/if}
 {:else if showFallback}
   <slot />
 {/if}

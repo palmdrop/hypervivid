@@ -7,6 +7,7 @@
   import type { NodeName, NodeMode, NodeMetadata, NodeContext } from "$types/nodes";
   import NodeLoader from "./loader/NodeLoader.svelte";
   import Error from './Error.svelte';
+  import { NodeErrorBoundary } from "../error";
 
   const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
   const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
@@ -88,6 +89,7 @@
     <Lazy
       bind:isDone
       bind:failed
+      ComponentWrapper={NodeErrorBoundary}
       { component }
       {...$$restProps}
     />
@@ -100,7 +102,9 @@
     {/if}
   {/key}
 {:else}
-  <slot />
+  <NodeErrorBoundary>
+    <slot />
+  </NodeErrorBoundary>
 {/if}
 
 <style>
