@@ -50,16 +50,17 @@ class BaseRenderer {
     // const renderPass = new SSAARenderPass( scene, camera, 'black', 0 );
 
     this.transformPass = new ShaderPass( ShadowTransformShader );
-    this.transformPass.uniforms[ 'darkness' ].value = -0.2;
-    this.transformPass.uniforms[ 'opacity' ].value = 2.9;
+    this.transformPass.uniforms[ 'darkness' ].value = 0.0;
+    this.transformPass.uniforms[ 'opacity' ].value = 0.6;
     this.transformPass.uniforms[ 'offset' ].value.set( 0, 0 );
-    this.transformPass.uniforms[ 'staticAmount' ].value = 0.07;
+    this.transformPass.uniforms[ 'staticAmount' ].value = 0.04;
 
-    const bloomPass = new UnrealBloomPass( renderer.getSize( new THREE.Vector2() ), 2.0, 0.3, 0.7 );
+    // TODO: fix bloom pass
+    // const bloomPass = new UnrealBloomPass( renderer.getSize( new THREE.Vector2() ), 2.0, 0.3, 0.7 );
 
     this.composer.addPass( renderPass );
     this.composer.addPass( this.transformPass );
-    this.composer.addPass( bloomPass );
+    // this.composer.addPass( bloomPass );
 
   }
 
