@@ -15,4 +15,5 @@
   name={name}
   description={description}
   theme='light'
+  backgroundOverride='#b3b59c'
 />

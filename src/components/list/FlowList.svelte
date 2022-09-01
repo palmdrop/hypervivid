@@ -18,9 +18,8 @@
       <div 
         class="item-container"
         style="
-          position: relative;
-          left: {offsets[index].x};
-          top: {offsets[index].y};
+          --left: {offsets[index].x};
+          --top: {offsets[index].y};
         "
       >
         <slot {item} {index} />
@@ -36,9 +35,16 @@
     align-items: center;
   }
 
-  @media ( max-width: 500px )  {
+  li > div {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  @media ( min-width: 600px )  {
     li > div {
-      left: 0;
+      left: var(--left);
+      top: var(--top);
     }
   }
 

@@ -9,6 +9,7 @@
   export let name: string;
 
   export let theme: 'light' | 'dark' | 'black' = 'light';
+  export let backgroundOverride: string | undefined = undefined;
 
   let focusedImageIndex: number | undefined = undefined;
   let focusedItem: { imageUrl: string } | undefined = undefined;
@@ -38,17 +39,26 @@
       focusedImageIndex = undefined;
     }
   }
+
+  $: overrideStyles = `
+    ${ backgroundOverride 
+      ? `background-color: ${backgroundOverride}`
+      : ''
+    }
+  `;
 </script>
 
 <svelte:window on:keydown={onKeyDown} />
 
 <div 
   class={`node ${theme}`}
+  style={overrideStyles}
 >
   {#if focusedImageIndex && focusedItem}
     <img class={`focused-image ${theme}`}
       src={focusedItem.imageUrl}
       alt={`${name} - ${focusedImageIndex + 1 }.`}
+      style={overrideStyles}
       on:click={(e) => {
         e.currentTarget?.blur?.();
         focusedImageIndex = undefined; 
@@ -70,7 +80,7 @@
       src={item.imageUrl} 
       alt={`${name} - ${index + 1}.`}
       style="
-        width: {item.width};
+        --width: {item.width};
       "
       on:click={() => { focusedImageIndex = index; }}
     />
@@ -117,16 +127,25 @@
     padding-top: 5em;
 
     margin: 2.5em;
+
+    background-color: unset;
   }
 
   .flow-image {
-    max-width: 90vw;
+    max-width: calc(100vw - 0.5em);
+    width: 100%;
     margin-bottom: 15em;
 
     border-radius: 1%;
 
     transition: 0.5s;
     cursor: pointer;
+  }
+
+  @media ( min-width: 600px )  {
+    .flow-image {
+      width: var(--width);
+    }
   }
 
   .light img {

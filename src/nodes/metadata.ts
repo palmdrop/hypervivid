@@ -2320,7 +2320,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-08-27T16:06:41.931Z",
+      "updatedAt": "2022-08-30T18:35:21.187Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -3128,7 +3128,7 @@ export default {
         }
       ],
       "createdAt": "15 Sep 2021 15:24:28 GMT",
-      "updatedAt": "2022-08-17T10:46:23.229Z",
+      "updatedAt": "2022-08-30T17:52:12.811Z",
       "inline": false,
       "title": "Retro Core",
       "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
@@ -3136,5 +3136,5 @@ export default {
     }
   },
   "latestNode": "summer-static",
-  "mostRecentlyUpdatedNode": "city-pond"
+  "mostRecentlyUpdatedNode": "links"
 } as const;
