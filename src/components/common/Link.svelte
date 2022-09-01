@@ -9,7 +9,7 @@
   export let omitBorder: 'left' | 'right' | 'top' | 'bottom' | undefined = undefined;
 </script>
 
-<svelte:element this={onClick ? 'button' : 'a'}
+<a
   {href}
   on:click={onClick}
   target={newTab ? '_blank' : undefined}  
@@ -22,11 +22,12 @@
   {...$$restProps}
 >
   <slot />
-</svelte:element>
+</a>
 
 <style>
   .link {
     text-decoration: none;
+    cursor: pointer;
   }
 
   .link:hover {
@@ -49,13 +50,16 @@
 
   .decorated {
     position: relative;
+    height: 100%;
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     border: var(--borderPrimary);
-    height: 100%;
-    width: 100%;
+
   }
 
   .omit-left {
@@ -79,6 +83,7 @@
   }
 
   .decorated:hover::before {
+    content: '';
     background-color: var(--cBgInverted);
     box-shadow: var(--pillShadow);
   }

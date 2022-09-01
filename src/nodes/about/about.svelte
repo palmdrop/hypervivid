@@ -2,7 +2,6 @@
   import Link from '$components/common/Link.svelte';
   import Paragraph from '$components/common/Paragraph.svelte';
   import PointList from '$components/list/PointList.svelte';
-  import { scrollIntoView } from '$utils/scrollIntoView';
   import Node from '$components/node/Node.svelte';
   import Moons from '$nodes/moons/moons.svelte';
   
@@ -69,21 +68,20 @@
   const links = [
     {
       text: 'contact',
-      onClick: () => scrollIntoView('contact')
+      href: '#contact',
+      newTab: false
     },
     {
       text: 'credits',
-      onClick: () => scrollIntoView('credits')
+      href: '#credits',
+      newTab: false
     },
     {
+      text: 'manifesto',
       href: '/nodes/manifesto',
-      text: 'manifesto'
+      newTab: true
     },
-  ] as {
-    href?: string,
-    text: string,
-    onClick?: (event: Event) => void
-  }[];
+  ];
 </script>
 
 <div class="node">
@@ -102,9 +100,8 @@
         <li>
           <Link 
             href={link.href} 
-            onClick={link.onClick}
             big 
-            newTab 
+            newTab={link.newTab}
             decorated 
             underline={false}
             omitBorder={
@@ -179,7 +176,7 @@
       </Paragraph>
     </div>
   </section>
-  <section class='credits'>
+  <section class='credits' id="credits">
     <div class='content'>
       <h2>
         CREDITS
@@ -205,7 +202,7 @@
       </PointList>
     </div>
   </section>
-  <section class='contact'>
+  <section class='contact' id="contact">
     <div class='contact-piece'>
       <Node name='contact' mode='inline' />
     </div>
