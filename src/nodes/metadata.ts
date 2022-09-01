@@ -52,6 +52,12 @@ export default {
         "to": "ethereal-bits",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "moons",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "manifesto": [
@@ -648,6 +654,12 @@ export default {
         "to": "markup-dada",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "ethereal-bits",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "slices": [
@@ -973,6 +985,12 @@ export default {
         "to": "slices",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "markup-dada",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "medusa-network": [
@@ -1162,6 +1180,26 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
+    ],
+    "virtual-distance": [
+      {
+        "from": "virtual-distance",
+        "to": "markup-dada",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "ethereal-bits",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "moons",
+        "kind": "tangent",
+        "strength": 0.5
+      }
     ]
   },
   "tags": {
@@ -1205,6 +1243,10 @@ export default {
       "weight": 0.2413793103448276,
       "count": 7
     },
+    "css": {
+      "weight": 0.20689655172413793,
+      "count": 6
+    },
     "interactive": {
       "weight": 0.20689655172413793,
       "count": 6
@@ -1221,15 +1263,15 @@ export default {
       "weight": 0.1724137931034483,
       "count": 5
     },
-    "css": {
-      "weight": 0.1724137931034483,
-      "count": 5
-    },
     "info": {
       "weight": 0.13793103448275862,
       "count": 4
     },
     "fragments": {
+      "weight": 0.13793103448275862,
+      "count": 4
+    },
+    "webart": {
       "weight": 0.13793103448275862,
       "count": 4
     },
@@ -1242,10 +1284,6 @@ export default {
       "count": 4
     },
     "writing": {
-      "weight": 0.10344827586206896,
-      "count": 3
-    },
-    "webart": {
       "weight": 0.10344827586206896,
       "count": 3
     },
@@ -1335,6 +1373,38 @@ export default {
     }
   },
   "nodes": {
+    "virtual-distance": {
+      "tags": [
+        "css",
+        "webart"
+      ],
+      "links": [
+        {
+          "from": "virtual-distance",
+          "to": "markup-dada",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "virtual-distance",
+          "to": "ethereal-bits",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "virtual-distance",
+          "to": "moons",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Thu, 01 Sep 2022 11:19:20 GMT",
+      "updatedAt": "2022-09-01T16:07:58.181Z",
+      "inline": false,
+      "title": "Virtual Distance",
+      "description": "A css experiment with endless banner scrolling and exaggerated shadows.",
+      "image": "/nodes/virtual-distance.preview.jpg"
+    },
     "summer-static": {
       "tags": [
         "biophilia",
@@ -1356,7 +1426,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 27 Aug 2022 17:33:51 GMT",
-      "updatedAt": "2022-08-29T14:18:00.670Z",
+      "updatedAt": "2022-09-01T11:09:05.283Z",
       "inline": false,
       "title": "Summer Static",
       "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
@@ -1902,6 +1972,12 @@ export default {
           "to": "slices",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "markup-dada",
+          "to": "virtual-distance",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 30 Jul 2022 09:06:40 GMT",
@@ -2060,6 +2136,12 @@ export default {
         {
           "from": "ethereal-bits",
           "to": "markup-dada",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "ethereal-bits",
+          "to": "virtual-distance",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2320,7 +2402,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-08-30T18:35:21.187Z",
+      "updatedAt": "2022-09-01T11:17:55.751Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -2341,6 +2423,12 @@ export default {
         {
           "from": "moons",
           "to": "ethereal-bits",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moons",
+          "to": "virtual-distance",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2419,8 +2507,8 @@ export default {
     "hyper": {
       "tags": [
         "art",
-        "photography",
         "css",
+        "photography",
         "hyper",
         "words"
       ],
@@ -2626,8 +2714,8 @@ export default {
     "slices": {
       "tags": [
         "art",
-        "photography",
         "css",
+        "photography",
         "external"
       ],
       "links": [
@@ -3135,6 +3223,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "summer-static",
+  "latestNode": "virtual-distance",
   "mostRecentlyUpdatedNode": "links"
 } as const;
