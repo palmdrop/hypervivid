@@ -479,5 +479,13 @@
     "url": "https://andreaswallroth.com/",
     "category": "Art",
     "additionalCategories": []
+  },
+  {
+    "text": "Julian Hespenheide",
+    "url": "https://www.julian-h.de/",
+    "category": "Art",
+    "additionalCategories": [
+      "Tech"
+    ]
   }
 ]
