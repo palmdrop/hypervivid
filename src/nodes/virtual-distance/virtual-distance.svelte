@@ -1,9 +1,5 @@
-
 <script lang="ts">
-  import { getNodeContext } from '$utils/useNodeContext';
   import Scroller from './Scroller.svelte';
-  const { name, metadata } = getNodeContext('virtual-distance');
-
 </script>
 
 <div class="node">
@@ -14,7 +10,7 @@
       speed={-12000}
       distance="3em"
       elementMargin="1.0em"
-      fontSize="0.6rem"
+      fontSize="1.0rem"
       minSize="70px"
     />
     <Scroller 
@@ -22,7 +18,7 @@
       count={4}
       speed={10000}
       elementMargin="8em"
-      fontSize="1.0rem"
+      fontSize="1.4rem"
       distance="7em"
       minSize="300px"
     />
@@ -32,7 +28,7 @@
         count={8}
         speed={85000}
         elementMargin="8em"
-        fontSize="0.8rem"
+        fontSize="1.2rem"
         distance="6em"
         minSize="150px"
       />
@@ -41,7 +37,7 @@
         count={15}
         speed={35000}
         elementMargin="1em"
-        fontSize="0.6rem"
+        fontSize="1.0rem"
         distance="7em"
         minSize="90px"
       />
@@ -51,6 +47,8 @@
 
 <style>
   .node {
+    --cBg: gray;
+    background-color: var(--cBg);
     position: relative;
     width: 100%;
     min-height: 100%;
