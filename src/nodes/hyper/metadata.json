@@ -1,6 +1,8 @@
 {
   "tags": ["words", "hyper", "art", "photography", "css"],
-  "links": [],
+  "links": [
+    "virtual-distance"
+  ],
   "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
   "inline": false,
   "title": "Hyper",

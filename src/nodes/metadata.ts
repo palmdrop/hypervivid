@@ -811,6 +811,12 @@ export default {
       },
       {
         "from": "hyper",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
         "to": "rehash-transform",
         "kind": "tangent",
         "strength": 0.5
@@ -818,6 +824,32 @@ export default {
       {
         "from": "hyper",
         "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "virtual-distance": [
+      {
+        "from": "virtual-distance",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "markup-dada",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "ethereal-bits",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "moons",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1180,26 +1212,6 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "virtual-distance": [
-      {
-        "from": "virtual-distance",
-        "to": "markup-dada",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-distance",
-        "to": "ethereal-bits",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-distance",
-        "to": "moons",
-        "kind": "tangent",
-        "strength": 0.5
-      }
     ]
   },
   "tags": {
@@ -1381,6 +1393,12 @@ export default {
       "links": [
         {
           "from": "virtual-distance",
+          "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "virtual-distance",
           "to": "markup-dada",
           "kind": "tangent",
           "strength": 0.5
@@ -1399,7 +1417,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 01 Sep 2022 11:19:20 GMT",
-      "updatedAt": "2022-09-01T16:07:58.181Z",
+      "updatedAt": "2022-09-05T17:01:42.341Z",
       "inline": false,
       "title": "Virtual Distance",
       "description": "A css experiment with endless banner scrolling and exaggerated shadows.",
@@ -2402,7 +2420,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-09-01T11:17:55.751Z",
+      "updatedAt": "2022-09-04T13:09:45.219Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -2502,7 +2520,7 @@ export default {
       "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
       "image": "/nodes/about.preview.jpg",
-      "updatedAt": "2022-08-19T10:10:43.054Z"
+      "updatedAt": "2022-09-01T20:05:46.192Z"
     },
     "hyper": {
       "tags": [
@@ -2516,6 +2534,12 @@ export default {
         {
           "from": "hyper",
           "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "hyper",
+          "to": "virtual-distance",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2537,7 +2561,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-08-27T14:52:11.013Z"
+      "updatedAt": "2022-09-05T18:06:42.496Z"
     },
     "manifesto": {
       "tags": [
@@ -3224,5 +3248,5 @@ export default {
     }
   },
   "latestNode": "virtual-distance",
-  "mostRecentlyUpdatedNode": "links"
+  "mostRecentlyUpdatedNode": "hyper"
 } as const;

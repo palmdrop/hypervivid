@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { wrapSlice } from './../../utils/general';
-  import { onDestroy } from 'svelte';
   import { useTitle } from '$utils/useTitle';
   import { getNodeContext } from '$utils/useNodeContext';
   import Flicker from './extra/Flicker.svelte';
+  import LoopingScrollBanner from '../../components/ornaments/LoopingScrollBanner.svelte';
+import { random } from '../../utils/random';
 
   const { mode } = getNodeContext('hyper');
 
@@ -86,51 +86,25 @@
     'culture',
     'imposed',
     'leisure',
-    'exposed'
+    'exposed',
+    'rich'
   ].map(word => `hyper${word}`.toUpperCase());
 
   const boxHeight = 7;
   const wordLength = 9;
-  const interval = 600;
+  const interval = random(200, 600);
   
-  // TODO: optimize with CSS transitions? https://stackoverflow.com/questions/45847392/pure-css-continuous-horizontal-text-scroll-without-break
-  // https://codepen.io/julianofreitas/pen/BayKper
-
-  // TODO: or optimize by precalculating all offset strings
-  // TODO: grid of hyperwords against forest background, clip words
-
   const getRandomIndex = () => {
     return Math.floor(Math.random() * hyperwords.length);
   }
 
   const indices = Array(boxHeight).fill(0).map(getRandomIndex);
-  const offsets = Array(boxHeight).fill(0);
-  const currentWords = indices.map(i => wrapSlice(hyperwords[i], 0, wordLength));
+  const currentWords = indices.map(i => hyperwords[i]);
 
   const handleHover = (listIndex: number) => {
     indices[listIndex] = getRandomIndex();
-    currentWords[listIndex] = wrapSlice(hyperwords[indices[listIndex]], 0, wordLength);
+    currentWords[listIndex] = hyperwords[indices[listIndex]];
   }
-
-  const intervals: NodeJS.Timer[] = [];
-
-  offsets.forEach((_, i) => {
-    const delay = 2.0 * i * interval / boxHeight;
-    const offsetWord = () => {
-      offsets[i] = (offsets[i] + 1) % wordLength;
-      const word = hyperwords[indices[i]];
-      currentWords[i] = wrapSlice(word, offsets[i], wordLength + offsets[i]);
-    }
-    setTimeout(() => {
-      intervals[i] = setInterval(offsetWord, interval)
-    }, delay);
-  });
-
-  onDestroy(() => {
-    intervals.forEach(interval => 
-      clearInterval(interval)
-    );
-  });
 
   $: {
     useTitle(currentWords[0]);
@@ -150,7 +124,14 @@
           on:touchend={() => handleHover(i)}
           on:focus={() => {}}
         >
-          <span>{currentWords[i]}</span>
+          <LoopingScrollBanner
+            style="width: {2.0 * wordLength}rem;"
+            steps={currentWords[i].length}
+            delay={2.0 * interval * i / (1000 * wordLength)}
+            speed={interval * currentWords[i].length}
+          >
+            {currentWords[i]}
+          </LoopingScrollBanner>
         </li>
       {/each}
     </ul>
@@ -184,7 +165,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 1em;
+    padding: 1.2em;
     font-size: clamp(18px, 7vw, 2.1rem);
     line-height: 0.9em;
     letter-spacing: 0.45em;

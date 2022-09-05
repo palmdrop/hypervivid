@@ -2,6 +2,8 @@
   export let speed = 3000;
   export let reverseDirection = false;
   export let hideOverflow = true;
+  export let steps = -1;
+  export let delay = 0;
   export let style = "";
 </script>
 
@@ -9,10 +11,14 @@
   class="banner"
   style="
     --speed: {speed / 1000}s;
+    --steps: {steps};
+    --delay: {delay}s;
     {style};
   "
   class:hideOverflow
   class:reverseDirection
+  class:steps={steps > 0}
+  class:linear={steps <= 0}
 >
   <div class="section">
     <slot />
@@ -41,7 +47,16 @@
     justify-content: space-around;
 
     position: relative;
-    animation: marquee var(--speed) linear infinite;
+
+    animation-delay: 10s;
+  }
+
+  .linear > div {
+    animation: marquee var(--speed) linear infinite var(--delay);
+  }
+
+  .steps > div {
+    animation: marquee var(--speed) infinite var(--delay) steps(var(--steps));
   }
 
   .reverseDirection > .section {
