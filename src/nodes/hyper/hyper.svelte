@@ -3,7 +3,7 @@
   import { getNodeContext } from '$utils/useNodeContext';
   import Flicker from './extra/Flicker.svelte';
   import LoopingScrollBanner from '../../components/ornaments/LoopingScrollBanner.svelte';
-import { random } from '../../utils/random';
+  import { random } from '../../utils/random';
 
   const { mode } = getNodeContext('hyper');
 
@@ -92,6 +92,7 @@ import { random } from '../../utils/random';
 
   const boxHeight = 7;
   const wordLength = 9;
+  const letterSpacing = 0.4;
   const interval = random(200, 600);
   
   const getRandomIndex = () => {
@@ -125,7 +126,10 @@ import { random } from '../../utils/random';
           on:focus={() => {}}
         >
           <LoopingScrollBanner
-            style="width: {2.0 * wordLength}rem;"
+            style="
+              letter-spacing: {letterSpacing}em;
+              width: calc({wordLength}ch + {wordLength * letterSpacing}em);
+            "
             steps={currentWords[i].length}
             delay={2.0 * interval * i / (1000 * wordLength)}
             speed={interval * currentWords[i].length}
