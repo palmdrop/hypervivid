@@ -270,6 +270,12 @@ export default {
         "to": "weave",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "chaos-growth",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "webfuse": [
@@ -320,6 +326,12 @@ export default {
       {
         "from": "rhizome",
         "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "glow-tree",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -748,12 +760,24 @@ export default {
         "to": "virtual-imprint",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "neon-moss": [
       {
         "from": "neon-moss",
         "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
+        "to": "glow-tree",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -824,6 +848,32 @@ export default {
       {
         "from": "hyper",
         "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "glow-tree": [
+      {
+        "from": "glow-tree",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "chaos-growth",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1217,174 +1267,216 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 29
+      "count": 30
     },
     "generative": {
-      "weight": 0.9655172413793104,
-      "count": 28
+      "weight": 0.9666666666666667,
+      "count": 29
     },
     "live": {
-      "weight": 0.6896551724137931,
-      "count": 20
+      "weight": 0.7,
+      "count": 21
     },
     "domain-warping": {
-      "weight": 0.5862068965517241,
+      "weight": 0.5666666666666667,
       "count": 17
     },
     "noise": {
-      "weight": 0.3793103448275862,
+      "weight": 0.36666666666666664,
       "count": 11
     },
     "organic": {
-      "weight": 0.3793103448275862,
+      "weight": 0.36666666666666664,
       "count": 11
     },
     "biophilia": {
-      "weight": 0.3103448275862069,
+      "weight": 0.3,
       "count": 9
     },
     "project": {
-      "weight": 0.27586206896551724,
+      "weight": 0.26666666666666666,
+      "count": 8
+    },
+    "geometry": {
+      "weight": 0.26666666666666666,
       "count": 8
     },
     "substrate": {
-      "weight": 0.2413793103448276,
-      "count": 7
-    },
-    "geometry": {
-      "weight": 0.2413793103448276,
+      "weight": 0.23333333333333334,
       "count": 7
     },
     "css": {
-      "weight": 0.20689655172413793,
+      "weight": 0.2,
       "count": 6
     },
     "interactive": {
-      "weight": 0.20689655172413793,
+      "weight": 0.2,
       "count": 6
     },
     "thoughts": {
-      "weight": 0.1724137931034483,
+      "weight": 0.16666666666666666,
       "count": 5
     },
     "feedback": {
-      "weight": 0.1724137931034483,
+      "weight": 0.16666666666666666,
       "count": 5
     },
     "photography": {
-      "weight": 0.1724137931034483,
+      "weight": 0.16666666666666666,
       "count": 5
     },
     "info": {
-      "weight": 0.13793103448275862,
+      "weight": 0.13333333333333333,
       "count": 4
     },
     "fragments": {
-      "weight": 0.13793103448275862,
+      "weight": 0.13333333333333333,
       "count": 4
     },
     "webart": {
-      "weight": 0.13793103448275862,
+      "weight": 0.13333333333333333,
       "count": 4
     },
     "internet": {
-      "weight": 0.13793103448275862,
+      "weight": 0.13333333333333333,
       "count": 4
     },
     "chrome": {
-      "weight": 0.13793103448275862,
+      "weight": 0.13333333333333333,
       "count": 4
     },
     "writing": {
-      "weight": 0.10344827586206896,
+      "weight": 0.1,
+      "count": 3
+    },
+    "space-colonization": {
+      "weight": 0.1,
       "count": 3
     },
     "hyper": {
-      "weight": 0.10344827586206896,
+      "weight": 0.1,
       "count": 3
     },
     "memes": {
-      "weight": 0.10344827586206896,
+      "weight": 0.1,
       "count": 3
     },
     "glitch": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.06896551724137931,
-      "count": 2
-    },
-    "space-colonization": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "mind": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "fuse": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "words": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "utility": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "exploration": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "dithering": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "external": {
-      "weight": 0.06896551724137931,
+      "weight": 0.06666666666666667,
       "count": 2
     },
     "contact": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "communication": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "particles": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "instancing": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "texture": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "depth": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.034482758620689655,
+      "weight": 0.03333333333333333,
       "count": 1
     }
   },
   "nodes": {
+    "glow-tree": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "geometry",
+        "space-colonization"
+      ],
+      "links": [
+        {
+          "from": "glow-tree",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "glow-tree",
+          "to": "neon-moss",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "glow-tree",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "glow-tree",
+          "to": "chaos-growth",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Wed, 07 Sep 2022 17:29:53 GMT",
+      "updatedAt": "2022-09-07T17:38:18.713Z",
+      "inline": false,
+      "title": "Glow Tree",
+      "description": "Simple tree structure and octree visualization. Mixing organic algorithms and less organic data structures.",
+      "image": "/nodes/glow-tree.preview.jpg",
+      "hideOverflow": true
+    },
     "virtual-distance": {
       "tags": [
         "css",
@@ -1489,6 +1581,12 @@ export default {
           "to": "virtual-imprint",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "glow-tree",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Thu, 25 Aug 2022 09:25:46 GMT",
@@ -1517,6 +1615,12 @@ export default {
         },
         {
           "from": "neon-moss",
+          "to": "glow-tree",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "neon-moss",
           "to": "moss-structure",
           "kind": "tangent",
           "strength": 0.5
@@ -1535,7 +1639,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
-      "updatedAt": "2022-08-25T09:55:29.882Z",
+      "updatedAt": "2022-09-07T17:32:15.208Z",
       "inline": false,
       "title": "Neon Moss",
       "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
@@ -2190,8 +2294,8 @@ export default {
         "generative",
         "noise",
         "project",
-        "rhizome",
-        "space-colonization"
+        "space-colonization",
+        "rhizome"
       ],
       "links": [
         {
@@ -2209,6 +2313,12 @@ export default {
         {
           "from": "chaos-growth",
           "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "chaos-growth",
+          "to": "glow-tree",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2561,7 +2671,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-09-05T18:07:50.946Z"
+      "updatedAt": "2022-09-06T17:39:34.689Z"
     },
     "manifesto": {
       "tags": [
@@ -2779,6 +2889,12 @@ export default {
         {
           "from": "rhizome",
           "to": "chaos-growth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "glow-tree",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3247,6 +3363,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "virtual-distance",
-  "mostRecentlyUpdatedNode": "hyper"
+  "latestNode": "glow-tree",
+  "mostRecentlyUpdatedNode": "neon-moss"
 } as const;

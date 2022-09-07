@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "live", "art", "generative", "geometry", "space-colonization"
+  ],
+  "links": [
+    "formations", "neon-moss", "rhizome", "chaos-growth"
+  ],
+  "createdAt": "Wed, 07 Sep 2022 17:29:53 GMT",
+  "updatedAt": "Wed, 07 Sep 2022 17:29:53 GMT",
+  "inline": false,
+  "title": "Glow Tree",
+  "description": "Simple tree structure and octree visualization. Mixing organic algorithms and less organic data structures.",
+  "image": "",
+  "hideOverflow": true
+}
