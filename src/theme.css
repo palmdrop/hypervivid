@@ -120,3 +120,7 @@ h4 {
 h5 {
   font-size: 1.5rem;
 }
+
+em {
+  font-family: var(--fItalic);
+}

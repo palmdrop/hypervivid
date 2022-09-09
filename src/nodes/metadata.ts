@@ -69,6 +69,12 @@ export default {
       },
       {
         "from": "manifesto",
+        "to": "cringe-core",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
         "to": "digital-gardening",
         "kind": "tangent",
         "strength": 0.5
@@ -426,6 +432,40 @@ export default {
         "strength": 0.5
       }
     ],
+    "cringe-core": [
+      {
+        "from": "cringe-core",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "cringe-core",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "less-flat": [
+      {
+        "from": "less-flat",
+        "to": "cringe-core",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "digital-biophilia": [
       {
         "from": "digital-biophilia",
@@ -592,20 +632,6 @@ export default {
       {
         "from": "swamp-mass",
         "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "less-flat": [
-      {
-        "from": "less-flat",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1305,6 +1331,10 @@ export default {
       "weight": 0.23333333333333334,
       "count": 7
     },
+    "thoughts": {
+      "weight": 0.2,
+      "count": 6
+    },
     "css": {
       "weight": 0.2,
       "count": 6
@@ -1312,10 +1342,6 @@ export default {
     "interactive": {
       "weight": 0.2,
       "count": 6
-    },
-    "thoughts": {
-      "weight": 0.16666666666666666,
-      "count": 5
     },
     "feedback": {
       "weight": 0.16666666666666666,
@@ -1325,19 +1351,19 @@ export default {
       "weight": 0.16666666666666666,
       "count": 5
     },
+    "internet": {
+      "weight": 0.16666666666666666,
+      "count": 5
+    },
+    "fragments": {
+      "weight": 0.16666666666666666,
+      "count": 5
+    },
     "info": {
       "weight": 0.13333333333333333,
       "count": 4
     },
-    "fragments": {
-      "weight": 0.13333333333333333,
-      "count": 4
-    },
     "webart": {
-      "weight": 0.13333333333333333,
-      "count": 4
-    },
-    "internet": {
       "weight": 0.13333333333333333,
       "count": 4
     },
@@ -1435,6 +1461,33 @@ export default {
     }
   },
   "nodes": {
+    "cringe-core": {
+      "tags": [
+        "thoughts",
+        "internet",
+        "fragments"
+      ],
+      "links": [
+        {
+          "from": "cringe-core",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cringe-core",
+          "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Wed, 07 Sep 2022 21:12:23 GMT",
+      "updatedAt": "2022-09-09T15:05:58.611Z",
+      "inline": true,
+      "title": "Cringe Core",
+      "description": "Short thoughts about cringe.",
+      "image": ""
+    },
     "glow-tree": {
       "tags": [
         "art",
@@ -2186,6 +2239,12 @@ export default {
       "links": [
         {
           "from": "less-flat",
+          "to": "cringe-core",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "less-flat",
           "to": "digital-gardening",
           "kind": "tangent",
           "strength": 0.5
@@ -2206,8 +2265,8 @@ export default {
     },
     "intro": {
       "tags": [
-        "info",
         "fragments",
+        "info",
         "utility"
       ],
       "links": [
@@ -2530,7 +2589,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-09-04T13:09:45.219Z",
+      "updatedAt": "2022-09-07T21:08:35.208Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -2676,14 +2735,20 @@ export default {
     "manifesto": {
       "tags": [
         "thoughts",
-        "info",
-        "internet"
+        "internet",
+        "info"
       ],
       "links": [
         {
           "from": "manifesto",
           "to": "about",
           "kind": "references",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "cringe-core",
+          "kind": "tangent",
           "strength": 0.5
         },
         {
@@ -3363,6 +3428,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "glow-tree",
-  "mostRecentlyUpdatedNode": "neon-moss"
+  "latestNode": "cringe-core",
+  "mostRecentlyUpdatedNode": "links"
 } as const;

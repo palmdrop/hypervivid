@@ -1,0 +1,7 @@
+I'm growing tired of *cringe*. The concept, feeling, label -- whatever it is. The language of the cringe-based dichotomy seems to be falling out of fashion, but the concept permeates. Maybe it always did, as *shame*, or some other emotion. But I can't help but think that the internet has caused an inflated awareness of this thing. Suddenly, displays of honesty, hopefulness or naked emotion become cringe for no reason other than the inherent sincerity. 
+
+Sincerity is cringe.
+
+In artsy spaces, I've noticed *innovative* ways of speaking to sidestep cringe. New language to say old things, dodging over-recognizability -- which I think also causes this feeling. With the internet hyper-imposing culture onto itself, we've heard everything before. Irony is also a useful shield -- hyper-awareness as another way of sidestepping. I dislike the tendency towards this hip, new language, even when I agree with the message. Irony is even worse. It can be a useful tool, but is only good for deconstruction, not building new things.
+
+In this digital space, it becomes difficult to foster softness and community. I'm (still) hoping for a [new sincerity](https://en.wikipedia.org/wiki/New_Sincerity): rejection of irony, cringe, and the endlessly meta. And I see it coming. More people are tired.
