@@ -18,9 +18,9 @@
   </Paragraph>
   <Paragraph big wide>
     Everything here is a node, analogous to the web at large. Nodes are connected. 
-    <Link bold underline={false} href="/nodes/about">Read more</Link>, browse
-    <Link bold underline={false} href="/nodes/">all nodes</Link>, or start at a 
-    <Link bold underline={false} href="/random">random location.</Link>
+    <Link href="/nodes/about">Read more</Link>, browse
+    <Link href="/nodes/">all nodes</Link>, or start at a 
+    <Link href="/random">random location.</Link>
   </Paragraph>
 </Fragment>
   
