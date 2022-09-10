@@ -144,21 +144,337 @@ export default {
         "strength": 0.5
       }
     ],
-    "block-dissolve": [
+    "alien-skies": [
       {
-        "from": "block-dissolve",
+        "from": "alien-skies",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "alien-skies",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "alien-skies",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "alien-skies",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "alien-skies",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "alien-skies",
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
       },
       {
-        "from": "block-dissolve",
-        "to": "formations",
+        "from": "alien-skies",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "alien-skies",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "super-cell": [
+      {
+        "from": "super-cell",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "moss-structure": [
+      {
+        "from": "moss-structure",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "nest": [
+      {
+        "from": "nest",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "swamp-mass": [
+      {
+        "from": "swamp-mass",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "swamp-mass",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "jolt-gate": [
+      {
+        "from": "jolt-gate",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       }
     ],
     "immerse": [
+      {
+        "from": "immerse",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "immerse",
         "to": "block-dissolve",
@@ -216,6 +532,108 @@ export default {
       {
         "from": "immerse",
         "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "domain-warping": [
+      {
+        "from": "domain-warping",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "modified-noise",
+        "kind": "next",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "substrates": [
+      {
+        "from": "substrates",
+        "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "alien-patterns",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "swamp-mass",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "block-dissolve": [
+      {
+        "from": "block-dissolve",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "block-dissolve",
+        "to": "formations",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -524,156 +942,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "moss-structure": [
-      {
-        "from": "moss-structure",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "swamp-mass": [
-      {
-        "from": "swamp-mass",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "domain-warping": [
-      {
-        "from": "domain-warping",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "domain-warping",
-        "to": "modified-noise",
-        "kind": "next",
-        "strength": 0.5
-      },
-      {
-        "from": "domain-warping",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "domain-warping",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "domain-warping",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "domain-warping",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "ethereal-bits": [
       {
         "from": "ethereal-bits",
@@ -958,88 +1226,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "jolt-gate": [
-      {
-        "from": "jolt-gate",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "jolt-gate",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "substrates": [
-      {
-        "from": "substrates",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "substrates",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "substrates",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "substrates",
-        "to": "alien-patterns",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "substrates",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "substrates",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "latest": [],
     "links": [
       {
@@ -1111,50 +1297,6 @@ export default {
       {
         "from": "medusa-network",
         "to": "skew-bulbs",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "nest": [
-      {
-        "from": "nest",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "nest",
-        "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1237,50 +1379,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "super-cell": [
-      {
-        "from": "super-cell",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "super-cell",
-        "to": "nest",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "super-cell",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "super-cell",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "super-cell",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "super-cell",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "super-cell",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "feedback": [
       {
         "from": "feedback",
@@ -1293,174 +1391,241 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 30
+      "count": 31
     },
     "generative": {
-      "weight": 0.9666666666666667,
-      "count": 29
+      "weight": 0.967741935483871,
+      "count": 30
     },
     "live": {
-      "weight": 0.7,
-      "count": 21
+      "weight": 0.7096774193548387,
+      "count": 22
     },
     "domain-warping": {
-      "weight": 0.5666666666666667,
-      "count": 17
+      "weight": 0.5806451612903226,
+      "count": 18
     },
     "noise": {
-      "weight": 0.36666666666666664,
-      "count": 11
+      "weight": 0.3870967741935484,
+      "count": 12
     },
     "organic": {
-      "weight": 0.36666666666666664,
-      "count": 11
+      "weight": 0.3870967741935484,
+      "count": 12
     },
     "biophilia": {
-      "weight": 0.3,
+      "weight": 0.2903225806451613,
       "count": 9
     },
+    "substrate": {
+      "weight": 0.25806451612903225,
+      "count": 8
+    },
     "project": {
-      "weight": 0.26666666666666666,
+      "weight": 0.25806451612903225,
       "count": 8
     },
     "geometry": {
-      "weight": 0.26666666666666666,
+      "weight": 0.25806451612903225,
       "count": 8
     },
-    "substrate": {
-      "weight": 0.23333333333333334,
-      "count": 7
-    },
     "thoughts": {
-      "weight": 0.2,
+      "weight": 0.1935483870967742,
       "count": 6
     },
     "css": {
-      "weight": 0.2,
+      "weight": 0.1935483870967742,
       "count": 6
     },
     "interactive": {
-      "weight": 0.2,
+      "weight": 0.1935483870967742,
       "count": 6
     },
     "feedback": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16129032258064516,
       "count": 5
     },
     "photography": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16129032258064516,
       "count": 5
     },
     "internet": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16129032258064516,
       "count": 5
     },
     "fragments": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16129032258064516,
       "count": 5
     },
     "info": {
-      "weight": 0.13333333333333333,
+      "weight": 0.12903225806451613,
       "count": 4
     },
     "webart": {
-      "weight": 0.13333333333333333,
+      "weight": 0.12903225806451613,
       "count": 4
     },
     "chrome": {
-      "weight": 0.13333333333333333,
+      "weight": 0.12903225806451613,
       "count": 4
     },
     "writing": {
-      "weight": 0.1,
+      "weight": 0.0967741935483871,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.1,
+      "weight": 0.0967741935483871,
       "count": 3
     },
     "hyper": {
-      "weight": 0.1,
+      "weight": 0.0967741935483871,
       "count": 3
     },
     "memes": {
-      "weight": 0.1,
+      "weight": 0.0967741935483871,
       "count": 3
     },
     "glitch": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "rhizome": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "mind": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "fuse": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "words": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "utility": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "exploration": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "dithering": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "external": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06451612903225806,
       "count": 2
     },
     "contact": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "communication": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "particles": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "instancing": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "texture": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "depth": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.03333333333333333,
+      "weight": 0.03225806451612903,
       "count": 1
     }
   },
   "nodes": {
+    "alien-skies": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "domain-warping",
+        "organic",
+        "noise",
+        "substrate"
+      ],
+      "links": [
+        {
+          "from": "alien-skies",
+          "to": "super-cell",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "alien-skies",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sat, 10 Sep 2022 14:34:05 GMT",
+      "updatedAt": "2022-09-10T14:46:34.832Z",
+      "inline": false,
+      "title": "Alien Skies",
+      "description": "Strange perspective distortion for alien skies. A test for a larger composition.",
+      "image": "/nodes/alien-skies.preview.jpg"
+    },
     "cringe-core": {
       "tags": [
         "thoughts",
@@ -1760,6 +1925,12 @@ export default {
       "links": [
         {
           "from": "super-cell",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
           "to": "moss-structure",
           "kind": "tangent",
           "strength": 0.5
@@ -1810,12 +1981,18 @@ export default {
     },
     "substrates": {
       "tags": [
-        "project",
         "substrate",
+        "project",
         "words",
         "external"
       ],
       "links": [
+        {
+          "from": "substrates",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "substrates",
           "to": "jolt-gate",
@@ -1872,6 +2049,12 @@ export default {
         "substrate"
       ],
       "links": [
+        {
+          "from": "moss-structure",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "moss-structure",
           "to": "digital-biophilia",
@@ -1947,6 +2130,12 @@ export default {
       "links": [
         {
           "from": "nest",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
           "to": "moss-structure",
           "kind": "tangent",
           "strength": 0.5
@@ -2005,6 +2194,12 @@ export default {
         "substrate"
       ],
       "links": [
+        {
+          "from": "jolt-gate",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "jolt-gate",
           "to": "swamp-mass",
@@ -2067,6 +2262,12 @@ export default {
         "substrate"
       ],
       "links": [
+        {
+          "from": "swamp-mass",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "swamp-mass",
           "to": "digital-biophilia",
@@ -3039,6 +3240,12 @@ export default {
       "links": [
         {
           "from": "immerse",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
           "to": "block-dissolve",
           "kind": "tangent",
           "strength": 0.5
@@ -3175,6 +3382,12 @@ export default {
         "writing"
       ],
       "links": [
+        {
+          "from": "domain-warping",
+          "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "domain-warping",
           "to": "jolt-gate",
@@ -3428,6 +3641,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "cringe-core",
-  "mostRecentlyUpdatedNode": "links"
+  "latestNode": "alien-skies",
+  "mostRecentlyUpdatedNode": "cringe-core"
 } as const;
