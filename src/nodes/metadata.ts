@@ -850,6 +850,96 @@ export default {
         "strength": 0.5
       }
     ],
+    "cliffscapes": [
+      {
+        "from": "cliffscapes",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "cliffscapes",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "formations": [
+      {
+        "from": "formations",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "virtual-imprint",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "glow-tree": [
+      {
+        "from": "glow-tree",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "cringe-core": [
       {
         "from": "cringe-core",
@@ -1024,44 +1114,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "formations": [
-      {
-        "from": "formations",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "block-dissolve",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "fluid-feedback",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "virtual-imprint",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "glow-tree",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "neon-moss": [
       {
         "from": "neon-moss",
@@ -1142,32 +1194,6 @@ export default {
       {
         "from": "hyper",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "glow-tree": [
-      {
-        "from": "glow-tree",
-        "to": "formations",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "glow-tree",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "glow-tree",
-        "to": "rhizome",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "glow-tree",
-        "to": "chaos-growth",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1391,174 +1417,210 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 31
+      "count": 32
     },
     "generative": {
-      "weight": 0.967741935483871,
-      "count": 30
+      "weight": 0.96875,
+      "count": 31
     },
     "live": {
-      "weight": 0.7096774193548387,
-      "count": 22
+      "weight": 0.71875,
+      "count": 23
     },
     "domain-warping": {
-      "weight": 0.5806451612903226,
+      "weight": 0.5625,
       "count": 18
     },
     "noise": {
-      "weight": 0.3870967741935484,
+      "weight": 0.375,
       "count": 12
     },
     "organic": {
-      "weight": 0.3870967741935484,
+      "weight": 0.375,
       "count": 12
     },
     "biophilia": {
-      "weight": 0.2903225806451613,
+      "weight": 0.28125,
+      "count": 9
+    },
+    "geometry": {
+      "weight": 0.28125,
       "count": 9
     },
     "substrate": {
-      "weight": 0.25806451612903225,
+      "weight": 0.25,
       "count": 8
     },
     "project": {
-      "weight": 0.25806451612903225,
+      "weight": 0.25,
       "count": 8
     },
-    "geometry": {
-      "weight": 0.25806451612903225,
-      "count": 8
+    "interactive": {
+      "weight": 0.21875,
+      "count": 7
     },
     "thoughts": {
-      "weight": 0.1935483870967742,
+      "weight": 0.1875,
       "count": 6
     },
     "css": {
-      "weight": 0.1935483870967742,
-      "count": 6
-    },
-    "interactive": {
-      "weight": 0.1935483870967742,
+      "weight": 0.1875,
       "count": 6
     },
     "feedback": {
-      "weight": 0.16129032258064516,
+      "weight": 0.15625,
       "count": 5
     },
     "photography": {
-      "weight": 0.16129032258064516,
+      "weight": 0.15625,
       "count": 5
     },
     "internet": {
-      "weight": 0.16129032258064516,
+      "weight": 0.15625,
       "count": 5
     },
     "fragments": {
-      "weight": 0.16129032258064516,
+      "weight": 0.15625,
       "count": 5
     },
     "info": {
-      "weight": 0.12903225806451613,
+      "weight": 0.125,
       "count": 4
     },
     "webart": {
-      "weight": 0.12903225806451613,
+      "weight": 0.125,
       "count": 4
     },
     "chrome": {
-      "weight": 0.12903225806451613,
+      "weight": 0.125,
       "count": 4
     },
     "writing": {
-      "weight": 0.0967741935483871,
-      "count": 3
-    },
-    "space-colonization": {
-      "weight": 0.0967741935483871,
-      "count": 3
-    },
-    "hyper": {
-      "weight": 0.0967741935483871,
-      "count": 3
-    },
-    "memes": {
-      "weight": 0.0967741935483871,
+      "weight": 0.09375,
       "count": 3
     },
     "glitch": {
-      "weight": 0.06451612903225806,
-      "count": 2
+      "weight": 0.09375,
+      "count": 3
+    },
+    "space-colonization": {
+      "weight": 0.09375,
+      "count": 3
+    },
+    "hyper": {
+      "weight": 0.09375,
+      "count": 3
+    },
+    "memes": {
+      "weight": 0.09375,
+      "count": 3
     },
     "rhizome": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
+      "count": 2
+    },
+    "instancing": {
+      "weight": 0.0625,
       "count": 2
     },
     "mind": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "fuse": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "words": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "utility": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "exploration": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "dithering": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
     "external": {
-      "weight": 0.06451612903225806,
+      "weight": 0.0625,
       "count": 2
     },
+    "octree": {
+      "weight": 0.03125,
+      "count": 1
+    },
     "contact": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     },
     "communication": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     },
     "particles": {
-      "weight": 0.03225806451612903,
-      "count": 1
-    },
-    "instancing": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     },
     "texture": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     },
     "depth": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.03225806451612903,
+      "weight": 0.03125,
       "count": 1
     }
   },
   "nodes": {
+    "cliffscapes": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "geometry",
+        "interactive",
+        "glitch",
+        "instancing",
+        "octree"
+      ],
+      "links": [
+        {
+          "from": "cliffscapes",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cliffscapes",
+          "to": "glow-tree",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Wed, 14 Sep 2022 18:30:05 GMT",
+      "updatedAt": "2022-09-14T21:17:19.013Z",
+      "inline": false,
+      "title": "Cliffscapes",
+      "description": "Continuation of formations and glow-tree sketches: a landscape and calm skies. A tree structure controls the form of the cliffscape.",
+      "image": "/nodes/cliffscapes.preview.jpg"
+    },
     "alien-skies": {
       "tags": [
         "art",
@@ -1662,6 +1724,12 @@ export default {
         "space-colonization"
       ],
       "links": [
+        {
+          "from": "glow-tree",
+          "to": "cliffscapes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "glow-tree",
           "to": "formations",
@@ -1770,6 +1838,12 @@ export default {
         "feedback"
       ],
       "links": [
+        {
+          "from": "formations",
+          "to": "cliffscapes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "formations",
           "to": "neon-moss",
@@ -2491,7 +2565,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
-      "updatedAt": "2022-08-15T21:00:10.960Z",
+      "updatedAt": "2022-09-10T14:46:51.392Z",
       "inline": true,
       "title": "Intro",
       "description": "A short site description.",
@@ -3033,9 +3107,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
+        "glitch",
         "dithering",
-        "blue-noise",
-        "glitch"
+        "blue-noise"
       ],
       "links": [
         {
@@ -3464,8 +3538,8 @@ export default {
         "domain-warping",
         "internet",
         "memes",
-        "mind",
-        "instancing"
+        "instancing",
+        "mind"
       ],
       "links": [
         {
@@ -3641,6 +3715,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "alien-skies",
-  "mostRecentlyUpdatedNode": "cringe-core"
+  "latestNode": "cliffscapes",
+  "mostRecentlyUpdatedNode": "intro"
 } as const;
