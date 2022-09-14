@@ -1463,15 +1463,15 @@ export default {
       "weight": 0.1875,
       "count": 6
     },
+    "photography": {
+      "weight": 0.1875,
+      "count": 6
+    },
     "css": {
       "weight": 0.1875,
       "count": 6
     },
     "feedback": {
-      "weight": 0.15625,
-      "count": 5
-    },
-    "photography": {
       "weight": 0.15625,
       "count": 5
     },
@@ -1596,6 +1596,7 @@ export default {
         "live",
         "geometry",
         "interactive",
+        "photography",
         "glitch",
         "instancing",
         "octree"
@@ -1615,7 +1616,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 14 Sep 2022 18:30:05 GMT",
-      "updatedAt": "2022-09-14T21:17:19.013Z",
+      "updatedAt": "2022-09-14T21:22:37.400Z",
       "inline": false,
       "title": "Cliffscapes",
       "description": "Continuation of formations and glow-tree sketches: a landscape and calm skies. A tree structure controls the form of the cliffscape.",
@@ -2969,8 +2970,8 @@ export default {
     "hyper": {
       "tags": [
         "art",
-        "css",
         "photography",
+        "css",
         "hyper",
         "words"
       ],
@@ -3188,8 +3189,8 @@ export default {
     "slices": {
       "tags": [
         "art",
-        "css",
         "photography",
+        "css",
         "external"
       ],
       "links": [
