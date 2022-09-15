@@ -58,7 +58,7 @@
 <style>
   .wrapper {
     position: relative;
-    overflow-y: scroll;
+    overflow: hidden;
 
     width: 100%;
   }

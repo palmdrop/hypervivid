@@ -69,7 +69,7 @@
   .page {
     position: relative;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 
     width: 100%;
 
@@ -84,11 +84,11 @@
 
     transition: opacity 1s;
 
-    min-height: 90%;
+    min-height: 85vh;
   }
 
   section {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -109,7 +109,7 @@
 
     z-index: 1;
 
-    width: 100vw;
+    width: 100%;
 
     padding-bottom: 2em;
     padding-top: 1em;

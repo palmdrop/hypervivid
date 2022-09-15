@@ -43,8 +43,9 @@ table {
 	border-spacing: 0;
 }
 body {
-	position: fixed;
-	width: 100vw;
+	/*position: fixed;
+	*/
+	width: 100%;
 	height: 100%;
 
 	display: flex;

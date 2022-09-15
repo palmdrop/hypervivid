@@ -72,6 +72,10 @@
 
     background-color: var(--cBg);
 
+    position: sticky;
+
+    top: 0;
+    z-index: 10;
   }
 
   header > div {

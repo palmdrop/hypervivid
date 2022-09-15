@@ -74,7 +74,6 @@
     modeFirst="preview"
     modeRest="preview"
     batchCount={10}
-    scrollElement={mainRef}
     emptyText="No nodes found..."
   />
 </main>
@@ -85,7 +84,7 @@
     width: 100%;
     height: 100%;
 
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .description-container {

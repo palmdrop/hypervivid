@@ -2,7 +2,7 @@
   import type { NodeMode, NodeName } from '$types/nodes';
   import Node from '../node/Node.svelte';
   import throttle from 'lodash.throttle';
-  import { onDestroy } from 'svelte/internal';
+  import { onDestroy, onMount } from 'svelte/internal';
   import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svelte';
   import StarLoader from '$components/ornaments/loaders/StarLoader.svelte';
   import Paragraph from '$components/common/Paragraph.svelte';
@@ -14,8 +14,9 @@
 
   export let batchCount = -1;
   export let autoLoad = false;
-  export let scrollElement: HTMLElement | undefined = undefined;
-  export let loadMoreOffset = 150;
+  export let scrollElement: HTMLElement | Window | undefined = undefined;
+  // undefined;
+  export let loadMoreOffset = 600;
   export let loadMoreListenerThrottle = 250;
 
   export let modeFirst: NodeMode;
@@ -58,18 +59,36 @@
   }
 
   // Listeners
+  let windowIsScrollElement = !scrollElement;
+
   const handleScroll = throttle((event: UIEvent & { target: EventTarget | null }) => {
-    const target = event.target as HTMLElement;
-    if (target && target.clientHeight + target.scrollTop >= target.scrollHeight - loadMoreOffset) {
+    const target = event.target as HTMLElement | Document;
+
+    if(!target) return;
+
+    let clientHeight: number;
+    let scrollTop: number;
+    let scrollHeight: number;
+
+    if(windowIsScrollElement || target instanceof Document) {
+      clientHeight = window.innerHeight;
+      scrollTop = window.scrollY;
+      scrollHeight = document.body.scrollHeight;
+    } else {
+      clientHeight = target.clientHeight;
+      scrollTop = target.scrollTop;
+      scrollHeight = target.scrollHeight;
+    }
+ 
+    if (clientHeight + scrollTop >= scrollHeight - loadMoreOffset) {
       loadMore();
     }
   }, loadMoreListenerThrottle);
 
-  const registerScrollListener = (element: HTMLElement) => {
-    element.addEventListener('scroll', handleScroll as any);
-  };
-
-  $: if (scrollElement) registerScrollListener(scrollElement);
+  onMount(() => {
+    scrollElement = scrollElement ?? window;
+    scrollElement.addEventListener('scroll', handleScroll as any);
+  });
 
   onDestroy(() => {
     scrollElement?.removeEventListener('scroll', handleScroll as any);

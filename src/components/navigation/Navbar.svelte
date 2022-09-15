@@ -147,7 +147,7 @@
 
     font-size: 1.2rem;
 
-    width: 100vw;
+    width: 100%;
     height: 100px;
   }
 
