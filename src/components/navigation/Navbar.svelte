@@ -85,7 +85,6 @@
 
 <style>
   nav {
-    position: relative;
     display: flex;
   }
 
@@ -122,11 +121,13 @@
     right: 0;
     top: calc(100% + 1px);
 
-    z-index: 3;
+    z-index: 100;
 
     background-color: var(--cBg);
 
     border-bottom: var(--borderPrimary);
+
+    width: 100%;
   }
 
   .mobile {
