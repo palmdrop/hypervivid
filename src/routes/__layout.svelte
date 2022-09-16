@@ -9,8 +9,7 @@
   import '../fonts.css';
   import '../theme.css';
   import { isExternalURL } from '../utils/general';
-import { Loader } from 'three';
-import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
+  import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
 
   $: $loading = (
     !!$navigating &&

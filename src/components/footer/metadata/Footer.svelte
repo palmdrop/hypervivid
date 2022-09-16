@@ -9,7 +9,6 @@
   import Cell from './Cell.svelte';
   import { sineInOut } from 'svelte/easing';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
-  import metadata from '../../../nodes/metadata';
 
   export let name: NodeName;
   export let nodeMetadata: NodeMetadata;
@@ -33,7 +32,7 @@
   $: title = nodeMetadata.title ?? name;
 </script>
 
-<footer> 
+<footer class:expanded> 
   <button 
     class="metadata-button"
     class:toggleEnabled
@@ -153,6 +152,12 @@
   footer {
     overflow: hidden;
     background-color: var(--cBg);
+    box-shadow: 0px 0em 0em 0em #00000000;
+    transition: 1s box-shadow;
+  }
+
+  footer.expanded {
+    box-shadow: 0px -1em 4em 0em #00000077;
   }
 
   .content {
