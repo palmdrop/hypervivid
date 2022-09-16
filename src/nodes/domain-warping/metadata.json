@@ -6,5 +6,9 @@
   "inline": false,
   "title": "My Take on Domain Warping",
   "description": "How I've used domain warping to achieve strange generative effects.",
-  "image": "/img/posts/domain-warping/banner.jpg"
+  "image": "/img/posts/domain-warping/banner.jpg",
+  "asDocument": true,
+  "wrapperProps": {
+    "showHeader": true
+  }
 }

@@ -56,7 +56,7 @@
         duration: transitionDuration
       }}
     >
-      <Header />
+      <Header sticky={false}/>
     </div>
   {/if}
 

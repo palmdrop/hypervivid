@@ -12,5 +12,9 @@
   "inline": false,
   "title": "Characteristics of Modified Noise",
   "description": "A few of my common methods for modifying standard noise functions.",
-  "image": "/img/posts/modified-noise/banner.jpg"
+  "image": "/img/posts/modified-noise/banner.jpg",
+  "asDocument": true,
+  "wrapperProps": {
+    "showHeader": true
+  }
 }

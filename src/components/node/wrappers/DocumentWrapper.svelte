@@ -4,10 +4,12 @@
   import MetadataFooter from '$components/footer/metadata/Footer.svelte';
   import Link from '$components/common/Link.svelte';
   import Point from '$components/ornaments/Point.svelte';
-  import { onMount } from 'svelte';
+  import Header from '../../header/Header.svelte';
 
   export let name: NodeName;
   export let isDone: boolean;
+
+  export let showHeader = false;
 
   let nodeMetadata: NodeMetadata;
   $: nodeMetadata = {
@@ -21,19 +23,24 @@
   }
 </script>
 
+{#if showHeader}
+  <Header sticky={false} />
+{/if}
 <div 
   class="wrapper"
 >
-  <div
-    class="back-button"
-    use:scrollIntoView
-  >
-    <Link 
-      href="/nodes"
+  {#if !showHeader}
+    <div
+      class="back-button"
+      use:scrollIntoView
     >
-      <Point size={35}/>
-    </Link>
-  </div>
+      <Link 
+        href="/nodes"
+      >
+        <Point size={35}/>
+      </Link>
+    </div>
+  {/if}
   <main 
     class="node-container"
   >
@@ -71,5 +78,7 @@
 
   .node-container {
     overflow: hidden;
+
+    padding-bottom: 2em;
   }
 </style>

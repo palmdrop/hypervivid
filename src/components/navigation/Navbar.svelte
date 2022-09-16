@@ -86,6 +86,7 @@
 <style>
   nav {
     display: flex;
+    position: relative;
   }
 
   .expand-button {
@@ -119,15 +120,17 @@
 
     position: absolute;
     right: 0;
+    left: 100%;
     top: calc(100% + 1px);
+
+    transform: translateX(-100vw);
+    width: 100vw;
 
     z-index: 100;
 
     background-color: var(--cBg);
 
     border-bottom: var(--borderPrimary);
-
-    width: 100%;
   }
 
   .mobile {
@@ -203,6 +206,10 @@
 
       border-bottom: unset;
       padding-bottom: 0px;
+
+      width: 100%;
+      transform: unset;
+      left: unset;
     }
 
     li {

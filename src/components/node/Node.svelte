@@ -94,7 +94,7 @@
       {...$$restProps}
     />
     {#if showLoader && !isDone && !failed}
-      <div>
+      <div class="node-loader">
         <NodeLoader {mode} />
       </div>
     {:else if failed}
@@ -108,4 +108,7 @@
 {/if}
 
 <style>
+  .node-loader {
+    min-height: 100vh;
+  }
 </style>

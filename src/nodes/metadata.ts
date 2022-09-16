@@ -3416,11 +3416,15 @@ export default {
         }
       ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
-      "updatedAt": "2022-08-17T19:40:41.685Z",
+      "updatedAt": "2022-09-16T16:21:02.214Z",
       "inline": false,
       "title": "Alien Patterns",
       "description": "On combining modified noise and domain warping to produce alien patterns",
-      "image": "/img/posts/alien-patterns/banner.jpg"
+      "image": "/img/posts/alien-patterns/banner.jpg",
+      "asDocument": true,
+      "wrapperProps": {
+        "showHeader": true
+      }
     },
     "modified-noise": {
       "tags": [
@@ -3443,11 +3447,15 @@ export default {
         }
       ],
       "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
-      "updatedAt": "2022-06-13T05:19:26.774Z",
+      "updatedAt": "2022-09-16T16:32:08.037Z",
       "inline": false,
       "title": "Characteristics of Modified Noise",
       "description": "A few of my common methods for modifying standard noise functions.",
-      "image": "/img/posts/modified-noise/banner.jpg"
+      "image": "/img/posts/modified-noise/banner.jpg",
+      "asDocument": true,
+      "wrapperProps": {
+        "showHeader": true
+      }
     },
     "domain-warping": {
       "tags": [
@@ -3501,11 +3509,15 @@ export default {
         }
       ],
       "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
-      "updatedAt": "2022-06-13T05:19:26.764Z",
+      "updatedAt": "2022-09-16T16:32:40.607Z",
       "inline": false,
       "title": "My Take on Domain Warping",
       "description": "How I've used domain warping to achieve strange generative effects.",
-      "image": "/img/posts/domain-warping/banner.jpg"
+      "image": "/img/posts/domain-warping/banner.jpg",
+      "asDocument": true,
+      "wrapperProps": {
+        "showHeader": true
+      }
     },
     "flat-clouds": {
       "tags": [
@@ -3717,5 +3729,5 @@ export default {
     }
   },
   "latestNode": "cliffscapes",
-  "mostRecentlyUpdatedNode": "intro"
+  "mostRecentlyUpdatedNode": "domain-warping"
 } as const;

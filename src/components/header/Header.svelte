@@ -6,6 +6,8 @@
   import { NODE_NAMES } from '$constants';
   import { loading } from '$stores/loading';
 
+  export let sticky = true;
+
   const navEntries: NavEntry[] = [
     {
       text: NODE_NAMES,
@@ -42,7 +44,7 @@
   } 
 </script>
 
-<header>
+<header class:sticky >
   <div>
     <Breadcrumbs 
       showHome={true}
@@ -72,10 +74,12 @@
 
     background-color: var(--cBg);
 
-    position: sticky;
-
     top: 0;
     z-index: 10;
+  }
+
+  header.sticky {
+    position: sticky;
   }
 
   header > div {
