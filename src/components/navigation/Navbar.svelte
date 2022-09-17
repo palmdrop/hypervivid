@@ -9,9 +9,22 @@
   let windowWidth = -1;
   const breakpoint = 750;
 
+  const handleEscape = (event: KeyboardEvent) => {
+    if(event.key !== 'Escape') return;
+    expanded = false;
+  }
+
   $: {
     if(expanded && windowWidth > breakpoint) {
       expanded = false;
+    }
+
+    if(window) {
+      if(expanded) {
+        window.addEventListener('keydown', handleEscape);
+      } else {
+        window.removeEventListener('keydown', handleEscape)
+      }
     }
   }
 
