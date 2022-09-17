@@ -109,7 +109,7 @@
   }
 
   .header-container, .footer-container {
-    z-index: 1;
+    z-index: 2;
   }
 
   .node-container {

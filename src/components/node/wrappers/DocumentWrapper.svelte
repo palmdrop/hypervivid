@@ -78,7 +78,5 @@
 
   .node-container {
     overflow: hidden;
-
-    padding-bottom: 2em;
   }
 </style>

@@ -29,10 +29,12 @@
     }
   })
 
+  $: shadow = expanded && !isExpanded;
+
   $: title = nodeMetadata.title ?? name;
 </script>
 
-<footer class:expanded> 
+<footer class:expanded class:shadow> 
   <button 
     class="metadata-button"
     class:toggleEnabled
@@ -156,7 +158,7 @@
     transition: 1s box-shadow;
   }
 
-  footer.expanded {
+  footer.shadow {
     box-shadow: 0px -1em 4em 0em #00000077;
   }
 
