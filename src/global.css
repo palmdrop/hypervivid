@@ -91,8 +91,12 @@ pre > code {
 }
 
 main {
-	overflow-y: auto;
 	scroll-behavior: smooth;
+}
+
+body {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
 }
 
 html {

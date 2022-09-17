@@ -2,6 +2,7 @@
 	import { slide } from 'svelte/transition';
   import type { NavEntry } from '$types/general';
   import RssIcon from '$components/ornaments/indicators/RssIcon.svelte';
+    import { onMount } from 'svelte';
 
   export let entries: NavEntry[];
 
@@ -10,7 +11,7 @@
   const breakpoint = 750;
 
   const handleEscape = (event: KeyboardEvent) => {
-    if(event.key !== 'Escape') return;
+    if(event.key !== 'Escape' || !expanded) return;
     expanded = false;
   }
 
@@ -18,19 +19,15 @@
     if(expanded && windowWidth > breakpoint) {
       expanded = false;
     }
-
-    if(window) {
-      if(expanded) {
-        window.addEventListener('keydown', handleEscape);
-      } else {
-        window.removeEventListener('keydown', handleEscape)
-      }
-    }
   }
 
   const toggleExpanded = () => {
     expanded = !expanded;
   }
+
+  onMount(() => {
+    window.addEventListener('keydown', handleEscape);
+  });
 </script>
 
 <svelte:window 

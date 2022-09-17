@@ -10,6 +10,7 @@
   import '../theme.css';
   import { isExternalURL } from '../utils/general';
   import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
+    import { afterNavigate, beforeNavigate } from '$app/navigation';
 
   $: $loading = (
     !!$navigating &&
@@ -36,6 +37,11 @@
     document.addEventListener = newAddEventListener;
 
     mounted = true;
+  });
+
+  // Ensures that scroll position is reset on navigation
+  afterNavigate(() => {
+    document.body.scrollTop = 0;
   });
 </script>
 
