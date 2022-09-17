@@ -56,7 +56,7 @@
         duration: transitionDuration
       }}
     >
-      <Header />
+      <Header sticky={false}/>
     </div>
   {/if}
 
@@ -98,10 +98,10 @@
 
 <style>
   .wrapper {
-    position: relative;
+    position: fixed;
 
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow: hidden;
 
     display: flex;
@@ -109,7 +109,7 @@
   }
 
   .header-container, .footer-container {
-    z-index: 1;
+    z-index: 2;
   }
 
   .node-container {

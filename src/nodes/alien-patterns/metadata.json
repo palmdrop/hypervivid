@@ -12,5 +12,9 @@
   "inline": false,
   "title": "Alien Patterns",
   "description": "On combining modified noise and domain warping to produce alien patterns",
-  "image": "/img/posts/alien-patterns/banner.jpg"
+  "image": "/img/posts/alien-patterns/banner.jpg",
+  "asDocument": true,
+  "wrapperProps": {
+    "showHeader": true
+  }
 }

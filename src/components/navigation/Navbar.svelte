@@ -2,12 +2,18 @@
 	import { slide } from 'svelte/transition';
   import type { NavEntry } from '$types/general';
   import RssIcon from '$components/ornaments/indicators/RssIcon.svelte';
+    import { onMount } from 'svelte';
 
   export let entries: NavEntry[];
 
   let expanded = false;
   let windowWidth = -1;
   const breakpoint = 750;
+
+  const handleEscape = (event: KeyboardEvent) => {
+    if(event.key !== 'Escape' || !expanded) return;
+    expanded = false;
+  }
 
   $: {
     if(expanded && windowWidth > breakpoint) {
@@ -18,6 +24,10 @@
   const toggleExpanded = () => {
     expanded = !expanded;
   }
+
+  onMount(() => {
+    window.addEventListener('keydown', handleEscape);
+  });
 </script>
 
 <svelte:window 
@@ -85,8 +95,8 @@
 
 <style>
   nav {
-    position: relative;
     display: flex;
+    position: relative;
   }
 
   .expand-button {
@@ -120,9 +130,13 @@
 
     position: absolute;
     right: 0;
+    left: 100%;
     top: calc(100% + 1px);
 
-    z-index: 3;
+    transform: translateX(-100vw);
+    width: 100vw;
+
+    z-index: 100;
 
     background-color: var(--cBg);
 
@@ -147,7 +161,7 @@
 
     font-size: 1.2rem;
 
-    width: 100vw;
+    width: 100%;
     height: 100px;
   }
 
@@ -202,6 +216,10 @@
 
       border-bottom: unset;
       padding-bottom: 0px;
+
+      width: 100%;
+      transform: unset;
+      left: unset;
     }
 
     li {

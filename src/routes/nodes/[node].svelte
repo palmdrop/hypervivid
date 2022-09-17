@@ -44,6 +44,7 @@
   <DocumentWrapper
     { name }
     { isDone }
+    { ...metadata.wrapperProps ?? {} }
   >
     <Node
       { name }
@@ -54,6 +55,7 @@
 {:else}
   <DefaultWrapper 
     { name }
+    { ...metadata.wrapperProps ?? {} }
   >
     <Node
       { name }

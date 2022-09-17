@@ -78,17 +78,15 @@
     modeFirst="preview"
     modeRest="preview"
     batchCount={10}
-    scrollElement={mainRef}
   />
 </main>
 
 <style>
   main {
     padding-top: 1em;
-    width: 100vw;
+    width: 100%;
 
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
   }
 
   .description-container {
