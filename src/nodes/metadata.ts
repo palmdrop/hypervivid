@@ -1980,7 +1980,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
-      "updatedAt": "2022-08-22T12:08:42.939Z",
+      "updatedAt": "2022-09-23T07:21:36.674Z",
       "inline": true,
       "title": "Digital Biophilia",
       "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
@@ -2865,7 +2865,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-09-07T21:08:35.208Z",
+      "updatedAt": "2022-09-17T14:11:18.159Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -3416,7 +3416,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
-      "updatedAt": "2022-09-16T16:21:02.214Z",
+      "updatedAt": "2022-09-17T12:45:41.807Z",
       "inline": false,
       "title": "Alien Patterns",
       "description": "On combining modified noise and domain warping to produce alien patterns",
@@ -3447,7 +3447,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
-      "updatedAt": "2022-09-16T16:32:08.037Z",
+      "updatedAt": "2022-09-17T12:45:41.811Z",
       "inline": false,
       "title": "Characteristics of Modified Noise",
       "description": "A few of my common methods for modifying standard noise functions.",
@@ -3509,7 +3509,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
-      "updatedAt": "2022-09-16T16:32:40.607Z",
+      "updatedAt": "2022-09-17T12:45:41.811Z",
       "inline": false,
       "title": "My Take on Domain Warping",
       "description": "How I've used domain warping to achieve strange generative effects.",
@@ -3729,5 +3729,5 @@ export default {
     }
   },
   "latestNode": "cliffscapes",
-  "mostRecentlyUpdatedNode": "domain-warping"
+  "mostRecentlyUpdatedNode": "digital-biophilia"
 } as const;
