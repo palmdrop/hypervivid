@@ -259,6 +259,12 @@ export default {
       },
       {
         "from": "moss-structure",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
         "to": "nest",
         "kind": "tangent",
         "strength": 0.5
@@ -545,6 +551,12 @@ export default {
       },
       {
         "from": "domain-warping",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "domain-warping",
         "to": "jolt-gate",
         "kind": "tangent",
         "strength": 0.5
@@ -584,6 +596,12 @@ export default {
       {
         "from": "substrates",
         "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "foliage-grids",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -862,6 +880,12 @@ export default {
         "to": "glow-tree",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "cliffscapes",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "formations": [
@@ -995,6 +1019,12 @@ export default {
       },
       {
         "from": "digital-biophilia",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-biophilia",
         "to": "neon-moss",
         "kind": "tangent",
         "strength": 0.5
@@ -1114,7 +1144,51 @@ export default {
         "strength": 0.5
       }
     ],
+    "foliage-grids": [
+      {
+        "from": "foliage-grids",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "neon-moss": [
+      {
+        "from": "neon-moss",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "neon-moss",
         "to": "formations",
@@ -1417,178 +1491,234 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 32
+      "count": 33
     },
     "generative": {
-      "weight": 0.96875,
-      "count": 31
+      "weight": 0.9696969696969697,
+      "count": 32
     },
     "live": {
-      "weight": 0.71875,
-      "count": 23
+      "weight": 0.7272727272727273,
+      "count": 24
     },
     "domain-warping": {
-      "weight": 0.5625,
+      "weight": 0.5454545454545454,
       "count": 18
     },
-    "noise": {
-      "weight": 0.375,
-      "count": 12
-    },
     "organic": {
-      "weight": 0.375,
+      "weight": 0.3939393939393939,
+      "count": 13
+    },
+    "noise": {
+      "weight": 0.36363636363636365,
       "count": 12
     },
     "biophilia": {
-      "weight": 0.28125,
-      "count": 9
+      "weight": 0.30303030303030304,
+      "count": 10
     },
     "geometry": {
-      "weight": 0.28125,
-      "count": 9
+      "weight": 0.30303030303030304,
+      "count": 10
     },
     "substrate": {
-      "weight": 0.25,
-      "count": 8
+      "weight": 0.2727272727272727,
+      "count": 9
     },
     "project": {
-      "weight": 0.25,
+      "weight": 0.24242424242424243,
       "count": 8
     },
+    "photography": {
+      "weight": 0.21212121212121213,
+      "count": 7
+    },
     "interactive": {
-      "weight": 0.21875,
+      "weight": 0.21212121212121213,
       "count": 7
     },
     "thoughts": {
-      "weight": 0.1875,
-      "count": 6
-    },
-    "photography": {
-      "weight": 0.1875,
+      "weight": 0.18181818181818182,
       "count": 6
     },
     "css": {
-      "weight": 0.1875,
+      "weight": 0.18181818181818182,
       "count": 6
     },
     "feedback": {
-      "weight": 0.15625,
+      "weight": 0.15151515151515152,
       "count": 5
     },
     "internet": {
-      "weight": 0.15625,
+      "weight": 0.15151515151515152,
       "count": 5
     },
     "fragments": {
-      "weight": 0.15625,
+      "weight": 0.15151515151515152,
       "count": 5
     },
     "info": {
-      "weight": 0.125,
+      "weight": 0.12121212121212122,
       "count": 4
     },
     "webart": {
-      "weight": 0.125,
+      "weight": 0.12121212121212122,
       "count": 4
     },
     "chrome": {
-      "weight": 0.125,
+      "weight": 0.12121212121212122,
       "count": 4
     },
     "writing": {
-      "weight": 0.09375,
+      "weight": 0.09090909090909091,
       "count": 3
     },
     "glitch": {
-      "weight": 0.09375,
+      "weight": 0.09090909090909091,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.09375,
+      "weight": 0.09090909090909091,
       "count": 3
     },
     "hyper": {
-      "weight": 0.09375,
+      "weight": 0.09090909090909091,
       "count": 3
     },
     "memes": {
-      "weight": 0.09375,
+      "weight": 0.09090909090909091,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "instancing": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "mind": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "fuse": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "words": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "utility": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "exploration": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "dithering": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "external": {
-      "weight": 0.0625,
+      "weight": 0.06060606060606061,
       "count": 2
     },
     "octree": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "contact": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "communication": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "particles": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "texture": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "depth": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.03125,
+      "weight": 0.030303030303030304,
       "count": 1
     }
   },
   "nodes": {
+    "foliage-grids": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "organic",
+        "biophilia",
+        "geometry",
+        "substrate",
+        "photography"
+      ],
+      "links": [
+        {
+          "from": "foliage-grids",
+          "to": "cliffscapes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-grids",
+          "to": "neon-moss",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-grids",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-grids",
+          "to": "domain-warping",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-grids",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-grids",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Mon, 26 Sep 2022 21:46:38 GMT",
+      "updatedAt": "2022-09-27T10:47:49.822Z",
+      "inline": false,
+      "title": "Foliage Grids",
+      "description": "Dynamic pixelation and image displacement grids. A small study with various foliage details. Combining generative techniques and photography.",
+      "image": "/nodes/foliage-grids.preview.jpg"
+    },
     "cliffscapes": {
       "tags": [
         "art",
@@ -1611,6 +1741,12 @@ export default {
         {
           "from": "cliffscapes",
           "to": "glow-tree",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cliffscapes",
+          "to": "foliage-grids",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -1902,6 +2038,12 @@ export default {
       "links": [
         {
           "from": "neon-moss",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "neon-moss",
           "to": "formations",
           "kind": "tangent",
           "strength": 0.5
@@ -1968,6 +2110,12 @@ export default {
         },
         {
           "from": "digital-biophilia",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "digital-biophilia",
           "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
@@ -1980,7 +2128,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
-      "updatedAt": "2022-09-23T07:21:36.674Z",
+      "updatedAt": "2022-09-25T17:42:19.301Z",
       "inline": true,
       "title": "Digital Biophilia",
       "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
@@ -2070,6 +2218,12 @@ export default {
         },
         {
           "from": "substrates",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
           "to": "jolt-gate",
           "kind": "tangent",
           "strength": 0.5
@@ -2118,8 +2272,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "organic",
+        "noise",
         "biophilia",
         "substrate"
       ],
@@ -2133,6 +2287,12 @@ export default {
         {
           "from": "moss-structure",
           "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
+          "to": "foliage-grids",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3473,6 +3633,12 @@ export default {
         },
         {
           "from": "domain-warping",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "domain-warping",
           "to": "jolt-gate",
           "kind": "tangent",
           "strength": 0.5
@@ -3728,6 +3894,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "cliffscapes",
+  "latestNode": "foliage-grids",
   "mostRecentlyUpdatedNode": "digital-biophilia"
 } as const;

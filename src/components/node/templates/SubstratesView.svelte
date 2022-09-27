@@ -15,12 +15,17 @@
   ).map(module => module.default);
 
   let program: EncodedProgram | undefined = undefined;
+  let first = true;
 
   const randomizeProgram = () => {
     let newProgram: EncodedProgram;
 
     // Do not randomize the same program two times in a row
     while((newProgram = randomElement(programs)) === program) {};
+
+    if(program) {
+      first = false;
+    }
 
     program = newProgram;
   }
@@ -35,6 +40,7 @@
 
 <SubstrateView 
   programData={program}
+  showLoader={first}
 />
 
 <style>
