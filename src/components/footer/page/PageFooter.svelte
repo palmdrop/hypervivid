@@ -100,7 +100,7 @@
     min-height: 100px;
 
     border-top: var(--borderPrimary);
-    padding: 2em 0em;
+    padding: 2em;
 
     display: flex;
     flex-direction: column;
@@ -124,6 +124,7 @@
   @media ( min-width: 600px )  {
     footer {
       flex-direction: row;
+      padding: 2em 0em;
     }
 
     .section {
