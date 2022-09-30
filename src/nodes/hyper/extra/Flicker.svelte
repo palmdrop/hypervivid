@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { random } from '$utils/random';
   import { onDestroy } from "svelte";
-  export let words: string[];
+  import { hyperwords } from '../hyper.svelte';
 
-  const maxLength = words.reduce(
+  const maxLength = hyperwords.reduce(
     (acc, word) => Math.max(acc, word.length), 
     0
   );
 
   let word: string;
   const setRandomWord = () => {
-    const hyperword = words[Math.floor(Math.random() * words.length)];
+    const hyperword = hyperwords[Math.floor(Math.random() * hyperwords.length)];
     const padding = '.'.repeat(maxLength - hyperword.length + 1);
     word = 
       hyperword + 

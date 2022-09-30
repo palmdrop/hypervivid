@@ -2,7 +2,7 @@
 	import { slide } from 'svelte/transition';
   import type { NavEntry } from '$types/general';
   import RssIcon from '$components/ornaments/indicators/RssIcon.svelte';
-    import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
 
   export let entries: NavEntry[];
 

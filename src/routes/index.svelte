@@ -8,6 +8,7 @@
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
   import { SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
+    import PageFooter from '../components/footer/page/PageFooter.svelte';
 
   $: nodeNames = [
     'intro',
@@ -64,6 +65,8 @@
     </a>
   </section>
 </div>
+
+<PageFooter />
 
 <style>
   .page {

@@ -3166,7 +3166,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-09-06T17:39:34.689Z"
+      "updatedAt": "2022-09-30T13:28:52.166Z"
     },
     "manifesto": {
       "tags": [
@@ -3895,5 +3895,5 @@ export default {
     }
   },
   "latestNode": "foliage-grids",
-  "mostRecentlyUpdatedNode": "digital-biophilia"
+  "mostRecentlyUpdatedNode": "hyper"
 } as const;

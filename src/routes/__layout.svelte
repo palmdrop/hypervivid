@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade, blur } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
   import { title$ } from '$stores/head';
   import { loading } from '$stores/loading';
   import { navigating } from '$app/stores';
@@ -10,7 +10,8 @@
   import '../theme.css';
   import { isExternalURL } from '../utils/general';
   import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
-    import { afterNavigate, beforeNavigate } from '$app/navigation';
+  import { afterNavigate } from '$app/navigation';
+    import PageFooter from '../components/footer/page/PageFooter.svelte';
 
   $: $loading = (
     !!$navigating &&
@@ -61,6 +62,7 @@
     <StarLoader size="8em"/>
   </div>
 {/if}
+
 <slot />
 
 {@html `<!-- 

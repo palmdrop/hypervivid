@@ -63,7 +63,7 @@
 <style>
   ol {
     display: flex;
-    font-family: var(--fMono);
+    font-family: var(--fItalic);
 
     height: 100%;
   }

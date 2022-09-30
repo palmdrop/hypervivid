@@ -39,6 +39,7 @@
   import Header from '$components/header/Header.svelte';
 	import tagsMetadata from '$tags/metadata';
   import { filterSearchNodes } from '../../utils/filterSearch';
+    import PageFooter from '../../components/footer/page/PageFooter.svelte';
 
   export let tag: Tag;
   export let nodeNames: NodeName[];
@@ -80,12 +81,14 @@
     batchCount={10}
   />
 </main>
+<PageFooter />
 
 <style>
   main {
     padding-top: 1em;
     width: 100%;
 
+    min-height: 73vh;
     overflow: hidden;
   }
 

@@ -5,6 +5,7 @@
   import Paragraph from '$components/common/Paragraph.svelte';
   import { NODE_NAME, NODE_NAMES, SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
+    import PageFooter from '$components/footer/page/PageFooter.svelte';
 
   const tags = Object.keys($metadata$.tags);
 
@@ -26,6 +27,7 @@
     <TagList stretch orientation="horizontal" showCount={true} {tags} />
   </main>
 </div>
+<PageFooter />
 
 <style>
   .tags {
@@ -40,8 +42,7 @@
   main {
     padding-top: 1em;
     max-width: 800px;
-
-    min-height: 85vh;
+    min-height: 70vh;
 
     margin: 10px;
     overflow: hidden;

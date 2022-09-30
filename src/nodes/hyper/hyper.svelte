@@ -1,24 +1,5 @@
-<script lang="ts">
-  import { useTitle } from '$utils/useTitle';
-  import { getNodeContext } from '$utils/useNodeContext';
-  import Flicker from './extra/Flicker.svelte';
-  import LoopingScrollBanner from '../../components/ornaments/LoopingScrollBanner.svelte';
-  import { random } from '../../utils/random';
-
-  const { mode } = getNodeContext('hyper');
-
-  const images = [
-    '/img/combined/comb1.jpg',
-    '/img/combined/comb2.jpg',
-  ];
-
-  const index = Math.floor((images.length * new Date().getSeconds() / 10) % images.length);
-
-  const imageSrc = images[
-    index
-  ];
-
-  const hyperwords = [
+<script context="module" lang="ts">
+  export const hyperwords = [
     'vivid',
     'soft',
     'human',
@@ -89,6 +70,27 @@
     'exposed',
     'rich'
   ].map(word => `hyper${word}`.toUpperCase());
+</script>
+
+<script lang="ts">
+  import { useTitle } from '$utils/useTitle';
+  import { getNodeContext } from '$utils/useNodeContext';
+  import Flicker from './extra/Flicker.svelte';
+  import LoopingScrollBanner from '../../components/ornaments/LoopingScrollBanner.svelte';
+  import { random } from '../../utils/random';
+
+  const { mode } = getNodeContext('hyper');
+
+  const images = [
+    '/img/combined/comb1.jpg',
+    '/img/combined/comb2.jpg',
+  ];
+
+  const index = Math.floor((images.length * new Date().getSeconds() / 10) % images.length);
+
+  const imageSrc = images[
+    index
+  ];
 
   const boxHeight = 7;
   const wordLength = 9;
@@ -141,7 +143,7 @@
     </ul>
   </div>
   {#if mode === 'only'}
-    <Flicker words={hyperwords} />
+    <Flicker />
   {/if}
 </div>
 

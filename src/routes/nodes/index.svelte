@@ -12,6 +12,7 @@
   import { standardFilterSearchNodes } from '../../utils/filterSearch';
   import metadata from '../../nodes/metadata';
   import TagFilter from '../../components/filter/TagFilter.svelte';
+    import PageFooter from '../../components/footer/page/PageFooter.svelte';
 
   useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
 
@@ -77,12 +78,14 @@
     emptyText="No nodes found..."
   />
 </main>
+<PageFooter />
 
 <style>
   main {
     padding-top: 1em;
     width: 100%;
     height: 100%;
+    min-height: 100vh;
 
     overflow-y: hidden;
   }
