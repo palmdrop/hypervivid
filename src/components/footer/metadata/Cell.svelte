@@ -34,7 +34,7 @@
     border-left: var(--borderPrimary);
     border-top: var(--borderPrimary);
 
-    max-height: 240px;
+    max-height: 250px;
 
     flex-grow: 2;
     text-align: center;
