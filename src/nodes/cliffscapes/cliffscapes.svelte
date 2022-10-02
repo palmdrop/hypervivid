@@ -1,5 +1,5 @@
 <script lang="ts">
-    import CliffscapeApp from '../../modules/synthetic-grids/src/CliffscapeApp.svelte';
+  import CliffscapeApp from '../../modules/synthetic-grids/src/CliffscapeApp.svelte';
 </script>
 
 <CliffscapeApp />

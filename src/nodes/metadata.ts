@@ -1019,6 +1019,12 @@ export default {
       },
       {
         "from": "digital-biophilia",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "digital-biophilia",
         "to": "foliage-grids",
         "kind": "tangent",
         "strength": 0.5
@@ -1139,12 +1145,50 @@ export default {
       },
       {
         "from": "fluid-feedback",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fluid-feedback",
         "to": "formations",
         "kind": "tangent",
         "strength": 0.5
       }
     ],
+    "foliage-fragments": [
+      {
+        "from": "foliage-fragments",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "foliage-grids": [
+      {
+        "from": "foliage-grids",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
       {
         "from": "foliage-grids",
         "to": "cliffscapes",
@@ -1178,6 +1222,46 @@ export default {
       {
         "from": "foliage-grids",
         "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "frag-fuse": [
+      {
+        "from": "frag-fuse",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "hyper": [
+      {
+        "from": "hyper",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1242,32 +1326,6 @@ export default {
       {
         "from": "virtual-imprint",
         "to": "solar-landscape",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "hyper": [
-      {
-        "from": "hyper",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "virtual-distance",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "rehash-transform",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1491,178 +1549,221 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 33
+      "count": 34
     },
     "generative": {
-      "weight": 0.9696969696969697,
-      "count": 32
+      "weight": 0.9705882352941176,
+      "count": 33
     },
     "live": {
-      "weight": 0.7272727272727273,
-      "count": 24
+      "weight": 0.7352941176470589,
+      "count": 25
     },
     "domain-warping": {
-      "weight": 0.5454545454545454,
+      "weight": 0.5294117647058824,
       "count": 18
     },
     "organic": {
-      "weight": 0.3939393939393939,
-      "count": 13
+      "weight": 0.4117647058823529,
+      "count": 14
     },
     "noise": {
-      "weight": 0.36363636363636365,
+      "weight": 0.35294117647058826,
       "count": 12
     },
     "biophilia": {
-      "weight": 0.30303030303030304,
-      "count": 10
+      "weight": 0.3235294117647059,
+      "count": 11
     },
     "geometry": {
-      "weight": 0.30303030303030304,
+      "weight": 0.29411764705882354,
       "count": 10
     },
     "substrate": {
-      "weight": 0.2727272727272727,
+      "weight": 0.2647058823529412,
       "count": 9
     },
     "project": {
-      "weight": 0.24242424242424243,
+      "weight": 0.23529411764705882,
       "count": 8
     },
     "photography": {
-      "weight": 0.21212121212121213,
-      "count": 7
+      "weight": 0.23529411764705882,
+      "count": 8
     },
     "interactive": {
-      "weight": 0.21212121212121213,
+      "weight": 0.20588235294117646,
       "count": 7
     },
     "thoughts": {
-      "weight": 0.18181818181818182,
-      "count": 6
-    },
-    "css": {
-      "weight": 0.18181818181818182,
+      "weight": 0.17647058823529413,
       "count": 6
     },
     "feedback": {
-      "weight": 0.15151515151515152,
-      "count": 5
+      "weight": 0.17647058823529413,
+      "count": 6
+    },
+    "css": {
+      "weight": 0.17647058823529413,
+      "count": 6
     },
     "internet": {
-      "weight": 0.15151515151515152,
+      "weight": 0.14705882352941177,
       "count": 5
     },
     "fragments": {
-      "weight": 0.15151515151515152,
+      "weight": 0.14705882352941177,
       "count": 5
     },
     "info": {
-      "weight": 0.12121212121212122,
+      "weight": 0.11764705882352941,
       "count": 4
     },
     "webart": {
-      "weight": 0.12121212121212122,
+      "weight": 0.11764705882352941,
       "count": 4
     },
     "chrome": {
-      "weight": 0.12121212121212122,
+      "weight": 0.11764705882352941,
       "count": 4
     },
     "writing": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08823529411764706,
       "count": 3
     },
     "glitch": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08823529411764706,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08823529411764706,
       "count": 3
     },
     "hyper": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08823529411764706,
       "count": 3
     },
     "memes": {
-      "weight": 0.09090909090909091,
+      "weight": 0.08823529411764706,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "instancing": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "mind": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "fuse": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "words": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "utility": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "exploration": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "dithering": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "external": {
-      "weight": 0.06060606060606061,
+      "weight": 0.058823529411764705,
       "count": 2
     },
     "octree": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "contact": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "communication": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "particles": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "texture": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "depth": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.030303030303030304,
+      "weight": 0.029411764705882353,
       "count": 1
     }
   },
   "nodes": {
+    "foliage-fragments": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "organic",
+        "biophilia",
+        "photography",
+        "feedback"
+      ],
+      "links": [
+        {
+          "from": "foliage-fragments",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-fragments",
+          "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-fragments",
+          "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-fragments",
+          "to": "fluid-feedback",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
+      "updatedAt": "2022-10-02T14:21:12.222Z",
+      "inline": false,
+      "title": "Foliage Fragments",
+      "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
+      "image": "/nodes/foliage-fragments.preview.jpg"
+    },
     "foliage-grids": {
       "tags": [
         "art",
@@ -1675,6 +1776,12 @@ export default {
         "photography"
       ],
       "links": [
+        {
+          "from": "foliage-grids",
+          "to": "foliage-fragments",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "foliage-grids",
           "to": "cliffscapes",
@@ -1725,8 +1832,8 @@ export default {
         "generative",
         "live",
         "geometry",
-        "interactive",
         "photography",
+        "interactive",
         "glitch",
         "instancing",
         "octree"
@@ -1752,7 +1859,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 14 Sep 2022 18:30:05 GMT",
-      "updatedAt": "2022-09-14T21:22:37.400Z",
+      "updatedAt": "2022-10-02T12:22:03.869Z",
       "inline": false,
       "title": "Cliffscapes",
       "description": "Continuation of formations and glow-tree sketches: a landscape and calm skies. A tree structure controls the form of the cliffscape.",
@@ -1941,8 +2048,8 @@ export default {
     "summer-static": {
       "tags": [
         "biophilia",
-        "project",
-        "photography"
+        "photography",
+        "project"
       ],
       "links": [
         {
@@ -2105,6 +2212,12 @@ export default {
         {
           "from": "digital-biophilia",
           "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "digital-biophilia",
+          "to": "foliage-fragments",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2641,8 +2754,8 @@ export default {
       "tags": [
         "organic",
         "biophilia",
-        "project",
-        "photography"
+        "photography",
+        "project"
       ],
       "links": [
         {
@@ -2972,8 +3085,8 @@ export default {
     "fragfuse": {
       "tags": [
         "art",
-        "project",
         "photography",
+        "project",
         "hyper",
         "fuse"
       ],
@@ -3136,6 +3249,12 @@ export default {
         "words"
       ],
       "links": [
+        {
+          "from": "hyper",
+          "to": "foliage-fragments",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "hyper",
           "to": "fragfuse",
@@ -3444,6 +3563,12 @@ export default {
         {
           "from": "fluid-feedback",
           "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fluid-feedback",
+          "to": "foliage-fragments",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3894,6 +4019,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "foliage-grids",
-  "mostRecentlyUpdatedNode": "hyper"
+  "latestNode": "foliage-fragments",
+  "mostRecentlyUpdatedNode": "cliffscapes"
 } as const;
