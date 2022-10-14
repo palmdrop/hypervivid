@@ -1,7 +1,5 @@
 <script context="module" lang="ts">
-  export const prerender = false;
-
-  export async function load({ params, url }) {
+  export async function load({ url }) {
     let searchPhrase = url.searchParams.get('search') ?? "";
     let tags = (
       url.searchParams.has('tags') 
