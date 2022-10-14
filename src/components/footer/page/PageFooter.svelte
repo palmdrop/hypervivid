@@ -55,8 +55,9 @@
       </ExternalLink>
     </Paragraph>
     <Paragraph>
+      This site does not store any cookies.
       <Link href="/nodes/about">
-        Read more about this project.
+         Read more.
       </Link>
     </Paragraph>
   </div>
