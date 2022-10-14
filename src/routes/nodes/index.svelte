@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { NodeName, Tag } from '$types/nodes';
+	import { page } from '$app/stores';
+	import type { Tag } from '$types/nodes';
   import NodeList from "$components/list/NodeList.svelte";
   import { useTitle } from "$utils/useTitle";
 
-  import { metadata$ } from "$stores/metadata";
   import { NODE_NAMES, SITE_NAME } from '$constants';
   import Paragraph from '$components/common/Paragraph.svelte';
   import Link from '$components/common/Link.svelte';
@@ -12,17 +12,39 @@
   import { standardFilterSearchNodes } from '../../utils/filterSearch';
   import metadata from '../../nodes/metadata';
   import TagFilter from '../../components/filter/TagFilter.svelte';
-    import PageFooter from '../../components/footer/page/PageFooter.svelte';
+  import PageFooter from '../../components/footer/page/PageFooter.svelte';
+  import { goto } from '$app/navigation';
+  import { onMount } from 'svelte';
 
   useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
+
+  let mounted = false;
 
   let mainRef: HTMLElement;
   const useMainRef = (ref: HTMLElement) => {
     mainRef = ref;
   }
 
-  let searchPhrase: string = "";
-  let tags: Tag[] = [];
+  let searchPhrase = $page.url.searchParams.get('search') ?? "";
+  let tags = (
+    $page.url.searchParams.has('tags') 
+    ? $page.url.searchParams.get('tags')!.split(',')
+    : []
+  ) as Tag[];
+
+  $: {
+    !!searchPhrase.length 
+      ? $page.url.searchParams.set('search', searchPhrase)
+      : $page.url.searchParams.delete('search');
+
+    !!tags.length
+      ? $page.url.searchParams.set('tags', tags.join(','))
+      : $page.url.searchParams.delete('tags');
+
+    if(mounted) {
+      goto(`?${$page.url.searchParams.toString()}`);
+    }
+  }
 
   $: matchedNodes = standardFilterSearchNodes(
     metadata.nodes,
@@ -40,7 +62,11 @@
       matchMode: 'any'
     },
     'all'
-  )
+  );
+
+  onMount(() => {
+    mounted = true;
+  })
 </script>
 
 <Header />

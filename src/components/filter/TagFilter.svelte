@@ -18,6 +18,7 @@
   <Select
     placeholder="Tag filters..." 
     items={allTags}
+    value={tags.length ? tags : null}
     isMulti={true}
     inputStyles="cursor: text;"
     on:select={handleSelect}

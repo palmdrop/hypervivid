@@ -5,10 +5,9 @@
   export let placeholder = "Search...";
   export let trim = true;
 
-  // For data banding
+  // For data binding
   export let searchPhrase = "";
-
-  let value = "";
+  let value = searchPhrase;
 
   const handleSearch = _.debounce((event: Event & { currentTarget: EventTarget }) => {
     if(!event.target) return;
