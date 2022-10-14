@@ -29,19 +29,17 @@
   }
 
   // Loading
+  const isDone = Array(nodeNames.length).fill(false);
   $: count = Math.min(batchCount, nodeNames.length);
-
-  const isDone: boolean[] = Array(nodeNames.length).fill(false);
-
-  const loadMore = () => {
-    count = Math.min(count + batchCount, nodeNames.length);
-  };
-
   $: includedNodeNames = nodeNames.slice(0, count);
   $: complete = count === nodeNames.length;
 
   let loadedUpToIndex = 0;
   let allIncludedLoaded = false;
+
+  const loadMore = () => {
+    count = Math.min(count + batchCount, nodeNames.length);
+  };
 
   $: {
     let newLoadedToIndex = loadedUpToIndex;
@@ -53,9 +51,7 @@
     }
 
     loadedUpToIndex = newLoadedToIndex;
-    if (count - 1 === loadedUpToIndex) {
-      allIncludedLoaded = true;
-    }
+    if(count -1 >= loadedUpToIndex) allIncludedLoaded = true;
   }
 
   // Listeners

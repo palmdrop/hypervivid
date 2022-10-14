@@ -70,13 +70,15 @@
     </Paragraph>
   </div>
 
-  <NodeList
-    nodeNames={matchedNodes}
-    modeFirst="preview"
-    modeRest="preview"
-    batchCount={10}
-    emptyText="No nodes found..."
-  />
+  {#key matchedNodes}
+    <NodeList
+      nodeNames={matchedNodes}
+      modeFirst="preview"
+      modeRest="preview"
+      batchCount={10}
+      emptyText="No nodes found..."
+    />
+  {/key}
 </main>
 <PageFooter />
 
@@ -85,7 +87,7 @@
     padding-top: 1em;
     width: 100%;
     height: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
 
     overflow-y: hidden;
   }

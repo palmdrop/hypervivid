@@ -11,13 +11,11 @@
   import { isExternalURL } from '../utils/general';
   import StarLoader from '../components/ornaments/loaders/StarLoader.svelte';
   import { afterNavigate } from '$app/navigation';
-    import PageFooter from '../components/footer/page/PageFooter.svelte';
 
   $: $loading = (
     !!$navigating &&
     !isExternalURL($navigating.to)
   );
-
 
   let mounted = false;
 
@@ -41,9 +39,13 @@
   });
 
   // Ensures that scroll position is reset on navigation
-  afterNavigate(() => {
+  const scrollToTop = () => {
     document.body.scrollTop = 0;
-  });
+    window.scrollTo(0, 0);
+  }
+
+  afterNavigate(scrollToTop);
+  onMount(scrollToTop);
 </script>
 
 <svelte:head>
