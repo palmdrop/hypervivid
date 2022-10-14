@@ -7,6 +7,8 @@
 
   // For data binding
   export let searchPhrase = "";
+  export let onChange: ((searchPhrase: string) => void) | undefined = undefined;
+
   let value = searchPhrase;
 
   const handleSearch = _.debounce((event: Event & { currentTarget: EventTarget }) => {
@@ -14,6 +16,8 @@
     let newSearchPhrase: string = (event.target as any).value ?? "";
     if(trim) newSearchPhrase = newSearchPhrase.trim();
     searchPhrase = newSearchPhrase;
+
+    if(onChange) onChange(searchPhrase);
   }, debounceTimeout);
 </script>
 
@@ -30,6 +34,8 @@
     on:click={() => {
       searchPhrase = ""
       value = "";
+
+      if(onChange) onChange(searchPhrase);
     }}
   >
     ×

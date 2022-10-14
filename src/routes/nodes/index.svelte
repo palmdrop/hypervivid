@@ -1,5 +1,21 @@
 <script context="module" lang="ts">
   export const prerender = false;
+
+  export async function load({ params, url }) {
+    let searchPhrase = url.searchParams.get('search') ?? "";
+    let tags = (
+      url.searchParams.has('tags') 
+      ? url.searchParams.get('tags')!.split(',')
+      : []
+    ) as Tag[];
+
+    return {
+      props: {
+        searchPhrase,
+        tags
+      }
+    }
+  }
 </script>
 
 <script lang="ts">
@@ -29,25 +45,25 @@
     mainRef = ref;
   }
 
-  let searchPhrase = $page.url.searchParams.get('search') ?? "";
-  let tags = (
-    $page.url.searchParams.has('tags') 
-    ? $page.url.searchParams.get('tags')!.split(',')
-    : []
-  ) as Tag[];
+  export let searchPhrase = "";
+  export let tags: Tag[] = [];
 
-  $: {
-    !!searchPhrase.length 
-      ? $page.url.searchParams.set('search', searchPhrase)
-      : $page.url.searchParams.delete('search');
+  const onSearchChange = (searchPhrase: string) => {
+    const newUrl = new URL($page.url);
+    !!searchPhrase?.length 
+      ? newUrl.searchParams.set('search', searchPhrase)
+      : newUrl.searchParams.delete('search');
 
+    goto(newUrl.toString());
+  }
+
+  const onTagChange = (tags: Tag[]) => {
+    const newUrl = new URL($page.url);
     !!tags.length
-      ? $page.url.searchParams.set('tags', tags.join(','))
-      : $page.url.searchParams.delete('tags');
+      ? newUrl.searchParams.set('tags', tags.join(','))
+      : newUrl.searchParams.delete('tags');
 
-    if(mounted) {
-      goto(`?${$page.url.searchParams.toString()}`);
-    }
+    goto(newUrl.toString());
   }
 
   $: matchedNodes = standardFilterSearchNodes(
@@ -87,9 +103,11 @@
     </Paragraph>
     <SearchBar 
       bind:searchPhrase={searchPhrase}
+      onChange={onSearchChange}
     />
     <TagFilter 
       bind:tags
+      onChange={onTagChange}
     />
     <Paragraph big style="margin-top: 0.5em">
       <Link

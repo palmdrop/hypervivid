@@ -7,10 +7,13 @@
   const allTags = Object.keys(metadata.tags) as Tag[];
 
   export let tags: Tag[] = [];
+  export let onChange: ((tags: Tag[]) => void) | undefined = undefined;
 
   const handleSelect = (event: Event & { detail: { index: number, label: string, value: string}[] }) => {
     if(!event.detail) tags = [];
     else tags = event.detail.map(pick => pick.value as Tag);
+
+    if(onChange) onChange(tags);
   }
 </script>
 
