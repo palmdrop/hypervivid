@@ -886,6 +886,12 @@ export default {
         "to": "foliage-grids",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "cliffscapes",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "formations": [
@@ -928,6 +934,12 @@ export default {
       {
         "from": "formations",
         "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "remnant-mappings",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1178,6 +1190,12 @@ export default {
       {
         "from": "foliage-fragments",
         "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "remnant-mappings",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1481,6 +1499,26 @@ export default {
         "strength": 0.5
       }
     ],
+    "remnant-mappings": [
+      {
+        "from": "remnant-mappings",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "retro-core": [
       {
         "from": "retro-core",
@@ -1549,178 +1587,218 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 34
+      "count": 35
     },
     "generative": {
-      "weight": 0.9705882352941176,
-      "count": 33
+      "weight": 0.9714285714285714,
+      "count": 34
     },
     "live": {
-      "weight": 0.7352941176470589,
-      "count": 25
+      "weight": 0.7428571428571429,
+      "count": 26
     },
     "domain-warping": {
-      "weight": 0.5294117647058824,
+      "weight": 0.5142857142857142,
       "count": 18
     },
     "organic": {
-      "weight": 0.4117647058823529,
+      "weight": 0.4,
       "count": 14
     },
     "noise": {
-      "weight": 0.35294117647058826,
+      "weight": 0.34285714285714286,
       "count": 12
     },
     "biophilia": {
-      "weight": 0.3235294117647059,
+      "weight": 0.3142857142857143,
       "count": 11
     },
     "geometry": {
-      "weight": 0.29411764705882354,
+      "weight": 0.2857142857142857,
       "count": 10
     },
     "substrate": {
-      "weight": 0.2647058823529412,
+      "weight": 0.2571428571428571,
       "count": 9
     },
     "project": {
-      "weight": 0.23529411764705882,
+      "weight": 0.22857142857142856,
       "count": 8
     },
     "photography": {
-      "weight": 0.23529411764705882,
+      "weight": 0.22857142857142856,
       "count": 8
     },
+    "feedback": {
+      "weight": 0.2,
+      "count": 7
+    },
     "interactive": {
-      "weight": 0.20588235294117646,
+      "weight": 0.2,
       "count": 7
     },
     "thoughts": {
-      "weight": 0.17647058823529413,
-      "count": 6
-    },
-    "feedback": {
-      "weight": 0.17647058823529413,
+      "weight": 0.17142857142857143,
       "count": 6
     },
     "css": {
-      "weight": 0.17647058823529413,
+      "weight": 0.17142857142857143,
       "count": 6
     },
     "internet": {
-      "weight": 0.14705882352941177,
+      "weight": 0.14285714285714285,
       "count": 5
     },
     "fragments": {
-      "weight": 0.14705882352941177,
+      "weight": 0.14285714285714285,
       "count": 5
     },
     "info": {
-      "weight": 0.11764705882352941,
+      "weight": 0.11428571428571428,
       "count": 4
     },
     "webart": {
-      "weight": 0.11764705882352941,
+      "weight": 0.11428571428571428,
       "count": 4
     },
     "chrome": {
-      "weight": 0.11764705882352941,
+      "weight": 0.11428571428571428,
       "count": 4
     },
     "writing": {
-      "weight": 0.08823529411764706,
+      "weight": 0.08571428571428572,
       "count": 3
     },
     "glitch": {
-      "weight": 0.08823529411764706,
-      "count": 3
-    },
-    "space-colonization": {
-      "weight": 0.08823529411764706,
-      "count": 3
-    },
-    "hyper": {
-      "weight": 0.08823529411764706,
-      "count": 3
-    },
-    "memes": {
-      "weight": 0.08823529411764706,
+      "weight": 0.08571428571428572,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.058823529411764705,
-      "count": 2
+      "weight": 0.08571428571428572,
+      "count": 3
+    },
+    "space-colonization": {
+      "weight": 0.08571428571428572,
+      "count": 3
+    },
+    "hyper": {
+      "weight": 0.08571428571428572,
+      "count": 3
+    },
+    "memes": {
+      "weight": 0.08571428571428572,
+      "count": 3
     },
     "instancing": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "mind": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "fuse": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "words": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "utility": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "exploration": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "dithering": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "external": {
-      "weight": 0.058823529411764705,
+      "weight": 0.05714285714285714,
       "count": 2
     },
     "octree": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "contact": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "communication": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "particles": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
+      "count": 1
+    },
+    "map": {
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "texture": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "depth": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "Deleuze": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.029411764705882353,
+      "weight": 0.02857142857142857,
       "count": 1
     }
   },
   "nodes": {
+    "remnant-mappings": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "feedback",
+        "rhizome",
+        "map"
+      ],
+      "links": [
+        {
+          "from": "remnant-mappings",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "remnant-mappings",
+          "to": "cliffscapes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "remnant-mappings",
+          "to": "foliage-fragments",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
+      "updatedAt": "2022-10-15T14:10:04.147Z",
+      "inline": false,
+      "title": "Remnant Mappings",
+      "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
+      "image": "/nodes/remnant-mappings.preview.jpg"
+    },
     "foliage-fragments": {
       "tags": [
         "art",
@@ -1753,6 +1831,12 @@ export default {
         {
           "from": "foliage-fragments",
           "to": "fluid-feedback",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-fragments",
+          "to": "remnant-mappings",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -1854,6 +1938,12 @@ export default {
         {
           "from": "cliffscapes",
           "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cliffscapes",
+          "to": "remnant-mappings",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2121,6 +2211,12 @@ export default {
         {
           "from": "formations",
           "to": "glow-tree",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "remnant-mappings",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2902,8 +2998,8 @@ export default {
         "generative",
         "noise",
         "project",
-        "space-colonization",
-        "rhizome"
+        "rhizome",
+        "space-colonization"
       ],
       "links": [
         {
@@ -3594,8 +3690,8 @@ export default {
         "domain-warping",
         "organic",
         "geometry",
-        "interactive",
-        "feedback"
+        "feedback",
+        "interactive"
       ],
       "links": [
         {
@@ -4019,6 +4115,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "foliage-fragments",
-  "mostRecentlyUpdatedNode": "cliffscapes"
+  "latestNode": "remnant-mappings",
+  "mostRecentlyUpdatedNode": "foliage-fragments"
 } as const;
