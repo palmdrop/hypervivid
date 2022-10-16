@@ -36,6 +36,14 @@ const config = {
 					$constants: path.resolve("src/constants.ts")
 				}
 			},
+			build: {
+				rollupOptions: {
+					output: {
+						manualChunks: undefined
+					}
+				},
+				polyfillModulePreload: false,
+			},
 			assetsInclude: [
 				'**/*.hdr'
 			]
