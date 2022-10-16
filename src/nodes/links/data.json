@@ -511,5 +511,11 @@
     "additionalCategories": [
       "Blog"
     ]
+  },
+  {
+    "text": "John Soat",
+    "url": "https://work.jsoat.us",
+    "category": "Art",
+    "additionalCategories": []
   }
 ]

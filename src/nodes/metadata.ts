@@ -1443,6 +1443,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "mappings": [],
     "markup-dada": [
       {
         "from": "markup-dada",
@@ -1741,7 +1742,15 @@ export default {
       "weight": 0.02857142857142857,
       "count": 1
     },
+    "mapppings": {
+      "weight": 0.02857142857142857,
+      "count": 1
+    },
     "map": {
+      "weight": 0.02857142857142857,
+      "count": 1
+    },
+    "mappings": {
       "weight": 0.02857142857142857,
       "count": 1
     },
@@ -1763,6 +1772,16 @@ export default {
     }
   },
   "nodes": {
+    "mappings": {
+      "tags": [],
+      "links": [],
+      "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
+      "updatedAt": "2022-10-16T10:26:35.203Z",
+      "inline": false,
+      "title": "mappings",
+      "description": "",
+      "image": ""
+    },
     "remnant-mappings": {
       "tags": [
         "art",
@@ -1770,7 +1789,8 @@ export default {
         "live",
         "feedback",
         "rhizome",
-        "map"
+        "map",
+        "mappings"
       ],
       "links": [
         {
@@ -1793,7 +1813,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2022-10-16T17:15:35.734Z",
+      "updatedAt": "2022-10-16T17:15:04.537Z",
       "inline": false,
       "title": "Remnant Mappings",
       "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
@@ -1807,7 +1827,8 @@ export default {
         "organic",
         "biophilia",
         "photography",
-        "feedback"
+        "feedback",
+        "mapppings"
       ],
       "links": [
         {
@@ -2043,7 +2064,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 07 Sep 2022 21:12:23 GMT",
-      "updatedAt": "2022-10-16T17:15:35.731Z",
+      "updatedAt": "2022-10-16T10:16:50.280Z",
       "inline": true,
       "title": "Cringe Core",
       "description": "Short thoughts about cringe.",
@@ -4115,6 +4136,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "remnant-mappings",
-  "mostRecentlyUpdatedNode": "hyper"
+  "latestNode": "mappings",
+  "mostRecentlyUpdatedNode": "remnant-mappings"
 } as const;
