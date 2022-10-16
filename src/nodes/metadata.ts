@@ -1793,7 +1793,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2022-10-15T14:10:04.147Z",
+      "updatedAt": "2022-10-16T17:15:35.734Z",
       "inline": false,
       "title": "Remnant Mappings",
       "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
@@ -1842,7 +1842,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
-      "updatedAt": "2022-10-02T14:21:12.222Z",
+      "updatedAt": "2022-10-16T17:15:35.731Z",
       "inline": false,
       "title": "Foliage Fragments",
       "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
@@ -2043,7 +2043,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 07 Sep 2022 21:12:23 GMT",
-      "updatedAt": "2022-09-09T15:05:58.611Z",
+      "updatedAt": "2022-10-16T17:15:35.731Z",
       "inline": true,
       "title": "Cringe Core",
       "description": "Short thoughts about cringe.",
@@ -3234,7 +3234,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-09-17T14:11:18.159Z",
+      "updatedAt": "2022-10-16T17:15:35.731Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -3381,7 +3381,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-09-30T13:28:52.166Z"
+      "updatedAt": "2022-10-16T17:25:04.216Z"
     },
     "manifesto": {
       "tags": [
@@ -4116,5 +4116,5 @@ export default {
     }
   },
   "latestNode": "remnant-mappings",
-  "mostRecentlyUpdatedNode": "foliage-fragments"
+  "mostRecentlyUpdatedNode": "hyper"
 } as const;

@@ -84,6 +84,7 @@
   const images = [
     '/img/combined/comb1.jpg',
     '/img/combined/comb2.jpg',
+    '/img/combined/comb3.jpg'
   ];
 
   const index = Math.floor((images.length * new Date().getSeconds() / 10) % images.length);
@@ -189,6 +190,8 @@
     z-index: -1;
 
     box-shadow: 0px 0px 20px -5px var(--cBgInverted);
+
+    background-color: rgb(27, 10, 10);
   }
 
   @media ( min-width: 500px )  {
