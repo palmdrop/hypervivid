@@ -191,7 +191,7 @@
 
     box-shadow: 0px 0px 20px -5px var(--cBgInverted);
 
-    background-color: rgb(27, 10, 10);
+    border: var(--borderPrimary);
   }
 
   @media ( min-width: 500px )  {

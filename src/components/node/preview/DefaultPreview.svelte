@@ -43,6 +43,7 @@
     <img
       src={metadata.image}
       alt=''
+      loading="lazy"
     />
   {/if}
 </section>
@@ -81,6 +82,8 @@
 
     aspect-ratio: 3/2;
     object-fit: cover;
+
+    background-color: var(--cBgDark);
   }
 
   @media ( min-width: 750px )  {
