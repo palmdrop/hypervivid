@@ -14,6 +14,7 @@
     metadata = context.metadata;
   }
 
+  let imageLoaded = false;
 </script>
 
 <section 
@@ -44,6 +45,8 @@
       src={metadata.image}
       alt=''
       loading="lazy"
+      on:load={() => imageLoaded = true}
+      class:loaded={imageLoaded}
     />
   {/if}
 </section>
@@ -84,6 +87,12 @@
     object-fit: cover;
 
     background-color: var(--cBgDark);
+
+    opacity: 1;
+  }
+
+  img.loaded {
+    opacity: 1;
   }
 
   @media ( min-width: 750px )  {
