@@ -4,10 +4,11 @@
   "scripts": {
     "start": "bash scripts/start.sh",
     "dev": "svelte-kit dev --host",
-    "prebuild": "npm install",
     "process": "bash ./scripts/process.sh",
     "gen": "bash ./scripts/generate.sh",
+    "prebuild": "npm install",
     "build": "bash ./scripts/build.sh",
+    "postbuild": "node ./scripts/postbuild.cjs",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
