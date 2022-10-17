@@ -37,12 +37,7 @@ const config = {
 				}
 			},
 			build: {
-				rollupOptions: {
-					output: {
-						manualChunks: undefined
-					}
-				},
-				polyfillModulePreload: false,
+				polyfillModulePreload: false
 			},
 			assetsInclude: [
 				'**/*.hdr'
