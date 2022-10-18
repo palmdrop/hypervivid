@@ -36,8 +36,13 @@ const config = {
 					$constants: path.resolve("src/constants.ts")
 				}
 			},
+			modulePreload: {
+				polyfill: false
+			},
 			build: {
-				polyfillModulePreload: false
+				modulePreload: {
+					polyfill: false
+				}
 			},
 			assetsInclude: [
 				'**/*.hdr'

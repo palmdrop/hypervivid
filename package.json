@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "bash scripts/start.sh",
+    "start:noprocess": "bash scripts/start.sh -n",
     "dev": "svelte-kit dev --host",
     "process": "bash ./scripts/process.sh",
     "gen": "bash ./scripts/generate.sh",

@@ -3381,7 +3381,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-10-16T17:25:04.216Z"
+      "updatedAt": "2022-10-17T16:20:25.850Z"
     },
     "manifesto": {
       "tags": [
