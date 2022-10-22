@@ -36,13 +36,6 @@
 
   useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
 
-  let mounted = false;
-
-  let mainRef: HTMLElement;
-  const useMainRef = (ref: HTMLElement) => {
-    mainRef = ref;
-  }
-
   export let searchPhrase = "";
   export let tags: Tag[] = [];
 
@@ -81,16 +74,10 @@
     },
     'all'
   );
-
-  onMount(() => {
-    mounted = true;
-  })
 </script>
 
 <Header />
-<main
-  use:useMainRef
->
+<main>
   <h1>
     { NODE_NAMES }
   </h1>

@@ -5,14 +5,17 @@
   import MetadataFooter from '$components/footer/metadata/Footer.svelte';
   import Header from '$components/header/Header.svelte';
   import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svelte';
+    import { page } from '$app/stores';
+    import { goto } from '$app/navigation';
 
   export let name: NodeName;
+  export let fullscreen: boolean = false;
 
   const transitionDuration = 400;
 
   // TODO: fix this ugly workaround to transition flickers
   // TODO: also, store 400ms as theme variable somewhere
-  let fullscreen = false;
+  // let fullscreen = false;
   let previousMetadataExpaned = false;
   const toggleFullscreen = () => {
     if(!fullscreen) {
@@ -42,6 +45,14 @@
     ...$metadata$.nodes[name],
     links: $metadata$.links[name],
     mode: 'only'
+  }
+
+
+  $: {
+    const newUrl = new URL($page.url);
+    newUrl.searchParams.set('fullscreen', fullscreen + '');
+
+    goto(newUrl.toString());
   }
 </script>
 

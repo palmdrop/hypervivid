@@ -15,7 +15,6 @@
   export let batchCount = -1;
   export let autoLoad = false;
   export let scrollElement: HTMLElement | Window | undefined = undefined;
-  // undefined;
   export let loadMoreOffset = 600;
   export let loadMoreListenerThrottle = 250;
 

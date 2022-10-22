@@ -1,17 +1,20 @@
 <script context="module" lang="ts">
   import allMetadata from '$nodes/metadata';
 
-  export async function load ({ params }) {
+  export async function load ({ params, url }) {
     const { 
       node: name,
     }: {
       node: string,
     } = params;
 
+    const fullscreen = url.searchParams.get('fullscreen') === 'true';
+
     if(Object.keys(allMetadata.nodes).includes(name)) {
       return {
         props: {
           name,
+          fullscreen,
           metadata: allMetadata.nodes[name]
         }
       }
@@ -34,6 +37,7 @@
 
   export let name: NodeName;
   export let metadata: NodeMetadata;
+  export let fullscreen: boolean;
 
   let isDone = false;
 
@@ -55,6 +59,7 @@
 {:else}
   <DefaultWrapper 
     { name }
+    { fullscreen }
     { ...metadata.wrapperProps ?? {} }
   >
     <Node
