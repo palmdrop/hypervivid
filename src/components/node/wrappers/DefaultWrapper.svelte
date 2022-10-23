@@ -5,8 +5,7 @@
   import MetadataFooter from '$components/footer/metadata/Footer.svelte';
   import Header from '$components/header/Header.svelte';
   import FullscreenIcon from '$components/ornaments/indicators/FullscreenIcon.svelte';
-    import { page } from '$app/stores';
-    import { goto } from '$app/navigation';
+  import { updateUrlParameters } from '../../../utils/useUrlParameters';
 
   export let name: NodeName;
   export let fullscreen: boolean = false;
@@ -48,12 +47,9 @@
   }
 
 
-  $: {
-    const newUrl = new URL($page.url);
-    newUrl.searchParams.set('fullscreen', fullscreen + '');
-
-    goto(newUrl.toString());
-  }
+  $: updateUrlParameters({
+    fullscreen
+  });
 </script>
 
 <div 

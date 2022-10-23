@@ -17,7 +17,6 @@
 </script>
 
 <script lang="ts">
-	import { page } from '$app/stores';
 	import type { Tag } from '$types/nodes';
   import NodeList from "$components/list/NodeList.svelte";
   import { useTitle } from "$utils/useTitle";
@@ -31,8 +30,7 @@
   import metadata from '../../nodes/metadata';
   import TagFilter from '../../components/filter/TagFilter.svelte';
   import PageFooter from '../../components/footer/page/PageFooter.svelte';
-  import { goto } from '$app/navigation';
-  import { onMount } from 'svelte';
+  import { updateUrlParameters } from '../../utils/useUrlParameters';
 
   useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
 
@@ -40,21 +38,19 @@
   export let tags: Tag[] = [];
 
   const onSearchChange = (searchPhrase: string) => {
-    const newUrl = new URL($page.url);
-    !!searchPhrase?.length 
-      ? newUrl.searchParams.set('search', searchPhrase)
-      : newUrl.searchParams.delete('search');
-
-    goto(newUrl.toString());
+    updateUrlParameters({
+      search: !!searchPhrase?.length 
+        ? searchPhrase
+        : { remove: true }
+    });
   }
 
   const onTagChange = (tags: Tag[]) => {
-    const newUrl = new URL($page.url);
-    !!tags.length
-      ? newUrl.searchParams.set('tags', tags.join(','))
-      : newUrl.searchParams.delete('tags');
-
-    goto(newUrl.toString());
+    updateUrlParameters({
+      tags: !!tags.length 
+        ? tags.join(',')
+        : { remove: true }
+    });
   }
 
   $: matchedNodes = standardFilterSearchNodes(
