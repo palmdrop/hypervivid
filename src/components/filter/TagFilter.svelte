@@ -33,6 +33,10 @@
     width: 22em;
     max-width: 100%;
 
+    --height: 2.2em;
+    --inputColor: var(--cFg);
+    --inputFontSize: 1rem;
+
     --placeholderOpacity: 0.6;
     --placeholderColor: var(--cFg);
 

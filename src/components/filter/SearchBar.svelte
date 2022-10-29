@@ -52,6 +52,7 @@
     width: 20em;
     max-width: 100%;
     margin: 0;
+    padding: 0em 0.7em;
 
     height: 2.2em;
   }
