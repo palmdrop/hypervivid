@@ -843,6 +843,12 @@ export default {
       },
       {
         "from": "city-pond",
+        "to": "places-and-things",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "city-pond",
         "to": "summer-static",
         "kind": "tangent",
         "strength": 0.5
@@ -858,6 +864,12 @@ export default {
       {
         "from": "fragfuse",
         "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "places-and-things",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1581,6 +1593,46 @@ export default {
         "strength": 0.5
       }
     ],
+    "places-and-things": [
+      {
+        "from": "places-and-things",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "places-and-things",
+        "to": "summer-static",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "places-and-things",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "summer-static": [
+      {
+        "from": "summer-static",
+        "to": "places-and-things",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "summer-static",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "summer-static",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "retro-core": [
       {
         "from": "retro-core",
@@ -1619,20 +1671,6 @@ export default {
       {
         "from": "solar-chrome",
         "to": "virtual-imprint",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "summer-static": [
-      {
-        "from": "summer-static",
-        "to": "city-pond",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "summer-static",
-        "to": "digital-biophilia",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1684,12 +1722,12 @@ export default {
       "count": 9
     },
     "project": {
-      "weight": 0.2222222222222222,
-      "count": 8
+      "weight": 0.25,
+      "count": 9
     },
     "photography": {
-      "weight": 0.2222222222222222,
-      "count": 8
+      "weight": 0.25,
+      "count": 9
     },
     "thoughts": {
       "weight": 0.19444444444444445,
@@ -1833,6 +1871,39 @@ export default {
     }
   },
   "nodes": {
+    "places-and-things": {
+      "tags": [
+        "photography",
+        "project"
+      ],
+      "links": [
+        {
+          "from": "places-and-things",
+          "to": "city-pond",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "places-and-things",
+          "to": "summer-static",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "places-and-things",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
+      "updatedAt": "2022-10-31T20:14:26.408Z",
+      "inline": false,
+      "title": "Places and things",
+      "description": "Another series of photographs. New tone. Just a collection.",
+      "image": "/nodes/places-and-things.preview.jpg",
+      "asDocument": true
+    },
     "mappings": {
       "tags": [
         "art",
@@ -1873,7 +1944,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
-      "updatedAt": "2022-10-31T18:02:31.497Z",
+      "updatedAt": "2022-10-31T19:50:28.251Z",
       "inline": true,
       "title": "Mappings",
       "description": "Some thoughts about art and map-making as a creative tool.",
@@ -2272,6 +2343,12 @@ export default {
         "project"
       ],
       "links": [
+        {
+          "from": "summer-static",
+          "to": "places-and-things",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "summer-static",
           "to": "city-pond",
@@ -3004,6 +3081,12 @@ export default {
         },
         {
           "from": "city-pond",
+          "to": "places-and-things",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "city-pond",
           "to": "summer-static",
           "kind": "tangent",
           "strength": 0.5
@@ -3344,6 +3427,12 @@ export default {
         {
           "from": "fragfuse",
           "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fragfuse",
+          "to": "places-and-things",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -4263,6 +4352,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "mappings",
-  "mostRecentlyUpdatedNode": "remnant-mappings"
+  "latestNode": "places-and-things",
+  "mostRecentlyUpdatedNode": "mappings"
 } as const;
