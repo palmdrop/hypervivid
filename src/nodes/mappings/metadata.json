@@ -1,10 +1,14 @@
 {
-  "tags": [],
-  "links": [],
+  "tags": [
+    "Deleuze", "thoughts", "fragments", "art"
+  ],
+  "links": [
+    "less-flat", "digital-gardening", "remnant-mappings", "foliage-fragments", "digital-biophilia"
+  ],
   "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
   "updatedAt": "Sun, 16 Oct 2022 10:16:11 GMT",
-  "inline": false,
-  "title": "mappings",
-  "description": "",
+  "inline": true,
+  "title": "Mappings",
+  "description": "Some thoughts about art and map-making as a creative tool.",
   "image": ""
 }
