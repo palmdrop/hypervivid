@@ -46,7 +46,7 @@
           { transitionDuration }
           direction={expanded ? 'down' : 'right'}
           strokeWidth={1.5}
-          size={'1.25rem'}
+          size={'1.0rem'}
         />
       </div>
     {/if}
@@ -216,10 +216,12 @@
 
   .arrow {
     position: absolute;
-    top: 10%;
+    top: 51%;
+    transform: translate(0, -50%);
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin: 0.1em;
   }
 </style>
