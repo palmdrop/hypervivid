@@ -1781,6 +1781,10 @@ export default {
       "weight": 0.08333333333333333,
       "count": 3
     },
+    "mappings": {
+      "weight": 0.08333333333333333,
+      "count": 3
+    },
     "hyper": {
       "weight": 0.08333333333333333,
       "count": 3
@@ -1845,18 +1849,6 @@ export default {
       "weight": 0.027777777777777776,
       "count": 1
     },
-    "mapppings": {
-      "weight": 0.027777777777777776,
-      "count": 1
-    },
-    "map": {
-      "weight": 0.027777777777777776,
-      "count": 1
-    },
-    "mappings": {
-      "weight": 0.027777777777777776,
-      "count": 1
-    },
     "texture": {
       "weight": 0.027777777777777776,
       "count": 1
@@ -1897,10 +1889,10 @@ export default {
         }
       ],
       "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
-      "updatedAt": "2022-10-31T20:14:26.408Z",
+      "updatedAt": "2022-10-31T20:38:51.783Z",
       "inline": false,
       "title": "Places and things",
-      "description": "Another series of photographs. New tone. Just a collection.",
+      "description": "Another series of photographs. Another slice of time, another tone. Just a collection.",
       "image": "/nodes/places-and-things.preview.jpg",
       "asDocument": true
     },
@@ -1909,6 +1901,7 @@ export default {
         "art",
         "thoughts",
         "fragments",
+        "mappings",
         "Deleuze"
       ],
       "links": [
@@ -1944,7 +1937,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
-      "updatedAt": "2022-10-31T19:50:28.251Z",
+      "updatedAt": "2022-11-03T11:48:13.337Z",
       "inline": true,
       "title": "Mappings",
       "description": "Some thoughts about art and map-making as a creative tool.",
@@ -1957,7 +1950,6 @@ export default {
         "live",
         "feedback",
         "rhizome",
-        "map",
         "mappings"
       ],
       "links": [
@@ -1987,7 +1979,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2022-10-31T18:02:31.497Z",
+      "updatedAt": "2022-11-03T15:16:05.936Z",
       "inline": false,
       "title": "Remnant Mappings",
       "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
@@ -2002,7 +1994,7 @@ export default {
         "biophilia",
         "photography",
         "feedback",
-        "mapppings"
+        "mappings"
       ],
       "links": [
         {
@@ -2043,7 +2035,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
-      "updatedAt": "2022-10-31T18:02:31.497Z",
+      "updatedAt": "2022-11-03T11:49:02.798Z",
       "inline": false,
       "title": "Foliage Fragments",
       "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
@@ -4353,5 +4345,5 @@ export default {
     }
   },
   "latestNode": "places-and-things",
-  "mostRecentlyUpdatedNode": "mappings"
+  "mostRecentlyUpdatedNode": "remnant-mappings"
 } as const;
