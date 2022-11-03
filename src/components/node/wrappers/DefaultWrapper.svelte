@@ -34,7 +34,11 @@
     }
   }
 
-  let metadataExpanded = false;
+  let metadataExpanded: boolean;
+  $: if(name) {
+    metadataExpanded = false;
+  }
+  
   const toggleMetadata = () => {
     metadataExpanded = !metadataExpanded;
   }
