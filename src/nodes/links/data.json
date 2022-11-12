@@ -517,5 +517,33 @@
     "url": "https://work.jsoat.us",
     "category": "Art",
     "additionalCategories": []
+  },
+  {
+    "text": "Torque Editions",
+    "url": "http://torquetorque.net",
+    "category": "Art",
+    "additionalCategories": [
+      "Tech"
+    ]
+  },
+  {
+    "text": "Al Brydon",
+    "url": "https://www.al-brydon.com/",
+    "category": "Art",
+    "additionalCategories": []
+  },
+  {
+    "text": "Being Online",
+    "url": "https://www.are.na/georgie-sinclair/being-online",
+    "category": "Tech",
+    "additionalCategories": []
+  },
+  {
+    "text": "00island",
+    "url": "https://00island.com/",
+    "category": "Art",
+    "additionalCategories": [
+      "Tech"
+    ]
   }
 ]
