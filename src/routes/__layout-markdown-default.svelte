@@ -37,16 +37,16 @@
   }
 
   .markdown-container hr {
-    position: relative;
     border: unset;
     margin-top: 1.5em;
     margin-bottom: 5em;
   }
 
   .markdown-container hr::after {
+    position: absolute;
+    box-sizing: border-box;
     content: "***";
     font-size: 2em;
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
   }
