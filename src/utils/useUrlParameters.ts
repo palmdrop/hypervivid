@@ -1,11 +1,14 @@
 import { goto } from "$app/navigation";
 import { page } from "$app/stores";
+import { browser } from "$app/env";
 
 type ParamSettings = {
   remove: true
 }
 
 export const updateUrlParameters = (params: Record<string, string | boolean | number | ParamSettings>) => {
+  if(!browser) return;
+
   page.subscribe(
     ({ url }) => {
       const newUrl = new URL(url);
