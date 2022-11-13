@@ -34,7 +34,6 @@
   ];
 
   const onKeyDown = (e: KeyboardEvent) => {
-    console.log(e.key);
     if(['Escape', 'Backspace'].includes(e.key)) {
       focusedImageIndex = undefined;
     }

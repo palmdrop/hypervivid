@@ -40,8 +40,10 @@
 
   // Ensures that scroll position is reset on navigation
   const scrollToTop = () => {
-    document.body.scrollTop = 0;
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      document.body.scrollTop = 0;
+      window.scrollTo(0, 0);
+    }, 0)
   }
 
   afterNavigate(scrollToTop);
