@@ -2,548 +2,381 @@
   {
     "text": "Underground Flower",
     "url": "http://undergroundflower.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "A curatorial art project."
   },
   {
     "text": "Sofia Crespo",
     "url": "https://sofiacrespo.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Personal site for AI artist Sofia Crespo."
   },
   {
     "text": "Ivan Seal",
     "url": "http://ivanseal.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Portfolio of painter Ivan Seal, who made the cover image for \"Everywhere at the end of time\"."
   },
   {
     "text": "Stimulation Zone",
-    "url": "https://stimulation.zone/",
-    "category": "Art",
-    "additionalCategories": []
+    "url": "https://archive.stimulation.zone/",
+    "description": "Project by art collective CROSSLUCID, with a focus on digital intimacy."
   },
   {
     "text": "Butt Studio",
     "url": "http://www.butt-studio.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Creative art studio."
   },
   {
     "text": "Brutalism",
     "url": "https://brutalism.rs/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Portfolio of Vladimir Mitrović, data-driven digital artist."
   },
   {
     "text": "Hastelier",
     "url": "https://hastelier.tumblr.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Strange digital (?) art."
   },
   {
     "text": "Broadcast",
     "url": "https://pioneerworks.org/broadcast/",
-    "category": "Blog",
-    "additionalCategories": []
+    "description": "Pioneer Works Broadcast, a magazine and website focused on journalism, art and technology that pushes boundaries."
   },
   {
     "text": "Ciphrd",
     "url": "https://ciphrd.com/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "Generative artist that creates advanced systems that simulates/emulates biological processes."
   },
   {
     "text": "Harm.work",
     "url": "https://harm.work/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "Harm van den Dorpel, artist who uses language, software, and genetic algorithms as artistic tools."
   },
   {
     "text": "Fuse",
-    "url": "https://fuse.blog/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Art"
-    ]
+    "url": "https://fuse.kiwi/",
+    "description": "Collection of links to creative places on the web."
   },
   {
     "text": "Hackernews",
     "url": "https://hckrnews.com",
-    "category": "Tech",
-    "additionalCategories": [
-      "Blog"
-    ]
+    "description": "The hacker news feed, sorted strictly by time."
   },
   {
     "text": "Memex Marginalia",
     "url": "https://memex.marginalia.nu/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
-  },
-  {
-    "text": "Skumrask (swedish)",
-    "url": "https://fredrikedin.se",
-    "category": "Politics",
-    "additionalCategories": [
-      "Blog"
-    ]
+    "description": "An experimental blog and hypertext engine running over HTTPS and Gemini."
   },
   {
     "text": "Search Marginalia",
     "url": "https://search.marginalia.nu/",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "Search engine that favors non-commercial websites that are rich in text, good for exploring the small internet."
+  },
+  {
+    "text": "Skumrask (swedish)",
+    "url": "https://fredrikedin.se",
+    "description": "Personal blog of Fredrik Edin, swedish journalist and author."
   },
   {
     "text": "K-punk",
     "url": "http://k-punk.abstractdynamics.org/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Politics"
-    ]
+    "description": "Old blog of author Mark Fisher, author of Capitalist Realism."
   },
   {
     "text": "Softer",
-    "url": "http://softerdigitalfutures.xyz",
-    "category": "Tech",
-    "additionalCategories": [
-      "Art",
-      "Blog"
-    ]
+    "url": "http://softer.website",
+    "description": "A network that promotes softer values, feminism and multiplicity within tech, digital art and design."
   },
   {
     "text": "Alice Maz",
     "url": "https://www.alicemaz.com/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Personal blog of Alice Maz, programmer and historian, among other things."
   },
   {
     "text": "Frank Chimero",
     "url": "https://frankchimero.com/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "American designer that creates compassionate and human designs."
   },
   {
     "text": "~javier",
     "url": "https://tilde.club/~javier/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Creative web experiment by tilde.club member javier."
   },
   {
     "text": "tilde.club",
     "url": "http://tilde.club/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "A club and social space contained on a single unix machine to which members connect over SSH."
   },
   {
     "text": "Samuel Brzeski",
     "url": "https://samuelbrzeski.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Artist that works with language, text, and voice."
   },
   {
     "text": "Internet Walks",
     "url": "https://internetwalks.com",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "A series of folder poems and sounds that create virtual text-based walks."
   },
   {
     "text": "HTML Quine",
     "url": "https://secretgeek.github.io/html_wysiwyg/html.html",
-    "category": "Tech",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "A web page that renders it's own code on the page. Everything is revealed."
   },
   {
     "text": "UbuWeb",
     "url": "https://ubu.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Politics"
-    ]
+    "description": "Self-described pirate shadow library, filled with avant-garde artifacts."
   },
   {
     "text": "~palmdrop",
     "url": "https://tilde.town/~palmdrop",
-    "category": "Blog",
-    "additionalCategories": []
+    "description": "My own tilde.town page."
   },
   {
     "text": "A Softer World",
     "url": "https://www.asofterworld.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Photo and poetry project: a series of short fragments from life and delusions."
   },
   {
     "text": "Hypercard Simulator",
     "url": "https://hypercardsimulator.com",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "A simulation of the old HyperCard software for Apple Macintosh."
   },
   {
     "text": "Feral File",
     "url": "https://feralfile.com",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Art gallery, publisher, platform for tech art exhibitions and community."
   },
   {
     "text": "The Mother of All Demos",
     "url": "https://www.youtube.com/watch?v=yJDv-zdhzMY",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "A historical demonstration of then experimental computer technologies, such as the mouse and the hypertext system."
   },
   {
     "text": "Cyberpunk Prophecies",
     "url": "https://tilde.town/~vilmibm/cbprop.pdf",
-    "category": "Art",
-    "additionalCategories": []
-  },
-  {
-    "text": "Ayatgali Tuleubek",
-    "url": "https://www.ayatgali.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Generative poetry based on content from thirty-one cyberpunk novels."
   },
   {
     "text": "Romain Fontaine",
     "url": "https://www.romain-fontaine.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "French visual artist who explores digital technologies, biology and philosophy."
   },
   {
     "text": "Tante",
     "url": "https://tante.cc/category/writing/english/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Theorist who writes about the social and political impact of technology."
   },
   {
     "text": "TWOMUCH",
     "url": "https://twomuch.studio/",
-    "category": "Tech",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "Studio that deals with digital art, 3D, interactivity and websites."
   },
   {
     "text": "Revision.io",
     "url": "https://revision.io/",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "Page that documents the risks and dangers of new technologies."
   },
   {
     "text": "Low-tech magazine",
     "url": "https://solar.lowtechmagazine.com/",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "A version of Low-tech Magazine, but self-hosted and completely solar-powered."
   },
   {
     "text": "booktwo",
     "url": "https://booktwo.org/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech",
-      "Art"
-    ]
+    "description": "Personal blog of James Bridle."
   },
   {
     "text": "Stephan Tillmans",
     "url": "https://www.stephantillmans.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Artist that uses analogue and digital technologies in his art."
   },
   {
     "text": "Most Dismal Swamp",
     "url": "https://www.mostdismalswamp.com",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "A strange and experimental art platform and record label."
   },
   {
     "text": "Still here",
     "url": "https://still-here.net/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Not sure what this is. A logbook? Diary? A series of micro-poems, sorted by time?"
   },
   {
     "text": "Folder One",
     "url": "https://folder-one.eu/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "New media artist and designer based in Berlin."
   },
   {
     "text": "Analfapedia",
     "url": "https://analfapedia.org",
-    "category": "Tech",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "Wikipedia?"
   },
   {
     "text": "Will Baker",
     "url": "https://willbaker.info/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "A blogger, artist, person on the internet."
   },
   {
     "text": "A Million Years of Sleep",
     "url": "https://amillionyearsofsleep.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Blog"
-    ]
+    "description": "Drawer, painter, mixed-media artist (?)."
   },
   {
     "text": "Consume Digest Produce",
     "url": "https://consumedigestproduce.us/",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "A page that gathers quotes, pieces of data, about surveillance, digital consumption, content production, etc."
   },
   {
     "text": "Abolish Alienation",
     "url": "https://www.are.na/darbee-hagerty/abolish-alienation",
-    "category": "Blog",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "An are.na channel about escaping alienation and capitalist modes of thinking. \"[S]hame is a scam, laziness is a myth\"."
   },
   {
     "text": "Fletcher Bach",
     "url": "https://fletcherbach.com/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Art",
-      "Tech"
-    ]
+    "description": "Interactive artist, designer, writer and technologist."
   },
   {
     "text": "Out4Pizza",
     "url": "https://www.out4pizza.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Digital art by Laura Brothers."
   },
   {
     "text": "The Art of Fiction - Don DeLillo",
     "url": "https://www.theparisreview.org/interviews/1887/the-art-of-fiction-no-135-don-delillo",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Long interview with author Don DeLillo on his ideas and writing process."
   },
   {
     "text": "xxiivv webring",
     "url": "https://webring.xxiivv.com/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "An actual webring, of which my site is not actually a member. Small internet sites."
   },
   {
     "text": "constraint.systems",
     "url": "https://constraint.systems/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "A collection of creative tools, interfaces and experiments, investigating new ways of interacting with text and pixels."
   },
   {
     "text": "Folk (Browser) Interfaces",
     "url": "https://cristobal.space/writing/folk",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "A short post on how the browser may be used as a multi-media interface for the file system."
   },
   {
     "text": "Permacomputing",
     "url": "https://permacomputing.net/",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "Sustainable approaches to computing based on the ideas from permaculture."
   },
   {
     "text": "Herman",
     "url": "https://herman.bearblog.dev/",
-    "category": "Blog",
-    "additionalCategories": []
+    "description": "Blog of Herman Martinus, software developer, blogger and essayist."
   },
   {
     "text": "Forevermidi",
     "url": "https://forevermidi.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "New media studio/group dedicated to multi-media art, software, audio and video."
   },
   {
     "text": "Ulrich Nausner",
     "url": "https://www.ulrichnausner.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Minimalist digital artist that investigate aspects of the internet in their art."
   },
   {
     "text": "Decorating Dissidence",
     "url": "https://decoratingdissidence.com",
-    "category": "Art",
-    "additionalCategories": [
-      "Politics"
-    ]
+    "description": "An interdisciplinary project that explores craft as an aesthetic and political tool."
   },
   {
     "text": "Biophilia Hypothesis",
     "url": "https://en.wikipedia.org/wiki/Biophilia_hypothesis",
-    "category": "Other",
-    "additionalCategories": []
+    "description": "The hypothesis that human beings feel a innate fondness of nature and other living beings."
   },
   {
     "text": "TGIF-Release",
     "url": "https://github.com/raingo/TGIF-Release",
-    "category": "Tech",
-    "additionalCategories": [
-      "Art"
-    ]
+    "description": "A dataset that contains over a 100 000 animated GIFs."
   },
   {
     "text": "Lauren Lee McCarthy",
     "url": "https://lauren-mccarthy.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Artist who examine social relationships, automation, surveillance and algorithms in their art."
   },
   {
     "text": "R. Luke DuBois",
     "url": "https://www.lukedubois.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Digital artist interested in language and big data."
   },
   {
     "text": "Plethora Project",
     "url": "https://www.plethora-project.com",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Design studio that promotes \"computational literacy\" within the fields of design and architecture."
   },
   {
     "text": "In Search of the Continuous Monument",
     "url": "https://blogs.ubc.ca/sciencefictionandthecity/2009/04/07/in-search-of-the-continuous-monument-or-the-grid-as-speculative-architecture/",
-    "category": "Blog",
-    "additionalCategories": [
-      "Other"
-    ]
+    "description": "An essay about \"the continuous monument\", exploring speculative architecture."
   },
   {
     "text": "Tero Parviainen",
     "url": "https://teropa.info",
-    "category": "Blog",
-    "additionalCategories": [
-      "Tech",
-      "Art"
-    ]
+    "description": "Software developer, artist and musician who co-runs the creative studio Counterpoint."
   },
   {
     "text": "How Generative Music Works",
     "url": "https://teropa.info/loop/",
-    "category": "Tech",
-    "additionalCategories": [
-      "Blog",
-      "Art"
-    ]
+    "description": "Interactive info site about generative music."
   },
   {
     "text": "Andreas Wallroth",
     "url": "https://andreaswallroth.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Swedish artist with a __fresh__  style."
   },
   {
     "text": "Julian Hespenheide",
     "url": "https://www.julian-h.de/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Artist and designer who creates installations exploring digital spaces."
   },
   {
     "text": "A Website is a Room",
     "url": "https://a-website-is-a-room.net",
-    "category": "Blog",
-    "additionalCategories": [
-      "Other"
-    ]
+    "description": "A collection of rooms on the internet."
   },
   {
     "text": "Fields - space & times",
     "url": "http://fields.spaceandtim.es",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Ideologies of the future?"
   },
   {
     "text": "written-not-written",
     "url": "http://written-not-written.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Blog"
-    ]
+    "description": "Site of Augustin Maurus, musician who explores signs, systems and rituals."
   },
   {
     "text": "John Soat",
     "url": "https://work.jsoat.us",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Portfolio of artist and designer John Soat."
   },
   {
     "text": "Torque Editions",
     "url": "http://torquetorque.net",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "Publisher and curatorial platform interested in the mind, language and technology."
   },
   {
     "text": "Al Brydon",
     "url": "https://www.al-brydon.com/",
-    "category": "Art",
-    "additionalCategories": []
+    "description": "Portfolio of photographer Al Brydon."
   },
   {
     "text": "Being Online",
     "url": "https://www.are.na/georgie-sinclair/being-online",
-    "category": "Tech",
-    "additionalCategories": []
+    "description": "An are.na channel that collects fragments about being online and all that entails."
   },
   {
     "text": "00island",
     "url": "https://00island.com/",
-    "category": "Art",
-    "additionalCategories": [
-      "Tech"
-    ]
+    "description": "An art studio (?) with a strange and brutalist site."
+  },
+  {
+    "text": "Holly Herndon",
+    "url": "https://www.hollyherndon.com/",
+    "description": "Musician and digital artist who explores emergent AI technologies, experimental music and the voice."
   }
 ]

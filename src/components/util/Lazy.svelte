@@ -24,9 +24,10 @@
     component().then(module => {
       loadedComponent = module.default;
       isDone = true;
-    }).catch(() => {
+    }).catch((error) => {
       failed = true;
       isDone = true;
+      console.error(error);
     });
 
     return () => clearTimeout(timeout);
