@@ -3,6 +3,7 @@
 # git submodule foreach 'npm install'
 # svelte-kit build
 # rm -r ./build
+rm -r build
 cd ./src/modules/synthetic-grids
 npm install
 npm run build
