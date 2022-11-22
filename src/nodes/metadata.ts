@@ -69,6 +69,12 @@ export default {
       },
       {
         "from": "manifesto",
+        "to": "branches-and-connections",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
         "to": "cringe-core",
         "kind": "tangent",
         "strength": 0.5
@@ -690,6 +696,84 @@ export default {
       {
         "from": "substrate",
         "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "branches-and-connections": [
+      {
+        "from": "branches-and-connections",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "branches-and-connections",
+        "to": "links",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "branches-and-connections",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "mappings": [
+      {
+        "from": "mappings",
+        "to": "branches-and-connections",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "mappings",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "mappings",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "mappings",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "mappings",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "mappings",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "links": [
+      {
+        "from": "links",
+        "to": "branches-and-connections",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "links",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "links",
+        "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1439,20 +1523,6 @@ export default {
       }
     ],
     "latest": [],
-    "links": [
-      {
-        "from": "links",
-        "to": "rehash-transform",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "links",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "rehash-transform": [
       {
         "from": "rehash-transform",
@@ -1475,38 +1545,6 @@ export default {
       {
         "from": "rehash-transform",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "mappings": [
-      {
-        "from": "mappings",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "remnant-mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "digital-biophilia",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1730,10 +1768,14 @@ export default {
       "count": 9
     },
     "thoughts": {
+      "weight": 0.2222222222222222,
+      "count": 8
+    },
+    "feedback": {
       "weight": 0.19444444444444445,
       "count": 7
     },
-    "feedback": {
+    "fragments": {
       "weight": 0.19444444444444445,
       "count": 7
     },
@@ -1741,7 +1783,7 @@ export default {
       "weight": 0.19444444444444445,
       "count": 7
     },
-    "fragments": {
+    "internet": {
       "weight": 0.16666666666666666,
       "count": 6
     },
@@ -1749,11 +1791,11 @@ export default {
       "weight": 0.16666666666666666,
       "count": 6
     },
-    "internet": {
-      "weight": 0.1388888888888889,
-      "count": 5
-    },
     "info": {
+      "weight": 0.1111111111111111,
+      "count": 4
+    },
+    "mappings": {
       "weight": 0.1111111111111111,
       "count": 4
     },
@@ -1778,10 +1820,6 @@ export default {
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.08333333333333333,
-      "count": 3
-    },
-    "mappings": {
       "weight": 0.08333333333333333,
       "count": 3
     },
@@ -1863,6 +1901,40 @@ export default {
     }
   },
   "nodes": {
+    "branches-and-connections": {
+      "tags": [
+        "thoughts",
+        "fragments",
+        "internet",
+        "mappings"
+      ],
+      "links": [
+        {
+          "from": "branches-and-connections",
+          "to": "mappings",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "branches-and-connections",
+          "to": "links",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "branches-and-connections",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Tue, 22 Nov 2022 15:40:27 GMT",
+      "updatedAt": "2022-11-22T16:03:04.519Z",
+      "inline": true,
+      "title": "Branches and connections",
+      "description": "",
+      "image": ""
+    },
     "places-and-things": {
       "tags": [
         "photography",
@@ -1907,6 +1979,12 @@ export default {
       "links": [
         {
           "from": "mappings",
+          "to": "branches-and-connections",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "mappings",
           "to": "less-flat",
           "kind": "tangent",
           "strength": 0.5
@@ -1949,8 +2027,8 @@ export default {
         "generative",
         "live",
         "feedback",
-        "rhizome",
-        "mappings"
+        "mappings",
+        "rhizome"
       ],
       "links": [
         {
@@ -3451,6 +3529,12 @@ export default {
       "links": [
         {
           "from": "links",
+          "to": "branches-and-connections",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "links",
           "to": "rehash-transform",
           "kind": "tangent",
           "strength": 0.5
@@ -3463,7 +3547,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-11-22T16:00:18.832Z",
+      "updatedAt": "2022-11-22T16:03:04.519Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -3623,6 +3707,12 @@ export default {
           "from": "manifesto",
           "to": "about",
           "kind": "references",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "branches-and-connections",
+          "kind": "tangent",
           "strength": 0.5
         },
         {
@@ -4344,6 +4434,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "places-and-things",
+  "latestNode": "branches-and-connections",
   "mostRecentlyUpdatedNode": "links"
 } as const;
