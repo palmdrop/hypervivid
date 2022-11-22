@@ -18,12 +18,12 @@
       path: '/tags'
     },
     {
-      text: 'manifesto',
-      path: '/nodes/manifesto'
-    },
-    {
       text: 'about',
       path: '/nodes/about'
+    },
+    {
+      text: 'links',
+      path: '/nodes/links'
     },
   ];
 
