@@ -4,3 +4,4 @@
 [submodule "src/modules/synthetic-grids"]
 	path = src/modules/synthetic-grids
 	url = https://github.com/palmdrop/synthetic-grids
+	branch = module

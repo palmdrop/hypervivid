@@ -2057,7 +2057,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2022-11-12T09:59:14.085Z",
+      "updatedAt": "2022-11-24T14:50:42.163Z",
       "inline": false,
       "title": "Remnant Mappings",
       "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
@@ -3694,7 +3694,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-11-12T09:59:14.085Z"
+      "updatedAt": "2022-11-22T16:14:27.334Z"
     },
     "manifesto": {
       "tags": [
@@ -4435,5 +4435,5 @@ export default {
     }
   },
   "latestNode": "branches-and-connections",
-  "mostRecentlyUpdatedNode": "links"
+  "mostRecentlyUpdatedNode": "remnant-mappings"
 } as const;
