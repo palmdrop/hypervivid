@@ -3547,7 +3547,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-12-08T16:34:39.184Z",
+      "updatedAt": "2022-12-12T19:42:26.432Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4435,5 +4435,5 @@ export default {
     }
   },
   "latestNode": "branches-and-connections",
-  "mostRecentlyUpdatedNode": "webfuse"
+  "mostRecentlyUpdatedNode": "links"
 } as const;
