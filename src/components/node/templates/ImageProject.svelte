@@ -1,7 +1,5 @@
 <script lang="ts">
   import { blur } from 'svelte/transition';
-  import Paragraph from '$components/common/Paragraph.svelte';
-  import FlowList from '$components/list/FlowList.svelte';
   import { shuffleArray } from '$utils/general';
   
   export let imageUrls: string[];
@@ -139,7 +137,6 @@
     font-size: 1.5rem;
     padding: 0.5rem 1.2rem;
     max-width: 46ch;
-    border-right: var(--border);
   }
 
   .description p:first-of-type {
@@ -154,14 +151,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .image-container {
     border-top: var(--border);
     border-bottom: var(--border);
-    margin-bottom: 10em;
-    padding: 4em 0em;
+    margin-bottom: 5em;
+    padding: 2em 0em;
 
     display: flex;
     flex-direction: column;
@@ -174,8 +170,7 @@
   }
 
   img {
-    max-width: calc(100vw - 4rem);
-    width: calc(100% - 4rem);
+    width: 100%;
 
     transition: 0.5s;
     cursor: pointer;
@@ -183,7 +178,21 @@
     object-fit: contain;
     background-color: transparent;
     color: transparent;
+  }
 
+  @media ( min-width: 700px )  {
+    .image-container {
+      margin-bottom: 10em;
+      padding: 4em 0em;
+    }
+
+    img {
+      width: calc(100% - 4rem);
+    }
+
+    .description p {
+      border-right: var(--border);
+    }
   }
 
   .focused-image {

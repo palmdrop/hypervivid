@@ -1961,7 +1961,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
-      "updatedAt": "2022-12-05T17:43:13.665Z",
+      "updatedAt": "2022-12-12T16:33:59.197Z",
       "inline": false,
       "title": "Places and things",
       "description": "Another series of photographs. Another slice of time, another tone. Just a collection.",
@@ -2433,7 +2433,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 27 Aug 2022 17:33:51 GMT",
-      "updatedAt": "2022-12-05T17:43:13.668Z",
+      "updatedAt": "2022-12-12T16:33:59.197Z",
       "inline": false,
       "title": "Summer Static",
       "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
@@ -3163,7 +3163,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 21 Jul 2022 20:37:19 GMT",
-      "updatedAt": "2022-12-05T17:43:13.653Z",
+      "updatedAt": "2022-12-12T16:33:59.194Z",
       "inline": false,
       "title": "City Pond",
       "description": "Photos taken by and around a small pond located in the city where I live.",
@@ -3329,7 +3329,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 22 Jun 2022 21:26:31 GMT",
-      "updatedAt": "2022-12-05T17:43:13.652Z",
+      "updatedAt": "2022-12-12T16:33:59.194Z",
       "inline": false,
       "title": "Chaos Growth",
       "description": "Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.",
@@ -3360,7 +3360,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
-      "updatedAt": "2022-12-05T17:43:13.665Z",
+      "updatedAt": "2022-12-12T16:33:59.197Z",
       "inline": false,
       "title": "Objects",
       "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities. These things just are.",
@@ -3410,7 +3410,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 19 Jun 2022 10:25:11 GMT",
-      "updatedAt": "2022-12-05T17:43:13.669Z",
+      "updatedAt": "2022-12-12T16:33:59.197Z",
       "inline": false,
       "title": "Weave",
       "description": "A combination of generative techniques: flowfields, plant-like growth algorithms, and noise.",
@@ -3472,7 +3472,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Jun 2022 12:07:12 GMT",
-      "updatedAt": "2022-12-05T17:43:13.669Z",
+      "updatedAt": "2022-12-12T16:33:59.198Z",
       "inline": false,
       "title": "Web Fuse",
       "description": "Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?",
@@ -3514,7 +3514,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 16 Jun 2022 19:50:43 GMT",
-      "updatedAt": "2022-12-05T17:43:13.658Z",
+      "updatedAt": "2022-12-12T16:33:59.195Z",
       "inline": false,
       "title": "Frag Fuse",
       "description": "Photo fragments, warped and mixed to produce eerie textures and patterns.",
@@ -4435,5 +4435,5 @@ export default {
     }
   },
   "latestNode": "branches-and-connections",
-  "mostRecentlyUpdatedNode": "links"
+  "mostRecentlyUpdatedNode": "webfuse"
 } as const;
