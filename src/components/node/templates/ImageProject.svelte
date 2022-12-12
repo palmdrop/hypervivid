@@ -7,31 +7,23 @@
   export let imageUrls: string[];
   export let description: string[];
   export let name: string;
+  export let shuffleImages = true;
 
   export let theme: 'light' | 'dark' | 'black' = 'light';
   export let backgroundOverride: string | undefined = undefined;
 
   let focusedImageIndex: number | undefined = undefined;
-  let focusedItem: { imageUrl: string } | undefined = undefined;
+  let focusedImage: string | undefined = undefined;
 
   $: {
-    focusedItem = focusedImageIndex ? items[focusedImageIndex] as { imageUrl: string } : undefined;
+    if(shuffleImages) shuffleArray(imageUrls);
   }
 
-  type Item = {
-    imageUrl: string
-    width: string
-  } | {
-    text: string[]
-  };
-
-  const items: Item[] = [
-    { text: description},
-    ...shuffleArray(imageUrls.map(img => ({
-      imageUrl: img,
-      width: `${Math.floor(Math.random() * 400) + 800}px`
-    })))
-  ];
+  $: {
+    focusedImage = typeof focusedImageIndex === 'number' 
+      ? imageUrls[focusedImageIndex] 
+      : undefined;
+  }
 
   const onKeyDown = (e: KeyboardEvent) => {
     if(['Escape', 'Backspace'].includes(e.key)) {
@@ -53,9 +45,9 @@
   class={`node ${theme}`}
   style={overrideStyles}
 >
-  {#if focusedImageIndex && focusedItem}
+  {#if (typeof focusedImageIndex === 'number') && focusedImage}
     <img class={`focused-image ${theme}`}
-      src={focusedItem.imageUrl}
+      src={focusedImage}
       alt={`${name} - ${focusedImageIndex + 1 }.`}
       style={overrideStyles}
       on:click={(e) => {
@@ -66,41 +58,33 @@
       transition:blur|local
     />
   {/if}
-  <FlowList
-    items={items}
-    randomXOffset={0.2}
-    randomYOffset={0.2}
-    let:item
-    let:index
-  >
-  {#if item.imageUrl}
-    <img 
-      class="flow-image"
-      src={item.imageUrl} 
-      alt={`${name} - ${index + 1}.`}
-      style="
-        --width: {item.width};
-      "
-      on:click={() => { focusedImageIndex = index; }}
-    />
-  {:else}
-    <div 
-      class={`description ${theme}`}
-    >
-      {#each item.text as line (line)}
-        <Paragraph big>
+  <div class="container">
+    <div class="description">
+      <h1>{name}</h1>
+      {#each description as line, i (line)}
+        <p>
           {line}
-        </Paragraph>
+        </p>
       {/each}
     </div>
-  {/if}
-  </FlowList>
+    <ul>
+      {#each imageUrls as url, i (url)}
+        <div class="image-container">
+          <img
+            src={url} 
+            alt=""
+            on:click={() => {
+              focusedImageIndex = i;
+            }}
+          />
+        </div>
+      {/each}
+    </ul>
+  </div>
 </div>
 
 <style>
   .node {
-    position: relative;
-    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,59 +93,103 @@
   .light {
     background-color: var(--cBg);
     color: var(--cFg);
+    --border: var(--borderPrimary);
   }
 
   .dark {
     background-color: var(--cBgInverted);
     color: var(--cFgInverted);
+    --border: 1px solid var(--cBg);
   }
 
   .black {
     background-color: var(--cBgBlack);
     color: var(--cFgInverted);
+    --border: 1px solid var(--cBg);
+  }
+
+  .container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    border: var(--border);
+    width: calc(min(100%, 1200px));
+
+    margin-bottom: 10em;
   }
 
   .description {
-    padding-bottom: 10em;
-    padding-top: 5em;
-
-    margin: 2.5em;
-
+    margin-bottom: 10em;
     background-color: unset;
+    border-bottom: var(--border);
   }
 
-  .flow-image {
-    max-width: calc(100vw - 0.5em);
-    width: 100%;
-    margin-bottom: 15em;
+  .description h1 {
+    text-transform: lowercase;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    text-align: left;
+    border-bottom: var(--border);
+  }
 
-    border-radius: 1%;
+  .description p {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    max-width: 46ch;
+    border-right: var(--border);
+  }
+
+  .description p:first-of-type {
+    padding-top: 1.5rem;
+  }
+
+  .description p:last-child {
+    padding-bottom: 1.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .image-container {
+    border-top: var(--border);
+    border-bottom: var(--border);
+    margin-bottom: 10em;
+    padding: 4em 0em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container:last-child {
+    margin-bottom: 0;
+    border-bottom: unset;
+  }
+
+  img {
+    max-width: calc(100vw - 4rem);
+    width: calc(100% - 4rem);
 
     transition: 0.5s;
     cursor: pointer;
-  }
 
-  @media ( min-width: 600px )  {
-    .flow-image {
-      width: var(--width);
-    }
-  }
+    object-fit: contain;
+    background-color: transparent;
+    color: transparent;
 
-  .light img {
-    box-shadow: 0px 0px 100px var(--cBgInverted);
-  }
-
-  .dark img, .black img {
-    box-shadow: 0px 0px 100px var(--cBgDark);
-  }
-
-  .black img {
-    box-shadow: 0px 0px 100px var(--cBgInverted);
   }
 
   .focused-image {
     position: fixed;
     width: 100vw;
+    max-width: unset;
     height: 100vh;
     inset: 0;
 
@@ -172,6 +200,7 @@
     z-index: 1;
 
     cursor: pointer;
+    box-shadow: unset;
   }
 </style>
   

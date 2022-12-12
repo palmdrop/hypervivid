@@ -3,7 +3,7 @@
   import { getNodeContext } from '$utils/useNodeContext';
   
   const images = Object.values(import.meta.globEager('../../assets/pieces/places-and-things/*')).map(module => module.default);
-  const { name } = getNodeContext('places-and-things');
+  const { name, metadata } = getNodeContext('places-and-things');
   const description = [
     `Pictures of places and things. A collection, or series, of recent photographs.`,
     `A continuation of the Summer Static node. Another slice of time and vibe.`
@@ -12,7 +12,7 @@
 
 <ImageProject
   imageUrls={images}
-  name={name}
+  name={metadata.title ?? name}
   description={description}
   theme='light'
 />

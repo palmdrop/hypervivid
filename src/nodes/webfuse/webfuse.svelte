@@ -3,7 +3,7 @@
   import { getNodeContext } from '$utils/useNodeContext';
   
   const images = Object.values(import.meta.globEager('../../assets/pieces/webfuse/*')).map(module => module.default);
-  const { name } = getNodeContext('webfuse');
+  const { name, metadata } = getNodeContext('webfuse');
   const description = [
     `A strange mix of techniques and source material. Memes, internet images, eerie aesthetics, warped and fused with pixel mixing techniques.`,
     'This project became a visualization of remix/mash-up culture: memes that build on memes that build on references that build on references.',
@@ -13,6 +13,6 @@
 
 <ImageProject
   imageUrls={images}
-  name={name}
+  name={metadata.title ?? name}
   description={description}
 />

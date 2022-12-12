@@ -3,7 +3,7 @@
   import { getNodeContext } from '$utils/useNodeContext';
   
   const images = Object.values(import.meta.globEager('../../assets/pieces/city-pond/*')).map(module => module.default);
-  const { name } = getNodeContext('city-pond');
+  const { name, metadata } = getNodeContext('city-pond');
   const description = [
     'A simple photography project. I took photos by and around a small pond located nearby an old apartment of mine.',
     'The primary focus was exploring the eerie effect of nightly nature photography with a strong flash. There\'s also a few long expose shots in the mix.'
@@ -12,7 +12,7 @@
 
 <ImageProject
   imageUrls={images}
-  name={name}
+  name={metadata.title ?? name}
   description={description}
   theme='black'
 />
