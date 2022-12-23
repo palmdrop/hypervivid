@@ -126,16 +126,16 @@
 
   .description h1 {
     text-transform: lowercase;
-    padding-left: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-left: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: left;
     border-bottom: var(--border);
   }
 
   .description p {
-    font-size: 1.5rem;
-    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    padding: 0.3rem 1.2rem;
     max-width: 46ch;
   }
 
