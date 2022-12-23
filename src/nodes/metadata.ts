@@ -2008,7 +2008,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 23 Dec 2022 10:06:41 GMT",
-      "updatedAt": "2022-12-23T13:31:54.614Z",
+      "updatedAt": "2022-12-23T13:34:23.926Z",
       "inline": false,
       "asDocument": true,
       "title": "Living Hobbling Goo",

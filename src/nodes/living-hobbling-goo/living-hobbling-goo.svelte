@@ -86,6 +86,8 @@
     --grid-size: 15px;
     --grid-offset: calc(var(--grid-size) * -0.5 + 1);
 
+    position: relative;
+
     width: 100%;
     height: 100vh;
     background-color: rgb(139, 138, 134);
@@ -118,13 +120,6 @@
     min-height: calc(100vh - 2em);
   }
 
-  .background {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    inset: 0;
-  }
-
   .title {
     position: fixed;
     font-family: monospace;
@@ -145,9 +140,9 @@
   }
 
   .text {
-    position: fixed;
-    top: 26%;
-    left: 10%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
     z-index: 2;
 
     background-color: transparent;
@@ -235,5 +230,4 @@
   .bottom3 {
     grid-area: bottom3;
   }
-
 </style>
