@@ -395,8 +395,18 @@
     "description": "A journal for web-native litterature."
   },
   {
-    "text": "The Ceative Independent",
-    "url": "https://thehtml.review",
+    "text": "The Creative Independent",
+    "url": "https://thecreativeindependent.com/",
     "description": "A web publication for emotional and guiding resources dedicated to creatives."
+  },
+  {
+    "text": "Gisoo Kim",
+    "url": "https://gisookim.de/",
+    "description": "Portfolio site of artist Gisoo Kim, who combines photography with stitching."
+  },
+  {
+    "text": "Literature Clock",
+    "url": "https://literature-clock.jenevoldsen.com/",
+    "description": "A site that shows a short quote that contains the current time. Updates every minute."
   }
 ]
