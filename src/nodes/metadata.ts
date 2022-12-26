@@ -3691,7 +3691,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2022-12-23T10:05:03.386Z",
+      "updatedAt": "2022-12-26T15:19:11.721Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4579,5 +4579,5 @@ export default {
     }
   },
   "latestNode": "living-hobbling-goo",
-  "mostRecentlyUpdatedNode": "summer-static"
+  "mostRecentlyUpdatedNode": "links"
 } as const;

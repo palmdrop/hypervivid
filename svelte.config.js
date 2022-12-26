@@ -24,30 +24,6 @@ const config = {
 		'.svelte.md',
 	],
 	kit: {
-		vite: {
-			resolve: {
-				alias: {
-					$components: path.resolve("src/components"),
-					$nodes: path.resolve("src/nodes"),
-					$tags: path.resolve("src/tags"),
-					$stores: path.resolve("src/stores"),
-					$types: path.resolve("src/types"),
-					$utils: path.resolve("src/utils"),
-					$constants: path.resolve("src/constants.ts")
-				}
-			},
-			modulePreload: {
-				polyfill: false
-			},
-			build: {
-				modulePreload: {
-					polyfill: false
-				}
-			},
-			assetsInclude: [
-				'**/*.hdr'
-			]
-		},
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',

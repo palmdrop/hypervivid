@@ -9,8 +9,13 @@
   import Error from './Error.svelte';
   import { NodeErrorBoundary } from "../error";
 
-  const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte');
-  const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte');
+  const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte', { eager: false });
+  const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte', { eager: false });
+
+  console.log({
+    lazyComponents,
+    lazyPreviewComponents
+  })
 
   export let name: NodeName;
   export let mode: NodeMode;
@@ -46,7 +51,7 @@
     )
   );
 
-  $: previewPath = `../../nodes/${name}/${name}.preview.svelte`
+  $: previewPath = `/src/nodes/${name}/${name}.preview.svelte`
 
   $: isDone = 
     fromSlot || // If supplied from slot, this component cannot determine load status
@@ -66,7 +71,7 @@
         showDefaultPreview = !component;
       } else {
         component = lazyComponents[
-          `../../nodes/${name}/${name}.svelte`
+          `/src/nodes/${name}/${name}.svelte`
         ];
       }
     }
