@@ -1,32 +1,3 @@
-<script context="module" lang="ts">
-  import allMetadata from '$nodes/metadata';
-
-  export async function load ({ params, url }) {
-    const { 
-      node: name,
-    }: {
-      node: string,
-    } = params;
-
-    const fullscreen = url.searchParams.get('fullscreen') === 'true';
-
-    if(Object.keys(allMetadata.nodes).includes(name)) {
-      return {
-        props: {
-          name,
-          fullscreen,
-          metadata: allMetadata.nodes[name]
-        }
-      }
-    } else {
-      return {
-        status: 302,
-        redirect: '/'
-      }
-    }
-  }
-</script>
-
 <script lang="ts">
   import Node from "$components/node/Node.svelte";
   import DefaultWrapper from "$components/node/wrappers/DefaultWrapper.svelte";
@@ -35,9 +6,8 @@
   import { SITE_NAME } from '$constants';
   import DocumentWrapper from '$components/node/wrappers/DocumentWrapper.svelte';
 
-  export let name: NodeName;
-  export let metadata: NodeMetadata;
-  export let fullscreen: boolean;
+  export let data: { name: NodeName, metadata: NodeMetadata, fullscreen: boolean };
+  $: ({ name, metadata, fullscreen } = data);
 
   let isDone = false;
 

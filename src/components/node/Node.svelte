@@ -9,13 +9,11 @@
   import Error from './Error.svelte';
   import { NodeErrorBoundary } from "../error";
 
-  const lazyComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.svelte', { eager: false });
-  const lazyPreviewComponents: GlobComponentImport = import.meta.glob('$nodes/*/[^.]+.preview.svelte', { eager: false });
+  const lazyComponents = import.meta
+    .glob('$nodes/*/[^.]+.svelte', { eager: false }) as GlobComponentImport;
 
-  console.log({
-    lazyComponents,
-    lazyPreviewComponents
-  })
+  const lazyPreviewComponents = import.meta
+    .glob('$nodes/*/[^.]+.preview.svelte', { eager: false }) as GlobComponentImport;
 
   export let name: NodeName;
   export let mode: NodeMode;

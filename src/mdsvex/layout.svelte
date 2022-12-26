@@ -1,6 +1,6 @@
-<script context="module">
-	import p from './../components/common/ParagraphLarge.svelte';
-  import a from './../components/common/ExternalLink.svelte';
+<script lang="ts" context="module">
+  import p from '../components/common/ParagraphLarge.svelte';
+  import a from '../components/common/ExternalLink.svelte';
 
   export { p, a };
 </script>

@@ -45,7 +45,6 @@
       {#if i < (crumbs.length - 1)}
         <a
           href={crumb.path}
-          sveltekit:prefetch
         >
           <div class="link-text">
             { crumb.text === 'nodes' ? NODE_NAMES : crumb.text }

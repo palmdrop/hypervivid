@@ -1,36 +1,3 @@
-<script context="module" lang="ts">
-	import nodesMetadata from '$nodes/metadata';
-	import type { NodeName, Tag } from '$types/nodes';
-
-  export async function load ({ params }) {
-    const { tag }: { tag: Tag } = params;
-
-    const tags = nodesMetadata.tags ?? {};
-    if(!tags[tag]) return {
-      status: 302,
-      redirect: '/'
-    };
-
-    const nodeNames = filterSearchNodes(
-      nodesMetadata.nodes,
-      [{
-        settings: {
-          matchOn: [tag],
-        },
-        lookup: (node) => node.tags as unknown as Tag[]
-      }],
-      'any'
-    );
-
-    return {
-      props: {
-        tag,
-        nodeNames
-      }
-    }
-  }
-</script>
-
 <script lang="ts">
   import { useTitle } from '$utils/useTitle';
   import NodeList from '$components/list/NodeList.svelte';
@@ -38,11 +5,11 @@
   import { NODE_NAMES, SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
 	import tagsMetadata from '$tags/metadata';
-  import { filterSearchNodes } from '../../utils/filterSearch';
-    import PageFooter from '../../components/footer/page/PageFooter.svelte';
+  import PageFooter from '../../../components/footer/page/PageFooter.svelte';
+  import type { NodeName, Tag } from '../../../types/nodes';
 
-  export let tag: Tag;
-  export let nodeNames: NodeName[];
+  export let data: { tag: Tag, nodeNames: NodeName[] };
+  $: ({ tag, nodeNames } = data);
 
   let mainRef: HTMLElement;
   const useMainRef = (ref: HTMLElement) => {

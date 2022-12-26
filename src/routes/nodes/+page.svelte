@@ -1,21 +1,3 @@
-<script context="module" lang="ts">
-  export async function load({ url }) {
-    let searchPhrase = url.searchParams.get('search') ?? "";
-    let tags = (
-      url.searchParams.has('tags') 
-      ? url.searchParams.get('tags')!.split(',')
-      : []
-    ) as Tag[];
-
-    return {
-      props: {
-        searchPhrase,
-        tags
-      }
-    }
-  }
-</script>
-
 <script lang="ts">
 	import type { Tag } from '$types/nodes';
   import NodeList from "$components/list/NodeList.svelte";
@@ -32,10 +14,10 @@
   import PageFooter from '../../components/footer/page/PageFooter.svelte';
   import { updateUrlParameters } from '../../utils/useUrlParameters';
 
-  useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
+  export let data: { searchPhrase: string, tags: Tag[] };
+  $: ({ searchPhrase, tags } = data);
 
-  export let searchPhrase = "";
-  export let tags: Tag[] = [];
+  useTitle(`${NODE_NAMES} ~ ${SITE_NAME}`);
 
   const onSearchChange = (searchPhrase: string) => {
     updateUrlParameters({

@@ -1,6 +1,6 @@
 import { goto } from "$app/navigation";
 import { page } from "$app/stores";
-import { browser } from "$app/env";
+import { browser } from "$app/environment";
 
 type ParamSettings = {
   remove: true
@@ -22,8 +22,8 @@ export const updateUrlParameters = (params: Record<string, string | boolean | nu
 
       goto(newUrl.toString(), {
         replaceState: true,
-        noscroll: true,
-        keepfocus: true
+        noScroll: true,
+        keepFocus: true
       });
     }
   )();

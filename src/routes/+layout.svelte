@@ -13,8 +13,8 @@
   import { afterNavigate } from '$app/navigation';
 
   $: $loading = (
-    !!$navigating &&
-    !isExternalURL($navigating.to)
+    !!$navigating && !!$navigating.to &&
+    !isExternalURL($navigating.to.url)
   );
 
   let mounted = false;

@@ -2,8 +2,6 @@ import adapter from '@sveltejs/adapter-static';
 import sveltePreprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 
-import path from 'path';
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -12,7 +10,7 @@ const config = {
 		sveltePreprocess(),
 		mdsvex({
 			layout: {
-				_: './src/routes/__layout-markdown-default.svelte'
+				_: './src/mdsvex/layout.svelte'
 			},
 			extensions: [
 				'.svelte.md'

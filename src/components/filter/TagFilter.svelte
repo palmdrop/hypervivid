@@ -9,9 +9,21 @@
   export let tags: Tag[] = [];
   export let onChange: ((tags: Tag[]) => void) | undefined = undefined;
 
-  const handleSelect = (event: Event & { detail: { index: number, label: string, value: string}[] }) => {
+  const initialTags = tags;
+
+  const handleSelect = (event: Event & { detail: { value: string}[] }) => {
+    tags = (event.detail as { value: string }[]).map(pick => pick.value as Tag);
+
+    if(onChange) onChange(tags);
+  }
+
+  const handleClear = (event: Event & { detail?: { value: string }}) => {
     if(!event.detail) tags = [];
-    else tags = event.detail.map(pick => pick.value as Tag);
+    else {
+      tags = tags.filter(
+        tag => tag !== (event.detail as { value: string }).value
+      );
+    }
 
     if(onChange) onChange(tags);
   }
@@ -20,11 +32,12 @@
 <div class="tag-filter">
   <Select
     placeholder="Tag filters..." 
+    value={initialTags.length ? initialTags : null}
     items={allTags}
-    value={tags.length ? tags : null}
-    isMulti={true}
+    multiple={true}
     inputStyles="cursor: text;"
-    on:select={handleSelect}
+    on:change={handleSelect}
+    on:clear={handleClear}
   />
 </div>
 
@@ -34,61 +47,68 @@
     max-width: 100%;
 
     --height: 2.2em;
-    --inputColor: var(--cFg);
-    --inputFontSize: 1rem;
+    --input-color: var(--cFg);
+    --font-size: 1rem;
 
-    --placeholderOpacity: 0.6;
-    --placeholderColor: var(--cFg);
+    --placeholder-opacity: 0.6;
+    --placeholder-color: var(--cFg);
 
     --background: var(--cBg);
     --border: var(--borderPrimary);
-    --borderHoverColor: var(--cFg);
-    --borderFocusColor: var(--cFg);
-    --borderRadius: var(--borderRadius1);
-    --inputFontSize: 1rem;
+    --border-hover: var(--borderPrimary);
+    --border-focused: var(--borderPrimary);;
+    --border-radius: var(--borderRadius1);
+    --input-font-size: 1rem;
 
-    --listBorder: var(--borderPrimary);
-    --listBorderRadius: var(--borderRadius1);
-    --listBackground: var(--cBg);
-    --listShadow: 0px 2em 4em -2em var(--cFg);
+    --border: var(--borderPrimary);
+    --list-border: var(--borderPrimary);
+    --list-border-radius: var(--borderRadius1);
+    --list-background: var(--cBg);
+    --list-shadow: 0px 2em 4em -2em var(--cFg);
 
-    --itemHoverColor: var(--cFgInverted);
-    --itemHoverBG: var(--cBgInverted);
+    --item-hover-color: var(--cFgInverted);
+    --item-hover-bg: var(--cBgInverted);
 
-    --multiItemBorderRadius: var(--borderRadius1);
-    --multiItemBorder: var(--borderPrimary);
-    --multiItemBG: var(--cBg);
-    --multiItemActiveBG: var(--cBg);
-    --multiItemActiveColor: var(--cFg);
+    --multi-item-border-radius: 10px;
+    --multi-item-outline: var(--borderPrimary);
+    --multi-item-bg: var(--cBg);
+
+    --multi-item-padding: 0.0em 0.7em;
     
-    --multiClearFill: var(--cFg);
-    --multiClearBG: var(--cBg);
-    --multiClearHoverFill: var(--cFg);
-    --multiClearHoverBG: var(--cBg);
+    --multi-clear-fill: var(--cFg);
+    --multi-clear-bg: var(--cBg);
+    --multi-clear-hover-fill: var(--cFg);
+    --multi-clear-hover-bg: var(--cBg);
   }
 
   .tag-filter > input {
     cursor: text;
   }
 
-  .selectContainer > input {
+  .svelte-select > input {
     cursor: text;
   }
 
-  .multiSelectItem {
+  .svelte-select .focused,
+  .svelte-select .list-open {
+    border: var(--borderPrimary);
+  }
+
+  .multi-item {
     border: var(--borderPrimary);
     font-family: var(--fMono);
   }
 
-  .multiSelectItem_clear {
+  .svelte-select-list, 
+  .multi-item-clear, 
+  .clear-select, 
+  .list-item, 
+  .item,
+  .indicators {
     cursor: pointer;
   }
 
-  .listItem, .item {
-    cursor: unset;
-  }
-
-  .tag-filter .clearSelect {
+  .tag-filter .clear-select {
     cursor: pointer;
     transform: scale(0.8);
   }

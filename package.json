@@ -19,9 +19,9 @@
   },
   "devDependencies": {
     "@crownframework/svelte-error-boundary": "^1.0.3",
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/adapter-static": "^1.0.0-next.29",
-    "@sveltejs/kit": "^1.0.0-next.405",
+    "@sveltejs/adapter-auto": "^1.0.0",
+    "@sveltejs/adapter-static": "^1.0.0",
+    "@sveltejs/kit": "^1.0.0",
     "@types/dat.gui": "^0.7.7",
     "@types/lodash": "^4.14.183",
     "@types/lodash.throttle": "^4.1.7",
@@ -30,24 +30,24 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "chokidar-cli": "^3.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.2.1",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
     "lodash.pick": "^4.4.0",
     "mdsvex": "^0.10.6",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
     "rxjs": "^7.5.6",
     "svelte": "^3.44.0",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.10.1",
-    "svelte-select": "^4.4.7",
+    "svelte-check": "^3.0.1",
+    "svelte-preprocess": "^5.0.0",
+    "svelte-select": "^5.0.1",
     "three": "^0.139.2",
     "ts-dedent": "^2.2.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.3.1",
     "typescript": "~4.6.2",
-    "vite": "^3.2.5"
+    "vite": "^4.0.0"
   },
   "type": "module",
   "dependencies": {
@@ -60,6 +60,6 @@
     "three-kawase-blur": "github:ycw/three-kawase-blur"
   },
   "peerDependencies": {
-    "vite": "^3.2.5"
+    "vite": "^4.0.0"
   }
 }

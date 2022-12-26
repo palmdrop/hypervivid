@@ -1,24 +1,15 @@
-<script context="module" lang="ts">
-  export async function load ({ params }) {
-    const { rest } = params;
-    return {
-      props: { rest }
-    }
-  }
-</script>
-
 <script lang="ts">
   import Link from "$components/common/Link.svelte";
   import Paragraph from "$components/common/Paragraph.svelte";
 
-  export let rest: string;
+  export let data: { rest: string };
 </script>
 
 <div>
   <div>
-    {#each { length: 5 } as _, i }
+    {#each { length: 5 } as _, i (i) }
       <h2>
-        { rest }
+        { data.rest }
       </h2>
     {/each}
   </div>

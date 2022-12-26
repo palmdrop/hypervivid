@@ -99,7 +99,7 @@
 <ul class="node-list" on:scroll={handleScroll}>
   {#each includedNodeNames as name, i (`${name}-${i}`)}
     <li class:loading={i > loadedUpToIndex - batchCount && !allIncludedLoaded}>
-      <a href={`/nodes/${name}`} sveltekit:prefetch>
+      <a href={`/nodes/${name}`}>
         {#if itemLabels.length > i}
           <div class="item-label">
             <Paragraph big wide>{itemLabels[i]}</Paragraph>

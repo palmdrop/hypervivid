@@ -75,7 +75,6 @@
         >
           <a
             href={path}
-            sveltekit:prefetch
           >
             { text }
           </a>
@@ -85,10 +84,9 @@
   {/if}
   <div 
     class="rss"
-    href="/rss.xml"
   >
-    <a href="/rss.xml" sveltekit:reload>
-      <RssIcon size='1.2rem' />
+    <a href="/rss.xml" data-sveltekit-reload>
+      <RssIcon size="1.2rem" />
     </a>
   </div>
 </nav>

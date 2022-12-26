@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
   import TagList from '$components/list/TagList.svelte';
   import { useTitle } from '$utils/useTitle';
   import { metadata$ } from '$stores/metadata';
   import Paragraph from '$components/common/Paragraph.svelte';
   import { NODE_NAME, NODE_NAMES, SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
-    import PageFooter from '$components/footer/page/PageFooter.svelte';
+  import PageFooter from '$components/footer/page/PageFooter.svelte';
 
   const tags = Object.keys($metadata$.tags);
 
