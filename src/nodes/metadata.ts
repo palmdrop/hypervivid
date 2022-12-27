@@ -933,13 +933,13 @@ export default {
       },
       {
         "from": "city-pond",
-        "to": "places-and-things",
-        "kind": "tangent",
+        "to": "summer-static",
+        "kind": "next",
         "strength": 0.5
       },
       {
         "from": "city-pond",
-        "to": "summer-static",
+        "to": "winter-waft",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1696,20 +1696,20 @@ export default {
     "places-and-things": [
       {
         "from": "places-and-things",
-        "to": "city-pond",
+        "to": "fragfuse",
         "kind": "tangent",
         "strength": 0.5
       },
       {
         "from": "places-and-things",
         "to": "summer-static",
-        "kind": "tangent",
+        "kind": "previous",
         "strength": 0.5
       },
       {
         "from": "places-and-things",
-        "to": "fragfuse",
-        "kind": "tangent",
+        "to": "winter-waft",
+        "kind": "next",
         "strength": 0.5
       }
     ],
@@ -1717,18 +1717,24 @@ export default {
       {
         "from": "summer-static",
         "to": "places-and-things",
+        "kind": "next",
+        "strength": 0.5
+      },
+      {
+        "from": "summer-static",
+        "to": "digital-biophilia",
         "kind": "tangent",
         "strength": 0.5
       },
       {
         "from": "summer-static",
         "to": "city-pond",
-        "kind": "tangent",
+        "kind": "previous",
         "strength": 0.5
       },
       {
         "from": "summer-static",
-        "to": "digital-biophilia",
+        "to": "winter-waft",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1782,6 +1788,26 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
+    ],
+    "winter-waft": [
+      {
+        "from": "winter-waft",
+        "to": "summer-static",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "winter-waft",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "winter-waft",
+        "to": "places-and-things",
+        "kind": "previous",
+        "strength": 0.5
+      }
     ]
   },
   "tags": {
@@ -1817,17 +1843,17 @@ export default {
       "weight": 0.2702702702702703,
       "count": 10
     },
-    "geometry": {
+    "project": {
       "weight": 0.2702702702702703,
       "count": 10
     },
-    "project": {
-      "weight": 0.24324324324324326,
-      "count": 9
-    },
     "photography": {
-      "weight": 0.24324324324324326,
-      "count": 9
+      "weight": 0.2702702702702703,
+      "count": 10
+    },
+    "geometry": {
+      "weight": 0.2702702702702703,
+      "count": 10
     },
     "thoughts": {
       "weight": 0.21621621621621623,
@@ -1963,6 +1989,39 @@ export default {
     }
   },
   "nodes": {
+    "winter-waft": {
+      "tags": [
+        "photography",
+        "project"
+      ],
+      "links": [
+        {
+          "from": "winter-waft",
+          "to": "summer-static",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "winter-waft",
+          "to": "city-pond",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "winter-waft",
+          "to": "places-and-things",
+          "kind": "previous",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Tue, 27 Dec 2022 09:42:22 GMT",
+      "updatedAt": "2022-12-27T09:55:59.346Z",
+      "inline": false,
+      "asDocument": true,
+      "title": "Winter Waft",
+      "description": "Pictures from winter. Experimenting with (slightly) more aggressive editing and a dramatic flash.",
+      "image": "/nodes/winter-waft.preview.jpg"
+    },
     "living-hobbling-goo": {
       "tags": [
         "art",
@@ -2057,25 +2116,25 @@ export default {
       "links": [
         {
           "from": "places-and-things",
-          "to": "city-pond",
+          "to": "fragfuse",
           "kind": "tangent",
           "strength": 0.5
         },
         {
           "from": "places-and-things",
           "to": "summer-static",
-          "kind": "tangent",
+          "kind": "previous",
           "strength": 0.5
         },
         {
           "from": "places-and-things",
-          "to": "fragfuse",
-          "kind": "tangent",
+          "to": "winter-waft",
+          "kind": "next",
           "strength": 0.5
         }
       ],
       "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
-      "updatedAt": "2022-12-23T10:05:03.389Z",
+      "updatedAt": "2022-12-27T09:45:20.403Z",
       "inline": false,
       "title": "Places and things",
       "description": "Another series of photographs. Another slice of time, another tone. Just a collection.",
@@ -2548,13 +2607,7 @@ export default {
         {
           "from": "summer-static",
           "to": "places-and-things",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "summer-static",
-          "to": "city-pond",
-          "kind": "tangent",
+          "kind": "next",
           "strength": 0.5
         },
         {
@@ -2562,10 +2615,22 @@ export default {
           "to": "digital-biophilia",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "summer-static",
+          "to": "city-pond",
+          "kind": "previous",
+          "strength": 0.5
+        },
+        {
+          "from": "summer-static",
+          "to": "winter-waft",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 27 Aug 2022 17:33:51 GMT",
-      "updatedAt": "2022-12-23T10:05:03.393Z",
+      "updatedAt": "2022-12-27T09:45:51.179Z",
       "inline": false,
       "title": "Summer Static",
       "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
@@ -3289,13 +3354,13 @@ export default {
         },
         {
           "from": "city-pond",
-          "to": "places-and-things",
-          "kind": "tangent",
+          "to": "summer-static",
+          "kind": "next",
           "strength": 0.5
         },
         {
           "from": "city-pond",
-          "to": "summer-static",
+          "to": "winter-waft",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -4578,6 +4643,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "living-hobbling-goo",
-  "mostRecentlyUpdatedNode": "links"
+  "latestNode": "winter-waft",
+  "mostRecentlyUpdatedNode": "summer-static"
 } as const;

@@ -1,0 +1,20 @@
+{
+  "tags": [
+    "photography", "project"
+  ],
+  "links": [
+    "summer-static", "city-pond",
+    {
+      "to": "places-and-things",
+      "kind": "previous",
+      "strength": 0.5
+    }
+  ],
+  "createdAt": "Tue, 27 Dec 2022 09:42:22 GMT",
+  "updatedAt": "Tue, 27 Dec 2022 09:42:22 GMT",
+  "inline": false,
+  "asDocument": true,
+  "title": "Winter Waft",
+  "description": "Pictures from winter. Experimenting with (slightly) more aggressive editing and a dramatic flash.",
+  "image": ""
+}

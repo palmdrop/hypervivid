@@ -3,7 +3,12 @@
     "photography", "project"
   ],
   "links": [
-    "city-pond", "summer-static", "fragfuse"
+    "fragfuse",
+    {
+      "to": "summer-static",
+      "kind": "previous",
+      "strength": 0.5
+    }
   ],
   "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
   "updatedAt": "Mon, 31 Oct 2022 18:03:25 GMT",
