@@ -50,20 +50,23 @@
 
   input {
     width: 20em;
-    max-width: 100%;
+    max-width: calc(100vw - 0.8em);
     margin: 0;
-    padding: 0em 0.7em;
+    padding: 0em 16px;
 
-    height: 2.2em;
+    height: 2.42em;
+    min-height: 40px;
   }
 
   button {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 47%;
+
+    font-size: 1.4rem;
 
     height: 70%;
-    width: 2em;
+    width: 1.55em;
     background: linear-gradient(
       -90deg, 
       var(--cBg) 0%, 
@@ -74,10 +77,15 @@
     transform: translate(-2px, -50%);
 
     transition: 0.3s;
+    visibility: hidden;
   }
 
   button:disabled,
   button[disabled] {
     opacity: 0.3;
+  }
+
+  button.active {
+    visibility: visible;
   }
 </style>
