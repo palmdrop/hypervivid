@@ -336,6 +336,12 @@
 <description>Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.</description>
 <pubDate>Sun, 14 Nov 2021 09:49:08 GMT</pubDate>
 </item><item>
+<guid>https://palmdrop.site/nodes/waft</guid>
+<title>Waft</title>
+<link>https://palmdrop.site/nodes/waft</link>
+<description>Pictures from winter. Experimenting with (slightly) more aggressive editing and a dramatic flash.</description>
+<pubDate>Tue, 27 Dec 2022 09:42:22 GMT</pubDate>
+</item><item>
 <guid>https://palmdrop.site/nodes/weave</guid>
 <title>Weave</title>
 <link>https://palmdrop.site/nodes/weave</link>
@@ -347,12 +353,6 @@
 <link>https://palmdrop.site/nodes/webfuse</link>
 <description>Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?</description>
 <pubDate>Sat, 18 Jun 2022 12:07:12 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/winter-waft</guid>
-<title>Winter Waft</title>
-<link>https://palmdrop.site/nodes/winter-waft</link>
-<description>Pictures from winter. Experimenting with (slightly) more aggressive editing and a dramatic flash.</description>
-<pubDate>Tue, 27 Dec 2022 09:42:22 GMT</pubDate>
 </item>
 </channel>
 </rss>
