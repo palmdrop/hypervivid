@@ -44,17 +44,20 @@
   style={overrideStyles}
 >
   {#if (typeof focusedImageIndex === 'number') && focusedImage}
-    <img class={`focused-image ${theme}`}
-      src={focusedImage}
-      alt={`${name} - ${focusedImageIndex + 1 }.`}
-      style={overrideStyles}
+    <button class="focused-image-container"
       on:click={(e) => {
         e.currentTarget?.blur?.();
         focusedImageIndex = undefined; 
       }}
       on:mousedown|preventDefault={() => {}}
       transition:blur|local
-    />
+    >
+      <img class={`focused-image ${theme}`}
+        src={focusedImage}
+        alt={`${name} - ${focusedImageIndex + 1 }.`}
+        style={overrideStyles}
+      />
+    </button>
   {/if}
   <div class="container">
     <div class="description">
@@ -67,15 +70,17 @@
     </div>
     <ul>
       {#each imageUrls as url, i (url)}
-        <div class="image-container">
+        <button 
+          class="image-container"
+          on:click={() => {
+            focusedImageIndex = i;
+          }}
+        >
           <img
             src={url} 
             alt=""
-            on:click={() => {
-              focusedImageIndex = i;
-            }}
           />
-        </div>
+          </button>
       {/each}
     </ul>
   </div>
@@ -128,8 +133,8 @@
     text-transform: lowercase;
     padding-left: 0.8rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: left;
+    padding-bottom: 2.5rem;
+    text-align: center;
     border-bottom: var(--border);
   }
 
@@ -162,6 +167,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: unset;
   }
 
   .image-container:last-child {
@@ -195,21 +202,23 @@
     }
   }
 
-  .focused-image {
+  .focused-image-container {
     position: fixed;
     width: 100vw;
     max-width: unset;
     height: 100vh;
     inset: 0;
 
-    border-radius: 0px;
-
-    object-fit: contain;
-
     z-index: 1;
 
     cursor: pointer;
     box-shadow: unset;
+  }
+
+  .focused-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
   }
 </style>
   
