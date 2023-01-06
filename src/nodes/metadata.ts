@@ -762,6 +762,12 @@ export default {
         "to": "digital-biophilia",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "mappings",
+        "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "links": [
@@ -1096,6 +1102,12 @@ export default {
         "to": "less-flat",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "cringe-core",
+        "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "less-flat": [
@@ -1120,6 +1132,12 @@ export default {
       {
         "from": "less-flat",
         "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "raw-making",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1739,6 +1757,26 @@ export default {
         "strength": 0.5
       }
     ],
+    "raw-making": [
+      {
+        "from": "raw-making",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
+        "to": "cringe-core",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "retro-core": [
       {
         "from": "retro-core",
@@ -1813,182 +1851,221 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 37
+      "count": 38
     },
     "generative": {
-      "weight": 0.9459459459459459,
+      "weight": 0.9210526315789473,
       "count": 35
     },
     "live": {
-      "weight": 0.7297297297297297,
+      "weight": 0.7105263157894737,
       "count": 27
     },
     "domain-warping": {
-      "weight": 0.5135135135135135,
+      "weight": 0.5,
       "count": 19
     },
     "organic": {
-      "weight": 0.3783783783783784,
+      "weight": 0.3684210526315789,
       "count": 14
     },
     "noise": {
-      "weight": 0.35135135135135137,
+      "weight": 0.34210526315789475,
       "count": 13
     },
     "biophilia": {
-      "weight": 0.32432432432432434,
+      "weight": 0.3157894736842105,
       "count": 12
     },
     "substrate": {
-      "weight": 0.2702702702702703,
+      "weight": 0.2631578947368421,
       "count": 10
     },
     "project": {
-      "weight": 0.2702702702702703,
+      "weight": 0.2631578947368421,
       "count": 10
     },
     "photography": {
-      "weight": 0.2702702702702703,
+      "weight": 0.2631578947368421,
       "count": 10
     },
     "geometry": {
-      "weight": 0.2702702702702703,
+      "weight": 0.2631578947368421,
       "count": 10
     },
     "thoughts": {
-      "weight": 0.21621621621621623,
+      "weight": 0.23684210526315788,
+      "count": 9
+    },
+    "fragments": {
+      "weight": 0.21052631578947367,
       "count": 8
     },
     "feedback": {
-      "weight": 0.1891891891891892,
-      "count": 7
-    },
-    "fragments": {
-      "weight": 0.1891891891891892,
+      "weight": 0.18421052631578946,
       "count": 7
     },
     "interactive": {
-      "weight": 0.1891891891891892,
+      "weight": 0.18421052631578946,
       "count": 7
     },
     "internet": {
-      "weight": 0.16216216216216217,
+      "weight": 0.15789473684210525,
       "count": 6
     },
     "css": {
-      "weight": 0.16216216216216217,
+      "weight": 0.15789473684210525,
       "count": 6
     },
     "webart": {
-      "weight": 0.13513513513513514,
+      "weight": 0.13157894736842105,
       "count": 5
     },
     "info": {
-      "weight": 0.10810810810810811,
+      "weight": 0.10526315789473684,
       "count": 4
     },
     "mappings": {
-      "weight": 0.10810810810810811,
+      "weight": 0.10526315789473684,
       "count": 4
     },
     "chrome": {
-      "weight": 0.10810810810810811,
+      "weight": 0.10526315789473684,
       "count": 4
     },
     "writing": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "glitch": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "hyper": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "fuse": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
+      "count": 3
+    },
+    "exploration": {
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "memes": {
-      "weight": 0.08108108108108109,
+      "weight": 0.07894736842105263,
       "count": 3
     },
     "instancing": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "mind": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "words": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "utility": {
-      "weight": 0.05405405405405406,
-      "count": 2
-    },
-    "exploration": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "dithering": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "external": {
-      "weight": 0.05405405405405406,
+      "weight": 0.05263157894736842,
       "count": 2
     },
     "octree": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
       "count": 1
     },
     "contact": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
       "count": 1
     },
     "communication": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
       "count": 1
     },
     "particles": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
+      "count": 1
+    },
+    "cringe": {
+      "weight": 0.02631578947368421,
       "count": 1
     },
     "texture": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
       "count": 1
     },
     "depth": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.02702702702702703,
+      "weight": 0.02631578947368421,
       "count": 1
     }
   },
   "nodes": {
+    "raw-making": {
+      "tags": [
+        "art",
+        "thoughts",
+        "fragments",
+        "exploration",
+        "cringe"
+      ],
+      "links": [
+        {
+          "from": "raw-making",
+          "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "raw-making",
+          "to": "mappings",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "raw-making",
+          "to": "cringe-core",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Fri, 06 Jan 2023 09:30:05 GMT",
+      "updatedAt": "2023-01-06T12:38:28.150Z",
+      "inline": true,
+      "title": "Raw Making",
+      "description": "Thoughts about hurry sickness, productivity and raw creation.",
+      "image": ""
+    },
     "waft": {
       "tags": [
         "photography",
@@ -2183,6 +2260,12 @@ export default {
         {
           "from": "mappings",
           "to": "digital-biophilia",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "mappings",
+          "to": "raw-making",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2500,6 +2583,12 @@ export default {
         {
           "from": "cringe-core",
           "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cringe-core",
+          "to": "raw-making",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -3403,13 +3492,19 @@ export default {
           "to": "mappings",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "less-flat",
+          "to": "raw-making",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
-      "updatedAt": "2022-12-05T17:43:13.660Z",
+      "updatedAt": "2023-01-06T12:38:11.506Z",
       "inline": true,
       "title": "Less Flat",
-      "description": "",
+      "description": "Thoughts about artistic creation as self-exploration.",
       "image": ""
     },
     "intro": {
@@ -4643,6 +4738,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "waft",
-  "mostRecentlyUpdatedNode": "summer-static"
+  "latestNode": "raw-making",
+  "mostRecentlyUpdatedNode": "less-flat"
 } as const;

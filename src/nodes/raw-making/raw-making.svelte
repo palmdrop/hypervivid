@@ -3,7 +3,7 @@
   import Fragment from '$components/node/templates/Fragment.svelte';
   import Document from './document.svelte.md';
 
-  const { metadata, mode } = getNodeContext('less-flat');
+  const { metadata, mode } = getNodeContext('raw-making');
 </script>
 
 <Fragment
