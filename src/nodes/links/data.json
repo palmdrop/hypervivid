@@ -408,5 +408,10 @@
     "text": "Literature Clock",
     "url": "https://literature-clock.jenevoldsen.com/",
     "description": "A site that shows a short quote that contains the current time. Updates every minute."
+  },
+  {
+    "text": "sandbox episodes",
+    "url": "https://www.youtube.com/playlist?list=PL6962C5FC89D569F9",
+    "description": "An animated series purely based on digital glitches and generative processes. An anti-narrative playlist."
   }
 ]
