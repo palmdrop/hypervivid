@@ -1,4 +1,4 @@
-export const CORS_HEADERS = {
+const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
   // 'Access-Control-Allow-Origin': 'https://palmdrop.github.io',
   'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
@@ -104,16 +104,16 @@ const processData = (data) => {
 }
 
 export const onRequestGet = async ( context ) => {
-  const {
-    // request,
-    env,
-  } = context;
-  
-  const downloadLink = await env.ARTIFACTS.get( 'DOWNLOAD_LINK' );
-
-  let result;
-
   try {
+    const {
+      // request,
+      env,
+    } = context;
+    
+    const downloadLink = await env.ARTIFACTS.get( 'DOWNLOAD_LINK' );
+
+    let result;
+
     result = await fetch(downloadLink, {
       method: 'GET',
       headers: {
@@ -136,13 +136,10 @@ export const onRequestGet = async ( context ) => {
       throw new Error();
     }
   } catch ( error ) {
-    result = error;
-
     return new Response(
-      undefined,
+      JSON.stringify(error),
       { 
-        status: 500,
-        error: JSON.stringify(error),
+        status: 200,
         headers: CORS_HEADERS
       }
     )
