@@ -5,6 +5,58 @@ export const CORS_HEADERS = {
   'Access-Control-Max-Age': '86400',
 };
 
+const times = {
+  'milliseconds': 1,
+  'seconds': 1000,
+  'minutes': 1000 * 60,
+  'hours': 1000 * 60 * 60,
+  'days': 1000 * 60 * 60 * 24
+} 
+
+const dateOrStringToTime = date => {
+  return typeof date === 'string'
+    ? Date.parse(date)
+    : date.valueOf();
+}
+
+// TODO: this is not reliable, does not take timezone or daylight savings into account!?
+const getTimeDifference = (date1, date2, time) => {
+  const differenceInMs = dateOrStringToTime(date2) - dateOrStringToTime(date1);
+  const dividerInMs = times[time];
+  return Math.round(differenceInMs / dividerInMs);
+}
+
+const processMatch = match => {
+  const [
+    ,
+    datetime,
+    year,
+    month,
+    day,
+    hour,
+    minute,
+    content,
+    note
+  ] = match;
+
+  const formattedDate = datetime.replace('T', ' ');
+
+  return {
+    metadata: {
+      datetime,
+      formattedDate,
+      year,
+      month,
+      day,
+      hour,
+      minute
+    },
+    content,
+    note,
+    dayIndex: -1
+  };
+}
+
 const processData = (data) => {
   // NOTE: matchall is slow, cache result and only redo it if document is stale!
   // TODO: implement pagination! do not process all data unless needed. Cache pages
@@ -50,38 +102,6 @@ const processData = (data) => {
     numberOfDays
   }
 }
-
-const processMatch = match => {
-  const [
-    ,
-    datetime,
-    year,
-    month,
-    day,
-    hour,
-    minute,
-    content,
-    note
-  ] = match;
-
-  const formattedDate = datetime.replace('T', ' ');
-
-  return {
-    metadata: {
-      datetime,
-      formattedDate,
-      year,
-      month,
-      day,
-      hour,
-      minute
-    },
-    content,
-    note,
-    dayIndex: -1
-  };
-}
-
 
 export const onRequestGet = async ( context ) => {
   const {
