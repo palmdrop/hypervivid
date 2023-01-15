@@ -3,7 +3,9 @@ const CORS_HEADERS = {
   // 'Access-Control-Allow-Origin': 'https://palmdrop.github.io',
   'Access-Control-Allow-Methods': 'GET,HEAD,POST,OPTIONS',
   'Access-Control-Max-Age': '86400',
-};
+}; 
+
+const entryParseRegex = /(([\d]{4})-([\d]{2})-([\d]{2})T([\d]{2}):([\d]{2}))([^\[]*)\[([^\]]*)\]/g;
 
 const times = {
   'milliseconds': 1,
