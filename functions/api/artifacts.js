@@ -84,19 +84,12 @@ const processData = (data) => {
     firstDate, lastDate, 'days'
   );
 
-  entries.forEach((entry, i) => {
+  entries.forEach(entry => {
     const dayIndex = getTimeDifference(
       entry.metadata.datetime, lastDate, 'days'
     );
 
     entry.dayIndex = dayIndex;
-    const day = timeline[dayIndex];
-    day.count++;
-    day.entryIndices.push(i);
-
-    if(day.datetime === '') {
-      day.datetime = entry.metadata.datetime.split('T')[0];
-    }
   });
 
   return {
