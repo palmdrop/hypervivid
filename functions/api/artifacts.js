@@ -133,11 +133,11 @@ export const onRequestGet = async ( context ) => {
         }
       );
     } else {
-      throw new Error();
+      throw new Error('Could not download file');
     }
   } catch ( error ) {
     return new Response(
-      JSON.stringify(error),
+      JSON.stringify(error.message),
       { 
         status: 200,
         headers: CORS_HEADERS
