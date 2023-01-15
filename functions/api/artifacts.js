@@ -109,6 +109,10 @@ export const onRequestGet = async ( context ) => {
 
     let result;
 
+    // TODO: Fetch using actual dropbox API
+    // TODO: Implement caching
+    // TODO: Implement pagination
+
     result = await fetch(downloadLink, {
       method: 'GET',
       headers: {
@@ -132,9 +136,9 @@ export const onRequestGet = async ( context ) => {
     }
   } catch ( error ) {
     return new Response(
-      JSON.stringify(error.message),
+      undefined,
       { 
-        status: 200,
+        status: 500,
         headers: CORS_HEADERS
       }
     )
