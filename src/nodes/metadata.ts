@@ -724,6 +724,12 @@ export default {
         "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "branches-and-connections",
+        "to": "journal-artifacts",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "mappings": [
@@ -1120,6 +1126,12 @@ export default {
       {
         "from": "less-flat",
         "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "journal-artifacts",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1564,6 +1576,52 @@ export default {
         "strength": 0.5
       }
     ],
+    "journal-artifacts": [
+      {
+        "from": "journal-artifacts",
+        "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "journal-artifacts",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "journal-artifacts",
+        "to": "branches-and-connections",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "raw-making": [
+      {
+        "from": "raw-making",
+        "to": "journal-artifacts",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
+        "to": "cringe-core",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "latest": [],
     "rehash-transform": [
       {
@@ -1757,26 +1815,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "raw-making": [
-      {
-        "from": "raw-making",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "cringe-core",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "retro-core": [
       {
         "from": "retro-core",
@@ -1851,186 +1889,222 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 38
+      "count": 39
     },
     "generative": {
-      "weight": 0.9210526315789473,
-      "count": 35
+      "weight": 0.9230769230769231,
+      "count": 36
     },
     "live": {
-      "weight": 0.7105263157894737,
+      "weight": 0.6923076923076923,
       "count": 27
     },
     "domain-warping": {
-      "weight": 0.5,
+      "weight": 0.48717948717948717,
       "count": 19
     },
     "organic": {
-      "weight": 0.3684210526315789,
+      "weight": 0.358974358974359,
       "count": 14
     },
     "noise": {
-      "weight": 0.34210526315789475,
+      "weight": 0.3333333333333333,
       "count": 13
     },
     "biophilia": {
-      "weight": 0.3157894736842105,
+      "weight": 0.3076923076923077,
       "count": 12
     },
-    "substrate": {
-      "weight": 0.2631578947368421,
+    "project": {
+      "weight": 0.28205128205128205,
+      "count": 11
+    },
+    "thoughts": {
+      "weight": 0.2564102564102564,
       "count": 10
     },
-    "project": {
-      "weight": 0.2631578947368421,
+    "substrate": {
+      "weight": 0.2564102564102564,
       "count": 10
     },
     "photography": {
-      "weight": 0.2631578947368421,
+      "weight": 0.2564102564102564,
       "count": 10
     },
     "geometry": {
-      "weight": 0.2631578947368421,
+      "weight": 0.2564102564102564,
       "count": 10
     },
-    "thoughts": {
-      "weight": 0.23684210526315788,
-      "count": 9
-    },
-    "fragments": {
-      "weight": 0.21052631578947367,
+    "feedback": {
+      "weight": 0.20512820512820512,
       "count": 8
     },
-    "feedback": {
-      "weight": 0.18421052631578946,
-      "count": 7
+    "fragments": {
+      "weight": 0.20512820512820512,
+      "count": 8
     },
     "interactive": {
-      "weight": 0.18421052631578946,
+      "weight": 0.1794871794871795,
+      "count": 7
+    },
+    "css": {
+      "weight": 0.1794871794871795,
       "count": 7
     },
     "internet": {
-      "weight": 0.15789473684210525,
-      "count": 6
-    },
-    "css": {
-      "weight": 0.15789473684210525,
+      "weight": 0.15384615384615385,
       "count": 6
     },
     "webart": {
-      "weight": 0.13157894736842105,
+      "weight": 0.1282051282051282,
       "count": 5
     },
     "info": {
-      "weight": 0.10526315789473684,
+      "weight": 0.10256410256410256,
       "count": 4
     },
     "mappings": {
-      "weight": 0.10526315789473684,
+      "weight": 0.10256410256410256,
       "count": 4
     },
     "chrome": {
-      "weight": 0.10526315789473684,
+      "weight": 0.10256410256410256,
       "count": 4
     },
     "writing": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "glitch": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "hyper": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "fuse": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "exploration": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "memes": {
-      "weight": 0.07894736842105263,
+      "weight": 0.07692307692307693,
       "count": 3
     },
     "instancing": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "mind": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "words": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "utility": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "dithering": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "external": {
-      "weight": 0.05263157894736842,
+      "weight": 0.05128205128205128,
       "count": 2
     },
     "octree": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "contact": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "communication": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "particles": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "cringe": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "texture": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "depth": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.02631578947368421,
+      "weight": 0.02564102564102564,
       "count": 1
     }
   },
   "nodes": {
+    "journal-artifacts": {
+      "tags": [
+        "art",
+        "generative",
+        "project",
+        "thoughts",
+        "feedback",
+        "css"
+      ],
+      "links": [
+        {
+          "from": "journal-artifacts",
+          "to": "raw-making",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "journal-artifacts",
+          "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "journal-artifacts",
+          "to": "branches-and-connections",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
+      "updatedAt": "2023-01-22T10:48:09.804Z",
+      "inline": false,
+      "title": "Journal Artifacts",
+      "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
+      "image": "/nodes/journal-artifacts.preview.png"
+    },
     "raw-making": {
       "tags": [
         "art",
@@ -2040,6 +2114,12 @@ export default {
         "cringe"
       ],
       "links": [
+        {
+          "from": "raw-making",
+          "to": "journal-artifacts",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "raw-making",
           "to": "less-flat",
@@ -2060,7 +2140,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 06 Jan 2023 09:30:05 GMT",
-      "updatedAt": "2023-01-06T12:38:28.150Z",
+      "updatedAt": "2023-01-06T12:50:05.101Z",
       "inline": true,
       "title": "Raw Making",
       "description": "Thoughts about hurry sickness, productivity and raw creation.",
@@ -2068,8 +2148,8 @@ export default {
     },
     "waft": {
       "tags": [
-        "photography",
-        "project"
+        "project",
+        "photography"
       ],
       "links": [
         {
@@ -2176,6 +2256,12 @@ export default {
           "to": "manifesto",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "branches-and-connections",
+          "to": "journal-artifacts",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Tue, 22 Nov 2022 15:40:27 GMT",
@@ -2187,8 +2273,8 @@ export default {
     },
     "places-and-things": {
       "tags": [
-        "photography",
-        "project"
+        "project",
+        "photography"
       ],
       "links": [
         {
@@ -2689,8 +2775,8 @@ export default {
     "summer-static": {
       "tags": [
         "biophilia",
-        "photography",
-        "project"
+        "project",
+        "photography"
       ],
       "links": [
         {
@@ -2982,8 +3068,8 @@ export default {
     },
     "substrates": {
       "tags": [
-        "substrate",
         "project",
+        "substrate",
         "words",
         "external"
       ],
@@ -3431,8 +3517,8 @@ export default {
       "tags": [
         "organic",
         "biophilia",
-        "photography",
-        "project"
+        "project",
+        "photography"
       ],
       "links": [
         {
@@ -3478,6 +3564,12 @@ export default {
         {
           "from": "less-flat",
           "to": "digital-gardening",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "less-flat",
+          "to": "journal-artifacts",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3780,8 +3872,8 @@ export default {
     "fragfuse": {
       "tags": [
         "art",
-        "photography",
         "project",
+        "photography",
         "hyper",
         "fuse"
       ],
@@ -3851,7 +3943,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-01-03T19:23:24.359Z",
+      "updatedAt": "2023-01-10T16:26:46.214Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4738,6 +4830,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "raw-making",
-  "mostRecentlyUpdatedNode": "less-flat"
+  "latestNode": "journal-artifacts",
+  "mostRecentlyUpdatedNode": "links"
 } as const;
