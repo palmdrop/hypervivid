@@ -4,16 +4,17 @@
   import { getNodeContext } from "$utils/useNodeContext";
   export let name: NodeName;
   export let fullsizeImage = false;
+  export let showImageFromMetadata = true;
 
   const { metadata } = getNodeContext(name);
 </script>
 
 <div class="wrapper">
   <div class="post">
-    {#if metadata.image }
+    {#if metadata.image && showImageFromMetadata }
       <img 
         src={metadata.image} 
-        alt={""}
+        alt={`${name} header image`}
         class:fullsize={fullsizeImage}
       />
     {/if}
@@ -48,6 +49,10 @@
   img.fullsize {
     max-height: unset;
     height: unset;
+  }
+
+  h1 {
+    padding-bottom: 0.4em;
   }
 </style>
 

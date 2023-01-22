@@ -4,6 +4,7 @@
   export let links: Link[];
 
   export let formatLink: (link: Link) => string 
+    // = (link: Link) => `${ link.to } - "${ link.kind }"`;
     = (link: Link) => `${ link.to } - "${ link.kind }"`;
   
   $: formattedLinks = links.map(link => formatLink(link));
@@ -30,7 +31,9 @@
 <style>
   div {
     display: flex;
-    justify-content: center;
+
+    padding: 0.5em 0em;
+    width: 100%;
   }
 
   li {

@@ -97,11 +97,11 @@
         </Cell>
         
         <Cell
-          title="LINKS"
+          title="NODE LINKS"
         >
           <LinkList 
             links={links}
-            formatLink={link => `${link.to} (${link.kind})`}
+            formatLink={link => `${link.to}`}
           >
             <Paragraph center faded wide>
               This { NODE_NAME } has no links...
@@ -133,8 +133,9 @@
         >
           <Paragraph style="
             text-align: left; 
+            padding-top: 0.5em;
           ">
-            { description }
+            { description || '( no description )' }
           </Paragraph>
         </Cell>
       </div>

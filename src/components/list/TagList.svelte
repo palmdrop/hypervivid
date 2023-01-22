@@ -5,7 +5,6 @@
   export let orientation: 'vertical' | 'horizontal'
   export let stretch = false;
   export let showCount = false;
-  export let minOpacity = 0.2;
 
   $: weightedTags = tags
     .map(tag => ({
@@ -18,16 +17,18 @@
 
 {#if tags.length}
   <ul class={orientation}>
-    {#each weightedTags as {tag, weight, count} }
+    {#each weightedTags as {tag, count} }
       <li class:stretch>
         <a 
           href={`/tags/${tag}`}
-          style={`opacity: ${Math.max(weight, minOpacity)}`}
         >
           { tag } {#if showCount } ({count}) {/if}
         </a>
       </li>
     {/each}
+    { #if stretch }
+      <li class="filler" />
+    { /if }
   </ul>
 {:else}
   <slot />
@@ -68,13 +69,15 @@
 
     font-family: var(--fMono);
 
-    color: var(--cFgInverted);
-    background-color: var(--cBgInverted);
+    color: var(--cFg);
+    background-color: var(--cBg);
 
     padding: 0.4em 0.5em;
     margin: var(--margin);
     border-radius: var(--borderRadius1);
     border: var(--borderPrimary);
+
+    font-size: 0.9rem;
   }
 
   a:last-child {
@@ -88,9 +91,13 @@
   }
 
   a:hover {
-    color: var(--cFg);
-    background-color: var(--cBg);
-
+    color: var(--cFgInverted);
+    background-color: var(--cBgInverted);
     text-decoration: none;
+  }
+
+  .filler {
+    height: 0px;
+    flex-grow: 100;
   }
 </style>
