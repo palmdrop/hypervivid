@@ -43,6 +43,7 @@
       Menu
     </button>
     {#if expanded}
+      <!-- svelte-ignore a11y-click-events-have-key-events -->
       <div 
         class='click-outside'
         on:click={toggleExpanded}
@@ -201,7 +202,6 @@
 
   .clickable:hover::before {
     background-color: var(--cBgInverted);
-    box-shadow: var(--pillShadow);
   }
 
   @media ( min-width: 750px )  {
