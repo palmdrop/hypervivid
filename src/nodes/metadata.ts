@@ -637,6 +637,12 @@ export default {
       },
       {
         "from": "substrates",
+        "to": "substrate-catalogue",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
         "to": "alien-patterns",
         "kind": "tangent",
         "strength": 0.5
@@ -1679,6 +1685,12 @@ export default {
         "to": "fragfuse",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "substrate-catalogue",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "remnant-mappings": [
@@ -1857,6 +1869,28 @@ export default {
         "strength": 0.5
       }
     ],
+    "substrate-catalogue": [
+      {
+        "from": "substrate-catalogue",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate-catalogue",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "artifacts": [
+      {
+        "from": "artifacts",
+        "to": "substrate-catalogue",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "feedback": [
       {
         "from": "feedback",
@@ -1889,186 +1923,215 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 39
+      "count": 40
     },
     "generative": {
-      "weight": 0.9230769230769231,
-      "count": 36
+      "weight": 0.925,
+      "count": 37
     },
     "live": {
-      "weight": 0.6923076923076923,
+      "weight": 0.675,
       "count": 27
     },
     "domain-warping": {
-      "weight": 0.48717948717948717,
+      "weight": 0.475,
       "count": 19
     },
     "organic": {
-      "weight": 0.358974358974359,
+      "weight": 0.35,
       "count": 14
     },
     "noise": {
-      "weight": 0.3333333333333333,
+      "weight": 0.325,
       "count": 13
     },
-    "biophilia": {
-      "weight": 0.3076923076923077,
+    "project": {
+      "weight": 0.3,
       "count": 12
     },
-    "project": {
-      "weight": 0.28205128205128205,
+    "biophilia": {
+      "weight": 0.3,
+      "count": 12
+    },
+    "substrate": {
+      "weight": 0.275,
       "count": 11
     },
     "thoughts": {
-      "weight": 0.2564102564102564,
-      "count": 10
-    },
-    "substrate": {
-      "weight": 0.2564102564102564,
+      "weight": 0.25,
       "count": 10
     },
     "photography": {
-      "weight": 0.2564102564102564,
+      "weight": 0.25,
       "count": 10
     },
     "geometry": {
-      "weight": 0.2564102564102564,
+      "weight": 0.25,
       "count": 10
     },
     "feedback": {
-      "weight": 0.20512820512820512,
+      "weight": 0.2,
       "count": 8
     },
     "fragments": {
-      "weight": 0.20512820512820512,
+      "weight": 0.2,
       "count": 8
     },
     "interactive": {
-      "weight": 0.1794871794871795,
+      "weight": 0.175,
       "count": 7
     },
     "css": {
-      "weight": 0.1794871794871795,
+      "weight": 0.175,
       "count": 7
     },
     "internet": {
-      "weight": 0.15384615384615385,
+      "weight": 0.15,
       "count": 6
     },
     "webart": {
-      "weight": 0.1282051282051282,
+      "weight": 0.125,
       "count": 5
     },
     "info": {
-      "weight": 0.10256410256410256,
+      "weight": 0.1,
       "count": 4
     },
     "mappings": {
-      "weight": 0.10256410256410256,
+      "weight": 0.1,
       "count": 4
     },
     "chrome": {
-      "weight": 0.10256410256410256,
+      "weight": 0.1,
       "count": 4
     },
     "writing": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "glitch": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "hyper": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "fuse": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
+      "count": 3
+    },
+    "words": {
+      "weight": 0.075,
       "count": 3
     },
     "exploration": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "memes": {
-      "weight": 0.07692307692307693,
+      "weight": 0.075,
       "count": 3
     },
     "instancing": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "mind": {
-      "weight": 0.05128205128205128,
-      "count": 2
-    },
-    "words": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "utility": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "dithering": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "external": {
-      "weight": 0.05128205128205128,
+      "weight": 0.05,
       "count": 2
     },
     "octree": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "contact": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "communication": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "particles": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "cringe": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "texture": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "depth": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.02564102564102564,
+      "weight": 0.025,
       "count": 1
     }
   },
   "nodes": {
+    "substrate-catalogue": {
+      "tags": [
+        "art",
+        "generative",
+        "project",
+        "substrate",
+        "words"
+      ],
+      "links": [
+        {
+          "from": "substrate-catalogue",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrate-catalogue",
+          "to": "living-hobbling-goo",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sun, 05 Feb 2023 14:40:22 GMT",
+      "updatedAt": "2023-02-05T13:56:17.202Z",
+      "inline": false,
+      "title": "Substrate Catalogue",
+      "description": "A catalogue of substrate shaders with stream-of-consciousness descriptions.",
+      "image": "/nodes/substrate-catalogue.preview.jpg"
+    },
     "journal-artifacts": {
       "tags": [
         "art",
@@ -2099,7 +2162,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2023-01-22T10:48:09.804Z",
+      "updatedAt": "2023-02-05T13:32:17.716Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -2219,6 +2282,12 @@ export default {
         {
           "from": "living-hobbling-goo",
           "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "living-hobbling-goo",
+          "to": "substrate-catalogue",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2774,8 +2843,8 @@ export default {
     },
     "summer-static": {
       "tags": [
-        "biophilia",
         "project",
+        "biophilia",
         "photography"
       ],
       "links": [
@@ -3107,6 +3176,12 @@ export default {
         {
           "from": "substrates",
           "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "substrate-catalogue",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3516,8 +3591,8 @@ export default {
     "city-pond": {
       "tags": [
         "organic",
-        "biophilia",
         "project",
+        "biophilia",
         "photography"
       ],
       "links": [
@@ -3943,7 +4018,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-01-10T16:26:46.214Z",
+      "updatedAt": "2023-01-27T17:38:54.632Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4050,8 +4125,8 @@ export default {
         "art",
         "photography",
         "css",
-        "hyper",
-        "words"
+        "words",
+        "hyper"
       ],
       "links": [
         {
@@ -4830,6 +4905,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "journal-artifacts",
-  "mostRecentlyUpdatedNode": "links"
+  "latestNode": "substrate-catalogue",
+  "mostRecentlyUpdatedNode": "journal-artifacts"
 } as const;
