@@ -1,4 +1,3 @@
-
 <script lang="ts">
 	import type { EncodedProgram } from './../../modules/substrates/src/stores/programStore';
 	import ProgramRenderer from './../../modules/substrates/src/components/substrate/ProgramRenderer.svelte';
@@ -34,7 +33,7 @@
   ] as EncodedProgram[];
 </script>
 
-<main>
+<div class="node">
   <div class="wrapper">
     <div class="text">
       <p>
@@ -78,10 +77,10 @@
       { /each }
     </div>
   </div>
-</main>
+</div>
 
 <style>
-  main {
+  .node {
     --border: 1px solid rgb(75, 76, 72);
     --grid-size: 15px;
     --grid-offset: calc(var(--grid-size) * -0.5 + 1);

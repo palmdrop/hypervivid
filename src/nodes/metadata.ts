@@ -802,6 +802,184 @@ export default {
         "strength": 0.5
       }
     ],
+    "breath-crunch": [
+      {
+        "from": "breath-crunch",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "breath-crunch",
+        "to": "journal-artifacts",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "breath-crunch",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "breath-crunch",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "living-hobbling-goo": [
+      {
+        "from": "living-hobbling-goo",
+        "to": "breath-crunch",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "substrate-catalogue",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "journal-artifacts": [
+      {
+        "from": "journal-artifacts",
+        "to": "breath-crunch",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "journal-artifacts",
+        "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "journal-artifacts",
+        "to": "less-flat",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "journal-artifacts",
+        "to": "branches-and-connections",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "hyper": [
+      {
+        "from": "hyper",
+        "to": "breath-crunch",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "rehash-transform",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "less-flat": [
+      {
+        "from": "less-flat",
+        "to": "breath-crunch",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "cringe-core",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "digital-gardening",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "journal-artifacts",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "less-flat",
+        "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "chaos-growth": [
       {
         "from": "chaos-growth",
@@ -1122,44 +1300,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "less-flat": [
-      {
-        "from": "less-flat",
-        "to": "cringe-core",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "journal-artifacts",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "digital-biophilia": [
       {
         "from": "digital-biophilia",
@@ -1432,38 +1572,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "hyper": [
-      {
-        "from": "hyper",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "virtual-distance",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "rehash-transform",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "hyper",
-        "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "neon-moss": [
       {
         "from": "neon-moss",
@@ -1582,26 +1690,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "journal-artifacts": [
-      {
-        "from": "journal-artifacts",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "journal-artifacts",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "journal-artifacts",
-        "to": "branches-and-connections",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "raw-making": [
       {
         "from": "raw-making",
@@ -1651,44 +1739,6 @@ export default {
       {
         "from": "rehash-transform",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "living-hobbling-goo": [
-      {
-        "from": "living-hobbling-goo",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "foliage-grids",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "remnant-mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "substrate-catalogue",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1923,186 +1973,229 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 40
+      "count": 41
     },
     "generative": {
-      "weight": 0.925,
-      "count": 37
+      "weight": 0.926829268292683,
+      "count": 38
     },
     "live": {
-      "weight": 0.675,
-      "count": 27
+      "weight": 0.6829268292682927,
+      "count": 28
     },
     "domain-warping": {
-      "weight": 0.475,
+      "weight": 0.4634146341463415,
       "count": 19
     },
     "organic": {
-      "weight": 0.35,
+      "weight": 0.34146341463414637,
       "count": 14
     },
     "noise": {
-      "weight": 0.325,
+      "weight": 0.3170731707317073,
       "count": 13
     },
+    "substrate": {
+      "weight": 0.2926829268292683,
+      "count": 12
+    },
     "project": {
-      "weight": 0.3,
+      "weight": 0.2926829268292683,
       "count": 12
     },
     "biophilia": {
-      "weight": 0.3,
+      "weight": 0.2926829268292683,
       "count": 12
     },
-    "substrate": {
-      "weight": 0.275,
-      "count": 11
-    },
     "thoughts": {
-      "weight": 0.25,
+      "weight": 0.24390243902439024,
       "count": 10
     },
     "photography": {
-      "weight": 0.25,
+      "weight": 0.24390243902439024,
       "count": 10
     },
     "geometry": {
-      "weight": 0.25,
+      "weight": 0.24390243902439024,
       "count": 10
     },
     "feedback": {
-      "weight": 0.2,
-      "count": 8
+      "weight": 0.21951219512195122,
+      "count": 9
     },
     "fragments": {
-      "weight": 0.2,
+      "weight": 0.1951219512195122,
       "count": 8
     },
     "interactive": {
-      "weight": 0.175,
+      "weight": 0.17073170731707318,
       "count": 7
     },
     "css": {
-      "weight": 0.175,
+      "weight": 0.17073170731707318,
       "count": 7
     },
     "internet": {
-      "weight": 0.15,
+      "weight": 0.14634146341463414,
       "count": 6
     },
     "webart": {
-      "weight": 0.125,
-      "count": 5
+      "weight": 0.14634146341463414,
+      "count": 6
     },
     "info": {
-      "weight": 0.1,
+      "weight": 0.0975609756097561,
       "count": 4
     },
     "mappings": {
-      "weight": 0.1,
+      "weight": 0.0975609756097561,
       "count": 4
     },
     "chrome": {
-      "weight": 0.1,
+      "weight": 0.0975609756097561,
       "count": 4
     },
     "writing": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "glitch": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "hyper": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "fuse": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "words": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "exploration": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "memes": {
-      "weight": 0.075,
+      "weight": 0.07317073170731707,
       "count": 3
     },
     "instancing": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "mind": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "utility": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "dithering": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "external": {
-      "weight": 0.05,
+      "weight": 0.04878048780487805,
       "count": 2
     },
     "octree": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "contact": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "communication": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "particles": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "cringe": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "texture": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "depth": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.025,
+      "weight": 0.024390243902439025,
       "count": 1
     }
   },
   "nodes": {
+    "breath-crunch": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "substrate",
+        "feedback",
+        "webart"
+      ],
+      "links": [
+        {
+          "from": "breath-crunch",
+          "to": "living-hobbling-goo",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "breath-crunch",
+          "to": "journal-artifacts",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "breath-crunch",
+          "to": "hyper",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "breath-crunch",
+          "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Thu, 23 Feb 2023 19:15:44 GMT",
+      "updatedAt": "2023-02-23T19:33:07.886Z",
+      "inline": false,
+      "asDocument": true,
+      "title": "Breath Crunch",
+      "description": "A breathing exercise. Doctors don't want you to breathe like this. Playing with ritual and stupid mindfulness.",
+      "image": "/nodes/breath-crunch.preview.jpg"
+    },
     "substrate-catalogue": {
       "tags": [
         "art",
@@ -2126,7 +2219,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 05 Feb 2023 14:40:22 GMT",
-      "updatedAt": "2023-02-05T13:56:17.202Z",
+      "updatedAt": "2023-02-05T13:59:50.315Z",
       "inline": false,
       "title": "Substrate Catalogue",
       "description": "A catalogue of substrate shaders with stream-of-consciousness descriptions.",
@@ -2142,6 +2235,12 @@ export default {
         "css"
       ],
       "links": [
+        {
+          "from": "journal-artifacts",
+          "to": "breath-crunch",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "journal-artifacts",
           "to": "raw-making",
@@ -2249,12 +2348,18 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "biophilia",
         "substrate",
+        "biophilia",
         "webart",
         "fuse"
       ],
       "links": [
+        {
+          "from": "living-hobbling-goo",
+          "to": "breath-crunch",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "living-hobbling-goo",
           "to": "foliage-fragments",
@@ -2293,7 +2398,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 23 Dec 2022 10:06:41 GMT",
-      "updatedAt": "2023-01-03T19:23:24.360Z",
+      "updatedAt": "2023-02-23T19:26:26.752Z",
       "inline": false,
       "asDocument": true,
       "title": "Living Hobbling Goo",
@@ -2548,8 +2653,8 @@ export default {
         "generative",
         "live",
         "organic",
-        "biophilia",
         "substrate",
+        "biophilia",
         "geometry",
         "photography"
       ],
@@ -3075,8 +3180,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "biophilia",
-        "substrate"
+        "substrate",
+        "biophilia"
       ],
       "links": [
         {
@@ -3137,8 +3242,8 @@ export default {
     },
     "substrates": {
       "tags": [
-        "project",
         "substrate",
+        "project",
         "words",
         "external"
       ],
@@ -3219,8 +3324,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "biophilia",
-        "substrate"
+        "substrate",
+        "biophilia"
       ],
       "links": [
         {
@@ -3304,8 +3409,8 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "biophilia",
-        "substrate"
+        "substrate",
+        "biophilia"
       ],
       "links": [
         {
@@ -3438,8 +3543,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "biophilia",
-        "substrate"
+        "substrate",
+        "biophilia"
       ],
       "links": [
         {
@@ -3630,6 +3735,12 @@ export default {
         "exploration"
       ],
       "links": [
+        {
+          "from": "less-flat",
+          "to": "breath-crunch",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "less-flat",
           "to": "cringe-core",
@@ -4018,7 +4129,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-01-27T17:38:54.632Z",
+      "updatedAt": "2023-02-12T09:56:45.884Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4129,6 +4240,12 @@ export default {
         "hyper"
       ],
       "links": [
+        {
+          "from": "hyper",
+          "to": "breath-crunch",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "hyper",
           "to": "foliage-fragments",
@@ -4905,6 +5022,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "substrate-catalogue",
-  "mostRecentlyUpdatedNode": "journal-artifacts"
+  "latestNode": "breath-crunch",
+  "mostRecentlyUpdatedNode": "living-hobbling-goo"
 } as const;
