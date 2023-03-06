@@ -8,7 +8,7 @@
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
   import { SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
-    import PageFooter from '../components/footer/page/PageFooter.svelte';
+  import PageFooter from '../components/footer/page/PageFooter.svelte';
 
   $: nodeNames = [
     'intro',
@@ -30,14 +30,9 @@
     >
       <Hyper />
     </Node>
-  </section>
-
-  <section 
-    class="nodes"
-  >
-    <button
+    <a
       class="scroll-down-button"
-      on:click|preventDefault={scrollSelfIntoView}
+      href="#nodes"
     >
       <Arrow 
         direction='down'
@@ -51,7 +46,13 @@
         direction='down'
         size={'2.1em'}
       />
-    </button>
+    </a>
+  </section>
+
+  <section 
+    class="nodes"
+    id="nodes"
+  >
     <NodeList
       nodeNames={nodeNames} 
       modeFirst="preview"
@@ -87,7 +88,7 @@
 
     transition: opacity 1s;
 
-    min-height: 85vh;
+    min-height: 100vh;
   }
 
   section {
@@ -101,6 +102,7 @@
     z-index: 10;
 
     min-height: 100vh;
+    padding-top: 2em;
 
     background-color: var(--cBg);
   }
@@ -114,8 +116,8 @@
 
     width: 100%;
 
-    padding-bottom: 4em;
-    padding-top: 0em;
+    margin: 5%;
+    margin-top: 10vh;
   }
 
   .nodes-link {

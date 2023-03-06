@@ -27,6 +27,8 @@
     },
   ];
 
+  let scrollY = 0;
+  let isOnTopThreshold = 10;
   let showLoader = false;
 
   $: {
@@ -42,9 +44,15 @@
       timeout = undefined
     }
   } 
+
+  $: console.log(scrollY);
 </script>
 
-<header class:sticky >
+<svelte:window 
+  bind:scrollY={scrollY} 
+/>
+
+<header class:sticky class:not-top={scrollY > isOnTopThreshold}>
   <div>
     <Breadcrumbs 
       showHome={true}
@@ -76,6 +84,13 @@
 
     top: 0;
     z-index: 10;
+
+    box-shadow: 0px 0px 25px 5px var(--cBg);
+    transition: 0.5s box-shadow;
+  }
+
+  .not-top {
+    box-shadow: 0px 0px 50px 10px var(--cBg);
   }
 
   header.sticky {
