@@ -2189,7 +2189,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 23 Feb 2023 19:15:44 GMT",
-      "updatedAt": "2023-02-23T19:33:07.886Z",
+      "updatedAt": "2023-02-23T19:39:23.299Z",
       "inline": false,
       "asDocument": true,
       "title": "Breath Crunch",
@@ -4129,7 +4129,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-02-12T09:56:45.884Z",
+      "updatedAt": "2023-03-06T18:01:02.804Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5023,5 +5023,5 @@ export default {
     }
   },
   "latestNode": "breath-crunch",
-  "mostRecentlyUpdatedNode": "living-hobbling-goo"
+  "mostRecentlyUpdatedNode": "links"
 } as const;
