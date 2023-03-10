@@ -103,21 +103,24 @@
   */
   const notes: string[] = [
     "Trying to walk slow. Be bored more often. Have been trying for a while.",
-    "The mind does not have to be a hyper-loop. Hyper-referrential, hyper-hyper-hyper...",
-    "Doing things with care and consideration. Decorating. Maintaining.",
+    "The mind does not have to be a hyper-loop.",
+    "Doing things with care and consideration. Decorating. Maintaining. Restoring.",
     "It's never silent. Why am I listening to music all the time?",
-    "So many details, so many shortscuts, so many options for parallell processing. Why this effective?",
-    "Instinctive planning, mental delegation, approximations, unconscious stress. But this is my spare time.",
+    "So many details, so many shortcuts, so many options for parallell processing. Way too effective.",
+    "Instinctive planning, mental delegation, approximations, unconscious stress. And this is my spare time.",
     "Just 5 minutes to feel that I have done something. 5 pointless minutes. Just for show.",
     "Sit here. Comfortable. What a chair.",
-    "The phone is left on mute, but I still look at it every other minute. I just miss calls.",
-    "I used to let things take time. Coding, creative play, endless configurations, finding the thing, the aesthetic. I can't be rushed about letting things grow. They will grow.",
-    "I want to be comfortable with time passing. With having fun. Drinking another beer. I'm not in a rush.",
-    "A more intimate home. Taking proper care of the plants. Yoga. Framing new pictures. Clean, cook, infuse with meaning. Feel safe, but not static.",
-    "When I take photos, or think about it, I see texture, patterns, surprising juxtaposition, alignment, pleasant chaos. Don't think about the publish button.",
+    "The phone is left on mute, but I still look at it every other minute. At least I miss some calls.",
+    "It used to take time. I allowed it. Coding, play, endless configurations, finding the thing, the aesthetic. It all just grew.",
+    "I want to be comfortable with time passing. With fun. Drinking another beer. I'm not in a rush.",
+    "I don't need 8 hours of sleep every night. Sometimes, the sludge is welcome.",
+    "A more intimate home. Taking proper care of our plants. Yoga. Framing new pictures. Clean, cook, infuse with meaning. Safe. Not static.",
+    "Take photos. See texture, patterns, surprising juxtaposition, aesthetically ugly, pleasant chaos. I try not to think about the publish button.",
+    "Please, no more perfectly blue buttons.",
     "How much time should I spend on this?",
-    "Time well spent. Time well spent. Time well spent. As a mantra. On repeat at the bedside table.",
-    "Abandon McMindfullness city. It smells weird. It smells too much like fast food."
+    "Time well spent. Time well spent. Time well spent. On repeat at the bedside table. In my dreams.",
+    "Abandon McMindfullness city. It smells weird. Too much like tar.",
+    "\"What do you do?\" Sidestep wrong questions."
   ];
 </script>
 
