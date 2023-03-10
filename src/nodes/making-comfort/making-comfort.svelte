@@ -164,7 +164,7 @@
         data={mainMovingImage}
         width={200}
         height={200}
-        alt="Jittering flare."
+        alt=""
         wrapperStyle="
           box-shadow: 0px 0px 50px 10px #ffffff15;
           border: 1px solid white;
