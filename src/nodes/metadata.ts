@@ -826,6 +826,12 @@ export default {
         "to": "less-flat",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "breath-crunch",
+        "to": "making-comfort",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "living-hobbling-goo": [
@@ -894,6 +900,12 @@ export default {
       {
         "from": "journal-artifacts",
         "to": "branches-and-connections",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "journal-artifacts",
+        "to": "making-comfort",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1699,6 +1711,12 @@ export default {
       },
       {
         "from": "raw-making",
+        "to": "making-comfort",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
         "to": "less-flat",
         "kind": "tangent",
         "strength": 0.5
@@ -1771,6 +1789,26 @@ export default {
       {
         "from": "remnant-mappings",
         "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "making-comfort": [
+      {
+        "from": "making-comfort",
+        "to": "breath-crunch",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "making-comfort",
+        "to": "journal-artifacts",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "making-comfort",
+        "to": "raw-making",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1973,186 +2011,221 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 41
+      "count": 42
     },
     "generative": {
-      "weight": 0.926829268292683,
+      "weight": 0.9047619047619048,
       "count": 38
     },
     "live": {
-      "weight": 0.6829268292682927,
+      "weight": 0.6666666666666666,
       "count": 28
     },
     "domain-warping": {
-      "weight": 0.4634146341463415,
+      "weight": 0.4523809523809524,
       "count": 19
     },
     "organic": {
-      "weight": 0.34146341463414637,
+      "weight": 0.3333333333333333,
       "count": 14
     },
     "noise": {
-      "weight": 0.3170731707317073,
+      "weight": 0.30952380952380953,
+      "count": 13
+    },
+    "project": {
+      "weight": 0.30952380952380953,
       "count": 13
     },
     "substrate": {
-      "weight": 0.2926829268292683,
-      "count": 12
-    },
-    "project": {
-      "weight": 0.2926829268292683,
+      "weight": 0.2857142857142857,
       "count": 12
     },
     "biophilia": {
-      "weight": 0.2926829268292683,
+      "weight": 0.2857142857142857,
       "count": 12
     },
     "thoughts": {
-      "weight": 0.24390243902439024,
-      "count": 10
+      "weight": 0.2619047619047619,
+      "count": 11
     },
     "photography": {
-      "weight": 0.24390243902439024,
+      "weight": 0.23809523809523808,
       "count": 10
     },
     "geometry": {
-      "weight": 0.24390243902439024,
+      "weight": 0.23809523809523808,
       "count": 10
     },
     "feedback": {
-      "weight": 0.21951219512195122,
+      "weight": 0.21428571428571427,
       "count": 9
     },
     "fragments": {
-      "weight": 0.1951219512195122,
+      "weight": 0.19047619047619047,
       "count": 8
     },
+    "webart": {
+      "weight": 0.16666666666666666,
+      "count": 7
+    },
     "interactive": {
-      "weight": 0.17073170731707318,
+      "weight": 0.16666666666666666,
       "count": 7
     },
     "css": {
-      "weight": 0.17073170731707318,
+      "weight": 0.16666666666666666,
       "count": 7
     },
     "internet": {
-      "weight": 0.14634146341463414,
-      "count": 6
-    },
-    "webart": {
-      "weight": 0.14634146341463414,
+      "weight": 0.14285714285714285,
       "count": 6
     },
     "info": {
-      "weight": 0.0975609756097561,
+      "weight": 0.09523809523809523,
       "count": 4
     },
     "mappings": {
-      "weight": 0.0975609756097561,
+      "weight": 0.09523809523809523,
       "count": 4
     },
     "chrome": {
-      "weight": 0.0975609756097561,
+      "weight": 0.09523809523809523,
       "count": 4
     },
     "writing": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "glitch": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "hyper": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "fuse": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "words": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "exploration": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "memes": {
-      "weight": 0.07317073170731707,
+      "weight": 0.07142857142857142,
       "count": 3
     },
     "instancing": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "mind": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "utility": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "dithering": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "external": {
-      "weight": 0.04878048780487805,
+      "weight": 0.047619047619047616,
       "count": 2
     },
     "octree": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "contact": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "communication": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "particles": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "cringe": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "texture": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "depth": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.024390243902439025,
+      "weight": 0.023809523809523808,
       "count": 1
     }
   },
   "nodes": {
+    "making-comfort": {
+      "tags": [
+        "art",
+        "project",
+        "thoughts",
+        "webart"
+      ],
+      "links": [
+        {
+          "from": "making-comfort",
+          "to": "breath-crunch",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "making-comfort",
+          "to": "journal-artifacts",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "making-comfort",
+          "to": "raw-making",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Mon, 06 Mar 2023 18:47:11 GMT",
+      "updatedAt": "2023-03-10T12:24:35.659Z",
+      "inline": false,
+      "asDocument": true,
+      "title": "Making Comfort",
+      "description": "Short poetic image project. Some photos, some notes, some movement. Aesthetic test mixed with journaling.",
+      "image": ""
+    },
     "breath-crunch": {
       "tags": [
         "art",
@@ -2184,6 +2257,12 @@ export default {
         {
           "from": "breath-crunch",
           "to": "less-flat",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "breath-crunch",
+          "to": "making-comfort",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -2258,6 +2337,12 @@ export default {
           "to": "branches-and-connections",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "journal-artifacts",
+          "to": "making-comfort",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
@@ -2279,6 +2364,12 @@ export default {
         {
           "from": "raw-making",
           "to": "journal-artifacts",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "raw-making",
+          "to": "making-comfort",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2910,8 +3001,8 @@ export default {
     },
     "virtual-distance": {
       "tags": [
-        "css",
-        "webart"
+        "webart",
+        "css"
       ],
       "links": [
         {
@@ -3242,8 +3333,8 @@ export default {
     },
     "substrates": {
       "tags": [
-        "substrate",
         "project",
+        "substrate",
         "words",
         "external"
       ],
@@ -3873,8 +3964,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "noise",
         "project",
+        "noise",
         "rhizome",
         "space-colonization"
       ],
@@ -3918,8 +4009,8 @@ export default {
         "generative",
         "domain-warping",
         "organic",
-        "noise",
-        "project"
+        "project",
+        "noise"
       ],
       "links": [
         {
@@ -3948,8 +4039,8 @@ export default {
         "art",
         "generative",
         "organic",
-        "noise",
         "project",
+        "noise",
         "memes",
         "flowfield"
       ],
@@ -4129,7 +4220,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-03-06T18:01:02.804Z",
+      "updatedAt": "2023-03-06T18:22:13.814Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5022,6 +5113,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "breath-crunch",
+  "latestNode": "making-comfort",
   "mostRecentlyUpdatedNode": "links"
 } as const;

@@ -44,8 +44,6 @@
       timeout = undefined
     }
   } 
-
-  $: console.log(scrollY);
 </script>
 
 <svelte:window 
