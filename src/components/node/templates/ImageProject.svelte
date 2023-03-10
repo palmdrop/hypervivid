@@ -164,6 +164,8 @@
     margin-bottom: 5em;
     padding: 2em 0em;
 
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;

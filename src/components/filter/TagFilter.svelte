@@ -46,7 +46,7 @@
     width: 22em;
     max-width: 100%;
 
-    --height: 2.2em;
+    --height: 2.5em;
     --input-color: var(--cFg);
     --font-size: 1rem;
 
@@ -79,6 +79,8 @@
     --multi-clear-bg: var(--cBg);
     --multi-clear-hover-fill: var(--cFg);
     --multi-clear-hover-bg: var(--cBg);
+
+    --clear-select-margin: 0em 3px;
   }
 
   .tag-filter > input {
@@ -110,6 +112,8 @@
 
   .tag-filter .clear-select {
     cursor: pointer;
-    transform: scale(0.8);
+    transform: scale();
+
+    --clear-icon-width: 1.2em;
   }
 </style>
