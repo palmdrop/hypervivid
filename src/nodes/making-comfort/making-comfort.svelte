@@ -221,12 +221,13 @@
 
   .note {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: calc(50% - 1em);
     transform: translate(-50%, -50%);
     width: calc(100% - 2em);
     max-width: calc(1100px - 2em);
     margin: 1em;
+    z-index: 1;
 
     color: var(--cFgInverted);
     font-size: 1.5em;
