@@ -168,6 +168,8 @@
         wrapperStyle="
           box-shadow: 0px 0px 50px 10px #ffffff15;
           border: 1px solid white;
+          max-width: 40vw;
+          max-height: 40vw;
         "
       />
     </a>
@@ -219,17 +221,30 @@
     z-index: 10;
     margin: 1em;
 
-    transform: translate(50%, 95%);
+    transform: translate(25%, 103%);
+  }
+
+  @media (min-width: 1150px) {
+    .main-flare {
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      margin: 1em;
+
+      transform: translate(50%, 100%);
+    }
   }
 
   .note {
     position: fixed;
     top: 40%;
-    left: calc(50% - 1em);
+    left: calc(50% - 0.5em);
     transform: translate(-50%, -50%);
-    width: calc(100% - 2em);
-    max-width: calc(1100px - 2em);
-    margin: 1em;
+    width: calc(100% - 1em);
+    max-width: calc(1100px - 1em);
+    margin: 0.5em;
     z-index: 1;
 
     color: var(--cFgInverted);
