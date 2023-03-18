@@ -3,8 +3,7 @@ import type { NodeMetadata } from '../types/nodes';
 
 const NODES_DIR = 'src/nodes/';
 
-const defaultPreset = (name: string) => `
-<script lang="ts">
+const defaultPreset = (name: string) => `<script lang="ts">
   import { getNodeContext } from '$utils/useNodeContext';
   const { name, metadata } = getNodeContext('${name}');
 
@@ -18,8 +17,7 @@ const defaultPreset = (name: string) => `
 </style>
 `;
 
-const fragmentPreset = (name: string) => `
-<script lang="ts">
+const fragmentPreset = (name: string) => `<script lang="ts">
   import { getNodeContext } from '$utils/useNodeContext';
   import Fragment from '$components/node/templates/Fragment.svelte';
   import Document from './document.svelte.md';

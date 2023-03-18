@@ -1847,6 +1847,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "node-graph": [],
     "noise-construct": [
       {
         "from": "noise-construct",
@@ -2191,6 +2192,16 @@ export default {
     }
   },
   "nodes": {
+    "node-graph": {
+      "tags": [],
+      "links": [],
+      "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
+      "updatedAt": "2023-03-18T18:53:13.040Z",
+      "inline": false,
+      "title": "node-graph",
+      "description": "",
+      "image": ""
+    },
     "making-comfort": {
       "tags": [
         "art",
@@ -4220,7 +4231,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-03-06T18:22:13.814Z",
+      "updatedAt": "2023-03-18T16:16:00.377Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5113,6 +5124,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "making-comfort",
+  "latestNode": "node-graph",
   "mostRecentlyUpdatedNode": "links"
 } as const;
