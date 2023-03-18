@@ -17,28 +17,31 @@ type Link = {
 }
 
 const main = async () => {
+  console.log("Generating graph data...");
   const metadata = (await import("../../" + NODES_DIR + 'metadata.ts')).default;
 
-  const nodes: Node[] = [];
-
   // TODO: use set to avoid duplicate links?
-  const links: Link[] = [];
 
-  Object.entries(metadata.nodes).forEach(([name, node]: [string, any]) => {
-    nodes.push({
-      id: name,
-      group: 0
+  const nodes: Node[] = Object
+    .entries(metadata.nodes)
+    .map(([name, node]: [string, any]) => {
+      return {
+        id: name,
+        group: node.tags[0]
+      };
     });
 
-    // NOTE: Should I use global links list instead?
-    node.links.forEach(link => {
-      links.push({
+
+  const links: Link[] = Object
+    .values(metadata.links)
+    .flatMap(links => links)
+    .map((link: any) => {
+      return {
         source: link.from,
         target: link.to,
         value: Math.round(link.strength)
-      });
+      }
     });
-  });
 
   fs.writeFileSync(
     GRAPH_DATA_PATH,
@@ -47,6 +50,8 @@ const main = async () => {
       links
     }, null, 2)} as const;`
   );
+
+  console.log("Done generating graph data...");
 }
 
 main();

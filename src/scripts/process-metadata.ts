@@ -52,9 +52,22 @@ const addUndirectedLink = (
   current: string, 
   other: string,
   links: Map<string, Link[]>,
+  allNodeNames: Set<string>,
   strength = DEFAULT_LINK_STRENGTH,
-  kind = 'consumes'
+  kind = 'consumes',
 ) => {
+  const otherNodeExists = allNodeNames.has(other);
+  if(!otherNodeExists) {
+    console.error(`Warning: Link from node "${current}" to "${other}" is invalid. "${other}" does not exist.`);
+    return;
+  }
+
+  const currentNodeExists = allNodeNames.has(current);
+  if(!currentNodeExists) {
+    console.error(`Warning: Links from node ${current} are all invalid. Node ${current} does not exist.`);
+    return;
+  }
+
   const currentKind = kind;
   let otherKind: string;
 
@@ -92,7 +105,7 @@ const addUndirectedLink = (
 const processNode = async (
   nodeName: string,
   metadata: Metadata,
-  allNodeNames: string[],
+  allNodeNames: Set<string>,
   rss: { feed: string }
 ) => {
   const { links, tags, nodes } = metadata;
@@ -122,7 +135,7 @@ const processNode = async (
     const uniqueMatches = Array.from(new Set<string>(allMatches));
 
     uniqueMatches.forEach(match => {
-      addUndirectedLink(nodeName, match, links, strength, kind);
+      addUndirectedLink(nodeName, match, links, allNodeNames, strength, kind);
     });
   }
 
@@ -161,17 +174,17 @@ const processNode = async (
 
       nodeLinks.forEach(link => {
         if(typeof link !== 'object') {
-          addUndirectedLink(nodeName, link, links, DEFAULT_LINK_STRENGTH, DEFAULT_LINK_KIND);
+          addUndirectedLink(nodeName, link, links, allNodeNames, DEFAULT_LINK_STRENGTH, DEFAULT_LINK_KIND);
         } else {
-          addUndirectedLink(nodeName, link.to, links, link.strength, link.kind)
+          addUndirectedLink(nodeName, link.to, links, allNodeNames, link.strength, link.kind)
         }
       });
 
       // Verify that all links have corresponding nodes
       links.set(nodeName, (links.get(nodeName) ?? []).filter(link => {
-        const linkNodeExists = allNodeNames.includes(link.to);
+        const linkNodeExists = allNodeNames.has(link.to);
         if (!linkNodeExists) {
-          console.error(`Warning: Link from node "${nodeName}" to "${link.to}" is invalid. "${link.to}" does not exist.`);
+          return false;
         }
 
         return linkNodeExists;
@@ -330,12 +343,13 @@ const main = async () => {
   const nodeNames = fs.readdirSync(NODES_DIR);
   const rss = { feed: '' };
 
+  const nodeNamesSet = new Set(nodeNames);
   await Promise.all(nodeNames
     .filter(name => !name.includes('.')) // filter out files
     .map(name => processNode(
       name,
       metadata,
-      nodeNames,
+      nodeNamesSet,
       rss
     ))
   );

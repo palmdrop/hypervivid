@@ -289,6 +289,12 @@ export default {
       },
       {
         "from": "moss-structure",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "moss-structure",
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
@@ -340,6 +346,12 @@ export default {
       {
         "from": "nest",
         "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
+        "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -445,6 +457,12 @@ export default {
       },
       {
         "from": "jolt-gate",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
@@ -502,6 +520,12 @@ export default {
       {
         "from": "immerse",
         "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "immerse",
+        "to": "substrates",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -607,7 +631,19 @@ export default {
       },
       {
         "from": "substrates",
+        "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
         "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -632,6 +668,12 @@ export default {
       {
         "from": "substrates",
         "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrates",
+        "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -669,45 +711,87 @@ export default {
       },
       {
         "from": "block-dissolve",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "block-dissolve",
+        "to": "rhizome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "block-dissolve",
         "to": "formations",
         "kind": "tangent",
         "strength": 0.5
       }
     ],
-    "substrate": [
+    "rhizome": [
       {
-        "from": "substrate",
+        "from": "rhizome",
         "to": "block-dissolve",
         "kind": "tangent",
         "strength": 0.5
       },
       {
-        "from": "substrate",
+        "from": "rhizome",
+        "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
         "to": "immerse",
         "kind": "tangent",
         "strength": 0.5
       },
       {
-        "from": "substrate",
+        "from": "rhizome",
         "to": "jolt-gate",
         "kind": "tangent",
         "strength": 0.5
       },
       {
-        "from": "substrate",
+        "from": "rhizome",
         "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
       },
       {
-        "from": "substrate",
+        "from": "rhizome",
         "to": "nest",
         "kind": "tangent",
         "strength": 0.5
       },
       {
-        "from": "substrate",
-        "to": "rhizome",
+        "from": "rhizome",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "rhizome",
+        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1062,44 +1146,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "rhizome": [
-      {
-        "from": "rhizome",
-        "to": "chaos-growth",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "glow-tree",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "weave",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
-        "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "weave": [
       {
         "from": "weave",
@@ -1156,6 +1202,12 @@ export default {
       {
         "from": "fragfuse",
         "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "foliage-fragments",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1491,6 +1543,12 @@ export default {
       },
       {
         "from": "foliage-fragments",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
         "to": "hyper",
         "kind": "tangent",
         "strength": 0.5
@@ -1572,14 +1630,6 @@ export default {
       {
         "from": "foliage-grids",
         "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "frag-fuse": [
-      {
-        "from": "frag-fuse",
-        "to": "foliage-fragments",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1691,14 +1741,6 @@ export default {
         "from": "intro",
         "to": "contact",
         "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "": [
-      {
-        "from": "",
-        "to": "intro",
-        "kind": "references",
         "strength": 0.5
       }
     ],
@@ -1972,22 +2014,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "artifacts": [
-      {
-        "from": "artifacts",
-        "to": "substrate-catalogue",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "feedback": [
-      {
-        "from": "feedback",
-        "to": "super-cell",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "waft": [
       {
         "from": "waft",
@@ -2196,7 +2222,7 @@ export default {
       "tags": [],
       "links": [],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-18T18:53:13.040Z",
+      "updatedAt": "2023-03-18T22:46:54.495Z",
       "inline": false,
       "title": "node-graph",
       "description": "",
@@ -2707,6 +2733,12 @@ export default {
         },
         {
           "from": "foliage-fragments",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-fragments",
           "to": "hyper",
           "kind": "tangent",
           "strength": 0.5
@@ -2743,7 +2775,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
-      "updatedAt": "2022-12-05T17:43:13.657Z",
+      "updatedAt": "2023-03-18T22:58:31.847Z",
       "inline": false,
       "title": "Foliage Fragments",
       "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
@@ -2923,7 +2955,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 10 Sep 2022 14:34:05 GMT",
-      "updatedAt": "2022-12-05T17:43:13.651Z",
+      "updatedAt": "2023-03-18T23:00:18.019Z",
       "inline": false,
       "title": "Alien Skies",
       "description": "Strange perspective distortion for alien skies. A test for a larger composition.",
@@ -3336,7 +3368,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 19 Aug 2022 17:08:31 GMT",
-      "updatedAt": "2022-12-05T17:43:13.668Z",
+      "updatedAt": "2023-03-18T23:23:29.992Z",
       "inline": false,
       "title": "Super Cell",
       "description": "Warping lines in multiple layers makes for a strange, morphing life-form.",
@@ -3358,7 +3390,19 @@ export default {
         },
         {
           "from": "substrates",
+          "to": "block-dissolve",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
           "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "immerse",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3383,6 +3427,12 @@ export default {
         {
           "from": "substrates",
           "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrates",
+          "to": "rhizome",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3468,6 +3518,12 @@ export default {
         },
         {
           "from": "moss-structure",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "moss-structure",
           "to": "immerse",
           "kind": "tangent",
           "strength": 0.5
@@ -3498,7 +3554,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
-      "updatedAt": "2022-12-05T17:43:13.664Z",
+      "updatedAt": "2023-03-18T23:01:10.555Z",
       "inline": false,
       "title": "Moss Structure",
       "description": "More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.",
@@ -3541,6 +3597,12 @@ export default {
         },
         {
           "from": "nest",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
           "to": "immerse",
           "kind": "tangent",
           "strength": 0.5
@@ -3565,7 +3627,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
-      "updatedAt": "2022-12-05T17:43:13.664Z",
+      "updatedAt": "2023-03-18T23:01:15.591Z",
       "inline": false,
       "title": "Nest",
       "description": "Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.",
@@ -3590,6 +3652,12 @@ export default {
         {
           "from": "jolt-gate",
           "to": "swamp-mass",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "rhizome",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3631,7 +3699,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 13 Aug 2022 09:33:13 GMT",
-      "updatedAt": "2022-12-05T17:43:13.660Z",
+      "updatedAt": "2023-03-18T23:00:53.226Z",
       "inline": false,
       "title": "Jolt Gate",
       "description": "Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.",
@@ -3711,7 +3779,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 10 Aug 2022 09:20:52 GMT",
-      "updatedAt": "2022-12-05T17:43:13.668Z",
+      "updatedAt": "2023-03-18T23:01:57.591Z",
       "inline": false,
       "title": "Swamp Mass",
       "description": "Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.",
@@ -3914,7 +3982,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
-      "updatedAt": "2022-12-05T17:43:13.659Z",
+      "updatedAt": "2023-03-18T23:05:42.085Z",
       "inline": true,
       "title": "Intro",
       "description": "A short site description.",
@@ -4169,6 +4237,12 @@ export default {
         {
           "from": "fragfuse",
           "to": "city-pond",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fragfuse",
+          "to": "foliage-fragments",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -4474,13 +4548,25 @@ export default {
         },
         {
           "from": "block-dissolve",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "block-dissolve",
+          "to": "rhizome",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "block-dissolve",
           "to": "formations",
           "kind": "tangent",
           "strength": 0.5
         }
       ],
       "createdAt": "4 May 2022 11:45:09 GMT",
-      "updatedAt": "2022-12-05T17:43:13.652Z",
+      "updatedAt": "2023-03-18T22:57:06.337Z",
       "inline": false,
       "title": "Block Dissolve",
       "description": "Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.",
@@ -4613,6 +4699,12 @@ export default {
       "links": [
         {
           "from": "rhizome",
+          "to": "block-dissolve",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
           "to": "chaos-growth",
           "kind": "tangent",
           "strength": 0.5
@@ -4626,6 +4718,30 @@ export default {
         {
           "from": "rhizome",
           "to": "immerse",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "moss-structure",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "rhizome",
+          "to": "substrates",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -4649,7 +4765,7 @@ export default {
         }
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "2022-12-05T17:43:13.666Z",
+      "updatedAt": "2023-03-18T23:01:22.614Z",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -4729,6 +4845,12 @@ export default {
         },
         {
           "from": "immerse",
+          "to": "substrates",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "immerse",
           "to": "rhizome",
           "kind": "tangent",
           "strength": 0.5
@@ -4771,7 +4893,7 @@ export default {
         }
       ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
-      "updatedAt": "2022-12-05T17:43:13.658Z",
+      "updatedAt": "2023-03-18T23:05:04.436Z",
       "inline": false,
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
@@ -4806,7 +4928,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
-      "updatedAt": "2022-12-05T17:43:13.651Z",
+      "updatedAt": "2023-03-18T23:00:19.907Z",
       "inline": false,
       "title": "Alien Patterns",
       "description": "On combining modified noise and domain warping to produce alien patterns",
@@ -5125,5 +5247,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "links"
+  "mostRecentlyUpdatedNode": "super-cell"
 } as const;

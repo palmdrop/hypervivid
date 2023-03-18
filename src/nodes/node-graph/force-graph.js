@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 
 // Copyright 2021 Observable, Inc.
 // Released under the ISC license.
-// https://observablehq.com/@d3/force-directed-graph
+// https://observablehq.com/@d3/disjoint-force-directed-graph
 export function ForceGraph({
   nodes, // an iterable of node objects (typically [{id}, …])
   links // an iterable of link objects (typically [{source, target}, …])
@@ -37,7 +37,6 @@ export function ForceGraph({
   const T = nodeTitle == null ? null : d3.map(nodes, nodeTitle);
   const G = nodeGroup == null ? null : d3.map(nodes, nodeGroup).map(intern);
   const W = typeof linkStrokeWidth !== "function" ? null : d3.map(links, linkStrokeWidth);
-  const L = typeof linkStroke !== "function" ? null : d3.map(links, linkStroke);
 
   // Replace the input nodes and links with mutable objects for the simulation.
   nodes = d3.map(nodes, (_, i) => ({id: N[i]}));
@@ -58,7 +57,8 @@ export function ForceGraph({
   const simulation = d3.forceSimulation(nodes)
       .force("link", forceLink)
       .force("charge", forceNode)
-      .force("center",  d3.forceCenter())
+      .force("x", d3.forceX())
+      .force("y", d3.forceY())
       .on("tick", ticked);
 
   const svg = d3.create("svg")
@@ -68,13 +68,15 @@ export function ForceGraph({
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
 
   const link = svg.append("g")
-      .attr("stroke", typeof linkStroke !== "function" ? linkStroke : null)
+      .attr("stroke", linkStroke)
       .attr("stroke-opacity", linkStrokeOpacity)
       .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
       .attr("stroke-linecap", linkStrokeLinecap)
     .selectAll("line")
     .data(links)
     .join("line");
+
+  if (W) link.attr("stroke-width", ({index: i}) => W[i]);
 
   const node = svg.append("g")
       .attr("fill", nodeFill)
@@ -87,10 +89,11 @@ export function ForceGraph({
       .attr("r", nodeRadius)
       .call(drag(simulation));
 
-  if (W) link.attr("stroke-width", ({index: i}) => W[i]);
-  if (L) link.attr("stroke", ({index: i}) => L[i]);
   if (G) node.attr("fill", ({index: i}) => color(G[i]));
+  console.log(T);
   if (T) node.append("title").text(({index: i}) => T[i]);
+
+  // Handle invalidation.
   if (invalidation != null) invalidation.then(() => simulation.stop());
 
   function intern(value) {
