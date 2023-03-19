@@ -7,7 +7,11 @@ const GRAPH_DATA_PATH = NODES_DIR + 'graph-data.ts';
 
 type Node = {
   id: string,
-  group: number
+  group: number,
+  title: string,
+  url: string,
+  description: string,
+  tags: string[]
 };
 
 type Link = {
@@ -21,13 +25,16 @@ const main = async () => {
   const metadata = (await import("../../" + NODES_DIR + 'metadata.ts')).default;
 
   // TODO: use set to avoid duplicate links?
-
   const nodes: Node[] = Object
     .entries(metadata.nodes)
     .map(([name, node]: [string, any]) => {
       return {
         id: name,
-        group: node.tags[0]
+        group: node.tags[0],
+        title: node.title ?? name,
+        description: node.description ?? '',
+        tags: node.tags,
+        url: `/nodes/${name}`
       };
     });
 

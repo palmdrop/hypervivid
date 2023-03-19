@@ -1,6 +1,9 @@
 {
   "tags": [],
-  "links": [],
+  "links": [
+    "about",
+    "manifesto"
+  ],
   "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
   "updatedAt": "Sat, 18 Mar 2023 18:53:13 GMT",
   "inline": false,

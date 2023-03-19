@@ -4,11 +4,11 @@
   import { useTitle } from "$utils/useTitle";
   import Node from '$components/node/Node.svelte';
   import Hyper from '$nodes/hyper/hyper.svelte';
-  import { scrollSelfIntoView } from '$utils/scrollIntoView';
   import Arrow from '$components/ornaments/indicators/ArrowIcon.svelte';
   import { SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
   import PageFooter from '../components/footer/page/PageFooter.svelte';
+    import NodeGraph from '../nodes/node-graph/node-graph.svelte';
 
   $: nodeNames = [
     'intro',
@@ -24,11 +24,11 @@
     class="landing"
   >
     <Node
-      name="hyper"
+      name="node-graph"
       mode="inline"
       fromSlot={true}
     >
-      <Hyper />
+      <NodeGraph />
     </Node>
     <a
       class="scroll-down-button"

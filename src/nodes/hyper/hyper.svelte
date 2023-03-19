@@ -178,7 +178,7 @@
     letter-spacing: 0.45em;
     text-align: center;
 
-    background-color:rgb(240, 240, 12);
+    background-color: var(--cAccent);
     color: var(--cFg);
   } 
   

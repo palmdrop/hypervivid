@@ -24,6 +24,12 @@ export default {
         "to": "intro",
         "kind": "references",
         "strength": 0.5
+      },
+      {
+        "from": "about",
+        "to": "node-graph",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "contact": [
@@ -100,6 +106,12 @@ export default {
       {
         "from": "manifesto",
         "to": "links",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
+        "to": "node-graph",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1742,6 +1754,12 @@ export default {
         "to": "contact",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "intro",
+        "to": "latest",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "raw-making": [
@@ -1776,7 +1794,14 @@ export default {
         "strength": 0.5
       }
     ],
-    "latest": [],
+    "latest": [
+      {
+        "from": "latest",
+        "to": "intro",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "rehash-transform": [
       {
         "from": "rehash-transform",
@@ -1889,7 +1914,20 @@ export default {
         "strength": 0.5
       }
     ],
-    "node-graph": [],
+    "node-graph": [
+      {
+        "from": "node-graph",
+        "to": "about",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "node-graph",
+        "to": "manifesto",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "noise-construct": [
       {
         "from": "noise-construct",
@@ -2220,9 +2258,22 @@ export default {
   "nodes": {
     "node-graph": {
       "tags": [],
-      "links": [],
+      "links": [
+        {
+          "from": "node-graph",
+          "to": "about",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "node-graph",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-18T22:46:54.495Z",
+      "updatedAt": "2023-03-19T14:48:06.625Z",
       "inline": false,
       "title": "node-graph",
       "description": "",
@@ -3368,7 +3419,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 19 Aug 2022 17:08:31 GMT",
-      "updatedAt": "2023-03-18T23:23:29.992Z",
+      "updatedAt": "2023-03-19T14:38:26.010Z",
       "inline": false,
       "title": "Super Cell",
       "description": "Warping lines in multiple layers makes for a strange, morphing life-form.",
@@ -3979,6 +4030,12 @@ export default {
           "to": "contact",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "intro",
+          "to": "latest",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
@@ -4031,9 +4088,16 @@ export default {
         "info",
         "utility"
       ],
-      "links": [],
+      "links": [
+        {
+          "from": "latest",
+          "to": "intro",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
       "createdAt": "Tue, 28 Jun 2022 07:07:14 GMT",
-      "updatedAt": "2022-12-05T17:43:13.660Z",
+      "updatedAt": "2023-03-19T11:22:46.537Z",
       "inline": true,
       "title": "Latest",
       "description": "Displays the most recently created and most recently updated nodes. Just a utility.",
@@ -4398,6 +4462,12 @@ export default {
           "to": "intro",
           "kind": "references",
           "strength": 0.5
+        },
+        {
+          "from": "about",
+          "to": "node-graph",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
@@ -4458,7 +4528,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2022-12-05T17:43:13.658Z"
+      "updatedAt": "2023-03-19T14:30:56.512Z"
     },
     "manifesto": {
       "tags": [
@@ -4506,6 +4576,12 @@ export default {
         {
           "from": "manifesto",
           "to": "links",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "node-graph",
           "kind": "tangent",
           "strength": 0.5
         },

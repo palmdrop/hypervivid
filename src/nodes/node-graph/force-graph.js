@@ -31,10 +31,11 @@ export function ForceGraph({
 } = {}) {
   // Compute values.
   const N = d3.map(nodes, nodeId).map(intern);
+  const U = d3.map(nodes, node => node.url).map(intern);
   const LS = d3.map(links, linkSource).map(intern);
   const LT = d3.map(links, linkTarget).map(intern);
   if (nodeTitle === undefined) nodeTitle = (_, i) => N[i];
-  const T = nodeTitle == null ? null : d3.map(nodes, nodeTitle);
+  const T = d3.map(nodes, nodeTitle);
   const G = nodeGroup == null ? null : d3.map(nodes, nodeGroup).map(intern);
   const W = typeof linkStrokeWidth !== "function" ? null : d3.map(links, linkStrokeWidth);
 
@@ -68,13 +69,19 @@ export function ForceGraph({
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
 
   const link = svg.append("g")
+  /*
       .attr("stroke", linkStroke)
       .attr("stroke-opacity", linkStrokeOpacity)
       .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
       .attr("stroke-linecap", linkStrokeLinecap)
+      */
     .selectAll("line")
     .data(links)
-    .join("line");
+    .join("line")
+      .attr("stroke-opacity", linkStrokeOpacity)
+      .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
+      .style("stroke", linkStroke)
+      .style("stroke-linecap", linkStrokeLinecap)
 
   if (W) link.attr("stroke-width", ({index: i}) => W[i]);
 
@@ -83,15 +90,71 @@ export function ForceGraph({
       .attr("stroke", nodeStroke)
       .attr("stroke-opacity", nodeStrokeOpacity)
       .attr("stroke-width", nodeStrokeWidth)
+      .attr("filter", 'drop-shadow(0px 0px 5px #00000088)')
     .selectAll("circle")
     .data(nodes)
-    .join("circle")
+    .join('a')
+      .attr("href", ({ index }) => U[index])
+      .attr("target", "_blank")
+    .append("circle")
       .attr("r", nodeRadius)
-      .call(drag(simulation));
+      .call(drag(simulation))
 
   if (G) node.attr("fill", ({index: i}) => color(G[i]));
-  console.log(T);
-  if (T) node.append("title").text(({index: i}) => T[i]);
+
+  const tooltip = d3.select('body')
+    .append("div")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("background", "var(--cBg)")
+    .style("padding", "0.5em")
+    .style("border", "var(--borderPrimary)")
+    .text("");
+
+  /*
+  node
+    .append("title").text(({index: i}) => T[i]);
+  */
+
+  let isDragging = false;
+
+  // TODO: simply use a callback and create tooltip using svelte instead!
+  node
+    .on('mouseover', function (event, d) {
+      d3.select(this)
+        .style('fill', 'var(--cAccent)');
+
+      link
+        .style('stroke', function (linkD) {
+          return linkD.source.id === d.id || linkD.target.id === d.id
+            ? 'var(--cFgFaded)'
+            : linkStroke;
+        });
+
+      if(!isDragging) {
+        tooltip
+          .text(T[d.index])
+          .style("visibility", "visible")
+          .style("top", `${event.pageY + 10}px`)
+          .style("left", `${event.pageX + 10}px`);
+      }
+    })
+    .on('mousemove', function (event, d) {
+      tooltip
+        .style("top", `${event.pageY + 10}px`)
+        .style("left", `${event.pageX + 10}px`)
+    })
+    .on('mouseout', function () {
+      tooltip
+        .style("visibility", "hidden");
+
+      d3.select(this)
+        .style('fill', 'var(--cBgBright)');
+
+      link
+        .style('stroke', linkStroke);
+    });
 
   // Handle invalidation.
   if (invalidation != null) invalidation.then(() => simulation.stop());
@@ -117,17 +180,20 @@ export function ForceGraph({
       if (!event.active) simulation.alphaTarget(0.3).restart();
       event.subject.fx = event.subject.x;
       event.subject.fy = event.subject.y;
+      tooltip.style("visibility", "hidden");
     }
     
     function dragged(event) {
       event.subject.fx = event.x;
       event.subject.fy = event.y;
+      isDragging = true;
     }
     
     function dragended(event) {
       if (!event.active) simulation.alphaTarget(0);
       event.subject.fx = null;
       event.subject.fy = null;
+      isDragging = false;
     }
     
     return d3.drag()

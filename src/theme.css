@@ -3,18 +3,16 @@
   --cFg: #161a0f;
   --cBg: #d3d8d1;
   --cBgBright: #dfe4d3;
+  --cBgDark: #656e63;
+  --cBgBlack: #000000;
+  --cBgInverted: var(--cFg);
 
   --cFgFaded: #171d12aa;
   --cFgSoft: #171d1244;
-
-  --cBgDark: #656e63;
-
-  --cBgBlack: #000000;
-
   --cFgInverted: var(--cBg);
-  --cBgInverted: var(--cFg);
 
   --cLoader: #699275;
+  --cAccent: rgb(240, 240, 12);
 
   --fMono: 'SyneMono';
   --fDisplay: 'Gulax';
