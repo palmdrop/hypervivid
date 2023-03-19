@@ -2,7 +2,7 @@ export default {
   "nodes": [
     {
       "id": "node-graph",
-      "title": "node-graph",
+      "title": "Node Graph",
       "description": "",
       "tags": [],
       "url": "/nodes/node-graph"
@@ -16,6 +16,7 @@ export default {
         "art",
         "project",
         "thoughts",
+        "photography",
         "webart"
       ],
       "url": "/nodes/making-comfort"
@@ -189,8 +190,8 @@ export default {
         "organic",
         "substrate",
         "biophilia",
-        "geometry",
-        "photography"
+        "photography",
+        "geometry"
       ],
       "url": "/nodes/foliage-grids"
     },
@@ -203,8 +204,8 @@ export default {
         "art",
         "generative",
         "live",
-        "geometry",
         "photography",
+        "geometry",
         "interactive",
         "glitch",
         "instancing",
@@ -2384,6 +2385,56 @@ export default {
       "value": 1
     },
     {
+      "source": "making-comfort",
+      "target": "waft",
+      "value": 1
+    },
+    {
+      "source": "making-comfort",
+      "target": "places-and-things",
+      "value": 1
+    },
+    {
+      "source": "waft",
+      "target": "making-comfort",
+      "value": 1
+    },
+    {
+      "source": "waft",
+      "target": "summer-static",
+      "value": 1
+    },
+    {
+      "source": "waft",
+      "target": "city-pond",
+      "value": 1
+    },
+    {
+      "source": "waft",
+      "target": "places-and-things",
+      "value": 1
+    },
+    {
+      "source": "places-and-things",
+      "target": "making-comfort",
+      "value": 1
+    },
+    {
+      "source": "places-and-things",
+      "target": "fragfuse",
+      "value": 1
+    },
+    {
+      "source": "places-and-things",
+      "target": "summer-static",
+      "value": 1
+    },
+    {
+      "source": "places-and-things",
+      "target": "waft",
+      "value": 1
+    },
+    {
       "source": "markup-dada",
       "target": "ethereal-bits",
       "value": 1
@@ -2431,21 +2482,6 @@ export default {
     {
       "source": "objects",
       "target": "immerse",
-      "value": 1
-    },
-    {
-      "source": "places-and-things",
-      "target": "fragfuse",
-      "value": 1
-    },
-    {
-      "source": "places-and-things",
-      "target": "summer-static",
-      "value": 1
-    },
-    {
-      "source": "places-and-things",
-      "target": "waft",
       "value": 1
     },
     {
@@ -2506,21 +2542,6 @@ export default {
     {
       "source": "substrate-catalogue",
       "target": "living-hobbling-goo",
-      "value": 1
-    },
-    {
-      "source": "waft",
-      "target": "summer-static",
-      "value": 1
-    },
-    {
-      "source": "waft",
-      "target": "city-pond",
-      "value": 1
-    },
-    {
-      "source": "waft",
-      "target": "places-and-things",
       "value": 1
     }
   ]

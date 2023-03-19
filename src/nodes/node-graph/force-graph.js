@@ -17,31 +17,29 @@ export function ForceGraph({
   nodeStrokeOpacity = 1, // node stroke opacity
   nodeRadius = 5, // node radius, in pixels
   nodeStrength,
-  linkSource = ({source}) => source, // given d in links, returns a node identifier string
-  linkTarget = ({target}) => target, // given d in links, returns a node identifier string
+  linkSource = ( {source} ) => source, // given d in links, returns a node identifier string
+  linkTarget = ( {target} ) => target, // given d in links, returns a node identifier string
   linkStroke = "#999", // link stroke color
   linkStrokeOpacity = 0.6, // link stroke opacity
   linkStrokeWidth = 1.5, // given d in links, returns a stroke width in pixels
-  linkStrokeLinecap = "round", // link stroke linecap
   linkStrength,
   colors = d3.schemeTableau10, // an array of color strings, for the node groups
   width = 640, // outer width, in pixels
   height = 400, // outer height, in pixels
-  invalidation // when this promise resolves, stop the simulation
 } = {}) {
   // Compute values.
-  const N = d3.map(nodes, nodeId).map(intern);
-  const U = d3.map(nodes, node => node.url).map(intern);
-  const LS = d3.map(links, linkSource).map(intern);
-  const LT = d3.map(links, linkTarget).map(intern);
+  const N = nodes.map(nodeId);
+  const U = nodes.map(node => node.url);
+  const LS = links.map(linkSource);
+  const LT = links.map(linkTarget);
   if (nodeTitle === undefined) nodeTitle = (_, i) => N[i];
-  const T = d3.map(nodes, nodeTitle);
-  const G = nodeGroup == null ? null : d3.map(nodes, nodeGroup).map(intern);
-  const W = typeof linkStrokeWidth !== "function" ? null : d3.map(links, linkStrokeWidth);
+  const T = nodes.map(nodeTitle);
+  const G = nodeGroup == null ? null : nodes.map(nodeGroup);
+  const W = typeof linkStrokeWidth !== "function" ? null : links.map(linkStrokeWidth);
 
   // Replace the input nodes and links with mutable objects for the simulation.
-  nodes = d3.map(nodes, (_, i) => ({id: N[i]}));
-  links = d3.map(links, (_, i) => ({source: LS[i], target: LT[i]}));
+  nodes = nodes.map((_, i) => ({ id: N[i] }));
+  links = links.map((_, i) => ({ source: LS[i], target: LT[i] }));
 
   // Compute default domains.
   if (G && nodeGroups === undefined) nodeGroups = d3.sort(G);
@@ -69,19 +67,13 @@ export function ForceGraph({
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
 
   const link = svg.append("g")
-  /*
-      .attr("stroke", linkStroke)
-      .attr("stroke-opacity", linkStrokeOpacity)
-      .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
-      .attr("stroke-linecap", linkStrokeLinecap)
-      */
     .selectAll("line")
     .data(links)
     .join("line")
       .attr("stroke-opacity", linkStrokeOpacity)
       .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
       .style("stroke", linkStroke)
-      .style("stroke-linecap", linkStrokeLinecap)
+      .style("stroke-linecap", "round")
 
   if (W) link.attr("stroke-width", ({index: i}) => W[i]);
 
@@ -155,13 +147,6 @@ export function ForceGraph({
       link
         .style('stroke', linkStroke);
     });
-
-  // Handle invalidation.
-  if (invalidation != null) invalidation.then(() => simulation.stop());
-
-  function intern(value) {
-    return value !== null && typeof value === "object" ? value.valueOf() : value;
-  }
 
   function ticked() {
     link

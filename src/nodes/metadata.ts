@@ -1878,6 +1878,70 @@ export default {
         "to": "raw-making",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "making-comfort",
+        "to": "waft",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "making-comfort",
+        "to": "places-and-things",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "waft": [
+      {
+        "from": "waft",
+        "to": "making-comfort",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "waft",
+        "to": "summer-static",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "waft",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "waft",
+        "to": "places-and-things",
+        "kind": "previous",
+        "strength": 0.5
+      }
+    ],
+    "places-and-things": [
+      {
+        "from": "places-and-things",
+        "to": "making-comfort",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "places-and-things",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "places-and-things",
+        "to": "summer-static",
+        "kind": "previous",
+        "strength": 0.5
+      },
+      {
+        "from": "places-and-things",
+        "to": "waft",
+        "kind": "next",
+        "strength": 0.5
       }
     ],
     "markup-dada": [
@@ -1947,26 +2011,6 @@ export default {
         "from": "objects",
         "to": "immerse",
         "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "places-and-things": [
-      {
-        "from": "places-and-things",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "places-and-things",
-        "to": "summer-static",
-        "kind": "previous",
-        "strength": 0.5
-      },
-      {
-        "from": "places-and-things",
-        "to": "waft",
-        "kind": "next",
         "strength": 0.5
       }
     ],
@@ -2051,26 +2095,6 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "waft": [
-      {
-        "from": "waft",
-        "to": "summer-static",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "waft",
-        "to": "city-pond",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "waft",
-        "to": "places-and-things",
-        "kind": "previous",
-        "strength": 0.5
-      }
     ]
   },
   "tags": {
@@ -2115,8 +2139,8 @@ export default {
       "count": 11
     },
     "photography": {
-      "weight": 0.23809523809523808,
-      "count": 10
+      "weight": 0.2619047619047619,
+      "count": 11
     },
     "geometry": {
       "weight": 0.23809523809523808,
@@ -2273,9 +2297,9 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-19T14:48:06.625Z",
+      "updatedAt": "2023-03-19T18:31:38.839Z",
       "inline": false,
-      "title": "node-graph",
+      "title": "Node Graph",
       "description": "",
       "image": ""
     },
@@ -2284,6 +2308,7 @@ export default {
         "art",
         "project",
         "thoughts",
+        "photography",
         "webart"
       ],
       "links": [
@@ -2304,10 +2329,22 @@ export default {
           "to": "raw-making",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "making-comfort",
+          "to": "waft",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "making-comfort",
+          "to": "places-and-things",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Mon, 06 Mar 2023 18:47:11 GMT",
-      "updatedAt": "2023-03-10T20:18:04.167Z",
+      "updatedAt": "2023-03-19T18:30:56.008Z",
       "inline": false,
       "asDocument": true,
       "title": "Making Comfort",
@@ -2495,6 +2532,12 @@ export default {
       "links": [
         {
           "from": "waft",
+          "to": "making-comfort",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "waft",
           "to": "summer-static",
           "kind": "tangent",
           "strength": 0.5
@@ -2630,6 +2673,12 @@ export default {
         "photography"
       ],
       "links": [
+        {
+          "from": "places-and-things",
+          "to": "making-comfort",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "places-and-things",
           "to": "fragfuse",
@@ -2840,8 +2889,8 @@ export default {
         "organic",
         "substrate",
         "biophilia",
-        "geometry",
-        "photography"
+        "photography",
+        "geometry"
       ],
       "links": [
         {
@@ -2905,8 +2954,8 @@ export default {
         "art",
         "generative",
         "live",
-        "geometry",
         "photography",
+        "geometry",
         "interactive",
         "glitch",
         "instancing",
@@ -4369,7 +4418,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-03-18T16:16:00.377Z",
+      "updatedAt": "2023-03-19T18:28:16.181Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5323,5 +5372,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "super-cell"
+  "mostRecentlyUpdatedNode": "making-comfort"
 } as const;

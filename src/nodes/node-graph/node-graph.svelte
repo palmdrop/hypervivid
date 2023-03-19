@@ -20,7 +20,6 @@
     * only show certain tags or branches
     * paths?
     * show preview/node info on hover?
-
   */
 
   onMount(() => {
@@ -60,8 +59,7 @@
 </script>
 
 <div class="node">
-  <div id="graph" bind:this={container}>
-  </div> 
+  <div id="graph" bind:this={container} />
 </div>
 
 <style>
@@ -74,6 +72,25 @@
   #graph {
     width: 100%;
     max-width: 1000px;
+    position: relative;
     overflow: hidden;
+
+    border-radius: var(--borderRadius2);
+    margin: 1em;
+
+    z-index: 0;
+  }
+
+  #graph::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    box-shadow: inset 0px 0px 30px -20px var(--cFg);
+    z-index: 1;
+
+    pointer-events: none;
   }
 </style>
