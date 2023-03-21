@@ -28,6 +28,8 @@
     * tag colors
     * only show certain tags or branches
     * paths?
+    * when user is not interacting, start switching view/image every few seconds 
+    * show visited nodes in another color?
   */
 
   let activeNode: typeof data.nodes[number] | undefined = undefined;
@@ -98,7 +100,7 @@
       .data(nodes as (typeof nodes[number] & { index: number })[])
       .join('a')
         .attr("href", ({ url }) => url)
-        .attr("target", "_blank")
+        // .attr("target", "_blank")
       .append("circle")
         .attr("r", nodeRadius)
         .call(drag(simulation))
@@ -289,7 +291,6 @@
     overflow: hidden;
 
     border-radius: var(--borderRadius1);
-    border: var(--borderPrimary);
     margin: 1em;
 
     z-index: 0;
@@ -302,8 +303,8 @@
     width: 100%;
     height: 100%;
 
-    box-shadow: inset 0px 0px 30px -25px var(--cFg);
-    z-index: 1;
+    box-shadow: inset 0px 0px 35px 25px var(--cBg);
+    z-index: 100;
 
     pointer-events: none;
   }
