@@ -34,7 +34,8 @@ const main = async () => {
         title: node.title ?? name,
         description: node.description ?? '',
         tags: node.tags,
-        url: `/nodes/${name}`
+        url: `/nodes/${name}`,
+        image: node.image
       };
     });
 
@@ -55,7 +56,7 @@ const main = async () => {
     `export default ${JSON.stringify({
       nodes,
       links
-    }, null, 2)} as const;`
+    }, null, 2)};`
   );
 
   console.log("Done generating graph data...");

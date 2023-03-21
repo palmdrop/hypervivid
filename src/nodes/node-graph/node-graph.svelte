@@ -13,25 +13,32 @@
   import * as d3 from 'd3';
   import { onMount } from 'svelte';
   import data from '../graph-data';
-    import type { SimulationNodeDatum } from 'd3';
+  import type { SimulationNodeDatum } from 'd3';
 
   const width = 1000;
   const height = 1000;
 
+  let innerWidth: number;
+  let innerHeight: number;
+
   let container: HTMLElement;
+  let tooltip: HTMLDivElement;
 
   // TODO
   /*
-  
     * tag colors
     * only show certain tags or branches
     * paths?
     * show preview/node info on hover?
+    * add default image for nodes without thumbnail!
   */
 
+  let activeNode: typeof data.nodes[number] | undefined = undefined;
+  let hoveredMouseX = 0;
+  let hoveredMouseY = 0;
+
   onMount(() => {
-    const { nodes: nodesData, links: linksData } = data;
-    
+    const { nodes, links } = data;
 
     const nodeStrength = -600;
     const linkStrength = 0.7;
@@ -51,29 +58,17 @@
     ];
 
     // Compute values.
-    const N = nodesData.map(node => node.id);
-    const T = nodesData.map(node => node.title);
-    const U = nodesData.map(node => node.url);
-    const LS = linksData.map(link => link.source);
-    const LT = linksData.map(link => link.target);
-    // if (nodeTitle === undefined) nodeTitle = (_, i) => N[i];
-    const G = nodesData.map(node => (node as any).group ?? 0);
-    const W = linksData.map(link => 1.5);
-
-    // Replace the input nodes and links with mutable objects for the simulation.
-    const nodes = nodesData.map((_, i) => ({ id: N[i] }));
-    const links = linksData.map((_, i) => ({ source: LS[i], target: LT[i] }));
+    const linkWidths = links.map(link => 1.5);
 
     // Compute default domains.
-    // if (G && nodeGroups === undefined) nodeGroups = d3.sort(G);
-    const nodeGroups = d3.sort(G);
+    const nodeGroups = d3.sort(nodes.map(node => node.group ?? 0));
 
     // Construct the scales.
     const color = d3.scaleOrdinal(nodeGroups, colors);
 
     // Construct the forces.
     const forceNode = d3.forceManyBody();
-    const forceLink = d3.forceLink(links).id(({index: i}) => N[i!]);
+    const forceLink = d3.forceLink(links).id(({index: i}) => nodes[i!].id);
     if (nodeStrength !== undefined) forceNode.strength(nodeStrength);
     if (linkStrength !== undefined) forceLink.strength(linkStrength);
 
@@ -92,14 +87,14 @@
 
     const link = svg.append("g")
       .selectAll("line")
-      .data(links)
+      .data(links as (typeof links[number] & { index: number })[])
       .join("line")
         .attr("stroke-opacity", linkStrokeOpacity)
         .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
         .style("stroke", linkStroke)
         .style("stroke-linecap", "round")
 
-    if (W) link.attr("stroke-width", ({index: i}) => W[i]);
+    if (linkWidths) link.attr("stroke-width", ({index: i}) => linkWidths[i]);
 
     const node = svg.append("g")
         .attr("fill", nodeFill)
@@ -108,62 +103,64 @@
         .attr("stroke-width", nodeStrokeWidth)
         .attr("filter", 'drop-shadow(0px 0px 5px #00000088)')
       .selectAll("circle")
-      .data(nodes)
+      .data(nodes as (typeof nodes[number] & { index: number })[])
       .join('a')
-        .attr("href", ({ index }) => U[index])
+        .attr("href", ({ url }) => url)
         .attr("target", "_blank")
       .append("circle")
         .attr("r", nodeRadius)
         .call(drag(simulation))
 
-    if (G) node.attr("fill", ({index: i}) => color(G[i]));
-
-    const tooltip = d3.select('body')
-      .append("div")
-      .style("position", "absolute")
-      .style("z-index", "10")
-      .style("visibility", "hidden")
-      .style("background", "var(--cBg)")
-      .style("padding", "0.5em")
-      .style("border", "var(--borderPrimary)")
-      .text("");
-
-    /*
-    node
-      .append("title").text(({index: i}) => T[i]);
-    */
+    node.attr("fill", ({ group }) => color(group ?? 0));
 
     let isDragging = false;
 
-    // TODO: simply use a callback and create tooltip using svelte instead!
+    const calculateTooltipX = (event: any) => {
+      const x = event.pageX;
+      const tooltipWidth = tooltip.getBoundingClientRect().width;
+
+      if(x + tooltipWidth < innerWidth) {
+        return x;
+      } else {
+        return x - tooltipWidth;
+      }
+    }
+
+    const calculateTooltipY = (event: any) => {
+      const y = event.pageY;
+      const tooltipHeight = tooltip.getBoundingClientRect().height;
+
+      if(y + tooltipHeight < innerHeight) {
+        return y;
+      } else {
+        return y - tooltipHeight;
+      }
+    }
+
     node
-      .on('mouseover', function (event, d) {
+      .on('mouseover', function (event, node) {
         d3.select(this)
           .style('fill', 'var(--cAccent)');
 
         link
-          .style('stroke', function (linkD) {
-            return linkD.source.id === d.id || linkD.target.id === d.id
+          .style('stroke', function (linkD: any) {
+            return linkD.source.id === node.id || linkD.target.id === node.id
               ? 'var(--cFgFaded)'
               : linkStroke;
           });
 
         if(!isDragging) {
-          tooltip
-            .text(T[d.index])
-            .style("visibility", "visible")
-            .style("top", `${event.pageY + 10}px`)
-            .style("left", `${event.pageX + 10}px`);
+          hoveredMouseX = calculateTooltipX(event);
+          hoveredMouseY = calculateTooltipY(event);
+          activeNode = node;
         }
       })
-      .on('mousemove', function (event, d) {
-        tooltip
-          .style("top", `${event.pageY + 10}px`)
-          .style("left", `${event.pageX + 10}px`)
+      .on('mousemove', function (event) {
+        hoveredMouseX = calculateTooltipX(event);
+        hoveredMouseY = calculateTooltipY(event);
       })
       .on('mouseout', function () {
-        tooltip
-          .style("visibility", "hidden");
+        activeNode = undefined;
 
         d3.select(this)
           .style('fill', 'var(--cBgBright)');
@@ -174,38 +171,37 @@
 
     function ticked() {
       link
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
+        .attr("x1", (d: any) => d.source.x)
+        .attr("y1", (d: any) => d.source.y)
+        .attr("x2", (d: any) => d.target.x)
+        .attr("y2", (d: any) => d.target.y);
 
       node
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y);
+        .attr("cx", (d: any) => d.x)
+        .attr("cy", (d: any) => d.y);
     }
 
-    function drag(simulation) {    
-      function dragstarted(event) {
+    function drag(simulation: d3.Simulation<d3.SimulationNodeDatum, undefined>) {    
+      function dragstarted(event: d3.D3DragEvent<SVGElement, d3.SimulationNodeDatum, d3.SimulationNodeDatum>) {
         if (!event.active) simulation.alphaTarget(0.3).restart();
         event.subject.fx = event.subject.x;
         event.subject.fy = event.subject.y;
-        tooltip.style("visibility", "hidden");
       }
       
-      function dragged(event) {
+      function dragged(event: d3.D3DragEvent<SVGElement, d3.SimulationNodeDatum, d3.SimulationNodeDatum>) {
         event.subject.fx = event.x;
         event.subject.fy = event.y;
         isDragging = true;
       }
       
-      function dragended(event) {
+      function dragended(event: d3.D3DragEvent<SVGElement, d3.SimulationNodeDatum, d3.SimulationNodeDatum>) {
         if (!event.active) simulation.alphaTarget(0);
         event.subject.fx = null;
         event.subject.fy = null;
         isDragging = false;
       }
       
-      return d3.drag()
+      return d3.drag<SVGCircleElement, any>()
         .on("start", dragstarted)
         .on("drag", dragged)
         .on("end", dragended);
@@ -213,38 +209,50 @@
 
     const graph = Object.assign(svg.node()!, {scales: {color}});
 
-    // TODO: try this one: https://observablehq.com/@d3/disjoint-force-directed-graph
-    /*
-    const graph = ForceGraph(
-      data, {
-        nodeId: d => d.id,
-        nodeGroup: d => d.group,
-        nodeTitle: d => `${d.title}`,
-        nodeRadius: 8,
-        nodeStrokeWidth: 1,
-        nodeStroke: 'var(--cFgFaded)',
-        linkStrokeWidth: () => 2,//1 + Math.sqrt(l.value),
-        linkStroke: 'var(--cFgSoft)',
-        linkStrokeOpacity: 0.5,
-        width,
-        height,
-        nodeStrength: -600,
-        linkStrength: 0.7,
-        colors: [
-          'var(--cBgBright)',
-        ],
-        // invalidation
-      }
-    ) as unknown as SVGElement;
-    */
-
     container.appendChild(graph);
   });
 
 </script>
 
+<svelte:window 
+  bind:innerWidth={innerWidth}
+  bind:innerHeight={innerHeight}
+/>
+
 <div class="node">
   <div id="graph" bind:this={container} />
+    <div 
+      class="tooltip"
+      style:left="{hoveredMouseX + 10}px"
+      style:top="{hoveredMouseY - 25}px"
+      bind:this={tooltip}
+      style:visibility={activeNode ? 'visible' : 'hidden'}
+    >
+      { #if activeNode }
+        <div class="image-container">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            style="
+            "
+          >
+            <line x1="100%" y1="0" x2="0" y2="100%" />
+            <line x1="0%" y1="0" x2="100%" y2="100%" />
+          </svg>
+          { #if activeNode.image }
+            <img 
+              src={activeNode.image}
+              alt={activeNode.title}
+            />
+          { /if }
+        </div>
+        <h1>
+          { activeNode.title }
+        </h1>
+        <p>
+          { activeNode.description }
+        </p>
+      { /if }
+    </div>
 </div>
 
 <style>
@@ -260,7 +268,8 @@
     position: relative;
     overflow: hidden;
 
-    border-radius: var(--borderRadius2);
+    border-radius: var(--borderRadius1);
+    border: var(--borderPrimary);
     margin: 1em;
 
     z-index: 0;
@@ -277,5 +286,55 @@
     z-index: 1;
 
     pointer-events: none;
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: var(--cBg);
+    padding: 0.5em;
+    border: var(--borderPrimary);
+
+    max-width: 50vw;
+    width: 400px;
+
+    z-index: 1;
+  }
+
+  .tooltip .image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    position: relative;
+  }
+
+  .tooltip svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    stroke: var(--cFg);
+    stroke-width: 1px;
+    width: 100%;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    border: var(--borderPrimary);
+
+    z-index: -1;
+  }
+
+  .tooltip img {
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--cBg);
+  }
+
+  .tooltip h1 {
+    font-size: 1em;
+    text-align: left;
+    font-weight: bold;
+
+    padding-bottom: 0.5em;
   }
 </style>

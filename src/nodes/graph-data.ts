@@ -5,7 +5,8 @@ export default {
       "title": "Node Graph",
       "description": "",
       "tags": [],
-      "url": "/nodes/node-graph"
+      "url": "/nodes/node-graph",
+      "image": ""
     },
     {
       "id": "making-comfort",
@@ -19,7 +20,8 @@ export default {
         "photography",
         "webart"
       ],
-      "url": "/nodes/making-comfort"
+      "url": "/nodes/making-comfort",
+      "image": "/nodes/making-comfort.preview.jpg"
     },
     {
       "id": "breath-crunch",
@@ -34,7 +36,8 @@ export default {
         "feedback",
         "webart"
       ],
-      "url": "/nodes/breath-crunch"
+      "url": "/nodes/breath-crunch",
+      "image": "/nodes/breath-crunch.preview.jpg"
     },
     {
       "id": "substrate-catalogue",
@@ -48,7 +51,8 @@ export default {
         "substrate",
         "words"
       ],
-      "url": "/nodes/substrate-catalogue"
+      "url": "/nodes/substrate-catalogue",
+      "image": "/nodes/substrate-catalogue.preview.jpg"
     },
     {
       "id": "journal-artifacts",
@@ -63,7 +67,8 @@ export default {
         "feedback",
         "css"
       ],
-      "url": "/nodes/journal-artifacts"
+      "url": "/nodes/journal-artifacts",
+      "image": "/nodes/journal-artifacts.preview.png"
     },
     {
       "id": "raw-making",
@@ -77,7 +82,8 @@ export default {
         "exploration",
         "cringe"
       ],
-      "url": "/nodes/raw-making"
+      "url": "/nodes/raw-making",
+      "image": ""
     },
     {
       "id": "waft",
@@ -88,7 +94,8 @@ export default {
         "project",
         "photography"
       ],
-      "url": "/nodes/waft"
+      "url": "/nodes/waft",
+      "image": "/nodes/waft.preview.jpg"
     },
     {
       "id": "living-hobbling-goo",
@@ -106,7 +113,8 @@ export default {
         "webart",
         "fuse"
       ],
-      "url": "/nodes/living-hobbling-goo"
+      "url": "/nodes/living-hobbling-goo",
+      "image": "/nodes/living-hobbling-goo.preview.jpg"
     },
     {
       "id": "branches-and-connections",
@@ -119,7 +127,8 @@ export default {
         "internet",
         "mappings"
       ],
-      "url": "/nodes/branches-and-connections"
+      "url": "/nodes/branches-and-connections",
+      "image": ""
     },
     {
       "id": "places-and-things",
@@ -130,7 +139,8 @@ export default {
         "project",
         "photography"
       ],
-      "url": "/nodes/places-and-things"
+      "url": "/nodes/places-and-things",
+      "image": "/nodes/places-and-things.preview.jpg"
     },
     {
       "id": "mappings",
@@ -144,7 +154,8 @@ export default {
         "mappings",
         "Deleuze"
       ],
-      "url": "/nodes/mappings"
+      "url": "/nodes/mappings",
+      "image": ""
     },
     {
       "id": "remnant-mappings",
@@ -159,7 +170,8 @@ export default {
         "mappings",
         "rhizome"
       ],
-      "url": "/nodes/remnant-mappings"
+      "url": "/nodes/remnant-mappings",
+      "image": "/nodes/remnant-mappings.preview.jpg"
     },
     {
       "id": "foliage-fragments",
@@ -176,7 +188,8 @@ export default {
         "feedback",
         "mappings"
       ],
-      "url": "/nodes/foliage-fragments"
+      "url": "/nodes/foliage-fragments",
+      "image": "/nodes/foliage-fragments.preview.jpg"
     },
     {
       "id": "foliage-grids",
@@ -193,7 +206,8 @@ export default {
         "photography",
         "geometry"
       ],
-      "url": "/nodes/foliage-grids"
+      "url": "/nodes/foliage-grids",
+      "image": "/nodes/foliage-grids.preview.jpg"
     },
     {
       "id": "cliffscapes",
@@ -211,7 +225,8 @@ export default {
         "instancing",
         "octree"
       ],
-      "url": "/nodes/cliffscapes"
+      "url": "/nodes/cliffscapes",
+      "image": "/nodes/cliffscapes.preview.jpg"
     },
     {
       "id": "alien-skies",
@@ -227,7 +242,8 @@ export default {
         "noise",
         "substrate"
       ],
-      "url": "/nodes/alien-skies"
+      "url": "/nodes/alien-skies",
+      "image": "/nodes/alien-skies.preview.jpg"
     },
     {
       "id": "cringe-core",
@@ -239,7 +255,8 @@ export default {
         "fragments",
         "internet"
       ],
-      "url": "/nodes/cringe-core"
+      "url": "/nodes/cringe-core",
+      "image": ""
     },
     {
       "id": "glow-tree",
@@ -253,7 +270,8 @@ export default {
         "geometry",
         "space-colonization"
       ],
-      "url": "/nodes/glow-tree"
+      "url": "/nodes/glow-tree",
+      "image": "/nodes/glow-tree.preview.jpg"
     },
     {
       "id": "virtual-distance",
@@ -264,7 +282,8 @@ export default {
         "webart",
         "css"
       ],
-      "url": "/nodes/virtual-distance"
+      "url": "/nodes/virtual-distance",
+      "image": "/nodes/virtual-distance.preview.jpg"
     },
     {
       "id": "summer-static",
@@ -276,7 +295,8 @@ export default {
         "biophilia",
         "photography"
       ],
-      "url": "/nodes/summer-static"
+      "url": "/nodes/summer-static",
+      "image": "/nodes/summer-static.preview.jpg"
     },
     {
       "id": "formations",
@@ -290,7 +310,8 @@ export default {
         "geometry",
         "feedback"
       ],
-      "url": "/nodes/formations"
+      "url": "/nodes/formations",
+      "image": "/nodes/formations.preview.jpg"
     },
     {
       "id": "neon-moss",
@@ -305,7 +326,8 @@ export default {
         "biophilia",
         "geometry"
       ],
-      "url": "/nodes/neon-moss"
+      "url": "/nodes/neon-moss",
+      "image": "/nodes/neon-moss.preview.jpg"
     },
     {
       "id": "digital-biophilia",
@@ -319,7 +341,8 @@ export default {
         "thoughts",
         "fragments"
       ],
-      "url": "/nodes/digital-biophilia"
+      "url": "/nodes/digital-biophilia",
+      "image": ""
     },
     {
       "id": "super-cell",
@@ -336,7 +359,8 @@ export default {
         "substrate",
         "biophilia"
       ],
-      "url": "/nodes/super-cell"
+      "url": "/nodes/super-cell",
+      "image": "/nodes/super-cell.preview.jpg"
     },
     {
       "id": "substrates",
@@ -349,7 +373,8 @@ export default {
         "words",
         "external"
       ],
-      "url": "/nodes/substrates"
+      "url": "/nodes/substrates",
+      "image": "/nodes/substrates.preview.jpg"
     },
     {
       "id": "moss-structure",
@@ -366,7 +391,8 @@ export default {
         "substrate",
         "biophilia"
       ],
-      "url": "/nodes/moss-structure"
+      "url": "/nodes/moss-structure",
+      "image": "/nodes/moss-structure.preview.jpg"
     },
     {
       "id": "nest",
@@ -382,7 +408,8 @@ export default {
         "substrate",
         "biophilia"
       ],
-      "url": "/nodes/nest"
+      "url": "/nodes/nest",
+      "image": "/nodes/nest.preview.jpg"
     },
     {
       "id": "jolt-gate",
@@ -397,7 +424,8 @@ export default {
         "noise",
         "substrate"
       ],
-      "url": "/nodes/jolt-gate"
+      "url": "/nodes/jolt-gate",
+      "image": "/nodes/jolt-gate.preview.jpg"
     },
     {
       "id": "swamp-mass",
@@ -414,7 +442,8 @@ export default {
         "substrate",
         "biophilia"
       ],
-      "url": "/nodes/swamp-mass"
+      "url": "/nodes/swamp-mass",
+      "image": "/nodes/swamp-mass.preview.jpg"
     },
     {
       "id": "markup-dada",
@@ -426,7 +455,8 @@ export default {
         "css",
         "webart"
       ],
-      "url": "/nodes/markup-dada"
+      "url": "/nodes/markup-dada",
+      "image": "/nodes/markup-dada.preview.jpg"
     },
     {
       "id": "digital-gardening",
@@ -438,7 +468,8 @@ export default {
         "thoughts",
         "fragments"
       ],
-      "url": "/nodes/digital-gardening"
+      "url": "/nodes/digital-gardening",
+      "image": ""
     },
     {
       "id": "city-pond",
@@ -451,7 +482,8 @@ export default {
         "biophilia",
         "photography"
       ],
-      "url": "/nodes/city-pond"
+      "url": "/nodes/city-pond",
+      "image": "/nodes/city-pond.preview.jpg"
     },
     {
       "id": "less-flat",
@@ -463,7 +495,8 @@ export default {
         "fragments",
         "exploration"
       ],
-      "url": "/nodes/less-flat"
+      "url": "/nodes/less-flat",
+      "image": ""
     },
     {
       "id": "intro",
@@ -475,7 +508,8 @@ export default {
         "info",
         "utility"
       ],
-      "url": "/nodes/intro"
+      "url": "/nodes/intro",
+      "image": ""
     },
     {
       "id": "ethereal-bits",
@@ -486,7 +520,8 @@ export default {
         "css",
         "webart"
       ],
-      "url": "/nodes/ethereal-bits"
+      "url": "/nodes/ethereal-bits",
+      "image": "/nodes/ethereal-bits.preview.jpg"
     },
     {
       "id": "latest",
@@ -497,7 +532,8 @@ export default {
         "info",
         "utility"
       ],
-      "url": "/nodes/latest"
+      "url": "/nodes/latest",
+      "image": ""
     },
     {
       "id": "chaos-growth",
@@ -512,7 +548,8 @@ export default {
         "rhizome",
         "space-colonization"
       ],
-      "url": "/nodes/chaos-growth"
+      "url": "/nodes/chaos-growth",
+      "image": "/nodes/chaos-growth.preview.jpg"
     },
     {
       "id": "objects",
@@ -527,7 +564,8 @@ export default {
         "project",
         "noise"
       ],
-      "url": "/nodes/objects"
+      "url": "/nodes/objects",
+      "image": "/nodes/objects.preview.jpg"
     },
     {
       "id": "weave",
@@ -543,7 +581,8 @@ export default {
         "memes",
         "flowfield"
       ],
-      "url": "/nodes/weave"
+      "url": "/nodes/weave",
+      "image": "/nodes/weave.preview.jpg"
     },
     {
       "id": "webfuse",
@@ -559,7 +598,8 @@ export default {
         "fuse",
         "memes"
       ],
-      "url": "/nodes/webfuse"
+      "url": "/nodes/webfuse",
+      "image": "/img/webfuse/gif2.gif"
     },
     {
       "id": "fragfuse",
@@ -573,7 +613,8 @@ export default {
         "hyper",
         "fuse"
       ],
-      "url": "/nodes/fragfuse"
+      "url": "/nodes/fragfuse",
+      "image": "/img/combined/hare.jpg"
     },
     {
       "id": "links",
@@ -584,7 +625,8 @@ export default {
         "internet",
         "exploration"
       ],
-      "url": "/nodes/links"
+      "url": "/nodes/links",
+      "image": ""
     },
     {
       "id": "moons",
@@ -595,7 +637,8 @@ export default {
         "css",
         "webart"
       ],
-      "url": "/nodes/moons"
+      "url": "/nodes/moons",
+      "image": ""
     },
     {
       "id": "contact",
@@ -606,7 +649,8 @@ export default {
         "contact",
         "communication"
       ],
-      "url": "/nodes/contact"
+      "url": "/nodes/contact",
+      "image": ""
     },
     {
       "id": "about",
@@ -617,7 +661,8 @@ export default {
         "thoughts",
         "info"
       ],
-      "url": "/nodes/about"
+      "url": "/nodes/about",
+      "image": "/nodes/about.preview.jpg"
     },
     {
       "id": "hyper",
@@ -631,7 +676,8 @@ export default {
         "words",
         "hyper"
       ],
-      "url": "/nodes/hyper"
+      "url": "/nodes/hyper",
+      "image": "/nodes/hyper.preview.jpg"
     },
     {
       "id": "manifesto",
@@ -643,7 +689,8 @@ export default {
         "internet",
         "info"
       ],
-      "url": "/nodes/manifesto"
+      "url": "/nodes/manifesto",
+      "image": "/img/combined/mirror2.jpg"
     },
     {
       "id": "block-dissolve",
@@ -659,7 +706,8 @@ export default {
         "feedback",
         "glitch"
       ],
-      "url": "/nodes/block-dissolve"
+      "url": "/nodes/block-dissolve",
+      "image": "/nodes/block-dissolve.preview.jpg"
     },
     {
       "id": "medusa-network",
@@ -675,7 +723,8 @@ export default {
         "dithering",
         "blue-noise"
       ],
-      "url": "/nodes/medusa-network"
+      "url": "/nodes/medusa-network",
+      "image": "/nodes/medusa-network.preview.jpg"
     },
     {
       "id": "noise-construct",
@@ -690,7 +739,8 @@ export default {
         "dithering",
         "blue-noise"
       ],
-      "url": "/nodes/noise-construct"
+      "url": "/nodes/noise-construct",
+      "image": "/nodes/noise-construct.preview.jpg"
     },
     {
       "id": "skew-bulbs",
@@ -704,7 +754,8 @@ export default {
         "domain-warping",
         "chrome"
       ],
-      "url": "/nodes/skew-bulbs"
+      "url": "/nodes/skew-bulbs",
+      "image": "/nodes/skew-bulbs.preview.jpg"
     },
     {
       "id": "slices",
@@ -717,7 +768,8 @@ export default {
         "css",
         "external"
       ],
-      "url": "/nodes/slices"
+      "url": "/nodes/slices",
+      "image": "/nodes/slices.preview.jpg"
     },
     {
       "id": "rhizome",
@@ -735,7 +787,8 @@ export default {
         "rhizome",
         "Deleuze"
       ],
-      "url": "/nodes/rhizome"
+      "url": "/nodes/rhizome",
+      "image": "/nodes/rhizome.preview.jpg"
     },
     {
       "id": "fluid-feedback",
@@ -750,7 +803,8 @@ export default {
         "organic",
         "feedback"
       ],
-      "url": "/nodes/fluid-feedback"
+      "url": "/nodes/fluid-feedback",
+      "image": "/nodes/fluid-feedback.preview.jpg"
     },
     {
       "id": "immerse",
@@ -767,7 +821,8 @@ export default {
         "feedback",
         "interactive"
       ],
-      "url": "/nodes/immerse"
+      "url": "/nodes/immerse",
+      "image": "/nodes/immerse.preview.jpg"
     },
     {
       "id": "alien-patterns",
@@ -781,7 +836,8 @@ export default {
         "substrate",
         "writing"
       ],
-      "url": "/nodes/alien-patterns"
+      "url": "/nodes/alien-patterns",
+      "image": "/img/posts/alien-patterns/banner.jpg"
     },
     {
       "id": "modified-noise",
@@ -793,7 +849,8 @@ export default {
         "noise",
         "writing"
       ],
-      "url": "/nodes/modified-noise"
+      "url": "/nodes/modified-noise",
+      "image": "/img/posts/modified-noise/banner.jpg"
     },
     {
       "id": "domain-warping",
@@ -806,7 +863,8 @@ export default {
         "noise",
         "writing"
       ],
-      "url": "/nodes/domain-warping"
+      "url": "/nodes/domain-warping",
+      "image": "/img/posts/domain-warping/banner.jpg"
     },
     {
       "id": "flat-clouds",
@@ -821,7 +879,8 @@ export default {
         "mind",
         "particles"
       ],
-      "url": "/nodes/flat-clouds"
+      "url": "/nodes/flat-clouds",
+      "image": "/nodes/flat-clouds.preview.jpg"
     },
     {
       "id": "rehash-transform",
@@ -838,7 +897,8 @@ export default {
         "instancing",
         "mind"
       ],
-      "url": "/nodes/rehash-transform"
+      "url": "/nodes/rehash-transform",
+      "image": "/nodes/rehash-transform.preview.jpg"
     },
     {
       "id": "virtual-imprint",
@@ -854,7 +914,8 @@ export default {
         "interactive",
         "chrome"
       ],
-      "url": "/nodes/virtual-imprint"
+      "url": "/nodes/virtual-imprint",
+      "image": "/nodes/virtual-imprint.preview.jpg"
     },
     {
       "id": "solar-landscape",
@@ -869,7 +930,8 @@ export default {
         "interactive",
         "chrome"
       ],
-      "url": "/nodes/solar-landscape"
+      "url": "/nodes/solar-landscape",
+      "image": "/nodes/solar-landscape.preview.jpg"
     },
     {
       "id": "solar-chrome",
@@ -884,7 +946,8 @@ export default {
         "interactive",
         "chrome"
       ],
-      "url": "/nodes/solar-chrome"
+      "url": "/nodes/solar-chrome",
+      "image": "/nodes/solar-chrome.preview.jpg"
     },
     {
       "id": "retro-core",
@@ -900,7 +963,8 @@ export default {
         "texture",
         "depth"
       ],
-      "url": "/nodes/retro-core"
+      "url": "/nodes/retro-core",
+      "image": "/nodes/retro-core.preview.jpg"
     }
   ],
   "links": [
@@ -2545,4 +2609,4 @@ export default {
       "value": 1
     }
   ]
-} as const;
+};
