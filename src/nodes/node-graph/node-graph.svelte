@@ -111,7 +111,7 @@
       let x = event.pageX;
       const tooltipWidth = tooltip.getBoundingClientRect().width;
 
-      x = tooltipWidth < innerWidth 
+      x = (x + tooltipWidth) < innerWidth 
         ? x + 10
         : x - tooltipWidth + 10;
 
@@ -122,9 +122,9 @@
       let y = event.pageY;
       const tooltipHeight = tooltip.getBoundingClientRect().height;
 
-      y = tooltipHeight < innerHeight 
+      y = (y + tooltipHeight) < innerHeight 
         ? y + 10
-        : y - tooltipHeight + 10;
+        : y - tooltipHeight - 10;
 
       y -= scrollY;
 
@@ -213,12 +213,13 @@
 </script>
 
 <svelte:window 
+  bind:scrollY={scrollY}
   bind:innerWidth={innerWidth}
   bind:innerHeight={innerHeight}
-  bind:scrollY={scrollY}
 />
 
-<div class="node">
+<div class="node"
+>
   <h1 class="hyperwords">
     { hyperword ?? 'hypervivid' }
   </h1>
@@ -261,7 +262,7 @@
     
     height: 100%;
 
-    z-index: 1;
+    z-index: 2;
 
     position: relative;
   }
@@ -291,7 +292,7 @@
     border: var(--borderPrimary);
     margin: 1em;
 
-    z-index: 1;
+    z-index: 0;
   }
 
   #graph::before {
