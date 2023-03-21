@@ -1,8 +1,8 @@
 I'm trying to approach generative/digital art as I would approach gardening. I mentioned this in one of [my previous fragments](/nodes/less-flat).
 
-Gardening is personal, and in one sense, pointless. You may invite people to your house and show off the bushes and flowerbeds, but primarily, the garden exists only for the gardener. You grow and tend to the space as an extension of your home and daily routine. You live in the garden. And with some softness and care, the garden will grow and evolve. But you'll never reap any profit, except for some peppers, a tomato, maybe raspberries.
+Gardening is personal, and in one sense, pointless. You may invite people to your house and show off the bushes and flowerbeds, but primarily, the garden exists only for the gardener. You grow and tend to the space as an extension of your home and daily routine. You live in the garden. And with some softness and care, the garden will grow and evolve. The garden is different from the rest of nature, but overly structured, like a lawn. [Digital creator Vincent described it well.](https://garden.vincentli.space/making-a-place-on-the-web---garden)
 
-That "pointlessness" is something I'd like to embrace.
+You'll never reap any profits from a garden, except maybe a few extra peppers. That "pointlessness" is something I'd like to embrace.
 
 I've been feeling stressed and dissatisfied with my crafts for a while now. I frequently feel like I don't make enough progress, that I lack a distinct direction, goal, or whatever. In the back of my mind, there's always the idea of publishing. Sharing. Harvesting likes, interactions, or followers -- the classics... I may be philosophically against that mindset, but still, I'm producing *content* for consumption. I want to get away from this, or just let this aspect be a side-effect. 
 

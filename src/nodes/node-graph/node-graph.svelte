@@ -229,22 +229,22 @@
       style:visibility={activeNode ? 'visible' : 'hidden'}
     >
       { #if activeNode }
-        <div class="image-container">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            style="
-            "
-          >
-            <line x1="100%" y1="0" x2="0" y2="100%" />
-            <line x1="0%" y1="0" x2="100%" y2="100%" />
-          </svg>
-          { #if activeNode.image }
+        { #if activeNode.image }
+          <div class="image-container">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              style="
+              "
+            >
+              <line x1="100%" y1="0" x2="0" y2="100%" />
+              <line x1="0%" y1="0" x2="100%" y2="100%" />
+            </svg>
             <img 
               src={activeNode.image}
               alt={activeNode.title}
             />
-          { /if }
-        </div>
+          </div>
+        { /if }
         <h1>
           { activeNode.title }
         </h1>

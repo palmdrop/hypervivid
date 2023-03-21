@@ -2297,7 +2297,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-20T23:07:35.494Z",
+      "updatedAt": "2023-03-21T18:54:03.268Z",
       "inline": false,
       "title": "Node Graph",
       "description": "",
@@ -3957,10 +3957,10 @@ export default {
         }
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
-      "updatedAt": "2022-12-05T17:43:13.655Z",
+      "updatedAt": "2023-03-21T18:55:17.401Z",
       "inline": true,
       "title": "Digital Gardening",
-      "description": "",
+      "description": "Some thoughts about digital and generative gardening.",
       "image": ""
     },
     "city-pond": {
@@ -5372,5 +5372,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "making-comfort"
+  "mostRecentlyUpdatedNode": "digital-gardening"
 } as const;

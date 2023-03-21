@@ -462,7 +462,7 @@ export default {
       "id": "digital-gardening",
       "group": "biophilia",
       "title": "Digital Gardening",
-      "description": "",
+      "description": "Some thoughts about digital and generative gardening.",
       "tags": [
         "biophilia",
         "thoughts",
