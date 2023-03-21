@@ -6,31 +6,28 @@
   // Released under the ISC license.
   // https://observablehq.com/@d3/disjoint-force-directed-graph
 
-  import { getNodeContext } from '$utils/useNodeContext';
-  const { name, metadata } = getNodeContext('node-graph');
-
   // TODO: uninstall and only install required modules
   import * as d3 from 'd3';
   import { onMount } from 'svelte';
   import data from '../graph-data';
   import type { SimulationNodeDatum } from 'd3';
+    import { hyperwords } from '../hyper/hyper.svelte';
 
   const width = 1000;
   const height = 1000;
 
   let innerWidth: number;
   let innerHeight: number;
+  let scrollY: number;
 
   let container: HTMLElement;
   let tooltip: HTMLDivElement;
 
-  // TODO
   /*
+    TODO
     * tag colors
     * only show certain tags or branches
     * paths?
-    * show preview/node info on hover?
-    * add default image for nodes without thumbnail!
   */
 
   let activeNode: typeof data.nodes[number] | undefined = undefined;
@@ -57,13 +54,8 @@
       "var(--cBgBright)"
     ];
 
-    // Compute values.
     const linkWidths = links.map(link => 1.5);
-
-    // Compute default domains.
     const nodeGroups = d3.sort(nodes.map(node => node.group ?? 0));
-
-    // Construct the scales.
     const color = d3.scaleOrdinal(nodeGroups, colors);
 
     // Construct the forces.
@@ -101,7 +93,7 @@
         .attr("stroke", nodeStroke)
         .attr("stroke-opacity", nodeStrokeOpacity)
         .attr("stroke-width", nodeStrokeWidth)
-        .attr("filter", 'drop-shadow(0px 0px 5px #00000088)')
+        .attr("filter", 'drop-shadow(2px 2px 3px #00000088)')
       .selectAll("circle")
       .data(nodes as (typeof nodes[number] & { index: number })[])
       .join('a')
@@ -116,25 +108,27 @@
     let isDragging = false;
 
     const calculateTooltipX = (event: any) => {
-      const x = event.pageX;
+      let x = event.pageX;
       const tooltipWidth = tooltip.getBoundingClientRect().width;
 
-      if(x + tooltipWidth < innerWidth) {
-        return x;
-      } else {
-        return x - tooltipWidth;
-      }
+      x = tooltipWidth < innerWidth 
+        ? x + 10
+        : x - tooltipWidth + 10;
+
+      return x;
     }
 
     const calculateTooltipY = (event: any) => {
-      const y = event.pageY;
+      let y = event.pageY;
       const tooltipHeight = tooltip.getBoundingClientRect().height;
 
-      if(y + tooltipHeight < innerHeight) {
-        return y;
-      } else {
-        return y - tooltipHeight;
-      }
+      y = tooltipHeight < innerHeight 
+        ? y + 10
+        : y - tooltipHeight + 10;
+
+      y -= scrollY;
+
+      return y;
     }
 
     node
@@ -212,30 +206,34 @@
     container.appendChild(graph);
   });
 
+  let hyperword: string;
+  setInterval(() => {
+    hyperword = hyperwords[Math.floor(Math.random() * hyperwords.length)];
+  }, 200);
 </script>
 
 <svelte:window 
   bind:innerWidth={innerWidth}
   bind:innerHeight={innerHeight}
+  bind:scrollY={scrollY}
 />
 
 <div class="node">
+  <h1 class="hyperwords">
+    { hyperword ?? 'hypervivid' }
+  </h1>
   <div id="graph" bind:this={container} />
     <div 
       class="tooltip"
-      style:left="{hoveredMouseX + 10}px"
-      style:top="{hoveredMouseY - 25}px"
+      style:left="{hoveredMouseX}px"
+      style:top="{hoveredMouseY}px"
       bind:this={tooltip}
       style:visibility={activeNode ? 'visible' : 'hidden'}
     >
       { #if activeNode }
         { #if activeNode.image }
           <div class="image-container">
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              style="
-              "
-            >
+            <svg xmlns="http://www.w3.org/2000/svg">
               <line x1="100%" y1="0" x2="0" y2="100%" />
               <line x1="0%" y1="0" x2="100%" y2="100%" />
             </svg>
@@ -260,6 +258,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    height: 100%;
+
+    z-index: 1;
+
+    position: relative;
+  }
+
+  .hyperwords {
+    position: absolute;
+
+    font-size: 4em;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: var(--cBg);
+    text-shadow: 
+      0.02em 0.02em 0.04em #1111116e,
+      -0.01em -0.01em 0.04em #eeffee9c;
   }
 
   #graph {
@@ -272,7 +291,7 @@
     border: var(--borderPrimary);
     margin: 1em;
 
-    z-index: 0;
+    z-index: 1;
   }
 
   #graph::before {
@@ -282,14 +301,14 @@
     width: 100%;
     height: 100%;
 
-    box-shadow: inset 0px 0px 30px -20px var(--cFg);
+    box-shadow: inset 0px 0px 30px -25px var(--cFg);
     z-index: 1;
 
     pointer-events: none;
   }
 
   .tooltip {
-    position: absolute;
+    position: fixed;
     background-color: var(--cBg);
     padding: 0.5em;
     border: var(--borderPrimary);
@@ -297,7 +316,9 @@
     max-width: 50vw;
     width: 400px;
 
-    z-index: 1;
+    z-index: 999;
+
+    box-shadow: 0px 0px 2em -0.5em var(--cFg);
   }
 
   .tooltip .image-container {

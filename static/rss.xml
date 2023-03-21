@@ -255,7 +255,7 @@
 <guid>https://palmdrop.site/nodes/node-graph</guid>
 <title>Node Graph</title>
 <link>https://palmdrop.site/nodes/node-graph</link>
-<description></description>
+<description>A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.</description>
 <pubDate>Sat, 18 Mar 2023 18:53:13 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/noise-construct</guid>

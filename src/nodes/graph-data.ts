@@ -3,7 +3,7 @@ export default {
     {
       "id": "node-graph",
       "title": "Node Graph",
-      "description": "",
+      "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
       "tags": [],
       "url": "/nodes/node-graph",
       "image": ""

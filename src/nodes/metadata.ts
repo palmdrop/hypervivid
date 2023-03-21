@@ -2297,10 +2297,10 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-21T18:54:03.268Z",
+      "updatedAt": "2023-03-21T19:01:44.202Z",
       "inline": false,
       "title": "Node Graph",
-      "description": "",
+      "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
       "image": ""
     },
     "making-comfort": {
@@ -3957,7 +3957,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
-      "updatedAt": "2023-03-21T18:55:17.401Z",
+      "updatedAt": "2023-03-21T18:59:40.680Z",
       "inline": true,
       "title": "Digital Gardening",
       "description": "Some thoughts about digital and generative gardening.",

@@ -112,8 +112,6 @@
     justify-content: center;
     gap: 1em;
 
-    z-index: 1;
-
     width: 100%;
 
     margin: 5%;
