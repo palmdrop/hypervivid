@@ -96,7 +96,7 @@
         .attr("stroke", nodeStroke)
         .attr("stroke-opacity", nodeStrokeOpacity)
         .attr("stroke-width", nodeStrokeWidth)
-        .attr("filter", 'drop-shadow(2px 2px 3px #00000088)')
+        .attr("filter", 'drop-shadow(2px 2px 1px #00000088)')
       .selectAll("circle")
       .data(nodes as (typeof nodes[number] & { index: number })[])
       .join('a')
@@ -209,12 +209,10 @@
     container.appendChild(graph);
   });
 
-  /*
   let hyperword: string;
   setInterval(() => {
     hyperword = hyperwords[Math.floor(Math.random() * hyperwords.length)];
   }, 200);
-  */
 </script>
 
 <svelte:window 
@@ -225,11 +223,9 @@
 
 <div class="node"
 >
-  <!--
   <h1 class="hyperwords">
     { hyperword ?? 'hypervivid' }
   </h1>
-  -->
   <div id="graph" bind:this={container} />
     <div 
       class="tooltip"

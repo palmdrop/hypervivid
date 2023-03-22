@@ -8,7 +8,7 @@
   import { SITE_NAME } from '$constants';
   import Header from '$components/header/Header.svelte';
   import PageFooter from '../components/footer/page/PageFooter.svelte';
-    import NodeGraph from '../nodes/node-graph/node-graph.svelte';
+  import NodeGraph from '../nodes/node-graph/node-graph.svelte';
 
   $: nodeNames = [
     'intro',
@@ -24,11 +24,11 @@
     class="landing"
   >
     <Node
-      name="node-graph"
+      name="hyper"
       mode="inline"
       fromSlot={true}
     >
-      <NodeGraph />
+      <Hyper />
     </Node>
     <a
       class="scroll-down-button"
