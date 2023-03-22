@@ -1,5 +1,7 @@
 {
-  "tags": [],
+  "tags": [
+    "exploration", "mappings", "info", "utility"
+  ],
   "links": [
     "about",
     "manifesto"

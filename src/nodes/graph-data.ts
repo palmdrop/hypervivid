@@ -2,11 +2,17 @@ export default {
   "nodes": [
     {
       "id": "node-graph",
+      "group": "mappings",
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
-      "tags": [],
+      "tags": [
+        "mappings",
+        "info",
+        "exploration",
+        "utility"
+      ],
       "url": "/nodes/node-graph",
-      "image": ""
+      "image": "/nodes/node-graph.preview.jpg"
     },
     {
       "id": "making-comfort",

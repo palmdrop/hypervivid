@@ -2183,10 +2183,14 @@ export default {
       "count": 6
     },
     "info": {
-      "weight": 0.09523809523809523,
-      "count": 4
+      "weight": 0.11904761904761904,
+      "count": 5
     },
     "mappings": {
+      "weight": 0.11904761904761904,
+      "count": 5
+    },
+    "exploration": {
       "weight": 0.09523809523809523,
       "count": 4
     },
@@ -2222,7 +2226,7 @@ export default {
       "weight": 0.07142857142857142,
       "count": 3
     },
-    "exploration": {
+    "utility": {
       "weight": 0.07142857142857142,
       "count": 3
     },
@@ -2235,10 +2239,6 @@ export default {
       "count": 2
     },
     "mind": {
-      "weight": 0.047619047619047616,
-      "count": 2
-    },
-    "utility": {
       "weight": 0.047619047619047616,
       "count": 2
     },
@@ -2293,7 +2293,12 @@ export default {
   },
   "nodes": {
     "node-graph": {
-      "tags": [],
+      "tags": [
+        "mappings",
+        "info",
+        "exploration",
+        "utility"
+      ],
       "links": [
         {
           "from": "node-graph",
@@ -2315,11 +2320,11 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-21T22:22:24.327Z",
+      "updatedAt": "2023-03-22T20:13:58.921Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
-      "image": ""
+      "image": "/nodes/node-graph.preview.jpg"
     },
     "making-comfort": {
       "tags": [

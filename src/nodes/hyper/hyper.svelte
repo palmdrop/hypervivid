@@ -68,7 +68,13 @@
     'imposed',
     'leisure',
     'exposed',
-    'rich'
+    'rich',
+    'fixed',
+    'form',
+    'fluid',
+    'office',
+    'free',
+    'sure'
   ].map(word => `hyper${word}`.toUpperCase());
 </script>
 
