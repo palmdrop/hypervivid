@@ -11,7 +11,7 @@
   import { onMount } from 'svelte';
   import data from '../graph-data';
   import type { SimulationNodeDatum } from 'd3';
-    import { hyperwords } from '../hyper/hyper.svelte';
+  import { hyperwords } from '../hyper/hyper.svelte';
 
   const width = 1000;
   const height = 1000;
@@ -48,7 +48,7 @@
     const nodeFill = 'currentColor';
     const linkStrokeWidth = () => 2;
     const linkStroke = 'var(--cFgSoft)';
-    const linkStrokeOpacity = 0.5;
+    const linkStrokeOpacity = 0.6;
 
     const nodeStrokeOpacity = 1;
 
@@ -87,6 +87,7 @@
         .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
         .style("stroke", linkStroke)
         .style("stroke-linecap", "round")
+        .style("filter", 'drop-shadow(1px 1px 0px var(--cBg))')
 
     if (linkWidths) link.attr("stroke-width", ({index: i}) => linkWidths[i]);
 
@@ -265,6 +266,7 @@
     height: 100%;
 
     z-index: 2;
+    pointer-events: none;
 
     position: relative;
   }
@@ -272,7 +274,7 @@
   .hyperwords {
     position: absolute;
 
-    font-size: 4em;
+    font-size: clamp(3.5em, 10vw, 8em);
 
     top: 50%;
     left: 50%;
@@ -280,8 +282,8 @@
 
     color: var(--cBg);
     text-shadow: 
-      0.02em 0.02em 0.04em #1111116e,
-      -0.01em -0.01em 0.04em #eeffee9c;
+      0.02em 0.02em 0.04em #0f0f0f6e,
+      -0.01em -0.01em 0.04em #bcc7bc9c;
   }
 
   #graph {
@@ -294,6 +296,8 @@
     margin: 1em;
 
     z-index: 0;
+
+    pointer-events: all;
   }
 
   #graph::before {

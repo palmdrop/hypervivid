@@ -120,7 +120,7 @@ export default {
       "id": "branches-and-connections",
       "group": "thoughts",
       "title": "Branches and connections",
-      "description": "",
+      "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
       "tags": [
         "thoughts",
         "fragments",
@@ -1790,6 +1790,11 @@ export default {
     },
     {
       "source": "hyper",
+      "target": "node-graph",
+      "value": 1
+    },
+    {
+      "source": "hyper",
       "target": "rehash-transform",
       "value": 1
     },
@@ -2521,6 +2526,11 @@ export default {
     {
       "source": "medusa-network",
       "target": "skew-bulbs",
+      "value": 1
+    },
+    {
+      "source": "node-graph",
+      "target": "hyper",
       "value": 1
     },
     {

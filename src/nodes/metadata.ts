@@ -1033,6 +1033,12 @@ export default {
       },
       {
         "from": "hyper",
+        "to": "node-graph",
+        "kind": "consumed",
+        "strength": 0.5
+      },
+      {
+        "from": "hyper",
         "to": "rehash-transform",
         "kind": "tangent",
         "strength": 0.5
@@ -1981,6 +1987,12 @@ export default {
     "node-graph": [
       {
         "from": "node-graph",
+        "to": "hyper",
+        "kind": "consumes",
+        "strength": 0.5
+      },
+      {
+        "from": "node-graph",
         "to": "about",
         "kind": "tangent",
         "strength": 0.5
@@ -2285,6 +2297,12 @@ export default {
       "links": [
         {
           "from": "node-graph",
+          "to": "hyper",
+          "kind": "consumes",
+          "strength": 0.5
+        },
+        {
+          "from": "node-graph",
           "to": "about",
           "kind": "tangent",
           "strength": 0.5
@@ -2297,7 +2315,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-21T19:01:44.202Z",
+      "updatedAt": "2023-03-21T22:22:24.327Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
@@ -2661,10 +2679,10 @@ export default {
         }
       ],
       "createdAt": "Tue, 22 Nov 2022 15:40:27 GMT",
-      "updatedAt": "2022-12-05T17:43:13.652Z",
+      "updatedAt": "2023-03-22T18:18:56.713Z",
       "inline": true,
       "title": "Branches and connections",
-      "description": "",
+      "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
       "image": ""
     },
     "places-and-things": {
@@ -4561,6 +4579,12 @@ export default {
         },
         {
           "from": "hyper",
+          "to": "node-graph",
+          "kind": "consumed",
+          "strength": 0.5
+        },
+        {
+          "from": "hyper",
           "to": "rehash-transform",
           "kind": "tangent",
           "strength": 0.5
@@ -5372,5 +5396,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "digital-gardening"
+  "mostRecentlyUpdatedNode": "branches-and-connections"
 } as const;
