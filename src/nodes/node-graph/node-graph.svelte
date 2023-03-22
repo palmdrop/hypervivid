@@ -86,8 +86,8 @@
         .attr("stroke-opacity", linkStrokeOpacity)
         .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
         .style("stroke", linkStroke)
-        .style("stroke-linecap", "round")
-        .style("filter", 'drop-shadow(1px 1px 0px var(--cBg))')
+        .style("stroke-linecap", "round");
+        //.style("filter", 'drop-shadow(1px 1px 0px var(--cBg))')
 
     if (linkWidths) link.attr("stroke-width", ({index: i}) => linkWidths[i]);
 
