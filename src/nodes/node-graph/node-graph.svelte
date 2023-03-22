@@ -209,10 +209,12 @@
     container.appendChild(graph);
   });
 
+  /*
   let hyperword: string;
   setInterval(() => {
     hyperword = hyperwords[Math.floor(Math.random() * hyperwords.length)];
   }, 200);
+  */
 </script>
 
 <svelte:window 
@@ -223,9 +225,11 @@
 
 <div class="node"
 >
+  <!--
   <h1 class="hyperwords">
     { hyperword ?? 'hypervivid' }
   </h1>
+  -->
   <div id="graph" bind:this={container} />
     <div 
       class="tooltip"
