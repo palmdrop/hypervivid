@@ -4,7 +4,7 @@ export default {
       "id": "node-graph",
       "group": "mappings",
       "title": "Node Graph",
-      "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
+      "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
       "tags": [
         "mappings",
         "info",

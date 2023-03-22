@@ -2320,10 +2320,10 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-22T20:13:58.921Z",
+      "updatedAt": "2023-03-22T21:47:35.035Z",
       "inline": false,
       "title": "Node Graph",
-      "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections.",
+      "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
       "image": "/nodes/node-graph.preview.jpg"
     },
     "making-comfort": {
@@ -4606,7 +4606,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2023-03-19T14:30:56.512Z"
+      "updatedAt": "2023-03-22T20:16:10.181Z"
     },
     "manifesto": {
       "tags": [
@@ -5401,5 +5401,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "branches-and-connections"
+  "mostRecentlyUpdatedNode": "hyper"
 } as const;

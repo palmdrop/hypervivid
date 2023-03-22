@@ -10,10 +10,17 @@
   import PageFooter from '../components/footer/page/PageFooter.svelte';
   import NodeGraph from '../nodes/node-graph/node-graph.svelte';
 
+  import { UAParser } from 'ua-parser-js';
+
   $: nodeNames = [
     'intro',
     'latest'
   ] as NodeName[];
+
+  const deviceType = new UAParser().getDevice().type;
+  const assumeLimitedPerformance = (
+    ([UAParser.DEVICE.MOBILE, UAParser.DEVICE.WEARABLE] as string[]).includes(deviceType as string)
+  );
 
   useTitle(`${SITE_NAME} ~ HYPERSOFT`);
 </script>
@@ -24,11 +31,15 @@
     class="landing"
   >
     <Node
-      name="hyper"
+      name={assumeLimitedPerformance ? "hyper" : "node-graph"}
       mode="inline"
       fromSlot={true}
     >
-      <Hyper />
+      { #if assumeLimitedPerformance }
+        <Hyper />
+      { :else }
+        <NodeGraph />
+      { /if }
     </Node>
     <a
       class="scroll-down-button"
