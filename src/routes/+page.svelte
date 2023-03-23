@@ -19,7 +19,7 @@
 
   const deviceType = new UAParser().getDevice().type;
   const assumeLimitedPerformance = (
-    ([UAParser.DEVICE.MOBILE, UAParser.DEVICE.WEARABLE] as string[]).includes(deviceType as string)
+    ([UAParser.DEVICE.MOBILE, UAParser.DEVICE.WEARABLE, UAParser.DEVICE.EMBEDDED] as string[]).includes(deviceType as string)
   );
 
   useTitle(`${SITE_NAME} ~ HYPERSOFT`);

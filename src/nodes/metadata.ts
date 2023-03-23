@@ -2320,7 +2320,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-22T21:47:35.035Z",
+      "updatedAt": "2023-03-22T21:48:48.260Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
@@ -2367,7 +2367,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 06 Mar 2023 18:47:11 GMT",
-      "updatedAt": "2023-03-19T18:30:56.008Z",
+      "updatedAt": "2023-03-22T21:48:48.258Z",
       "inline": false,
       "asDocument": true,
       "title": "Making Comfort",
@@ -2684,7 +2684,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 22 Nov 2022 15:40:27 GMT",
-      "updatedAt": "2023-03-22T18:18:56.713Z",
+      "updatedAt": "2023-03-22T21:48:48.254Z",
       "inline": true,
       "title": "Branches and connections",
       "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
@@ -2898,7 +2898,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
-      "updatedAt": "2023-03-18T22:58:31.847Z",
+      "updatedAt": "2023-03-22T21:48:48.256Z",
       "inline": false,
       "title": "Foliage Fragments",
       "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
@@ -3491,7 +3491,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 19 Aug 2022 17:08:31 GMT",
-      "updatedAt": "2023-03-19T14:38:26.010Z",
+      "updatedAt": "2023-03-22T21:48:48.261Z",
       "inline": false,
       "title": "Super Cell",
       "description": "Warping lines in multiple layers makes for a strange, morphing life-form.",
@@ -3677,7 +3677,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
-      "updatedAt": "2023-03-18T23:01:10.555Z",
+      "updatedAt": "2023-03-22T21:48:48.259Z",
       "inline": false,
       "title": "Moss Structure",
       "description": "More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.",
@@ -3750,7 +3750,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
-      "updatedAt": "2023-03-18T23:01:15.591Z",
+      "updatedAt": "2023-03-22T21:48:48.260Z",
       "inline": false,
       "title": "Nest",
       "description": "Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.",
@@ -3822,7 +3822,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 13 Aug 2022 09:33:13 GMT",
-      "updatedAt": "2023-03-18T23:00:53.226Z",
+      "updatedAt": "2023-03-22T21:48:48.257Z",
       "inline": false,
       "title": "Jolt Gate",
       "description": "Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.",
@@ -3980,7 +3980,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
-      "updatedAt": "2023-03-21T18:59:40.680Z",
+      "updatedAt": "2023-03-22T21:48:48.255Z",
       "inline": true,
       "title": "Digital Gardening",
       "description": "Some thoughts about digital and generative gardening.",
@@ -4169,7 +4169,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 28 Jun 2022 07:07:14 GMT",
-      "updatedAt": "2023-03-19T11:22:46.537Z",
+      "updatedAt": "2023-03-22T21:48:48.258Z",
       "inline": true,
       "title": "Latest",
       "description": "Displays the most recently created and most recently updated nodes. Just a utility.",
@@ -4606,7 +4606,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2023-03-22T20:16:10.181Z"
+      "updatedAt": "2023-03-22T21:48:48.256Z"
     },
     "manifesto": {
       "tags": [
@@ -4720,7 +4720,7 @@ export default {
         }
       ],
       "createdAt": "4 May 2022 11:45:09 GMT",
-      "updatedAt": "2023-03-18T22:57:06.337Z",
+      "updatedAt": "2023-03-22T21:48:48.254Z",
       "inline": false,
       "title": "Block Dissolve",
       "description": "Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.",
@@ -4919,7 +4919,7 @@ export default {
         }
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "2023-03-18T23:01:22.614Z",
+      "updatedAt": "2023-03-22T21:48:48.261Z",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -5047,7 +5047,7 @@ export default {
         }
       ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
-      "updatedAt": "2023-03-18T23:05:04.436Z",
+      "updatedAt": "2023-03-22T21:48:48.257Z",
       "inline": false,
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
@@ -5401,5 +5401,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "hyper"
+  "mostRecentlyUpdatedNode": "super-cell"
 } as const;
