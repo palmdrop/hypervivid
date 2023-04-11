@@ -157,6 +157,7 @@
 <style>
   .node {
     width: 100%;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
