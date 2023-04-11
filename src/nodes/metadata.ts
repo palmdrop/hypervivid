@@ -2320,7 +2320,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-03-22T21:48:48.260Z",
+      "updatedAt": "2023-04-10T18:10:40.661Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
@@ -2494,7 +2494,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2023-02-05T13:32:17.716Z",
+      "updatedAt": "2023-04-11T20:21:47.645Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -4441,7 +4441,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-03-19T18:28:16.181Z",
+      "updatedAt": "2023-03-28T10:52:24.425Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5401,5 +5401,5 @@ export default {
     }
   },
   "latestNode": "node-graph",
-  "mostRecentlyUpdatedNode": "super-cell"
+  "mostRecentlyUpdatedNode": "journal-artifacts"
 } as const;
