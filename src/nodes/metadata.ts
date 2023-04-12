@@ -2494,7 +2494,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2023-04-11T20:21:47.645Z",
+      "updatedAt": "2023-04-11T20:27:11.318Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
