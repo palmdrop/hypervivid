@@ -20,7 +20,7 @@ import Paragraph from "../common/Paragraph.svelte";
       Error: node failed to load. If the problem persist, please <Link href="/nodes/contact">contact me.</Link>
     </Paragraph>
     <Paragraph big center wide>
-      <Link href="/nodes">Go back</Link>
+      <Link href="/nodes" showTooltipOnHover={false}>Go back</Link>
     </Paragraph>
   </div>
 {:else}

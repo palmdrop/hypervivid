@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { page } from "$app/stores";
+  import { clamp } from "lodash";
+
   export let href: string | undefined = undefined;
   export let onClick: ((event: Event) => void) | undefined = undefined;
   export let newTab = false;
@@ -7,10 +10,85 @@
   export let decorated = false;
   export let big = false;
   export let omitBorder: 'left' | 'right' | 'top' | 'bottom' | undefined = undefined;
+  export let showTooltipOnHover = true;
+  export let tooltipShowDelay = 200;
+
+  let linkNode: HTMLAnchorElement;
+  let tooltipNode: HTMLSpanElement | undefined = undefined;
+  let innerWidth: number;
+  let innerHeight: number;
+
+  // Start with a value outside the screen to avoid flickering
+  let tooltipX: number = -1000;
+  let tooltipY: number = -1000;
+
+  // TODO: Show preview
+  // $: isNodeLink = !!href?.startsWith('/nodes');
+  $: isRelativeLink = !!href?.startsWith('/');
+
+  $: tooltipText = isRelativeLink 
+    ? `${$page.url.host}${href}`
+    : href;
+
+  let isHovered = false; 
+  let showTooltip = false;
+
+  let showTooltipDelayTimeout: NodeJS.Timeout | undefined;
+
+  const clearTooltipDelayTimeout = () => {
+    if(showTooltipDelayTimeout) {
+      clearTimeout(showTooltipDelayTimeout);
+      showTooltipDelayTimeout = undefined;
+    }
+  }
+
+  const onMouseEnter = (event: MouseEvent) => {
+    if(!linkNode || !showTooltipOnHover || !tooltipNode) return;
+
+    const linkBoundingRect = linkNode.getBoundingClientRect();
+    const tooltipBoundingRect = tooltipNode.getBoundingClientRect();
+
+    const tooltipMargin = 5;
+
+    tooltipX = clamp(
+      linkBoundingRect.left + linkBoundingRect.width / 2 - tooltipBoundingRect?.width / 2,
+      tooltipMargin, 
+      innerWidth - tooltipBoundingRect.width - tooltipMargin
+    );
+
+    tooltipY = clamp(
+      linkBoundingRect.top + linkBoundingRect.height,
+      tooltipMargin, 
+      innerHeight - tooltipBoundingRect.height - tooltipMargin
+    );
+
+    isHovered = true;
+    clearTooltipDelayTimeout();
+
+    showTooltipDelayTimeout = setTimeout(
+      () => {
+        showTooltip = true;
+      }, 
+      tooltipShowDelay
+    );
+  }
+
+  const onMouseLeave = () => {
+    isHovered = false;
+
+    clearTooltipDelayTimeout();
+    showTooltip = false;
+  }
 </script>
 
+<svelte:window
+  bind:innerWidth={innerWidth}
+  bind:innerHeight={innerHeight}
+/>
+
 <a
-  {href}
+  { href }
+  bind:this={linkNode}
   on:click={onClick}
   target={newTab ? '_blank' : undefined}  
   rel={newTab ? 'noopener noreferrer' : undefined}
@@ -19,15 +97,30 @@
   class:decorated
   class:big
   class={'link ' + (omitBorder ? 'omit-' + omitBorder : '')}
-  {...$$restProps}
+  { ...$$restProps }
+  on:mouseenter={onMouseEnter}
+  on:mouseleave={onMouseLeave}
+  on:blur={onMouseLeave}
 >
-  <slot />
+  <slot/>{#if showTooltipOnHover}
+    <span 
+      bind:this={tooltipNode}
+      class="tooltip"
+      class:showTooltip
+      style:left="{tooltipX}px"
+      style:top="{tooltipY}px"
+    >
+      { tooltipText }
+    </span> 
+  { /if }
 </a>
 
 <style>
   .link {
     text-decoration: none;
     cursor: pointer;
+    position: relative;
+    z-index: inherit;
   }
 
   .link:hover {
@@ -106,4 +199,32 @@
     font-size: var(--fontSizeLarge);
   }
 
+  .tooltip {
+    position: fixed;
+    display: block;
+
+    max-width: calc(100vw - 2rem);
+
+    z-index: 1000;
+
+    padding: 0.3rem 0.6rem;
+    background-color: var(--cBg);
+
+    box-shadow: var(--hoverShadow);
+    border: var(--borderPrimary);
+
+    font-family: var(--fRegular);
+    font-size: 1rem;
+    text-decoration: underline;
+    line-height: 1rem;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+
+  .showTooltip {
+    visibility: visible;
+    opacity: 1;
+  }
 </style>

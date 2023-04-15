@@ -36,6 +36,7 @@
     >
       <Link 
         href="/nodes"
+        showTooltipOnHover={false}
       >
         <Point size={35}/>
       </Link>

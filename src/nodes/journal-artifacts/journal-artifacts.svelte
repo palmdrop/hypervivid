@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getNodeContext } from '$utils/useNodeContext';
-    import Link from '../../components/common/Link.svelte';
+  import Link from '../../components/common/Link.svelte';
   import BlogPost from '../../components/node/templates/BlogPost.svelte';
   import Document from './document.svelte.md';
   const { name, metadata } = getNodeContext('journal-artifacts');

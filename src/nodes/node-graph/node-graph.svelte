@@ -227,34 +227,34 @@
     { hyperword ?? 'hypervivid' }
   </h1>
   <div id="graph" bind:this={container} />
-    <div 
-      class="tooltip"
-      style:left="{hoveredMouseX}px"
-      style:top="{hoveredMouseY}px"
-      bind:this={tooltip}
-      style:visibility={activeNode ? 'visible' : 'hidden'}
-    >
-      { #if activeNode }
-        { #if activeNode.image }
-          <div class="image-container">
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <line x1="100%" y1="0" x2="0" y2="100%" />
-              <line x1="0%" y1="0" x2="100%" y2="100%" />
-            </svg>
-            <img 
-              src={activeNode.image}
-              alt={activeNode.title}
-            />
-          </div>
-        { /if }
-        <h1>
-          { activeNode.title }
-        </h1>
-        <p>
-          { activeNode.description }
-        </p>
+  <div 
+    class="tooltip"
+    style:left="{hoveredMouseX}px"
+    style:top="{hoveredMouseY}px"
+    bind:this={tooltip}
+    style:visibility={activeNode ? 'visible' : 'hidden'}
+  >
+    { #if activeNode }
+      { #if activeNode.image }
+        <div class="image-container">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <line x1="100%" y1="0" x2="0" y2="100%" />
+            <line x1="0%" y1="0" x2="100%" y2="100%" />
+          </svg>
+          <img 
+            src={activeNode.image}
+            alt={activeNode.title}
+          />
+        </div>
       { /if }
-    </div>
+      <h1>
+        { activeNode.title }
+      </h1>
+      <p>
+        { activeNode.description }
+      </p>
+    { /if }
+  </div>
 </div>
 
 <style>
@@ -264,6 +264,7 @@
     justify-content: center;
     
     height: 100%;
+    max-height: 75vh;
 
     z-index: 2;
     pointer-events: none;
@@ -282,8 +283,8 @@
 
     color: var(--cBg);
     text-shadow: 
-      0.02em 0.02em 0.04em #0f0f0f6e,
-      -0.01em -0.01em 0.04em #bcc7bc9c;
+      0.02em 0.02em 0.0em #0f0f0f6e,
+      -0.01em -0.01em 0.0em #e4e9e4ff;
   }
 
   #graph {

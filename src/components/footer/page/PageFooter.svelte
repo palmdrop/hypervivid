@@ -56,7 +56,7 @@
     </Paragraph>
     <Paragraph>
       This site does not store any cookies.
-      <Link href="/nodes/about">
+      <Link href="/nodes/about" showTooltipOnHover={false}>
          Read more.
       </Link>
     </Paragraph>
@@ -69,7 +69,7 @@
       <ul>
         {#each navEntries as { path, text }, i (path)}
           <li>
-            <Link href={path}>
+            <Link href={path} showTooltipOnHover={false}>
               {text} 
             </Link>
           </li>
@@ -85,7 +85,7 @@
       <ul>
         {#each links as { path, text }, i (path)}
           <li>
-            <Link href={path}>
+            <Link href={path} showTooltipOnHover={false}>
               {text} 
             </Link>
           </li>

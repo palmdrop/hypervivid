@@ -14,7 +14,8 @@ const config = {
 			},
 			extensions: [
 				'.svelte.md'
-			]
+			],
+			smartypants: true
 		})
 	],
 	extensions: [

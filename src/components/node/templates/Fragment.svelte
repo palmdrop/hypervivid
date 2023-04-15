@@ -83,7 +83,7 @@
 
   .limited .content {
     max-height: 12em;
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
   span {

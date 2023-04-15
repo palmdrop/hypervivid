@@ -136,12 +136,11 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    overflow-x: hidden;
     overflow-y: auto;
-
     max-width: 1200px;
 
     padding-bottom: 1em;
+    z-index: 0;
   }
 
   li {

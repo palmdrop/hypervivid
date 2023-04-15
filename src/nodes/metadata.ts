@@ -2320,7 +2320,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-04-10T18:10:40.661Z",
+      "updatedAt": "2023-04-15T19:12:30.848Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
@@ -2494,7 +2494,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2023-04-11T20:27:11.318Z",
+      "updatedAt": "2023-04-15T19:12:30.847Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -4111,7 +4111,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
-      "updatedAt": "2023-03-18T23:05:42.085Z",
+      "updatedAt": "2023-04-15T17:36:25.747Z",
       "inline": true,
       "title": "Intro",
       "description": "A short site description.",
@@ -4441,7 +4441,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-03-28T10:52:24.425Z",
+      "updatedAt": "2023-04-13T15:26:38.893Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4547,7 +4547,7 @@ export default {
       "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
       "image": "/nodes/about.preview.jpg",
-      "updatedAt": "2022-12-05T17:43:13.651Z"
+      "updatedAt": "2023-04-15T19:12:30.846Z"
     },
     "hyper": {
       "tags": [
@@ -4606,7 +4606,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2023-03-22T21:48:48.256Z"
+      "updatedAt": "2023-04-11T20:36:54.074Z"
     },
     "manifesto": {
       "tags": [

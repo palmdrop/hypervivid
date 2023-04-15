@@ -109,6 +109,7 @@
                 'right' : 
                 undefined
             }
+            showTooltipOnHover={false}
           >
             {link.text}
           </Link>
@@ -266,8 +267,6 @@
     justify-content: center;
 
     padding-top: 2.0em;
-
-    overflow: hidden;
 
     width: clamp(300px, 100%, 1100px);
 

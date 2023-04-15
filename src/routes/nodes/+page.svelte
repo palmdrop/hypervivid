@@ -75,13 +75,14 @@
     <Paragraph big style="margin-top: 0.5em">
       <Link
         href='/random'
+        showTooltipOnHover={false}
       >
         Open a random node.
       </Link>
     </Paragraph>
   </div>
 
-  {#key matchedNodes}
+  { #key matchedNodes }
     <NodeList
       nodeNames={matchedNodes}
       modeFirst="preview"
@@ -89,7 +90,7 @@
       batchCount={10}
       emptyText="No nodes found..."
     />
-  {/key}
+  { /key }
 </main>
 <PageFooter />
 
