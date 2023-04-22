@@ -1,6 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import { clamp } from "lodash";
+  import type { NodeName } from "../../types/nodes";
+  import HoverPreview from "../node/preview/HoverPreview.svelte";
 
   export let href: string | undefined = undefined;
   export let onClick: ((event: Event) => void) | undefined = undefined;
@@ -23,8 +25,11 @@
   let tooltipY: number = -1000;
 
   // TODO: Show preview
-  // $: isNodeLink = !!href?.startsWith('/nodes');
+  $: isNodeLink = !!href?.startsWith('/nodes');
   $: isRelativeLink = !!href?.startsWith('/');
+  $: nodeName = isNodeLink 
+    ? (href?.slice('/nodes'.length + 1)) as NodeName
+    : undefined;
 
   $: tooltipText = isRelativeLink 
     ? `${$page.url.host}${href}`
@@ -103,15 +108,22 @@
   on:blur={onMouseLeave}
 >
   <slot/>{#if showTooltipOnHover}
-    <span 
+    <div 
       bind:this={tooltipNode}
       class="tooltip"
       class:showTooltip
       style:left="{tooltipX}px"
       style:top="{tooltipY}px"
+      style:text-decoration="{!nodeName ? 'underline' : 'none'}"
     >
-      { tooltipText }
-    </span> 
+      { #if nodeName }
+        <HoverPreview
+          nodeName={nodeName} 
+        />
+      { :else }
+        { tooltipText }
+      {/if }
+    </div> 
   { /if }
 </a>
 
@@ -210,12 +222,14 @@
     padding: 0.3rem 0.6rem;
     background-color: var(--cBg);
 
-    box-shadow: var(--hoverShadow);
+    box-shadow: 
+      var(--hoverShadow),
+      2px 2px 5px var(--cFg);
+
     border: var(--borderPrimary);
 
     font-family: var(--fRegular);
     font-size: 1rem;
-    text-decoration: underline;
     line-height: 1rem;
 
     visibility: hidden;
