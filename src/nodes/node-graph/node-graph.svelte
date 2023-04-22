@@ -266,7 +266,6 @@
     height: 100%;
     max-height: 75vh;
 
-    z-index: 2;
     pointer-events: none;
 
     position: relative;
