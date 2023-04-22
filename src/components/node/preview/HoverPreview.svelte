@@ -20,12 +20,11 @@
 
 <style>
   h1 {
-    font-size: 1.5rem;
-    padding-bottom: 0.4em;
+    font-size: 1em;
     text-align: left;
-    font-family: var(--fItalic);
-    text-transform: lowercase;
-    text-decoration: underline;
+    font-weight: bold;
+
+    padding-bottom: 0.5em;
   }
 
   .hover-preview {
