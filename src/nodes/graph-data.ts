@@ -1,14 +1,29 @@
 export default {
   "nodes": [
     {
+      "id": "maps-of-the-web",
+      "group": "thoughts",
+      "title": "Maps of The Web",
+      "description": "",
+      "tags": [
+        "thoughts",
+        "internet",
+        "mappings",
+        "exploration",
+        "writing"
+      ],
+      "url": "/nodes/maps-of-the-web",
+      "image": ""
+    },
+    {
       "id": "node-graph",
       "group": "mappings",
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
       "tags": [
         "mappings",
-        "info",
         "exploration",
+        "info",
         "utility"
       ],
       "url": "/nodes/node-graph",
@@ -1640,6 +1655,11 @@ export default {
       "value": 1
     },
     {
+      "source": "branches-and-connections",
+      "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
       "source": "mappings",
       "target": "branches-and-connections",
       "value": 1
@@ -1667,6 +1687,11 @@ export default {
     {
       "source": "mappings",
       "target": "digital-biophilia",
+      "value": 1
+    },
+    {
+      "source": "mappings",
+      "target": "maps-of-the-web",
       "value": 1
     },
     {
@@ -1837,6 +1862,11 @@ export default {
     {
       "source": "less-flat",
       "target": "mappings",
+      "value": 1
+    },
+    {
+      "source": "less-flat",
+      "target": "maps-of-the-web",
       "value": 1
     },
     {
@@ -2510,6 +2540,46 @@ export default {
       "value": 1
     },
     {
+      "source": "maps-of-the-web",
+      "target": "mappings",
+      "value": 1
+    },
+    {
+      "source": "maps-of-the-web",
+      "target": "less-flat",
+      "value": 1
+    },
+    {
+      "source": "maps-of-the-web",
+      "target": "branches-and-connections",
+      "value": 1
+    },
+    {
+      "source": "maps-of-the-web",
+      "target": "node-graph",
+      "value": 1
+    },
+    {
+      "source": "node-graph",
+      "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
+      "source": "node-graph",
+      "target": "hyper",
+      "value": 1
+    },
+    {
+      "source": "node-graph",
+      "target": "about",
+      "value": 1
+    },
+    {
+      "source": "node-graph",
+      "target": "manifesto",
+      "value": 1
+    },
+    {
       "source": "markup-dada",
       "target": "ethereal-bits",
       "value": 1
@@ -2532,21 +2602,6 @@ export default {
     {
       "source": "medusa-network",
       "target": "skew-bulbs",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "hyper",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "about",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "manifesto",
       "value": 1
     },
     {

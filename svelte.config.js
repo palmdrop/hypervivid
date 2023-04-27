@@ -6,6 +6,9 @@ import { mdsvex } from 'mdsvex';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
+	extensions: [
+		'.svelte', '.svx', '.md'
+	],
 	preprocess: [
 		sveltePreprocess(),
 		mdsvex({
@@ -13,7 +16,7 @@ const config = {
 				_: './src/mdsvex/layout.svelte'
 			},
 			extensions: [
-				'.svelte.md'
+				'.md'
 			],
 			smartypants: true
 		})
