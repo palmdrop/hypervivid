@@ -1,15 +1,20 @@
-Each day, I interact with a network of personal, interconnected notes -- ideas, thoughts, journal entries, short story drafts, todo-lists, blueprints for generative art, screenshots, links. I use *dendron*, but there's many note-taking systems/software with particular philosophies. My system is not well-defined. I just sort my notes in a way that seem intuitive, and add links between them whenever seems appropriate. I like this way of note-taking, it's close to how I think -- by memory, association, metaphor. All in one place and accessible by traversal, jumping for one link to another.
+Each day, I expand my network of private notes. I have repositories of interconnected ideas, thoughts, journal entries, short story drafts, todo-lists, screenshots and links. My personal tool is called [dendron](https://www.dendron.so/), but there're countless note-taking systems out there, each with a slightly different philosophy.
 
-Note-taking is powerful. Like any tool, it influecnes how we think. An "extended mind" [link?]. 
+I sort my notes primarily using intuition. The actual (virtual) folder structure is not as important as the links between notes. Recently, I've been approaching note-taking as extended thinking. Notes as memory, association, metaphor, all gathered in a single space.
 
-The mind is not linear. Layout information out in a linear, logical order makes information easily digestable, but it takes tramendous effort to think this way. I doubt anyone really does. I find thinking to be more fluid; the mind a hyperdimensional, complex space. Vague concepts and ideas that blend together, connect to adjacent concept and ideas, with a structure that only emerges when we write.
+Like any tool, note-taking changes how we think. An [extended mind](https://en.wikipedia.org/wiki/Extended_mind_thesis) (I try not to think too much about "the second brain" and the ideas of using effective note-taking as productivity boosters -- I've been trying to get away from [hurry sickness](/nodes/raw-making) for a while now).
 
-I like note-taking that mirrors this. Notes are rarely rewritten, but when organized as [nodes and edges](node graph!?), it's easier to revisit, reconnect, and combine.
+The problem with a notebook is linear limitations. Pages get filled up, and we move forward. Although we could jump around, add lines here and there on any page, the structure of the book enforces a linear approach. Notebooks also get full. Page references are messy and hard to lookup, especially if the pages you are referencing is present in another book. You cannot search, except by scanning with your eyes. My handwriting is *very* poor.
+
+**The mind is not linear**. Presenting information in a linear, logical order takes tremendous effort, although it of course make information easily digestable. But no one thinks this way. Thinking is more fluid. The mind is a complex space where vague concepts and ideas blend together, associations form, new ideas emerge from the interplay of past knowledge, instinct, memory, everything.
+
+I want note-taking that mirrors this. Notes as [nodes and edges](/nodes/node-graph) between them, nodes that are revisited, rewritten, reconnected, combined.
 
 ## a hyper-dimensional network
-The internet is similar to this. I wouldn't say that it's "like" a mind -- it's not. But the core idea of the web is interconnectedness. I've written about this before: [mappings, branches and connections, manifesto, links]. Hyperlinks are fundamental, essential. Standardized protocols and API's allow us to effectively share data and ideas, and link between them.
+**A hyper-dimensional network**: the *internet* resembles a mind. The core of the internet is non-linear and interconnected. [I've written about this before.](/nodes/branches-and-connections) [and so has others??? links!!!]
 
-Again, I've written before about how the internet shrinks. More and more is centralized on a few large platforms. Visiting the rest of the internet becomes less intuitive, not something you do instinctively. Especially when we become used to specific "content" formats (like those on instagram, tiktok, youtube, medium, etc), or when outgoing links are blocked or obstructed (instagram does not allow links in descriptions, many sites warn you when leaving their site, making it seem dangerous).
+[FORTSÄTT!]
+Again, I've written before about how the internet shrinks. More and more is centrlized on a few large platforms. Visiting the rest of the internet becomes less intuitive, not something you do instinctively. Especially when we become used to specific "content" formats (like those on instagram, tiktok, youtube, medium, etc), or when outgoing links are blocked or obstructed (instagram does not allow links in descriptions, many sites warn you when leaving their site, making it seem dangerous).
 
 The small/soft web is a healthy web. I firmly believe that. Tinkering with technology this omnipresent should not be left to the experts. I would love it if more people made sites of their own, started blogging, shared their findings, spoke and connected to each others outside coorporately controlled platforms. We seem to be at a stage where we desperately need to imagine new ways of being, relating, and thinking about the future. 
 

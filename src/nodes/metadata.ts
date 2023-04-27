@@ -1801,6 +1801,12 @@ export default {
       },
       {
         "from": "raw-making",
+        "to": "maps-of-the-web",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "raw-making",
         "to": "less-flat",
         "kind": "tangent",
         "strength": 0.5
@@ -1990,6 +1996,12 @@ export default {
       {
         "from": "maps-of-the-web",
         "to": "node-graph",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "maps-of-the-web",
+        "to": "raw-making",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2374,10 +2386,16 @@ export default {
           "to": "node-graph",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "maps-of-the-web",
+          "to": "raw-making",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2023-04-27T17:43:10.309Z",
+      "updatedAt": "2023-04-27T20:42:53.611Z",
       "inline": false,
       "title": "Maps of The Web",
       "description": "",
@@ -2615,6 +2633,12 @@ export default {
         {
           "from": "raw-making",
           "to": "making-comfort",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "raw-making",
+          "to": "maps-of-the-web",
           "kind": "tangent",
           "strength": 0.5
         },
