@@ -4,7 +4,7 @@ export default {
       "id": "maps-of-the-web",
       "group": "thoughts",
       "title": "Maps of The Web",
-      "description": "",
+      "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
       "tags": [
         "thoughts",
         "internet",
@@ -13,7 +13,7 @@ export default {
         "writing"
       ],
       "url": "/nodes/maps-of-the-web",
-      "image": ""
+      "image": "/nodes/maps-of-the-web.preview.jpg"
     },
     {
       "id": "node-graph",
@@ -1076,6 +1076,11 @@ export default {
     },
     {
       "source": "manifesto",
+      "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
+      "source": "manifesto",
       "target": "node-graph",
       "value": 1
     },
@@ -1715,6 +1720,11 @@ export default {
       "value": 1
     },
     {
+      "source": "links",
+      "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
       "source": "breath-crunch",
       "target": "living-hobbling-goo",
       "value": 1
@@ -1862,11 +1872,6 @@ export default {
     {
       "source": "less-flat",
       "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "maps-of-the-web",
       "value": 1
     },
     {
@@ -2551,11 +2556,6 @@ export default {
     },
     {
       "source": "maps-of-the-web",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
       "target": "branches-and-connections",
       "value": 1
     },
@@ -2567,6 +2567,16 @@ export default {
     {
       "source": "maps-of-the-web",
       "target": "raw-making",
+      "value": 1
+    },
+    {
+      "source": "maps-of-the-web",
+      "target": "links",
+      "value": 1
+    },
+    {
+      "source": "maps-of-the-web",
+      "target": "manifesto",
       "value": 1
     },
     {

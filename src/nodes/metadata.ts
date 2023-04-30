@@ -111,6 +111,12 @@ export default {
       },
       {
         "from": "manifesto",
+        "to": "maps-of-the-web",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "manifesto",
         "to": "node-graph",
         "kind": "tangent",
         "strength": 0.5
@@ -908,6 +914,12 @@ export default {
         "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "links",
+        "to": "maps-of-the-web",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "breath-crunch": [
@@ -1096,12 +1108,6 @@ export default {
       {
         "from": "less-flat",
         "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "maps-of-the-web",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1983,12 +1989,6 @@ export default {
       },
       {
         "from": "maps-of-the-web",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
         "to": "branches-and-connections",
         "kind": "tangent",
         "strength": 0.5
@@ -2002,6 +2002,18 @@ export default {
       {
         "from": "maps-of-the-web",
         "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "maps-of-the-web",
+        "to": "links",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "maps-of-the-web",
+        "to": "manifesto",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2371,12 +2383,6 @@ export default {
         },
         {
           "from": "maps-of-the-web",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
           "to": "branches-and-connections",
           "kind": "tangent",
           "strength": 0.5
@@ -2392,14 +2398,26 @@ export default {
           "to": "raw-making",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "maps-of-the-web",
+          "to": "links",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "maps-of-the-web",
+          "to": "manifesto",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2023-04-27T20:42:53.611Z",
+      "updatedAt": "2023-04-30T08:24:09.892Z",
       "inline": false,
       "title": "Maps of The Web",
-      "description": "",
-      "image": ""
+      "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
+      "image": "/nodes/maps-of-the-web.preview.jpg"
     },
     "node-graph": {
       "tags": [
@@ -2915,7 +2933,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
-      "updatedAt": "2022-12-05T17:43:13.662Z",
+      "updatedAt": "2023-04-27T20:58:05.127Z",
       "inline": true,
       "title": "Mappings",
       "description": "Some thoughts about art and map-making as a creative tool.",
@@ -4199,12 +4217,6 @@ export default {
         },
         {
           "from": "less-flat",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
           "to": "raw-making",
           "kind": "tangent",
           "strength": 0.5
@@ -4577,6 +4589,12 @@ export default {
           "to": "manifesto",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "links",
+          "to": "maps-of-the-web",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
@@ -4793,6 +4811,12 @@ export default {
         {
           "from": "manifesto",
           "to": "links",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "manifesto",
+          "to": "maps-of-the-web",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -5540,5 +5564,5 @@ export default {
     }
   },
   "latestNode": "maps-of-the-web",
-  "mostRecentlyUpdatedNode": "node-graph"
+  "mostRecentlyUpdatedNode": "mappings"
 } as const;
