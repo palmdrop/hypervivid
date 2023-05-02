@@ -16,7 +16,7 @@
   const phrases = [
     "breathe like this",
     "this is my culture",
-    "hyper-meditation",
+    "hyper-mediation",
     "rage breathing",
     "consider the breath",
     "imagine red fields",

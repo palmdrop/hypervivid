@@ -2413,7 +2413,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2023-04-30T10:03:08.834Z",
+      "updatedAt": "2023-05-01T18:38:33.826Z",
       "inline": false,
       "title": "Maps of The Web",
       "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
