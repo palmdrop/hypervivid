@@ -2413,7 +2413,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2023-05-01T18:38:33.826Z",
+      "updatedAt": "2023-05-02T18:36:00.495Z",
       "inline": false,
       "title": "Maps of The Web",
       "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
@@ -2549,7 +2549,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 23 Feb 2023 19:15:44 GMT",
-      "updatedAt": "2023-02-23T19:39:23.299Z",
+      "updatedAt": "2023-05-02T16:08:04.126Z",
       "inline": false,
       "asDocument": true,
       "title": "Breath Crunch",
@@ -5564,5 +5564,5 @@ export default {
     }
   },
   "latestNode": "maps-of-the-web",
-  "mostRecentlyUpdatedNode": "mappings"
+  "mostRecentlyUpdatedNode": "breath-crunch"
 } as const;
