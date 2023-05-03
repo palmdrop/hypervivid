@@ -17,6 +17,7 @@
     "breathe like this",
     "this is my culture",
     "hyper-mediation",
+    "hyper-meditation",
     "rage breathing",
     "consider the breath",
     "imagine red fields",
