@@ -13,7 +13,8 @@ const config = {
 				_: './src/mdsvex/layout.svelte'
 			},
 			extensions: [
-				'.svelte.md'
+				'.md',
+				'.svelte.md',
 			],
 			smartypants: true
 		})
@@ -21,6 +22,7 @@ const config = {
 	extensions: [
 		'.svelte',
 		'.svelte.md',
+		'.md'
 	],
 	kit: {
 		adapter: adapter({

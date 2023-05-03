@@ -52,10 +52,11 @@ a, a:link, a:visited, a:hover, a:active, a:focus-visible, button:focus, button:f
 }
 
 blockquote {
-	opacity: 0.5;
+	opacity: 0.7;
+	font-style: italic;
 	padding-bottom: 1em;
-
 	padding-left: 2em;
+	padding-right: 2em;
 }
 
 pre {
