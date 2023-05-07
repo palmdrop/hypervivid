@@ -3,6 +3,3 @@
 </script>
 
 <MappingsApp />
-
-<style>
-</style>

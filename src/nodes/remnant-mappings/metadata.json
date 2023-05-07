@@ -8,6 +8,7 @@
   "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
   "updatedAt": "Sat, 15 Oct 2022 13:51:33 GMT",
   "inline": false,
+  "hideOverflow": true,
   "title": "Remnant Mappings",
   "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
   "image": ""

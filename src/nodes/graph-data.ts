@@ -1,6 +1,14 @@
 export default {
   "nodes": [
     {
+      "id": "aggregate-forms",
+      "title": "aggregate-forms",
+      "description": "",
+      "tags": [],
+      "url": "/nodes/aggregate-forms",
+      "image": ""
+    },
+    {
       "id": "maps-of-the-web",
       "group": "thoughts",
       "title": "Maps of The Web",

@@ -134,6 +134,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "aggregate-forms": [],
     "alien-patterns": [
       {
         "from": "alien-patterns",
@@ -2366,6 +2367,17 @@ export default {
     }
   },
   "nodes": {
+    "aggregate-forms": {
+      "tags": [],
+      "links": [],
+      "createdAt": "Sun, 07 May 2023 14:08:27 GMT",
+      "updatedAt": "2023-05-07T14:25:39.335Z",
+      "inline": false,
+      "hideOverflow": true,
+      "title": "aggregate-forms",
+      "description": "",
+      "image": ""
+    },
     "maps-of-the-web": {
       "tags": [
         "thoughts",
@@ -2981,8 +2993,9 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2022-12-05T17:43:13.665Z",
+      "updatedAt": "2023-05-07T14:13:11.220Z",
       "inline": false,
+      "hideOverflow": true,
       "title": "Remnant Mappings",
       "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
       "image": "/nodes/remnant-mappings.preview.jpg"
@@ -5563,6 +5576,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "maps-of-the-web",
-  "mostRecentlyUpdatedNode": "links"
+  "latestNode": "aggregate-forms",
+  "mostRecentlyUpdatedNode": "remnant-mappings"
 } as const;
