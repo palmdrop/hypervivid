@@ -10,7 +10,7 @@
   export let isDone = false;
   export let failed = false;
 
-  let loadedComponent: SvelteComponent | null = null;
+  let loadedComponent: ConstructorOfATypedSvelteComponent | undefined = undefined;
   let timeout: NodeJS.Timeout;
   let showFallback = !delayMs;
 

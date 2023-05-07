@@ -1,0 +1,15 @@
+{
+  "tags": [
+    "art", "generative", "live", "feedback", "mappings", "biophilia", "fuse"
+  ],
+  "links": [
+    "formations", "foliage-fragments", "remnant-mappings", "living-hobbling-goo", "foliage-grids", "fragfuse"
+  ],
+  "createdAt": "Sun, 07 May 2023 14:08:27 GMT",
+  "updatedAt": "Sun, 07 May 2023 14:08:27 GMT",
+  "inline": false,
+  "hideOverflow": true,
+  "title": "Aggregate Forms",
+  "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids.",
+  "image": ""
+}

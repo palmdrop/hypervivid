@@ -134,6 +134,344 @@ export default {
         "strength": 0.5
       }
     ],
+    "aggregate-forms": [
+      {
+        "from": "aggregate-forms",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-forms",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-forms",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-forms",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-forms",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-forms",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "formations": [
+      {
+        "from": "formations",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "block-dissolve",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "virtual-imprint",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "foliage-fragments": [
+      {
+        "from": "foliage-fragments",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "remnant-mappings": [
+      {
+        "from": "remnant-mappings",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "living-hobbling-goo": [
+      {
+        "from": "living-hobbling-goo",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "breath-crunch",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "fragfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "substrate-catalogue",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "foliage-grids": [
+      {
+        "from": "foliage-grids",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "cliffscapes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "moss-structure",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "domain-warping",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "digital-biophilia",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "fragfuse": [
+      {
+        "from": "fragfuse",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "city-pond",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "places-and-things",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
+        "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "alien-patterns": [
       {
         "from": "alien-patterns",
@@ -954,50 +1292,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "living-hobbling-goo": [
-      {
-        "from": "living-hobbling-goo",
-        "to": "breath-crunch",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "foliage-grids",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "remnant-mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-hobbling-goo",
-        "to": "substrate-catalogue",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "journal-artifacts": [
       {
         "from": "journal-artifacts",
@@ -1240,44 +1534,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "fragfuse": [
-      {
-        "from": "fragfuse",
-        "to": "city-pond",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fragfuse",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fragfuse",
-        "to": "hyper",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fragfuse",
-        "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fragfuse",
-        "to": "places-and-things",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fragfuse",
-        "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "cliffscapes": [
       {
         "from": "cliffscapes",
@@ -1299,56 +1555,6 @@ export default {
       },
       {
         "from": "cliffscapes",
-        "to": "remnant-mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "formations": [
-      {
-        "from": "formations",
-        "to": "cliffscapes",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "block-dissolve",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "fluid-feedback",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "virtual-imprint",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "glow-tree",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
         "to": "remnant-mappings",
         "kind": "tangent",
         "strength": 0.5
@@ -1576,106 +1782,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "foliage-fragments": [
-      {
-        "from": "foliage-fragments",
-        "to": "foliage-grids",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "fragfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "hyper",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "fluid-feedback",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
-        "to": "remnant-mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "foliage-grids": [
-      {
-        "from": "foliage-grids",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "cliffscapes",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "domain-warping",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "neon-moss": [
       {
         "from": "neon-moss",
@@ -1860,38 +1966,6 @@ export default {
       {
         "from": "rehash-transform",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "remnant-mappings": [
-      {
-        "from": "remnant-mappings",
-        "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "remnant-mappings",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "remnant-mappings",
-        "to": "formations",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "remnant-mappings",
-        "to": "cliffscapes",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "remnant-mappings",
-        "to": "foliage-fragments",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2186,191 +2260,247 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 42
+      "count": 43
     },
     "generative": {
-      "weight": 0.9047619047619048,
-      "count": 38
+      "weight": 0.9069767441860465,
+      "count": 39
     },
     "live": {
-      "weight": 0.6666666666666666,
-      "count": 28
+      "weight": 0.6744186046511628,
+      "count": 29
     },
     "domain-warping": {
-      "weight": 0.4523809523809524,
+      "weight": 0.4418604651162791,
       "count": 19
     },
     "organic": {
-      "weight": 0.3333333333333333,
+      "weight": 0.32558139534883723,
       "count": 14
     },
+    "biophilia": {
+      "weight": 0.3023255813953488,
+      "count": 13
+    },
     "noise": {
-      "weight": 0.30952380952380953,
+      "weight": 0.3023255813953488,
       "count": 13
     },
     "project": {
-      "weight": 0.30952380952380953,
+      "weight": 0.3023255813953488,
       "count": 13
     },
     "thoughts": {
-      "weight": 0.2857142857142857,
+      "weight": 0.27906976744186046,
       "count": 12
     },
     "substrate": {
-      "weight": 0.2857142857142857,
-      "count": 12
-    },
-    "biophilia": {
-      "weight": 0.2857142857142857,
+      "weight": 0.27906976744186046,
       "count": 12
     },
     "photography": {
-      "weight": 0.2619047619047619,
+      "weight": 0.2558139534883721,
       "count": 11
     },
-    "geometry": {
-      "weight": 0.23809523809523808,
+    "feedback": {
+      "weight": 0.23255813953488372,
       "count": 10
     },
-    "feedback": {
-      "weight": 0.21428571428571427,
-      "count": 9
+    "geometry": {
+      "weight": 0.23255813953488372,
+      "count": 10
     },
     "fragments": {
-      "weight": 0.19047619047619047,
+      "weight": 0.18604651162790697,
       "count": 8
     },
+    "mappings": {
+      "weight": 0.16279069767441862,
+      "count": 7
+    },
     "internet": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16279069767441862,
       "count": 7
     },
     "webart": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16279069767441862,
       "count": 7
     },
     "interactive": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16279069767441862,
       "count": 7
     },
     "css": {
-      "weight": 0.16666666666666666,
+      "weight": 0.16279069767441862,
       "count": 7
     },
-    "mappings": {
-      "weight": 0.14285714285714285,
-      "count": 6
-    },
     "info": {
-      "weight": 0.11904761904761904,
+      "weight": 0.11627906976744186,
       "count": 5
     },
     "exploration": {
-      "weight": 0.11904761904761904,
+      "weight": 0.11627906976744186,
       "count": 5
     },
+    "fuse": {
+      "weight": 0.09302325581395349,
+      "count": 4
+    },
     "writing": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09302325581395349,
       "count": 4
     },
     "chrome": {
-      "weight": 0.09523809523809523,
+      "weight": 0.09302325581395349,
       "count": 4
     },
     "glitch": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "hyper": {
-      "weight": 0.07142857142857142,
-      "count": 3
-    },
-    "fuse": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "words": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "utility": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "memes": {
-      "weight": 0.07142857142857142,
+      "weight": 0.06976744186046512,
       "count": 3
     },
     "instancing": {
-      "weight": 0.047619047619047616,
+      "weight": 0.046511627906976744,
       "count": 2
     },
     "mind": {
-      "weight": 0.047619047619047616,
+      "weight": 0.046511627906976744,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.047619047619047616,
+      "weight": 0.046511627906976744,
       "count": 2
     },
     "dithering": {
-      "weight": 0.047619047619047616,
+      "weight": 0.046511627906976744,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.047619047619047616,
+      "weight": 0.046511627906976744,
       "count": 2
     },
     "external": {
-      "weight": 0.047619047619047616,
+      "weight": 0.046511627906976744,
       "count": 2
     },
     "octree": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "contact": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "communication": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "particles": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "cringe": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "texture": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "depth": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.023809523809523808,
+      "weight": 0.023255813953488372,
       "count": 1
     }
   },
   "nodes": {
+    "aggregate-forms": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "biophilia",
+        "feedback",
+        "mappings",
+        "fuse"
+      ],
+      "links": [
+        {
+          "from": "aggregate-forms",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-forms",
+          "to": "foliage-fragments",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-forms",
+          "to": "remnant-mappings",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-forms",
+          "to": "living-hobbling-goo",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-forms",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-forms",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sun, 07 May 2023 14:08:27 GMT",
+      "updatedAt": "2023-05-07T20:29:47.990Z",
+      "inline": false,
+      "hideOverflow": true,
+      "title": "Aggregate Forms",
+      "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids.",
+      "image": "/nodes/aggregate-forms.preview.jpg"
+    },
     "maps-of-the-web": {
       "tags": [
         "thoughts",
-        "internet",
         "mappings",
+        "internet",
         "exploration",
         "writing"
       ],
@@ -2732,12 +2862,18 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "substrate",
         "biophilia",
+        "substrate",
         "webart",
         "fuse"
       ],
       "links": [
+        {
+          "from": "living-hobbling-goo",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "living-hobbling-goo",
           "to": "breath-crunch",
@@ -2951,6 +3087,12 @@ export default {
       "links": [
         {
           "from": "remnant-mappings",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "remnant-mappings",
           "to": "living-hobbling-goo",
           "kind": "tangent",
           "strength": 0.5
@@ -2981,8 +3123,9 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2022-12-05T17:43:13.665Z",
+      "updatedAt": "2023-05-07T14:13:11.220Z",
       "inline": false,
+      "hideOverflow": true,
       "title": "Remnant Mappings",
       "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
       "image": "/nodes/remnant-mappings.preview.jpg"
@@ -2999,6 +3142,12 @@ export default {
         "mappings"
       ],
       "links": [
+        {
+          "from": "foliage-fragments",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "foliage-fragments",
           "to": "foliage-grids",
@@ -3061,12 +3210,18 @@ export default {
         "generative",
         "live",
         "organic",
-        "substrate",
         "biophilia",
+        "substrate",
         "photography",
         "geometry"
       ],
       "links": [
+        {
+          "from": "foliage-grids",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "foliage-grids",
           "to": "foliage-fragments",
@@ -3405,6 +3560,12 @@ export default {
       "links": [
         {
           "from": "formations",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
           "to": "cliffscapes",
           "kind": "tangent",
           "strength": 0.5
@@ -3588,8 +3749,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -3750,8 +3911,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -3841,8 +4002,8 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -3987,8 +4148,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "links": [
         {
@@ -4456,8 +4617,8 @@ export default {
         "generative",
         "project",
         "internet",
-        "hyper",
         "fuse",
+        "hyper",
         "memes"
       ],
       "links": [
@@ -4517,10 +4678,16 @@ export default {
         "art",
         "project",
         "photography",
-        "hyper",
-        "fuse"
+        "fuse",
+        "hyper"
       ],
       "links": [
+        {
+          "from": "fragfuse",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "fragfuse",
           "to": "city-pond",
@@ -5131,8 +5298,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "geometry",
         "feedback",
+        "geometry",
         "interactive"
       ],
       "links": [
@@ -5563,6 +5730,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "maps-of-the-web",
-  "mostRecentlyUpdatedNode": "links"
+  "latestNode": "aggregate-forms",
+  "mostRecentlyUpdatedNode": "remnant-mappings"
 } as const;

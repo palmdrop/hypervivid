@@ -1,14 +1,31 @@
 export default {
   "nodes": [
     {
+      "id": "aggregate-forms",
+      "group": "art",
+      "title": "Aggregate Forms",
+      "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids.",
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "biophilia",
+        "feedback",
+        "mappings",
+        "fuse"
+      ],
+      "url": "/nodes/aggregate-forms",
+      "image": "/nodes/aggregate-forms.preview.jpg"
+    },
+    {
       "id": "maps-of-the-web",
       "group": "thoughts",
       "title": "Maps of The Web",
       "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
       "tags": [
         "thoughts",
-        "internet",
         "mappings",
+        "internet",
         "exploration",
         "writing"
       ],
@@ -129,8 +146,8 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "substrate",
         "biophilia",
+        "substrate",
         "webart",
         "fuse"
       ],
@@ -222,8 +239,8 @@ export default {
         "generative",
         "live",
         "organic",
-        "substrate",
         "biophilia",
+        "substrate",
         "photography",
         "geometry"
       ],
@@ -377,8 +394,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "url": "/nodes/super-cell",
       "image": "/nodes/super-cell.preview.jpg"
@@ -409,8 +426,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "url": "/nodes/moss-structure",
       "image": "/nodes/moss-structure.preview.jpg"
@@ -426,8 +443,8 @@ export default {
         "live",
         "domain-warping",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "url": "/nodes/nest",
       "image": "/nodes/nest.preview.jpg"
@@ -460,8 +477,8 @@ export default {
         "domain-warping",
         "organic",
         "noise",
-        "substrate",
-        "biophilia"
+        "biophilia",
+        "substrate"
       ],
       "url": "/nodes/swamp-mass",
       "image": "/nodes/swamp-mass.preview.jpg"
@@ -615,8 +632,8 @@ export default {
         "generative",
         "project",
         "internet",
-        "hyper",
         "fuse",
+        "hyper",
         "memes"
       ],
       "url": "/nodes/webfuse",
@@ -631,8 +648,8 @@ export default {
         "art",
         "project",
         "photography",
-        "hyper",
-        "fuse"
+        "fuse",
+        "hyper"
       ],
       "url": "/nodes/fragfuse",
       "image": "/img/combined/hare.jpg"
@@ -838,8 +855,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "geometry",
         "feedback",
+        "geometry",
         "interactive"
       ],
       "url": "/nodes/immerse",
@@ -1095,6 +1112,276 @@ export default {
       "value": 1
     },
     {
+      "source": "aggregate-forms",
+      "target": "formations",
+      "value": 1
+    },
+    {
+      "source": "aggregate-forms",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "aggregate-forms",
+      "target": "remnant-mappings",
+      "value": 1
+    },
+    {
+      "source": "aggregate-forms",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "aggregate-forms",
+      "target": "foliage-grids",
+      "value": 1
+    },
+    {
+      "source": "aggregate-forms",
+      "target": "fragfuse",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "cliffscapes",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "neon-moss",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "block-dissolve",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "fluid-feedback",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "immerse",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "virtual-imprint",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "glow-tree",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "remnant-mappings",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "foliage-grids",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "fragfuse",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "hyper",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "digital-biophilia",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "fluid-feedback",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "mappings",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
+      "target": "remnant-mappings",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
+      "target": "mappings",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
+      "target": "formations",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
+      "target": "cliffscapes",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "breath-crunch",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "foliage-grids",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "substrates",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "remnant-mappings",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "fragfuse",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "substrate-catalogue",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "cliffscapes",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "neon-moss",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "moss-structure",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "domain-warping",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "substrates",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "digital-biophilia",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "city-pond",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "hyper",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "places-and-things",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
+      "target": "webfuse",
+      "value": 1
+    },
+    {
       "source": "alien-patterns",
       "target": "modified-noise",
       "value": 1
@@ -1747,41 +2034,6 @@ export default {
     {
       "source": "breath-crunch",
       "target": "making-comfort",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "breath-crunch",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "foliage-fragments",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "foliage-grids",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "substrates",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "remnant-mappings",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "fragfuse",
-      "value": 1
-    },
-    {
-      "source": "living-hobbling-goo",
-      "target": "substrate-catalogue",
       "value": 1
     },
     {
@@ -1975,36 +2227,6 @@ export default {
       "value": 1
     },
     {
-      "source": "fragfuse",
-      "target": "city-pond",
-      "value": 1
-    },
-    {
-      "source": "fragfuse",
-      "target": "foliage-fragments",
-      "value": 1
-    },
-    {
-      "source": "fragfuse",
-      "target": "hyper",
-      "value": 1
-    },
-    {
-      "source": "fragfuse",
-      "target": "living-hobbling-goo",
-      "value": 1
-    },
-    {
-      "source": "fragfuse",
-      "target": "places-and-things",
-      "value": 1
-    },
-    {
-      "source": "fragfuse",
-      "target": "webfuse",
-      "value": 1
-    },
-    {
       "source": "cliffscapes",
       "target": "formations",
       "value": 1
@@ -2021,46 +2243,6 @@ export default {
     },
     {
       "source": "cliffscapes",
-      "target": "remnant-mappings",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "cliffscapes",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "neon-moss",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "block-dissolve",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "fluid-feedback",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "immerse",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "virtual-imprint",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "glow-tree",
-      "value": 1
-    },
-    {
-      "source": "formations",
       "target": "remnant-mappings",
       "value": 1
     },
@@ -2235,86 +2417,6 @@ export default {
       "value": 1
     },
     {
-      "source": "foliage-fragments",
-      "target": "foliage-grids",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "fragfuse",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "hyper",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "digital-biophilia",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "fluid-feedback",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "living-hobbling-goo",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
-      "target": "remnant-mappings",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "foliage-fragments",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "cliffscapes",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "neon-moss",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "moss-structure",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "domain-warping",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "substrates",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "digital-biophilia",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "living-hobbling-goo",
-      "value": 1
-    },
-    {
       "source": "neon-moss",
       "target": "foliage-grids",
       "value": 1
@@ -2457,31 +2559,6 @@ export default {
     {
       "source": "rehash-transform",
       "target": "webfuse",
-      "value": 1
-    },
-    {
-      "source": "remnant-mappings",
-      "target": "living-hobbling-goo",
-      "value": 1
-    },
-    {
-      "source": "remnant-mappings",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "remnant-mappings",
-      "target": "formations",
-      "value": 1
-    },
-    {
-      "source": "remnant-mappings",
-      "target": "cliffscapes",
-      "value": 1
-    },
-    {
-      "source": "remnant-mappings",
-      "target": "foliage-fragments",
       "value": 1
     },
     {
