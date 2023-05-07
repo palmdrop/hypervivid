@@ -2413,7 +2413,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2023-05-02T18:36:00.495Z",
+      "updatedAt": "2023-05-07T13:30:45.115Z",
       "inline": false,
       "title": "Maps of The Web",
       "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
@@ -2549,7 +2549,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 23 Feb 2023 19:15:44 GMT",
-      "updatedAt": "2023-05-02T16:08:04.126Z",
+      "updatedAt": "2023-05-07T13:30:45.114Z",
       "inline": false,
       "asDocument": true,
       "title": "Breath Crunch",
@@ -4598,7 +4598,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-04-13T15:26:38.893Z",
+      "updatedAt": "2023-05-07T13:32:24.045Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -4763,7 +4763,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2023-04-11T20:36:54.074Z"
+      "updatedAt": "2023-05-03T19:00:13.304Z"
     },
     "manifesto": {
       "tags": [
@@ -5564,5 +5564,5 @@ export default {
     }
   },
   "latestNode": "maps-of-the-web",
-  "mostRecentlyUpdatedNode": "breath-crunch"
+  "mostRecentlyUpdatedNode": "links"
 } as const;
