@@ -415,43 +415,36 @@
     "description": "An animated series purely based on digital glitches and generative processes. An anti-narrative playlist."
   },
   {
-
     "text": "a blog about blogging",
     "url": "https://write-yourself-in.blogspot.com/",
     "description": "A small blog about blogging, created by Chia."
   },
   {
-
     "text": "Gazing",
     "url": "https://gazing.whenwe.love/",
     "description": "A digital nights sky where visitors can leave a wish. An invitation to slow down, gaze, connect. Created by Chia."
   },
   {
-
     "text": "Social Media Is Not Self-Expression",
     "url": "https://thenewinquiry.com/blog/social-media-is-not-self-expression/",
     "description": "A great blog post about social media, art and capitalism."
   },
   {
-
     "text": "softopia",
     "url": "http://www.publicwriting.net/",
     "description": "Personal website of designer and theorist John Chris Jones."
   },
   {
-
     "text": "dawuna.world",
     "url": "https://dawuna.world/",
     "description": "Personal website of experimental R&B artist Dawuna."
   },
   {
-
     "text": "overGround:underStory",
     "url": "https://overground-understory.net/",
     "description": "Poetic, text-based web project by Andrew Burrell."
   },
   {
-
     "text": "Making a Place on the Web - Home",
     "url": "https://garden.vincentli.space/making-a-place-on-the-web---home",
     "description": "Digital garden of Vincent."
@@ -463,27 +456,28 @@
     "description": "Platform for thoughts and ideas surrounding architecture, culture, art, etc."
   },
   {
-
     "text": "Indirect Flights",
     "url": "http://indirect.flights/",
     "description": "Online landscape of materials, maps, textures, visualized as a multilayered map. (Takes some time to load, be patient.)"
   },
   {
-
     "text": "Wild Domesticity",
     "url": "https://www.are.na/blog/wild-domesticity",
     "description": "A piece of writing by Alice Yuan Zhang."
   },
   {
-
     "text": "Ian Cheng",
     "url": "http://iancheng.com/",
     "description": "Website of artist Ian Chang, who explores narratives and simulated AI agents in evolving environments."
   },
   {
-
     "text": "Small Seasons",
     "url": "https://smallseasons.guide/",
     "description": "A simple site that describes the concept of \"small seasons\"."
+  },
+  {
+    "text": "Lowtech Manifesto",
+    "url": "http://lowtech.org/projects/n5m3/",
+    "description": "A manifesto promiting the usage of \"low\" tech—free, cheap or simple. Something this site could take to heart."
   }
 ]
