@@ -170,12 +170,24 @@ export default {
         "to": "fragfuse",
         "kind": "tangent",
         "strength": 0.5
+      },
+      {
+        "from": "aggregate-forms",
+        "to": "aggregate-topology",
+        "kind": "tangent",
+        "strength": 0.5
       }
     ],
     "formations": [
       {
         "from": "formations",
         "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "formations",
+        "to": "aggregate-topology",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -237,6 +249,12 @@ export default {
       },
       {
         "from": "foliage-fragments",
+        "to": "aggregate-topology",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-fragments",
         "to": "foliage-grids",
         "kind": "tangent",
         "strength": 0.5
@@ -293,6 +311,12 @@ export default {
       },
       {
         "from": "remnant-mappings",
+        "to": "aggregate-topology",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "remnant-mappings",
         "to": "living-hobbling-goo",
         "kind": "tangent",
         "strength": 0.5
@@ -326,6 +350,12 @@ export default {
       {
         "from": "living-hobbling-goo",
         "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
+        "to": "aggregate-topology",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -376,6 +406,12 @@ export default {
       {
         "from": "foliage-grids",
         "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "foliage-grids",
+        "to": "aggregate-topology",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -437,6 +473,12 @@ export default {
       },
       {
         "from": "fragfuse",
+        "to": "aggregate-topology",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fragfuse",
         "to": "city-pond",
         "kind": "tangent",
         "strength": 0.5
@@ -468,6 +510,50 @@ export default {
       {
         "from": "fragfuse",
         "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "aggregate-topology": [
+      {
+        "from": "aggregate-topology",
+        "to": "aggregate-forms",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-topology",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-topology",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-topology",
+        "to": "remnant-mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-topology",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-topology",
+        "to": "foliage-grids",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "aggregate-topology",
+        "to": "fragfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2260,186 +2346,248 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 43
+      "count": 44
     },
     "generative": {
-      "weight": 0.9069767441860465,
-      "count": 39
+      "weight": 0.9090909090909091,
+      "count": 40
     },
     "live": {
-      "weight": 0.6744186046511628,
-      "count": 29
+      "weight": 0.6818181818181818,
+      "count": 30
     },
     "domain-warping": {
-      "weight": 0.4418604651162791,
+      "weight": 0.4318181818181818,
       "count": 19
     },
-    "organic": {
-      "weight": 0.32558139534883723,
+    "biophilia": {
+      "weight": 0.3181818181818182,
       "count": 14
     },
-    "biophilia": {
-      "weight": 0.3023255813953488,
-      "count": 13
+    "organic": {
+      "weight": 0.3181818181818182,
+      "count": 14
     },
     "noise": {
-      "weight": 0.3023255813953488,
+      "weight": 0.29545454545454547,
       "count": 13
     },
     "project": {
-      "weight": 0.3023255813953488,
+      "weight": 0.29545454545454547,
       "count": 13
     },
     "thoughts": {
-      "weight": 0.27906976744186046,
+      "weight": 0.2727272727272727,
       "count": 12
     },
     "substrate": {
-      "weight": 0.27906976744186046,
+      "weight": 0.2727272727272727,
       "count": 12
     },
-    "photography": {
-      "weight": 0.2558139534883721,
+    "feedback": {
+      "weight": 0.25,
       "count": 11
     },
-    "feedback": {
-      "weight": 0.23255813953488372,
-      "count": 10
+    "photography": {
+      "weight": 0.25,
+      "count": 11
     },
     "geometry": {
-      "weight": 0.23255813953488372,
+      "weight": 0.22727272727272727,
       "count": 10
     },
-    "fragments": {
-      "weight": 0.18604651162790697,
+    "mappings": {
+      "weight": 0.18181818181818182,
       "count": 8
     },
-    "mappings": {
-      "weight": 0.16279069767441862,
-      "count": 7
+    "fragments": {
+      "weight": 0.18181818181818182,
+      "count": 8
     },
     "internet": {
-      "weight": 0.16279069767441862,
+      "weight": 0.1590909090909091,
       "count": 7
     },
     "webart": {
-      "weight": 0.16279069767441862,
+      "weight": 0.1590909090909091,
       "count": 7
     },
     "interactive": {
-      "weight": 0.16279069767441862,
+      "weight": 0.1590909090909091,
       "count": 7
     },
     "css": {
-      "weight": 0.16279069767441862,
+      "weight": 0.1590909090909091,
       "count": 7
     },
     "info": {
-      "weight": 0.11627906976744186,
-      "count": 5
-    },
-    "exploration": {
-      "weight": 0.11627906976744186,
+      "weight": 0.11363636363636363,
       "count": 5
     },
     "fuse": {
-      "weight": 0.09302325581395349,
-      "count": 4
+      "weight": 0.11363636363636363,
+      "count": 5
+    },
+    "exploration": {
+      "weight": 0.11363636363636363,
+      "count": 5
     },
     "writing": {
-      "weight": 0.09302325581395349,
+      "weight": 0.09090909090909091,
       "count": 4
     },
     "chrome": {
-      "weight": 0.09302325581395349,
+      "weight": 0.09090909090909091,
       "count": 4
     },
     "glitch": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "space-colonization": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "hyper": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "words": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "utility": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "memes": {
-      "weight": 0.06976744186046512,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "instancing": {
-      "weight": 0.046511627906976744,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "mind": {
-      "weight": 0.046511627906976744,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.046511627906976744,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "dithering": {
-      "weight": 0.046511627906976744,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.046511627906976744,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "external": {
-      "weight": 0.046511627906976744,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "octree": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "contact": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "communication": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "particles": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "cringe": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "texture": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "depth": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.023255813953488372,
+      "weight": 0.022727272727272728,
       "count": 1
     }
   },
   "nodes": {
+    "aggregate-topology": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "biophilia",
+        "feedback",
+        "mappings",
+        "fuse"
+      ],
+      "links": [
+        {
+          "from": "aggregate-topology",
+          "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-topology",
+          "to": "formations",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-topology",
+          "to": "foliage-fragments",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-topology",
+          "to": "remnant-mappings",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-topology",
+          "to": "living-hobbling-goo",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-topology",
+          "to": "foliage-grids",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "aggregate-topology",
+          "to": "fragfuse",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Sun, 24 May 2023 20:04:27 GMT",
+      "updatedAt": "2023-05-24T18:10:52.079Z",
+      "inline": false,
+      "hideOverflow": true,
+      "title": "Aggregate Topology",
+      "description": "A variation on the Aggregate Forms node. Vertex displacement viewed top-down, emphasizing the color and topology changes. WARNING: not phone friendly.",
+      "image": "/nodes/aggregate-topology.preview.jpg"
+    },
     "aggregate-forms": {
       "tags": [
         "art",
@@ -2486,14 +2634,20 @@ export default {
           "to": "fragfuse",
           "kind": "tangent",
           "strength": 0.5
+        },
+        {
+          "from": "aggregate-forms",
+          "to": "aggregate-topology",
+          "kind": "tangent",
+          "strength": 0.5
         }
       ],
       "createdAt": "Sun, 07 May 2023 14:08:27 GMT",
-      "updatedAt": "2023-05-07T20:31:55.210Z",
+      "updatedAt": "2023-05-24T18:11:10.165Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Aggregate Forms",
-      "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids.",
+      "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids. WARNING: not phone friendly.",
       "image": "/nodes/aggregate-forms.preview.jpg"
     },
     "maps-of-the-web": {
@@ -2861,8 +3015,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "biophilia",
+        "noise",
         "substrate",
         "webart",
         "fuse"
@@ -2871,6 +3025,12 @@ export default {
         {
           "from": "living-hobbling-goo",
           "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "living-hobbling-goo",
+          "to": "aggregate-topology",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -2929,8 +3089,8 @@ export default {
       "tags": [
         "thoughts",
         "fragments",
-        "internet",
-        "mappings"
+        "mappings",
+        "internet"
       ],
       "links": [
         {
@@ -3093,6 +3253,12 @@ export default {
         },
         {
           "from": "remnant-mappings",
+          "to": "aggregate-topology",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "remnant-mappings",
           "to": "living-hobbling-goo",
           "kind": "tangent",
           "strength": 0.5
@@ -3145,6 +3311,12 @@ export default {
         {
           "from": "foliage-fragments",
           "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-fragments",
+          "to": "aggregate-topology",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3219,6 +3391,12 @@ export default {
         {
           "from": "foliage-grids",
           "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "foliage-grids",
+          "to": "aggregate-topology",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3511,8 +3689,8 @@ export default {
     },
     "summer-static": {
       "tags": [
-        "project",
         "biophilia",
+        "project",
         "photography"
       ],
       "links": [
@@ -3554,13 +3732,19 @@ export default {
         "art",
         "generative",
         "live",
-        "geometry",
-        "feedback"
+        "feedback",
+        "geometry"
       ],
       "links": [
         {
           "from": "formations",
           "to": "aggregate-forms",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "formations",
+          "to": "aggregate-topology",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3748,8 +3932,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "noise",
         "biophilia",
+        "noise",
         "substrate"
       ],
       "links": [
@@ -3909,9 +4093,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
+        "biophilia",
         "organic",
         "noise",
-        "biophilia",
         "substrate"
       ],
       "links": [
@@ -4001,8 +4185,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "biophilia",
+        "noise",
         "substrate"
       ],
       "links": [
@@ -4147,8 +4331,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "noise",
         "biophilia",
+        "noise",
         "substrate"
       ],
       "links": [
@@ -4301,8 +4485,8 @@ export default {
     "city-pond": {
       "tags": [
         "organic",
-        "project",
         "biophilia",
+        "project",
         "photography"
       ],
       "links": [
@@ -4690,6 +4874,12 @@ export default {
         },
         {
           "from": "fragfuse",
+          "to": "aggregate-topology",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fragfuse",
           "to": "city-pond",
           "kind": "tangent",
           "strength": 0.5
@@ -4765,7 +4955,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-05-07T13:32:24.045Z",
+      "updatedAt": "2023-05-14T20:13:41.460Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5730,6 +5920,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "aggregate-forms",
-  "mostRecentlyUpdatedNode": "remnant-mappings"
+  "latestNode": "aggregate-topology",
+  "mostRecentlyUpdatedNode": "aggregate-forms"
 } as const;

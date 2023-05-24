@@ -1,10 +1,27 @@
 export default {
   "nodes": [
     {
+      "id": "aggregate-topology",
+      "group": "art",
+      "title": "Aggregate Topology",
+      "description": "A variation on the Aggregate Forms node. Vertex displacement viewed top-down, emphasizing the color and topology changes. WARNING: not phone friendly.",
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "biophilia",
+        "feedback",
+        "mappings",
+        "fuse"
+      ],
+      "url": "/nodes/aggregate-topology",
+      "image": "/nodes/aggregate-topology.preview.jpg"
+    },
+    {
       "id": "aggregate-forms",
       "group": "art",
       "title": "Aggregate Forms",
-      "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids.",
+      "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids. WARNING: not phone friendly.",
       "tags": [
         "art",
         "generative",
@@ -145,8 +162,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "biophilia",
+        "noise",
         "substrate",
         "webart",
         "fuse"
@@ -162,8 +179,8 @@ export default {
       "tags": [
         "thoughts",
         "fragments",
-        "internet",
-        "mappings"
+        "mappings",
+        "internet"
       ],
       "url": "/nodes/branches-and-connections",
       "image": ""
@@ -325,12 +342,12 @@ export default {
     },
     {
       "id": "summer-static",
-      "group": "project",
+      "group": "biophilia",
       "title": "Summer Static",
       "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
       "tags": [
-        "project",
         "biophilia",
+        "project",
         "photography"
       ],
       "url": "/nodes/summer-static",
@@ -345,8 +362,8 @@ export default {
         "art",
         "generative",
         "live",
-        "geometry",
-        "feedback"
+        "feedback",
+        "geometry"
       ],
       "url": "/nodes/formations",
       "image": "/nodes/formations.preview.jpg"
@@ -393,8 +410,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "noise",
         "biophilia",
+        "noise",
         "substrate"
       ],
       "url": "/nodes/super-cell",
@@ -424,9 +441,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
+        "biophilia",
         "organic",
         "noise",
-        "biophilia",
         "substrate"
       ],
       "url": "/nodes/moss-structure",
@@ -442,8 +459,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
         "biophilia",
+        "noise",
         "substrate"
       ],
       "url": "/nodes/nest",
@@ -476,8 +493,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "noise",
         "biophilia",
+        "noise",
         "substrate"
       ],
       "url": "/nodes/swamp-mass",
@@ -516,8 +533,8 @@ export default {
       "description": "Photos taken by and around a small pond located in the city where I live.",
       "tags": [
         "organic",
-        "project",
         "biophilia",
+        "project",
         "photography"
       ],
       "url": "/nodes/city-pond",
@@ -1142,8 +1159,18 @@ export default {
       "value": 1
     },
     {
+      "source": "aggregate-forms",
+      "target": "aggregate-topology",
+      "value": 1
+    },
+    {
       "source": "formations",
       "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "formations",
+      "target": "aggregate-topology",
       "value": 1
     },
     {
@@ -1193,6 +1220,11 @@ export default {
     },
     {
       "source": "foliage-fragments",
+      "target": "aggregate-topology",
+      "value": 1
+    },
+    {
+      "source": "foliage-fragments",
       "target": "foliage-grids",
       "value": 1
     },
@@ -1238,6 +1270,11 @@ export default {
     },
     {
       "source": "remnant-mappings",
+      "target": "aggregate-topology",
+      "value": 1
+    },
+    {
+      "source": "remnant-mappings",
       "target": "living-hobbling-goo",
       "value": 1
     },
@@ -1264,6 +1301,11 @@ export default {
     {
       "source": "living-hobbling-goo",
       "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
+      "target": "aggregate-topology",
       "value": 1
     },
     {
@@ -1304,6 +1346,11 @@ export default {
     {
       "source": "foliage-grids",
       "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "foliage-grids",
+      "target": "aggregate-topology",
       "value": 1
     },
     {
@@ -1353,6 +1400,11 @@ export default {
     },
     {
       "source": "fragfuse",
+      "target": "aggregate-topology",
+      "value": 1
+    },
+    {
+      "source": "fragfuse",
       "target": "city-pond",
       "value": 1
     },
@@ -1379,6 +1431,41 @@ export default {
     {
       "source": "fragfuse",
       "target": "webfuse",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "aggregate-forms",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "formations",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "remnant-mappings",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "foliage-grids",
+      "value": 1
+    },
+    {
+      "source": "aggregate-topology",
+      "target": "fragfuse",
       "value": 1
     },
     {
