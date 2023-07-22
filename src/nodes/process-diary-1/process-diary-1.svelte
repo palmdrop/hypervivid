@@ -10,16 +10,16 @@
   const images = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/*', { eager: true }))
     .map(module => (module as { default: string }).default);
     */
-  const poissonTreeImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/poisson-tree*.png', { eager: true }))
+  const poissonTreeImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/poisson-tree*.jpg', { eager: true }))
     .map(module => (module as { default: string }).default);
 
-  const growthImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/growth*.png', { eager: true }))
+  const growthImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/growth*.jpg', { eager: true }))
     .map(module => (module as { default: string }).default);
 
   const perfectBreathImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/perfect-breath*.gif', { eager: true }))
     .map(module => (module as { default: string }).default);
 
-  const bioTerraImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/bioTerra*.png', { eager: true }))
+  const bioTerraImages = Object.values(import.meta.glob('../../assets/pieces/process-diary-1/bioTerra*.jpg', { eager: true }))
     .map(module => (module as { default: string }).default);
 
   const { name } = getNodeContext('process-diary-1');
