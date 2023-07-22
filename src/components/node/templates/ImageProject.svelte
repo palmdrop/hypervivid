@@ -10,6 +10,9 @@
   export let theme: 'light' | 'dark' | 'black' = 'light';
   export let backgroundOverride: string | undefined = undefined;
 
+  export let showHeader = true;
+  export let compact = false;
+
   let focusedImageIndex: number | undefined = undefined;
   let focusedImage: string | undefined = undefined;
 
@@ -59,10 +62,18 @@
       />
     </button>
   {/if}
-  <div class="container">
-    <div class="description">
-      <h1>{name}</h1>
-      {#each description as line, i (line)}
+  <div 
+    class="container"
+    class:compact
+  >
+    <div 
+      class="description" 
+      class:compact
+    >
+      { #if showHeader }
+        <h1>{name}</h1>
+      { /if }
+      {#each description as line (line)}
         <p>
           {line}
         </p>
@@ -123,10 +134,21 @@
     margin-bottom: 10em;
   }
 
+  .container.compact {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-height: unset;
+  }
+
   .description {
     margin-bottom: 10em;
     background-color: unset;
     border-bottom: var(--border);
+  }
+
+  .description.compact {
+    margin-bottom: 0;
+    border-bottom: unset;
   }
 
   .description h1 {
