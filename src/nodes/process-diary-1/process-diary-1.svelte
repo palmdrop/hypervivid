@@ -1,6 +1,5 @@
 <script lang="ts">
   import { getNodeContext } from '$utils/useNodeContext';
-  import Paragraph from '../../components/common/Paragraph.svelte';
   import BlogPost from '../../components/node/templates/BlogPost.svelte';
     import ImageProject from '../../components/node/templates/ImageProject.svelte';
 
