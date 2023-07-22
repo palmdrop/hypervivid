@@ -1,6 +1,23 @@
 export default {
   "nodes": [
     {
+      "id": "process-diary-1",
+      "group": "art",
+      "title": "Process Diary (1)",
+      "description": "Short process update with some samples and thoughts about generative art.",
+      "tags": [
+        "art",
+        "generative",
+        "biophilia",
+        "thoughts",
+        "exploration",
+        "space-colonization",
+        "process"
+      ],
+      "url": "/nodes/process-diary-1",
+      "image": "/nodes/process-diary-1.preview.png"
+    },
+    {
       "id": "aggregate-topology",
       "group": "art",
       "title": "Aggregate Topology",
@@ -237,8 +254,8 @@ export default {
         "art",
         "generative",
         "live",
-        "organic",
         "biophilia",
+        "organic",
         "photography",
         "feedback",
         "mappings"
@@ -255,8 +272,8 @@ export default {
         "art",
         "generative",
         "live",
-        "organic",
         "biophilia",
+        "organic",
         "substrate",
         "photography",
         "geometry"
@@ -377,8 +394,8 @@ export default {
         "art",
         "generative",
         "live",
-        "organic",
         "biophilia",
+        "organic",
         "geometry"
       ],
       "url": "/nodes/neon-moss",
@@ -409,8 +426,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "organic",
         "biophilia",
+        "organic",
         "noise",
         "substrate"
       ],
@@ -492,8 +509,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "organic",
         "biophilia",
+        "organic",
         "noise",
         "substrate"
       ],
@@ -528,12 +545,12 @@ export default {
     },
     {
       "id": "city-pond",
-      "group": "organic",
+      "group": "biophilia",
       "title": "City Pond",
       "description": "Photos taken by and around a small pond located in the city where I live.",
       "tags": [
-        "organic",
         "biophilia",
+        "organic",
         "project",
         "photography"
       ],
@@ -600,8 +617,8 @@ export default {
         "generative",
         "project",
         "noise",
-        "rhizome",
-        "space-colonization"
+        "space-colonization",
+        "rhizome"
       ],
       "url": "/nodes/chaos-growth",
       "image": "/nodes/chaos-growth.preview.jpg"
@@ -2075,6 +2092,11 @@ export default {
     },
     {
       "source": "mappings",
+      "target": "process-diary-1",
+      "value": 1
+    },
+    {
+      "source": "mappings",
       "target": "raw-making",
       "value": 1
     },
@@ -2146,6 +2168,11 @@ export default {
     {
       "source": "journal-artifacts",
       "target": "making-comfort",
+      "value": 1
+    },
+    {
+      "source": "journal-artifacts",
+      "target": "process-diary-1",
       "value": 1
     },
     {
@@ -2359,6 +2386,11 @@ export default {
       "value": 1
     },
     {
+      "source": "glow-tree",
+      "target": "process-diary-1",
+      "value": 1
+    },
+    {
       "source": "cringe-core",
       "target": "manifesto",
       "value": 1
@@ -2406,6 +2438,11 @@ export default {
     {
       "source": "digital-biophilia",
       "target": "neon-moss",
+      "value": 1
+    },
+    {
+      "source": "digital-biophilia",
+      "target": "process-diary-1",
       "value": 1
     },
     {
@@ -2606,6 +2643,11 @@ export default {
     {
       "source": "raw-making",
       "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
+      "source": "raw-making",
+      "target": "process-diary-1",
       "value": 1
     },
     {
@@ -2821,6 +2863,31 @@ export default {
     {
       "source": "summer-static",
       "target": "waft",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "journal-artifacts",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "raw-making",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "mappings",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "glow-tree",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "digital-biophilia",
       "value": 1
     },
     {
