@@ -2695,7 +2695,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 23 Aug 2023 13:20:58 GMT",
-      "updatedAt": "2023-08-23T14:39:28.182Z",
+      "updatedAt": "2023-08-23T16:41:44.735Z",
       "inline": false,
       "title": "New Platforms",
       "description": "Searching for new platforms and new ways of being on the web.",
@@ -2744,7 +2744,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 22 Jul 2023 11:55:40 GMT",
-      "updatedAt": "2023-08-23T13:21:33.680Z",
+      "updatedAt": "2023-08-23T16:41:44.737Z",
       "inline": false,
       "title": "Process Diary (1)",
       "description": "Short process update with some samples and thoughts about generative art.",
@@ -3153,7 +3153,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2023-08-23T13:53:20.937Z",
+      "updatedAt": "2023-08-23T16:41:44.728Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -6205,5 +6205,5 @@ export default {
     }
   },
   "latestNode": "new-platforms",
-  "mostRecentlyUpdatedNode": "journal-artifacts"
+  "mostRecentlyUpdatedNode": "process-diary-1"
 } as const;
