@@ -80,13 +80,13 @@
     max-width: 450px;
 
     margin-bottom: 0.7em;
-
     border-radius: 15px;
 
     aspect-ratio: 3/2;
     object-fit: cover;
 
     background-color: var(--cBgDark);
+    border: var(--borderPrimary);
 
     opacity: 1;
   }

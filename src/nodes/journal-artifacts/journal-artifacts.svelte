@@ -1,10 +1,10 @@
 <script lang="ts">
   import { getNodeContext } from '$utils/useNodeContext';
   import Link from '../../components/common/Link.svelte';
+  import ExternalIframe from '../../components/iframe/ExternalIframe.svelte';
   import BlogPost from '../../components/node/templates/BlogPost.svelte';
   import Document from './document.svelte.md';
   const { name, metadata } = getNodeContext('journal-artifacts');
-
 </script>
 
 <BlogPost
@@ -21,11 +21,16 @@
         visit palmdrop.github.io/artifacts
       </Link>
     </p>
-    <iframe
+    <ExternalIframe
       src="https://palmdrop.github.io/artifacts"
       title={metadata.title ?? name}
-    >
-    </iframe>
+      width="500px"
+      height="1000px"
+      style="
+        max-width: 100vw;
+        max-height: 200vw;
+      "
+    />
   </div>
 </BlogPost>
 
@@ -37,20 +42,6 @@
     justify-content: center;
 
     padding: 1em 0em;
-  }
-
-  iframe {
-    width: 500px;
-    height: 1000px;
-
-    max-width: 100vw;
-    max-height: 200vw;
-
-
-    border: 20px solid var(--cFg);
-    border-radius: 50px;
-
-    box-shadow: 0px 0px 20px var(--cFg);
   }
 
   p {

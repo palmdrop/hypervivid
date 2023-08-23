@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getNodeContext } from '$utils/useNodeContext';
   import BlogPost from '../../components/node/templates/BlogPost.svelte';
-    import ImageProject from '../../components/node/templates/ImageProject.svelte';
+  import ImageProject from '../../components/node/templates/ImageProject.svelte';
 
   import Document from './document.svelte.md';
 

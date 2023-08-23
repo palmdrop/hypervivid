@@ -1,6 +1,21 @@
 export default {
   "nodes": [
     {
+      "id": "new-platforms",
+      "group": "thoughts",
+      "title": "New Platforms",
+      "description": "Searching for new platforms and new ways of being on the web.",
+      "tags": [
+        "thoughts",
+        "fragments",
+        "internet",
+        "exploration",
+        "writing"
+      ],
+      "url": "/nodes/new-platforms",
+      "image": "https://d2w9rnfcy7mm78.cloudfront.net/23124215/original_f9a329d56d337e83b6cd3a7f33aca9f0.png?1692045722?bc=0"
+    },
+    {
       "id": "process-diary-1",
       "group": "art",
       "title": "Process Diary (1)",
@@ -87,8 +102,8 @@ export default {
       "description": "Short poetic image project. Some photos, some notes, some movement. Aesthetic test mixed with journaling.",
       "tags": [
         "art",
-        "project",
         "thoughts",
+        "project",
         "photography",
         "webart"
       ],
@@ -134,8 +149,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "project",
         "thoughts",
+        "project",
         "feedback",
         "css"
       ],
@@ -196,8 +211,8 @@ export default {
       "tags": [
         "thoughts",
         "fragments",
-        "mappings",
-        "internet"
+        "internet",
+        "mappings"
       ],
       "url": "/nodes/branches-and-connections",
       "image": ""
@@ -2056,6 +2071,11 @@ export default {
       "value": 1
     },
     {
+      "source": "branches-and-connections",
+      "target": "new-platforms",
+      "value": 1
+    },
+    {
       "source": "mappings",
       "target": "branches-and-connections",
       "value": 1
@@ -2092,6 +2112,11 @@ export default {
     },
     {
       "source": "mappings",
+      "target": "new-platforms",
+      "value": 1
+    },
+    {
+      "source": "mappings",
       "target": "process-diary-1",
       "value": 1
     },
@@ -2118,6 +2143,11 @@ export default {
     {
       "source": "links",
       "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
+      "source": "links",
+      "target": "new-platforms",
       "value": 1
     },
     {
@@ -2786,8 +2816,18 @@ export default {
       "value": 1
     },
     {
+      "source": "maps-of-the-web",
+      "target": "new-platforms",
+      "value": 1
+    },
+    {
       "source": "node-graph",
       "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
+      "source": "node-graph",
+      "target": "new-platforms",
       "value": 1
     },
     {
@@ -2828,6 +2868,31 @@ export default {
     {
       "source": "medusa-network",
       "target": "skew-bulbs",
+      "value": 1
+    },
+    {
+      "source": "new-platforms",
+      "target": "maps-of-the-web",
+      "value": 1
+    },
+    {
+      "source": "new-platforms",
+      "target": "branches-and-connections",
+      "value": 1
+    },
+    {
+      "source": "new-platforms",
+      "target": "node-graph",
+      "value": 1
+    },
+    {
+      "source": "new-platforms",
+      "target": "links",
+      "value": 1
+    },
+    {
+      "source": "new-platforms",
+      "target": "mappings",
       "value": 1
     },
     {
