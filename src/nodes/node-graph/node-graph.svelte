@@ -274,7 +274,7 @@
   .hyperwords {
     position: absolute;
 
-    font-size: clamp(3.5em, 10vw, 8em);
+    font-size: clamp(3.2em, 8vw, 7em);
 
     top: 50%;
     left: 50%;
@@ -282,8 +282,7 @@
 
     color: var(--cBg);
     text-shadow: 
-      0.02em 0.02em 0.0em #0f0f0f6e,
-      -0.01em -0.01em 0.0em #e4e9e4ff;
+      0.02em 0.02em 0.3em #4b484857;
   }
 
   #graph {

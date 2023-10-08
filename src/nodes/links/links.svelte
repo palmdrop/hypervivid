@@ -33,6 +33,10 @@
     <Paragraph big>
       While not a traditional <ExternalLink href="https://en.wikipedia.org/wiki/Webring">webring</ExternalLink>, I think we should preserve the tradition of sharing the things we find and enjoy on the internet. Exploring the "small internet" is diffcult without a net of links, branching outwards.
     </Paragraph>
+    <Paragraph big>
+      Unfortunately, I rarely update this page. I need a better flow for adding entries. Currently, I mostly collect links in various 
+      <ExternalLink href="https://www.are.na/palmdrop">are.na channels.</ExternalLink>
+    </Paragraph>
   </div>
 
   <table>
