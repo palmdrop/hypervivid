@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# git submodule foreach 'npm install'
+git submodule foreach 'npm install'
 vite build
