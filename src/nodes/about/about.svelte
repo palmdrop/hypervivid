@@ -57,7 +57,7 @@
     },
     {
       text: 'are.na',
-      href: 'https://www.are.na/palm-drop'
+      href: 'https://www.are.na/palmdrop'
     },
     {
       text: 'obscured (old site)',

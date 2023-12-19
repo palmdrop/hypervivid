@@ -30,7 +30,7 @@
       text: 'instagram'
     },
     {
-      path: 'https://www.are.na/palm-drop',
+      path: 'https://www.are.na/palmdrop',
       text: 'are.na'
     },
   ];
