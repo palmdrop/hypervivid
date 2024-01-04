@@ -1613,6 +1613,12 @@ export default {
       },
       {
         "from": "weave",
+        "to": "living-drone-commission",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "weave",
         "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
@@ -1704,6 +1710,12 @@ export default {
       {
         "from": "glow-tree",
         "to": "chaos-growth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "glow-tree",
+        "to": "living-drone-commission",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1931,6 +1943,12 @@ export default {
       },
       {
         "from": "neon-moss",
+        "to": "living-drone-commission",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "neon-moss",
         "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
@@ -2100,6 +2118,70 @@ export default {
       {
         "from": "rehash-transform",
         "to": "webfuse",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "living-drone-commission": [
+      {
+        "from": "living-drone-commission",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-drone-commission",
+        "to": "neon-moss",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-drone-commission",
+        "to": "weave",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-drone-commission",
+        "to": "process-diary-1",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "process-diary-1": [
+      {
+        "from": "process-diary-1",
+        "to": "living-drone-commission",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "process-diary-1",
+        "to": "journal-artifacts",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "process-diary-1",
+        "to": "raw-making",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "process-diary-1",
+        "to": "mappings",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "process-diary-1",
+        "to": "glow-tree",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "process-diary-1",
+        "to": "digital-biophilia",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2378,38 +2460,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "process-diary-1": [
-      {
-        "from": "process-diary-1",
-        "to": "journal-artifacts",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "process-diary-1",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "process-diary-1",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "process-diary-1",
-        "to": "glow-tree",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "process-diary-1",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "retro-core": [
       {
         "from": "retro-core",
@@ -2470,190 +2520,240 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 45
+      "count": 46
     },
     "generative": {
-      "weight": 0.9111111111111111,
-      "count": 41
+      "weight": 0.9130434782608695,
+      "count": 42
     },
     "live": {
-      "weight": 0.6666666666666666,
-      "count": 30
+      "weight": 0.6739130434782609,
+      "count": 31
     },
     "domain-warping": {
-      "weight": 0.4222222222222222,
+      "weight": 0.41304347826086957,
       "count": 19
     },
     "biophilia": {
-      "weight": 0.3333333333333333,
+      "weight": 0.34782608695652173,
+      "count": 16
+    },
+    "organic": {
+      "weight": 0.32608695652173914,
       "count": 15
     },
     "thoughts": {
-      "weight": 0.3111111111111111,
+      "weight": 0.30434782608695654,
       "count": 14
     },
-    "organic": {
-      "weight": 0.3111111111111111,
+    "project": {
+      "weight": 0.30434782608695654,
       "count": 14
     },
     "noise": {
-      "weight": 0.28888888888888886,
-      "count": 13
-    },
-    "project": {
-      "weight": 0.28888888888888886,
+      "weight": 0.2826086956521739,
       "count": 13
     },
     "substrate": {
-      "weight": 0.26666666666666666,
+      "weight": 0.2608695652173913,
       "count": 12
     },
     "feedback": {
-      "weight": 0.24444444444444444,
+      "weight": 0.2391304347826087,
       "count": 11
     },
     "photography": {
-      "weight": 0.24444444444444444,
+      "weight": 0.2391304347826087,
       "count": 11
     },
     "geometry": {
-      "weight": 0.2222222222222222,
+      "weight": 0.21739130434782608,
       "count": 10
     },
     "fragments": {
-      "weight": 0.2,
+      "weight": 0.1956521739130435,
       "count": 9
     },
     "mappings": {
-      "weight": 0.17777777777777778,
+      "weight": 0.17391304347826086,
       "count": 8
     },
     "internet": {
-      "weight": 0.17777777777777778,
+      "weight": 0.17391304347826086,
+      "count": 8
+    },
+    "interactive": {
+      "weight": 0.17391304347826086,
       "count": 8
     },
     "webart": {
-      "weight": 0.15555555555555556,
-      "count": 7
-    },
-    "interactive": {
-      "weight": 0.15555555555555556,
+      "weight": 0.15217391304347827,
       "count": 7
     },
     "css": {
-      "weight": 0.15555555555555556,
+      "weight": 0.15217391304347827,
       "count": 7
     },
     "exploration": {
-      "weight": 0.15555555555555556,
+      "weight": 0.15217391304347827,
       "count": 7
     },
     "info": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10869565217391304,
       "count": 5
     },
     "fuse": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10869565217391304,
       "count": 5
     },
     "writing": {
-      "weight": 0.1111111111111111,
+      "weight": 0.10869565217391304,
       "count": 5
     },
     "space-colonization": {
-      "weight": 0.08888888888888889,
-      "count": 4
+      "weight": 0.10869565217391304,
+      "count": 5
     },
     "chrome": {
-      "weight": 0.08888888888888889,
+      "weight": 0.08695652173913043,
       "count": 4
     },
     "glitch": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06521739130434782,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06521739130434782,
       "count": 3
     },
     "hyper": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06521739130434782,
       "count": 3
     },
     "words": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06521739130434782,
       "count": 3
     },
     "utility": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06521739130434782,
+      "count": 3
+    },
+    "external": {
+      "weight": 0.06521739130434782,
       "count": 3
     },
     "memes": {
-      "weight": 0.06666666666666667,
+      "weight": 0.06521739130434782,
       "count": 3
     },
     "instancing": {
-      "weight": 0.044444444444444446,
+      "weight": 0.043478260869565216,
       "count": 2
     },
     "mind": {
-      "weight": 0.044444444444444446,
+      "weight": 0.043478260869565216,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.044444444444444446,
+      "weight": 0.043478260869565216,
       "count": 2
     },
     "dithering": {
-      "weight": 0.044444444444444446,
+      "weight": 0.043478260869565216,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.044444444444444446,
-      "count": 2
-    },
-    "external": {
-      "weight": 0.044444444444444446,
+      "weight": 0.043478260869565216,
       "count": 2
     },
     "octree": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "contact": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "communication": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "particles": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
+      "count": 1
+    },
+    "collaboration": {
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "process": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "cringe": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "texture": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "depth": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.022222222222222223,
+      "weight": 0.021739130434782608,
       "count": 1
     }
   },
   "nodes": {
+    "living-drone-commission": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "biophilia",
+        "organic",
+        "project",
+        "interactive",
+        "space-colonization",
+        "external",
+        "collaboration"
+      ],
+      "links": [
+        {
+          "from": "living-drone-commission",
+          "to": "glow-tree",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "living-drone-commission",
+          "to": "neon-moss",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "living-drone-commission",
+          "to": "weave",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "living-drone-commission",
+          "to": "process-diary-1",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Thu, 04 Jan 2024 14:24:03 GMT",
+      "updatedAt": "2024-01-04T15:06:19.514Z",
+      "inline": false,
+      "title": "Living Drone (commision)",
+      "description": "A generative art project made for the lovely people at fveld.",
+      "image": "/nodes/living-drone-commission.preview.jpg"
+    },
     "new-platforms": {
       "tags": [
         "thoughts",
@@ -2695,7 +2795,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 23 Aug 2023 13:20:58 GMT",
-      "updatedAt": "2023-08-23T16:41:44.735Z",
+      "updatedAt": "2024-01-04T14:21:54.234Z",
       "inline": false,
       "title": "New Platforms",
       "description": "Searching for new platforms and new ways of being on the web.",
@@ -2712,6 +2812,12 @@ export default {
         "process"
       ],
       "links": [
+        {
+          "from": "process-diary-1",
+          "to": "living-drone-commission",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "process-diary-1",
           "to": "journal-artifacts",
@@ -2744,7 +2850,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 22 Jul 2023 11:55:40 GMT",
-      "updatedAt": "2023-08-23T16:41:44.737Z",
+      "updatedAt": "2024-01-04T14:21:54.236Z",
       "inline": false,
       "title": "Process Diary (1)",
       "description": "Short process update with some samples and thoughts about generative art.",
@@ -2805,7 +2911,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 24 May 2023 20:04:27 GMT",
-      "updatedAt": "2023-08-23T13:19:20.971Z",
+      "updatedAt": "2024-01-04T14:21:54.224Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Aggregate Topology",
@@ -2867,7 +2973,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 07 May 2023 14:08:27 GMT",
-      "updatedAt": "2023-08-23T13:19:20.968Z",
+      "updatedAt": "2024-01-04T14:21:54.224Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Aggregate Forms",
@@ -2927,7 +3033,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2023-08-23T13:19:20.999Z",
+      "updatedAt": "2024-01-04T14:21:54.233Z",
       "inline": false,
       "title": "Maps of The Web",
       "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
@@ -2973,7 +3079,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2023-08-23T13:19:21.005Z",
+      "updatedAt": "2024-01-04T14:21:54.235Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
@@ -2982,8 +3088,8 @@ export default {
     "making-comfort": {
       "tags": [
         "art",
-        "thoughts",
         "project",
+        "thoughts",
         "photography",
         "webart"
       ],
@@ -3020,7 +3126,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 06 Mar 2023 18:47:11 GMT",
-      "updatedAt": "2023-08-23T13:19:20.995Z",
+      "updatedAt": "2024-01-04T14:21:54.232Z",
       "inline": false,
       "asDocument": true,
       "title": "Making Comfort",
@@ -3069,7 +3175,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 23 Feb 2023 19:15:44 GMT",
-      "updatedAt": "2023-08-23T13:19:20.976Z",
+      "updatedAt": "2024-01-04T14:21:54.225Z",
       "inline": false,
       "asDocument": true,
       "title": "Breath Crunch",
@@ -3099,7 +3205,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 05 Feb 2023 14:40:22 GMT",
-      "updatedAt": "2023-03-10T22:40:35.772Z",
+      "updatedAt": "2024-01-04T14:21:54.238Z",
       "inline": false,
       "title": "Substrate Catalogue",
       "description": "A catalogue of substrate shaders with stream-of-consciousness descriptions.",
@@ -3109,8 +3215,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "thoughts",
         "project",
+        "thoughts",
         "feedback",
         "css"
       ],
@@ -3153,7 +3259,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2023-08-23T16:41:44.728Z",
+      "updatedAt": "2024-01-04T14:21:54.230Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -3212,7 +3318,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 06 Jan 2023 09:30:05 GMT",
-      "updatedAt": "2023-03-10T22:40:35.771Z",
+      "updatedAt": "2024-01-04T14:21:54.236Z",
       "inline": true,
       "title": "Raw Making",
       "description": "Thoughts about hurry sickness, productivity and raw creation.",
@@ -3250,7 +3356,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 27 Dec 2022 09:42:22 GMT",
-      "updatedAt": "2023-03-10T22:40:35.774Z",
+      "updatedAt": "2024-01-04T14:21:54.239Z",
       "inline": false,
       "asDocument": true,
       "title": "Waft",
@@ -3326,7 +3432,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 23 Dec 2022 10:06:41 GMT",
-      "updatedAt": "2023-03-10T22:40:35.767Z",
+      "updatedAt": "2024-01-04T14:21:54.231Z",
       "inline": false,
       "asDocument": true,
       "title": "Living Hobbling Goo",
@@ -3379,7 +3485,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 22 Nov 2022 15:40:27 GMT",
-      "updatedAt": "2023-08-23T13:19:20.975Z",
+      "updatedAt": "2024-01-04T14:21:54.225Z",
       "inline": true,
       "title": "Branches and connections",
       "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
@@ -3417,7 +3523,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
-      "updatedAt": "2023-03-10T22:40:35.769Z",
+      "updatedAt": "2024-01-04T14:21:54.235Z",
       "inline": false,
       "title": "Places and things",
       "description": "Another series of photographs. Another slice of time, another tone. Just a collection.",
@@ -3495,7 +3601,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
-      "updatedAt": "2022-11-21T10:55:37.767Z",
+      "updatedAt": "2024-01-04T14:21:54.232Z",
       "inline": true,
       "title": "Mappings",
       "description": "Some thoughts about art and map-making as a creative tool.",
@@ -3555,7 +3661,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2023-08-23T13:19:21.010Z",
+      "updatedAt": "2024-01-04T14:21:54.236Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Remnant Mappings",
@@ -3636,7 +3742,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
-      "updatedAt": "2023-08-23T13:19:20.980Z",
+      "updatedAt": "2024-01-04T14:21:54.229Z",
       "inline": false,
       "title": "Foliage Fragments",
       "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
@@ -3716,7 +3822,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 26 Sep 2022 21:46:38 GMT",
-      "updatedAt": "2022-11-21T10:55:37.752Z",
+      "updatedAt": "2024-01-04T14:21:54.229Z",
       "inline": false,
       "title": "Foliage Grids",
       "description": "Dynamic pixelation and image displacement grids. A small study with various foliage details. Combining generative techniques and photography.",
@@ -3761,7 +3867,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 14 Sep 2022 18:30:05 GMT",
-      "updatedAt": "2022-11-21T10:55:37.735Z",
+      "updatedAt": "2024-01-04T14:21:54.226Z",
       "inline": false,
       "title": "Cliffscapes",
       "description": "Continuation of formations and glow-tree sketches: a landscape and calm skies. A tree structure controls the form of the cliffscape.",
@@ -3828,7 +3934,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 10 Sep 2022 14:34:05 GMT",
-      "updatedAt": "2022-11-21T10:55:37.730Z",
+      "updatedAt": "2024-01-04T14:21:54.224Z",
       "inline": false,
       "title": "Alien Skies",
       "description": "Strange perspective distortion for alien skies. A test for a larger composition.",
@@ -3861,7 +3967,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 07 Sep 2022 21:12:23 GMT",
-      "updatedAt": "2022-11-21T10:55:37.738Z",
+      "updatedAt": "2024-01-04T14:21:54.226Z",
       "inline": true,
       "title": "Cringe Core",
       "description": "Short thoughts about cringe.",
@@ -3908,13 +4014,19 @@ export default {
         },
         {
           "from": "glow-tree",
+          "to": "living-drone-commission",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "glow-tree",
           "to": "process-diary-1",
           "kind": "tangent",
           "strength": 0.5
         }
       ],
       "createdAt": "Wed, 07 Sep 2022 17:29:53 GMT",
-      "updatedAt": "2022-11-21T10:55:37.755Z",
+      "updatedAt": "2024-01-04T14:21:54.229Z",
       "inline": false,
       "title": "Glow Tree",
       "description": "Simple tree structure and octree visualization. Mixing organic algorithms and less organic data structures.",
@@ -3953,7 +4065,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 01 Sep 2022 11:19:20 GMT",
-      "updatedAt": "2022-11-21T10:55:37.793Z",
+      "updatedAt": "2024-01-04T14:21:54.239Z",
       "inline": false,
       "title": "Virtual Distance",
       "description": "A css experiment with endless banner scrolling and exaggerated shadows.",
@@ -3992,7 +4104,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 27 Aug 2022 17:33:51 GMT",
-      "updatedAt": "2023-03-10T22:40:35.773Z",
+      "updatedAt": "2024-01-04T14:21:54.238Z",
       "inline": false,
       "title": "Summer Static",
       "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
@@ -4070,7 +4182,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 25 Aug 2022 09:25:46 GMT",
-      "updatedAt": "2022-11-21T10:55:37.753Z",
+      "updatedAt": "2024-01-04T14:21:54.229Z",
       "inline": false,
       "title": "Formations",
       "description": "Generative rock-like formations and a background feedback effect. Doing some tests with natural-looking structures in synthetic environments.",
@@ -4107,6 +4219,12 @@ export default {
         },
         {
           "from": "neon-moss",
+          "to": "living-drone-commission",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "neon-moss",
           "to": "moss-structure",
           "kind": "tangent",
           "strength": 0.5
@@ -4125,7 +4243,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
-      "updatedAt": "2022-11-21T10:55:37.775Z",
+      "updatedAt": "2024-01-04T14:21:54.234Z",
       "inline": false,
       "title": "Neon Moss",
       "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
@@ -4197,7 +4315,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
-      "updatedAt": "2022-11-21T10:55:37.740Z",
+      "updatedAt": "2024-01-04T14:21:54.227Z",
       "inline": true,
       "title": "Digital Biophilia",
       "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
@@ -4265,7 +4383,7 @@ export default {
         }
       ],
       "createdAt": "Fri, 19 Aug 2022 17:08:31 GMT",
-      "updatedAt": "2023-08-23T13:19:21.012Z",
+      "updatedAt": "2024-01-04T14:21:54.239Z",
       "inline": false,
       "title": "Super Cell",
       "description": "Warping lines in multiple layers makes for a strange, morphing life-form.",
@@ -4359,7 +4477,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 17 Aug 2022 19:38:50 GMT",
-      "updatedAt": "2022-11-21T10:55:37.789Z",
+      "updatedAt": "2024-01-04T14:21:54.238Z",
       "inline": false,
       "title": "Substrates",
       "description": "A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.",
@@ -4451,7 +4569,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 16 Aug 2022 23:11:46 GMT",
-      "updatedAt": "2023-08-23T13:19:21.002Z",
+      "updatedAt": "2024-01-04T14:21:54.234Z",
       "inline": false,
       "title": "Moss Structure",
       "description": "More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.",
@@ -4524,7 +4642,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 15 Aug 2022 19:52:55 GMT",
-      "updatedAt": "2023-08-23T13:19:21.003Z",
+      "updatedAt": "2024-01-04T14:21:54.234Z",
       "inline": false,
       "title": "Nest",
       "description": "Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.",
@@ -4596,7 +4714,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 13 Aug 2022 09:33:13 GMT",
-      "updatedAt": "2023-08-23T13:19:20.986Z",
+      "updatedAt": "2024-01-04T14:21:54.230Z",
       "inline": false,
       "title": "Jolt Gate",
       "description": "Building structures submerged in complex domain warping shaders. Introducing simple shapes into these effects can drastically alter the effect.",
@@ -4676,7 +4794,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 10 Aug 2022 09:20:52 GMT",
-      "updatedAt": "2022-11-21T10:55:37.792Z",
+      "updatedAt": "2024-01-04T14:21:54.239Z",
       "inline": false,
       "title": "Swamp Mass",
       "description": "Using noise and domain warping as to as an analogue for biological systems. Sophisticated shaders can produce mesmerizing biological effects.",
@@ -4709,7 +4827,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 30 Jul 2022 09:06:40 GMT",
-      "updatedAt": "2022-11-21T10:55:37.768Z",
+      "updatedAt": "2024-01-04T14:21:54.233Z",
       "inline": false,
       "title": "Markup Dada",
       "description": "Simple HTML/CSS/JS test for creating animated patterns using the DOM.",
@@ -4754,7 +4872,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
-      "updatedAt": "2023-08-23T13:19:20.979Z",
+      "updatedAt": "2024-01-04T14:21:54.227Z",
       "inline": true,
       "title": "Digital Gardening",
       "description": "Some thoughts about digital and generative gardening.",
@@ -4788,7 +4906,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 21 Jul 2022 20:37:19 GMT",
-      "updatedAt": "2023-03-10T22:40:35.763Z",
+      "updatedAt": "2024-01-04T14:21:54.225Z",
       "inline": false,
       "title": "City Pond",
       "description": "Photos taken by and around a small pond located in the city where I live.",
@@ -4846,7 +4964,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
-      "updatedAt": "2023-03-10T22:40:35.765Z",
+      "updatedAt": "2024-01-04T14:21:54.231Z",
       "inline": true,
       "title": "Less Flat",
       "description": "Thoughts about artistic creation as self-exploration.",
@@ -4885,7 +5003,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
-      "updatedAt": "2022-11-21T10:55:37.759Z",
+      "updatedAt": "2024-01-04T14:21:54.230Z",
       "inline": true,
       "title": "Intro",
       "description": "A short site description.",
@@ -4923,7 +5041,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 30 Jun 2022 18:01:04 GMT",
-      "updatedAt": "2022-11-21T10:55:37.749Z",
+      "updatedAt": "2024-01-04T14:21:54.228Z",
       "inline": false,
       "title": "Ethereal Bits",
       "description": "A node for simple html/css/svg aesthetics and experiments. Exploring how native web tools can be used to create unexpected effects.",
@@ -4943,7 +5061,7 @@ export default {
         }
       ],
       "createdAt": "Tue, 28 Jun 2022 07:07:14 GMT",
-      "updatedAt": "2023-08-23T13:19:20.991Z",
+      "updatedAt": "2024-01-04T14:21:54.231Z",
       "inline": true,
       "title": "Latest",
       "description": "Displays the most recently created and most recently updated nodes. Just a utility.",
@@ -4985,7 +5103,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 22 Jun 2022 21:26:31 GMT",
-      "updatedAt": "2023-03-10T22:40:35.762Z",
+      "updatedAt": "2024-01-04T14:21:54.225Z",
       "inline": false,
       "title": "Chaos Growth",
       "description": "Accidental chaotic growth that ocurred when playing around with space-colonization algorithms. The branches never quite reach their goals.",
@@ -5016,7 +5134,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
-      "updatedAt": "2023-03-10T22:40:35.769Z",
+      "updatedAt": "2024-01-04T14:21:54.235Z",
       "inline": false,
       "title": "Objects",
       "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities. These things just are.",
@@ -5048,6 +5166,12 @@ export default {
         },
         {
           "from": "weave",
+          "to": "living-drone-commission",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "weave",
           "to": "rhizome",
           "kind": "tangent",
           "strength": 0.5
@@ -5066,7 +5190,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 19 Jun 2022 10:25:11 GMT",
-      "updatedAt": "2023-03-10T22:40:35.774Z",
+      "updatedAt": "2024-01-04T14:21:54.239Z",
       "inline": false,
       "title": "Weave",
       "description": "A combination of generative techniques: flowfields, plant-like growth algorithms, and noise.",
@@ -5128,7 +5252,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Jun 2022 12:07:12 GMT",
-      "updatedAt": "2023-03-10T22:40:35.775Z",
+      "updatedAt": "2024-01-04T14:21:54.240Z",
       "inline": false,
       "title": "Web Fuse",
       "description": "Building on previous pixel mixing techniques, but with internet images as subject. Hypermemes, why not?",
@@ -5194,7 +5318,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 16 Jun 2022 19:50:43 GMT",
-      "updatedAt": "2023-03-10T22:40:35.763Z",
+      "updatedAt": "2024-01-04T14:21:54.229Z",
       "inline": false,
       "title": "Frag Fuse",
       "description": "Photo fragments, warped and mixed to produce eerie textures and patterns.",
@@ -5239,7 +5363,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2023-08-23T13:19:20.993Z",
+      "updatedAt": "2024-01-04T14:21:54.231Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5275,7 +5399,7 @@ export default {
       "title": "moons",
       "description": "Simple CSS test.",
       "image": "",
-      "updatedAt": "2022-11-21T10:55:37.773Z"
+      "updatedAt": "2024-01-04T14:21:54.234Z"
     },
     "contact": {
       "tags": [
@@ -5301,7 +5425,7 @@ export default {
       "title": "Contact",
       "description": "A form for sending me an email. Nothing more.",
       "image": "",
-      "updatedAt": "2022-11-21T10:55:37.737Z"
+      "updatedAt": "2024-01-04T14:21:54.226Z"
     },
     "about": {
       "tags": [
@@ -5345,7 +5469,7 @@ export default {
       "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
       "image": "/nodes/about.preview.jpg",
-      "updatedAt": "2023-08-23T13:19:20.966Z"
+      "updatedAt": "2024-01-04T14:21:54.223Z"
     },
     "hyper": {
       "tags": [
@@ -5404,7 +5528,7 @@ export default {
       "title": "Hyper",
       "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2023-08-23T13:19:20.983Z"
+      "updatedAt": "2024-01-04T14:21:54.230Z"
     },
     "manifesto": {
       "tags": [
@@ -5485,7 +5609,7 @@ export default {
       "title": "manifesto",
       "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
       "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "2022-11-21T10:55:37.766Z"
+      "updatedAt": "2024-01-04T14:21:54.232Z"
     },
     "block-dissolve": {
       "tags": [
@@ -5524,7 +5648,7 @@ export default {
         }
       ],
       "createdAt": "4 May 2022 11:45:09 GMT",
-      "updatedAt": "2023-08-23T13:19:20.973Z",
+      "updatedAt": "2024-01-04T14:21:54.225Z",
       "inline": false,
       "title": "Block Dissolve",
       "description": "Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.",
@@ -5555,7 +5679,7 @@ export default {
         }
       ],
       "createdAt": "27 Mar 2022 11:45:09 GMT",
-      "updatedAt": "2022-11-21T10:55:37.769Z",
+      "updatedAt": "2024-01-04T14:21:54.233Z",
       "inline": false,
       "title": "Medusa Network",
       "description": "Dithering, living rows and grids, jellyfish, glitchy and organic. An expansion on the Noise Construct experiment.",
@@ -5579,7 +5703,7 @@ export default {
         }
       ],
       "createdAt": "25 Mar 2022 11:45:09 GMT",
-      "updatedAt": "2022-11-21T10:55:37.777Z",
+      "updatedAt": "2024-01-04T14:21:54.235Z",
       "inline": false,
       "title": "Noise Construct",
       "description": "Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.",
@@ -5608,7 +5732,7 @@ export default {
         }
       ],
       "createdAt": "14 Mar 2022 10:23:19 GMT",
-      "updatedAt": "2022-11-21T10:55:37.784Z",
+      "updatedAt": "2024-01-04T14:21:54.237Z",
       "inline": false,
       "title": "Skew Bulbs",
       "description": "Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.",
@@ -5636,7 +5760,7 @@ export default {
         }
       ],
       "createdAt": "02 Mar 2022 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.786Z",
+      "updatedAt": "2024-01-04T14:21:54.237Z",
       "inline": false,
       "title": "Slices",
       "description": "Experiment with 3D CSS rendering, photography, and digital spaces. Located externally; will be opened in an iframe.",
@@ -5723,7 +5847,7 @@ export default {
         }
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "2023-08-23T13:19:21.011Z",
+      "updatedAt": "2024-01-04T14:21:54.237Z",
       "inline": false,
       "title": "Rhizome",
       "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
@@ -5759,7 +5883,7 @@ export default {
         }
       ],
       "createdAt": "13 Feb 2022 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.750Z",
+      "updatedAt": "2024-01-04T14:21:54.229Z",
       "inline": false,
       "title": "Fluid Feedback",
       "description": "More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.",
@@ -5851,7 +5975,7 @@ export default {
         }
       ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
-      "updatedAt": "2023-08-23T13:19:20.985Z",
+      "updatedAt": "2024-01-04T14:21:54.230Z",
       "inline": false,
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
@@ -5886,7 +6010,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 13 Jan 2022 19:55:50 GMT",
-      "updatedAt": "2022-11-21T10:55:37.729Z",
+      "updatedAt": "2024-01-04T14:21:54.224Z",
       "inline": false,
       "title": "Alien Patterns",
       "description": "On combining modified noise and domain warping to produce alien patterns",
@@ -5917,7 +6041,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 12 Jan 2022 21:50:06 GMT",
-      "updatedAt": "2022-11-21T10:55:37.772Z",
+      "updatedAt": "2024-01-04T14:21:54.233Z",
       "inline": false,
       "title": "Characteristics of Modified Noise",
       "description": "A few of my common methods for modifying standard noise functions.",
@@ -5985,7 +6109,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 10 Jan 2022 18:52:37 GMT",
-      "updatedAt": "2022-11-21T10:55:37.744Z",
+      "updatedAt": "2024-01-04T14:21:54.227Z",
       "inline": false,
       "title": "My Take on Domain Warping",
       "description": "How I've used domain warping to achieve strange generative effects.",
@@ -6013,7 +6137,7 @@ export default {
         }
       ],
       "createdAt": "26 Dec 2021 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.750Z",
+      "updatedAt": "2024-01-04T14:21:54.228Z",
       "inline": false,
       "title": "Flat Clouds",
       "description": "Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.",
@@ -6057,7 +6181,7 @@ export default {
         }
       ],
       "createdAt": "23 Dec 2021 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.780Z",
+      "updatedAt": "2024-01-04T14:21:54.236Z",
       "inline": false,
       "title": "Rehash Transform",
       "description": "Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.",
@@ -6100,7 +6224,7 @@ export default {
         }
       ],
       "createdAt": "14 Nov 2021 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.794Z",
+      "updatedAt": "2024-01-04T14:21:54.239Z",
       "inline": false,
       "title": "Virtual Imprint",
       "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
@@ -6136,7 +6260,7 @@ export default {
         }
       ],
       "createdAt": "15 Oct 2021 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.788Z",
+      "updatedAt": "2024-01-04T14:21:54.238Z",
       "inline": false,
       "title": "Solar Landscape",
       "description": "An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.",
@@ -6172,7 +6296,7 @@ export default {
         }
       ],
       "createdAt": "13 Oct 2021 09:49:08 GMT",
-      "updatedAt": "2022-11-21T10:55:37.787Z",
+      "updatedAt": "2024-01-04T14:21:54.237Z",
       "inline": false,
       "title": "Solar Chrome",
       "description": "Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.",
@@ -6197,13 +6321,13 @@ export default {
         }
       ],
       "createdAt": "15 Sep 2021 15:24:28 GMT",
-      "updatedAt": "2022-11-21T10:55:37.782Z",
+      "updatedAt": "2024-01-04T14:21:54.237Z",
       "inline": false,
       "title": "Retro Core",
       "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "new-platforms",
-  "mostRecentlyUpdatedNode": "process-diary-1"
+  "latestNode": "living-drone-commission",
+  "mostRecentlyUpdatedNode": "webfuse"
 } as const;

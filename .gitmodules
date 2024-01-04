@@ -6,3 +6,7 @@
 	path = src/modules/synthetic-grids
 	url = https://github.com/palmdrop/synthetic-grids
 	branch = module
+[submodule "src/modules/living-drone"]
+	path = src/modules/living-drone
+	url = https://github.com/palmdrop/living-drone
+	branch = main

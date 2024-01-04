@@ -1,6 +1,26 @@
 export default {
   "nodes": [
     {
+      "id": "living-drone-commission",
+      "group": "art",
+      "title": "Living Drone (commision)",
+      "description": "A generative art project made for the lovely people at fveld.",
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "biophilia",
+        "organic",
+        "project",
+        "interactive",
+        "space-colonization",
+        "external",
+        "collaboration"
+      ],
+      "url": "/nodes/living-drone-commission",
+      "image": "/nodes/living-drone-commission.preview.jpg"
+    },
+    {
       "id": "new-platforms",
       "group": "thoughts",
       "title": "New Platforms",
@@ -102,8 +122,8 @@ export default {
       "description": "Short poetic image project. Some photos, some notes, some movement. Aesthetic test mixed with journaling.",
       "tags": [
         "art",
-        "thoughts",
         "project",
+        "thoughts",
         "photography",
         "webart"
       ],
@@ -149,8 +169,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "thoughts",
         "project",
+        "thoughts",
         "feedback",
         "css"
       ],
@@ -2342,6 +2362,11 @@ export default {
     },
     {
       "source": "weave",
+      "target": "living-drone-commission",
+      "value": 1
+    },
+    {
+      "source": "weave",
       "target": "rhizome",
       "value": 1
     },
@@ -2413,6 +2438,11 @@ export default {
     {
       "source": "glow-tree",
       "target": "chaos-growth",
+      "value": 1
+    },
+    {
+      "source": "glow-tree",
+      "target": "living-drone-commission",
       "value": 1
     },
     {
@@ -2587,6 +2617,11 @@ export default {
     },
     {
       "source": "neon-moss",
+      "target": "living-drone-commission",
+      "value": 1
+    },
+    {
+      "source": "neon-moss",
       "target": "moss-structure",
       "value": 1
     },
@@ -2718,6 +2753,56 @@ export default {
     {
       "source": "rehash-transform",
       "target": "webfuse",
+      "value": 1
+    },
+    {
+      "source": "living-drone-commission",
+      "target": "glow-tree",
+      "value": 1
+    },
+    {
+      "source": "living-drone-commission",
+      "target": "neon-moss",
+      "value": 1
+    },
+    {
+      "source": "living-drone-commission",
+      "target": "weave",
+      "value": 1
+    },
+    {
+      "source": "living-drone-commission",
+      "target": "process-diary-1",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "living-drone-commission",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "journal-artifacts",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "raw-making",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "mappings",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "glow-tree",
+      "value": 1
+    },
+    {
+      "source": "process-diary-1",
+      "target": "digital-biophilia",
       "value": 1
     },
     {
@@ -2928,31 +3013,6 @@ export default {
     {
       "source": "summer-static",
       "target": "waft",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
-      "target": "journal-artifacts",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
-      "target": "raw-making",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
-      "target": "glow-tree",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
-      "target": "digital-biophilia",
       "value": 1
     },
     {
