@@ -87,7 +87,7 @@ main {
 
 body {
 	scroll-behavior: smooth;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 html {
