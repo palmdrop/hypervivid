@@ -1992,6 +1992,7 @@ export default {
         "strength": 0.5
       }
     ],
+    "fveld-2": [],
     "virtual-distance": [
       {
         "from": "virtual-distance",
@@ -2708,6 +2709,16 @@ export default {
     }
   },
   "nodes": {
+    "fveld-2": {
+      "tags": [],
+      "links": [],
+      "createdAt": "Thu, 18 Jan 2024 21:07:43 GMT",
+      "updatedAt": "2024-01-18T21:16:40.804Z",
+      "inline": false,
+      "title": "fveld-2",
+      "description": "",
+      "image": ""
+    },
     "living-drone-commission": {
       "tags": [
         "art",
@@ -2748,7 +2759,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 04 Jan 2024 14:24:03 GMT",
-      "updatedAt": "2024-01-04T15:06:19.514Z",
+      "updatedAt": "2024-01-04T15:22:04.714Z",
       "inline": false,
       "title": "Living Drone (commision)",
       "description": "A generative art project made for the lovely people at fveld.",
@@ -2795,7 +2806,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 23 Aug 2023 13:20:58 GMT",
-      "updatedAt": "2024-01-04T14:21:54.234Z",
+      "updatedAt": "2024-01-04T15:21:51.477Z",
       "inline": false,
       "title": "New Platforms",
       "description": "Searching for new platforms and new ways of being on the web.",
@@ -2850,7 +2861,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 22 Jul 2023 11:55:40 GMT",
-      "updatedAt": "2024-01-04T14:21:54.236Z",
+      "updatedAt": "2024-01-04T15:21:40.347Z",
       "inline": false,
       "title": "Process Diary (1)",
       "description": "Short process update with some samples and thoughts about generative art.",
@@ -3079,7 +3090,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2024-01-04T14:21:54.235Z",
+      "updatedAt": "2024-01-04T15:21:54.931Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
@@ -3259,7 +3270,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2024-01-04T14:21:54.230Z",
+      "updatedAt": "2024-01-04T15:21:40.346Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -5363,7 +5374,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2024-01-04T14:21:54.231Z",
+      "updatedAt": "2024-01-04T15:21:54.931Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5469,7 +5480,7 @@ export default {
       "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
       "image": "/nodes/about.preview.jpg",
-      "updatedAt": "2024-01-04T14:21:54.223Z"
+      "updatedAt": "2024-01-04T15:22:04.706Z"
     },
     "hyper": {
       "tags": [
@@ -6328,6 +6339,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "living-drone-commission",
-  "mostRecentlyUpdatedNode": "webfuse"
+  "latestNode": "fveld-2",
+  "mostRecentlyUpdatedNode": "living-drone-commission"
 } as const;

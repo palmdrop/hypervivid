@@ -1,6 +1,14 @@
 export default {
   "nodes": [
     {
+      "id": "fveld-2",
+      "title": "fveld-2",
+      "description": "",
+      "tags": [],
+      "url": "/nodes/fveld-2",
+      "image": ""
+    },
+    {
       "id": "living-drone-commission",
       "group": "art",
       "title": "Living Drone (commision)",

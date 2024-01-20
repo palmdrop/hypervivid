@@ -209,7 +209,9 @@ export const buildPatternShader = ( settings : PatternShaderSettings, onLoad ?: 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const functionCache : FunctionCache = new Map<any, FunctionWithName>();
   const textureNames = new Set<string>();
-  const functions : GlslFunctions = {};
+  const functions : GlslFunctions = {
+    ...settings.functions ?? {}
+  };
   const noiseTypes : Set<NoiseFunctionName> = new Set<NoiseFunctionName>();
 
   functions[ 'isNan' ] = isNanFunction;

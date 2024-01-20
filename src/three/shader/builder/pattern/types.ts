@@ -1,4 +1,4 @@
-import type { Operation, GlslFunction, Trigonometry, GLSL, GlslVariables } from '../../core';
+import type { Operation, GlslFunction, Trigonometry, GLSL, GlslVariables, GlslFunctions } from '../../core';
 
 export type FunctionWithName = {
   name : string,
@@ -176,4 +176,5 @@ export type PatternShaderSettings = {
   normalMapConverterSettings ?: NormalMapConverterSettings,
 
   postGLSL ?: GLSL
+  functions ?: GlslFunctions
 }
