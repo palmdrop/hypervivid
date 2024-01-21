@@ -106,7 +106,7 @@ export default () => {
         { kind: 'add', argument: feedbackSource },
         { kind: 'mult', argument: random( 0.8, 0.9 ) },
         { kind: 'pow', argument: blockSource },
-        { kind: 'add', argument: random( -1.0, 1.0 ) }
+        { kind: 'add', argument: 0 }
       ],
       y: [ 
         { kind: 'add', argument: 0.0 }
@@ -140,8 +140,9 @@ export default () => {
   ];
 
   const pow = 0.81;
-  const mixAmount = 0;
-  const mixPow = 1.01;
+  const mixAmount = 1;
+  const mixPow = 5.001;
+  const lerp = 0.9; 
 
   // TODO: user color settings to output only red! Then use that as brightness controller
   const toVec3 = (color: { r: number, g: number, b: number }) => {
@@ -169,8 +170,9 @@ export default () => {
 
   const postGLSL : GLSL = `
     vec4 previous = texture2D( tFeedback, vUv );
+    // gl_FragColor.rgb = getColor( 0.21 * gl_FragColor.r + 0.72 * gl_FragColor.g + 0.07 * gl_FragColor.b );
     gl_FragColor.rgb = getColor( gl_FragColor.r );
-    gl_FragColor.rgb = mix(gl_FragColor.rgb, previous.rgb, 0.85);
+    gl_FragColor.rgb = mix(gl_FragColor.rgb, previous.rgb, ${lerp});
   `;
 
   return {
