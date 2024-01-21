@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { random } from '../../../utils/random';
 import type { ColorSettings, DomainWarp, PatternShaderSettings, Source } from '../../shader/builder/pattern/types';
-import type { GLSL } from '../../shader/core';
+import type { GLSL, GlslFunctions } from '../../shader/core';
 
 export default () => {
   const feedbackSource = {
@@ -42,7 +42,7 @@ export default () => {
   const noiseSource1 : Source = {
     kind: 'noise',
     frequency: new THREE.Vector3( 1.0, 1.0, 1.0 )
-      .multiplyScalar( random( 5, 10.0 ) ),
+      .multiplyScalar( random( 3, 5.0 ) ),
     amplitude: 2.5,
     pow: random( 3.0, 7.0 ),
     octaves: Math.floor( random( 5, 7 ) ),
@@ -119,16 +119,66 @@ export default () => {
     sanitizeHSV: true
   };
 
+  // TODO: convert to HSV and vary color brightness!?
+  const colors = [
+    // Pride 
+    { r: 0, g: 0, b: 0 },
+    { r: 97, g: 57, b: 21 },
+    { r: 228, g: 3, b: 3 },
+    { r: 255, g: 140, b: 0 },
+    { r: 255, g: 237, b: 3 },
+    { r: 0, g: 128, b: 38 },
+    { r: 36, g: 64, b: 142 },
+    { r: 115, g: 41, b: 130 },
+    { r: 255, g: 255, b: 255 },
+    { r: 255, g: 175, b: 200 },
+    { r: 116, g: 215, b: 238 },
+    
+    // Intersex
+    { r: 255, g: 216, b: 0 },
+    { r: 121, g: 2, b: 170 },
+  ];
+
+  const pow = 0.81;
+  const mixAmount = 0;
+  const mixPow = 1.01;
+
+  // TODO: user color settings to output only red! Then use that as brightness controller
+  const toVec3 = (color: { r: number, g: number, b: number }) => {
+    return `vec3(${color.r / 255}, ${color.g / 255}, ${color.b / 255})`;
+  }
+
+  const functions: GlslFunctions = {
+    'getColor': {
+      parameters : [['float', 'n']],
+      returnType : 'vec3',
+      body: `
+        vec3[] colors = vec3[](${colors.map(toVec3).join(',')});
+        int index = int(pow(clamp(n, 0.0, 1.0), ${pow}) * ${colors.length}.0);
+        vec3 c1 = colors[index];
+        vec3 c2 = colors[(index + 1) % ${colors.length}];
+        float m = mod(n, ${1.0 / colors.length} * ${colors.length}.0);
+        return mix(c1, c2, pow(${mixAmount}.0 * m, ${mixPow}));
+        // return c1;
+
+        // int values = 3;
+        // mix(c1, mix(c2, c3, clamp(n * (values - 1) )), clamp(n * (values - 1), 0, 1)
+      `
+    }
+  }
+
   const postGLSL : GLSL = `
     vec4 previous = texture2D( tFeedback, vUv );
-    gl_FragColor.rgb = mix(gl_FragColor.rgb, previous.rgb, ${ random( 0.7, 0.8 ) });
+    gl_FragColor.rgb = getColor( gl_FragColor.r );
+    gl_FragColor.rgb = mix(gl_FragColor.rgb, previous.rgb, 0.85);
   `;
 
   return {
     domain: 'uv',
-    scale: 1.0,
+    scale: 1,
     mainSource: noiseSource2,
     domainWarp: warp,
+    functions,
     timeOffset: new THREE.Vector3( 
       0.0, 
       0.0, 

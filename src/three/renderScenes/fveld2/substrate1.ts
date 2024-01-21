@@ -156,10 +156,7 @@ export default () => {
 
   const postGLSL : GLSL = `
     vec4 previous = texture2D( tFeedback, vUv );
-
-
     gl_FragColor.rgb = getColor( gl_FragColor.r );
-    
     gl_FragColor.rgb = mix(gl_FragColor.rgb, previous.rgb, 0.85);
   `;
 

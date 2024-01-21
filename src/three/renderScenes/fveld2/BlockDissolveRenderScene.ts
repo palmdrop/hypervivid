@@ -14,7 +14,8 @@ import substrate1 from './substrate1';
 import substrate2 from './substrate2';
 
 const substrates = [
-  substrate1
+  // substrate1
+  substrate2
 ];
 
 export class BlockDissolveRenderScene extends AbstractRenderScene {
