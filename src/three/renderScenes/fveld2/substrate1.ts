@@ -122,10 +122,8 @@ export default () => {
     { r: 116, g: 215, b: 238 },
     
     // Intersex
-    /*
     { r: 255, g: 216, b: 0 },
     { r: 121, g: 2, b: 170 },
-    */
   ];
 
   const pow = 3.0;
