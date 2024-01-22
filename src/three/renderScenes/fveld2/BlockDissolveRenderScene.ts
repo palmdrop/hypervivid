@@ -21,8 +21,8 @@ const substrates = [
 const bpm = 60;
 
 const toPulse = (now: number) => {
-  const max = 60;
-  const min = 2;
+  const max = 80;
+  const min = 0;
   const pow = 5.1;
   const angle = (bpm / 60) * now * Math.PI * 2;
   const value = ((Math.sin(angle) + 1) / 2) ** pow;

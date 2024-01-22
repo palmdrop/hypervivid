@@ -42,10 +42,13 @@ export default () => {
   const noiseSource1 : Source = {
     kind: 'noise',
     frequency: new THREE.Vector3( 1.0, 1.0, 1.0 )
-      .multiplyScalar( random( 3, 5.0 ) ),
+      // .multiplyScalar( random( 3, 5.0 ) ),
+      .multiplyScalar( 4 ),
     amplitude: 2.5,
-    pow: random( 3.0, 7.0 ),
-    octaves: Math.floor( random( 5, 7 ) ),
+    // pow: random( 3.0, 7.0 ),
+    pow: 8,
+    // octaves: Math.floor( random( 5, 7 ) ),
+    octaves: 7.5,
     persistance: 0.6,
     lacunarity: {
       kind: 'combined',
@@ -71,10 +74,13 @@ export default () => {
   const noiseSource2 : Source = {
     kind: 'noise',
     frequency: new THREE.Vector3( 1.0, 1.0, 1.0 )
-      .multiplyScalar( random( 5, 10.0 ) ),
+      // .multiplyScalar( random( 5, 10.0 ) ),
+      .multiplyScalar( 7 ),
     amplitude: 1.0,
-    pow: random( 1.0, 2.0 ),
-    octaves: Math.floor( random( 3, 5 ) ),
+    // pow: random( 1.0, 2.0 ),
+    pow: 1.5,
+    // octaves: Math.floor( random( 3, 5 ) ),
+    octaves: 4,
     persistance: noiseSource1,
     lacunarity: 2.5,
     ridge: 0.3,
@@ -88,7 +94,7 @@ export default () => {
     kind: 'warp',
     sources: {
       x: feedbackSource,
-      y: feedbackSource ,
+      y: feedbackSource,
       z: blockSource,
     },
     amount: [
@@ -96,7 +102,8 @@ export default () => {
       random( -0.2, 0.2 ),
       random( 1.2, 2.6 )
     ],
-    iterations: Math.round( 1 + 2 * Math.pow( Math.random(), 2.0 ) )
+    // iterations: Math.round( 1 + 2 * Math.pow( Math.random(), 2.0 ) )
+    iterations: 2,
   } as DomainWarp;
 
   const colorSettings : ColorSettings = {
@@ -104,7 +111,7 @@ export default () => {
     componentModifications: {
       x: [ 
         { kind: 'add', argument: feedbackSource },
-        { kind: 'mult', argument: random( 0.8, 0.9 ) },
+        { kind: 'mult', argument: 0.85 },
         { kind: 'pow', argument: blockSource },
         { kind: 'add', argument: 0 }
       ],
@@ -113,7 +120,7 @@ export default () => {
       ],
       z: [ 
         { kind: 'mult', argument: -1.0 },
-        { kind: 'add', argument: 1.2 },
+        { kind: 'add', argument: 1.15 },
       ],
     },
     sanitizeHSV: true
@@ -121,6 +128,9 @@ export default () => {
 
   // TODO: convert to HSV and vary color brightness!?
   const colors = [
+    // Intersex
+    { r: 255, g: 216, b: 0 },
+    { r: 121, g: 2, b: 170 },
     // Pride 
     { r: 0, g: 0, b: 0 },
     { r: 97, g: 57, b: 21 },
@@ -130,13 +140,9 @@ export default () => {
     { r: 0, g: 128, b: 38 },
     { r: 36, g: 64, b: 142 },
     { r: 115, g: 41, b: 130 },
-    { r: 255, g: 255, b: 255 },
-    { r: 255, g: 175, b: 200 },
     { r: 116, g: 215, b: 238 },
-    
-    // Intersex
-    { r: 255, g: 216, b: 0 },
-    { r: 121, g: 2, b: 170 },
+    { r: 255, g: 175, b: 200 },
+    { r: 255, g: 255, b: 255 },
   ];
 
   const pow = 0.81;
