@@ -18,6 +18,17 @@ const substrates = [
   substrate2
 ];
 
+const bpm = 60;
+
+const toPulse = (now: number) => {
+  const max = 60;
+  const min = 2;
+  const pow = 5.1;
+  const angle = (bpm / 60) * now * Math.PI * 2;
+  const value = ((Math.sin(angle) + 1) / 2) ** pow;
+  return THREE.MathUtils.mapLinear(value, 0, 1, min, max);
+}
+
 export class BlockDissolveRenderScene extends AbstractRenderScene {
   private blockTarget : THREE.WebGLRenderTarget;
   private targetA : THREE.WebGLRenderTarget;
@@ -34,6 +45,8 @@ export class BlockDissolveRenderScene extends AbstractRenderScene {
   private blockRenderer : BlockRenderer;
 
   private substrateShader : THREE.Shader;
+
+  private time : number;
 
   constructor( canvas : HTMLCanvasElement, onLoad ?: VoidCallback ) {
     super( canvas, onLoad );
@@ -57,7 +70,6 @@ export class BlockDissolveRenderScene extends AbstractRenderScene {
       this.canvas
     );
 
-
     this.targetA = new THREE.WebGLRenderTarget(
       canvas.width, canvas.height, {
         minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter,
@@ -77,6 +89,8 @@ export class BlockDissolveRenderScene extends AbstractRenderScene {
     this.tempMaterial = new THREE.ShaderMaterial(
       this.substrateShader
     );
+
+    this.time = 0;
 
     setUniform( 'tFeedback', this.targetA.texture, this.tempMaterial );
     setUniform( 'tBlock', this.blockTarget.texture, this.tempMaterial );
@@ -113,8 +127,15 @@ export class BlockDissolveRenderScene extends AbstractRenderScene {
 
 
   update( delta : number, now : number ) : void {
-    setUniform( 'time', now, this.substrateShader );
+    const pulse = toPulse(now);
 
+    const pulseDelta = pulse * delta;
+
+    this.time += pulseDelta;
+
+    setUniform( 'time', this.time, this.substrateShader );
+
+    // this.blockRenderer.update( pulseDelta, this.time );
     this.blockRenderer.update( delta, now );
   }
 

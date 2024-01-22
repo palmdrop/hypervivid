@@ -20,9 +20,6 @@ export class BlockRenderer {
     private canvas : HTMLCanvasElement
   ) {
 
-    // TODO TODO TODO: apply light, display INSIDE of cube only! strange interior view
-
-
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(
       75,
