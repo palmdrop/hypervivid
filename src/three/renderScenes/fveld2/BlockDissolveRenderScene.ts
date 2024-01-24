@@ -7,16 +7,9 @@ import { FullscreenQuadRenderer } from '../../render/FullscreenQuadRenderer';
 import { buildPatternShader } from '../../shader/builder/pattern/patternShaderBuilder';
 import { setUniform } from '../../shader/core';
 
-import { randomElement } from '../../../utils/random';
 import { BlockRenderer } from './blockRenderer';
 
-import substrate1 from './substrate1';
-import substrate2 from './substrate2';
-
-const substrates = [
-  // substrate1
-  substrate2
-];
+import getSubstrate from './substrate';
 
 const bpm = 60;
 
@@ -61,10 +54,9 @@ export class BlockDissolveRenderScene extends AbstractRenderScene {
   constructor( canvas : HTMLCanvasElement, onLoad ?: VoidCallback ) {
     super( canvas, onLoad );
     this.setCaptureFrameResolutionMultiplier( 1.0 );
-
-    this.substrateShader = buildPatternShader( 
-      randomElement( substrates )()
-    );
+      
+    const substrate = getSubstrate();
+    this.substrateShader = buildPatternShader(substrate);
 
     this.blockTarget = new THREE.WebGLRenderTarget(
       canvas.width, canvas.height, {
