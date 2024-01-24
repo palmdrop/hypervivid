@@ -20,11 +20,21 @@ const substrates = [
 
 const bpm = 60;
 
-const toPulse = (now: number) => {
+const toSubstratePulse = (now: number) => {
   const max = 80;
   const min = 0;
   const pow = 5.1;
   const angle = (bpm / 60) * now * Math.PI * 2;
+  const value = ((Math.sin(angle) + 1) / 2) ** pow;
+  return THREE.MathUtils.mapLinear(value, 0, 1, min, max);
+}
+
+const counterPulseFrequency = 4;
+const toBoxPulse = (now: number) => {
+  const max = 25;
+  const min = 1;
+  const pow = 25.1;
+  const angle = (bpm / (60 * counterPulseFrequency)) * now * Math.PI * 2;
   const value = ((Math.sin(angle) + 1) / 2) ** pow;
   return THREE.MathUtils.mapLinear(value, 0, 1, min, max);
 }
@@ -127,16 +137,16 @@ export class BlockDissolveRenderScene extends AbstractRenderScene {
 
 
   update( delta : number, now : number ) : void {
-    const pulse = toPulse(now);
-
-    const pulseDelta = pulse * delta;
-
-    this.time += pulseDelta;
+    const pulse = toSubstratePulse(now);
+    const substratePulseDelta = pulse * delta;
+    this.time += substratePulseDelta;
 
     setUniform( 'time', this.time, this.substrateShader );
 
-    // this.blockRenderer.update( pulseDelta, this.time );
-    this.blockRenderer.update( delta, now );
+    const boxPulse = toBoxPulse(now);
+    const boxPulseDelta = boxPulse * delta;
+
+    this.blockRenderer.update( boxPulseDelta, now );
   }
 
   render( delta : number, now : number ) : void {
