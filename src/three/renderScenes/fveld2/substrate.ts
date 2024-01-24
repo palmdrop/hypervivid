@@ -191,7 +191,8 @@ export default () => {
     domain: 'uv',
     // NOTE: high scale causes nice symmetrical effect! pretty cool
     // scale: 2,
-    scale: Math.random() > 0.5 ? 2 : 1,
+    //scale: Math.random() > 0.5 ? 2 : 1,
+    scale: 1,
     mainSource: noiseSource2,
     domainWarp: warp,
     functions,
