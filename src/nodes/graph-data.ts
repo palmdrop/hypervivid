@@ -1,6 +1,25 @@
 export default {
   "nodes": [
     {
+      "id": "evergreen-broth",
+      "group": "art",
+      "title": "Evergreen Broth",
+      "description": "Evergreen web art project with narrative elements.",
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "project",
+        "internet",
+        "webart",
+        "css",
+        "writing",
+        "external"
+      ],
+      "url": "/nodes/evergreen-broth",
+      "image": "/nodes/evergreen-broth.preview.png"
+    },
+    {
       "id": "living-drone-commission",
       "group": "art",
       "title": "Living Drone (commision)",
@@ -27,8 +46,8 @@ export default {
       "description": "Searching for new platforms and new ways of being on the web.",
       "tags": [
         "thoughts",
-        "fragments",
         "internet",
+        "fragments",
         "exploration",
         "writing"
       ],
@@ -93,8 +112,8 @@ export default {
       "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
       "tags": [
         "thoughts",
-        "mappings",
         "internet",
+        "mappings",
         "exploration",
         "writing"
       ],
@@ -230,8 +249,8 @@ export default {
       "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
       "tags": [
         "thoughts",
-        "fragments",
         "internet",
+        "fragments",
         "mappings"
       ],
       "url": "/nodes/branches-and-connections",
@@ -359,8 +378,8 @@ export default {
       "description": "Short thoughts about cringe.",
       "tags": [
         "thoughts",
-        "fragments",
-        "internet"
+        "internet",
+        "fragments"
       ],
       "url": "/nodes/cringe-core",
       "image": ""
@@ -477,8 +496,8 @@ export default {
       "tags": [
         "project",
         "substrate",
-        "words",
-        "external"
+        "external",
+        "words"
       ],
       "url": "/nodes/substrates",
       "image": "/nodes/substrates.preview.jpg"
@@ -585,8 +604,8 @@ export default {
       "description": "Photos taken by and around a small pond located in the city where I live.",
       "tags": [
         "biophilia",
-        "organic",
         "project",
+        "organic",
         "photography"
       ],
       "url": "/nodes/city-pond",
@@ -667,8 +686,8 @@ export default {
         "art",
         "generative",
         "domain-warping",
-        "organic",
         "project",
+        "organic",
         "noise"
       ],
       "url": "/nodes/objects",
@@ -682,8 +701,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "organic",
         "project",
+        "organic",
         "noise",
         "memes",
         "flowfield"
@@ -1367,6 +1386,11 @@ export default {
     },
     {
       "source": "living-hobbling-goo",
+      "target": "evergreen-broth",
+      "value": 1
+    },
+    {
+      "source": "living-hobbling-goo",
       "target": "foliage-fragments",
       "value": 1
     },
@@ -2547,6 +2571,11 @@ export default {
     },
     {
       "source": "ethereal-bits",
+      "target": "evergreen-broth",
+      "value": 1
+    },
+    {
+      "source": "ethereal-bits",
       "target": "markup-dada",
       "value": 1
     },
@@ -2563,6 +2592,66 @@ export default {
     {
       "source": "slices",
       "target": "markup-dada",
+      "value": 1
+    },
+    {
+      "source": "evergreen-broth",
+      "target": "virtual-distance",
+      "value": 1
+    },
+    {
+      "source": "evergreen-broth",
+      "target": "living-hobbling-goo",
+      "value": 1
+    },
+    {
+      "source": "evergreen-broth",
+      "target": "substrate-catalogue",
+      "value": 1
+    },
+    {
+      "source": "evergreen-broth",
+      "target": "ethereal-bits",
+      "value": 1
+    },
+    {
+      "source": "virtual-distance",
+      "target": "evergreen-broth",
+      "value": 1
+    },
+    {
+      "source": "virtual-distance",
+      "target": "hyper",
+      "value": 1
+    },
+    {
+      "source": "virtual-distance",
+      "target": "markup-dada",
+      "value": 1
+    },
+    {
+      "source": "virtual-distance",
+      "target": "ethereal-bits",
+      "value": 1
+    },
+    {
+      "source": "virtual-distance",
+      "target": "moons",
+      "value": 1
+    },
+    {
+      "source": "substrate-catalogue",
+      "target": "evergreen-broth",
+      "value": 1
+    },
+    {
+      "source": "substrate-catalogue",
+      "target": "substrates",
+      "value": 1
+    },
+    {
+      "source": "substrate-catalogue",
+      "target": "living-hobbling-goo",
       "value": 1
     },
     {
@@ -2653,26 +2742,6 @@ export default {
     {
       "source": "virtual-imprint",
       "target": "solar-landscape",
-      "value": 1
-    },
-    {
-      "source": "virtual-distance",
-      "target": "hyper",
-      "value": 1
-    },
-    {
-      "source": "virtual-distance",
-      "target": "markup-dada",
-      "value": 1
-    },
-    {
-      "source": "virtual-distance",
-      "target": "ethereal-bits",
-      "value": 1
-    },
-    {
-      "source": "virtual-distance",
-      "target": "moons",
       "value": 1
     },
     {
@@ -3043,16 +3112,6 @@ export default {
     {
       "source": "solar-chrome",
       "target": "virtual-imprint",
-      "value": 1
-    },
-    {
-      "source": "substrate-catalogue",
-      "target": "substrates",
-      "value": 1
-    },
-    {
-      "source": "substrate-catalogue",
-      "target": "living-hobbling-goo",
       "value": 1
     }
   ]

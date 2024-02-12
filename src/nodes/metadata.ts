@@ -367,6 +367,12 @@ export default {
       },
       {
         "from": "living-hobbling-goo",
+        "to": "evergreen-broth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "living-hobbling-goo",
         "to": "foliage-fragments",
         "kind": "tangent",
         "strength": 0.5
@@ -1849,6 +1855,12 @@ export default {
       },
       {
         "from": "ethereal-bits",
+        "to": "evergreen-broth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "ethereal-bits",
         "to": "markup-dada",
         "kind": "tangent",
         "strength": 0.5
@@ -1870,6 +1882,84 @@ export default {
       {
         "from": "slices",
         "to": "markup-dada",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "evergreen-broth": [
+      {
+        "from": "evergreen-broth",
+        "to": "virtual-distance",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "evergreen-broth",
+        "to": "living-hobbling-goo",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "evergreen-broth",
+        "to": "substrate-catalogue",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "evergreen-broth",
+        "to": "ethereal-bits",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "virtual-distance": [
+      {
+        "from": "virtual-distance",
+        "to": "evergreen-broth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "hyper",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "markup-dada",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "ethereal-bits",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "virtual-distance",
+        "to": "moons",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "substrate-catalogue": [
+      {
+        "from": "substrate-catalogue",
+        "to": "evergreen-broth",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate-catalogue",
+        "to": "substrates",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "substrate-catalogue",
+        "to": "living-hobbling-goo",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1988,32 +2078,6 @@ export default {
       {
         "from": "virtual-imprint",
         "to": "solar-landscape",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "virtual-distance": [
-      {
-        "from": "virtual-distance",
-        "to": "hyper",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-distance",
-        "to": "markup-dada",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-distance",
-        "to": "ethereal-bits",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "virtual-distance",
-        "to": "moons",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2501,213 +2565,244 @@ export default {
         "kind": "tangent",
         "strength": 0.5
       }
-    ],
-    "substrate-catalogue": [
-      {
-        "from": "substrate-catalogue",
-        "to": "substrates",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "substrate-catalogue",
-        "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      }
     ]
   },
   "tags": {
     "art": {
       "weight": 1,
-      "count": 46
+      "count": 47
     },
     "generative": {
-      "weight": 0.9130434782608695,
-      "count": 42
+      "weight": 0.9148936170212766,
+      "count": 43
     },
     "live": {
-      "weight": 0.6739130434782609,
-      "count": 31
+      "weight": 0.6808510638297872,
+      "count": 32
     },
     "domain-warping": {
-      "weight": 0.41304347826086957,
+      "weight": 0.40425531914893614,
       "count": 19
     },
     "biophilia": {
-      "weight": 0.34782608695652173,
+      "weight": 0.3404255319148936,
       "count": 16
     },
     "organic": {
-      "weight": 0.32608695652173914,
+      "weight": 0.3191489361702128,
+      "count": 15
+    },
+    "project": {
+      "weight": 0.3191489361702128,
       "count": 15
     },
     "thoughts": {
-      "weight": 0.30434782608695654,
-      "count": 14
-    },
-    "project": {
-      "weight": 0.30434782608695654,
+      "weight": 0.2978723404255319,
       "count": 14
     },
     "noise": {
-      "weight": 0.2826086956521739,
+      "weight": 0.2765957446808511,
       "count": 13
     },
     "substrate": {
-      "weight": 0.2608695652173913,
+      "weight": 0.2553191489361702,
       "count": 12
     },
     "feedback": {
-      "weight": 0.2391304347826087,
+      "weight": 0.23404255319148937,
       "count": 11
     },
     "photography": {
-      "weight": 0.2391304347826087,
+      "weight": 0.23404255319148937,
       "count": 11
     },
     "geometry": {
-      "weight": 0.21739130434782608,
+      "weight": 0.2127659574468085,
       "count": 10
     },
+    "internet": {
+      "weight": 0.19148936170212766,
+      "count": 9
+    },
     "fragments": {
-      "weight": 0.1956521739130435,
+      "weight": 0.19148936170212766,
       "count": 9
     },
     "mappings": {
-      "weight": 0.17391304347826086,
-      "count": 8
-    },
-    "internet": {
-      "weight": 0.17391304347826086,
-      "count": 8
-    },
-    "interactive": {
-      "weight": 0.17391304347826086,
+      "weight": 0.1702127659574468,
       "count": 8
     },
     "webart": {
-      "weight": 0.15217391304347827,
-      "count": 7
+      "weight": 0.1702127659574468,
+      "count": 8
+    },
+    "interactive": {
+      "weight": 0.1702127659574468,
+      "count": 8
     },
     "css": {
-      "weight": 0.15217391304347827,
-      "count": 7
+      "weight": 0.1702127659574468,
+      "count": 8
     },
     "exploration": {
-      "weight": 0.15217391304347827,
+      "weight": 0.14893617021276595,
       "count": 7
     },
+    "writing": {
+      "weight": 0.1276595744680851,
+      "count": 6
+    },
     "info": {
-      "weight": 0.10869565217391304,
+      "weight": 0.10638297872340426,
       "count": 5
     },
     "fuse": {
-      "weight": 0.10869565217391304,
-      "count": 5
-    },
-    "writing": {
-      "weight": 0.10869565217391304,
+      "weight": 0.10638297872340426,
       "count": 5
     },
     "space-colonization": {
-      "weight": 0.10869565217391304,
+      "weight": 0.10638297872340426,
       "count": 5
     },
+    "external": {
+      "weight": 0.0851063829787234,
+      "count": 4
+    },
     "chrome": {
-      "weight": 0.08695652173913043,
+      "weight": 0.0851063829787234,
       "count": 4
     },
     "glitch": {
-      "weight": 0.06521739130434782,
+      "weight": 0.06382978723404255,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.06521739130434782,
+      "weight": 0.06382978723404255,
       "count": 3
     },
     "hyper": {
-      "weight": 0.06521739130434782,
+      "weight": 0.06382978723404255,
       "count": 3
     },
     "words": {
-      "weight": 0.06521739130434782,
+      "weight": 0.06382978723404255,
       "count": 3
     },
     "utility": {
-      "weight": 0.06521739130434782,
-      "count": 3
-    },
-    "external": {
-      "weight": 0.06521739130434782,
+      "weight": 0.06382978723404255,
       "count": 3
     },
     "memes": {
-      "weight": 0.06521739130434782,
+      "weight": 0.06382978723404255,
       "count": 3
     },
     "instancing": {
-      "weight": 0.043478260869565216,
+      "weight": 0.0425531914893617,
       "count": 2
     },
     "mind": {
-      "weight": 0.043478260869565216,
+      "weight": 0.0425531914893617,
       "count": 2
     },
     "Deleuze": {
-      "weight": 0.043478260869565216,
+      "weight": 0.0425531914893617,
       "count": 2
     },
     "dithering": {
-      "weight": 0.043478260869565216,
+      "weight": 0.0425531914893617,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.043478260869565216,
+      "weight": 0.0425531914893617,
       "count": 2
     },
     "octree": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "contact": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "communication": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "particles": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "collaboration": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "process": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "cringe": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "texture": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "depth": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.021739130434782608,
+      "weight": 0.02127659574468085,
       "count": 1
     }
   },
   "nodes": {
+    "evergreen-broth": {
+      "tags": [
+        "art",
+        "generative",
+        "live",
+        "project",
+        "internet",
+        "webart",
+        "css",
+        "writing",
+        "external"
+      ],
+      "links": [
+        {
+          "from": "evergreen-broth",
+          "to": "virtual-distance",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "evergreen-broth",
+          "to": "living-hobbling-goo",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "evergreen-broth",
+          "to": "substrate-catalogue",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "evergreen-broth",
+          "to": "ethereal-bits",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Mon, 12 Feb 2024 18:32:16 GMT",
+      "updatedAt": "2024-02-12T19:09:53.945Z",
+      "inline": false,
+      "title": "Evergreen Broth",
+      "description": "Evergreen web art project with narrative elements.",
+      "image": "/nodes/evergreen-broth.preview.png"
+    },
     "living-drone-commission": {
       "tags": [
         "art",
@@ -2748,7 +2843,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 04 Jan 2024 14:24:03 GMT",
-      "updatedAt": "2024-01-04T15:06:19.514Z",
+      "updatedAt": "2024-01-04T15:22:04.714Z",
       "inline": false,
       "title": "Living Drone (commision)",
       "description": "A generative art project made for the lovely people at fveld.",
@@ -2757,8 +2852,8 @@ export default {
     "new-platforms": {
       "tags": [
         "thoughts",
-        "fragments",
         "internet",
+        "fragments",
         "exploration",
         "writing"
       ],
@@ -2795,7 +2890,7 @@ export default {
         }
       ],
       "createdAt": "Wed, 23 Aug 2023 13:20:58 GMT",
-      "updatedAt": "2024-01-04T14:21:54.234Z",
+      "updatedAt": "2024-01-04T15:21:51.477Z",
       "inline": false,
       "title": "New Platforms",
       "description": "Searching for new platforms and new ways of being on the web.",
@@ -2850,7 +2945,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 22 Jul 2023 11:55:40 GMT",
-      "updatedAt": "2024-01-04T14:21:54.236Z",
+      "updatedAt": "2024-01-04T15:21:40.347Z",
       "inline": false,
       "title": "Process Diary (1)",
       "description": "Short process update with some samples and thoughts about generative art.",
@@ -2983,8 +3078,8 @@ export default {
     "maps-of-the-web": {
       "tags": [
         "thoughts",
-        "mappings",
         "internet",
+        "mappings",
         "exploration",
         "writing"
       ],
@@ -3079,7 +3174,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2024-01-04T14:21:54.235Z",
+      "updatedAt": "2024-01-04T15:21:54.931Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
@@ -3193,6 +3288,12 @@ export default {
       "links": [
         {
           "from": "substrate-catalogue",
+          "to": "evergreen-broth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "substrate-catalogue",
           "to": "substrates",
           "kind": "tangent",
           "strength": 0.5
@@ -3259,7 +3360,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2024-01-04T14:21:54.230Z",
+      "updatedAt": "2024-01-04T15:21:40.346Z",
       "inline": false,
       "title": "Journal Artifacts",
       "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
@@ -3396,6 +3497,12 @@ export default {
         },
         {
           "from": "living-hobbling-goo",
+          "to": "evergreen-broth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "living-hobbling-goo",
           "to": "foliage-fragments",
           "kind": "tangent",
           "strength": 0.5
@@ -3442,8 +3549,8 @@ export default {
     "branches-and-connections": {
       "tags": [
         "thoughts",
-        "fragments",
         "internet",
+        "fragments",
         "mappings"
       ],
       "links": [
@@ -3943,8 +4050,8 @@ export default {
     "cringe-core": {
       "tags": [
         "thoughts",
-        "fragments",
-        "internet"
+        "internet",
+        "fragments"
       ],
       "links": [
         {
@@ -4039,6 +4146,12 @@ export default {
         "css"
       ],
       "links": [
+        {
+          "from": "virtual-distance",
+          "to": "evergreen-broth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "virtual-distance",
           "to": "hyper",
@@ -4393,8 +4506,8 @@ export default {
       "tags": [
         "project",
         "substrate",
-        "words",
-        "external"
+        "external",
+        "words"
       ],
       "links": [
         {
@@ -4881,8 +4994,8 @@ export default {
     "city-pond": {
       "tags": [
         "biophilia",
-        "organic",
         "project",
+        "organic",
         "photography"
       ],
       "links": [
@@ -5029,6 +5142,12 @@ export default {
         },
         {
           "from": "ethereal-bits",
+          "to": "evergreen-broth",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "ethereal-bits",
           "to": "markup-dada",
           "kind": "tangent",
           "strength": 0.5
@@ -5115,8 +5234,8 @@ export default {
         "art",
         "generative",
         "domain-warping",
-        "organic",
         "project",
+        "organic",
         "noise"
       ],
       "links": [
@@ -5145,8 +5264,8 @@ export default {
       "tags": [
         "art",
         "generative",
-        "organic",
         "project",
+        "organic",
         "noise",
         "memes",
         "flowfield"
@@ -5363,7 +5482,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2024-01-04T14:21:54.231Z",
+      "updatedAt": "2024-01-04T15:21:54.931Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -5469,7 +5588,7 @@ export default {
       "title": "About",
       "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
       "image": "/nodes/about.preview.jpg",
-      "updatedAt": "2024-01-04T14:21:54.223Z"
+      "updatedAt": "2024-01-04T15:22:04.706Z"
     },
     "hyper": {
       "tags": [
@@ -6328,6 +6447,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "living-drone-commission",
-  "mostRecentlyUpdatedNode": "webfuse"
+  "latestNode": "evergreen-broth",
+  "mostRecentlyUpdatedNode": "living-drone-commission"
 } as const;
