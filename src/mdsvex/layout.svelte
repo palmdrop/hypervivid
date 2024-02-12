@@ -10,6 +10,14 @@
 </div>
 
 <style global>
+  .markdown-container h1, 
+  .markdown-container h2,
+  .markdown-container h3,
+  .markdown-container h4,
+  .markdown-container h5 {
+    padding-top: 0.5em;
+  }
+
   .markdown-container h2 {
     font-size: 3rem;
     padding-bottom: 1rem;
