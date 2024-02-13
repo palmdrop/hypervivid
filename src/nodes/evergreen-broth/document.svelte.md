@@ -29,3 +29,5 @@ I've been working on an semi-abstract web project. The purpose and form remains 
 </ParagraphLarge>
 
 Sharing fiction on the web is weird. Swedish is my native tongue. Forcing myself to write in english might reveal the interplay between the languages in my thinking. Some writing is translation, some is not. Nothing is completely compartmentalized, etc etc etc. 
+
+Also documented at [are.na/palmdrop/evergreen-broth](https://www.are.na/palmdrop/evergreen-broth).
