@@ -503,6 +503,16 @@
   {
     "text": "self noise",
     "url": "https://self-noise.net/",
-    "description": "an artistic recording project"
+    "description": "An artistic recording project."
+  },
+  {
+    "text": "Are.na",
+    "url": "https://are.na/palmdrop",
+    "description": "My personal are.na profile."
+  },
+  {
+    "text": "Evergreen Broth Documentation",
+    "url": "https://are.na/palmdrop/evergreen-broth",
+    "description": "Documentation of the Evergreen Broth project."
   }
 ]
