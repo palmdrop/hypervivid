@@ -5482,7 +5482,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2024-01-04T15:21:54.931Z",
+      "updatedAt": "2024-02-13T12:12:10.563Z",
       "inline": false,
       "title": "Links",
       "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
@@ -6448,5 +6448,5 @@ export default {
     }
   },
   "latestNode": "evergreen-broth",
-  "mostRecentlyUpdatedNode": "living-drone-commission"
+  "mostRecentlyUpdatedNode": "links"
 } as const;
