@@ -12,3 +12,10 @@ The purpose of this site is, among other things, to
 * and connect ideas of any form.
 
 Read more on the [About page](https://palmdrop.site/nodes/about).
+
+# TODO
+- [ ] Minimap for node navigation.
+- [ ] Create "paths" that can be followed across the site.
+- [ ] Optimize landing page (force graph is too taxing for some devices).
+- [ ] Upgrade SvelteKit once Cloudflare pages support is introduced.
+- [ ] Introduce "artifacts": sub-node structures such as images, quotes, links, etc, that can be used in the site node graph structure.
