@@ -3,7 +3,7 @@
 
 ![Hypervivid - main page](/.github/images/main-page.png)
 
-Experimental new webspace. Replacement of my [old site](https://github.com/palmdrop/webspace/edit/main/README.md), which is retired but can still be found [here](https://webspace.pages.dev/).
+Experimental new personal website. Replacement of my [old site](https://github.com/palmdrop/webspace/edit/main/README.md), which is retired but can still be found [here](https://webspace.pages.dev/).
 
 The purpose of this site is, among other things, to
 * learn new technologies
