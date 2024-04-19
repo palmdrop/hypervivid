@@ -1,6 +1,22 @@
 export default {
   "nodes": [
     {
+      "id": "liquid-cathedral",
+      "group": "generative",
+      "title": "Liquid Cathedral",
+      "description": "Metallic feedback experiment, hallucinated structures, noisy grids.",
+      "tags": [
+        "generative",
+        "live",
+        "domain-warping",
+        "substrate",
+        "feedback",
+        "chrome"
+      ],
+      "url": "/nodes/liquid-cathedral",
+      "image": "/nodes/liquid-cathedral.preview.jpg"
+    },
+    {
       "id": "evergreen-broth",
       "group": "art",
       "title": "Evergreen Broth",
@@ -234,8 +250,8 @@ export default {
         "live",
         "domain-warping",
         "biophilia",
-        "noise",
         "substrate",
+        "noise",
         "webart",
         "fuse"
       ],
@@ -310,8 +326,8 @@ export default {
         "live",
         "biophilia",
         "organic",
-        "photography",
         "feedback",
+        "photography",
         "mappings"
       ],
       "url": "/nodes/foliage-fragments",
@@ -365,8 +381,8 @@ export default {
         "live",
         "domain-warping",
         "organic",
-        "noise",
-        "substrate"
+        "substrate",
+        "noise"
       ],
       "url": "/nodes/alien-skies",
       "image": "/nodes/alien-skies.preview.jpg"
@@ -379,7 +395,8 @@ export default {
       "tags": [
         "thoughts",
         "internet",
-        "fragments"
+        "fragments",
+        "cringe"
       ],
       "url": "/nodes/cringe-core",
       "image": ""
@@ -482,8 +499,8 @@ export default {
         "domain-warping",
         "biophilia",
         "organic",
-        "noise",
-        "substrate"
+        "substrate",
+        "noise"
       ],
       "url": "/nodes/super-cell",
       "image": "/nodes/super-cell.preview.jpg"
@@ -514,8 +531,8 @@ export default {
         "domain-warping",
         "biophilia",
         "organic",
-        "noise",
-        "substrate"
+        "substrate",
+        "noise"
       ],
       "url": "/nodes/moss-structure",
       "image": "/nodes/moss-structure.preview.jpg"
@@ -531,8 +548,8 @@ export default {
         "live",
         "domain-warping",
         "biophilia",
-        "noise",
-        "substrate"
+        "substrate",
+        "noise"
       ],
       "url": "/nodes/nest",
       "image": "/nodes/nest.preview.jpg"
@@ -547,8 +564,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "noise",
-        "substrate"
+        "substrate",
+        "noise"
       ],
       "url": "/nodes/jolt-gate",
       "image": "/nodes/jolt-gate.preview.jpg"
@@ -565,8 +582,8 @@ export default {
         "domain-warping",
         "biophilia",
         "organic",
-        "noise",
-        "substrate"
+        "substrate",
+        "noise"
       ],
       "url": "/nodes/swamp-mass",
       "image": "/nodes/swamp-mass.preview.jpg"
@@ -1836,6 +1853,11 @@ export default {
     },
     {
       "source": "jolt-gate",
+      "target": "liquid-cathedral",
+      "value": 1
+    },
+    {
+      "source": "jolt-gate",
       "target": "moss-structure",
       "value": 1
     },
@@ -1882,6 +1904,11 @@ export default {
     {
       "source": "immerse",
       "target": "jolt-gate",
+      "value": 1
+    },
+    {
+      "source": "immerse",
+      "target": "liquid-cathedral",
       "value": 1
     },
     {
@@ -2666,6 +2693,11 @@ export default {
     },
     {
       "source": "solar-landscape",
+      "target": "liquid-cathedral",
+      "value": 1
+    },
+    {
+      "source": "solar-landscape",
       "target": "solar-chrome",
       "value": 1
     },
@@ -2687,6 +2719,11 @@ export default {
     {
       "source": "fluid-feedback",
       "target": "formations",
+      "value": 1
+    },
+    {
+      "source": "fluid-feedback",
+      "target": "liquid-cathedral",
       "value": 1
     },
     {
@@ -2822,6 +2859,51 @@ export default {
     {
       "source": "rehash-transform",
       "target": "webfuse",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "jolt-gate",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "immerse",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "fluid-feedback",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "solar-chrome",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "solar-landscape",
+      "value": 1
+    },
+    {
+      "source": "solar-chrome",
+      "target": "liquid-cathedral",
+      "value": 1
+    },
+    {
+      "source": "solar-chrome",
+      "target": "skew-bulbs",
+      "value": 1
+    },
+    {
+      "source": "solar-chrome",
+      "target": "solar-landscape",
+      "value": 1
+    },
+    {
+      "source": "solar-chrome",
+      "target": "virtual-imprint",
       "value": 1
     },
     {
@@ -3097,21 +3179,6 @@ export default {
     {
       "source": "skew-bulbs",
       "target": "medusa-network",
-      "value": 1
-    },
-    {
-      "source": "solar-chrome",
-      "target": "skew-bulbs",
-      "value": 1
-    },
-    {
-      "source": "solar-chrome",
-      "target": "solar-landscape",
-      "value": 1
-    },
-    {
-      "source": "solar-chrome",
-      "target": "virtual-imprint",
       "value": 1
     }
   ]
