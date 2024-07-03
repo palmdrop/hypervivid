@@ -1,6 +1,22 @@
 export default {
   "nodes": [
     {
+      "id": "cathedral-nodes",
+      "group": "generative",
+      "title": "Cathedral Nodes",
+      "description": "A variation on the Liquid Cathedral, a continuation, with added noise.",
+      "tags": [
+        "generative",
+        "live",
+        "domain-warping",
+        "substrate",
+        "feedback",
+        "chrome"
+      ],
+      "url": "/nodes/cathedral-nodes",
+      "image": "/nodes/cathedral-nodes.preview.png"
+    },
+    {
       "id": "liquid-cathedral",
       "group": "generative",
       "title": "Liquid Cathedral",
@@ -975,8 +991,8 @@ export default {
       "tags": [
         "generative",
         "domain-warping",
-        "noise",
         "substrate",
+        "noise",
         "writing"
       ],
       "url": "/nodes/alien-patterns",
@@ -1633,6 +1649,11 @@ export default {
     },
     {
       "source": "super-cell",
+      "target": "cathedral-nodes",
+      "value": 1
+    },
+    {
+      "source": "super-cell",
       "target": "moss-structure",
       "value": 1
     },
@@ -1733,6 +1754,11 @@ export default {
     },
     {
       "source": "nest",
+      "target": "cathedral-nodes",
+      "value": 1
+    },
+    {
+      "source": "nest",
       "target": "moss-structure",
       "value": 1
     },
@@ -1824,6 +1850,11 @@ export default {
     {
       "source": "jolt-gate",
       "target": "alien-skies",
+      "value": 1
+    },
+    {
+      "source": "jolt-gate",
+      "target": "cathedral-nodes",
       "value": 1
     },
     {
@@ -2347,6 +2378,86 @@ export default {
       "value": 1
     },
     {
+      "source": "cathedral-nodes",
+      "target": "liquid-cathedral",
+      "value": 1
+    },
+    {
+      "source": "cathedral-nodes",
+      "target": "jolt-gate",
+      "value": 1
+    },
+    {
+      "source": "cathedral-nodes",
+      "target": "fluid-feedback",
+      "value": 1
+    },
+    {
+      "source": "cathedral-nodes",
+      "target": "nest",
+      "value": 1
+    },
+    {
+      "source": "cathedral-nodes",
+      "target": "super-cell",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "cathedral-nodes",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "jolt-gate",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "immerse",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "fluid-feedback",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "solar-chrome",
+      "value": 1
+    },
+    {
+      "source": "liquid-cathedral",
+      "target": "solar-landscape",
+      "value": 1
+    },
+    {
+      "source": "fluid-feedback",
+      "target": "cathedral-nodes",
+      "value": 1
+    },
+    {
+      "source": "fluid-feedback",
+      "target": "immerse",
+      "value": 1
+    },
+    {
+      "source": "fluid-feedback",
+      "target": "foliage-fragments",
+      "value": 1
+    },
+    {
+      "source": "fluid-feedback",
+      "target": "formations",
+      "value": 1
+    },
+    {
+      "source": "fluid-feedback",
+      "target": "liquid-cathedral",
+      "value": 1
+    },
+    {
       "source": "chaos-growth",
       "target": "webfuse",
       "value": 1
@@ -2707,26 +2818,6 @@ export default {
       "value": 1
     },
     {
-      "source": "fluid-feedback",
-      "target": "immerse",
-      "value": 1
-    },
-    {
-      "source": "fluid-feedback",
-      "target": "foliage-fragments",
-      "value": 1
-    },
-    {
-      "source": "fluid-feedback",
-      "target": "formations",
-      "value": 1
-    },
-    {
-      "source": "fluid-feedback",
-      "target": "liquid-cathedral",
-      "value": 1
-    },
-    {
       "source": "neon-moss",
       "target": "foliage-grids",
       "value": 1
@@ -2859,31 +2950,6 @@ export default {
     {
       "source": "rehash-transform",
       "target": "webfuse",
-      "value": 1
-    },
-    {
-      "source": "liquid-cathedral",
-      "target": "jolt-gate",
-      "value": 1
-    },
-    {
-      "source": "liquid-cathedral",
-      "target": "immerse",
-      "value": 1
-    },
-    {
-      "source": "liquid-cathedral",
-      "target": "fluid-feedback",
-      "value": 1
-    },
-    {
-      "source": "liquid-cathedral",
-      "target": "solar-chrome",
-      "value": 1
-    },
-    {
-      "source": "liquid-cathedral",
-      "target": "solar-landscape",
       "value": 1
     },
     {

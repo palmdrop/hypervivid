@@ -657,6 +657,12 @@ export default {
       },
       {
         "from": "super-cell",
+        "to": "cathedral-nodes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "super-cell",
         "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
@@ -781,6 +787,12 @@ export default {
       },
       {
         "from": "nest",
+        "to": "cathedral-nodes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "nest",
         "to": "moss-structure",
         "kind": "tangent",
         "strength": 0.5
@@ -894,6 +906,12 @@ export default {
       {
         "from": "jolt-gate",
         "to": "alien-skies",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "jolt-gate",
+        "to": "cathedral-nodes",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1546,6 +1564,108 @@ export default {
         "strength": 0.5
       }
     ],
+    "cathedral-nodes": [
+      {
+        "from": "cathedral-nodes",
+        "to": "liquid-cathedral",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "cathedral-nodes",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "cathedral-nodes",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "cathedral-nodes",
+        "to": "nest",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "cathedral-nodes",
+        "to": "super-cell",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "liquid-cathedral": [
+      {
+        "from": "liquid-cathedral",
+        "to": "cathedral-nodes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "liquid-cathedral",
+        "to": "jolt-gate",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "liquid-cathedral",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "liquid-cathedral",
+        "to": "fluid-feedback",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "liquid-cathedral",
+        "to": "solar-chrome",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "liquid-cathedral",
+        "to": "solar-landscape",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "fluid-feedback": [
+      {
+        "from": "fluid-feedback",
+        "to": "cathedral-nodes",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fluid-feedback",
+        "to": "immerse",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fluid-feedback",
+        "to": "foliage-fragments",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fluid-feedback",
+        "to": "formations",
+        "kind": "tangent",
+        "strength": 0.5
+      },
+      {
+        "from": "fluid-feedback",
+        "to": "liquid-cathedral",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
     "chaos-growth": [
       {
         "from": "chaos-growth",
@@ -2010,32 +2130,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "fluid-feedback": [
-      {
-        "from": "fluid-feedback",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fluid-feedback",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fluid-feedback",
-        "to": "formations",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "fluid-feedback",
-        "to": "liquid-cathedral",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "neon-moss": [
       {
         "from": "neon-moss",
@@ -2206,38 +2300,6 @@ export default {
       {
         "from": "rehash-transform",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "liquid-cathedral": [
-      {
-        "from": "liquid-cathedral",
-        "to": "jolt-gate",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "liquid-cathedral",
-        "to": "immerse",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "liquid-cathedral",
-        "to": "fluid-feedback",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "liquid-cathedral",
-        "to": "solar-chrome",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "liquid-cathedral",
-        "to": "solar-landscape",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2635,16 +2697,16 @@ export default {
       "count": 47
     },
     "generative": {
-      "weight": 0.9361702127659575,
-      "count": 44
+      "weight": 0.9574468085106383,
+      "count": 45
     },
     "live": {
-      "weight": 0.7021276595744681,
-      "count": 33
+      "weight": 0.723404255319149,
+      "count": 34
     },
     "domain-warping": {
-      "weight": 0.425531914893617,
-      "count": 20
+      "weight": 0.44680851063829785,
+      "count": 21
     },
     "biophilia": {
       "weight": 0.3404255319148936,
@@ -2662,17 +2724,17 @@ export default {
       "weight": 0.2978723404255319,
       "count": 14
     },
+    "substrate": {
+      "weight": 0.2978723404255319,
+      "count": 14
+    },
+    "feedback": {
+      "weight": 0.2765957446808511,
+      "count": 13
+    },
     "noise": {
       "weight": 0.2765957446808511,
       "count": 13
-    },
-    "substrate": {
-      "weight": 0.2765957446808511,
-      "count": 13
-    },
-    "feedback": {
-      "weight": 0.2553191489361702,
-      "count": 12
     },
     "photography": {
       "weight": 0.23404255319148937,
@@ -2714,6 +2776,10 @@ export default {
       "weight": 0.1276595744680851,
       "count": 6
     },
+    "chrome": {
+      "weight": 0.1276595744680851,
+      "count": 6
+    },
     "info": {
       "weight": 0.10638297872340426,
       "count": 5
@@ -2723,10 +2789,6 @@ export default {
       "count": 5
     },
     "space-colonization": {
-      "weight": 0.10638297872340426,
-      "count": 5
-    },
-    "chrome": {
       "weight": 0.10638297872340426,
       "count": 5
     },
@@ -2820,6 +2882,54 @@ export default {
     }
   },
   "nodes": {
+    "cathedral-nodes": {
+      "tags": [
+        "generative",
+        "live",
+        "domain-warping",
+        "substrate",
+        "feedback",
+        "chrome"
+      ],
+      "links": [
+        {
+          "from": "cathedral-nodes",
+          "to": "liquid-cathedral",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cathedral-nodes",
+          "to": "jolt-gate",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cathedral-nodes",
+          "to": "fluid-feedback",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cathedral-nodes",
+          "to": "nest",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "cathedral-nodes",
+          "to": "super-cell",
+          "kind": "tangent",
+          "strength": 0.5
+        }
+      ],
+      "createdAt": "Wed, 03 Jul 2024 20:36:51 GMT",
+      "updatedAt": "2024-07-03T21:10:43.494Z",
+      "inline": false,
+      "title": "Cathedral Nodes",
+      "description": "A variation on the Liquid Cathedral, a continuation, with added noise.",
+      "image": "/nodes/cathedral-nodes.preview.png"
+    },
     "liquid-cathedral": {
       "tags": [
         "generative",
@@ -2830,6 +2940,12 @@ export default {
         "chrome"
       ],
       "links": [
+        {
+          "from": "liquid-cathedral",
+          "to": "cathedral-nodes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
         {
           "from": "liquid-cathedral",
           "to": "jolt-gate",
@@ -4565,6 +4681,12 @@ export default {
         },
         {
           "from": "super-cell",
+          "to": "cathedral-nodes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "super-cell",
           "to": "moss-structure",
           "kind": "tangent",
           "strength": 0.5
@@ -4818,6 +4940,12 @@ export default {
         },
         {
           "from": "nest",
+          "to": "cathedral-nodes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "nest",
           "to": "moss-structure",
           "kind": "tangent",
           "strength": 0.5
@@ -4885,6 +5013,12 @@ export default {
         {
           "from": "jolt-gate",
           "to": "alien-skies",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "jolt-gate",
+          "to": "cathedral-nodes",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -6101,6 +6235,12 @@ export default {
       "links": [
         {
           "from": "fluid-feedback",
+          "to": "cathedral-nodes",
+          "kind": "tangent",
+          "strength": 0.5
+        },
+        {
+          "from": "fluid-feedback",
           "to": "immerse",
           "kind": "tangent",
           "strength": 0.5
@@ -6233,8 +6373,8 @@ export default {
       "tags": [
         "generative",
         "domain-warping",
-        "noise",
         "substrate",
+        "noise",
         "writing"
       ],
       "links": [
@@ -6588,6 +6728,6 @@ export default {
       "image": "/nodes/retro-core.preview.jpg"
     }
   },
-  "latestNode": "liquid-cathedral",
-  "mostRecentlyUpdatedNode": "cringe-core"
+  "latestNode": "cathedral-nodes",
+  "mostRecentlyUpdatedNode": "liquid-cathedral"
 } as const;
