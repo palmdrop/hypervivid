@@ -3,6 +3,7 @@
   import EmailInput from '$components/form/EmailInput.svelte';
   import TextInput from '$components/form/TextInput.svelte';
   import { getNodeContext } from '$utils/useNodeContext';
+  import Link from '../../components/common/Link.svelte';
   import { sendEmail } from './utils';
 
   const { mode } = getNodeContext('contact');
@@ -70,6 +71,9 @@
       value={!status.length ? 'Send' : status}
       disabled={!email || !message}
     />
+    <Paragraph>
+      Or email me at <Link href="mailto:anton@exlex.se">anton@exlex.se</Link>
+    </Paragraph>
   </form>
 </div>
 
