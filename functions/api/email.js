@@ -10,10 +10,8 @@ export const onRequestPost = async ( context ) => {
   } = await request.json();
 
   const RESEND_API_KEY = await env.RESEND.get('API_KEY');
-  const ADDITIONAL_EMAILS = (await env.RESEND.get('ADDITIONAL_EMAILS') ?? "").split(',');
+  const SEND_TO = (await env.RESEND.get('SEND_TO')).split(',');
   const RESEND_API_URL = `https://api.resend.com/emails`;
-
-  console.log( { RESEND_API_KEY });
 
   const result = await fetch( RESEND_API_URL, {
     method: 'POST',
@@ -23,7 +21,7 @@ export const onRequestPost = async ( context ) => {
     },
     body: JSON.stringify({
       from: 'Contact <contact@palmdrop.site>',
-      to: ["contact@palmdrop.site", ...ADDITIONAL_EMAILS],
+      to: SEND_TO,
       subject: `Message from "${email}"`,
       text: message
     })
