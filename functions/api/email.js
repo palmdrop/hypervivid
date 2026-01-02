@@ -8,40 +8,29 @@ export const onRequestPost = async ( context ) => {
     email,
     message
   } = await request.json();
-  
-  const userID = await env.EMAILJS.get( 'USER_ID' );
-  const templateID = await env.EMAILJS.get( 'TEMPLATE_ID' );
-  const serviceID = await env.EMAILJS.get( 'SERVICE_ID' );
-  const accessToken = await env.EMAILJS.get( 'ACCESS_TOKEN' );
 
-  const data = {
-    service_id: serviceID,
-    template_id: templateID,
-    user_id: userID,
-    accessToken,
-    template_params: {
-      'user_email': email,
-      'message': message
-    }
-  };
+  const RESEND_API_KEY = await env.RESEND.get('API_KEY');
+  const ADDITIONAL_EMAILS = (await env.RESEND.get('ADDITIONAL_EMAILS') ?? "").split(',');
+  const RESEND_API_URL = `https://api.resend.com/emails`;
 
-  let result;
+  console.log( { RESEND_API_KEY });
 
-  try {
-    result = await fetch( 'https://api.emailjs.com/api/v1.0/email/send', {
-      method: 'POST',
-      body: JSON.stringify( data ),
-      headers: {
-        'accept': 'application/json',
-        'content-type': 'application/json'
-      },
-    } );
-  } catch ( error ) {
-    result = error;
-  }
+  const result = await fetch( RESEND_API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${ RESEND_API_KEY }`
+    },
+    body: JSON.stringify({
+      from: 'Contact <contact@palmdrop.site>',
+      to: ["contact@palmdrop.site", ...ADDITIONAL_EMAILS],
+      subject: `Message from "${email}"`,
+      text: message
+    })
+  });
 
   return new Response( 
-    JSON.stringify( result.status ),
+    JSON.stringify(result.status),
     null,
     2
   );
