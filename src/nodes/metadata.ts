@@ -3023,7 +3023,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 12 Feb 2024 18:32:16 GMT",
-      "updatedAt": "2024-02-13T12:06:28.138Z",
+      "updatedAt": "2026-01-05T07:34:33.962Z",
       "inline": false,
       "title": "Evergreen Broth",
       "description": "Evergreen web art project with narrative elements.",
@@ -5795,7 +5795,7 @@ export default {
       "title": "Contact",
       "description": "A form for sending me an email. Nothing more.",
       "image": "",
-      "updatedAt": "2024-01-04T14:21:54.226Z"
+      "updatedAt": "2026-01-02T10:53:10.102Z"
     },
     "about": {
       "tags": [
@@ -6729,5 +6729,5 @@ export default {
     }
   },
   "latestNode": "cathedral-nodes",
-  "mostRecentlyUpdatedNode": "liquid-cathedral"
+  "mostRecentlyUpdatedNode": "evergreen-broth"
 } as const;

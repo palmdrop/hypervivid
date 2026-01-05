@@ -8,13 +8,13 @@ I've been working on an semi-abstract web project. The purpose and form remains 
 
 <ParagraphLarge style="text-align: center">
 
-*[~ evergreen broth ~](https://evergreen-broth.com)*
+*[~ evergreen broth ~](https://evergreen-broth.netlify.app/)*
 
 </ParagraphLarge>
 
 <ExternalIframe 
   width="100%" 
-  src="https://evergreen-broth.com" 
+  src="https://evergreen-broth.netlify.app/" 
   title="Vibing and Being"
   style="
     max-height: 80vh; 
@@ -24,7 +24,7 @@ I've been working on an semi-abstract web project. The purpose and form remains 
 
 <ParagraphLarge style="text-align: center; padding-top: 1em">
 
-*[~ evergreen broth ~](https://evergreen-broth.com)*
+*[~ evergreen broth ~](https://evergreen-broth.netlify.app/)*
 
 </ParagraphLarge>
 
