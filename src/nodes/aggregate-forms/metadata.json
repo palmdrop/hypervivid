@@ -11,5 +11,6 @@
   "hideOverflow": true,
   "title": "Aggregate Forms",
   "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids. WARNING: not phone friendly.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
 }

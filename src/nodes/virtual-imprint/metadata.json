@@ -10,5 +10,6 @@
   "inline": false,
   "title": "Virtual Imprint",
   "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
 }

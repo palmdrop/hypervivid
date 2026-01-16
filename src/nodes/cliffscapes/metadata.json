@@ -10,5 +10,6 @@
   "inline": false,
   "title": "Cliffscapes",
   "description": "Continuation of formations and glow-tree sketches: a landscape and calm skies. A tree structure controls the form of the cliffscape.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
 }

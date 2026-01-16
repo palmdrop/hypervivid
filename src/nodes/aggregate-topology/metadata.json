@@ -11,5 +11,6 @@
   "hideOverflow": true,
   "title": "Aggregate Topology",
   "description": "A variation on the Aggregate Forms node. Vertex displacement viewed top-down, emphasizing the color and topology changes. WARNING: not phone friendly.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
 }

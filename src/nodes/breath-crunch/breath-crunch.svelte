@@ -15,27 +15,27 @@
 
   const phrases = [
     "breathe like this",
-    "this is my culture",
-    "hyper-mediation",
-    "rage breathing",
+    "this is my way",
+    "fast mediation",
+    "rage breath",
     "consider the breath",
-    "imagine red fields",
+    "think red fields",
     "along these lines",
-    "noise-cancelling oxygene",
+    "noise-cancelling noise",
     "irrational breathing",
     "seething exercise",
-    "unproductive breathing",
+    "wasted breath",
     "breath puke",
     "don't hold it",
     "decontrol",
     "catharsis stimulator",
     "supersensorium",
-    "becoming slime mold",
-    "sophisticated decadence",
+    "on becoming slime mold",
+    "stupid yoga",
     "alternative breathing",
-    "culture void-fill",
+    "at the void-fill",
     "lung-crunch",
-    "slacking ritual"
+    "slack ritual"
   ];
 
   const minSwitchDelay = 15000;

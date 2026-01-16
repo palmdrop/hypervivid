@@ -21,9 +21,15 @@
       text: 'about',
       path: '/nodes/about'
     },
+    /*
     {
       text: 'links',
       path: '/nodes/links'
+    },
+    */
+    {
+      text: 'contact',
+      path: '/nodes/contact'
     },
   ];
 

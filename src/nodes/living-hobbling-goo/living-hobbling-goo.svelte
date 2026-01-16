@@ -43,7 +43,7 @@
         loveful things, living goo
       </p>
       <p>
-        hobbling pointlessly in
+        hobbling in deep and
       </p>
       <p>
         mushy consolidation soup

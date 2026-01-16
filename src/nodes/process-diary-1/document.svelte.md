@@ -1,3 +1,4 @@
+<!--
 My generative art-making has been slow recently. 
 Occasionally disillusioned, sometimes inspired, but often just tired. 
 Getting better, though. Finding my footing again. 
@@ -9,3 +10,6 @@ The abstract sometimes feels pointless. I'm starting to think that I need to exp
 I'm writing this short text in free form, improvised. A faux process diary. The idea was to dump a bunch of pieces I've been working on recently. Pieces that render/grow too slowly for them to work well on this site in their pure, live form.
 
 Not sure what it means for these pieces, which I've spent quite some time on, to be published in bulk like this. It's an incomplete record, slices of documentation, snapshots. Unfinished and unpolished, not a finished work. But I'm alright with that. It feels liberating, and I could always choose to revisit in the future.
+-->
+
+Some things I've been working on.

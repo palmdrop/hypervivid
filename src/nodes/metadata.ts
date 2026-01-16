@@ -15,12 +15,6 @@ export default {
       },
       {
         "from": "about",
-        "to": "manifesto",
-        "kind": "references",
-        "strength": 0.5
-      },
-      {
-        "from": "about",
         "to": "intro",
         "kind": "references",
         "strength": 0.5
@@ -62,74 +56,6 @@ export default {
       {
         "from": "moons",
         "to": "virtual-distance",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "manifesto": [
-      {
-        "from": "manifesto",
-        "to": "about",
-        "kind": "references",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "branches-and-connections",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "cringe-core",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "intro",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "links",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "node-graph",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "rhizome",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "manifesto",
-        "to": "webfuse",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -194,12 +120,6 @@ export default {
       {
         "from": "formations",
         "to": "cliffscapes",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "formations",
-        "to": "neon-moss",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -291,12 +211,6 @@ export default {
       },
       {
         "from": "foliage-fragments",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-fragments",
         "to": "remnant-mappings",
         "kind": "tangent",
         "strength": 0.5
@@ -318,12 +232,6 @@ export default {
       {
         "from": "remnant-mappings",
         "to": "living-hobbling-goo",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "remnant-mappings",
-        "to": "mappings",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -430,12 +338,6 @@ export default {
       {
         "from": "foliage-grids",
         "to": "cliffscapes",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "foliage-grids",
-        "to": "neon-moss",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -767,12 +669,6 @@ export default {
       },
       {
         "from": "moss-structure",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "moss-structure",
         "to": "super-cell",
         "kind": "tangent",
         "strength": 0.5
@@ -862,12 +758,6 @@ export default {
       {
         "from": "swamp-mass",
         "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "swamp-mass",
-        "to": "neon-moss",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1257,12 +1147,6 @@ export default {
       },
       {
         "from": "rhizome",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "rhizome",
         "to": "weave",
         "kind": "tangent",
         "strength": 0.5
@@ -1270,138 +1154,6 @@ export default {
       {
         "from": "rhizome",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "branches-and-connections": [
-      {
-        "from": "branches-and-connections",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "branches-and-connections",
-        "to": "links",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "branches-and-connections",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "branches-and-connections",
-        "to": "journal-artifacts",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "branches-and-connections",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "branches-and-connections",
-        "to": "new-platforms",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "mappings": [
-      {
-        "from": "mappings",
-        "to": "branches-and-connections",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "remnant-mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "foliage-fragments",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "new-platforms",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "process-diary-1",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "mappings",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "links": [
-      {
-        "from": "links",
-        "to": "branches-and-connections",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "links",
-        "to": "rehash-transform",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "links",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "links",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "links",
-        "to": "new-platforms",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1427,12 +1179,6 @@ export default {
       },
       {
         "from": "breath-crunch",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "breath-crunch",
         "to": "making-comfort",
         "kind": "tangent",
         "strength": 0.5
@@ -1442,24 +1188,6 @@ export default {
       {
         "from": "journal-artifacts",
         "to": "breath-crunch",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "journal-artifacts",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "journal-artifacts",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "journal-artifacts",
-        "to": "branches-and-connections",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1516,50 +1244,6 @@ export default {
       {
         "from": "hyper",
         "to": "webfuse",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "less-flat": [
-      {
-        "from": "less-flat",
-        "to": "breath-crunch",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "cringe-core",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "journal-artifacts",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "less-flat",
-        "to": "raw-making",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -1728,24 +1412,12 @@ export default {
         "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
-      },
-      {
-        "from": "webfuse",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
       }
     ],
     "weave": [
       {
         "from": "weave",
         "to": "chaos-growth",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "weave",
-        "to": "digital-gardening",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -1835,12 +1507,6 @@ export default {
       },
       {
         "from": "glow-tree",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "glow-tree",
         "to": "rhizome",
         "kind": "tangent",
         "strength": 0.5
@@ -1864,33 +1530,7 @@ export default {
         "strength": 0.5
       }
     ],
-    "cringe-core": [
-      {
-        "from": "cringe-core",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "cringe-core",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "cringe-core",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "digital-biophilia": [
-      {
-        "from": "digital-biophilia",
-        "to": "digital-gardening",
-        "kind": "tangent",
-        "strength": 0.5
-      },
       {
         "from": "digital-biophilia",
         "to": "moss-structure",
@@ -1917,18 +1557,6 @@ export default {
       },
       {
         "from": "digital-biophilia",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "digital-biophilia",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "digital-biophilia",
         "to": "process-diary-1",
         "kind": "tangent",
         "strength": 0.5
@@ -1936,38 +1564,6 @@ export default {
       {
         "from": "digital-biophilia",
         "to": "summer-static",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "digital-gardening": [
-      {
-        "from": "digital-gardening",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "digital-gardening",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "digital-gardening",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "digital-gardening",
-        "to": "weave",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "digital-gardening",
-        "to": "mappings",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2130,50 +1726,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "neon-moss": [
-      {
-        "from": "neon-moss",
-        "to": "foliage-grids",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "formations",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "glow-tree",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "living-drone-commission",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "moss-structure",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "swamp-mass",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "neon-moss",
-        "to": "digital-biophilia",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "virtual-imprint": [
       {
         "from": "virtual-imprint",
@@ -2209,12 +1761,6 @@ export default {
       },
       {
         "from": "intro",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "intro",
         "to": "contact",
         "kind": "tangent",
         "strength": 0.5
@@ -2226,54 +1772,18 @@ export default {
         "strength": 0.5
       }
     ],
-    "raw-making": [
-      {
-        "from": "raw-making",
-        "to": "journal-artifacts",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "making-comfort",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "process-diary-1",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "less-flat",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "raw-making",
-        "to": "cringe-core",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "latest": [
       {
         "from": "latest",
         "to": "intro",
+        "kind": "tangent",
+        "strength": 0.5
+      }
+    ],
+    "links": [
+      {
+        "from": "links",
+        "to": "rehash-transform",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2339,12 +1849,6 @@ export default {
       },
       {
         "from": "living-drone-commission",
-        "to": "neon-moss",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "living-drone-commission",
         "to": "weave",
         "kind": "tangent",
         "strength": 0.5
@@ -2371,18 +1875,6 @@ export default {
       },
       {
         "from": "process-diary-1",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "process-diary-1",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "process-diary-1",
         "to": "glow-tree",
         "kind": "tangent",
         "strength": 0.5
@@ -2404,12 +1896,6 @@ export default {
       {
         "from": "making-comfort",
         "to": "journal-artifacts",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "making-comfort",
-        "to": "raw-making",
         "kind": "tangent",
         "strength": 0.5
       },
@@ -2478,82 +1964,6 @@ export default {
         "strength": 0.5
       }
     ],
-    "maps-of-the-web": [
-      {
-        "from": "maps-of-the-web",
-        "to": "mappings",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
-        "to": "branches-and-connections",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
-        "to": "node-graph",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
-        "to": "raw-making",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
-        "to": "links",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "maps-of-the-web",
-        "to": "new-platforms",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
-    "node-graph": [
-      {
-        "from": "node-graph",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "node-graph",
-        "to": "new-platforms",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "node-graph",
-        "to": "hyper",
-        "kind": "consumes",
-        "strength": 0.5
-      },
-      {
-        "from": "node-graph",
-        "to": "about",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "node-graph",
-        "to": "manifesto",
-        "kind": "tangent",
-        "strength": 0.5
-      }
-    ],
     "markup-dada": [
       {
         "from": "markup-dada",
@@ -2588,34 +1998,16 @@ export default {
         "strength": 0.5
       }
     ],
-    "new-platforms": [
+    "node-graph": [
       {
-        "from": "new-platforms",
-        "to": "maps-of-the-web",
-        "kind": "tangent",
+        "from": "node-graph",
+        "to": "hyper",
+        "kind": "consumes",
         "strength": 0.5
       },
       {
-        "from": "new-platforms",
-        "to": "branches-and-connections",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "new-platforms",
-        "to": "node-graph",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "new-platforms",
-        "to": "links",
-        "kind": "tangent",
-        "strength": 0.5
-      },
-      {
-        "from": "new-platforms",
-        "to": "mappings",
+        "from": "node-graph",
+        "to": "about",
         "kind": "tangent",
         "strength": 0.5
       }
@@ -2694,190 +2086,186 @@ export default {
   "tags": {
     "art": {
       "weight": 1,
-      "count": 47
+      "count": 44
     },
     "generative": {
-      "weight": 0.9574468085106383,
-      "count": 45
+      "weight": 1,
+      "count": 44
     },
     "live": {
-      "weight": 0.723404255319149,
-      "count": 34
+      "weight": 0.75,
+      "count": 33
     },
     "domain-warping": {
-      "weight": 0.44680851063829785,
+      "weight": 0.4772727272727273,
       "count": 21
     },
-    "biophilia": {
-      "weight": 0.3404255319148936,
-      "count": 16
-    },
-    "organic": {
-      "weight": 0.3191489361702128,
-      "count": 15
-    },
     "project": {
-      "weight": 0.3191489361702128,
+      "weight": 0.3409090909090909,
       "count": 15
     },
-    "thoughts": {
-      "weight": 0.2978723404255319,
+    "biophilia": {
+      "weight": 0.3181818181818182,
       "count": 14
     },
     "substrate": {
-      "weight": 0.2978723404255319,
+      "weight": 0.3181818181818182,
+      "count": 14
+    },
+    "organic": {
+      "weight": 0.3181818181818182,
       "count": 14
     },
     "feedback": {
-      "weight": 0.2765957446808511,
+      "weight": 0.29545454545454547,
       "count": 13
     },
     "noise": {
-      "weight": 0.2765957446808511,
+      "weight": 0.29545454545454547,
       "count": 13
     },
     "photography": {
-      "weight": 0.23404255319148937,
+      "weight": 0.25,
       "count": 11
     },
     "geometry": {
-      "weight": 0.2127659574468085,
-      "count": 10
-    },
-    "internet": {
-      "weight": 0.19148936170212766,
+      "weight": 0.20454545454545456,
       "count": 9
-    },
-    "fragments": {
-      "weight": 0.19148936170212766,
-      "count": 9
-    },
-    "mappings": {
-      "weight": 0.1702127659574468,
-      "count": 8
     },
     "webart": {
-      "weight": 0.1702127659574468,
+      "weight": 0.18181818181818182,
       "count": 8
     },
     "interactive": {
-      "weight": 0.1702127659574468,
+      "weight": 0.18181818181818182,
       "count": 8
     },
     "css": {
-      "weight": 0.1702127659574468,
+      "weight": 0.18181818181818182,
       "count": 8
     },
-    "exploration": {
-      "weight": 0.14893617021276595,
-      "count": 7
-    },
-    "writing": {
-      "weight": 0.1276595744680851,
-      "count": 6
-    },
     "chrome": {
-      "weight": 0.1276595744680851,
+      "weight": 0.13636363636363635,
       "count": 6
     },
-    "info": {
-      "weight": 0.10638297872340426,
+    "thoughts": {
+      "weight": 0.11363636363636363,
+      "count": 5
+    },
+    "mappings": {
+      "weight": 0.11363636363636363,
       "count": 5
     },
     "fuse": {
-      "weight": 0.10638297872340426,
+      "weight": 0.11363636363636363,
       "count": 5
     },
     "space-colonization": {
-      "weight": 0.10638297872340426,
+      "weight": 0.11363636363636363,
       "count": 5
     },
+    "info": {
+      "weight": 0.09090909090909091,
+      "count": 4
+    },
+    "writing": {
+      "weight": 0.09090909090909091,
+      "count": 4
+    },
+    "internet": {
+      "weight": 0.09090909090909091,
+      "count": 4
+    },
     "external": {
-      "weight": 0.0851063829787234,
+      "weight": 0.09090909090909091,
       "count": 4
     },
     "glitch": {
-      "weight": 0.06382978723404255,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "rhizome": {
-      "weight": 0.06382978723404255,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "hyper": {
-      "weight": 0.06382978723404255,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "words": {
-      "weight": 0.06382978723404255,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "utility": {
-      "weight": 0.06382978723404255,
+      "weight": 0.06818181818181818,
+      "count": 3
+    },
+    "exploration": {
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "memes": {
-      "weight": 0.06382978723404255,
+      "weight": 0.06818181818181818,
       "count": 3
     },
     "instancing": {
-      "weight": 0.0425531914893617,
+      "weight": 0.045454545454545456,
       "count": 2
     },
-    "cringe": {
-      "weight": 0.0425531914893617,
+    "fragments": {
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "mind": {
-      "weight": 0.0425531914893617,
-      "count": 2
-    },
-    "Deleuze": {
-      "weight": 0.0425531914893617,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "dithering": {
-      "weight": 0.0425531914893617,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "blue-noise": {
-      "weight": 0.0425531914893617,
+      "weight": 0.045454545454545456,
       "count": 2
     },
     "octree": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "contact": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "communication": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "particles": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "collaboration": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "process": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "texture": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "depth": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
+      "count": 1
+    },
+    "Deleuze": {
+      "weight": 0.022727272727272728,
       "count": 1
     },
     "flowfield": {
-      "weight": 0.02127659574468085,
+      "weight": 0.022727272727272728,
       "count": 1
     }
   },
@@ -2990,9 +2378,9 @@ export default {
         "generative",
         "live",
         "project",
-        "internet",
         "webart",
         "css",
+        "internet",
         "writing",
         "external"
       ],
@@ -3023,7 +2411,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 12 Feb 2024 18:32:16 GMT",
-      "updatedAt": "2026-01-05T07:34:33.962Z",
+      "updatedAt": "2026-01-15T13:08:42.292Z",
       "inline": false,
       "title": "Evergreen Broth",
       "description": "Evergreen web art project with narrative elements.",
@@ -3031,12 +2419,12 @@ export default {
     },
     "living-drone-commission": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
+        "project",
         "biophilia",
         "organic",
-        "project",
         "interactive",
         "space-colonization",
         "external",
@@ -3046,12 +2434,6 @@ export default {
         {
           "from": "living-drone-commission",
           "to": "glow-tree",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "living-drone-commission",
-          "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3075,61 +2457,14 @@ export default {
       "description": "A generative art project made for the lovely people at fveld.",
       "image": "/nodes/living-drone-commission.preview.jpg"
     },
-    "new-platforms": {
-      "tags": [
-        "thoughts",
-        "internet",
-        "fragments",
-        "exploration",
-        "writing"
-      ],
-      "links": [
-        {
-          "from": "new-platforms",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "new-platforms",
-          "to": "branches-and-connections",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "new-platforms",
-          "to": "node-graph",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "new-platforms",
-          "to": "links",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "new-platforms",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Wed, 23 Aug 2023 13:20:58 GMT",
-      "updatedAt": "2024-01-04T15:21:51.477Z",
-      "inline": false,
-      "title": "New Platforms",
-      "description": "Searching for new platforms and new ways of being on the web.",
-      "image": "https://d2w9rnfcy7mm78.cloudfront.net/23124215/original_f9a329d56d337e83b6cd3a7f33aca9f0.png?1692045722?bc=0"
-    },
     "process-diary-1": {
       "tags": [
         "art",
         "generative",
         "biophilia",
         "thoughts",
-        "exploration",
         "space-colonization",
+        "exploration",
         "process"
       ],
       "links": [
@@ -3147,18 +2482,6 @@ export default {
         },
         {
           "from": "process-diary-1",
-          "to": "raw-making",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "process-diary-1",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "process-diary-1",
           "to": "glow-tree",
           "kind": "tangent",
           "strength": 0.5
@@ -3171,9 +2494,9 @@ export default {
         }
       ],
       "createdAt": "Sat, 22 Jul 2023 11:55:40 GMT",
-      "updatedAt": "2024-01-04T15:21:40.347Z",
+      "updatedAt": "2026-01-15T17:32:40.796Z",
       "inline": false,
-      "title": "Process Diary (1)",
+      "title": "Process Diary",
       "description": "Short process update with some samples and thoughts about generative art.",
       "image": "/nodes/process-diary-1.preview.png"
     },
@@ -3232,12 +2555,13 @@ export default {
         }
       ],
       "createdAt": "Sun, 24 May 2023 20:04:27 GMT",
-      "updatedAt": "2024-01-04T14:21:54.224Z",
+      "updatedAt": "2026-01-16T07:48:37.290Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Aggregate Topology",
       "description": "A variation on the Aggregate Forms node. Vertex displacement viewed top-down, emphasizing the color and topology changes. WARNING: not phone friendly.",
-      "image": "/nodes/aggregate-topology.preview.jpg"
+      "image": "/nodes/aggregate-topology.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "aggregate-forms": {
       "tags": [
@@ -3294,92 +2618,22 @@ export default {
         }
       ],
       "createdAt": "Sun, 07 May 2023 14:08:27 GMT",
-      "updatedAt": "2024-01-04T14:21:54.224Z",
+      "updatedAt": "2026-01-16T07:57:54.304Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Aggregate Forms",
       "description": "Experiments with vertex displacement, substrate shaders, and feedback. A continuation of Remnant Mappings and Foliage Grids. WARNING: not phone friendly.",
-      "image": "/nodes/aggregate-forms.preview.jpg"
-    },
-    "maps-of-the-web": {
-      "tags": [
-        "thoughts",
-        "internet",
-        "mappings",
-        "exploration",
-        "writing"
-      ],
-      "links": [
-        {
-          "from": "maps-of-the-web",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
-          "to": "branches-and-connections",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
-          "to": "node-graph",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
-          "to": "raw-making",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
-          "to": "links",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "maps-of-the-web",
-          "to": "new-platforms",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Thu, 27 Apr 2023 17:31:40 GMT",
-      "updatedAt": "2024-01-04T14:21:54.233Z",
-      "inline": false,
-      "title": "Maps of The Web",
-      "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
-      "image": "/nodes/maps-of-the-web.preview.jpg"
+      "image": "/nodes/aggregate-forms.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "node-graph": {
       "tags": [
         "mappings",
-        "exploration",
         "info",
+        "exploration",
         "utility"
       ],
       "links": [
-        {
-          "from": "node-graph",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "node-graph",
-          "to": "new-platforms",
-          "kind": "tangent",
-          "strength": 0.5
-        },
         {
           "from": "node-graph",
           "to": "hyper",
@@ -3391,28 +2645,23 @@ export default {
           "to": "about",
           "kind": "tangent",
           "strength": 0.5
-        },
-        {
-          "from": "node-graph",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
         }
       ],
       "createdAt": "Sat, 18 Mar 2023 18:53:13 GMT",
-      "updatedAt": "2024-01-04T15:21:54.931Z",
+      "updatedAt": "2026-01-16T08:00:00.570Z",
       "inline": false,
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
-      "image": "/nodes/node-graph.preview.jpg"
+      "image": "/nodes/node-graph.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "making-comfort": {
       "tags": [
         "art",
         "project",
-        "thoughts",
         "photography",
-        "webart"
+        "webart",
+        "thoughts"
       ],
       "links": [
         {
@@ -3424,12 +2673,6 @@ export default {
         {
           "from": "making-comfort",
           "to": "journal-artifacts",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "making-comfort",
-          "to": "raw-making",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3447,7 +2690,7 @@ export default {
         }
       ],
       "createdAt": "Mon, 06 Mar 2023 18:47:11 GMT",
-      "updatedAt": "2024-01-04T14:21:54.232Z",
+      "updatedAt": "2026-01-16T08:12:12.558Z",
       "inline": false,
       "asDocument": true,
       "title": "Making Comfort",
@@ -3484,23 +2727,17 @@ export default {
         },
         {
           "from": "breath-crunch",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "breath-crunch",
           "to": "making-comfort",
           "kind": "tangent",
           "strength": 0.5
         }
       ],
       "createdAt": "Thu, 23 Feb 2023 19:15:44 GMT",
-      "updatedAt": "2024-01-04T14:21:54.225Z",
+      "updatedAt": "2026-01-16T08:14:12.898Z",
       "inline": false,
       "asDocument": true,
       "title": "Breath Crunch",
-      "description": "A breathing exercise. Doctors don't want you to breathe like this. Playing with ritual and stupid mindfulness.",
+      "description": "A breathing exercise. Doctors don't want you to breathe like this.",
       "image": "/nodes/breath-crunch.preview.jpg"
     },
     "substrate-catalogue": {
@@ -3543,32 +2780,14 @@ export default {
         "art",
         "generative",
         "project",
-        "thoughts",
         "feedback",
-        "css"
+        "css",
+        "thoughts"
       ],
       "links": [
         {
           "from": "journal-artifacts",
           "to": "breath-crunch",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "journal-artifacts",
-          "to": "raw-making",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "journal-artifacts",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "journal-artifacts",
-          "to": "branches-and-connections",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -3586,70 +2805,11 @@ export default {
         }
       ],
       "createdAt": "Sat, 21 Jan 2023 16:42:22 GMT",
-      "updatedAt": "2024-01-04T15:21:40.346Z",
+      "updatedAt": "2026-01-16T08:20:19.419Z",
       "inline": false,
       "title": "Journal Artifacts",
-      "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
+      "description": "A small project based on (poetic) journal artifacts. Vague memory prompts.",
       "image": "/nodes/journal-artifacts.preview.png"
-    },
-    "raw-making": {
-      "tags": [
-        "art",
-        "thoughts",
-        "fragments",
-        "exploration",
-        "cringe"
-      ],
-      "links": [
-        {
-          "from": "raw-making",
-          "to": "journal-artifacts",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "raw-making",
-          "to": "making-comfort",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "raw-making",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "raw-making",
-          "to": "process-diary-1",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "raw-making",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "raw-making",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "raw-making",
-          "to": "cringe-core",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Fri, 06 Jan 2023 09:30:05 GMT",
-      "updatedAt": "2024-01-04T14:21:54.236Z",
-      "inline": true,
-      "title": "Raw Making",
-      "description": "Thoughts about hurry sickness, productivity and raw creation.",
-      "image": ""
     },
     "waft": {
       "tags": [
@@ -3696,8 +2856,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
         "substrate",
+        "biophilia",
         "noise",
         "webart",
         "fuse"
@@ -3765,64 +2925,12 @@ export default {
         }
       ],
       "createdAt": "Fri, 23 Dec 2022 10:06:41 GMT",
-      "updatedAt": "2024-01-04T14:21:54.231Z",
+      "updatedAt": "2026-01-16T08:22:20.930Z",
       "inline": false,
       "asDocument": true,
       "title": "Living Hobbling Goo",
-      "description": "Some jumbled words and an experiment with documentation/presentation/design. Things are moving and living without aim.",
+      "description": "Jumbled words and an experiment with documentation/presentation/design.",
       "image": "/nodes/living-hobbling-goo.preview.jpg"
-    },
-    "branches-and-connections": {
-      "tags": [
-        "thoughts",
-        "internet",
-        "fragments",
-        "mappings"
-      ],
-      "links": [
-        {
-          "from": "branches-and-connections",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "branches-and-connections",
-          "to": "links",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "branches-and-connections",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "branches-and-connections",
-          "to": "journal-artifacts",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "branches-and-connections",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "branches-and-connections",
-          "to": "new-platforms",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Tue, 22 Nov 2022 15:40:27 GMT",
-      "updatedAt": "2024-01-04T14:21:54.225Z",
-      "inline": true,
-      "title": "Branches and connections",
-      "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
-      "image": ""
     },
     "places-and-things": {
       "tags": [
@@ -3856,89 +2964,12 @@ export default {
         }
       ],
       "createdAt": "Mon, 31 Oct 2022 18:03:25 GMT",
-      "updatedAt": "2024-01-04T14:21:54.235Z",
+      "updatedAt": "2026-01-16T08:23:21.817Z",
       "inline": false,
       "title": "Places and things",
-      "description": "Another series of photographs. Another slice of time, another tone. Just a collection.",
+      "description": "Another series of photographs. Another slice of time.",
       "image": "/nodes/places-and-things.preview.jpg",
       "asDocument": true
-    },
-    "mappings": {
-      "tags": [
-        "art",
-        "thoughts",
-        "fragments",
-        "mappings",
-        "Deleuze"
-      ],
-      "links": [
-        {
-          "from": "mappings",
-          "to": "branches-and-connections",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "digital-gardening",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "remnant-mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "foliage-fragments",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "digital-biophilia",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "new-platforms",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "process-diary-1",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "mappings",
-          "to": "raw-making",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Sun, 16 Oct 2022 10:16:11 GMT",
-      "updatedAt": "2024-01-04T14:21:54.232Z",
-      "inline": true,
-      "title": "Mappings",
-      "description": "Some thoughts about art and map-making as a creative tool.",
-      "image": ""
     },
     "remnant-mappings": {
       "tags": [
@@ -3970,12 +3001,6 @@ export default {
         },
         {
           "from": "remnant-mappings",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "remnant-mappings",
           "to": "formations",
           "kind": "tangent",
           "strength": 0.5
@@ -3994,11 +3019,11 @@ export default {
         }
       ],
       "createdAt": "Sat, 15 Oct 2022 13:51:33 GMT",
-      "updatedAt": "2024-01-04T14:21:54.236Z",
+      "updatedAt": "2026-01-16T08:24:30.235Z",
       "inline": false,
       "hideOverflow": true,
       "title": "Remnant Mappings",
-      "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
+      "description": "Strange maps of strange objects. Maybe rocks? Scraps found in the dirt?",
       "image": "/nodes/remnant-mappings.preview.jpg"
     },
     "foliage-fragments": {
@@ -4006,8 +3031,8 @@ export default {
         "art",
         "generative",
         "live",
-        "biophilia",
         "organic",
+        "biophilia",
         "feedback",
         "photography",
         "mappings"
@@ -4063,32 +3088,27 @@ export default {
         },
         {
           "from": "foliage-fragments",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "foliage-fragments",
           "to": "remnant-mappings",
           "kind": "tangent",
           "strength": 0.5
         }
       ],
       "createdAt": "Sun, 02 Oct 2022 12:20:41 GMT",
-      "updatedAt": "2024-01-04T14:21:54.229Z",
+      "updatedAt": "2026-01-16T08:25:12.470Z",
       "inline": false,
       "title": "Foliage Fragments",
       "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
-      "image": "/nodes/foliage-fragments.preview.jpg"
+      "image": "/nodes/foliage-fragments.preview.jpg",
+      "warningPrompt": "WARNING: This node contains flashing images."
     },
     "foliage-grids": {
       "tags": [
         "art",
         "generative",
         "live",
-        "biophilia",
-        "organic",
         "substrate",
+        "organic",
+        "biophilia",
         "photography",
         "geometry"
       ],
@@ -4114,12 +3134,6 @@ export default {
         {
           "from": "foliage-grids",
           "to": "cliffscapes",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "foliage-grids",
-          "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -4155,10 +3169,10 @@ export default {
         }
       ],
       "createdAt": "Mon, 26 Sep 2022 21:46:38 GMT",
-      "updatedAt": "2024-01-04T14:21:54.229Z",
+      "updatedAt": "2026-01-16T08:45:42.500Z",
       "inline": false,
       "title": "Foliage Grids",
-      "description": "Dynamic pixelation and image displacement grids. A small study with various foliage details. Combining generative techniques and photography.",
+      "description": "Dynamic pixelation and image displacement grids. A small study combining generative techniques and photography.",
       "image": "/nodes/foliage-grids.preview.jpg"
     },
     "cliffscapes": {
@@ -4200,11 +3214,12 @@ export default {
         }
       ],
       "createdAt": "Wed, 14 Sep 2022 18:30:05 GMT",
-      "updatedAt": "2024-01-04T14:21:54.226Z",
+      "updatedAt": "2026-01-16T08:26:48.316Z",
       "inline": false,
       "title": "Cliffscapes",
       "description": "Continuation of formations and glow-tree sketches: a landscape and calm skies. A tree structure controls the form of the cliffscape.",
-      "image": "/nodes/cliffscapes.preview.jpg"
+      "image": "/nodes/cliffscapes.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "alien-skies": {
       "tags": [
@@ -4212,8 +3227,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "organic",
         "substrate",
+        "organic",
         "noise"
       ],
       "links": [
@@ -4273,40 +3288,6 @@ export default {
       "description": "Strange perspective distortion for alien skies. A test for a larger composition.",
       "image": "/nodes/alien-skies.preview.jpg"
     },
-    "cringe-core": {
-      "tags": [
-        "thoughts",
-        "internet",
-        "fragments",
-        "cringe"
-      ],
-      "links": [
-        {
-          "from": "cringe-core",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "cringe-core",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "cringe-core",
-          "to": "raw-making",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Wed, 07 Sep 2022 21:12:23 GMT",
-      "updatedAt": "2024-03-09T14:50:05.739Z",
-      "inline": true,
-      "title": "Cringe Core",
-      "description": "Short thoughts about cringe.",
-      "image": ""
-    },
     "glow-tree": {
       "tags": [
         "art",
@@ -4325,12 +3306,6 @@ export default {
         {
           "from": "glow-tree",
           "to": "formations",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "glow-tree",
-          "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -4405,7 +3380,7 @@ export default {
         }
       ],
       "createdAt": "Thu, 01 Sep 2022 11:19:20 GMT",
-      "updatedAt": "2024-01-04T14:21:54.239Z",
+      "updatedAt": "2026-01-15T13:08:42.294Z",
       "inline": false,
       "title": "Virtual Distance",
       "description": "A css experiment with endless banner scrolling and exaggerated shadows.",
@@ -4413,8 +3388,8 @@ export default {
     },
     "summer-static": {
       "tags": [
-        "biophilia",
         "project",
+        "biophilia",
         "photography"
       ],
       "links": [
@@ -4444,10 +3419,10 @@ export default {
         }
       ],
       "createdAt": "Sat, 27 Aug 2022 17:33:51 GMT",
-      "updatedAt": "2024-01-04T14:21:54.238Z",
+      "updatedAt": "2026-01-16T08:28:18.953Z",
       "inline": false,
       "title": "Summer Static",
-      "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
+      "description": "A couple of photographs from this summer. Just that endless summer vibe.",
       "image": "/nodes/summer-static.preview.jpg",
       "asDocument": true
     },
@@ -4475,12 +3450,6 @@ export default {
         {
           "from": "formations",
           "to": "cliffscapes",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "formations",
-          "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -4529,67 +3498,6 @@ export default {
       "image": "/nodes/formations.preview.jpg",
       "hideOverflow": true
     },
-    "neon-moss": {
-      "tags": [
-        "art",
-        "generative",
-        "live",
-        "biophilia",
-        "organic",
-        "geometry"
-      ],
-      "links": [
-        {
-          "from": "neon-moss",
-          "to": "foliage-grids",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "neon-moss",
-          "to": "formations",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "neon-moss",
-          "to": "glow-tree",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "neon-moss",
-          "to": "living-drone-commission",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "neon-moss",
-          "to": "moss-structure",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "neon-moss",
-          "to": "swamp-mass",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "neon-moss",
-          "to": "digital-biophilia",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Mon, 22 Aug 2022 07:24:16 GMT",
-      "updatedAt": "2024-01-04T14:21:54.234Z",
-      "inline": false,
-      "title": "Neon Moss",
-      "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
-      "image": "/nodes/neon-moss.preview.jpg",
-      "hideOverflow": true
-    },
     "digital-biophilia": {
       "tags": [
         "art",
@@ -4599,12 +3507,6 @@ export default {
         "fragments"
       ],
       "links": [
-        {
-          "from": "digital-biophilia",
-          "to": "digital-gardening",
-          "kind": "tangent",
-          "strength": 0.5
-        },
         {
           "from": "digital-biophilia",
           "to": "moss-structure",
@@ -4631,18 +3533,6 @@ export default {
         },
         {
           "from": "digital-biophilia",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "digital-biophilia",
-          "to": "neon-moss",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "digital-biophilia",
           "to": "process-diary-1",
           "kind": "tangent",
           "strength": 0.5
@@ -4655,7 +3545,7 @@ export default {
         }
       ],
       "createdAt": "Sun, 21 Aug 2022 15:54:46 GMT",
-      "updatedAt": "2024-01-04T14:21:54.227Z",
+      "updatedAt": "2026-01-16T08:32:23.252Z",
       "inline": true,
       "title": "Digital Biophilia",
       "description": "Some thoughts on the biophilia hypothesis and digital spaces.",
@@ -4667,9 +3557,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
-        "organic",
         "substrate",
+        "organic",
+        "biophilia",
         "noise"
       ],
       "links": [
@@ -4823,10 +3713,10 @@ export default {
         }
       ],
       "createdAt": "Wed, 17 Aug 2022 19:38:50 GMT",
-      "updatedAt": "2024-01-04T14:21:54.238Z",
+      "updatedAt": "2026-01-16T08:35:46.602Z",
       "inline": false,
       "title": "Substrates",
-      "description": "A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.",
+      "description": "About my node-based visual programming application developed for the web.",
       "image": "/nodes/substrates.preview.jpg"
     },
     "moss-structure": {
@@ -4835,9 +3725,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
+        "substrate",
         "biophilia",
         "organic",
-        "substrate",
         "noise"
       ],
       "links": [
@@ -4903,12 +3793,6 @@ export default {
         },
         {
           "from": "moss-structure",
-          "to": "neon-moss",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "moss-structure",
           "to": "super-cell",
           "kind": "tangent",
           "strength": 0.5
@@ -4927,8 +3811,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
         "substrate",
+        "biophilia",
         "noise"
       ],
       "links": [
@@ -5090,9 +3974,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
-        "organic",
         "substrate",
+        "organic",
+        "biophilia",
         "noise"
       ],
       "links": [
@@ -5117,12 +4001,6 @@ export default {
         {
           "from": "swamp-mass",
           "to": "moss-structure",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "swamp-mass",
-          "to": "neon-moss",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -5197,56 +4075,11 @@ export default {
       "description": "Simple HTML/CSS/JS test for creating animated patterns using the DOM.",
       "image": "/nodes/markup-dada.preview.jpg"
     },
-    "digital-gardening": {
-      "tags": [
-        "biophilia",
-        "thoughts",
-        "fragments"
-      ],
-      "links": [
-        {
-          "from": "digital-gardening",
-          "to": "digital-biophilia",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "digital-gardening",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "digital-gardening",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "digital-gardening",
-          "to": "weave",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "digital-gardening",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Mon, 25 Jul 2022 19:48:20 GMT",
-      "updatedAt": "2024-01-04T14:21:54.227Z",
-      "inline": true,
-      "title": "Digital Gardening",
-      "description": "Some thoughts about digital and generative gardening.",
-      "image": ""
-    },
     "city-pond": {
       "tags": [
-        "biophilia",
         "project",
         "organic",
+        "biophilia",
         "photography"
       ],
       "links": [
@@ -5277,80 +4110,17 @@ export default {
       "image": "/nodes/city-pond.preview.jpg",
       "asDocument": true
     },
-    "less-flat": {
-      "tags": [
-        "thoughts",
-        "fragments",
-        "exploration"
-      ],
-      "links": [
-        {
-          "from": "less-flat",
-          "to": "breath-crunch",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
-          "to": "cringe-core",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
-          "to": "digital-gardening",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
-          "to": "journal-artifacts",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
-          "to": "mappings",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "less-flat",
-          "to": "raw-making",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Mon, 18 Jul 2022 21:48:39 GMT",
-      "updatedAt": "2024-01-04T14:21:54.231Z",
-      "inline": true,
-      "title": "Less Flat",
-      "description": "Thoughts about artistic creation as self-exploration.",
-      "image": ""
-    },
     "intro": {
       "tags": [
-        "fragments",
         "info",
-        "utility"
+        "utility",
+        "fragments"
       ],
       "links": [
         {
           "from": "intro",
           "to": "about",
           "kind": "references",
-          "strength": 0.5
-        },
-        {
-          "from": "intro",
-          "to": "manifesto",
-          "kind": "tangent",
           "strength": 0.5
         },
         {
@@ -5367,7 +4137,7 @@ export default {
         }
       ],
       "createdAt": "Sat, 16 Jul 2022 09:54:45 GMT",
-      "updatedAt": "2024-01-04T14:21:54.230Z",
+      "updatedAt": "2026-01-16T08:37:46.290Z",
       "inline": true,
       "title": "Intro",
       "description": "A short site description.",
@@ -5504,10 +4274,10 @@ export default {
         }
       ],
       "createdAt": "Sun, 19 Jun 2022 21:26:31 GMT",
-      "updatedAt": "2024-01-04T14:21:54.235Z",
+      "updatedAt": "2026-01-16T08:38:21.188Z",
       "inline": false,
       "title": "Objects",
-      "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities. These things just are.",
+      "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities.",
       "image": "/nodes/objects.preview.jpg",
       "asDocument": true
     },
@@ -5525,12 +4295,6 @@ export default {
         {
           "from": "weave",
           "to": "chaos-growth",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "weave",
-          "to": "digital-gardening",
           "kind": "tangent",
           "strength": 0.5
         },
@@ -5572,8 +4336,8 @@ export default {
         "art",
         "generative",
         "project",
-        "internet",
         "fuse",
+        "internet",
         "hyper",
         "memes"
       ],
@@ -5611,12 +4375,6 @@ export default {
         {
           "from": "webfuse",
           "to": "rhizome",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "webfuse",
-          "to": "manifesto",
           "kind": "tangent",
           "strength": 0.5
         }
@@ -5703,40 +4461,16 @@ export default {
       "links": [
         {
           "from": "links",
-          "to": "branches-and-connections",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "links",
           "to": "rehash-transform",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "links",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "links",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "links",
-          "to": "new-platforms",
           "kind": "tangent",
           "strength": 0.5
         }
       ],
       "createdAt": "Sat, 04 Jun 2022 22:32:18 GMT",
-      "updatedAt": "2024-02-13T13:29:53.565Z",
+      "updatedAt": "2026-01-16T08:45:42.490Z",
       "inline": false,
       "title": "Links",
-      "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
+      "description": "Hyperlinks to other nodes on the web. A curated set of bookmarks.",
       "image": ""
     },
     "moons": {
@@ -5793,9 +4527,9 @@ export default {
       "createdAt": "Thu, 26 May 2022 12:34:15 GMT",
       "inline": false,
       "title": "Contact",
-      "description": "A form for sending me an email. Nothing more.",
+      "description": "A form for sending me an email.",
       "image": "",
-      "updatedAt": "2026-01-02T10:53:10.102Z"
+      "updatedAt": "2026-01-16T08:39:37.364Z"
     },
     "about": {
       "tags": [
@@ -5817,12 +4551,6 @@ export default {
         },
         {
           "from": "about",
-          "to": "manifesto",
-          "kind": "references",
-          "strength": 0.5
-        },
-        {
-          "from": "about",
           "to": "intro",
           "kind": "references",
           "strength": 0.5
@@ -5837,9 +4565,9 @@ export default {
       "createdAt": "Wed, 18 May 2022 15:40:27 GMT",
       "inline": false,
       "title": "About",
-      "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
+      "description": "What is this project? What does this space contain? Why? Who am I?",
       "image": "/nodes/about.preview.jpg",
-      "updatedAt": "2024-01-04T15:22:04.706Z"
+      "updatedAt": "2026-01-16T08:48:07.382Z"
     },
     "hyper": {
       "tags": [
@@ -5896,95 +4624,14 @@ export default {
       "createdAt": "Sun, 15 May 2022 10:20:22 GMT",
       "inline": false,
       "title": "Hyper",
-      "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
+      "description": "HYPER HYPER HYPER HYPER HYPER HYPER",
       "image": "/nodes/hyper.preview.jpg",
-      "updatedAt": "2024-01-04T14:21:54.230Z"
-    },
-    "manifesto": {
-      "tags": [
-        "thoughts",
-        "internet",
-        "info"
-      ],
-      "links": [
-        {
-          "from": "manifesto",
-          "to": "about",
-          "kind": "references",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "branches-and-connections",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "cringe-core",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "digital-gardening",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "intro",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "less-flat",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "links",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "maps-of-the-web",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "node-graph",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "rhizome",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "manifesto",
-          "to": "webfuse",
-          "kind": "tangent",
-          "strength": 0.5
-        }
-      ],
-      "createdAt": "Tue, 10 May 2022 20:11:26 GMT",
-      "inline": false,
-      "title": "manifesto",
-      "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
-      "image": "/img/combined/mirror2.jpg",
-      "updatedAt": "2024-01-04T14:21:54.232Z"
+      "updatedAt": "2026-01-16T08:40:45.030Z"
     },
     "block-dissolve": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -6026,8 +4673,8 @@ export default {
     },
     "medusa-network": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "glitch",
@@ -6057,8 +4704,8 @@ export default {
     },
     "noise-construct": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "dithering",
@@ -6081,8 +4728,8 @@ export default {
     },
     "skew-bulbs": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "chrome"
@@ -6138,8 +4785,8 @@ export default {
     },
     "rhizome": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -6199,12 +4846,6 @@ export default {
         },
         {
           "from": "rhizome",
-          "to": "manifesto",
-          "kind": "tangent",
-          "strength": 0.5
-        },
-        {
-          "from": "rhizome",
           "to": "weave",
           "kind": "tangent",
           "strength": 0.5
@@ -6217,16 +4858,17 @@ export default {
         }
       ],
       "createdAt": "20 Feb 2022 09:49:08 GMT",
-      "updatedAt": "2024-01-04T14:21:54.237Z",
+      "updatedAt": "2026-01-16T08:42:08.279Z",
       "inline": false,
       "title": "Rhizome",
-      "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
-      "image": "/nodes/rhizome.preview.jpg"
+      "description": "Substrate and space colonization experiment.",
+      "image": "/nodes/rhizome.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. A LOT. Only suitable for quite powerful devices."
     },
     "fluid-feedback": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -6273,8 +4915,8 @@ export default {
     },
     "immerse": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -6363,11 +5005,12 @@ export default {
         }
       ],
       "createdAt": "27 Jan 2022 09:49:08 GMT",
-      "updatedAt": "2024-01-04T14:21:54.230Z",
+      "updatedAt": "2026-01-16T08:42:49.917Z",
       "inline": false,
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
-      "image": "/nodes/immerse.preview.jpg"
+      "image": "/nodes/immerse.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "alien-patterns": {
       "tags": [
@@ -6509,8 +5152,8 @@ export default {
     },
     "flat-clouds": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "interactive",
         "mind",
@@ -6533,8 +5176,8 @@ export default {
     },
     "rehash-transform": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "internet",
@@ -6569,16 +5212,16 @@ export default {
         }
       ],
       "createdAt": "23 Dec 2021 09:49:08 GMT",
-      "updatedAt": "2024-01-04T14:21:54.236Z",
+      "updatedAt": "2026-01-16T08:43:55.610Z",
       "inline": false,
       "title": "Rehash Transform",
-      "description": "Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.",
+      "description": "Instancing experiment, custom shader builder.",
       "image": "/nodes/rehash-transform.preview.jpg"
     },
     "virtual-imprint": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "geometry",
@@ -6612,16 +5255,17 @@ export default {
         }
       ],
       "createdAt": "14 Nov 2021 09:49:08 GMT",
-      "updatedAt": "2024-01-04T14:21:54.239Z",
+      "updatedAt": "2026-01-16T08:45:42.490Z",
       "inline": false,
       "title": "Virtual Imprint",
       "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
-      "image": "/nodes/virtual-imprint.preview.jpg"
+      "image": "/nodes/virtual-imprint.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "solar-landscape": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "geometry",
         "interactive",
@@ -6654,16 +5298,17 @@ export default {
         }
       ],
       "createdAt": "15 Oct 2021 09:49:08 GMT",
-      "updatedAt": "2024-01-04T14:21:54.238Z",
+      "updatedAt": "2026-01-16T08:45:42.490Z",
       "inline": false,
       "title": "Solar Landscape",
       "description": "An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.",
-      "image": "/nodes/solar-landscape.preview.jpg"
+      "image": "/nodes/solar-landscape.preview.jpg",
+      "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
     },
     "solar-chrome": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "geometry",
         "interactive",
@@ -6696,16 +5341,16 @@ export default {
         }
       ],
       "createdAt": "13 Oct 2021 09:49:08 GMT",
-      "updatedAt": "2024-01-04T14:21:54.237Z",
+      "updatedAt": "2026-01-16T08:45:39.809Z",
       "inline": false,
       "title": "Solar Chrome",
-      "description": "Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.",
+      "description": "Chrome texture, chrome fashion, very punk very cool.",
       "image": "/nodes/solar-chrome.preview.jpg"
     },
     "retro-core": {
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "geometry",
         "interactive",
@@ -6729,5 +5374,5 @@ export default {
     }
   },
   "latestNode": "cathedral-nodes",
-  "mostRecentlyUpdatedNode": "evergreen-broth"
+  "mostRecentlyUpdatedNode": "about"
 } as const;

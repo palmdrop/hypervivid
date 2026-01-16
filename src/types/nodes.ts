@@ -38,7 +38,9 @@ export type NodeMetadata = {
   image?: string,
 
   asDocument?: boolean,
-  hideOverflow?: boolean
+  hideOverflow?: boolean,
+
+  warningPrompt?: string
 } & Record<string, any>; 
 
 export type NodesMetadata = typeof metadata;

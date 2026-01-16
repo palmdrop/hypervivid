@@ -33,9 +33,9 @@
 
   const notes = [
     'No tracking, cookies or analytics.',
-    'Built using only free and open software.',
+    'Built using free and open software.',
     'Hosted on Cloudflare pages.',
-    'Always a work in progress'
+    'A work in progress'
   ];
 
   const elsewhere = [
@@ -76,11 +76,13 @@
       href: '#credits',
       newTab: false
     },
+    /*
     {
       text: 'manifesto',
       href: '/nodes/manifesto',
       newTab: true
     },
+    */
   ];
 </script>
 
@@ -118,30 +120,24 @@
     </ul>
     <div class="content intro">
       <Paragraph wide big>
-        I'm Anton, or palmdrop, a Swedish developer and digital artist. This site is multipurpose — it's made for sharing digital art, 
-        writing, photography, links, whatever. The site has an experimental structure to accommodate any interlinked content-type: text, image, generative art, random experiments,
-        memes, poetry, trash recipes, GPU-frying 3D sketches, and so on, all linked together as <Link href='/nodes' newTab>nodes</Link>.
+        Hello! Personal site of Anton Hildingsson, or palmdrop. I'm a swedish developer and digital artist. This is a multipurpose site, made for sharing digital art,
+        writing, photography, links, random experiments, memes, poetry, GPU-frying 3D sketches, and so on, all linked together as <Link href='/nodes' newTab>nodes</Link>.
       </Paragraph>
       <Paragraph wide big>
-        Node, as in an interconnected point in a graph. 
-        <Link href='https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)' newTab>This kind of graph.</Link>
-        Press the bottom "metadata" tab to examine the links. 
-        Nodes also have tags, which may help you find what you are looking for. But I doubt you are searching for anything in particular. 
-        Just follow the links, explore some paths.
+        Press the bottom "metadata" tab to examine the links and tags of each node. Click around, explore some paths.
       </Paragraph>
       <Paragraph wide big>
         <Link href='/nodes' newTab>Or start by browsing all nodes.</Link> If you like, follow the <Link href='/rss.xml' newTab>rss feed.</Link>
       </Paragraph>
       <Paragraph wide big>
-        The core idea of this page is to 
+        The core idea of this site is to 
         <div class='ideas'>
           <PointList
             items={[
-              'take control over a small slice of the web,',
-              'make it possible to post anything without restriction from limiting site structure,',
-              'enable new connections, paths, and map-making, ',
-              'encourage ludic web interaction, exploration and play,',
-              'and search for a more intimate digital landscape.'
+              'create a little home on the web',
+              'have a site structure that allows for posting anything I see fit',
+              'associate freely between different ideas',
+              'encourage ludic web interaction, exploration and play.',
             ]}
             let:item
           >
@@ -149,11 +145,13 @@
           </PointList>
         </div>
       </Paragraph>
+      <!--
       <Paragraph wide big>
         Also, read the <Link href='/nodes/manifesto' newTab>manifesto page</Link>.
       </Paragraph>
+      -->
       <Paragraph wide big>
-        If you miss my old site, it can be found <Link href='https://webspace.pages.dev/' newTab>here</Link>, at least for a while.
+        If you miss my old site, it can be found <Link href='https://webspace.pages.dev/' newTab>here</Link>.
       </Paragraph>
     </div>
   </section>

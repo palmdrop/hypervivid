@@ -17,8 +17,8 @@
   { mode }
 >
   <Document />
-  <Paragraph big wide style="padding-top: 1em;">
-    Some inspirations:
+  <Paragraph big wide>
+    Inspiration...
   </Paragraph>
   <PointList
     items={inspirations}
@@ -32,7 +32,7 @@
   </PointList>
   <div slot="extra">
     <Paragraph big wide>
-      Below are some of my test renders, experiments, screengrabs, etc:
+      Some test renders, experiments, screengrabs:
     </Paragraph>
     {#each images as image, i (i)}
       <img src={image} width="100%" alt=""/>

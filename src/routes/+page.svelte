@@ -34,6 +34,7 @@
       name={assumeLimitedPerformance ? "hyper" : "node-graph"}
       mode="inline"
       fromSlot={true}
+      ignorePrompt={true}
     >
       { #if assumeLimitedPerformance }
         <Hyper />

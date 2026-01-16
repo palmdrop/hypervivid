@@ -10,5 +10,6 @@
   "inline": false,
   "title": "Foliage Fragments",
   "description": "Image fragments extracted using cellular automata, flickering in a feedback loop. Another take on foliage. WARNING: contains flashing images.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node contains flashing images."
 }

@@ -1,14 +1,14 @@
-I recently developed a node-based programming application for the web. I gave it the semi-pretentious title "Substrates" even though there's a web3 project with a similar name, which I'll ignore. 
+I recently developed a node-based programming application for the web, "Substrates".
 
-I tend to use noise and domain-warping in most of my generative art. Substrates allows me to play around with these effects using a graphical interface, instead of editing code directly. This makes it easier to edit the shaders and see the results live, play around with new configurations, and save the experiments in a simple format (JSON).
+I tend to use noise and domain-warping in most of my generative art. Substrates allows me to play with these effects using a graphical interface, instead of editing code directly. This makes it easier to work with shaders and see the results live, play around with new configurations, and save the experiments in a simple format (JSON).
 
 [Substrates - live on github pages](https://palmdrop.github.io/substrates).
 
 [Read more in the GitHub repository.](https://github.com/palmdrop/substrates)
 
-Why develop a node-based programming application when there's better software already out there, such as TouchDesigner? 
+Why develop a node-based programming application when there's better software already out there, like as TouchDesigner? 
 
-Because I wanted the thing to be web-based. I wanted to build it myself. It primarily exists for me -- I use it to create texture, complex domain warping effects, backgrounds, displacement maps, whatever. I have full creative control. I can incorporate the code as a submodule in my web projects and render my saved node programs. I want my generative art to be viewable from anywhere by anyone, living natively on the web. This allows me to not only share documentation of my art (images, videos) but the art itself: the code running live in the browser. There's beauty in not just showing cherry-picked, dead fragments. Even though I occasionally post on Instagram, I aim to have everything living here, on this page.
+I wanted the thing to be web-based. I wanted to build it myself. It primarily exists for me -- I use it to create texture, complex domain warping effects, backgrounds, displacement maps, whatever. I have full creative control. I can incorporate the code as a submodule in my web projects and render my saved node programs. I want my generative art to be viewable from anywhere, by anyone, living natively on the web. This allows me to not only share documentation of my art (images, videos) but the art itself: the code running live in the browser. There's beauty in not just showing cherry-picked fragments.
 
 And in the process, I also learned a lot about JS/HTML/CSS and Svelte. 
 

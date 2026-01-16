@@ -42,9 +42,9 @@ export default {
         "generative",
         "live",
         "project",
-        "internet",
         "webart",
         "css",
+        "internet",
         "writing",
         "external"
       ],
@@ -53,16 +53,16 @@ export default {
     },
     {
       "id": "living-drone-commission",
-      "group": "art",
+      "group": "generative",
       "title": "Living Drone (commision)",
       "description": "A generative art project made for the lovely people at fveld.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
+        "project",
         "biophilia",
         "organic",
-        "project",
         "interactive",
         "space-colonization",
         "external",
@@ -72,32 +72,17 @@ export default {
       "image": "/nodes/living-drone-commission.preview.jpg"
     },
     {
-      "id": "new-platforms",
-      "group": "thoughts",
-      "title": "New Platforms",
-      "description": "Searching for new platforms and new ways of being on the web.",
-      "tags": [
-        "thoughts",
-        "internet",
-        "fragments",
-        "exploration",
-        "writing"
-      ],
-      "url": "/nodes/new-platforms",
-      "image": "https://d2w9rnfcy7mm78.cloudfront.net/23124215/original_f9a329d56d337e83b6cd3a7f33aca9f0.png?1692045722?bc=0"
-    },
-    {
       "id": "process-diary-1",
       "group": "art",
-      "title": "Process Diary (1)",
+      "title": "Process Diary",
       "description": "Short process update with some samples and thoughts about generative art.",
       "tags": [
         "art",
         "generative",
         "biophilia",
         "thoughts",
-        "exploration",
         "space-colonization",
+        "exploration",
         "process"
       ],
       "url": "/nodes/process-diary-1",
@@ -138,29 +123,14 @@ export default {
       "image": "/nodes/aggregate-forms.preview.jpg"
     },
     {
-      "id": "maps-of-the-web",
-      "group": "thoughts",
-      "title": "Maps of The Web",
-      "description": "Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.",
-      "tags": [
-        "thoughts",
-        "internet",
-        "mappings",
-        "exploration",
-        "writing"
-      ],
-      "url": "/nodes/maps-of-the-web",
-      "image": "/nodes/maps-of-the-web.preview.jpg"
-    },
-    {
       "id": "node-graph",
       "group": "mappings",
       "title": "Node Graph",
       "description": "A graph view of all the nodes on this page. A simple visualization, using D3, for showing clusters and connections. WARNING: May perform poorly on non-desktop devices.",
       "tags": [
         "mappings",
-        "exploration",
         "info",
+        "exploration",
         "utility"
       ],
       "url": "/nodes/node-graph",
@@ -174,9 +144,9 @@ export default {
       "tags": [
         "art",
         "project",
-        "thoughts",
         "photography",
-        "webart"
+        "webart",
+        "thoughts"
       ],
       "url": "/nodes/making-comfort",
       "image": "/nodes/making-comfort.preview.jpg"
@@ -185,7 +155,7 @@ export default {
       "id": "breath-crunch",
       "group": "art",
       "title": "Breath Crunch",
-      "description": "A breathing exercise. Doctors don't want you to breathe like this. Playing with ritual and stupid mindfulness.",
+      "description": "A breathing exercise. Doctors don't want you to breathe like this.",
       "tags": [
         "art",
         "generative",
@@ -216,32 +186,17 @@ export default {
       "id": "journal-artifacts",
       "group": "art",
       "title": "Journal Artifacts",
-      "description": "A small project based on (poetic) journal artifacts. An abstract source of memory prompts.",
+      "description": "A small project based on (poetic) journal artifacts. Vague memory prompts.",
       "tags": [
         "art",
         "generative",
         "project",
-        "thoughts",
         "feedback",
-        "css"
+        "css",
+        "thoughts"
       ],
       "url": "/nodes/journal-artifacts",
       "image": "/nodes/journal-artifacts.preview.png"
-    },
-    {
-      "id": "raw-making",
-      "group": "art",
-      "title": "Raw Making",
-      "description": "Thoughts about hurry sickness, productivity and raw creation.",
-      "tags": [
-        "art",
-        "thoughts",
-        "fragments",
-        "exploration",
-        "cringe"
-      ],
-      "url": "/nodes/raw-making",
-      "image": ""
     },
     {
       "id": "waft",
@@ -259,14 +214,14 @@ export default {
       "id": "living-hobbling-goo",
       "group": "art",
       "title": "Living Hobbling Goo",
-      "description": "Some jumbled words and an experiment with documentation/presentation/design. Things are moving and living without aim.",
+      "description": "Jumbled words and an experiment with documentation/presentation/design.",
       "tags": [
         "art",
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
         "substrate",
+        "biophilia",
         "noise",
         "webart",
         "fuse"
@@ -275,24 +230,10 @@ export default {
       "image": "/nodes/living-hobbling-goo.preview.jpg"
     },
     {
-      "id": "branches-and-connections",
-      "group": "thoughts",
-      "title": "Branches and connections",
-      "description": "My thoughts and practice around sharing links, the small internet, and the internet of platforms.",
-      "tags": [
-        "thoughts",
-        "internet",
-        "fragments",
-        "mappings"
-      ],
-      "url": "/nodes/branches-and-connections",
-      "image": ""
-    },
-    {
       "id": "places-and-things",
       "group": "project",
       "title": "Places and things",
-      "description": "Another series of photographs. Another slice of time, another tone. Just a collection.",
+      "description": "Another series of photographs. Another slice of time.",
       "tags": [
         "project",
         "photography"
@@ -301,25 +242,10 @@ export default {
       "image": "/nodes/places-and-things.preview.jpg"
     },
     {
-      "id": "mappings",
-      "group": "art",
-      "title": "Mappings",
-      "description": "Some thoughts about art and map-making as a creative tool.",
-      "tags": [
-        "art",
-        "thoughts",
-        "fragments",
-        "mappings",
-        "Deleuze"
-      ],
-      "url": "/nodes/mappings",
-      "image": ""
-    },
-    {
       "id": "remnant-mappings",
       "group": "art",
       "title": "Remnant Mappings",
-      "description": "Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.",
+      "description": "Strange maps of strange objects. Maybe rocks? Scraps found in the dirt?",
       "tags": [
         "art",
         "generative",
@@ -340,8 +266,8 @@ export default {
         "art",
         "generative",
         "live",
-        "biophilia",
         "organic",
+        "biophilia",
         "feedback",
         "photography",
         "mappings"
@@ -353,14 +279,14 @@ export default {
       "id": "foliage-grids",
       "group": "art",
       "title": "Foliage Grids",
-      "description": "Dynamic pixelation and image displacement grids. A small study with various foliage details. Combining generative techniques and photography.",
+      "description": "Dynamic pixelation and image displacement grids. A small study combining generative techniques and photography.",
       "tags": [
         "art",
         "generative",
         "live",
-        "biophilia",
-        "organic",
         "substrate",
+        "organic",
+        "biophilia",
         "photography",
         "geometry"
       ],
@@ -396,26 +322,12 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "organic",
         "substrate",
+        "organic",
         "noise"
       ],
       "url": "/nodes/alien-skies",
       "image": "/nodes/alien-skies.preview.jpg"
-    },
-    {
-      "id": "cringe-core",
-      "group": "thoughts",
-      "title": "Cringe Core",
-      "description": "Short thoughts about cringe.",
-      "tags": [
-        "thoughts",
-        "internet",
-        "fragments",
-        "cringe"
-      ],
-      "url": "/nodes/cringe-core",
-      "image": ""
     },
     {
       "id": "glow-tree",
@@ -446,12 +358,12 @@ export default {
     },
     {
       "id": "summer-static",
-      "group": "biophilia",
+      "group": "project",
       "title": "Summer Static",
-      "description": "A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.",
+      "description": "A couple of photographs from this summer. Just that endless summer vibe.",
       "tags": [
-        "biophilia",
         "project",
+        "biophilia",
         "photography"
       ],
       "url": "/nodes/summer-static",
@@ -471,22 +383,6 @@ export default {
       ],
       "url": "/nodes/formations",
       "image": "/nodes/formations.preview.jpg"
-    },
-    {
-      "id": "neon-moss",
-      "group": "art",
-      "title": "Neon Moss",
-      "description": "A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.",
-      "tags": [
-        "art",
-        "generative",
-        "live",
-        "biophilia",
-        "organic",
-        "geometry"
-      ],
-      "url": "/nodes/neon-moss",
-      "image": "/nodes/neon-moss.preview.jpg"
     },
     {
       "id": "digital-biophilia",
@@ -513,9 +409,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
-        "organic",
         "substrate",
+        "organic",
+        "biophilia",
         "noise"
       ],
       "url": "/nodes/super-cell",
@@ -525,7 +421,7 @@ export default {
       "id": "substrates",
       "group": "project",
       "title": "Substrates",
-      "description": "A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.",
+      "description": "About my node-based visual programming application developed for the web.",
       "tags": [
         "project",
         "substrate",
@@ -545,9 +441,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
+        "substrate",
         "biophilia",
         "organic",
-        "substrate",
         "noise"
       ],
       "url": "/nodes/moss-structure",
@@ -563,8 +459,8 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
         "substrate",
+        "biophilia",
         "noise"
       ],
       "url": "/nodes/nest",
@@ -596,9 +492,9 @@ export default {
         "generative",
         "live",
         "domain-warping",
-        "biophilia",
-        "organic",
         "substrate",
+        "organic",
+        "biophilia",
         "noise"
       ],
       "url": "/nodes/swamp-mass",
@@ -618,54 +514,28 @@ export default {
       "image": "/nodes/markup-dada.preview.jpg"
     },
     {
-      "id": "digital-gardening",
-      "group": "biophilia",
-      "title": "Digital Gardening",
-      "description": "Some thoughts about digital and generative gardening.",
-      "tags": [
-        "biophilia",
-        "thoughts",
-        "fragments"
-      ],
-      "url": "/nodes/digital-gardening",
-      "image": ""
-    },
-    {
       "id": "city-pond",
-      "group": "biophilia",
+      "group": "project",
       "title": "City Pond",
       "description": "Photos taken by and around a small pond located in the city where I live.",
       "tags": [
-        "biophilia",
         "project",
         "organic",
+        "biophilia",
         "photography"
       ],
       "url": "/nodes/city-pond",
       "image": "/nodes/city-pond.preview.jpg"
     },
     {
-      "id": "less-flat",
-      "group": "thoughts",
-      "title": "Less Flat",
-      "description": "Thoughts about artistic creation as self-exploration.",
-      "tags": [
-        "thoughts",
-        "fragments",
-        "exploration"
-      ],
-      "url": "/nodes/less-flat",
-      "image": ""
-    },
-    {
       "id": "intro",
-      "group": "fragments",
+      "group": "info",
       "title": "Intro",
       "description": "A short site description.",
       "tags": [
-        "fragments",
         "info",
-        "utility"
+        "utility",
+        "fragments"
       ],
       "url": "/nodes/intro",
       "image": ""
@@ -714,7 +584,7 @@ export default {
       "id": "objects",
       "group": "art",
       "title": "Objects",
-      "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities. These things just are.",
+      "description": "Localized domain warping \"objects\". I enjoyed playing with possible looks for abstract floating entities.",
       "tags": [
         "art",
         "generative",
@@ -752,8 +622,8 @@ export default {
         "art",
         "generative",
         "project",
-        "internet",
         "fuse",
+        "internet",
         "hyper",
         "memes"
       ],
@@ -779,7 +649,7 @@ export default {
       "id": "links",
       "group": "internet",
       "title": "Links",
-      "description": "Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.",
+      "description": "Hyperlinks to other nodes on the web. A curated set of bookmarks.",
       "tags": [
         "internet",
         "exploration"
@@ -803,7 +673,7 @@ export default {
       "id": "contact",
       "group": "contact",
       "title": "Contact",
-      "description": "A form for sending me an email. Nothing more.",
+      "description": "A form for sending me an email.",
       "tags": [
         "contact",
         "communication"
@@ -815,7 +685,7 @@ export default {
       "id": "about",
       "group": "thoughts",
       "title": "About",
-      "description": "What is this project? What does this space contain? Why? Who am I? Do you care?",
+      "description": "What is this project? What does this space contain? Why? Who am I?",
       "tags": [
         "thoughts",
         "info"
@@ -827,7 +697,7 @@ export default {
       "id": "hyper",
       "group": "art",
       "title": "Hyper",
-      "description": "Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.",
+      "description": "HYPER HYPER HYPER HYPER HYPER HYPER",
       "tags": [
         "art",
         "photography",
@@ -839,26 +709,13 @@ export default {
       "image": "/nodes/hyper.preview.jpg"
     },
     {
-      "id": "manifesto",
-      "group": "thoughts",
-      "title": "manifesto",
-      "description": "Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.",
-      "tags": [
-        "thoughts",
-        "internet",
-        "info"
-      ],
-      "url": "/nodes/manifesto",
-      "image": "/img/combined/mirror2.jpg"
-    },
-    {
       "id": "block-dissolve",
-      "group": "art",
+      "group": "generative",
       "title": "Block Dissolve",
       "description": "Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -870,12 +727,12 @@ export default {
     },
     {
       "id": "medusa-network",
-      "group": "art",
+      "group": "generative",
       "title": "Medusa Network",
       "description": "Dithering, living rows and grids, jellyfish, glitchy and organic. An expansion on the Noise Construct experiment.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "glitch",
@@ -887,12 +744,12 @@ export default {
     },
     {
       "id": "noise-construct",
-      "group": "art",
+      "group": "generative",
       "title": "Noise Construct",
       "description": "Intense dithering and domain warping patterns. Digital static mixed with underlying organic structures.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "dithering",
@@ -903,12 +760,12 @@ export default {
     },
     {
       "id": "skew-bulbs",
-      "group": "art",
+      "group": "generative",
       "title": "Skew Bulbs",
       "description": "Trigonometric functions, noise, and normal map generation. The surface is rendered as a evolving metallic material.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "chrome"
@@ -932,12 +789,12 @@ export default {
     },
     {
       "id": "rhizome",
-      "group": "art",
+      "group": "generative",
       "title": "Rhizome",
-      "description": "All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.",
+      "description": "Substrate and space colonization experiment.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -951,12 +808,12 @@ export default {
     },
     {
       "id": "fluid-feedback",
-      "group": "art",
+      "group": "generative",
       "title": "Fluid Feedback",
       "description": "More feedback experiments. Domain warping with a feedback component. Refresh the page: there's some variations.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -967,12 +824,12 @@ export default {
     },
     {
       "id": "immerse",
-      "group": "art",
+      "group": "generative",
       "title": "Immerse",
       "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "organic",
@@ -1027,12 +884,12 @@ export default {
     },
     {
       "id": "flat-clouds",
-      "group": "art",
+      "group": "generative",
       "title": "Flat Clouds",
       "description": "Soft particles, shader builders, generative geometry distortion. Feeling void of thoughts, flat, but sometimes creased. An undeveloped idea.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "interactive",
         "mind",
@@ -1043,12 +900,12 @@ export default {
     },
     {
       "id": "rehash-transform",
-      "group": "art",
+      "group": "generative",
       "title": "Rehash Transform",
-      "description": "Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.",
+      "description": "Instancing experiment, custom shader builder.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "internet",
@@ -1061,12 +918,12 @@ export default {
     },
     {
       "id": "virtual-imprint",
-      "group": "art",
+      "group": "generative",
       "title": "Virtual Imprint",
       "description": "Complex domain warping patterns, warped geometries, strange reflections with environment map generated in real-time. GPU intensive.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "domain-warping",
         "geometry",
@@ -1078,12 +935,12 @@ export default {
     },
     {
       "id": "solar-landscape",
-      "group": "art",
+      "group": "generative",
       "title": "Solar Landscape",
       "description": "An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "geometry",
         "interactive",
@@ -1094,12 +951,12 @@ export default {
     },
     {
       "id": "solar-chrome",
-      "group": "art",
+      "group": "generative",
       "title": "Solar Chrome",
-      "description": "Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.",
+      "description": "Chrome texture, chrome fashion, very punk very cool.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "geometry",
         "interactive",
@@ -1110,12 +967,12 @@ export default {
     },
     {
       "id": "retro-core",
-      "group": "art",
+      "group": "generative",
       "title": "Retro Core",
       "description": "Experiments with texture and confused depth. 3D shapes turned flat using transparency and disabled depth testing.",
       "tags": [
-        "art",
         "generative",
+        "art",
         "live",
         "geometry",
         "interactive",
@@ -1135,11 +992,6 @@ export default {
     {
       "source": "about",
       "target": "moons",
-      "value": 1
-    },
-    {
-      "source": "about",
-      "target": "manifesto",
       "value": 1
     },
     {
@@ -1175,61 +1027,6 @@ export default {
     {
       "source": "moons",
       "target": "virtual-distance",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "about",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "branches-and-connections",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "cringe-core",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "digital-gardening",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "intro",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "links",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "maps-of-the-web",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "node-graph",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "rhizome",
-      "value": 1
-    },
-    {
-      "source": "manifesto",
-      "target": "webfuse",
       "value": 1
     },
     {
@@ -1280,11 +1077,6 @@ export default {
     {
       "source": "formations",
       "target": "cliffscapes",
-      "value": 1
-    },
-    {
-      "source": "formations",
-      "target": "neon-moss",
       "value": 1
     },
     {
@@ -1359,11 +1151,6 @@ export default {
     },
     {
       "source": "foliage-fragments",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "foliage-fragments",
       "target": "remnant-mappings",
       "value": 1
     },
@@ -1380,11 +1167,6 @@ export default {
     {
       "source": "remnant-mappings",
       "target": "living-hobbling-goo",
-      "value": 1
-    },
-    {
-      "source": "remnant-mappings",
-      "target": "mappings",
       "value": 1
     },
     {
@@ -1470,11 +1252,6 @@ export default {
     {
       "source": "foliage-grids",
       "target": "cliffscapes",
-      "value": 1
-    },
-    {
-      "source": "foliage-grids",
-      "target": "neon-moss",
       "value": 1
     },
     {
@@ -1739,11 +1516,6 @@ export default {
     },
     {
       "source": "moss-structure",
-      "target": "neon-moss",
-      "value": 1
-    },
-    {
-      "source": "moss-structure",
       "target": "super-cell",
       "value": 1
     },
@@ -1815,11 +1587,6 @@ export default {
     {
       "source": "swamp-mass",
       "target": "moss-structure",
-      "value": 1
-    },
-    {
-      "source": "swamp-mass",
-      "target": "neon-moss",
       "value": 1
     },
     {
@@ -2134,122 +1901,12 @@ export default {
     },
     {
       "source": "rhizome",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "rhizome",
       "target": "weave",
       "value": 1
     },
     {
       "source": "rhizome",
       "target": "webfuse",
-      "value": 1
-    },
-    {
-      "source": "branches-and-connections",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "branches-and-connections",
-      "target": "links",
-      "value": 1
-    },
-    {
-      "source": "branches-and-connections",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "branches-and-connections",
-      "target": "journal-artifacts",
-      "value": 1
-    },
-    {
-      "source": "branches-and-connections",
-      "target": "maps-of-the-web",
-      "value": 1
-    },
-    {
-      "source": "branches-and-connections",
-      "target": "new-platforms",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "branches-and-connections",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "digital-gardening",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "remnant-mappings",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "foliage-fragments",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "digital-biophilia",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "maps-of-the-web",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "new-platforms",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "process-diary-1",
-      "value": 1
-    },
-    {
-      "source": "mappings",
-      "target": "raw-making",
-      "value": 1
-    },
-    {
-      "source": "links",
-      "target": "branches-and-connections",
-      "value": 1
-    },
-    {
-      "source": "links",
-      "target": "rehash-transform",
-      "value": 1
-    },
-    {
-      "source": "links",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "links",
-      "target": "maps-of-the-web",
-      "value": 1
-    },
-    {
-      "source": "links",
-      "target": "new-platforms",
       "value": 1
     },
     {
@@ -2269,32 +1926,12 @@ export default {
     },
     {
       "source": "breath-crunch",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "breath-crunch",
       "target": "making-comfort",
       "value": 1
     },
     {
       "source": "journal-artifacts",
       "target": "breath-crunch",
-      "value": 1
-    },
-    {
-      "source": "journal-artifacts",
-      "target": "raw-making",
-      "value": 1
-    },
-    {
-      "source": "journal-artifacts",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "journal-artifacts",
-      "target": "branches-and-connections",
       "value": 1
     },
     {
@@ -2340,41 +1977,6 @@ export default {
     {
       "source": "hyper",
       "target": "webfuse",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "breath-crunch",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "cringe-core",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "digital-gardening",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "journal-artifacts",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "less-flat",
-      "target": "raw-making",
       "value": 1
     },
     {
@@ -2508,18 +2110,8 @@ export default {
       "value": 1
     },
     {
-      "source": "webfuse",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
       "source": "weave",
       "target": "chaos-growth",
-      "value": 1
-    },
-    {
-      "source": "weave",
-      "target": "digital-gardening",
       "value": 1
     },
     {
@@ -2589,11 +2181,6 @@ export default {
     },
     {
       "source": "glow-tree",
-      "target": "neon-moss",
-      "value": 1
-    },
-    {
-      "source": "glow-tree",
       "target": "rhizome",
       "value": 1
     },
@@ -2610,26 +2197,6 @@ export default {
     {
       "source": "glow-tree",
       "target": "process-diary-1",
-      "value": 1
-    },
-    {
-      "source": "cringe-core",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "cringe-core",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "cringe-core",
-      "target": "raw-making",
-      "value": 1
-    },
-    {
-      "source": "digital-biophilia",
-      "target": "digital-gardening",
       "value": 1
     },
     {
@@ -2654,47 +2221,12 @@ export default {
     },
     {
       "source": "digital-biophilia",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "digital-biophilia",
-      "target": "neon-moss",
-      "value": 1
-    },
-    {
-      "source": "digital-biophilia",
       "target": "process-diary-1",
       "value": 1
     },
     {
       "source": "digital-biophilia",
       "target": "summer-static",
-      "value": 1
-    },
-    {
-      "source": "digital-gardening",
-      "target": "digital-biophilia",
-      "value": 1
-    },
-    {
-      "source": "digital-gardening",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "digital-gardening",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "digital-gardening",
-      "target": "weave",
-      "value": 1
-    },
-    {
-      "source": "digital-gardening",
-      "target": "mappings",
       "value": 1
     },
     {
@@ -2818,41 +2350,6 @@ export default {
       "value": 1
     },
     {
-      "source": "neon-moss",
-      "target": "foliage-grids",
-      "value": 1
-    },
-    {
-      "source": "neon-moss",
-      "target": "formations",
-      "value": 1
-    },
-    {
-      "source": "neon-moss",
-      "target": "glow-tree",
-      "value": 1
-    },
-    {
-      "source": "neon-moss",
-      "target": "living-drone-commission",
-      "value": 1
-    },
-    {
-      "source": "neon-moss",
-      "target": "moss-structure",
-      "value": 1
-    },
-    {
-      "source": "neon-moss",
-      "target": "swamp-mass",
-      "value": 1
-    },
-    {
-      "source": "neon-moss",
-      "target": "digital-biophilia",
-      "value": 1
-    },
-    {
       "source": "virtual-imprint",
       "target": "formations",
       "value": 1
@@ -2879,11 +2376,6 @@ export default {
     },
     {
       "source": "intro",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "intro",
       "target": "contact",
       "value": 1
     },
@@ -2893,43 +2385,13 @@ export default {
       "value": 1
     },
     {
-      "source": "raw-making",
-      "target": "journal-artifacts",
-      "value": 1
-    },
-    {
-      "source": "raw-making",
-      "target": "making-comfort",
-      "value": 1
-    },
-    {
-      "source": "raw-making",
-      "target": "maps-of-the-web",
-      "value": 1
-    },
-    {
-      "source": "raw-making",
-      "target": "process-diary-1",
-      "value": 1
-    },
-    {
-      "source": "raw-making",
-      "target": "less-flat",
-      "value": 1
-    },
-    {
-      "source": "raw-making",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "raw-making",
-      "target": "cringe-core",
-      "value": 1
-    },
-    {
       "source": "latest",
       "target": "intro",
+      "value": 1
+    },
+    {
+      "source": "links",
+      "target": "rehash-transform",
       "value": 1
     },
     {
@@ -2979,11 +2441,6 @@ export default {
     },
     {
       "source": "living-drone-commission",
-      "target": "neon-moss",
-      "value": 1
-    },
-    {
-      "source": "living-drone-commission",
       "target": "weave",
       "value": 1
     },
@@ -3004,16 +2461,6 @@ export default {
     },
     {
       "source": "process-diary-1",
-      "target": "raw-making",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "process-diary-1",
       "target": "glow-tree",
       "value": 1
     },
@@ -3030,11 +2477,6 @@ export default {
     {
       "source": "making-comfort",
       "target": "journal-artifacts",
-      "value": 1
-    },
-    {
-      "source": "making-comfort",
-      "target": "raw-making",
       "value": 1
     },
     {
@@ -3088,66 +2530,6 @@ export default {
       "value": 1
     },
     {
-      "source": "maps-of-the-web",
-      "target": "mappings",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
-      "target": "branches-and-connections",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
-      "target": "node-graph",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
-      "target": "raw-making",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
-      "target": "links",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
-      "source": "maps-of-the-web",
-      "target": "new-platforms",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "maps-of-the-web",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "new-platforms",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "hyper",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "about",
-      "value": 1
-    },
-    {
-      "source": "node-graph",
-      "target": "manifesto",
-      "value": 1
-    },
-    {
       "source": "markup-dada",
       "target": "ethereal-bits",
       "value": 1
@@ -3173,28 +2555,13 @@ export default {
       "value": 1
     },
     {
-      "source": "new-platforms",
-      "target": "maps-of-the-web",
+      "source": "node-graph",
+      "target": "hyper",
       "value": 1
     },
     {
-      "source": "new-platforms",
-      "target": "branches-and-connections",
-      "value": 1
-    },
-    {
-      "source": "new-platforms",
-      "target": "node-graph",
-      "value": 1
-    },
-    {
-      "source": "new-platforms",
-      "target": "links",
-      "value": 1
-    },
-    {
-      "source": "new-platforms",
-      "target": "mappings",
+      "source": "node-graph",
+      "target": "about",
       "value": 1
     },
     {

@@ -10,5 +10,6 @@
   "inline": false,
   "title": "Immerse",
   "description": "Organic substrate and floating 3D shapes. Play with feedback, breathing and interactivity.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
 }

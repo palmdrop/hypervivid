@@ -10,5 +10,6 @@
   "inline": false,
   "title": "Solar Landscape",
   "description": "An extension of solar chrome. Playing around with instancing and composition. I do not recommend opening this on a mobile device.",
-  "image": ""
+  "image": "",
+  "warningPrompt": "WARNING: This node requires a lot of GPU/CPU resources. It is not recommended for mobile devices."
 }

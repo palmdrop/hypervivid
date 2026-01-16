@@ -9,7 +9,7 @@
 <guid>https://palmdrop.site/nodes/about</guid>
 <title>About</title>
 <link>https://palmdrop.site/nodes/about</link>
-<description>What is this project? What does this space contain? Why? Who am I? Do you care?</description>
+<description>What is this project? What does this space contain? Why? Who am I?</description>
 <pubDate>Wed, 18 May 2022 15:40:27 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/aggregate-forms</guid>
@@ -42,16 +42,10 @@
 <description>Combining two different feedback passes with complex domain warping. Producing organically, dissolving substrate blocks. Builds on previous techniques.</description>
 <pubDate>Wed, 04 May 2022 11:45:09 GMT</pubDate>
 </item><item>
-<guid>https://palmdrop.site/nodes/branches-and-connections</guid>
-<title>Branches and connections</title>
-<link>https://palmdrop.site/nodes/branches-and-connections</link>
-<description>My thoughts and practice around sharing links, the small internet, and the internet of platforms.</description>
-<pubDate>Tue, 22 Nov 2022 15:40:27 GMT</pubDate>
-</item><item>
 <guid>https://palmdrop.site/nodes/breath-crunch</guid>
 <title>Breath Crunch</title>
 <link>https://palmdrop.site/nodes/breath-crunch</link>
-<description>A breathing exercise. Doctors don't want you to breathe like this. Playing with ritual and stupid mindfulness.</description>
+<description>A breathing exercise. Doctors don't want you to breathe like this.</description>
 <pubDate>Thu, 23 Feb 2023 19:15:44 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/cathedral-nodes</guid>
@@ -81,26 +75,14 @@
 <guid>https://palmdrop.site/nodes/contact</guid>
 <title>Contact</title>
 <link>https://palmdrop.site/nodes/contact</link>
-<description>A form for sending me an email. Nothing more.</description>
+<description>A form for sending me an email.</description>
 <pubDate>Thu, 26 May 2022 12:34:15 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/cringe-core</guid>
-<title>Cringe Core</title>
-<link>https://palmdrop.site/nodes/cringe-core</link>
-<description>Short thoughts about cringe.</description>
-<pubDate>Wed, 07 Sep 2022 21:12:23 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/digital-biophilia</guid>
 <title>Digital Biophilia</title>
 <link>https://palmdrop.site/nodes/digital-biophilia</link>
 <description>Some thoughts on the biophilia hypothesis and digital spaces.</description>
 <pubDate>Sun, 21 Aug 2022 15:54:46 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/digital-gardening</guid>
-<title>Digital Gardening</title>
-<link>https://palmdrop.site/nodes/digital-gardening</link>
-<description>Some thoughts about digital and generative gardening.</description>
-<pubDate>Mon, 25 Jul 2022 19:48:20 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/domain-warping</guid>
 <title>My Take on Domain Warping</title>
@@ -141,7 +123,7 @@
 <guid>https://palmdrop.site/nodes/foliage-grids</guid>
 <title>Foliage Grids</title>
 <link>https://palmdrop.site/nodes/foliage-grids</link>
-<description>Dynamic pixelation and image displacement grids. A small study with various foliage details. Combining generative techniques and photography.</description>
+<description>Dynamic pixelation and image displacement grids. A small study combining generative techniques and photography.</description>
 <pubDate>Mon, 26 Sep 2022 21:46:38 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/formations</guid>
@@ -165,7 +147,7 @@
 <guid>https://palmdrop.site/nodes/hyper</guid>
 <title>Hyper</title>
 <link>https://palmdrop.site/nodes/hyper</link>
-<description>Hyperwords, meaningless or hyperclear. Maybe everything is amplified. Maybe this node is meaningless. At least it's somewhat fun.</description>
+<description>HYPER HYPER HYPER HYPER HYPER HYPER</description>
 <pubDate>Sun, 15 May 2022 10:20:22 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/immerse</guid>
@@ -189,7 +171,7 @@
 <guid>https://palmdrop.site/nodes/journal-artifacts</guid>
 <title>Journal Artifacts</title>
 <link>https://palmdrop.site/nodes/journal-artifacts</link>
-<description>A small project based on (poetic) journal artifacts. An abstract source of memory prompts.</description>
+<description>A small project based on (poetic) journal artifacts. Vague memory prompts.</description>
 <pubDate>Sat, 21 Jan 2023 16:42:22 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/latest</guid>
@@ -198,16 +180,10 @@
 <description>Displays the most recently created and most recently updated nodes. Just a utility.</description>
 <pubDate>Tue, 28 Jun 2022 07:07:14 GMT</pubDate>
 </item><item>
-<guid>https://palmdrop.site/nodes/less-flat</guid>
-<title>Less Flat</title>
-<link>https://palmdrop.site/nodes/less-flat</link>
-<description>Thoughts about artistic creation as self-exploration.</description>
-<pubDate>Mon, 18 Jul 2022 21:48:39 GMT</pubDate>
-</item><item>
 <guid>https://palmdrop.site/nodes/links</guid>
 <title>Links</title>
 <link>https://palmdrop.site/nodes/links</link>
-<description>Hyperlinks to other nodes on the web. Things I've encountered and found interesting. A curated set of bookmarks.</description>
+<description>Hyperlinks to other nodes on the web. A curated set of bookmarks.</description>
 <pubDate>Sat, 04 Jun 2022 22:32:18 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/liquid-cathedral</guid>
@@ -225,7 +201,7 @@
 <guid>https://palmdrop.site/nodes/living-hobbling-goo</guid>
 <title>Living Hobbling Goo</title>
 <link>https://palmdrop.site/nodes/living-hobbling-goo</link>
-<description>Some jumbled words and an experiment with documentation/presentation/design. Things are moving and living without aim.</description>
+<description>Jumbled words and an experiment with documentation/presentation/design.</description>
 <pubDate>Fri, 23 Dec 2022 10:06:41 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/making-comfort</guid>
@@ -233,24 +209,6 @@
 <link>https://palmdrop.site/nodes/making-comfort</link>
 <description>Short poetic image project. Some photos, some notes, some movement. Aesthetic test mixed with journaling.</description>
 <pubDate>Mon, 06 Mar 2023 18:47:11 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/manifesto</guid>
-<title>manifesto</title>
-<link>https://palmdrop.site/nodes/manifesto</link>
-<description>Site philosophy, some approaches and ideas about internet interaction, softer futures, and digital creation.</description>
-<pubDate>Tue, 10 May 2022 20:11:26 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/mappings</guid>
-<title>Mappings</title>
-<link>https://palmdrop.site/nodes/mappings</link>
-<description>Some thoughts about art and map-making as a creative tool.</description>
-<pubDate>Sun, 16 Oct 2022 10:16:11 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/maps-of-the-web</guid>
-<title>Maps of The Web</title>
-<link>https://palmdrop.site/nodes/maps-of-the-web</link>
-<description>Making maps of webs: thoughts on note-taking, the Internet, browser plugins, websites.</description>
-<pubDate>Thu, 27 Apr 2023 17:31:40 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/markup-dada</guid>
 <title>Markup Dada</title>
@@ -282,23 +240,11 @@
 <description>More bio-studies. Shader systems used to create moss-like structures. Obsessed with the color green.</description>
 <pubDate>Tue, 16 Aug 2022 23:11:46 GMT</pubDate>
 </item><item>
-<guid>https://palmdrop.site/nodes/neon-moss</guid>
-<title>Neon Moss</title>
-<link>https://palmdrop.site/nodes/neon-moss</link>
-<description>A generative system for creating plant-like geometry, rendered in a neon glow. One of my first proper biophilic studies.</description>
-<pubDate>Mon, 22 Aug 2022 07:24:16 GMT</pubDate>
-</item><item>
 <guid>https://palmdrop.site/nodes/nest</guid>
 <title>Nest</title>
 <link>https://palmdrop.site/nodes/nest</link>
 <description>Another shader and another simple shape to localize certain parts of the effect. Maybe a nest of small underwater creatures.</description>
 <pubDate>Mon, 15 Aug 2022 19:52:55 GMT</pubDate>
-</item><item>
-<guid>https://palmdrop.site/nodes/new-platforms</guid>
-<title>New Platforms</title>
-<link>https://palmdrop.site/nodes/new-platforms</link>
-<description>Searching for new platforms and new ways of being on the web.</description>
-<pubDate>Wed, 23 Aug 2023 13:20:58 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/node-graph</guid>
 <title>Node Graph</title>
@@ -315,37 +261,31 @@
 <guid>https://palmdrop.site/nodes/objects</guid>
 <title>Objects</title>
 <link>https://palmdrop.site/nodes/objects</link>
-<description>Localized domain warping "objects". I enjoyed playing with possible looks for abstract floating entities. These things just are.</description>
+<description>Localized domain warping "objects". I enjoyed playing with possible looks for abstract floating entities.</description>
 <pubDate>Sun, 19 Jun 2022 21:26:31 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/places-and-things</guid>
 <title>Places and things</title>
 <link>https://palmdrop.site/nodes/places-and-things</link>
-<description>Another series of photographs. Another slice of time, another tone. Just a collection.</description>
+<description>Another series of photographs. Another slice of time.</description>
 <pubDate>Mon, 31 Oct 2022 18:03:25 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/process-diary-1</guid>
-<title>Process Diary (1)</title>
+<title>Process Diary</title>
 <link>https://palmdrop.site/nodes/process-diary-1</link>
 <description>Short process update with some samples and thoughts about generative art.</description>
 <pubDate>Sat, 22 Jul 2023 11:55:40 GMT</pubDate>
 </item><item>
-<guid>https://palmdrop.site/nodes/raw-making</guid>
-<title>Raw Making</title>
-<link>https://palmdrop.site/nodes/raw-making</link>
-<description>Thoughts about hurry sickness, productivity and raw creation.</description>
-<pubDate>Fri, 06 Jan 2023 09:30:05 GMT</pubDate>
-</item><item>
 <guid>https://palmdrop.site/nodes/rehash-transform</guid>
 <title>Rehash Transform</title>
 <link>https://palmdrop.site/nodes/rehash-transform</link>
-<description>Instancing experiment, custom shader builder, and the mind of the internet. Conceptual visualization of a creation/derviation loop. A web mind, I guess.</description>
+<description>Instancing experiment, custom shader builder.</description>
 <pubDate>Thu, 23 Dec 2021 09:49:08 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/remnant-mappings</guid>
 <title>Remnant Mappings</title>
 <link>https://palmdrop.site/nodes/remnant-mappings</link>
-<description>Strange maps of strange objects. Maybe rocks? Or scraps found in the dirt? Playing with slow and imperfect revelations.</description>
+<description>Strange maps of strange objects. Maybe rocks? Scraps found in the dirt?</description>
 <pubDate>Sat, 15 Oct 2022 13:51:33 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/retro-core</guid>
@@ -357,7 +297,7 @@
 <guid>https://palmdrop.site/nodes/rhizome</guid>
 <title>Rhizome</title>
 <link>https://palmdrop.site/nodes/rhizome</link>
-<description>All references to Deleuze become a bit of a meme. But the underlying structure of this piece is rhizomatic nonetheless. Substrate and space colonization experiment.</description>
+<description>Substrate and space colonization experiment.</description>
 <pubDate>Sun, 20 Feb 2022 09:49:08 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/skew-bulbs</guid>
@@ -375,7 +315,7 @@
 <guid>https://palmdrop.site/nodes/solar-chrome</guid>
 <title>Solar Chrome</title>
 <link>https://palmdrop.site/nodes/solar-chrome</link>
-<description>Chrome, so hip and cool. Modern, punk even. Here's some chrome and generative geometries.</description>
+<description>Chrome texture, chrome fashion, very punk very cool.</description>
 <pubDate>Wed, 13 Oct 2021 09:49:08 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/solar-landscape</guid>
@@ -393,13 +333,13 @@
 <guid>https://palmdrop.site/nodes/substrates</guid>
 <title>Substrates</title>
 <link>https://palmdrop.site/nodes/substrates</link>
-<description>A text about a node-based visual programming application developed for the web, used as the core tool of a lot of my recent generative art.</description>
+<description>About my node-based visual programming application developed for the web.</description>
 <pubDate>Wed, 17 Aug 2022 19:38:50 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/summer-static</guid>
 <title>Summer Static</title>
 <link>https://palmdrop.site/nodes/summer-static</link>
-<description>A couple of photographs from this summer. Nothing special. Just trying to capture that sweet endless summer vibe.</description>
+<description>A couple of photographs from this summer. Just that endless summer vibe.</description>
 <pubDate>Sat, 27 Aug 2022 17:33:51 GMT</pubDate>
 </item><item>
 <guid>https://palmdrop.site/nodes/super-cell</guid>

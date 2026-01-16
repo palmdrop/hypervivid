@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { setContext, type SvelteComponent } from "svelte";
+  import { onMount, setContext, type SvelteComponent } from "svelte";
   import Lazy from "$components/util/Lazy.svelte";
   import DefaultPreview from "./preview/DefaultPreview.svelte";
   import { metadata$ } from "$stores/metadata";
@@ -7,19 +7,23 @@
   import type { NodeName, NodeMode, NodeMetadata, NodeContext } from "$types/nodes";
   import NodeLoader from "./loader/NodeLoader.svelte";
   import Error from './Error.svelte';
+  import Prompt from './Prompt.svelte';
   import { NodeErrorBoundary } from "../error";
 
+  const IGNORE_PROMPT_PREFIX = 'prompt-ignored-';
+
   const lazyComponents = import.meta
-    .glob('$nodes/*/[^.]+.svelte', { eager: false }) as GlobComponentImport;
+    .glob('$nodes/[^./]+/[^.]+.svelte', { eager: false }) as GlobComponentImport;
 
   const lazyPreviewComponents = import.meta
-    .glob('$nodes/*/[^.]+.preview.svelte', { eager: false }) as GlobComponentImport;
+    .glob('$nodes/[^./]+/[^.]+.preview.svelte', { eager: false }) as GlobComponentImport;
 
   export let name: NodeName;
   export let mode: NodeMode;
   export let fromSlot = false;
   export let index = -1; // If in a list
   export let showLoader = true;
+  export let ignorePrompt = false;
 
   // Bindings
   export let isDone = false;
@@ -56,6 +60,22 @@
     mode === 'link' || // If in link mode, the node does not need loading 
     (showPreview && !lazyPreviewComponents[previewPath]); // In this case, default preview will be shown, requiring no loading
 
+  $: hasPrompt = !!nodeMetadata?.warningPrompt;
+  $: promptIgnored = ignorePrompt;
+
+  const onIgnorePrompt = () => {
+    if(promptIgnored) return;
+
+    promptIgnored = true;
+    localStorage.setItem(`${IGNORE_PROMPT_PREFIX}${name}`, 'true');
+  }
+
+  onMount(() => {
+    if(hasPrompt && !promptIgnored) {
+      promptIgnored = localStorage.getItem(`${IGNORE_PROMPT_PREFIX}${name}`) === 'true';
+    }
+  })
+
   let component: (() => Promise<SvelteComponent>) | undefined;
   let showDefaultPreview = false;
 
@@ -86,6 +106,11 @@
   <DefaultPreview
     name={name}
     flipped={index !== -1 && index % 2 === 1}
+  />
+{:else if hasPrompt && !promptIgnored}
+  <Prompt
+    message={nodeMetadata.warningPrompt}
+    onIgnore={onIgnorePrompt}
   />
 {:else if component && nodeMetadata}
   {#key component}

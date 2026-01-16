@@ -14,10 +14,10 @@
   limited={false}
 >
   <Paragraph big wide>
-    This site is an experiment. My personal mind map. A notebook, archive, portfolio, and a space for general exploration.
+    This site is an experiment. A personal mind map, notebook, archive, portfolio.
   </Paragraph>
   <Paragraph big wide>
-    Everything here is a node, analogous to the web at large. Nodes are connected. 
+    Everything here is a node. Nodes are connected to other nodes. 
     <Link href="/nodes/about">Read more</Link>, browse
     <Link href="/nodes/">all nodes</Link>, or start at a 
     <Link href="/random">random location.</Link>
