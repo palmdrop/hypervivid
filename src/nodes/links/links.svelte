@@ -34,7 +34,7 @@
     </Paragraph>
     <Paragraph big>
       Unfortunately, I rarely update this page. I need a better flow for adding entries. Currently, I mostly collect links in various 
-      <ExternalLink href="https://www.are.na/palmdrop">are.na channels.</ExternalLink>
+      <ExternalLink href="https://www.are.na/anton-hildingsson">are.na channels.</ExternalLink>
     </Paragraph>
   </div>
 

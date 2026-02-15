@@ -57,7 +57,7 @@
     },
     {
       text: 'are.na',
-      href: 'https://www.are.na/palmdrop'
+      href: 'https://www.are.na/anton-hildingsson'
     },
     {
       text: 'obscured (old site)',

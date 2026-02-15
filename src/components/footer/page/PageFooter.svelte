@@ -30,7 +30,7 @@
       text: 'instagram'
     },
     {
-      path: 'https://www.are.na/palmdrop',
+      path: 'https://www.are.na/anton-hildingsson',
       text: 'are.na'
     },
   ];

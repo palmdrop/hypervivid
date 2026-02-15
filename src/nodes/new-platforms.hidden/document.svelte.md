@@ -41,7 +41,7 @@ The result is minds optimized for interacting with algorithmically curated platf
 <ExternalIframe 
   width="100%" 
   height="600px" 
-  src="https://www.are.na/palmdrop/glowmind/embed" 
+  src="https://www.are.na/anton-hildingsson/glowmind/embed" 
   title="Vibing and Being"
 />
 
@@ -72,7 +72,7 @@ I've written about things like [this](https://palmdrop.site/nodes/branches-and-c
 
 ***
 
-*[My are.na profile.](https://www.are.na/palmdrop)*
+*[My are.na profile.](https://www.are.na/anton-hildingsson)*
 
 <style>
   img {
